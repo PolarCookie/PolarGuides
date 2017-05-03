@@ -1975,287 +1975,287 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 	next Ding80's Alliance Leveling Guides\\Levels (30-34)
 	startlevel 25
 
-	step //57
+	step //1
 		goto Duskwood,73.8,43.5
 		.talk Chef Grual##272
 		..turnin Seasoned Wolf Kabobs##90
-	step //152
+	step //2
 		goto 74.1,44.7
 		.talk Tavernkeep Smitts##273
 		..turnin Zombie Juice##158
 		..accept Gather Rot Blossoms##156
-	step
+	step //3
 		home Darkshire
-	step //94
+	step //4
 		goto 72.5,46.8
 		.talk Clerk Daltry##267
 		..turnin The Legend of Stalvan (3)##68
 		..accept The Legend of Stalvan (4)##69
-	step
+	step //5
 		goto 71.9,46.4
 		.talk Lord Ello Ebonlocke##263
 		..turnin Messenger to Darkshire##145
-	step //143
+	step //6
 		goto 49.9,77.7
 		.' Click the Mound of Loose Dirt|tip It's easiest to work your way around to behind the farm around this spot.
 		..turnin Sven's Revenge##95
 		..accept Sven's Camp##230
-	step //127
+	step //7
 		goto 17.6,47.2
 		.kill 15 Skeletal Fiend|q 57/1
 		.kill 15 Skeletal Horror|q 57/2
 		.from Skeletal Horror##202+, Skeletal Fiend##531+
 		.get 8 Rot Blossom|q 156/1
-	step //146
+	step //8
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
 		..turnin Sven's Camp##230
 		..accept The Shadowy Figure##262
-	step //96
+	step //9
 		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c
-	step //97
+	step //10
 		goto Elwynn Forest,43.8,65.8
 		.talk Innkeeper Farley##295
 		..turnin The Legend of Stalvan (4)##69
 		..accept The Legend of Stalvan (5)##70
-	step //98
+	step //11
 		'Go upstairs in the inn to 44.3,65.8|goto 44.3,65.8
 		.' Click the Storage Chest|tip It's a brown chest sitting on the floor in this room, upstairs inside the inn.
 		.get An Undelivered Letter|q 70/1
-	step //99
+	step //12
 		'Go northwest to Stormwind|goto Stormwind City|noway|c
-	step //100
+	step //13
 		goto Stormwind City,42.5,72.4
 		.talk Caretaker Folsom##297
 		..turnin The Legend of Stalvan (5)##70
 		..accept The Legend of Stalvan (6)##72
-	step //101
+	step //14
 		goto 42.5,72.41
 		.' Click the Sealed Crate|tip It's a wooden crate on the side of the road.
 		..turnin The Legend of Stalvan (6)##72
 		..accept The Legend of Stalvan (7)##74
-	step //102
+	step //15
 		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c
-	step
+	step //16
 		goto 65.2,69.7
 		.talk Theocritus##313
 		..turnin Theocritus' Retrieval##178
-	step //103
+	step //17
 		goto Elwynn Forest,84.6,69.4
 		.talk Marshal Haggard##294
 		..turnin The Legend of Stalvan (7)##74
 		..accept The Legend of Stalvan (8)##75
-	step //104
+	step //18
 		goto 85.7,69.5
 		.' Click Marshal Haggard's Chest|tip It's a brown chest on the floor next to a bed, upstairs in this house.
 		.get A Faded Journal Page|q 75/1
-	step //105
+	step //19
 		goto 84.6,69.4
 		.talk Marshal Haggard##294
 		..turnin The Legend of Stalvan (8)##75
 		..accept The Legend of Stalvan (9)##78
-	step //106
+	step //20
 		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
-	step //107
+	step //21
 		goto Duskwood,74.1,44.7
 		.talk Tavernkeep Smitts##273
 		..turnin The Legend of Stalvan (9)##78
 		..accept The Legend of Stalvan (10)##79
 		..turnin Gather Rot Blossoms##156
 		..accept Juice Delivery##159
-	step //149
+	step //22
 		goto Duskwood,75.8,45.3
 		.talk Madame Eva##265
 		..turnin The Shadowy Figure##262
 		..accept The Shadowy Search Continues##265
-	step //108
+	step //23
 		goto 73.5,46.8
 		.talk Commander Althea Ebonlocke##264
 		..turnin The Legend of Stalvan (10)##79
 		..accept The Legend of Stalvan (11)##80
 		..turnin The Night Watch (2)##57
 		..accept The Night Watch (3)##58
-	step //109
+	step //24
 		goto 72.5,46.8
 		.talk Clerk Daltry##267
 		..turnin The Legend of Stalvan (11)##80
 		..accept The Legend of Stalvan (12)##97
 		..turnin The Shadowy Search Continues##265
 		..accept Inquire at the Inn##266
-	step //110
+	step //25
 		goto 73.5,46.8
 		.talk Commander Althea Ebonlocke##264
 		..turnin The Legend of Stalvan (12)##97
 		..accept The Legend of Stalvan (13)##98
-	step //107
+	step //26
 		goto Duskwood,74.1,44.7
 		.talk Tavernkeep Smitts##273
 		..turnin Inquire at the Inn##266
 		..accept Finding the Shadowy Figure##453
-	step //86
+	step //27
 		goto 75.7,47.6
 		.talk Calor##663
 		..accept Worgen in the Woods (1)##173
-	step //111
+	step //28
 		goto 70.2,45.1|n
 		.' The path over to Worgen in the Woods starts here
 		.' Run up the hill behind the town hall building|goto Duskwood,70.2,45.1,0.5|noway|c
-	step //112
+	step //29
 		goto 66,47
 		.kill 6 Nightbane Shadow Weaver|q 173/1
-	step
+	step //30
 		ding 27
-	step //165
+	step //31
 		goto Duskwood,28,31.5
 		.talk Abercrombie##289
 		..turnin Juice Delivery##159
 		..accept Ghoulish Effigy##133
-	step //153
+	step //32
 		goto 18.2,56.6
 		.talk Jitters##288
 		..turnin Finding the Shadowy Figure##453
 		..accept Return to Sven##268
-	step //154
+	step //33
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
 		..turnin Return to Sven##268
 		..accept Proving Your Worth##323
-	step //155
+	step //34
 		goto 15.3,37.6
 		.kill 15 Skeletal Raider|q 323/1
 		.kill 3 Skeletal Healer|q 323/2
 		.kill 3 Skeletal Warder|q 323/3
-	step //145
+	step //35
 		goto 24.1,32.7
 		.kill 20 Plague Spreader|q 58/1
 		.from Flesh Eater##3+, Rotted One##948+, Bone Chewer##210+, Plague Spreader##604+
 		.get 10 Ghoul Fang|q 101/1
 		.get 7 Ghoul Rib|q 133/1
-	step //167
+	step //36
 		goto 28,31.5
 		.talk Abercrombie##289
 		..turnin Ghoulish Effigy##133
 		..accept Ogre Thieves##134
-	step //131
+	step //37
 		goto 17.7,29
 		.' Click the Weathered Grave|tip It's a grave on the hillside all by itself.
 		..accept The Weathered Grave##225
-	step //158
+	step //38
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
 		..turnin Proving Your Worth##323
 		..accept Seeking Wisdom##269
-	step //133
+	step //39
 		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
-	step //138
+	step //40
 		goto 75.8,45.3
 		.talk Madame Eva##265
 		..turnin The Totem of Infliction##101
-	step //136
+	step //41
 		goto 72.6,47.7
 		.talk Sirra Von'Indi##268
 		..turnin The Weathered Grave##225
 		..accept Morgan Ladimore##227
-	step //137
+	step //42
 		goto 73.5,46.8
 		.talk Commander Althea Ebonlocke##264
 		..turnin Morgan Ladimore##227
 		..accept Mor'Ladim##228
 		..turnin The Night Watch (3)##58
-	step //113
+	step //43
 		goto 75.7,47.6
 		.talk Calor##663
 		..turnin Worgen in the Woods (1)##173
 		..accept Worgen in the Woods (2)##221
-	step //161
+	step //44
 		'Fly to Stormwind|goto Stormwind City|noway|c
-	step //162
+	step //45
 		goto Stormwind City,49.9,46
 		.talk Bishop Farthing##1212
 		..turnin Seeking Wisdom##269
 		..accept The Doomed Fleet##270
-	step
+	step //46
 		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
-	step //89
+	step //47
 		goto 10.6,60.6
 		.talk Glorin Steelbrow##1217
 		..turnin The Doomed Fleet##270
 		..accept Lightforge Iron##321
-	step //90
+	step //48
 		home Menethil Harbor
-	step //91
+	step //49
 		goto 12.1,64.2
 		.' Click the Waterlogged Chest|tip It's a brown chest sitting on this tiny island between 2 broken ship halves.
 		..turnin Lightforge Iron##321
 		..accept The Lost Ingots##324
-	step //92
+	step //50
 		goto 12.4,65.7
 		.from Bluegill Raider##1418+
 		.get 5 Lightforge Ingot|q 324/1
-	step //93
+	step //51
 		goto 10.6,60.6
 		.talk Glorin Steelbrow##1217
 		..turnin The Lost Ingots##324
 		..accept Blessed Arm##322
-	step //94
+	step //52
 		goto 10.8,55.9
 		.talk Harlo Barnaby##2097
 		..accept Fall of Dun Modr##472
-	step //49
+	step //53
 		goto 13.5,41.4
 		.' Click the Damaged Crate on the ground by the murloc huts
 		..turnin Reclaiming Goods##281
 		..accept The Search Continues##284
-	step //50
+	step //54
 		goto 13.6,38.2
 		.' Click the Sealed Barrel on the ground next to the murloc huts
 		..turnin The Search Continues##284
 		..accept Search More Hovels##285
-	step //51
+	step //55
 		goto 13.9,34.8
 		.' Click the Half-buried Barrel next to the murloc hut
 		..turnin Search More Hovels##285
 		..accept Return the Statuette##286
-	step //95
+	step //56
 		goto 14.1,29.3
 		.kill 13 Cursed Sailor|q 289/1
 		.kill 5 Cursed Marine|q 289/2
-	step //96
+	step //57
 		'Go downstairs in the ship to 14.1,30.1|goto 14.1,30.1
 		.from First Mate Snellig##1159
 		.get Snellig's Snuffbox|q 289/3
-	step //105
+	step //58
 		'Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c
-	step //98
+	step //59
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
 		..turnin The Cursed Crew##289
 		..accept Lifting the Curse##290
-	step //57
+	step //60
 		goto 8.3,58.6
 		.talk Karl Boran##1242
 		..turnin Return the Statuette##286
-	step
+	step //61
 		ding 28
-	step //99
+	step //62
 		goto 15.5,23.5
 		.from Captain Halyndor##1160
 		.get Intrepid Strongbox Key|q 290/1
-	step //100
+	step //63
 		'Go underwater to the bottom of the ship to 14.4,24|goto 14.4,24
 		.' Click Intrepid's Locked Strongbox|tip At the very bottom of this sunken ship, underwater.  It looks like a small metal chest.
 		..turnin Lifting the Curse##290
 		..accept The Eye of Paleth##292
-	step //52
+	step //64
 		goto 18.5,27.3
 		.kill 8 Fen Creeper|q 275/1
 		.kill Giant Wetlands Crocolisks|n
 		.get 6 Giant Crocolisk Skin|q 471/1
-	step //2
+	step //65
 		goto 38.8,52.3
 		.talk Prospector Whelgar##1077
 		..accept Uncovering the Past##299
-	step //5
+	step //66
 		goto 34.8,45.4
 		.kill 10 Mottled Scytheclaw|q 295/1
 		.kill 10 Mottled Razormaw|q 295/2
@@ -2264,37 +2264,37 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		..'Modr Fragment|get Modr Fragment|q 299/2|tip The Modr Fragment looks like a thin, tall red vase with a yellow face on it.
 		..'Golm Fragment|get Golm Fragment|q 299/3|tip The Golm Fragment looks like a wide yellow vase with black silhouettes on it.
 		..'Neru Fragment|get Neru Fragment|q 299/4|tip The Neru Fragment looks like a mound of dirt.
-	step //6
+	step //67
 		goto 38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..turnin Ormer's Revenge (2)##295
 		..accept Ormer's Revenge (3)##296
-	step //7
+	step //68
 		goto 38.8,52.3
 		.talk Prospector Whelgar##1077
 		..turnin Uncovering the Past##299
-	step //101
+	step //69
 		goto 33.2,51.4
 		.from Sarltooth##1353
 		.get Sarltooth's Talon|q 296/1
-	step //102
+	step //70
 		goto 38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..turnin Ormer's Revenge (3)##296
-	step //103
+	step //71
 		goto 47.5,46.9
 		.' Click the Dragonmaw Catapult
 		..turnin Nek'rosh's Gambit##465
 		..accept Defeat Nek'rosh##474
-	step //104
+	step //72
 		goto 53.5,54.7
 		.from Chieftain Nek'rosh##2091
 		.get Nek'rosh's Head|q 474/1
-	step //54
+	step //73
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin Blisters on The Land##275
-	step //108
+	step //74
 		goto 49.8,18.3
 		.talk Longbraid the Grim##1071
 		..turnin Fall of Dun Modr##472
@@ -2303,7 +2303,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		..accept The Thandol Span (1)##631
 		.talk Motley Garmason##1074
 		..accept The Dark Iron War##303
-	step //109
+	step //75
 		goto 62.2,28.3
 		.kill 10 Dark Iron Dwarf|q 303/1
 		.kill 5 Dark Iron Tunneler|q 303/2
@@ -2311,191 +2311,191 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		.kill 5 Dark Iron Demolitionist|q 303/4
 		.from Balgaras the Foul##1364
 		.get Ear of Balgaras|q 304/1
-	step
+	step //76
 		ding 29
-	step //110
+	step //77
 		goto 49.8,18.3
 		.talk Longbraid the Grim##1071
 		..turnin A Grim Task##304
 		.talk Motley Garmason##1074
 		..turnin The Dark Iron War##303
-	step //111
+	step //77
 		goto 51.3,8
 		.' Click Ebenezer Rustlocke's Corpse|tip Down the passage to the right in the middle of the bridge, all the way downstairs.
 		..turnin The Thandol Span (1)##631
 		..accept The Thandol Span (2)##632
-	step //112
+	step //78
 		goto 49.8,18.3
 		.talk Rhag Garmason##1075
 		..turnin The Thandol Span (2)##632
 		..accept The Thandol Span (3)##633
-	step
+	step //79
 		'Jump down into the waters below and dive to find a Waterlogged Letter at the bottom, it's tiny and doesn't have any exclamation mark so look carefully|goto Arathi Highlands,44.3,92.9
 		.accept Sully Balloo's Letter##637
-	step //53
+	step //80
 		goto 53.09,90.78,0.3|n
 		.' The path up starts here|goto 53.09,90.78,0.3|noway|c
-	step //114
+	step //81
 		goto Arathi Highlands,48.8,88.1
 		.' Click the Cache of Explosives|tip To the right across the hanging bridge after walking across the big bridge from the Wetlands.
 		.' Destroy the Cache of Explosives|goal Cache of Explosives Destroyed|q 633/1
-	step //115
+	step //82
 		'Go south to the Wetlands|goto Wetlands|noway|c
-	step //116
+	step //83
 		goto Wetlands,49.8,18.3
 		.talk Rhag Garmason##1075
 		..turnin The Thandol Span (3)##633
 		..accept Plea To The Alliance##634
-	step //105
+	step //84
 		'Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c
-	step //106
+	step //85
 		goto 10.6,60.6
 		.talk Glorin Steelbrow##1217
 		..turnin The Eye of Paleth##292
 		..accept Cleansing the Eye##293
-	step //56
+	step //86
 		goto 8.5,55.7
 		.talk James Halloran##2094
 		..turnin Apprentice's Duties##471
-	step //107
+	step //87
 		goto 9.9,57.5
 		.talk Captain Stoutfist##2104
 		..turnin Defeat Nek'rosh##474
-	step //193
+	step //88
 		'Fly to Stormwind City|goto Stormwind City|noway|c
-	step //162
+	step //89
 		goto 50.3,45.5
 		.talk Archbishop Benedictus##1284
 		..turnin Cleansing the Eye##293
-	step
+	step //90
 		goto 49.6,44.5
 		.talk Tomas##4982
 		..accept The Missing Diplomat (1)##1274
-	step //161
+	step //91
 		goto 59.7,33.8
 		.talk Grimand Elmore##1416
 		..turnin Blessed Arm##322
 		..accept Armed and Ready##325
-	step
+	step //92
 		goto 80.3,44.1
 		.talk Bishop DeLavey##4960
 		..turnin The Missing Diplomat (1)##1274
 		..accept The Missing Diplomat (2)##1241
-	step
+	step //93
 		goto 76.3,85.1
 		.talk Jorgen##4959
 		..turnin The Missing Diplomat (2)##1241
 		..accept The Missing Diplomat (3)##1242
-	step
+	step //94
 		goto 66,74.1
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (3)##1242
 		..accept The Missing Diplomat (4)##1243
-	step //93
+	step //95
 		'Fly to Darkshire|goto Duskwood,77.6,44.4,0.1|noway|c
-	step
+	step //96
 		home Darkshire
-	step //111
+	step //97
 		goto 70.2,45.1|n
 		.' The path over to Worgen in the Woods starts here
 		.' Run up the hill behind the town hall building|goto Duskwood,70.2,45.1,0.5|noway|c
-	step //112
+	step //98
 		goto 66,47
 		.kill 12 Nightbane Dark Runner|q 221/1
-	step //115
+	step //99
 		goto 75.7,47.6
 		.talk Calor##663
 		..turnin Worgen in the Woods (2)##221
 		..accept Worgen in the Woods (3)##222
-	step
+	step //100
 		goto 72.6,33.5
 		.talk Watcher Backus##840
 		..turnin The Missing Diplomat (4)##1243
 		..accept The Missing Diplomat (5)##1244
-	step //168
+	step //101
 		goto 33.4,76.4
 		.' Click Abercrombie's Crate|tip It looks like a wooden crate sitting next to a bunch of wooden barrels.
 		.get Abercrombie's Crate|q 134/1
-	step //125
+	step //102
 		goto 36.1,80.6
 		.from Zzarc'Vul##300
 		.' He spawns at random points inside of the cave.
 		.get Ogre's Monocle|q 181/1
-	step
+	step //103
 		ding 30
-	step
+	step //104
 		goto 23.9,72.1
 		.get Defias Docket|q 1244/1
-	step //169
+	step //105
 		goto 28,31.5
 		.talk Abercrombie##289
 		..turnin Ogre Thieves##134
 		..accept Note to the Mayor##160
-	step
+	step //106
 		goto 7.8,34.1
 		.talk Sven Yorgen##311
 		..turnin Armed and Ready##325
 		..accept Morbent Fel##55
-	step
+	step //107
 		'Kill Mor'Ladim now to get the most out of this questline
 		goto 17.6,35.9
 		.from Mor'Ladim
 		.get Mor'Ladim's Skull|q 228/1
-	step //170
+	step //108
 		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
-	step
+	step //109
 		goto 73.6,46.9
 		.talk Commander Althea Ebonlocke##264
 		..turnin Mor'Ladim##228
 		..accept The Daughter Who Lived##229
-	step
+	step //110
 		goto 74,47.8
 		.talk Watcher Ladimore##576
 		..turnin The Daughter Who Lived##229
 		..accept A Daughter's Love##231
-	step //171
+	step //111
 		goto 71.9,46.4
 		.talk Lord Ello Ebonlocke##263
 		..turnin Note to the Mayor##160
 		..accept Translate Abercrombie's Note##251
-	step //172
+	step //112
 		goto 72.6,47.7
 		.talk Sirra Von'Indi##268
 		..turnin Translate Abercrombie's Note##251
 		..accept Wait for Sirra to Finish##401
 		..turnin Wait for Sirra to Finish##401
 		..accept Translation to Ello##252
-	step //173
+	step //113
 		goto 71.9,46.4
 		.talk Lord Ello Ebonlocke##263
 		..turnin Translation to Ello##252
 		..accept Bride of the Embalmer##253
-	step //139
+	step //114
 		goto 79.8,48.1
 		.talk Viktori Prism'Antras##276
 		..turnin Look To The Stars (4)##181
-	step
+	step //115
 		goto 72.6,33.5
 		.talk Watcher Backus##840
 		..turnin The Missing Diplomat (5)##1244
 		..accept The Missing Diplomat (6)##1245
-	step //28
+	step //116
 		goto Duskwood,77.4,36.1
 		.from Stalvan Mistmantle##315
 		.get Mistmantle Family Ring|q 98/1
-	step //174
+	step //116
 		goto 28.9,30.8
 		.' Click Eliza's Grave Dirt|tip It looks like a single dirt grave.
 		..accept Digging Through the Dirt##254 |instant
 		.from Eliza##314
 		.get The Embalmer's Heart|q 253/1
-	step
+	step //117
 		goto 17.7,29.1
 		.turnin A Daughter's Love##231
-	step
+	step //118
 		goto 16.9,33.4
 		.goal Morbent Fel Slain|q 55/1
-	step
+	step //119
 		goto 7.8,34.1
 		.talk Sven Yorgen##311
 		..turnin Morbent Fel##55
@@ -2503,47 +2503,47 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		goto 72.7,69.7
 		.kill 8 Nightbane Vile Fang|q 222/1
 		.kill 8 Nightbane Tainted One|q 222/2
-	step //122
+	step //121
 		goto 75.7,47.6
 		.talk Calor##663
 		..turnin Worgen in the Woods (3)##222
 		..accept Worgen in the Woods (4)##223
-	step //123
+	step //122
 		goto 75.3,48.7
 		.talk Jonathan Carevin##661
 		..turnin Worgen in the Woods (4)##223
-	step //175
+	step //123
 		goto 71.9,46.4
 		.talk Lord Ello Ebonlocke##263
 		..turnin Bride of the Embalmer##253
-	step //29
+	step //124
 		goto 75.8,45.3
 		.talk Madame Eva##265
 		..turnin The Legend of Stalvan (13)##98
-	step //193
+	step //125
 		'Fly to Stormwind City|goto Stormwind City|noway|c
-	step
+	step //126
 		goto 66,74.1
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (6)##1245
 		..accept The Missing Diplomat (7)##1246
-	step
+	step //127
 		goto 74.3,59.2
 		.talk Dashel Stonefist
 		..turnin The Missing Diplomat (7)##1246
 		..accept The Missing Diplomat (8)##1447
-	step
+	step //128
 		goal Defeat Dashel Stonefist|q 1447
-	step
+	step //129
 		.talk Dashel Stonefist
 		..turnin The Missing Diplomat (8)##1447
 		..accept The Missing Diplomat (9)##1247		
-	step
+	step //130
 		goto 66,74.1
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (9)##1247
 		..accept The Missing Diplomat (10)##1248
-	step
+	step //131
 		ding 31
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-34)",[[
