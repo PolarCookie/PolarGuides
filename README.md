@@ -7,6 +7,8 @@ Alliance 13-20 done, except druid water form questline, a huge grind section at 
 Alliance 20-25 done  
 Alliance 25-29 done  
 
+forgot to add ding 34 and 35
+
 trinity todo:  
 nek'rosh's gambit  
 the weathered grave quest marker  
