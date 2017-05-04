@@ -2,6 +2,9 @@
 Translating Ding80's leveling guide to work in the Zygor leveling guide addon  
 Discord: https://discord.gg/SjXbNRX
 
+Open addon setting panel, goto zygor, goto dynamic progress, untick "mark obsolete steps" and "skip obsolete steps" and set "Allow levels ahead" to 80.  
+Ding80 makes you do green / yellow quests, and you usually outlevel the mobs you fight.
+
 Some minor edits to the route have been made underway.  
 Particular case is when Ding80 skips "Colonel Kurzen" in STV part 2.  
 I included this as ding80 also skips the "Jungle Secrets" questline in entirely, even tho "Bookie Herod" can be completed alongside "Bad Medicing"/"The Second Rebellion"  
