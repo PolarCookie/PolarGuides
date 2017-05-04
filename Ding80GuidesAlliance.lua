@@ -3078,6 +3078,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.talk Count Remington Ridgewell##2285
 		..accept The Perenolde Tiara##543
 	step
+		'TODO: MORGAN STERN
 		goto 51.1,95.5
 		.talk Connor Rivers##5081
 		..accept James Hyal##1301

@@ -25,18 +25,15 @@ Alliance 35-39 done
 guide todo:  
 forgot to add ding 34 and 35  
 maybe include orb of orahil questline for warlocks during desolace part? can pick up the quests after getting felhunter and combine with Reagents for Reclaimers inc part 3 and 4  
-Need Angus Stern's prequest to Theramore somehow, The guide takes you to the inn he is in, but worried at to early w.r.t level reqs. Anyone testing comment on this when you pick up James Hyal in Stormwind!!! Seach for "TODO: MORGAN STERN" in the guide  
-Missing Diplomat finally should be instant?
+Need Angus Stern's prequest to Theramore somehow, The guide takes you to the inn he is in, but worried it's to early w.r.t level reqs. Anyone testing comment on this when you pick up James Hyal in Stormwind!!! Seach for "TODO: MORGAN STERN" in the guide  
+Missing Diplomat finale should be instant?
 
-trinity todo:  
-nek'rosh's gambit  
-the weathered grave quest marker  
-lightforge ingots check sql, possibly delete this  
-digging through the dirt  
-a daughters love  
-kodo roundup  
-Nat's Bargain spawned 4 sharks!!!  
-The missing diplomat at sentry point, Tervosh is supposed to teleport in to continue the questline, he also buffs you, https://youtu.be/6XeuwJnqSd4?t=5m11s  
-The missing diplomat at hendel, Guards need to join in, Tervosh and jaina is supposed to teleport in to continue the questline, https://youtu.be/6XeuwJnqSd4?t=7m43s  
-The missing diplomat quest chain references in database, evowow is a mess...
-Recover the cargo, despawn wreckage
+I'm running through the guide on a personal trinity server.  
+keybinded macros  
+1 : .mod speed 1
+2 : .mod speed 5
+3 : .mod speed 10
+4 : .mod speed 20
+q : .gm fly on
+s-q : .gm fly off
+e : .damage 1000000 (.kill won't give you xp)
