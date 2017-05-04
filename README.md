@@ -1,5 +1,6 @@
 # Ding80-to-Zygor
 Translating Ding80's leveling guide to work in the Zygor leveling guide addon  
+Discord: https://discord.gg/SjXbNRX
 
 Some minor edits to the route have been made underway.  
 Particular case is when Ding80 skips "Colonel Kurzen" in STV part 2.  
