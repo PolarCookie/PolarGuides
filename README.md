@@ -30,10 +30,10 @@ Missing Diplomat finale should be instant?
 
 I'm running through the guide on a personal trinity server.  
 keybinded macros  
-1 : .mod speed 1
-2 : .mod speed 5
-3 : .mod speed 10
-4 : .mod speed 20
-q : .gm fly on
-s-q : .gm fly off
-e : .damage 1000000 (.kill won't give you xp)
+1 : .mod speed 1  
+2 : .mod speed 5  
+3 : .mod speed 10  
+4 : .mod speed 20  
+q : .gm fly on  
+s-q : .gm fly off  
+e : .damage 1000000 (.kill won't give you xp)  
