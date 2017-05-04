@@ -16,7 +16,7 @@ Only Dwarf/Gnome starting area translated, either use Zygor default or some kind
 
 Progress:  
 Dun Morogh 1-13 done  
-Alliance 13-20 done, except druid water form questline, a huge grind section at the end of lvl 19; any quests missed, cloth capitol quests maybe?  
+Alliance 13-20 done, except druid water form questline, it fits into late westfall questing and it's written into Zygor's. A huge grind section at the end of lvl 19; any quests missed, cloth capitol quests maybe?  
 Alliance 20-24 done  
 Alliance 25-29 done  
 Alliance 30-34 done  
