@@ -26,7 +26,7 @@ Alliance 25-29 done
 Alliance 30-34 done  
 Alliance 35-39 done  
 Alliance 40-44 done  
-Alliance 44-45 done  
+Alliance 45-49 done  
 
 guide todo:  
 forgot to add ding 34,35,47,49  
