@@ -2622,85 +2622,89 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		goto 22.6,56.1|n
 		'Ride the boat to Auberdine|goto Darkshore,32.4,43.7,1|noway|c
 	step //21
-		'Travel south to Ashenvale|goto Ashenvale|noway|c
+		goto 36.3,45.6
+		.talk Caylais Moonfeather##3841
+		..fpath Auberdine
 	step //22
+		'Travel south to Ashenvale|goto Ashenvale|noway|c
+	step //23
 		goto 34.4,48
 		.talk Daelyshia##4267
 		..fpath Astranaar
-	step //23
+	step //24
 		goto Ashenvale,34.7,48.8
 		.talk Shindrell Swiftfire##3845
 		..accept Kayneth Stillwind##4581
-	step //24
+	step //25
 		goto 34.9,49.8
 		.talk Vindicator Palanaar##17106
 		..accept A Helping Hand##9533
-	step //25
+	step //26
 		goto 86.4,46.5
 		.talk Gnarl##17310
 		..accept Reclaiming Felfire Hill##9526
-	step //26
+	step //27
 		goto 86.8,44.8
 		.talk Architect Nemos##17291
 		..turnin A Helping Hand##9533
 		..accept A Shameful Waste##9517
-	step //27
+	step //28
 		goto 87.1,43.5
 		.talk Illiyana##3901
 		..accept Vile Satyr! Dryads in Danger!##1021
-	step //28
+	step //29
 		goto 86.5,43.6
 		.talk Vindicator Vedaar##17303
 		..accept Destroy the Legion##9516
-	step //29
+	step //30
 		goto 86,44.1
 		.talk Sentinel Luciel Starwhisper##17287
 		..accept Agents of Destruction##9518
-	step //30
+	step //31
 		goto 85.2,44.7
 		.talk Kayneth Stillwind##3848
 		..turnin Kayneth Stillwind##4581
 		..accept Forsaken Diseases##1011
 		..accept The Lost Chalice##9519
-	step //31
+	step //32
 		goto 84.7,43.9
 		.talk Suralais Farwind##22935
 		..fpath Forest Song
-	step //32
+	step //33
 		goto 78.3,44.8
 		.talk Anilia##3920
 		..turnin Vile Satyr! Dryads in Danger!##1021
 		..accept The Branch of Cenarius##1031
-	step //33
+	step //34
 		goto 78,42.6
 		.from Geltharis##4619
 		.get Branch of Cenarius|q 1031/1
-	step //34
+	step //35
 		goto 87.1,43.5
 		.talk Illiyana##3901
 		..turnin The Branch of Cenarius##1031
 		..accept Satyr Slaying!##1032
-	step //35
+	step //36
 		goto 81.3,49.1
 		.' Click the Chalice of Elune|tip It's a blue glowing pedestal sitting ont he right side of the red tower thing.
 		.get Chalice of Elune|q 9519/1
-	step //36
+	step //37
 		goto 80.3,49.1
 		.from Xavian Felsworn##3755+, Xavian Betrayer##3754+, Xavian Rogue##3752+, Xavian Hellcaller##3757+
 		.get 16 Satyr Horns|q 1032/1
 		.' Click the Tainted Wood bundles|tip They look like little bundles of wood on the ground around this area.
 		.get 5 Satyrnaar Fel Wood|q 9517/2
-	step //37
+	step //38
 		goto 86.4,52.9
 		.' Click the Lumber Piles|tip The Lumber Piles look like stacked planks of wood around this area.
 		.get 15 Warsong Lumber|q 9517/1
 		.kill 2 Warsong Shredder|q 9518/2
 		.kill 5 Horde Deforester|q 9518/3
 		.kill 10 Horde Scout|q 9518/4
-	step //38
+	step //39
 		goto 88.8,59.5
 		.kill Overseer Gorthak##17304|q 9518/1
-	step //39
+	step //40
 		goto 83.8,67.7
 		.kill 6 Mannoroc Lasher|q 9516/1
 		.kill 6 Roaming Felguard|q 9516/2
@@ -2710,421 +2714,421 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.get Diabolical Plans|n
 		.' Click the Diabolical Plans|use Diabolical Plans##23777
 		..accept Diabolical Plans##9520
-	step //40
+	step //41
 		goto 75.3,72.3
 		.' Click the Bottle of Disease on the table
 		.get Bottle of Disease|q 1011/1
-	step //41
+	step //42
 		goto 86.4,46.5
 		.talk Gnarl##17310
 		..turnin A Shameful Waste##9517
 		..turnin Reclaiming Felfire Hill##9526
-	step //42
+	step //43
 		goto 86.5,43.6
 		.talk Vindicator Vedaar##17303
 		..turnin Destroy the Legion##9516
 		..turnin Diabolical Plans##9520
-	step //43
+	step //44
 		goto 86,44.1
 		.talk Sentinel Luciel Starwhisper##17287
 		..turnin Agents of Destruction##9518
-	step //44
+	step //45
 		goto 85.2,44.7
 		.talk Kayneth Stillwind##3848
 		..turnin Forsaken Diseases##1011
 		..turnin The Lost Chalice##9519
-	step //45
+	step //46
 		goto 87.1,43.5
 		.talk Illiyana##3901
 		..turnin Satyr Slaying!##1032
-	step //46
-		ding 32
 	step //47
-		'Travel south to the Barrens|goto The Barrens|noway|c
+		ding 32
 	step //48
+		'Travel south to the Barrens|goto The Barrens|noway|c
+	step //49
 		goto 62.6,35.5
 		.talk Strahad Farsan##6251
 		..turnin Seeking Strahad##1798
 		..accept Tome of the Cabal (1)##1758
 		only Warlock
-	step //49
+	step //50
 		goto 63.1,37.2
 		.talk Bragok##16227
 		..fpath Ratchet
-	step //50
+	step //51
 		goto 49.3,57.1
 		.talk Takar the Seer##6244	
 		..turnin Devourer of Souls##1716
 		..accept Heartswood##1738
 		only Warlock
-	step //51
+	step //52
 		'Fly to Astranaar|goto Ashenvale,35.5,50.2,5|noway|c
 		only Warlock
-	step //52
+	step //53
 		goto 31.2,31.2
 		.' Click the Heartswood tree|tip It's a tall tree.
 		.get Heartswood|q 1738/1
 		only Warlock
-	step //53
+	step //54
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 		only Warlock
-	step //54
+	step //55
 		goto 74.2,9.4
 		.talk Krom Stoutarm##6294
 		..turnin Tome of the Cabal (1)##1758
 		..accept Tome of the Cabal (2)##1802
 		only Warlock
-	step //55
+	step //56
 		'Fly to Menethil Harbor|goto Wetlands|noway|c
 		only Warlock
-	step //56
+	step //57
 		'Take the boat to Theramore|goto Dustwallow Marsh|noway|c
 		only Warlock
-	step //57
+	step //58
 		'Travel west to the Barrens|goto The Barrens|noway|c
 		only Warlock
-	step //58
-		'Go southwest to Thousand Needles|goto Thousand Needles|noway|c
 	step //59
+		'Go southwest to Thousand Needles|goto Thousand Needles|noway|c
+	step //60
 		goto Thousand Needles,30.7,24.3
 		.' Click Henrig Lonebrow's Journal|tip In the hand of a corpse laying on the side of the road at the bottom of the Great Lift.
 		.' Click Henrig Lonebrow's Journal in your bags|use Henrig Lonebrow's Journal##5791
 		..accept Lonebrow's Journal##1100
-	step //60
+	step //61
 		goto 7.8,17.9
 		.talk Thyssiana##4319
 		..fpath Thalanaar
-	step //61
+	step //62
 		goto 8.1,19
 		.talk Falfindel Waywarder##4048
 		..turnin Lonebrow's Journal##1100
-	step //62
+	step //63
 		goto 43.4,32.7
 		.get Tattered Manuscript|q 1802/2
 		only warlock
-	step //63
+	step //64
 		goto 78.1,77.1
 		.talk Wizzle Brassbolts##4453
 		..turnin The Brassbolts Brothers##1179
 		..accept Hardened Shells##1105
 		.talk Fizzle Brassbolts##4454
 		..accept Salt Flat Venom##1104
-	step //64
+	step //65
 		goto 77.8,77.3
 		.talk Kravel Koalbeard##4452
 		..accept Hemet Nesingwary Jr.##5762
 		..accept Rocket Car Parts##1110
 		..accept Wharfmaster Dizzywig##1111
-	step //65
+	step //66
 		goto 80.2,75.9
 		.talk Pozzik##4630
 		..accept Load Lightening##1176
-	step //66
+	step //67
 		goto 81.6,77.9
 		.talk Trackmaster Zherin##4629
 		..accept A Bump in the Road##1175
-	step //67
-		'Get Rocket Car Parts as you walk around in the Shimmering Flats|n|tip They look like metal scraps on the ground.
 	step //68
+		'Get Rocket Car Parts as you walk around in the Shimmering Flats|n|tip They look like metal scraps on the ground.
+	step //69
 		goto 79.1,85.2
 		.kill 10 Saltstone Crystalhide|q 1175/2
 		.kill 6 Saltstone Gazer|q 1175/3
-	step //69
+	step //70
 		goto 87.6,66.7
 		.from Salt Flats Scavenger##4154+
 		.get 10 Hollow Vulture Bone|q 1176/1
-	step //70
+	step //71
 		goto 83.2,55.4
 		.from Sparkleshell Snapper##4143+
 		.get 9 Hardened Tortoise Shell|q 1105/1
 		.collect 10 Turtle Meat
-	step //71
+	step //72
 		goto 75.4,55
 		.kill 10 Saltstone Basilisk|q 1175/1
 		.' Finish getting the 30 Rocket Car Parts you need|goal 30 Rocket Car Parts|q 1110/1
-	step //72
+	step //73
 		goto 77.8,77.3
 		.talk Kravel Koalbeard##4452
 		..turnin Rocket Car Parts##1110
-	step //73
+	step //74
 		goto 78.1,77.1
 		.talk Wizzle Brassbolts##4453
 		..turnin Hardened Shells##1105
 		.talk Fizzle Brassbolts##4454
 		..turnin Salt Flat Venom##1104
 		..accept Martek the Exiled##1106
-	step //74
+	step //75
 		goto 80.2,75.9
 		.talk Pozzik##4630
 		..turnin Load Lightening##1176
 		..accept Goblin Sponsorship (1)##1178
-	step //75
+	step //76
 		goto 81.6,77.9
 		.talk Trackmaster Zherin##4629
 		..turnin A Bump in the Road##1175
-	step //76
-		ding 33
 	step //77
-		'Go southwest to Tanaris|goto Tanaris|noway|c
+		ding 33
 	step //78
+		'Go southwest to Tanaris|goto Tanaris|noway|c
+	step //79
 		goto Tanaris,51,29.3
 		.talk Bera Stonehammer##7823
 		..fpath Gadgetzan
-	step //79
-		'Fly to Ratchet|goto The Barrens,63.0,38.1,2|noway|c
 	step //80
+		'Fly to Ratchet|goto The Barrens,63.0,38.1,2|noway|c
+	step //81
 		goto The Barrens,62.7,36.2
 		.talk Gazlowe##3391
 		..turnin Goblin Sponsorship (1)##1178
 		..accept Goblin Sponsorship (2)##1180
-	step //81
+	step //82
 		goto 63.4,38.5
 		.talk Wharfmaster Dizzywig##3453
 		..turnin Wharfmaster Dizzywig##1111
-	step //82
-		'Ride the boat to Booty Bay|goto Stranglethorn Vale|noway|c
 	step //83
+		'Ride the boat to Booty Bay|goto Stranglethorn Vale|noway|c
+	step //84
 		goto Stranglethorn Vale,26.3,73.6
 		.talk Wharfmaster Lozgil##4631
 		..turnin Goblin Sponsorship (2)##1180
 		..accept Goblin Sponsorship (3)##1181
-	step //84
+	step //85
 		goto 27.1,77.2
 		.talk Crank Fizzlebub##2498
 		..accept Singing Blue Shards##605
-	step //85
+	step //86
 		goto 27,77.1
 		.talk Kebok##737
 		..accept Bloodscalp Ears##189
 		..accept Hostile Takeover##213
-	step //86
+	step //87
 		goto 26.9,77.2
 		.talk Krazek##773
 		..accept The Haunted Isle##616
 		..accept Investigate the Camp##201
 		..accept Supplies to Private Thorsen##198
-	step //87
+	step //88
 		goto 27.2,77
 		.talk Baron Revilgaz##2496
 		..turnin The Haunted Isle##616
 		..accept The Stone of the Tides##578
 		..turnin Goblin Sponsorship (3)##1181
 		..accept Goblin Sponsorship (4)##1182
-	step //88
+	step //89
 		goto 28.3,77.6
 		.talk Drizzlik##2495
 		..accept Supply and Demand##575
-	step //89
+	step //90
 		goto 27.8,77.1
 		.talk "Sea Wolf" MacKinley##2501
 		..accept Scaring Shaky##606
-	step //90
-		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step //91
-		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
+		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step //92
+		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
+	step //93
 		goto 49.5,58.7
 		.talk Marshal Redpath##2263
 		..accept Crushridge Bounty##500
-	step //93
+	step //94
 		goto 48.1,59.1
 		.talk Magistrate Henry Maleb##2276
 		..accept Syndicate Assassins##505
-	step //94
+	step //95
 		goto 51,58.7
 		.talk Huraan##17218
 		..accept Missing Crystals##9435
-	step //95
+	step //96
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..accept Down the Coast##536
-	step //96
+	step //97
 		goto 51.9,58.7
 		.talk Chef Jessen##2430
 		..accept Soothing Turtle Bisque##555
-	step //97
+	step //98
 		goto 52.4,56
 		.talk Darren Malvew##2382
 		..accept Costly Menace##564
-	step //98
+	step //99
 		goto 46.4,64
 		.kill 10 Torn Fin Tidehunter|q 536/1
 		.kill 10 Torn Fin Oracle|q 536/2
-	step //99
+	step //100
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..turnin Down the Coast##536
 		..accept Farren's Proof (1)##559
-	step //100
+	step //101
 		goto 27.8,72.8
 		.get Moldy Tome|q 1802/1
 		only warlock
-	step //101
+	step //102
 		goto 46.4,64
 		.from Torn Fin Tidehunter##2377+, Torn Fin Oracle##2376+
 		.get 10 Murloc Head|q 559/1
-	step //102
+	step //103
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..turnin Farren's Proof (1)##559
 		..accept Farren's Proof (2)##560
-	step //103
+	step //104
 		goto 49.5,58.7
 		.talk Marshal Redpath##2263
 		..turnin Farren's Proof (2)##560
 		..accept Farren's Proof (3)##561
-	step //104
+	step //105
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..turnin Farren's Proof (3)##561
 		..accept Stormwind Ho!##562
-	step //105
+	step //106
 		goto 56.2,65
 		.kill 10 Daggerspine Shorehunter|q 562/1
 		.kill 10 Daggerspine Siren|q 562/2
-	step //106
+	step //107
 		goto 55.7,57
 		.from Snapjaw##2408
 		.get 10 Turtle Meat|q 555/1
-	step //107
+	step //108
 		goto 51.9,58.7
 		.talk Chef Jessen##2430
 		..turnin Soothing Turtle Bisque##555
-	step //108
+	step //109
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..turnin Stormwind Ho!##562
 		..accept Reassignment##563
-	step //109
+	step //110
 		goto 55.6,35.2
 		.' Click the Unopened Crate|tip Inside the crumbled tower, under the broken staircase, on the floor to the right as you enter.
 		.get Shipment of Rare Crystals|q 9435/1
-	step //110
+	step //111
 		'Enter the cave and get Granite|goto 46.18,31.85
 		.get 5 Alterac Granite|q 689/1
-	step //111
-		'Go north to the Alterac Mountains|goto Alterac Mountains|noway|c
 	step //112
+		'Go north to the Alterac Mountains|goto Alterac Mountains|noway|c
+	step //113
 		goto Alterac Mountains,44.3,78.5
 		.kill 8 Mountain Lion|q 564/1
 		.kill 10 Hulking Mountain Lion|q 564/2
-	step //113
+	step //114
 		goto 56.9,66.7
 		.kill 12 Syndicate Footpad|q 505/1
 		.kill 8 Syndicate Thief|q 505/2
 		.' You can find more of these around 47.9,79.5|goto 47.9,79.5|n
-	step //114
+	step //115
 		goto 58.3,68
 		.' Click the Syndicate Documents on the little round table in the middle of the small camp
 		..accept Foreboding Plans##510
 		..accept Encrypted Letter##511
-	step //115
+	step //116
 		goto Alterac Mountains,49.7,60.8
 		.kill ogres|n
 		.get 9 Dirty Knucklebones|q 500/1
-	step //116
+	step //117
 		goto 52.4,56
 		.talk Darren Malvew##2382
 		..turnin Costly Menace##564
-	step //117
+	step //118
 		goto 50.6,57.1
 		.talk Loremaster Dibbs##2277
 		..turnin Encrypted Letter##511
 		..accept Letter to Stormpike##514
-	step //118
+	step //119
 		goto Hillsbrad Foothills,51,58.7
 		.talk Huraan##17218
 		..turnin Missing Crystals##9435
-	step //119
+	step //120
 		goto Hillsbrad Foothills,49.5,58.7
 		.talk Marshal Redpath##2263
 		..turnin Crushridge Bounty##500
-	step //120
+	step //121
 		goto 48.1,59.1
 		.talk Magistrate Henry Maleb##2276
 		..turnin Syndicate Assassins##505
 		..turnin Foreboding Plans##510
-	step //121
-		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step //122
+		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
+	step //123
 		goto 39,88.1
 		.talk Grand Mason Marblesten##2790
 		..turnin A King's Tribute (2)##689
 		..accept A King's Tribute (3)##700
-	step //123
+	step //124
 		goto 39.1,56.2
 		.talk King Magni Bronzebeard##2784
 		..turnin A King's Tribute (3)##700
-	step //124
+	step //125
 		goto 74.7,11.7
 		.talk Prospector Stormpike##1356
 		..turnin Letter to Stormpike##514
 		..accept Further Mysteries##525
-	step //125
+	step //126
 		goto 74.2,9.4
 		.talk Krom Stoutarm##6294
 		..turnin Tome of the Cabal (2)##1802
 		..accept Tome of the Cabal (3)##1804
 		only Warlock
-	step //126
-		'Fly to Stormwind|goto Stormwind City|noway|c
 	step //127
+		'Fly to Stormwind|goto Stormwind City|noway|c
+	step //128
 		goto 75.8,36.7
 		.talk Major Samuelson##2439
 		..turnin Reassignment##563
-	step //128
+	step //129
 		goto 76.9,47.8
 		.talk Count Remington Ridgewell##2285
 		..accept The Perenolde Tiara##543
-	step
+	step //130
 		'TODO: MORGAN STERN
 		goto 51.1,95.5
 		.talk Connor Rivers##5081
 		..accept James Hyal##1301
-	step //129
+	step //131
 		goto 39.2,85.2
 		.talk Gakin the Darkbinder##6122
 		..turnin Heartswood##1738
 		..accept The Binding##1739
 		only Warlock
-	step //130
+	step //132
 		'Go downstairs into the catacombs to 39.1,84.3|goto 39.1,84.3
 		.' Use your Heartswood Core while standing on the pink Summoning Circle|use Heartswood Core##6913
 		.kill Summoned Succubus|q 1739/1
 		only Warlock
-	step //131
+	step //133
 		'Go upstairs to 39.6,84.6|goto 39.2,85.2
 		.talk Gakin the Darkbinder##6122
 		..turnin The Binding##1739
 		only Warlock
-	step //132
-		'Fly to Darkshire|goto Duskwood,74.7,46.9,7|noway|c
-	step //133
-		'Go southwest to Stranglethorn Vale|goto Stranglethorn Vale|noway|c
 	step //134
+		'Fly to Darkshire|goto Duskwood,74.7,46.9,7|noway|c
+	step //135
+		'Go southwest to Stranglethorn Vale|goto Stranglethorn Vale|noway|c
+	step //136
 		goto Stranglethorn Vale,38.2,4
 		.talk Nizzle##24366
 		..fpath Rebel Camp
-	step //135
+	step //137
 		goto 38,3.3
 		.talk Sergeant Yohwa##733
 		..accept The Second Rebellion##203
 		..accept Bad Medicine##204
-	step //136
+	step //138
 		goto 37.7,3.3
 		.talk Corporal Kaleb##770
 		..accept Krazek's Cookery##210
-	step //137
+	step //139
 		goto 38,3.4
 		.talk Private Thorsen##738
 		..turnin Supplies to Private Thorsen##198
 		..accept Jungle Secrets##215
-	step //138
+	step //140
 		goto 38,3
 		.talk Lieutenant Doren##469
 		..turnin Jungle Secrets##215
 		..accept Bookie Herod##200
-	step //139
+	step //141
 		goto 35.8,10.7
 		.talk Barnil Stonepot##716
 		..accept Welcome to the Jungle##583
@@ -3136,45 +3140,45 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		..accept Tiger Mastery (1)##185
 		.talk Sir S. J. Erlgadin##718
 		..accept Panther Mastery (1)##190
-	step //140
+	step //142
 		goto 40.6,13.3
 		.from River Crocolisk##1150
 		.get 2 Large River Crocolisk Skin|q 575/1
-	step //141
+	step //143
 		goto 33.6,11.5
 		.kill 10 Young Stranglethorn Tiger|q 185/1
-	step //142
+	step //144
 		goto 40.8,10.9
 		.kill 10 Young Panther|q 190/1
-	step //143
+	step //145
 		goto 35.8,10.7
 		.talk Sir S. J. Erlgadin##718
 		..turnin Panther Mastery (1)##190
 		..accept Panther Mastery (2)##191
-	step //144
+	step //146
 		goto 35.8,10.7
 		.talk Ajeck Rouack##717
 		..turnin Tiger Mastery (1)##185
 		..accept Tiger Mastery (2)##186
-	step //145
+	step //147
 		goto 31,10
 		.kill 10 Panther|q 191/1
 		.kill 10 Stranglethorn Tiger|q 186/1
-	step //146
+	step //148
 		goto 27,16.3
 		.kill 10 Stranglethorn Raptor|q 194/1
-	step //147
+	step //149
 		goto 24.5,16.8
 		.from Crystal Spine Basilisks##689
 		..get 10 Singing Crystal Shard|q 605/1
-	step //148
+	step //150
 		goto 21.5,22.7
 		.goal Locate the haunted island|q 578/1
-	step //149
+	step //151
 		'I prefer this camp, less risk of horde interference|goto 20.5,13.5
 		.kill Bloodscalp trolls|n
 		.get 15 Bloodscalp Ear|q 189/1
-	step //150
+	step //152
 		goto 35.8,10.7
 		.talk Hemet Nesingwary Jr.##715
 		..turnin Raptor Mastery (1)##194
@@ -3185,54 +3189,54 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.talk Sir S. J. Erlgadin##718
 		..turnin Panther Mastery (2)##191
 		..accept Panther Mastery (3)##192
-	step //151
+	step //153
 		goto 43.7,9.4
 		.turnin Bookie Herod##200
 		.accept The Hidden Key##328
-	step //152
+	step //154
 		goto 44,11.2
 		.kill 15 Kurzen Jungle Fighter|q 203/1
 		.from Kurzen Medicine Man##940+, Kurzen Jungle Fighter##937+
 		.get 7 Jungle Remedy|q 204/1
-	step //153
+	step //155
 		goto 44.5,9.7
 		.' Click the Kurzen Supplies|tip They look like a pile of brown boxes in the small camp.
 		.get Venom Fern Extract|q 204/2
-	step //154
+	step //156
 		goto 38,3.3
 		.talk Sergeant Yohwa##733
 		..turnin The Second Rebellion##203
 		..turnin Bad Medicine##204
 		..accept Special Forces##574
-	step //155
+	step //157
 		goto 37.8,3.6
 		.talk Brother Nimetz##739
 		..accept Kurzen's Mystery##207
-	step //156
+	step //158
 		goto 28.3,77.6
 		.talk Drizzlik##2495
 		..turnin Supply and Demand##575
 		..accept Some Assembly Required##577
-	step //157
+	step //159
 		goto 27,77.1
 		.talk Kebok##737
 		..turnin Bloodscalp Ears##189
-	step //158
+	step //160
 		goto 26.9,77.2
 		.talk Krazek##773
 		..turnin Investigate the Camp##201
 		..turnin Krazek's Cookery##210
-	step //159
+	step //161
 		goto 27.2,77
 		.talk Baron Revilgaz##2496
 		..turnin The Stone of the Tides##578
 		..accept Water Elementals##601
-	step //160
+	step //162
 		goto 27.1,77.2
 		.talk Crank Fizzlebub##2498
 		..turnin Singing Blue Shards##605
 		..accept Venture Company Mining##600
-	step //113
+	step //163
 		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-39)",[[
@@ -3986,7 +3990,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-44)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (45-50)
+	next Ding80's Alliance Leveling Guides\\Levels (45-49)
 	startlevel 40
 
 	step //1
@@ -4735,176 +4739,150 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 	next Ding80's Alliance Leveling Guides\\Levels (50-54)
 	startlevel 45
 
-
-	step //149
+	step //1
 		'Fly to Darkshire|goto Duskwood,74.7,46.9,7|noway|c
-	step //150
+	step //2
 		goto Duskwood,75.8,46.2
 		.talk Watchmaster Sorigal##5464
 		..turnin Vital Supplies##1477
 		..accept Supplies for Nethergarde##1395
-	step //151
+	step //3
 		'Go east to Deadwind Pass|goto Deadwind Pass|noway|c
-	step //152
+	step //4
 		'Go east to the Swamp of Sorrows|goto Swamp of Sorrows|noway|c
-	step //196
+	step //5
 		goto Swamp of Sorrows,22.9,48.2
 		.' Click the Soggy Scroll|tip It's a rolled up scroll laying in the water under the bridge. It's very easy to to miss, so search hard.
 		.turnin Cortello's Riddle (1)##624
 		.accept Cortello's Riddle (2)##625
-	step
+	step //6
 		goto 25.9,32.4
 		.talk Holaaru##18221
 		..accept Pool of Tears##9610
-	step
+	step //7
 		goto 47.1,38.8
-		.kill Noboru the Cudgel##5477|q 1392
-		.get Noboru's Cudgel##6196|q 1392
+		'Kill Noboru the Cudgel and get the quest from his Cudgel that drops
 		..accept Noboru the Cudgel##1392
-
-
-	step //153
-		'Go southeast to the Blasted Lands|goto Blasted Lands|noway|c
-	step //154
+	step //8
+		goto 70.6,56.6
+		.goal Search for the Temple of Atal'Hakkar|q 1448/1
+		.get 5 Atal'ai Artifact|q 9610/1
+	step //9
+		goto 25.9,32.4
+		.talk Holaaru##18221
+		..turnin Pool of Tears##9610
+	step //10
+		goto 26,31.4
+		.talk Magtoor##1776
+		..turnin Noboru the Cudgel##1392
+	step //11
+		'Go south to the Blasted Lands|goto Blasted Lands|noway|c
+	step //12
 		goto Blasted Lands,66.5,21.4
 		.talk Quartermaster Lungertz##5393
 		..turnin Supplies for Nethergarde##1395
-	step //155
+	step //13
 		goto 65.5,24.3
 		.talk Alexandra Constantine##8609
 		..fpath Nethergarde Keep
-	step //156
-		'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
-
-	step //176
-		'Hearth to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|use Hearthstone##6948|noway|c
-	step //177
-		goto 27.1,77.2
-		.talk Crank Fizzlebub##2498
-		..turnin Zanzil's Secret##621
-	step //178
-		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.2,4.1,0.5|noway|c
-	step //180
-		goto 38.2,4|n
-		.talk Nizzle##24366
-		..'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
-	step //183
-		'Ride the boat to Ratchet|goto The Barrens|noway|c
-	step //184
-		'Fly to Theramore|goto Dustwallow Marsh,67.5,50.3,9|noway|c
-	step //185
-		goto Dustwallow Marsh,67.7,51.7
+	step //13
+		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
+	step //14
+		goto 69.5,40.4
+		.talk Brohann Caskbelly##5384
+		..turnin In Search of The Temple##1448
+		..accept To The Hinterlands##1449
+	step //15
+		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
+	step //16
+		'Ride the boat to Theramore|goto Dustwallow Marsh,67.5,50.3,9|noway|c
+	step //17
+		goto 68.83,53.22
 		.talk Privateer Groy##2616
 		..turnin Akiris by the Bundle (2)##623
-	step //186
-		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
-	step //187
+	step //18
+		'Fly to Mudsprocket|goto Dustwallow Marsh,42.9,72.4,0.5|noway|c
+	step //19
+		goto 31.1,66.2
+		.' Click the Musty Scroll|tip A little white scroll on a small rock in the cave.
+		..turnin Cortello's Riddle (2)##625
+		..accept Cortello's Riddle (3)##626
+	step //20
+		'Go southeast to Mudsprocket and fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
+	step //21
 		goto Tanaris,52.5,28.5
 		.talk Chief Engineer Bilgewhizzle##7407
 		..accept Wastewander Justice##1690
 		.talk Spigot Operator Luglunket##7408
 		..accept Water Pouch Bounty##1707
-	step //188
-		home Gadgetzan
-	step //189
+	step //22
+		goto 52.4,26.9
+		.talk Curgle Cranklehop##7763
+		..accept Handle With Care##3022
+	step //23
 		goto 51.8,27
 		.' Click the Wanted Poster|tip Right in front of the huge cage door.
 		..accept WANTED: Andre Firebeard##2875
 		..accept WANTED: Caliph Scorpidsting##2781
-	step //190
+	step //24
 		goto 51.6,26.8
 		.talk Tran'rek##7876
 		..turnin Tran'rek##2864
-	step //191
-		'Go north to Thousand Needles|goto Thousand Needles|noway|c
-	step //192
-		goto Thousand Needles,78.1,77.1
-		.talk Fizzle Brassbolts##4454
-		..turnin News for Fizzle##1137
-	step //193
-		goto 80.2,75.9
-		.talk Pozzik##4630
-		..accept Keeping Pace##1190
-	step //194
-		goto 79.8,77
-		.talk Zamek##4709
-		.' He will create a diversion to distract Rizzle Brassbolts
-		.' After you talk to him, skip to the next step of the guide
-	step //195
-		goto 77.2,77.4
-		.' Click Rizzle's Unguarded Plans|tip Rizzle Brassbolts will run out of the house.  The plans look like a scroll laying on the ground inside a small house.
-		..turnin Keeping Pace##1190
-		..accept Rizzle's Schematics##1194
-	step //196
-		goto 80.2,75.9
-		.talk Pozzik##4630
-		..turnin Rizzle's Schematics##1194
-	step //197
-		'Go south to Tanaris|goto Tanaris|noway|c
-	step //198
+	step //25
 		goto 59.8,24.7
 		.kill 10 Wastewander Bandit|q 1690/1
 		.kill 10 Wastewander Thief|q 1690/2
 		.kill Wastewander mobs|n
 		.get 5 Wastewander Water Pouch|q 1707/1
 		.' You can find more Wastewander Bandits and Thieves at 62.8,29.4|n
-	step //199
+	step //26
+		goto 67,22.4
+		.talk Yeh'kinya##8579
+		..accept Screecher Spirits##3520
+	step //27
+		goto 66.6,22.3
+		.talk Haughty Modiste##15165
+		..accept Pirate Hats Ahoy!##8365
+	step //28
 		goto 67.1,23.9
 		.talk Stoley##7881
 		..turnin Stoley's Debt##2872
 		..accept Stoley's Shipment##2873
 		.talk Security Chief Bilgewhizzle##7882
 		..accept Southsea Shakedown##8366
-	step //200
-		goto 66.6,22.3
-		.talk Haughty Modiste##15165
-		..accept Pirate Hats Ahoy!##8365
-	step //201
-		goto 67,22.4
-		.talk Yeh'kinya##8579
-		..accept Screecher Spirits##3520
-	step //202
+	step //29
+		goto 52.5,28.5
+		.talk Chief Engineer Bilgewhizzle##7407
+		..turnin Wastewander Justice##1690
+		..accept More Wastewander Justice##1691
+		.talk Spigot Operator Luglunket##7408
+		..turnin Water Pouch Bounty##1707
+	step //30
 		goto 64.7,35.3
 		.from Caliph Scorpidsting##7847
 		.get Caliph Scorpidsting's Head|q 2781/1
-	step //203
+		.kill 8 Wastewander Rogue|q 1691/1
+		.kill 6 Wastewander Assassin|q 1691/2
+		.kill 10 Wastewander Shadow Mage|q 1691/3
+	step //31
+		goto 72.2,46.8
+		.' Click the Stolen Cargo
+		.get Stoley's Shipment|q 2873/1
+	step //32
+		goto 73.4,47.1
+		.from Andre Firebeard##7883
+		.get Firebeard's Head|q 2875/1
+	step //33
+		goto 74.3,46.4
+		.kill 10 Southsea Dock Worker|q 8366/3
+		.kill 10 Southsea Swashbuckler|q 8366/4
+	step //34
 		goto 70.4,42.7
 		.kill 10 Southsea Pirate|q 8366/1
 		.kill 10 Southsea Freebooter|q 8366/2
 		.kill Southsea Pirates|n
 		.get 20 Southsea Pirate Hat|q 8365/1
-	step //204
-		goto 72.2,46.8
-		.' Click the Stolen Cargo
-		.get Stoley's Shipment|q 2873/1
-	step //205
-		goto 73.4,47.1
-		.from Andre Firebeard##7883
-		.get Firebeard's Head|q 2875/1
-	step //206
-		goto 74.3,46.4
-		.kill 10 Southsea Dock Worker|q 8366/3
-		.kill 10 Southsea Swashbuckler|q 8366/4
-	step //207
-		ding 45
-
-
-	step //1
-		'Hearth to Gadgetzan|goto Tanaris,51.7,27.8,6|use Hearthstone##6948|noway|c
-	step //2
-		goto 52.5,28.5
-		.talk Chief Engineer Bilgewhizzle##7407
-		..turnin Wastewander Justice##1690
-		..accept More Wastewander Justice##1691
-		..turnin WANTED: Caliph Scorpidsting##2781
-		.talk Spigot Operator Luglunket##7408
-		..turnin Water Pouch Bounty##1707
-	step //3
-		goto 64.3,38.2
-		.kill 8 Wastewander Rogue|q 1691/1
-		.kill 6 Wastewander Assassin|q 1691/2
-		.kill 10 Wastewander Shadow Mage|q 1691/3
-	step //4
+	step //35
 		goto 67.1,23.9
 		.talk Stoley##7881
 		..turnin Stoley's Shipment##2873
@@ -4912,51 +4890,84 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		.talk Security Chief Bilgewhizzle##7882
 		..turnin Southsea Shakedown##8366
 		..turnin WANTED: Andre Firebeard##2875
-	step //5
+	step //36
 		goto 66.6,22.3
 		.talk Haughty Modiste##15165
 		..turnin Pirate Hats Ahoy!##8365
-	step //6
-		'Hearth to Gadgetzan|goto Tanaris,51.7,27.8,6|use Hearthstone##6948|noway|c
-	step //7
+	step //37
 		goto 52.5,28.5
 		.talk Chief Engineer Bilgewhizzle##7407
 		..turnin More Wastewander Justice##1691
-	step //8
-		goto 52.4,26.9
-		.talk Curgle Cranklehop##7763
-		..accept Handle With Care##3022
-	step //9
-		'Fly to Feathermoon Stronghold|goto Feralas,30.3,43.3,0.5|noway|c
-	step //10
+		..turnin WANTED: Caliph Scorpidsting##2781
+	step //38
+		ding 46
+	step //39
+		'Fly to Thalanaar|goto Feralas,89.5,45.8,0.3|noway|c|tip On the border of Thousand Needles and Feralas, if you didn't remember.
+	step //40
+		goto 65.6,46.9|n
+		.' The path up to the Moonweavers starts here hidden behind the tree|goto Feralas,65.6,46.9,0.3|noway|c
+	step //41
+		goto 65.9,45.6|tip Clear out the Tauren near the cage before starting this quest.
+		.talk Kindal Moonweaver##7956
+		..accept Freedom for All Creatures##2969
+	step //42
+		goto 66.7,46.8
+		.' Click the Cage Door on the huge cage
+		.' Free the Sprite Darters|tip The Grimtotems will attack the Sprite Darters, you have try to protect them.
+		.' Save at least 6 Sprite Darters from capture|goal Save at least 6 Sprite Darters from capture|q 2969/1
+	step //43
+		goto 65.9,45.6
+		.talk Kindal Moonweaver##7956
+		..turnin Freedom for All Creatures##2969
+		.talk Jer'kai Moonweaver##7957
+		..accept Doling Justice (1)##2970
+	step //44
+		goto 67.5,46.4
+		.kill 12 Grimtotem Naturalist|q 2970/1
+		.kill 10 Grimtotem Raider|q 2970/2
+		.kill 6 Grimtotem Shaman|q 2970/3
+	step //45
+		goto 65.9,45.6
+		.talk Jer'kai Moonweaver##7957
+		..turnin Doling Justice (1)##2970
+		..accept Doling Justice (2)##2972
+	step //46
+		goto Feralas,43.5,42.8|n
+		.' Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,2|noway|c
+	step //47
 		goto Feralas,30.6,42.7
 		.talk Pratt McGrubben##7852
 		..accept The Mark of Quality##2821
-	step //11
-		home Feathermoon Stronghold
-	step //12
+	step //48
+		goto 30.2,43.2
+		.talk Fyldren Moonfeather##8019
+		..fpath Feathermoon Stronghold
+	step //49
 		goto 30.3,46.2
 		.talk Shandris Feathermoon##3936
 		..accept The Ruins of Solarsal##2866
 		.talk Latronicus Moonspear##7877
 		..accept The Missing Courier (1)##4124
-	step //13
+	step //50
 		goto 31.8,45.6
 		.talk Troyas Moonbreeze##7764
 		..accept In Search of Knowledge##2939
 		.talk Angelas Moonbreeze##7900
 		..accept The High Wilderness##2982
-	step //14
+		..accept The Sunken Temple##3445
+	step //51
 		goto 31.9,45.1
 		.talk Ginro Hearthkindle##7880
 		..turnin The Missing Courier (1)##4124
 		..accept The Missing Courier (2)##4125
-	step //15
+	step //52
+		home Feathermoon Stronghold
+	step //53
 		goto 26.3,52.3
 		.' Click the Solarsal Gazebo|tip It's a big dark colored gazebo.
 		..turnin The Ruins of Solarsal##2866
 		..accept Return to Feathermoon Stronghold##2867
-	step //16
+	step //54
 		goto 30.3,46.2
 		.talk Shandris Feathermoon##3936
 		..turnin Return to Feathermoon Stronghold##2867
@@ -4964,116 +4975,97 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		.talk Latronicus Moonspear##7877
 		..turnin Against the Hatecrest (1)##3130
 		..accept Against the Hatecrest (2)##2869
-	step //17
+	step //55
 		goto 27.2,52.2
 		.kill Hatecrest nagas|n
 		.get 10 Hatecrest Naga Scale|q 2869/1
-	step //18
+	step //56
 		goto 30.3,46.2
 		.talk Latronicus Moonspear##7877
 		..turnin Against the Hatecrest (2)##2869
 		..accept Against Lord Shalzaru##2870
-	step //19
+	step //57
 		goto 25.5,64.5|n
 		.' The path down to 'Against Lord Shalzaru' starts here
 		.' Follow the path into the cave|goto Feralas,25.5,64.5,0.5|noway|c
-	step //20
+	step //58
 		goto 28.5,70.7
 		.from Lord Shalzaru##8136
 		.get Mysterious Relic|q 2870/1
-	step //21
+	step //59
 		'Go outside the cave to 30.3,46.2|goto 30.3,46.2
 		.talk Latronicus Moonspear##7877
 		..turnin Against Lord Shalzaru##2870
 		..accept Delivering the Relic##2871
-	step //22
+	step //60
 		goto 30.1,45.1
 		.talk Vestia Moonspear##7878
 		..turnin Delivering the Relic##2871
-	step //23
+	step //61
 		goto 31.0,39.9|n
 		'Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c
-	step //24
+	step //62
 		goto 46.6,48.2
 		.kill 3 Rogue Vale Screechers|n
 		.' Use Yeh'kinya's Bramble on their corpses|use Yeh'kinya's Bramble##10699
 		.' Talk to their spirits that appear to collect their spirits
 		.' Collect 3 Screecher Spirits|goal 3 Screecher Spirits Collected|q 3520/1
-	step //25
+	step //63
 		goto 45.5,65
 		.' Click the Wrecked Row Boat|tip It's underwater and hard to see.
 		..turnin The Missing Courier (2)##4125
 		..accept Boat Wreckage##4127
-	step //26
+	step //64
 		goto 43.5,42.7|n
 		.' Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,0.5|noway|c
-	step //27
+	step //65
 		goto 31.9,45.1
 		.talk Ginro Hearthkindle##7880
 		..turnin Boat Wreckage##4127
 		..accept The Knife Revealed##4129
-	step //28
+	step //66
 		goto 32.4,43.8
 		.talk Quintis Jonespyre##7879
 		..turnin The Knife Revealed##4129
 		..accept Psychometric Reading##4130
-	step //29
+	step //67
 		goto 31.9,45.1
 		.talk Ginro Hearthkindle##7880
 		..turnin Psychometric Reading##4130
 		..accept The Woodpaw Gnolls##4131
-	step //30
+	step //68
 		goto 31.0,39.9|n
 		'Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c
-	step //31
+	step //69
 		goto 55.5,54.8
 		.kill yetis|n
 		.get 10 Thick Yeti Hide|q 2821/1
-	step //32
-		ding 46
-	step //33
+	step //70
+		'If you have the OOX-22/FE Distress Beacon, now is the time to do this escort, otherwise skip this part|goto 53.4,55.7
+		.accept Find OOX-22/FE!##2766
+		.talk Homing Robot OOX-22/FE##7807
+		..turnin Find OOX-22/FE!##2766
+		..accept Rescue OOX-22/FE!##2767
+	step //71
+		goal Escort OOX-22/FE to safety|q 2767/1
+	step //72
+		goto 55.9,76
+		.collect 1 Hippogryph Egg##8564|q 2741/1
+	step //73
 		goto 57.9,66.9
 		.kill 8 Gordunni Shaman|q 2982/2
-	step //34
+	step //74
 		goto 60.4,58.8
 		.kill 8 Gordunni Warlock|q 2982/1
 		.kill 8 Gordunni Brute|q 2982/3
-	step //35
-		goto 65.6,46.9|n
-		.' The path up to the Moonweavers starts here hidden behind the tree|goto Feralas,65.6,46.9,0.3|noway|c
-	step //36
-		goto 65.9,45.6
-		.talk Kindal Moonweaver##7956
-		..accept Freedom for All Creatures##2969
-	step //37
-		goto 66.7,46.8
-		.' Click the Cage Door on the huge cage
-		.' Free the Sprite Darters|tip The Grimtotems will attack the Sprite Darters, you have try to protect them.
-		.' Save at least 6 Sprite Darters from capture|goal Save at least 6 Sprite Darters from capture|q 2969/1
-	step //38
-		goto 65.9,45.6
-		.talk Kindal Moonweaver##7956
-		..turnin Freedom for All Creatures##2969
-		.talk Jer'kai Moonweaver##7957
-		..accept Doling Justice (1)##2970
-	step //39
-		goto 67.5,46.4
-		.kill 12 Grimtotem Naturalist|q 2970/1
-		.kill 10 Grimtotem Raider|q 2970/2
-		.kill 6 Grimtotem Shaman|q 2970/3
-	step //40
-		goto 65.9,45.6
-		.talk Jer'kai Moonweaver##7957
-		..turnin Doling Justice (1)##2970
-		..accept Doling Justice (2)##2972
-	step //41
+	step //75
 		goto 73.3,56.3
 		.' Click the Large Leather Backpacks|tip They are 2 black bags hanging together at the bas of the huge tree.
 		..turnin The Woodpaw Gnolls##4131
 		..accept The Writhing Deep##4135
 		.' Click the Undelivered Parcel|use Undelivered Parcel##11463
 		..accept Thalanaar Delivery##4281
-	step //42
+	step //76
 		goto 73.5,63.1|n
 		Follow the path all the way to the bottom
 		.' Enter the tunnel heading southwest
@@ -5083,286 +5075,302 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		..accept Freed from the Hive##4265
 		.' Stay around until Raschal talks and disappears
 		.' Free Raschal|goal Free Raschal.|q 4265/1
-	step //43
+	step //77
 		'Hearth to Feathermoon Stronghold|goto Feralas,31.0,44.0,5|use Hearthstone##6948|noway|c
-	step //44
+	step //78
 		goto 30.6,42.7
 		.talk Pratt McGrubben##7852
 		..turnin The Mark of Quality##2821
 		..accept Improved Quality##7733
-	step //45
+	step //79
 		goto 31.8,45.6
 		.talk Angelas Moonbreeze##7900
 		..turnin The High Wilderness##2982
-	step //46
+	step //80
 		goto 31.9,45.1
 		.talk Ginro Hearthkindle##7880
 		..turnin Freed from the Hive##4265
 		..accept A Hero's Welcome##4266
-	step //47
+	step //81
 		goto 30.3,46.2
 		.talk Shandris Feathermoon##3936
 		..turnin A Hero's Welcome##4266
 		..accept Rise of the Silithid##4267
-	step //48
-		'Fly to Thalanaar|goto Feralas,89.5,45.8,0.3|noway|c|tip On the border of Thousand Needles and Feralas, if you didn't remember.
-	step //49
-		goto 89.6,46.6
-		.talk Falfindel Waywarder##4048
-		..turnin Thalanaar Delivery##4281
-	step //50
+	step //82
+		'Fly to Auberdine|goto Darkshore,36.4,45.6,0.3|noway|c|tip You're going to Rut'theran, fly directly if you can and skip some steps.
+	step //83
+		'Ride the boat to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
+	step //84
+		goto Teldrassil,58.4,94
+		.talk Vesprystus##3838
+		..fpath Rut'theran Village
+		only Gnome,Human,Dwarf,Draenei
+	step //85
 		'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
-	step //51
+	step //86
 		goto Teldrassil,55.5,92
 		.talk Erelas Ambersky##7916
 		..turnin Handle With Care##3022
 		..accept Favored of Elune?##3661
-	step //52
+	step //87
 		goto 55.5,92
 		.talk Daryn Lightwind##7907
 		..turnin In Search of Knowledge##2939
-	step //53
+	step //88
 		goto 55.2,91.5
 		.' Click the green book on the floor, next to a bookshelf, named Feralas: A History
 		..accept Feralas: A History##2940
-	step //54
+	step //89
 		goto 55.4,92.2
 		.talk Daryn Lightwind##7907
 		..turnin Feralas: A History##2940
 		..accept The Borrower##2941
-	step //55
-		'Go to Darnassus|goto Darnassus|noway|c
-	step //56
+	step //90
+		'Go through the big pink portal to Darnassus|goto Darnassus|noway|c
+	step //91
 		goto Darnassus,41.8,85.6
 		.talk Gracina Spiritmight##7740
 		..turnin Rise of the Silithid##4267
-	step //57
-		goto 38.3,80.9
+	step //92
+		goto 39.1,81.6|tip Look up this quest and the following questline on a database to get a cute little sprite darter as pet. The rest of this chain is not included in this guide.
 		.talk Tyrande Whisperwind##7999
 		..turnin Doling Justice (2)##2972
-	step //58
-		'Go to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
-	step //59
+	step //93
+		'Fly to Thalanaar|goto Feralas,89.5,45.8,0.3|noway|c|tip On the border of Thousand Needles and Feralas, if you didn't remember.
+	step //94
+		goto 89.6,46.6
+		.talk Falfindel Waywarder##4048
+		..turnin Thalanaar Delivery##4281
+	step //95
 		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
-	step //60
+	step //96
 		goto Tanaris,52.4,26.9
 		.talk Curgle Cranklehop##7763
 		..turnin The Borrower##2941
 		..accept The Super Snapper FX##2944
-	step //61
+	step //97
+		goto 52.4,27
+		.accept The Super Egg-O-Matic##2741
+		.turnin The Super Egg-O-Matic##2741
+	step //98
 		'Fly to Ratchet|goto The Barrens,63.0,38.1,2|noway|c
-	step //62
+	step //99
 		'Ride the boat to Booty Bay|goto Stranglethorn Vale|noway|c
-	step //63
-		goto Stranglethorn Vale,27.8,77.1
+	step //100
+		goto 27.8,77.1
 		.talk "Sea Wolf" MacKinley##2501
 		..turnin Deliver to MacKinley##2874
-	step //64
-		'Fly to Stormwind|goto Stormwind City|noway|c
-	step //65
-		'Buy 2 Elixirs of Fortitude from the Auction House
-		.buy 2 Elixir of Fortitude|q 3842/1
-	step //66
+		..turnin Cracking Maury's Foot##613
+	step //101
+		'Fly to Stormwind and train your skills|goto Stormwind City|noway|c
+	step //102
 		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
-	step //67
+	step //103
 		goto Hillsbrad Foothills,84.9,31.8|n
 		.' The path to the Hinterlands starts here|goto Hillsbrad Foothills,84.9,31.8,1|noway|c
-	step //68
+	step //104
 		'Go northeast to the Hinterlands|goto The Hinterlands|noway|c
-	step //69
+	step //105
+		goto 11.8,46.8
+		.talk Falstad Wildhammer##5635
+		..turnin To The Hinterlands##1449
+		..accept Gryphon Master Talonaxe##1450
+	step //106
 		goto The Hinterlands,11.1,46.2
 		.talk Guthrum Thunderfist##8018
 		..fpath Aerie Peak
-	step //70
+	step //107
 		goto 9.8,44.5
 		.talk Gryphon Master Talonaxe##5636
 		..accept Witherbark Cages##2988
-	step //71
+		..turnin Gryphon Master Talonaxe##1450
+	step //108
 		goto 14.8,44.6
 		.talk Fraggar Thundermantle##7884
 		..accept Skulk Rock Clean-up##2877
 		..accept Troll Necklace Bounty##2880
-	step //72
+	step //109
 		goto 13.8,41.7
 		.talk Innkeeper Thulfram##7744
 		..home Aerie Peak
-	step //73
+	step //110
 		goto 15.1,47.2
 		.talk Ambassador Rualeth##17223
 		..accept Featherbeard's Endorsement##9469
 		..accept A Gesture of Goodwill##9470
 		..accept Preying on the Predators##9471
-	step //74
+	step //111
 		goto 13.4,55.2
 		.' Click Featherbeard's Journal|tip Inside the little house, downstairs, laying right in front of the fireplace.
 		..turnin Featherbeard's Endorsement##9469
 		..accept In Pursuit of Featherbeard##9476
-	step //75
+	step //112
 		goto 20.5,52.7
 		.kill 10 Mangy Silvermane|q 9471/1
-	step //76
+	step //113
 		goto 22.9,54.8
 		.' Click Wildkin Feathers|tip They look like big brown and white feathers on the ground here and around Quel'Danil Lodge.
 		.get 15 Wildkin Feather|q 3661/1
-	step //77
-		goto 24.8,55.4
-		.kill trolls|n
-		.get 5 Troll Tribal Necklace|q 2880/1
-	step //78
+	step //114
 		goto 23.2,58.8
 		.' Click the First Witherbark Cage to check it|goal Check First Cage|q 2988/1
 		.' Click the Second Witherbark Cage to check it|goal Check Second Cage|q 2988/2
-	step //79
+	step //115
+		goto 24.8,55.4
+		.kill trolls|n
+		.get 5 Troll Tribal Necklace|q 2880/1
+	step //116
 		goto 24.6,65.6
 		.kill Tcha'kaz|q 9470/2|tip Inside the cave.
 		.kill Witch Doctor Mai'jin|q 9470/1|tip Inside the cave.
-	step //80
+	step //117
 		goto 27.1,66.5
 		.kill 5 Silvermane Wolf|q 9471/2
-	step //81
-		goto 32.1,57.3
-		.' Click the Third Witherbark Cage to check it|goal Check Third Cage|q 2988/3
-	step //82
-		goto 48.2,41.7
-		.kill 10 Green Sludge|q 2877/1
-		.kill 10 Jade Ooze|q 2877/2
-	step //83
-		ding 47
-	step //84
-		goto 71.5,65.1|n
-		.' The path down to Gammerita starts here|goto The Hinterlands,71.5,65.1,0.3|noway|c
-	step //85
-		goto 76.9,64.9
-		.' Use your Super Snapper FX on Gammerita to get a snapshot of her|q 2944/1|use Super Snapper FX##9328|tip You do not need to fight her, just run away.  I found her here, but she wanders around on this beach, so you may need to search this beach for a little bit.
-	step //86
-		goto 78.8,63.4
-		.' Click the little blue bottles of Pupellyverbos Port
-		.get 12 Pupellyverbos Port|q 580/1
-	step //87
-		'Hearth to Aerie Peak|goto The Hinterlands,13.9,42.1,0.5|use Hearthstone##6948|noway|c
-	step //88
-		goto 14.8,44.6
-		.talk Fraggar Thundermantle##7884
-		..turnin Skulk Rock Clean-up##2877
-		..turnin Troll Necklace Bounty##2880
-	step //89
-		goto 15.1,47.2
-		.talk Ambassador Rualeth##17223
-		..turnin A Gesture of Goodwill##9470
-		..turnin Preying on the Predators##9471
-	step //90
-		goto 9.8,44.5
-		.talk Gryphon Master Talonaxe##5636
-		..turnin Witherbark Cages##2988
-		..accept The Altar of Zul##2989
-	step //91
+	step //118
 		goto 37.2,71.5
 		.' Click Featherbeard's Remains at the top of the temple, up the stairs
 		..turnin In Pursuit of Featherbeard##9476
 		..accept Reclaiming the Eggs##9475
-	step //92
+	step //119
 		goto 34.1,72.9
 		.' Click the Gryphon Eggs|tip They look like medium sized white eggs with blue spots on them.
 		.get 5 Gryphon Egg|q 9475/1
-	step //93
-		goto 48.3,67.6
-		.' Search the Altar of Zul|q 2989/1|tip Run up the stairs of the temple towards this spot to Search the Altar of Zul.  There are a bunch of mobs at the top, so run around at the top of the temple and once you complete the quest, run away as fast as you can.
-	step //94
+	step //120
+		goto 32.1,57.3
+		.' Click the Third Witherbark Cage to check it|goal Check Third Cage|q 2988/3
+	step //121
+		goto 48.2,41.7
+		.kill 10 Green Sludge|q 2877/1
+		.kill 10 Jade Ooze|q 2877/2
+	step //122
+		goto 22.9,54.8
+		.' Last call to collect all Wildkin feathers, don't head further east before you're done.
+		.get 15 Wildkin Feather|q 3661/1
+	step //123
+		'If you have the OOX-09/HL distress beacon, now is the time to do this escort, otherwise skip this part|goto 49.4,37.7
+		.accept Find OOX-09/HL!##485
+		.talk OOX-09/HL##7806
+		.turnin Find OOX-09/HL!##485
+		.accept Rescue OOX-09/HL!##836
+	step //124
+		goal Escort OOX-09/HL to safety|q 836/1
+	step //125
+		goto 71.5,65.1|n
+		.' The path down to Gammerita starts here|goto The Hinterlands,71.5,65.1,0.3|noway|c
+	step //126
+		goto 76.9,64.9
+		.' Use your Super Snapper FX on Gammerita to get a snapshot of her|q 2944/1|use Super Snapper FX##9328|tip You do not need to fight her, just run away.  I found her here, but she wanders around on this beach, so you may need to search this beach for a little bit.
+	step //127
+		goto 78.8,63.4
+		.' Click the little blue bottles of Pupellyverbos Port
+		.get 12 Pupellyverbos Port|q 580/1
+	step //128
+		goto 80.8,46.8
+		.turnin Cortello's Riddle##626
+	step //129
+		'Hearth to Aerie Peak|goto The Hinterlands,13.9,42.1,0.5|use Hearthstone##6948|noway|c
+	step //130
+		goto 14.8,44.6
+		.talk Fraggar Thundermantle##7884
+		..turnin Skulk Rock Clean-up##2877
+		..turnin Troll Necklace Bounty##2880
+	step //131
 		goto 15.1,47.2
 		.talk Ambassador Rualeth##17223
+		..turnin A Gesture of Goodwill##9470
+		..turnin Preying on the Predators##9471
 		..turnin Reclaiming the Eggs##9475
-	step //95
+	step //132
 		goto 9.8,44.5
 		.talk Gryphon Master Talonaxe##5636
-		..turnin The Altar of Zul##2989
-		..accept Thadius Grimshade##2990
-	step //96
+		..turnin Witherbark Cages##2988
+	step //133
+		ding 48
+	step //134
 		'Fly to Stormwind|goto Stormwind City|noway|c
-	step //97
+	step //135
 		goto Stormwind City,22.6,56.1|n
 		.'Ride the boat to Auberdine|goto Darkshore,32.4,43.7,1|noway|c
-	step //98
+	step //136
 		'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
-	step //99
+	step //137
 		goto Teldrassil,55.5,92
 		.talk Erelas Ambersky##7916
 		..turnin Favored of Elune?##3661
-	step //100
+	step //138
 		goto 55.4,92.2
 		.talk Daryn Lightwind##7907
 		..turnin The Super Snapper FX##2944
 		..accept Return to Troyas##2943
-	step //101
+	step //139
 		'Fly to Feathermoon Stronghold|goto Feralas,30.3,43.3,0.5|noway|c
-	step //102
+	step //140
 		home Feathermoon Stronghold
-	step //103
+	step //141
 		goto 31.8,45.6
 		.talk Troyas Moonbreeze##7764
 		..turnin Return to Troyas##2943
 		..accept The Stave of Equinex##2879
-		.talk Angelas Moonbreeze##7900
-		..accept The Sunken Temple##3445
-	step //104
+	step //142
 		goto 31.0,39.9|n
 		'Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c
-	step //105
+	step //143
 		goto 44.8,43.4
 		.talk Zorbin Fandazzle##14637
 		..accept Zapped Giants##7003
 		..accept Fuel for the Zapping##7721
-	step //106
+	step //144
 		goto 44.8,47.3
 		.' Use Zorbin's Ultra-Shrinker on giants|use Zorbin's Ultra-Shrinker##18904
 		.kill the shrunken giants|n
 		.get 15 Miniaturization Residue|q 7003/1
 		.kill water elementals|n
 		.get 10 Water Elemental Core|q 7721/1
-	step //107
+	step //145
 		goto 44.8,43.4
 		.talk Zorbin Fandazzle##14637
 		..turnin Zapped Giants##7003
 		..turnin Fuel for the Zapping##7721
-	step //108
+	step //146
 		goto 51.5,32.4|n
 		.' The path up to the yeti cave starts here|goto Feralas,51.5,32.4,0.3|noway|c
-	step //109
+	step //147
 		goto 52.2,31.6
 		.kill Rage Scar Yetis|n
 		.get 10 Rage Scar Yeti Hide|q 7733/1
-	step //110
+	step //148
 		goto 42.4,22
 		.talk Rockbiter##7765
 		..accept The Giant Guardian##2844
-	step //111
+	step //149
 		goto 38.5,15.8
 		.' Click the Flame of Byltan|tip It's a purple flame in the dark gazeebo.
 		.collect 1 Byltan Essence##9258|q 2879/1
-	step //112
+	step //150
 		goto 40.3,11|n
 		.' The path up to the Flame of Samha starts here
 		.' Jump on the broken pillars to get up to the Flame of Samha|goto Feralas,40.3,11,0.1|noway|c
-	step //113
+	step //151
 		goto 40.5,12.7
 		.' Click the Flame of Samha|tip On top of the white building.
 		.collect 1 Samha Essence##9257|q 2879/1
-	step //114
+	step //152
 		goto 39.9,9.4
 		.' Click the Flame of Imbel|tip In the middle of 3 rocks.
 		.collect 1 Imbel Essence##9256|q 2879/1
-	step //115
+	step //153
 		goto 37.7,12.2
 		.' Click the Flame of Lahassa|tip It's a purple flame in a dark gazeebo.
 		.collect 1 Lahassa Essence##9255|q 2879/1
-	step //116
+	step //154
 		goto 38.8,13.2
 		.' Use Troyas' Stave next to the Equinex Monolith|use Troyas' Stave##9263|tip On a white platform, looks like a Japanese building.
 		.' Click the Equinex Monolith
 		..turnin The Stave of Equinex##2879
 		..accept The Morrow Stone##2942
-	step //117
+	step //155
 		ding 48
-	step //118
+	step //156
 		goto 38.2,10.3
 		.talk Shay Leafrunner##7774
 		..turnin The Giant Guardian##2844
@@ -5371,163 +5379,194 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		.collect 1 Shay's Bell##9189|q 2845/2
 		.' Take Shay Leafrunner to Rockbiter's camp at 42.4,22|goal Take Shay Leafrunner to Rockbiter's camp|q 2845/1
 		..'When she runs off, use Shay's Bell to call her back|use Shay's Bell##9189
-	step //119
+	step //157
 		goto 42.4,22
 		.talk Rockbiter##7765
 		..turnin Wandering Shay##2845
-	step //120
-		goto 65.9,45.6
-		.talk Kindal Moonweaver##7956
-		..accept An Orphan Looking For a Home##3841
-	step //121
+	step //158
 		'Hearth to Feathermoon Stronghold|goto Feralas,31.0,44.0,5|use Hearthstone##6948|noway|c
-	step //122
+	step //159
 		goto 30.6,42.7
 		.talk Pratt McGrubben##7852
 		..turnin Improved Quality##7733
-	step //123
+	step //160
 		goto 31.8,45.6
 		.talk Troyas Moonbreeze##7764
 		..turnin The Morrow Stone##2942
-	step //124
+	step //161
 		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,0.1|noway|c
-	step //125
+	step //162
 		goto Tanaris,51.8,28.7
 		.talk Marin Noggenfogger##7564
 		..accept The Thirsty Goblin##2605
-	step //126
+	step //163
 		home Gadgetzan
-	step //127
+	step //164
 		goto 52.8,27.4
 		.talk Andi Lynn##11758
 		..accept The Dunemaul Compound##5863
-	step //128
+	step //165
 		goto 51.6,26.8
 		.talk Tran'rek##7876
 		..accept Thistleshrub Valley##3362
-	step //129
+		..accept Super Sticky##4504
+	step //166
 		goto 50.2,27.5
 		.talk Senior Surveyor Fizzledowser##7724
 		..accept Gadgetzan Water Survey##992
-	step //130
+	step //167
 		goto 38.6,29.4
 		.' Use your Untapped Dowsing Widget near the water|use Untapped Dowsing Widget##8584|tip Run away from the insects that spawn.
 		.get Tapped Dowsing Widget|q 992/1
-	step //131
+	step //168
 		goto 50.2,27.5
 		.talk Senior Surveyor Fizzledowser##7724
 		..turnin Gadgetzan Water Survey##992
 		..accept Noxious Lair Investigation##82
-	step //132
+	step //169
 		goto 52.7,45.9
 		.talk Marvon Rivetseeker##7771
 		..turnin The Sunken Temple##3445
 		..accept The Stone Circle##3444
 		..accept Gahz'ridian##3161
-	step //133
-		goto 40.8,55
-		.kill 10 Dunemaul Brute|q 5863/1
-		.kill 10 Dunemaul Enforcer|q 5863/2
-	step //134
-		goto 41.5,57.8
-		.kill Gor'marok the Ravager|q 5863/3|tip Standing inside the cave.
-	step //135
+	step //170
 		goto 34.8,51
 		.kill Centipaar insects|n
 		.get 5 Centipaar Insect Parts|q 82/1
-	step //136
+	step //171
+		goto 41.5,57.8
+		.kill Gor'marok the Ravager|q 5863/3|tip Standing inside the cave.
+	step //172
+		goto 40.8,55
+		.kill 10 Dunemaul Brute|q 5863/1
+		.kill 10 Dunemaul Enforcer|q 5863/2
+	step //173
+		goto 38.5,72.6
+		.' Click Gahz'ridian Ornaments|tip They look like white bumps on the ground.
+		.get 30 Gahz'ridian Ornament|q 3161/1
+	step //174
 		goto 28.5,65.3
 		.kill 8 Gnarled Thistleshrub|q 3362/1
 		.kill 8 Thistleshrub Rootshaper|q 3362/2
 		.kill Thistleshrub Dew Collectors|n
 		.get Laden Dew Gland|q 2605/1
-	step //137
-		goto 38.5,72.6
-		.' Click Gahz'ridian Ornaments|tip They look like white bumps on the ground.
-		.get 30 Gahz'ridian Ornament|q 3161/1
-	step //138
+	step //175
+		goto 31.8,74.1
+		.talk Tooga##5955
+		..accept Tooga's Quest##1560
+	step //176
 		goto 52.7,45.9
 		.talk Marvon Rivetseeker##7771
 		..turnin Gahz'ridian##3161
-	step //139
+	step //177
+		goto 66.6,25.6
+		.goal Lead Tooga to Torta|q 1560/1
+	step //178
+		.talk Torta##6015
+		..turnin Tooga's Quest##1560
+	step //179
 		goto 67,24
 		.talk Yorba Screwspigot##9706
 		..accept Yuka Screwspigot##4324
-	step //140
+	step //180
 		goto 67,22.4
 		.talk Yeh'kinya##8579
 		..turnin Screecher Spirits##3520
-	step //141
-		'Hearth to Gadgetzan|goto Tanaris,51.7,27.8,6|use Hearthstone##6948|noway|c
-	step //142
+	step //181
+		goto 51.6,26.8
+		.talk Tran'rek##7876
+		..turnin Thistleshrub Valley##3362
+	step //182
+		goto 52.8,27.4
+		.talk Andi Lynn##11758
+		..turnin The Dunemaul Compound##5863
+	step //183
 		goto 51.8,28.7
 		.talk Marin Noggenfogger##7564
 		..turnin The Thirsty Goblin##2605
 		..accept In Good Taste##2606
-	step //143
-		goto 52.8,27.4
-		.talk Andi Lynn##11758
-		..turnin The Dunemaul Compound##5863
-	step //144
-		goto 51.6,26.8
-		.talk Tran'rek##7876
-		..turnin Thistleshrub Valley##3362
-	step //145
+	step //184
 		goto 51.1,26.9
 		.talk Sprinkle##7583
 		..turnin In Good Taste##2606
-		..accept Sprinkle's Secret Ingredient##2641
-	step //146
+	step //185
 		goto 50.9,27
 		.talk Alchemist Pestlezugg##5594
 		..turnin Noxious Lair Investigation##82
-	step //147
+	step //186
 		goto 50.2,27.5
 		.talk Senior Surveyor Fizzledowser##7724
 		..accept The Scrimshank Redemption##10
-	step //148
+	step //187
 		goto 56.0,70.2|n
 		.' The path down to 'The Scrimshank Redemption' starts here|goto Tanaris,56.0,70.2,0.3|noway|c
-	step //149
+	step //188
 		goto 55.8,68.9|n
 		.' Enter this tunnel heading north|goto Tanaris,55.8,68.9,0.3|noway|c
-	step //150
+	step //189
 		goto 56,71.2
 		.' Take a right at the fork in the path into a big round room
 		.' Enter the tunnel on the other side of the room
 		.' Take a right at the fork into a squarish big room
 		.' Click Scrimshank's Surveying Gear|tip It's a small box with some levers on it in the corner of the room.
 		.get Scrimshank's Surveying Gear|q 10/1
-	step //151
+	step //190
+		'If you have the OOX-17/TN distress beacon, now is the time to do this escort, otherwise skip this part|goto 60.2,64.7
+		.accept Find OOX-17/TN!##351
+		.talk Homing Robot OOX-17/TN##7784
+		..turnin Find OOX-17/TN!##351
+		..accept Rescue OOX-17/TN!##648
+	step //191
+		goal Escort OOX-17/TN to safety|q 648/1
+	step //192
 		'Go outside to 50.2,27.5|goto 50.2,27.5
 		.talk Senior Surveyor Fizzledowser##7724
 		..turnin The Scrimshank Redemption##10
 		..accept Insect Part Analysis (1)##110
-	step //152
+	step //193
 		goto 50.9,27
 		.talk Alchemist Pestlezugg##5594
 		..turnin Insect Part Analysis (1)##110
 		..accept Insect Part Analysis (2)##113
-	step //153
+	step //194
 		goto 50.2,27.5
 		.talk Senior Surveyor Fizzledowser##7724
 		..turnin Insect Part Analysis (2)##113
 		..accept Rise of the Silithid##162
-	step //154
-		ding 49
-	step //155
-		'Make sure you have your 2 Elixirs of Fortitude in your bags|collect 2 Elixir of Fortitude|q 3842/1|future
-	step //156
-		'Go north to Thousand Needles|goto Thousand Needles|noway|c
-	step //157
-		goto Thousand Needles,78.3,74.7
-		.talk Quentin##9238
-		..turnin An Orphan Looking For a Home##3841
-		..accept A Short Incubation##3842
-		..turnin A Short Incubation##3842
-		..accept The Newest Member of the Family##3843
-	step //158
-		'Go south to Tanaris|goto Tanaris|noway|c
+	step //195
+		ding 50
+	step //196
+		'Fly to Ratchet|goto The Barrens,63.0,38.1,2|noway|c
+	step //197
+		goto The Barrens,62.5,38.5
+		.' Click the little brown box outside the house on the ground|tip It's a small wooden chest to the right of the doorway to a small house.
+		.get Stone Circle|q 3444/1
+	step //198
+		goto 62.4,38.7
+		.talk Liv Rizzlefix##8496
+		..accept Volcanic Activity##4502
+	step //199
+		'Ride the boat to Booty Bay|goto Stranglethorn Vale|noway|c
+	step //200
+		goto 27.1,77.5
+		.talk Whiskey Slim##2491
+		..turnin Whiskey Slim's Lost Grog##580
+	step //201
+		goto 28.4,76.4
+		.talk Oglethorpe Obnoticus##7406
+		..turnin Rescue OOX-09/HL!##836
+		..turnin Rescue OOX-17/TN!##648
+		..turnin Rescue OOX-22/FE!##2767
+		..accept An OOX of Your Own##3721
+		..turnin An OOX of Your Own##3721
+]])
+ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Levels (50-55)",[[
+	author support@zygorguides.com
+	next Zygor's Alliance Leveling Guides\\Levels (55-60)
+	startlevel 50
+
+
+
 	step //159
 		'Fly to Theramore|goto Dustwallow Marsh,67.5,50.3,9|noway|c
 	step //160
@@ -5704,13 +5743,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		..turnin Snickerfang Jowls##2581
 		..turnin A Boar's Vitality##2583
 		..turnin The Decisive Striker##2585
-	step //201
-		ding 50
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Levels (50-55)",[[
-	author support@zygorguides.com
-	next Zygor's Alliance Leveling Guides\\Levels (55-60)
-	startlevel 50
 	step //1
 		goto Blasted Lands,67,19.4
 		.talk Thadius Grimshade##8022

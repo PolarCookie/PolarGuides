@@ -28,11 +28,11 @@ Alliance 35-39 done
 Alliance 40-44 done  
 
 guide todo:  
-forgot to add ding 34 and 35  
+forgot to add ding 34,35,47,49  
 maybe include orb of orahil questline for warlocks during desolace part? can pick up the quests after getting felhunter and combine with Reagents for Reclaimers inc part 3 and 4  
 Need Angus Stern's prequest to Theramore somehow, The guide takes you to the inn he is in, but worried it's to early w.r.t level reqs. Anyone testing comment on this when you pick up James Hyal in Stormwind!!! Seach for "TODO: MORGAN STERN" in the guide  
 Missing Diplomat finale should be instant?
-
+An OOX of Your Own should be instant?
 
 I'm running through the guide on a personal trinity server.  
 keybinded macros  
