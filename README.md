@@ -32,6 +32,7 @@ maybe include orb of orahil questline for warlocks during desolace part? can pic
 Need Angus Stern's prequest to Theramore somehow, The guide takes you to the inn he is in, but worried it's to early w.r.t level reqs. Anyone testing comment on this when you pick up James Hyal in Stormwind!!! Seach for "TODO: MORGAN STERN" in the guide  
 Missing Diplomat finale should be instant?
 
+
 I'm running through the guide on a personal trinity server.  
 keybinded macros  
 1 : .mod speed 1  

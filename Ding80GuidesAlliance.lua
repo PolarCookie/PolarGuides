@@ -1724,7 +1724,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		goto Stormwind City,78.3,70.7
 		.talk Master Mathias Shaw##332
 		..turnin The Defias Brotherhood (3)##135
-		..accept The Defias Brotherhood (4)##141
+		//..accept The Defias Brotherhood (4)##141
 	step //93
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
 	step //94
@@ -2881,7 +2881,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		goto 63.4,38.5
 		.talk Wharfmaster Dizzywig##3453
 		..turnin Wharfmaster Dizzywig##1111
-		..accept Parts for Kravel##1112
 	step //82
 		'Ride the boat to Booty Bay|goto Stranglethorn Vale|noway|c
 	step //83
@@ -3333,7 +3332,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		..turnin Water Elementals##601
 		..accept Magical Analysis##602
 		..turnin Goblin Sponsorship (4)##1182
-		..accept Goblin Sponsorship (5)##1183
 	step //22
 		goto 28.3,77.6
 		.talk Drizzlik##2495
@@ -3991,175 +3989,333 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 	next Ding80's Alliance Leveling Guides\\Levels (45-50)
 	startlevel 40
 
+	step //1
+		goto Dustwallow Marsh,46.1,57.2
+		.talk Tabetha##6546
+		..turnin Tabetha's Farm##11212
+		..turnin Tabetha's Assistance##11149
+		..accept Raze Direhorn Post!##11150
+		.talk Apprentice Garion##23601
+		..accept The Grimtotem Weapon##11169
+		..accept The Reagent Thief##11173
+	step //2
+		goto 46.1,57.4
+		.talk Apprentice Morlann##23600
+		..accept Direhorn Raiders##11156
+		..accept The Zeppelin Crash##11172
 
-	step //61
-		goto Stranglethorn Vale39.4,34.7
-		.kill 10 Shadowmaw Panther##684|q 192/1
-	step //68
-		goto 35.8,10.7
-		.talk Sir S. J. Erlgadin##718
-		..turnin Panther Mastery (3)##192
-		..accept Panther Mastery (4)##193
-	step //73
-		goto 37.7,3.3
-		.talk Corporal Kaleb##770
-		..turnin Return to Corporal Kaleb##622
-	step //77
-		ding 37
-	step //80
-		'Hearth to Booty Bay|goto Stranglethorn Vale,27.0,77.3,0.5|use Hearthstone##6948|noway|c
-	step //96
-		goto Stranglethorn Vale,26.9,77.2
-		.talk Krazek##773
-		..turnin The Rumormonger##1115
-	step //97
-		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
-	step //98
+	step //3
+		goto 43.8,57
+		.' Use your Captured Totem|use Captured Totem##33101
+		.kill Mottled Drywallow Crocolisks next to the totem|n
+		.' Perform 10 Totem Tests|goal 10 Totem Tests Performed|q 11169/1
+	step //4
+		goto 41.7,51.4
+		.kill Darkfang Creepers|n
+		.kill Noxious Shredders|n
+		.get 6 Marsh Venom|q 11173/1
+	step //5
+		goto 47.2,46.6
+		.from Apothecary Cylla##23881
+		.get the Sealed Letter|n
+		.' Click the Sealed Letter|use Sealed Letter##33114
+		..accept The Apothecary's Letter##11185
+	step //6
+		goto 47.4,47.6
+		.' Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
+		.' Burn the East Tent|goal East Tent Burned|q 11150/3
+	step //7
+		goto 47.3,46.6
+		.' Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
+		.' Burn the Northeast Tent|goal Northeast Tent Burned|q 11150/2
+	step //8
+		goto 46.6,46
+		.' Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
+		.' Burn the North Tent|goal North Tent Burned|q 11150/1
+	step //9
+		goto 47,50
+		.kill Grimtotem mobs|n
+		.' Kill 12 Direhorn Grimtotems|goal 12 Direhorn Grimtotems killed|q 11156/1
+	step //10
+		goto 53.6,56.9
+		.talk Moxie Steelgrille##23797
+		..turnin The Zeppelin Crash##11172
+		..accept Corrosion Prevention##11174
+		..accept Secure the Cargo!##11207
+	step //11
+		goto 53,56
+		.' Click the Zeppelin Cargo|tip They look like wooden boxes on the ground around this area.
+		.get 8 Zeppelin Cargo|q 11207/1
+		.' Use your Ooze Buster on oozes|use Ooze Buster##33108|tip You have to be near a Power Core Fragment (the things that connect lightning to you).
+		.' Dissolve 10 Oozes|goal 10 Oozes Dissolved|q 11174/1
+	step //12
+		goto 53.6,56.9
+		.talk Moxie Steelgrille##23797
+		..turnin Corrosion Prevention##11174
+		..turnin Secure the Cargo!##11207
+		..accept Delivery for Drazzit##11208
+	step //13
+		goto 46.1,57.2
+		.talk Apprentice Morlann##23600
+		..turnin Direhorn Raiders##11156
+	step //14
+		goto 46.1,57.2
+		.talk Tabetha##6546
+		..turnin Raze Direhorn Post!##11150
+		..accept Justice for the Hyals##11151
+		.talk Apprentice Garion##23601
+		..turnin The Reagent Thief##11173
+		..turnin The Grimtotem Weapon##11169
+	step //15
+		goto 45.5,57.8
+		.talk Andello Porter##23942
+		..turnin The Apothecary's Letter##11185
+	step //16
+		ding 41
+	step //17
+		goto 41.8,73.1
+		.' Click the Wanted Poster|tip To the right of the stairway entrance to the big hut.
+		..accept WANTED: Goreclaw the Ravenous##11184
+	step //18
+		goto 41.9,74
+		.talk Brogg##23579
+		..accept Bloodfen Feathers##11158
+	step //19
+		goto 41.5,73
+		.talk Gizzix Grimegurgle##23570
+		..accept Catch a Dragon by the Tail##11217
+	step //20
+		goto 42.3,72.9
+		.talk Drazzit Dripvalve##23572
+		..turnin Delivery for Drazzit##11208
+	step //21
+		goto 46,74
+		.' Click the Wyrmtails|tip They look like green balls on the ground.
+		.get 8 Wyrmtail|q 11217/1
+	step //22
+		goto 32,65.7
+		.kill Goreclaw the Ravenous|q 11184/1|tip He's a big green raptor standing at the entrance to the cave.
+	step //23
+		goto 35,65
+		.kill raptors|n
+		.get 5 Bloodfen Feather|q 11158/1
+	step //24
+		goto 41.5,73
+		.talk Gizzix Grimegurgle##23570
+		..turnin Catch a Dragon by the Tail##11217
+	step //25
+		goto 42.3,72.9
+		.talk Drazzit Dripvalve##23572
+		..turnin WANTED: Goreclaw the Ravenous##11184
+	step //26
+		goto 41.9,74
+		.talk Brogg##23579
+		..turnin Bloodfen Feathers##11158
+		..accept Banner of the Stonemaul##11160
+		..accept The Essence of Enmity##11161
+	step //27
+		'Go inside the cave to 38.1,69.4|goto 38.1,69.4
+		.' Click the Stonemaul Banner|tip It looks like a hanging tiger skin with an eye painted on it inside the cave.
+		.get Stonemaul Banner|q 11160/1
+		.kill Firemane mobs|n
+		.' Use Brogg's Totem on their corpses|use Brogg's Totem##33088
+		.get 10 Black Dragonkin Essence|q 11161/1
+	step //28
+		'Go outside to 41.9,74|goto 41.9,74
+		.talk Brogg##23579
+		..turnin Banner of the Stonemaul##11160
+		..turnin The Essence of Enmity##11161
+		..accept Spirits of Stonemaul Hold##11159
+	step //29
+		goto 46,69
+		.' Click the Ogre Remains|tip They look like big white bones on the ground.
+		.kill the Ogre Spirits|n
+		.' Lay 10 Stonemaul Spirits to rest|goal 10 Stonemaul Spirits laid to rest|q 11159/1
+	step //30
+		goto 41.9,74
+		.talk Brogg##23579
+		..turnin Spirits of Stonemaul Hold##11159
+		..accept Challenge to the Black Flight##11162
+	step //31
+		goto 52.1,75.8
+		.' Use your Stonemaul Banner at the foot of the stone ramp at the entrance to Onyxia's Lair|use Stonemaul Banner##33095
+		..'A dragon will appear
+		.kill Smolderwing|n
+		.' Avenge the Stonemaul Clan|goal Stonemaul Clan Avenged|q 11162/1
+	step //32
+		goto 41.9,74
+		.talk Brogg##23579
+		..turnin Challenge to the Black Flight##11162
+	step //33
+		'Hearth to Theramore|goto Dustwallow Marsh,66.6,45.2,0.5|use Hearthstone##6948|noway|c
+	step //34
+		goto 66.3,45.5
+		.talk Morgan Stern##4794
+		..turnin Stinky's Escape##1222
+	step //35
+		goto 68.2,48.6
+		.talk Captain Garran Vimes##4944
+		..turnin Justice for the Hyals##11151
+		..accept Peace at Last##11152
+	step //36
+		'Go outside to 63.7,42.8|goto 63.7,42.8
+		.' Use your Wreath in your bags|use Wreath##33082
+		.' Lay the Wreath at the Hyal Family Monument|q 11152/1|tip It's a big gray tombstone in this graveyard.
+	step //37
+		goto 68.2,48.6
+		.talk Captain Garran Vimes##4944
+		..turnin Peace at Last##11152
+	step //38
+		'Travel your own way to Southshore, this is a good time to drop by your race's capitol city to train skills and riding|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
+	step //39
+		goto Hillsbrad Foothills,48.1,59.1
+		.talk Magistrate Henry Maleb##2276
+		..turnin Further Mysteries##525
+		..accept Dark Council##537
+		..accept Noble Deaths##512
+	step //40
+		goto 49.5,58.7
+		.talk Marshal Redpath##2263
+		..accept Crushridge Warmongers##504
+	step //41
+		goto 51.5,58.4
+		.talk Raleigh the Devout##3980
+		..turnin Down the Scarlet Path##1052
+	step //42
 		home Southshore
-
-	step //86
-		'Go southwest to Tanaris|goto Tanaris|noway|c
-	step //87
-		'Fly to Ratchet|goto The Barrens,63.0,38.1,2|noway|c
-	step //88
-		'Ride the boat to Booty Bay|goto Stranglethorn Vale|noway|c
-	step //89
-		goto Stranglethorn Vale,28.1,76.2
-		.talk First Mate Crazz##2490
-		..accept The Bloodsail Buccaneers (1)##595
-	step //90
-		goto 27.8,77.1
-		.talk "Sea Wolf" MacKinley##2501
-		..accept Scaring Shaky##606
-	step //91
-		home Booty Bay
-	step //92
-		goto 27.1,77.2
-		.talk Crank Fizzlebub##2498
-		..accept Venture Company Mining##600
-	step //93
-		goto 27,77.1
-		.talk Kebok##737
-		..accept Skullsplitter Tusks##209
-	step //94
-		goto 27.2,77
-		.talk Fleet Master Seahorn##2487
-		..turnin Sunken Treasure (4)##669
-	step //95
-		goto 32.6,40.4
-		.kill 10 Jungle Stalker|q 196/1
-	step //96
-		goto 41.4,42.3
-		.kill goblins|n
-		.get 10 Singing Blue Crystal|q 600/1
-	step //97
-		goto 42.5,36.7
-		.kill Skullsplitter trolls|n
-		.get 18 Skullsplitter Tusk|q 209/1
-		.' You can find more of these trolls at 45.4,32
-	step //98
-		goto 50,24
-		.from Bhag'thera##728
-		.get Fang of Bhag'thera|q 193/1
-		.'Bhag'thera can also be found:
-		.'At 47.2,28.6|goto 47.2,28.6|n
-		.'At 48.8,20.1|goto 48.8,20.1|n
-	step //101
-		'Hearth to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|use Hearthstone##6948|noway|c
-	step //102
-		goto 27.1,77.2
-		.talk Crank Fizzlebub##2498
-		..turnin Venture Company Mining##600
-	step //103
-		goto 27,77.1
-		.talk Kebok##737
-		..turnin Skullsplitter Tusks##209
-	step //106
-		goto 27.3,69.5
-		.' Click the Bloodsail Correspondence|tip It's a piece of paper sitting on top of a barrel.
-		..turnin The Bloodsail Buccaneers (1)##595
-		..accept The Bloodsail Buccaneers (2)##597
-	step //107
-		goto 32.2,66.8
-		.kill Elder Mistvale Gorillas|n
-		.get 5 Mistvale Giblets|q 606/1
-	step //108
-		'Go inside Booty Bay to 26.9,73.6|goto 26.9,73.6
-		.talk "Shaky" Phillipe##2502
-		..turnin Scaring Shaky##606
-		..accept Return to MacKinley##607
-	step //109
-		goto 28.1,76.2
-		.talk First Mate Crazz##2490
-		..turnin The Bloodsail Buccaneers (2)##597
-		..accept The Bloodsail Buccaneers (3)##599
-	step //110
-		goto 27.8,77.1
-		.talk "Sea Wolf" MacKinley##2501
-		..turnin Return to MacKinley##607
-		..accept Voodoo Dues##609
-	step //111
-		goto 26.9,77.3
-		.talk Deeg##2488
-		..accept Up to Snuff##587
-	step //112
-		goto 27.2,77
-		.talk Fleet Master Seahorn##2487
-		..turnin The Bloodsail Buccaneers (3)##599
-		..accept The Bloodsail Buccaneers (4)##604
-	step //113
-		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
-	step //114
-		goto 35.8,10.7
-		.talk Sir S. J. Erlgadin##718
-		..turnin Panther Mastery (4)##193
-		.talk Hemet Nesingwary Jr.##715
-		..turnin Raptor Mastery (3)##196
-		..accept Raptor Mastery (4)##197
-	step //115
-		ding 43
-	step //116
-		goto 25.3,19
-		.from Elder Saltwater Crocolisk##2635
-		.get Elder Crocolisk Skin|q 628/1
-	step //117
-		goto 38.2,4|n
-		.talk Nizzle##24366
-		..'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
-	step //118
-		goto 28.3,77.6
-		.talk Drizzlik##2495
-		..turnin Excelsior##628
-	step //119
+	step //43
+		goto Alterac Mountains,18.8,78.5
+		.talk Archmage Ansirem Runeweaver##2543
+		..turnin Magical Analysis##602
+		..accept Ansirem's Key##603
+	step //44
+		goto 35.5,54.5
+		.from Grel'borg the Miser##2417
+		..get Perenolde Tiara|q 543/1
+		.kill 10 Crushridge Warmonger|q 504/1
+	step //45
+		goto 58.7,30.5
+		'Start here and kill 1 Argus Shadow Mage every camp moving northwest
+		.kill 4 Argust Shadow Mage|q 537/1
+		.get 7 Alterac Signet Ring|q 512/1
+	step //46
+		goto 39.2,14.3
+		.from Nagaz##2320
+		..get Head of Nagaz|q 537/2
+		.'Loot the chest inside the house, next to Nagaz
+		.collect Ensorcelled Parchment|q 551
+		..accept The Ensorcelled Parchment##551
+	step //47
+		'Hearth to Southshore|goto Hillsbrad Foothills,51.2,58.9,0.5|use Hearthstone##6948|noway|c
+	step //48
+		goto 49.5,58.7
+		.talk Marshal Redpath##2263
+		..turnin Crushridge Warmongers##504
+	step //49
+		goto 48.1,59.1
+		.talk Magistrate Henry Maleb##2276
+		..turnin Noble Deaths##512
+		..turnin Dark Council##537
+	step //50
+		goto 50.6,57.1
+		.talk Loremaster Dibbs##2277
+		..turnin The Ensorcelled Parchment##551
+		..accept Stormpike's Deciphering##554
+	step //51
+		ding 42
+	step //52
 		'Fly to Ironforge|goto Ironforge|noway|c
-	step //120
-		'Buy the following items from the Auction House:|tip If you cannot buy some of these, ask people to make them for you in General and Trade chat.  Offer to pay well and you will usually get someone to do it for you.
+	step //53
+		goto 74.6,11.7
+		.talk Prospector Stormpike##1356
+		..turnin Stormpike's Deciphering##554
+		..accept Ironband Wants You!##707
+	step //54
+		'Fly to Stormwind City|goto Stormwind City|noway|c
+	step //55
+		goto 76.9,47.8
+		.talk Count Remington Ridgewell##2285
+		..turnin The Perenolde Tiara##543
+	step //56
+		goto 69.5,40.4
+		.talk Brohann Caskbelly##5384
+		..accept In Search of The Temple##1448
+	step //57
+		goto 48.7,87.6
+		.talk High Sorcerer Andromath##5694
+		..accept Vital Supplies##1477
+	step //58
+		home Stormwind City
+	step //59
+		'Buy the following items from the Auction House in this order:|tip If you cannot buy some of these, ask people to make them for you in General and Trade chat.  Offer to pay well and you will usually get someone to do it for you. Frost oil and Gyrochronatom are most important, Gyro can be bought from Engineering Suppliers.
+		.buy 1 Frost Oil|q 713/1
+		.buy 1 Gyrochronatom|q 714/1
 		.buy 1 Healing Potion|q 715/1
 		.buy 1 Lesser Invisibility Potion|q 715/2
-		.buy 1 Gyrochronatom|q 714/1
-		.buy 1 Frost Oil|q 713/1
-	step //121
+		.buy 1 Patterned Bronze Bracers|q 716/1
+	step //60
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
-	step //122
-		home Thelsamar
-	step //123
+	step //61
+		goto 37.1,49.4
+		.talk Ghak Healtouch##1470
+		..accept Badlands Reagent Run##2500
+	step //62
 		goto 65.9,65.6
 		.talk Prospector Ironband##1344
+		..turnin Ironband Wants You!##707
 		..accept Find Agmond##738
-	step //124
+	step //63
 		'Go southwest to the Badlands|goto Badlands|noway|c
-	step //125
+	step //64
 		goto Badlands,53.6,43.3
 		.talk Prospector Ryedol##2910
 		..accept A Dwarf and His Tools##719
 		.talk Sigrun Ironhew##2860
 		..accept Mirages##718
-	step //126
+	step //65
+		goto 53,33.9
+		.' Click the Crumpled Map|tip Laying on the ground under a white canopy.
+		..accept A Sign of Hope##720
+	step //66
+		goto 52.3,30.4
+		.kill Dark Iron dwarves|n
+		.get Ryedol's Lucky Pick|q 719/1
+	step //67
+		goto 66.6,21.5
+		.' Click the Excavation Supply Crate|tip It's a wooden crate, sitting next to a very small tent, canopy thing in the small ogre camp, or sitting on the ground next to a cauldron.
+		.get Supply Crate|q 718/1
+		.' The crate can also be located at 66.9,23.4|n
+	step //68
+		goto 53.6,43.3
+		.talk Prospector Ryedol##2910
+		..turnin A Sign of Hope##720
+		..turnin A Dwarf and His Tools##719
+		.talk Sigrun Ironhew##2860
+		..turnin Mirages##718
+		..accept Scrounging##733
+	step //69
 		goto 42.2,52.7
 		.talk Martek the Exiled##4618
 		..turnin Martek the Exiled##1106
 		..accept Indurium##1108
-	step //127
+		.talk Rigglefuzz##2817
+		..accept Barbecued Buzzard Wings##703
+	step //70
+		goto 50.9,62.4
+		.' Click the Battered Dwarven Skeleton on the ground
+		..turnin Find Agmond##738
+		..accept Murdaloc##739
+	step //71
+		goto 51.8,65.6
+		.kill 12 Stonevault Bonesnapper|q 739/2
+		.kill Murdaloc|q 739/1|tip Murdaloc walks around the trogg camp.
+		.kill Stonevault mobs|n
+		.get 10 Indurium Flake|q 1108/1
+	step //72
+		goto 42.2,52.7
+		.talk Martek the Exiled##4618
+		..turnin Indurium##1108
+	step //73
 		goto 25.9,44.6
 		.talk Lotwil Veriatus##2921
 		..accept Study of the Elements: Rock (1)##710
@@ -4170,71 +4326,42 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.talk Lucien Tosselwrench##2920
 		..accept Liquid Stone##715
 		..turnin Liquid Stone##715
-	step //128
+	step //74
 		goto 21.9,44.6
 		.kill Lesser Rock Elementals|n
 		.get 10 Small Stone Shard|q 710/1
-	step //129
+	step //75
 		goto 25.9,44.6
 		.talk Lotwil Veriatus##2921
 		..turnin Study of the Elements: Rock (1)##710
 		..accept Study of the Elements: Rock (2)##711
-	step //130
-		goto 52.3,30.4
-		.kill Dark Iron dwarves|n
-		.get Ryedol's Lucky Pick|q 719/1
-	step //131
-		goto 53,33.9
-		.' Click the Crumpled Map|tip Laying on the ground under a white canopy.
-		..accept A Sign of Hope##720
-	step //132
-		goto 66.6,21.5
-		.' Click the Excavation Supply Crate|tip It's a wooden crate, sitting next to a very small tent, canopy thing in the small ogre camp, or sitting on the ground next to a cauldron.
-		.get Supply Crate|q 718/1
-		.' The crate can also be located at 66.9,23.4|n
-	step //133
-		goto 53.6,43.3
-		.talk Prospector Ryedol##2910
-		..turnin A Sign of Hope##720
-		..turnin A Dwarf and His Tools##719
-		.talk Sigrun Ironhew##2860
-		..turnin Mirages##718
-		..accept Scrounging##733
-	step //134
-		goto 50.9,62.4
-		.' Click the Battered Dwarven Skeleton on the ground
-		..turnin Find Agmond##738
-		..accept Murdaloc##739
-	step //135
-		goto 51.8,65.6
-		.kill 12 Stonevault Bonesnapper|q 739/2
-		.kill Murdaloc|q 739/1|tip Murdaloc walks around the trogg camp.
-		.kill Stonevault mobs|n
-		.get 10 Indurium Flake|q 1108/1
-	step //136
-		goto 46.3,77.2|n
-		.' The path up to Study of the Elements: Rock (2) starts here|goto 46.3,77.2,0.5|noway|c
-	step //137
-		goto 44.8,80.6
+	step //76
+		goto 13.5,35.5
 		.kill Rock Elementals|n
 		.get 3 Large Stone Slab|q 711/1
-	step //138
-		goto 13.5,78.3
-		.kill ogres|n
-		.get 7 Scrap Metal|q 733/1
-	step //139
+	step //77
 		goto 25.9,44.6
 		.talk Lotwil Veriatus##2921
 		..turnin Study of the Elements: Rock (2)##711
 		..accept Study of the Elements: Rock (3)##712
-	step //140
+	step //78
+		goto 15.7,59.1
+		.kill Buzzards|n
+		.get 4 Buzzard Wing|q 703/1
+		.get 5 Buzzard Gizzard|q 2500/1
+	step //79
+		goto 13.5,78.3
+		.kill ogres|n
+		.get 7 Scrap Metal|q 733/1
+	step //80
 		goto 7.9,74.1|n
 		.' The path up to 'Study of the Elements: Rock (3)' starts here|goto Badlands,7.9,74.1,0.5|noway|c
-	step //141
+	step //81
 		goto 4.2,81.5
 		.kill Greater Rock Elementals|n
 		.get 5 Bracers of Rock Binding|q 712/1
-	step //142
+		.get 5 Rock Elemental Shard|q 2500/3
+	step //82
 		goto 25.9,44.6
 		.talk Lotwil Veriatus##2921
 		..turnin Study of the Elements: Rock (3)##712
@@ -4242,7 +4369,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.talk Lucien Tosselwrench##2920
 		..turnin This Is Going to Be Hard (1)##734
 		..accept This Is Going to Be Hard (2)##777
-	step //143
+	step //83
 		goto 25.9,44.6
 		.talk Lotwil Veriatus##2921
 		..turnin This Is Going to Be Hard (2)##777
@@ -4251,33 +4378,391 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.get Lotwil's Shackles of Elemental Binding|n
 		.talk Lotwil Veriatus##2921
 		..turnin This Is Going to Be Hard (3)##778
-	step //144
+	step //84
 		goto 42.2,52.7
-		.talk Martek the Exiled##4618
-		..turnin Indurium##1108
-		..accept News for Fizzle##1137
-	step //145
+		.talk Rigglefuzz##2817
+		..turnin Barbecued Buzzard Wings##703
+	step //85
 		goto 53.6,43.3
 		.talk Sigrun Ironhew##2860
 		..turnin Scrounging##733
-	step //146
+	step //86
+		'Kill Coyotes on the way north|n
+		.get 10 Crag Coyote Fang|q 2500/2
 		'Go northwest to Loch Modan|goto Loch Modan|noway|c
-	step //147
+	step //87
 		goto Loch Modan,65.9,65.6
 		.talk Prospector Ironband##1344
-		..turnin Murdaloc##739
+		..turnin Murdaloc##739	
+	step //88
+		goto 37.1,49.4
+		.talk Ghak Healtouch##1470
+		..turnin Badlands Reagent Run##2500
+	step //89
+		'Hearth to Stormwind|goto Stormwind City|noway|c
+	step //90
+		'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
+	step //91
+		goto Stranglethorn Vale,26.9,77.2
+		.talk Krazek##773
+		..accept Tran'rek##2864
+	step //92
+		goto 27,77.1
+		.talk Kebok##737
+		..accept Skullsplitter Tusks##209
+	step //93
+		goto 27.3,77.5
+		.talk Catelyn the Blade##2542
+		..turnin Ansirem's Key##603
+		..accept "Pretty Boy" Duncan##610
+	step //94
+		goto 27.1,77.2
+		.talk Crank Fizzlebub##2498
+		..accept Zanzil's Secret##621
+	step //95
+		goto 27.1,77.5
+		.talk Whiskey Slim##2491
+		..accept Whiskey Slim's Lost Grog##580
+	step //96
+		goto 26.8,76.4
+		.talk Privateer Bloads##2494
+		..accept Akiris by the Bundle (1)##617
+	step //97
+		goto 27.8,77.1
+		.talk "Sea Wolf" MacKinley##2501
+		..accept Stoley's Debt##2872
+	step //98
+		goto 27.6,76.7
+		.talk Fin Fizracket##2486
+		..accept Stranglethorn Fever##348
+	step //99
+		goto Stranglethorn Vale,28.1,76.2
+		.talk First Mate Crazz##2490
+		..accept The Bloodsail Buccaneers (1)##595
+	step //100
+		ding 43
+	step //101
+		goto 27.4,69.4
+		.from "Pretty Boy" Duncan##2545
+		..get Catelyn's Blade|q 610/1
+	step //102
+		goto 27.3,69.5
+		.' Click the Bloodsail Correspondence|tip It's a piece of paper sitting on top of a barrel.
+		..turnin The Bloodsail Buccaneers (1)##595
+		..accept The Bloodsail Buccaneers (2)##597
+	step //103
+		goto 24.7,63.7
+		.kill Naga Explorers|n
+		.get 10 Akiris Reed|q 617/1
+		.' More can be found at 26.1,61.9
+	step //104
+		goto 32.2,66.8
+		.kill Elder Mistvale Gorillas|n
+		.get 5 Mistvale Giblets|q 606/1
+		.collect 1 Gorilla Fang##2799|q 348
+	step //105
+		goto 35.3,60.4
+		.talk Witch Doctor Unbagwa##1449
+		.' Give him 1 Gorilla Fang
+		.' 3 gorillas will attack you one at a time
+		..'Mokk the Savage is the final gorilla
+		.from Mokk the Savage##1514
+		.get Heart of Mokk|q 348/1
+	step //106
+		'Go inside Booty Bay to 26.9,73.6|goto 26.9,73.6
+		.talk "Shaky" Phillipe##2502
+		..turnin Scaring Shaky##606
+		..accept Return to MacKinley##607
+	step //107
+		goto 26.7,73.6
+		.talk Captain Hecklebury Smotts##2500
+		..accept The Captain's Chest##614
+	step //108
+		goto 28.1,76.2
+		.talk First Mate Crazz##2490
+		..turnin The Bloodsail Buccaneers (2)##597
+		..accept The Bloodsail Buccaneers (3)##599
+	step //109
+		goto 27.6,76.7
+		.talk Fin Fizracket##2486
+		..turnin Stranglethorn Fever##348
+	step //110
+		goto 27.8,77.1
+		.talk "Sea Wolf" MacKinley##2501
+		..turnin Return to MacKinley##607
+		..accept Voodoo Dues##609
+	step //111
+		goto 26.8,76.4
+		.talk Privateer Bloads##2494
+		..turnin Akiris by the Bundle (1)##617
+		..accept Akiris by the Bundle (2)##623
+	step //112
+		goto 27.3,77.5
+		.talk Catelyn the Blade##2542
+		..turnin "Pretty Boy" Duncan##610
+		..accept Curse of the Tides##611
+	step //113
+		goto 26.9,77.3
+		.talk Deeg##2488
+		..accept Up to Snuff##587
+	step //114
+		goto 27.2,77
+		.talk Fleet Master Seahorn##2487
+		..turnin The Bloodsail Buccaneers (3)##599
+		..accept The Bloodsail Buccaneers (4)##604
+	step //115
+		goto 28.6,75.9
+		.talk Dizzy One-Eye##2493
+		..accept Keep An Eye Out##576
+	step //116
+		goto 35.1,72.9
+		.' Click the Half-Buried Bottles|tip They are little blue bottles that can spawn anywhere along this beach close to the water. This is mostly a reminder to look out for them, skip to next step.
+		.get the Carefully Folded Note|n
+		.' Click the Carefully Folded Note|use Carefully Folded Note##4098
+		..accept Message in a Bottle (1)##594
+	step //117
+		goto 29.6,80.9
+		.' Click the Bloodsail Orders|tip They are scrolls laying on a box and in the tent here.
+		.get Bloodsail Orders|q 604/3
+		.' Click the Bloodsail Charts|tip They are scrolls laying on a box and in the tent here.
+		.get Bloodsail Charts|q 604/2
+		.' They can also spawn in the camp to the southwest at 27.0,82.8|goto 27.0,82.8|n
+	step //118
+		goto 32.8,76.2
+		.kill 10 Bloodsail Swashbuckler|q 604/1
+		.' Kill Bloodsail pirates along the beach around this area
+		.get Dizzy's Eye|q 576/1
+		.get 15 Snuff|q 587/1
+	step //119
+		goto 28.6,75.9
+		.talk Dizzy One-Eye##2493
+		..turnin Keep An Eye Out##576
+	step //120
+		'Go north to Booty Bay to 26.9,77.3|goto 26.9,77.3
+		.talk Deeg##2488
+		..turnin Up to Snuff##587
+	step //121
+		goto 27.2,77
+		.talk Fleet Master Seahorn##2487
+		..turnin The Bloodsail Buccaneers (4)##604
+		..accept The Bloodsail Buccaneers (5)##608
+	step //122
+		goto 38.5,80.6
+		.talk Princess Poobah##2634
+		..turnin Message in a Bottle (1)##594
+		..accept Message in a Bottle (2)##630
+	step //123
+		goto 41,83
+		.from King Mukla##1559
+		.get Shackle Key|q 630/1
+	step //124
+		goto 38.5,80.6
+		.talk Princess Poobah##2634
+		..turnin Message in a Bottle (2)##630
+	step //125
+		'While doing the next 3 steps, look for Cortello's Riddle on the ships:
+		.' Click Cortello's Riddle|tip It's a scroll.
+		..accept Cortello's Riddle (1)##624|n
+		.' Skip to the next step of the guide
+	step //126
+		goto 32.9,88.2
+		.kill 1 Captain Stillwater|q 608/1|tip Standing on the middle deck of the ship.
+	step //127
+		goto 30.6,90.6
+		.kill 1 Fleet Master Firallon|q 608/3|tip Standing on the middle deck of the ship.
+	step //128
+		goto 29.2,88.3
+		.kill 1 Captain Keelhaul|q 608/2|tip Standing on the middle deck of the ship.
+	step //129
+		'Make sure you have accepted the Cortello's Riddle quest:
+		.'Click Cortello's Riddle|use Cortello's Riddle##4056
+		..accept Cortello's Riddle (1)##624
+	step //130
+		goto 27.2,77
+		.talk Fleet Master Seahorn##2487
+		..turnin The Bloodsail Buccaneers (5)##608
+	step //131
+		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
+	step //132
+		goto 24.7,8.9
+		.get The Fourth Troll Legend|q 207/4
+	step //133
+		goto 22.9,12
+		.get The Third Troll Legend|q 207/3
+	step //134
+		goto 25.3,19
+		.from Elder Saltwater Crocolisk##2635
+		.get Elder Crocolisk Skin|q 628/1
+	step //135
+		goto 24.8,23
+		.get The Second Troll Legend|q 207/2
+	step //136
+		goto 25,34
+		.' Use Caitlyn's Blade at the Altar of the Tides and then kill Gazban|use Caitlyn's Blade##4027
+		..get Stone of the Tides|q 611/1
+	step //137
+		goto 29.5,19.1
+		.get The First Troll Legend|q 207/1
+	step //138
+		goto 39.4,34.7
+		.kill 10 Shadowmaw Panther##684|q 192/1
+	step //139
+		goto 32.6,40.4
+		.kill 10 Jungle Stalker|q 196/1
+	step //140
+		goto 37.8,3.6
+		.talk Brother Nimetz##739
+		..turnin Kurzen's Mystery##207
+		..accept Troll Witchery##205
+	step //141
+		goto 35.8,10.7
+		.talk Sir S. J. Erlgadin##718
+		..turnin Panther Mastery (3)##192
+		..accept Panther Mastery (4)##193
+	step //142
+		goto 35.8,10.7
+		.talk Hemet Nesingwary Jr.##715
+		..turnin Raptor Mastery (3)##196
+		..accept Raptor Mastery (4)##197
+	step //143
+		ding 44
+	step //144
+		goto 50,24
+		.from Bhag'thera##728
+		.get Fang of Bhag'thera|q 193/1
+		.'Bhag'thera can also be found:
+		.'At 47.2,28.6|goto 47.2,28.6|n
+		.'At 48.8,20.1|goto 48.8,20.1|n
+	step //145
+		goto 42.5,36.7
+		.kill Skullsplitter trolls|n
+		.get 18 Skullsplitter Tusk|q 209/1
+		.' You can find more of these trolls at 45.4,32
+		' Look for Mystics and Witch Doctors further in the camp
+		..get 4 Skullsplitter Fetish|q 205/1
+	step //146
+		goto 41.4,42.3
+		.kill goblins|n
+		.get 10 Singing Blue Crystal|q 600/1
+	step //147
+		goto 28.7,44.8
+		.from Tethis##730
+		.get Talon of Tethis|q 197/1
 	step //148
-		'Hearth to Thelsamar|goto Loch Modan,35.1,46.9,3|use Hearthstone##6948|noway|c
+		goto 34.9,51.9
+		.from Jon-Jon the Crow##2536
+		.get Jon-Jon's Golden Spyglass|q 609/2
+	step //149
+		goto 35.1,51.1
+		.from Maury "Club Foot" Wilkins##2535
+		.get Maury's Clubbed Foot|q 609/1
+	step //150
+		goto 40,58.2
+		.from Chucky "Ten Thumbs"##2537
+		.get Chucky's Huge Ring|q 609/3
+	step //151
+		goto 39.2,57.1
+		.kill Zanzil mobs|n
+		.get 12 Zanzil's Mixture|q 621/1
+	step //152
+		goto 37,69.7
+		.from Gorlash##1492
+		..get Smotts' Chest|q 614/1
+	step //153
+		goto 26.7,73.6
+		.talk Captain Hecklebury Smotts##2500
+		..turnin The Captain's Chest##614
+	step //154
+		goto 27.8,77.1
+		.talk "Sea Wolf" MacKinley##2501
+		..turnin Voodoo Dues##609
+		..accept Cracking Maury's Foot##613
+	step //155
+		goto 27.1,77.2
+		.talk Crank Fizzlebub##2498
+		..turnin Singing Blue Shards##605
+		..turnin Venture Company Mining##600
+		..turnin Zanzil's Secret##621
+	step //156
+		goto 27,77.1
+		.talk Kebok##737
+		..turnin Skullsplitter Tusks##209
+	step //157
+		goto 27.3,77.5
+		.talk Baron Revilgaz##2496
+		..turnin Curse of the Tides##611
+	step //158
+		goto 28.3,77.6
+		.talk Drizzlik##2495
+		..turnin Excelsior##628
+	step //159
+		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
+	step //160
+		goto 37.8,3.6
+		.talk Brother Nimetz##739
+		..turnin Troll Witchery##205
+		..accept Mai'Zoth##206
+	step //161
+		goto 35.8,10.7
+		.talk Sir S. J. Erlgadin##718
+		..turnin Panther Mastery (4)##193
+		.talk Hemet Nesingwary Jr.##715
+		..turnin Raptor Mastery (4)##197
+		..accept Big Game Hunter##208
+	step //162
+		goto 38.2,36.4
+		.from King Bangalash##731
+		.get Head of Bangalash|q 208/1
+	step //163
+		goto 52.9,27.6
+		.from Mai'Zoth##818
+		..get Mind's Eye|q 206/1
+		.from Mosh'Ogg Mauler##678+, Mosh'Ogg Shaman##679+, Mosh'Ogg Spellcrafter##710+, Mosh'Ogg Warmonger##709+, Mosh'Ogg Lord##680+
+		..get Maury's Key|q 613/1
+	step //164
+		goto 35.8,10.7
+		.talk Hemet Nesingwary Jr.##715
+		..turnin Big Game Hunter##208
+	step //165
+		goto 37.8,3.6
+		.talk Brother Nimetz##739
+		..turnin Mai'Zoth##206
+	step //166
+		ding 45
+]])
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-49)",[[
+	author PolarCookie
+	next Ding80's Alliance Leveling Guides\\Levels (50-54)
+	startlevel 45
+
+
 	step //149
 		'Fly to Darkshire|goto Duskwood,74.7,46.9,7|noway|c
 	step //150
 		goto Duskwood,75.8,46.2
 		.talk Watchmaster Sorigal##5464
+		..turnin Vital Supplies##1477
 		..accept Supplies for Nethergarde##1395
 	step //151
 		'Go east to Deadwind Pass|goto Deadwind Pass|noway|c
 	step //152
 		'Go east to the Swamp of Sorrows|goto Swamp of Sorrows|noway|c
+	step //196
+		goto Swamp of Sorrows,22.9,48.2
+		.' Click the Soggy Scroll|tip It's a rolled up scroll laying in the water under the bridge. It's very easy to to miss, so search hard.
+		.turnin Cortello's Riddle (1)##624
+		.accept Cortello's Riddle (2)##625
+	step
+		goto 25.9,32.4
+		.talk Holaaru##18221
+		..accept Pool of Tears##9610
+	step
+		goto 47.1,38.8
+		.kill Noboru the Cudgel##5477|q 1392
+		.get Noboru's Cudgel##6196|q 1392
+		..accept Noboru the Cudgel##1392
+
+
 	step //153
 		'Go southeast to the Blasted Lands|goto Blasted Lands|noway|c
 	step //154
@@ -4290,85 +4775,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		..fpath Nethergarde Keep
 	step //156
 		'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
-	step //157
-		goto Stranglethorn Vale,26.9,77.2
-		.talk Krazek##773
-		..accept Tran'rek##2864
-	step //158
-		goto 27.1,77.2
-		.talk Crank Fizzlebub##2498
-		..accept Zanzil's Secret##621
-	step //159
-		goto 27.1,77.5
-		.talk Whiskey Slim##2491
-		..accept Whiskey Slim's Lost Grog##580
-	step //160
-		home Booty Bay
-	step //161
-		goto 26.8,76.4
-		.talk Privateer Bloads##2494
-		..accept Akiris by the Bundle (1)##617
-	step //162
-		goto 27.8,77.1
-		.talk "Sea Wolf" MacKinley##2501
-		..accept Stoley's Debt##2872
-	step //163
-		goto 28.6,75.9
-		.talk Dizzy One-Eye##2493
-		..accept Keep An Eye Out##576
-	step //164
-		goto 32.8,76.2
-		.kill 10 Bloodsail Swashbuckler|q 604/1
-		.' Kill Bloodsail pirates along the beach around this area
-		.get Dizzy's Eye|q 576/1
-		.get 15 Snuff|q 587/1
-	step //165
-		ding 44
-	step //166
-		goto 29.6,80.9
-		.' Click the Bloodsail Orders|tip They are scrolls laying on a box and in the tent here.
-		.get Bloodsail Orders|q 604/3
-		.' Click the Bloodsail Charts|tip They are scrolls laying on a box and in the tent here.
-		.get Bloodsail Charts|q 604/2
-		.' They can also spawn in the camp to the southwest at 27.0,82.8|goto 27.0,82.8|n
-	step //167
-		'Go north to Booty Bay to 26.9,77.3|goto 26.9,77.3
-		.talk Deeg##2488
-		..turnin Up to Snuff##587
-	step //168
-		goto 27.2,77
-		.talk Fleet Master Seahorn##2487
-		..turnin The Bloodsail Buccaneers (4)##604
-		..accept The Bloodsail Buccaneers (5)##608
-	step //169
-		goto 28.6,75.9
-		.talk Dizzy One-Eye##2493
-		..turnin Keep An Eye Out##576
-	step //170
-		goto 24.7,63.7
-		.kill Naga Explorers|n
-		.get 10 Akiris Reed|q 617/1
-		.' More can be found at 26.1,61.9
-	step //171
-		goto 39.2,57.1
-		.kill Zanzil mobs|n
-		.get 12 Zanzil's Mixture|q 621/1
-	step //172
-		goto 40,58.2
-		.from Chucky "Ten Thumbs"##2537
-		.get Chucky's Huge Ring|q 609/3
-	step //173
-		goto 34.9,51.9
-		.from Jon-Jon the Crow##2536
-		.get Jon-Jon's Golden Spyglass|q 609/2
-	step //174
-		goto 35.1,51.1
-		.from Maury "Club Foot" Wilkins##2535
-		.get Maury's Clubbed Foot|q 609/1
-	step //175
-		goto 32.1,43.4
-		.from Tethis##730
-		.get Talon of Tethis|q 197/1
+
 	step //176
 		'Hearth to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|use Hearthstone##6948|noway|c
 	step //177
@@ -4377,24 +4784,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		..turnin Zanzil's Secret##621
 	step //178
 		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.2,4.1,0.5|noway|c
-	step //179
-		goto 35.8,10.7
-		.talk Hemet Nesingwary Jr.##715
-		..turnin Raptor Mastery (4)##197
-		..accept Big Game Hunter##208
 	step //180
 		goto 38.2,4|n
 		.talk Nizzle##24366
 		..'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
-	step //181
-		goto 27.8,77.1
-		.talk "Sea Wolf" MacKinley##2501
-		..turnin Voodoo Dues##609
-	step //182
-		goto 26.8,76.4
-		.talk Privateer Bloads##2494
-		..turnin Akiris by the Bundle (1)##617
-		..accept Akiris by the Bundle (2)##623
 	step //183
 		'Ride the boat to Ratchet|goto The Barrens|noway|c
 	step //184
@@ -4494,11 +4887,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.kill 10 Southsea Swashbuckler|q 8366/4
 	step //207
 		ding 45
-]])
-ZygorGuidesViewer:RegisterGuide("Zygor's Alliance Leveling Guides\\Levels (45-50)",[[
-	author support@zygorguides.com
-	next Zygor's Alliance Leveling Guides\\Levels (50-55)
-	startlevel 45
+
+
 	step //1
 		'Hearth to Gadgetzan|goto Tanaris,51.7,27.8,6|use Hearthstone##6948|noway|c
 	step //2
