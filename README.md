@@ -36,7 +36,7 @@ maybe include orb of orahil questline for warlocks during desolace part? can pic
 Need Angus Stern's prequest to Theramore somehow, The guide takes you to the inn he is in, but worried it's to early w.r.t level reqs. Anyone testing comment on this when you pick up James Hyal in Stormwind!!! Seach for "TODO: MORGAN STERN" in the guide  
 Missing Diplomat finale should be instant?  
 An OOX of Your Own should be instant?  
-Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" are fixed in trinity and/or azeroth core
+Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in trinity and/or azeroth core
 Need to redo the entire heart usage, especially 50-58 section, lots of setting hearth stone here and there and never using it.
 Possibly "Dousing the Flames of Protection" and "Ancient Spirits" can be skipped, finished lvl 58 with 52685xp (31%), aim to end at timbermaw hold with the ritual totems + runecloth (need to make a note to save runecloth)
 
