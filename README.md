@@ -27,6 +27,7 @@ Alliance 30-34 done
 Alliance 35-39 done  
 Alliance 40-44 done  
 Alliance 45-49 done  
+Alliance 50-54 done  
 
 guide todo:  
 forgot to add ding 34,35,47,49  
@@ -34,6 +35,9 @@ maybe include orb of orahil questline for warlocks during desolace part? can pic
 Need Angus Stern's prequest to Theramore somehow, The guide takes you to the inn he is in, but worried it's to early w.r.t level reqs. Anyone testing comment on this when you pick up James Hyal in Stormwind!!! Seach for "TODO: MORGAN STERN" in the guide  
 Missing Diplomat finale should be instant?  
 An OOX of Your Own should be instant?  
+Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" are fixed in trinity and/or azeroth core
+Need to redo the entire heart usage, especially 50-58 section, lots of setting hearth stone here and there and never using it.
+
 
 I'm running through the guide on a personal trinity server.  
 keybinded macros  
