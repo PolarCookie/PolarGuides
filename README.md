@@ -39,3 +39,5 @@ Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they
 Need to redo the entire hearth usage, especially 50-58 section, lots of setting hearth stone here and there and never using it.  
 Possibly "Dousing the Flames of Protection" and "Ancient Spirits" can be skipped, finished lvl 58 with 52685xp (31%), aim to end at timbermaw hold with the ritual totems + runecloth (need to make a note to save runecloth)  
 
+## Fixing step comments.
+Don't worry about the step comments, just run "python step_fix.py <guide>" and it'll fix it for you.
