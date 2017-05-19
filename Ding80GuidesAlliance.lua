@@ -3061,7 +3061,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		..turnin Syndicate Assassins##505
 		..turnin Foreboding Plans##510
 	step
-		ding 33|tip Make sure you're lvl 33 or are less than 10k exp away from lvl 33 before continuing.
+		ding 33|tip Make sure you're lvl 33 or are less than 9k exp away from lvl 33 before continuing.
+		only !Warlock
+	step
+		ding 33|tip Make sure you're lvl 33 or are less than 17.5k exp away from lvl 33 before continuing.
+		only Warlock
 	step //123
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step //124
@@ -3094,12 +3098,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		goto 76.9,47.8
 		.talk Count Remington Ridgewell##2285
 		..accept The Perenolde Tiara##543
-	step //131
-		goto 51.1,95.5
-		.talk Connor Rivers##5081
-		..accept James Hyal##1301
-		.talk Angus Stern##1141
-		..accept Morgan Stern##1260
 	step //132
 		goto 39.2,85.2
 		.talk Gakin the Darkbinder##6122
@@ -3116,6 +3114,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.talk Gakin the Darkbinder##6122
 		..turnin The Binding##1739
 		only Warlock
+	step //131
+		goto 51.1,95.5
+		.talk Connor Rivers##5081
+		..accept James Hyal##1301
+		.talk Angus Stern##1141
+		..accept Morgan Stern##1260
 	step //135
 		'Fly to Darkshire|goto Duskwood,74.7,46.9,7|noway|c
 	step //136
