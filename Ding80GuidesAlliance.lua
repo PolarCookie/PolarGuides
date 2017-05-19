@@ -2756,6 +2756,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.talk Strahad Farsan##6251
 		..turnin Seeking Strahad##1798
 		..accept Tome of the Cabal (1)##1758
+		.talk Menara Voidrender##6266
+		..turnin In Search of Menara Voidrender##4738
 		only Warlock
 	step //51
 		goto 63.1,37.2
@@ -2847,7 +2849,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		goto 83.2,55.4
 		.from Sparkleshell Snapper##4143+
 		.get 9 Hardened Tortoise Shell|q 1105/1
-		.collect 10 Turtle Meat
+		.collect 10 Turtle Meat|q 555|tip Don't stay for the turtle meat, just don't sell them for now.
 	step //73
 		goto 75.4,55
 		.kill 10 Saltstone Basilisk|q 1175/1
@@ -2920,14 +2922,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		..accept The Stone of the Tides##578
 		..turnin Goblin Sponsorship (3)##1181
 		..accept Goblin Sponsorship (4)##1182
-	step //90
-		goto 28.3,77.6
-		.talk Drizzlik##2495
-		..accept Supply and Demand##575
 	step //91
 		goto 27.8,77.1
 		.talk "Sea Wolf" MacKinley##2501
 		..accept Scaring Shaky##606
+	step //90
+		goto 28.3,77.6
+		.talk Drizzlik##2495
+		..accept Supply and Demand##575
+	step
+		goto 27.5,77.8
+		.talk Gyll##2859
+		..fpath Booty Bay
 	step //92
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step //93
