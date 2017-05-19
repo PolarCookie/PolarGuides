@@ -11,7 +11,7 @@ I included this as ding80 also skips the "Jungle Secrets" questline in entirely,
 In total it's 10920xp from quests just from heading back into the cave one more time after turning in "Special Forces".  
 
 Ding steps can be safely ignored for the most part, it's a rough estimate of where you should be.  
-Exception being level 20 before heading to redridge mountain.  
+Exception being level 20 before heading to redridge mountain and 33 before heading to ironforge from southshore.  
 
 Warlocks learn succubus at lvl ~32  
 Warlocks learn felhunter at lvl ~38  
