@@ -3039,7 +3039,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.kill ogres|n
 		.get 9 Dirty Knucklebones|q 500/1
 	step //118
-		goto 52.4,56
+		goto Hillsbrad Foothills,52.4,56
 		.talk Darren Malvew##2382
 		..turnin Costly Menace##564
 	step //119
@@ -3060,6 +3060,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.talk Magistrate Henry Maleb##2276
 		..turnin Syndicate Assassins##505
 		..turnin Foreboding Plans##510
+	step
+		ding 33|tip Make sure you're lvl 33 or are less than 10k exp away from lvl 33 before continuing.
 	step //123
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step //124
@@ -3093,10 +3095,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.talk Count Remington Ridgewell##2285
 		..accept The Perenolde Tiara##543
 	step //131
-		'TODO: MORGAN STERN
 		goto 51.1,95.5
 		.talk Connor Rivers##5081
 		..accept James Hyal##1301
+		.talk Angus Stern##1141
+		..accept Morgan Stern##1260
 	step //132
 		goto 39.2,85.2
 		.talk Gakin the Darkbinder##6122
@@ -3622,8 +3625,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 	step //88
 		home Theramore
 	step //89
-		'TODO: MORGAN STERN
-		'Currently missing the prequest, change earlier parts of the guide
 		goto 66.3,45.5
 		.talk Morgan Stern##4794
 		..accept Mudrock Soup and Bugs##1204
@@ -3731,8 +3732,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		turnin The Missing Diplomat (12)##1265
 		accept The Missing Diplomat (13)##1266
 	step //114
-		'TODO: MORGAN STERN
-		'Broken questline, skip for now		
 		goto 64.7,41.3
 		.kill turtles|n
 		.get 8 Forked Mudrock Tongue|q 1204/1
@@ -3825,8 +3824,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 	step //133
 		'Hearth to Theramore|goto Dustwallow Marsh,66.6,45.2,0.5|use Hearthstone##6948|noway|c
 	step //134
-		'TODO: MORGAN STERN
-		'Broken chain, skip
 		goto 66.3,45.5
 		.talk Morgan Stern##4794
 		..turnin Mudrock Soup and Bugs##1204
