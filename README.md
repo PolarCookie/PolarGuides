@@ -5,16 +5,16 @@ Discord: https://discord.gg/SjXbNRX
 Open addon setting panel, goto zygor, goto dynamic progress, untick "mark obsolete steps" and "skip obsolete steps" and set "Allow levels ahead" to 80.  
 Ding80 makes you do green / yellow quests, and you usually outlevel the mobs you fight.
 
-Some minor edits to the route have been made underway.  
-Particular case is when Ding80 skips "Colonel Kurzen" in STV part 2.  
-I included this as ding80 also skips the "Jungle Secrets" questline in entirely, even tho "Bookie Herod" can be completed alongside "Bad Medicing"/"The Second Rebellion"  
-In total it's 10920xp from quests just from heading back into the cave one more time after turning in "Special Forces".  
+## Edits done to Ding80
+Colonel Kurzen and Jungle Secrets fully is added.
+Desolace has been replaced by Arathi Highlands.
+
 
 Ding steps can be safely ignored for the most part, it's a rough estimate of where you should be.  
 Exception being level 20 before heading to redridge mountain and 33 before heading to ironforge from southshore.  
 
 Warlocks learn succubus at lvl ~32  
-Warlocks learn felhunter at lvl ~38  
+Warlocks learn felhunter at lvl ~38
 
 Only Dwarf/Gnome starting area translated, either use Zygor default or some kind soul help me out on those.  
 
@@ -41,3 +41,8 @@ Possibly "Dousing the Flames of Protection" and "Ancient Spirits" can be skipped
 
 ## Fixing step comments.
 Don't worry about the step comments, just run `python step_fix.py <guide>` and it'll fix it for you.
+
+
+AC todo:
+goal of accept Hints of a New Plague?##660
+
