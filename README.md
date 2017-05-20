@@ -26,7 +26,6 @@ Alliance 50-54 done
 Alliance 55-58 done  
 
 ## Guide todo
-Missing Diplomat finale should be instant?  
 An OOX of Your Own should be instant?  
 Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in trinity and/or azeroth core
 Need to redo the entire hearth usage, especially 50-58 section, lots of setting hearth stone here and there and never using it.  

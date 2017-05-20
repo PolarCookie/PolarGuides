@@ -3778,7 +3778,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		goto 60,40.9
 		goal Sentry Point explored|q 1265/1
 	step //123
-		'Turn in the Missing Diplomat, Archmage Tervosh is supposed to teleport to meet you at Sentry Point, but this might not be scripted. Travel it back to Theramore and turn it in at the central tower.
+		'Turn in the Missing Diplomat, Archmage Tervosh is supposed to teleport to meet you at Sentry Point, but this might not be scripted. Travel back to Theramore and turn it in at the central tower.
 		turnin The Missing Diplomat (12)##1265
 		accept The Missing Diplomat (13)##1266
 	step //124
@@ -3847,8 +3847,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 	step //138
 		'Tervosh and Jaina are supposed to teleport in like last time, if it doesn't happen, turn this in next time you're in Theramore, which is soon anyway
 		..turnin The Missing Diplomat (14)##1324
-		..accept The Missing Diplomat (15)##1267
-		..turnin The Missing Diplomat (15)##1267
+		..accept The Missing Diplomat (15)##1267|instant
 	step //139
 		goto 35.1,23
 		.kill Darkmist spiders|n
@@ -3877,6 +3876,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		goto 66.3,45.5
 		.talk Morgan Stern##4794
 		..turnin Mudrock Soup and Bugs##1204
+	step //151
+		goto 65.1,47.1
+		.talk Lieutenant Aden##23951
+		..accept Mission to Mudsprocket##11214
+		..turnin The Orc Report##1219
+		..accept Captain Vimes##1220
 	step //146
 		goto 68.2,48.6
 		.talk Captain Garran Vimes##4944
@@ -3905,12 +3910,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		goto 68.2,48.6
 		.talk Captain Garran Vimes##4944
 		..turnin The Black Shield (3)##1320
-	step //151
-		goto 65.1,47.1
-		.talk Lieutenant Aden##23951
-		..accept Mission to Mudsprocket##11214
-		..turnin The Orc Report##1219
-		..accept Captain Vimes##1220
 	step //152
 		goto 59.8,41.1
 		.talk Captain Wymor##5086
