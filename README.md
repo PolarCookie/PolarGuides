@@ -6,20 +6,14 @@ Open addon setting panel, goto zygor, goto dynamic progress, untick "mark obsole
 Ding80 makes you do green / yellow quests, and you usually outlevel the mobs you fight.
 
 ## Edits done to Ding80
-Colonel Kurzen and Jungle Secrets fully is added.
-Desolace has been replaced by Arathi Highlands.
-
-
-Ding steps can be safely ignored for the most part, it's a rough estimate of where you should be.  
-Exception being level 20 before heading to redridge mountain and 33 before heading to ironforge from southshore.  
+Colonel Kurzen and full Jungle Secrets chain is added.  
+Desolace has been replaced by Arathi Highlands.  
 
 Warlocks learn succubus at lvl ~32  
 Warlocks learn felhunter at lvl ~38
 
-Only Dwarf/Gnome starting area translated, either use Zygor default or some kind soul help me out on those.  
-
 Progress:  
-Dun Morogh 1-13 done  
+Dun Morogh 1-12 done  
 Alliance 13-20 done, except druid water form questline, it fits into late westfall questing and it's written into Zygor's. A huge grind section (~8k xp) at the end of lvl 19; any quests missed? cloth capitol quests or a detour to Darkshore maybe?  
 Alliance 20-24 done  
 Alliance 25-29 done  
@@ -31,18 +25,11 @@ Alliance 50-54 done
 Alliance 55-58 done  
 
 guide todo:  
-forgot to add ding 34,35,47,49  
-maybe include orb of orahil questline for warlocks during desolace part? can pick up the quests after getting felhunter and combine with Reagents for Reclaimers inc part 3 and 4  
 Missing Diplomat finale should be instant?  
 An OOX of Your Own should be instant?  
-Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in trinity and/or azeroth core  
+Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in trinity and/or azeroth core
 Need to redo the entire hearth usage, especially 50-58 section, lots of setting hearth stone here and there and never using it.  
 Possibly "Dousing the Flames of Protection" and "Ancient Spirits" can be skipped, finished lvl 58 with 52685xp (31%), aim to end at timbermaw hold with the ritual totems + runecloth (need to make a note to save runecloth)  
 
 ## Fixing step comments.
 Don't worry about the step comments, just run `python step_fix.py <guide>` and it'll fix it for you.
-
-
-AC todo:
-goal of accept Hints of a New Plague?##660
-

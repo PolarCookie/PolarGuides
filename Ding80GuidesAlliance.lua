@@ -3676,6 +3676,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 	step //99
 		goto 66.3,45.5
 		.talk Morgan Stern##4794
+		..turnin Morgan Stern##1260
 		..accept Mudrock Soup and Bugs##1204
 	step //100
 		talk 5 Deserter Agitator##23602
@@ -3721,15 +3722,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		.talk Babs Fizzletorque##23892
 		..turnin Thresher Oil##11192
 		..accept Dastardly Denizens of the Deep##11193
-	step //110
-		goto 68.3,51.0
-		.talk Calia Hastings##23566
-		..turnin The End of the Deserters##11134
 	step //111
 		goto 69.1,52.1
 		.talk "Dirty" Michael Crowe##23896
 		..turnin Dastardly Denizens of the Deep##11193
 		..accept Is it Real?##11194
+	step //110
+		goto 68.3,51.0
+		.talk Calia Hastings##23566
+		..turnin The End of the Deserters##11134
 	step //112
 		goto 58.5,60
 		.talk Nat Pagle##12919
