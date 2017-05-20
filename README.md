@@ -2,17 +2,19 @@
 Translating Ding80's leveling guide to work in the Zygor leveling guide addon  
 Discord: https://discord.gg/SjXbNRX
 
-Open addon setting panel, goto zygor, goto dynamic progress, untick "mark obsolete steps" and "skip obsolete steps" and set "Allow levels ahead" to 80.  
-Ding80 makes you do green / yellow quests, and you usually outlevel the mobs you fight.
+## Setup
+Open addon setting panel, goto zygor, go to dynamic progress, untick "mark obsolete steps" and "skip obsolete steps" and set "Allow levels ahead" to 10.
 
 ## Edits done to Ding80
 Colonel Kurzen and full Jungle Secrets chain is added.  
 Desolace has been replaced by Arathi Highlands.  
 
+## Tips
 Warlocks learn succubus at lvl ~32  
 Warlocks learn felhunter at lvl ~38
 
-Progress:  
+
+## Progress
 Dun Morogh 1-12 done  
 Alliance 13-20 done, except druid water form questline, it fits into late westfall questing and it's written into Zygor's. A huge grind section (~8k xp) at the end of lvl 19; any quests missed? cloth capitol quests or a detour to Darkshore maybe?  
 Alliance 20-24 done  
@@ -24,7 +26,7 @@ Alliance 45-49 done
 Alliance 50-54 done  
 Alliance 55-58 done  
 
-guide todo:  
+## guide todo
 Missing Diplomat finale should be instant?  
 An OOX of Your Own should be instant?  
 Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in trinity and/or azeroth core
