@@ -2,8 +2,8 @@
 Translating Ding80's leveling guide to work in the Zygor leveling guide addon  
 Discord: https://discord.gg/SjXbNRX
 
-## Setup
-Open addon setting panel, goto zygor, go to dynamic progress, untick "mark obsolete steps" and "skip obsolete steps" and set "Allow levels ahead" to 10.
+## Settings
+Untick "mark obsolete steps" and "skip obsolete steps", set "Allow levels ahead" to 10.
 
 ## Edits done to Ding80
 Colonel Kurzen and full Jungle Secrets chain is added.  
