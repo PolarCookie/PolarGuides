@@ -3722,12 +3722,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		.talk Babs Fizzletorque##23892
 		..turnin Thresher Oil##11192
 		..accept Dastardly Denizens of the Deep##11193
-	step //111
+	step //110
 		goto 69.1,52.1
 		.talk "Dirty" Michael Crowe##23896
 		..turnin Dastardly Denizens of the Deep##11193
 		..accept Is it Real?##11194
-	step //110
+	step //111
 		goto 68.3,51.0
 		.talk Calia Hastings##23566
 		..turnin The End of the Deserters##11134
