@@ -2,9 +2,6 @@
 Translating Ding80's leveling guide to work in the Zygor leveling guide addon  
 Discord: https://discord.gg/SjXbNRX
 
-## Settings
-Untick "mark obsolete steps" and "skip obsolete steps", set "Allow levels ahead" to 10.
-
 ## Edits done to Ding80
 Colonel Kurzen and full Jungle Secrets chain is added.  
 Desolace has been replaced by Arathi Highlands.  
