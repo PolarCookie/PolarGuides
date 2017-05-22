@@ -15,7 +15,7 @@ Warlocks learn felhunter at lvl 38
 
 ## Progress
 Dun Morogh 1-12 done  
-Alliance 13-19 done, except druid water form questline, it fits into late westfall questing and it's written into Zygor's. A huge grind section (~8k xp) at the end of lvl 19; any quests missed? cloth capitol quests or a detour to Darkshore maybe?  
+Alliance 13-19 done, except druid water form questline, it fits into late westfall questing and it's written into Zygor's.
 Alliance 20-24 done  
 Alliance 25-29 done  
 Alliance 30-34 done  
@@ -26,6 +26,8 @@ Alliance 50-54 done
 Alliance 55-58 done  
 
 ## Guide todo
+Do a timed run compare of grinding lvl 19 in westfall or heading to auberdine as is written.
+
 Thelsamar blood sausage needs to be completed earlier, loss of xp due to gray.
 Make some waypoints inside Deadmines for Collecting memories and Oh brother...
 Tempted to add The Absent Minded Professor questline, hooks into wetlands and all that.
