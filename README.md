@@ -15,7 +15,7 @@ Warlocks learn felhunter at lvl 38
 
 ## Progress
 Dun Morogh 1-12 done  
-Alliance 13-19 done, except druid water form questline, it fits into late westfall questing and it's written into Zygor's.
+Alliance 13-19 done, except druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
 Alliance 20-24 done  
 Alliance 25-29 done  
 Alliance 30-34 done  
