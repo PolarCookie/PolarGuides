@@ -3,7 +3,7 @@ Translating Ding80's leveling guide to work in the Zygor leveling guide addon
 Discord: https://discord.gg/SjXbNRX
 
 ## Edits done to Ding80
-Auberdine added for lvl 19-20
+Auberdine added for lvl 19-20  
 Colonel Kurzen and full Jungle Secrets chain is added.  
 Desolace has been replaced by Arathi Highlands.  
 
