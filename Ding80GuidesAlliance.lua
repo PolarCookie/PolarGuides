@@ -740,7 +740,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (13-19)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (20-25)
+	next Ding80's Alliance Leveling Guides\\Levels (20-24)
 	startlevel 13
 	step //1
 		goto Westfall,60,19.4
@@ -1331,7 +1331,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //142
 		ding 20
 ]])
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-25)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-24)",[[
 	author PolarCookie
 	next Ding80's Alliance Leveling Guides\\Levels (25-29)
 	startlevel 20
@@ -5138,6 +5138,20 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto 28.5,70.7
 		.from Lord Shalzaru##8136
 		.get Mysterious Relic|q 2870/1
+	step //64
+		goto 45.5,65
+		.' Click the Wrecked Row Boat|tip It's underwater and hard to see.
+		..turnin The Missing Courier (2)##4125
+		..accept Boat Wreckage##4127
+	step //63
+		goto 46.6,48.2
+		.kill 3 Rogue Vale Screechers|n
+		.' Use Yeh'kinya's Bramble on their corpses|use Yeh'kinya's Bramble##10699
+		.' Talk to their spirits that appear to collect their spirits
+		.' Collect 3 Screecher Spirits|goal 3 Screecher Spirits Collected|q 3520/1
+	step //65
+		goto 43.5,42.7|n
+		.' Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,0.5|noway|c
 	step //60
 		'Go outside the cave to 30.3,46.2|goto 30.3,46.2
 		.talk Latronicus Moonspear##7877
@@ -5147,24 +5161,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto 30.1,45.1
 		.talk Vestia Moonspear##7878
 		..turnin Delivering the Relic##2871
-	step //62
-		goto 31.0,39.9|n
-		'Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c
-	step //63
-		goto 46.6,48.2
-		.kill 3 Rogue Vale Screechers|n
-		.' Use Yeh'kinya's Bramble on their corpses|use Yeh'kinya's Bramble##10699
-		.' Talk to their spirits that appear to collect their spirits
-		.' Collect 3 Screecher Spirits|goal 3 Screecher Spirits Collected|q 3520/1
-	step //64
-		goto 45.5,65
-		.' Click the Wrecked Row Boat|tip It's underwater and hard to see.
-		..turnin The Missing Courier (2)##4125
-		..accept Boat Wreckage##4127
-	step //65
-		goto 43.5,42.7|n
-		.' Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,0.5|noway|c
 	step //66
+		//TODO: get crossing right
 		goto 31.9,45.1
 		.talk Ginro Hearthkindle##7880
 		..turnin Boat Wreckage##4127
