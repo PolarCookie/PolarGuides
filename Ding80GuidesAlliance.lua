@@ -1485,613 +1485,625 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		.talk Ariena Stormfeather##931
 		..fpath Lakeshire
 	step //18
-		goto Redridge Mountains,31.5,57.9
-		.talk Guard Howe##903
-		..accept Blackrock Bounty##128
-	step //19
 		goto 33.5,49
 		.talk Marshal Marris##382
 		..accept Blackrock Menace##20
-	step //20
+	step //19
 		goto 32.1,48.6
 		.talk Foreman Oslow##341
 		..accept The Lost Tools##125
-	step //21
+	step //20
 		goto 31,47.3
 		.talk Verner Osgood##415
 		..accept The Price of Shoes##118
-	step //22
+	step //21
 		goto 29.3,53.6
 		.talk Shawn##8965
 		..accept Hilary's Necklace##3741
-	step //23
-		goto 30,44.4
-		.talk Bailiff Conacher##900
-		..accept Solomon's Law##91
-	step //24
+	step //22
 		goto 30,44.5
 		.talk Magistrate Solomon##344
 		..accept Messenger to Stormwind (1)##120
-	step //25
-		goto 29.6,46.2
-		.talk Wanted: Gath'Ilzogg
-		..accept Gath'Ilzogg##169
-	step //26
+	step //23
 		goto 27.7,47.4
 		.talk Dockmaster Baren##381
 		..accept Selling Fish##127
 		..accept Murloc Poachers##150
-	step //27
-		goto 26.8,46.4
-		.talk Wanted: Lieutenant Fangore
-		..accept Wanted: Lieutenant Fangore##180
-	step //28
+	step //24
 		goto 26.6,44.3
 		.talk Darcy##379
 		..accept A Free Lunch##129
-	step //29
+	step //25
 		home Lakeshire
-	step //30
+	step //26
 		goto 26.5,45.3
 		.talk Wiley the Black##266
 		..turnin The Defias Brotherhood (1)##65
 		..accept The Defias Brotherhood (2)##132
-	step //31
+	step //27
 		goto 22.7,43.8
 		.talk Chef Breanna##343
 		..accept Redridge Goulash##92
-	step //32
-		goto 21.9,46.3
-		.talk Martie Jainrose##342
-		..accept An Unwelcome Guest##34
-	step //33
+	step //28
 		'Fly to Stormwind City|goto Stormwind City|noway|c
-	step //34
+	step //29
 		goto 69.2,82.7
 		.talk General Marcus Jonathan##466
 		..turnin Messenger to Stormwind (1)##120
 		..accept Messenger to Stormwind (2)##121
-	step //35
+	step //30
 		goto Elwynn Forest,41.7,65.5
 		.talk Smith Argus##514
 		..turnin The Price of Shoes##118
 		..accept Return to Verner##119
-	step //36
+	step //31
 		'Head back to Stormwind City|goto Stormwind City|noway|c
-	step //37
+	step //32
 		'Buy a Bronze Tube from the Auction House|buy 1 Bronze Tube|q 174/1
 		'Also sold by <Engineering Supplies> vendors near Engineering trainers.
-	step //38
+	step //33
 		'Fly to Lakeshire|goto Redridge Mountains|noway|c
-	step //39
+	step //34
 		goto 31,47.3
 		.talk Verner Osgood##415
 		..turnin Return to Verner##119
 		..accept Underbelly Scales##122
 		..accept A Baying of Gnolls##124
-	step //40
+	step //35
 		goto 30,44.5
 		.talk Magistrate Solomon##344
 		..turnin Messenger to Stormwind (2)##121
 		..accept Messenger to Westfall (1)##143
-	step //41
+	step //36
 		goto 29.1,55.1
 		.' Click the Glinting Mud|tip The Glinting Mud spawns in random places around this area, so some searching may be necessary.
 		.get Hilary's Necklace|q 3741/1
-	step //42
+	step //37
 		goto 41.5,54.6
 		.' Click the Sunken Chest
 		.get Oslow's Toolbox|q 125/1
-	step //43
-		goto Redridge Mountains,48.2,73.3
+	step //38
+		goto 40.82,49.11|tip Don't wait around for respawns, skip to the next step if no Murlocs around.
 		.from Murloc Flesheater##422+, Murloc Shorestriker##1083+, Murloc Minor Tidecaller##548+
 		.get 10 Spotted Sunfish|q 127/1
 		.get 8 Murloc Fin##1468|q 150/1
-	step //44
+	step //39
 		goto 34.2,67.4
 		.from Black Dragon Whelp##1221+
 		.get 6 Underbelly Whelp Scale|q 122/1
-		.from Great Goretusk##2296+
+		.from Great Goretusk##2296+|tip Skip this step if there's no Boars around, keep killing them as you met them in your travels.
 		.get 5 Great Goretusk Snout|q 92/1
-	step //45
-		goto 22,62
-		'Head to the next step if there's no Gnolls alive, there's another camp coming up soon.
+	step //40
+		goto 15.62,64.16|tip Don't wait around for respawns, skip to the next step if no Gnolls around.
 		.kill 10 Redridge Mongrel|q 246/1
 		.kill 6 Redridge Poacher|q 246/2
-	step //46
+	step //41
 		goto 15.3,71.5
 		.talk Guard Parker##464
 		..turnin A Free Lunch##129
 		..accept Visit the Herbalist##130
-	step //47
+	step //42
 		goto 19.3,73.2
-		.from Tarantula##442+
+		.from Tarantula##442+|tip Skip this step if there's no Spiders around, keep killing them as you met them in your travels.
 		.get 5 Crisp Spider Meat|q 92/3
-	step //48
+	step //43
 		goto 26.8,80.2
 		.kill 10 Redridge Mongrel|q 246/1
 		.kill 6 Redridge Poacher|q 246/2
-	step //49
+	step //44
+		goto Redridge Mountains,48.2,73.3
+		.from Murloc Flesheater##422+, Murloc Shorestriker##1083+, Murloc Minor Tidecaller##548+
+		.get 10 Spotted Sunfish|q 127/1
+		.get 8 Murloc Fin##1468|q 150/1
+	step //45
 		goto 55.5,74.7
-		.from Dire Condor##428+
+		.from Dire Condor##428+|tip Skip this step if there's no Condors around, keep killing them as you met them in your travels.
 		.get 5 Tough Condor Meat|q 92/2
-	step //50
+	step //46
 		goto 70.6,78.8
 		.from Blackrock Grunt##440+, Blackrock Outrunner##485+
 		.get 10 Battleworn Axe|q 20/1
-	step //51
+	step //47
+		'Finish collecting items for Redridge Gulash at this point before you return to Lakeshire
+		.get 5 Great Goretusk Snout|q 92/1
+		.get 5 Tough Condor Meat|q 92/2
+		.get 5 Crisp Spider Meat|q 92/3
+	step //48
 		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
-	step //52
+	step //49
 		goto Redridge Mountains,21.9,46.3
 		.talk Martie Jainrose##342
 		..turnin Visit the Herbalist##130
 		..accept Delivering Daffodils##131
-	step //53
-		goto Redridge Mountains,22.7,43.8
+	step //50
+		goto 22.7,43.8
 		.talk Chef Breanna##343
 		..turnin Redridge Goulash##92
-	step //54
+	step //51
 		goto 26.6,44.3
 		.talk Darcy##379
 		..turnin Delivering Daffodils##131
-	step //55
+	step //52
 		goto 27.7,47.4
 		.talk Dockmaster Baren##381
 		..turnin Selling Fish##127
 		..turnin Murloc Poachers##150
-	step //56
+	step //53
 		ding 21
-	step //57
+	step //54
 		goto 29.3,53.6
 		.talk Hilary##8962
 		..turnin Hilary's Necklace##3741
-	step //58
+	step //55
 		goto 31,47.3
 		.talk Verner Osgood##415
 		..turnin Underbelly Scales##122
-	step //59
+	step //56
 		goto 32.1,48.6
 		.talk Foreman Oslow##341
 		..turnin The Lost Tools##125
 		..accept The Everstill Bridge##89
-	step //60
+	step //57
 		goto 33.5,49
 		.talk Marshal Marris##382
 		..turnin Blackrock Menace##20
-		..accept Tharil'zun##19
-		..accept Shadow Magic##115
-	step //61
+	step //58
 		goto 30.7,60
 		.talk Deputy Feldon##1070
 		..turnin Assessing the Threat##246
-	step //62
+	step //59
 		goto 38.86,32.07
 		.kill 10 Redridge Brute|q 124/1
 		.kill 8 Redridge Mystic|q 124/2
 		.from Redridge Brute##426+, Redridge Mystic##430+
 		.get 5 Iron Pike|q 89/1
 		.get 5 Iron Rivet|q 89/2
-	step //63
+		.' You can find more Gnolls at 22.75,37.49|n
+	step //60
 		goto 32.1,48.6
 		.talk Foreman Oslow##341
 		..turnin The Everstill Bridge##89
-	step //64
+	step //61
 		goto 31,47.3
 		.talk Verner Osgood##415
 		..turnin A Baying of Gnolls##124
 		..accept Howling in the Hills##126
-	step //65
-		goto 27.7,21.4
+	step //62
+		goto 27.7,21.4|tip This one is hard and tedious to solo, either grab a friend or skip if you're impatient.
 		.from Yowler##518
 		..get Yowler's Paw|q 126/1
-	step //66
+	step //63
 		goto 31,47.3
 		.talk Verner Osgood##415
 		..turnin Howling in the Hills##126
-	step //67
+	step //64
 		'Go southwest to Duskwood|goto Duskwood|noway|c
-	step //68
+	step //65
 		goto 73.8,43.5
 		.talk Chef Grual##272
 		..accept Seasoned Wolf Kabobs##90
-	step //69
+	step //66
 		home Darkshire	
-	step //70
+	step //67
 		goto 73.5,46.8
 		.talk Commander Althea Ebonlocke##264
 		..accept The Night Watch (1)##56
-	step //71
+	step //68
 		goto 75.3,48.7
 		.talk Elaine Carevin##633
 		..accept Deliveries to Sven##164
 		..accept The Hermit##165
 		..accept Raven Hill##163
-	step //72
+	step //69
 		goto 77.5,44.3
 		.talk Felicia Maline##2409
 		..fpath Darkshire
-	step //73
+	step //70
 		goto 79.8,48.1
 		.talk Viktori Prism'Antras##276
 		..accept Look To The Stars (1)##174
 		..turnin Look To The Stars (1)##174
 		..accept Look To The Stars (2)##175
-	step //74
+	step //71
 		goto Duskwood,75.8,45.3
 		.talk Madame Eva##265
 		..accept The Totem of Infliction##101
-	step //75
+	step //72
 		goto 45.1,67
 		.talk Watcher Dodds##888
 		..accept Eight-Legged Menaces##245
-	step //76
+	step //73
 		'Go outside to 18.2,56.6|goto 18.2,56.6
 		.talk Jitters##288
 		..turnin Raven Hill##163
 		..accept Jitters' Growling Gut##5
-	step //77
+	step //74
 		'Travel north along the river towards Sven.
-		goto 21.9,65
+		goto 14.05,70.27|n
 		.kill 15 Pygmy Venom Web Spider|q 245/1
 		..get 5 Vial of Spider Venom|q 101/2
-		..collect 6 Gooey Spider Leg|q 93/1
-	step //78
+		..collect 6 Gooey Spider Leg|q 93/1|future
+	step //75
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
 		..turnin Deliveries to Sven##164
 		..accept Sven's Revenge##95
-	step //79
+	step //76
 		ding 22
-	step //80
+	step //77
 		goto 7.7,33.2
 		.talk Lars##893
 		..accept Wolves at Our Heels##226
-	step //81
+	step //78
 		goto 28.1,31.5
 		.talk Abercrombie##289
 		..turnin The Hermit##165
 		..accept Supplies from Darkshire##148
-	step //82
+	step //79
 		kill 12 Starving Dire Wolf|q 226/1
 		kill 8 Rabid Dire Wolf|q 226/2
 		get 10 Lean Wolf Flank|q 90/1
-	step //83
+	step //80
 		goto 7.7,33.2
 		.talk Lars##893
 		..turnin Wolves at Our Heels##226
-	step //84
+	step //81
 		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
-	step //85
+	step //82
 		goto 73.8,43.5
 		.talk Chef Grual##272
 		..turnin Jitters' Growling Gut##5
 		..accept Dusky Crab Cakes##93
 		..turnin Dusky Crab Cakes##93
 		..accept Return to Jitters##240
-	step //86
+	step //83
 		goto 75.8,45.3
 		.talk Madame Eva##265
 		..turnin Supplies from Darkshire##148
 		..accept Ghost Hair Thread##149
 		..accept The Legend of Stalvan (1)##66
-	step //87
+	step //84
 		goto 72.5,46.8
 		.talk Clerk Daltry##267
 		..turnin The Legend of Stalvan (1)##66
 		..accept The Legend of Stalvan (2)##67
-	step //88
+	step //85
 		goto 81.9,59.2
 		.talk Blind Mary##302
 		..turnin Look To The Stars (2)##175
 		..accept Look To The Stars (3)##177
 		..turnin Ghost Hair Thread##149
 		..accept Return the Comb##154
-	step //89
+	step //86
 		goto 79.3,70.3
 		.kill 8 Skeletal Warrior|q 56/1
 		.kill 6 Skeletal Mage|q 56/2
-	step //90
+	step //87
 		goto 80.9,71.6
 		.from Insane Ghoul##511
 		.get Mary's Looking Glass|q 177/1
-	step //91
+	step //88
 		goto 79.8,48.1
 		.talk Viktori Prism'Antras##276
 		..turnin Look To The Stars (3)##177
 		..accept Look To The Stars (4)##181
-
-	step //92
+	step //89
 		goto 75.8,45.3
 		.talk Madame Eva##265
 		..turnin Return the Comb##154
 		..accept Deliver the Thread##157
-	step //93
+	step //90
 		goto 73.5,46.8
 		.talk Commander Althea Ebonlocke##264
 		..turnin The Night Watch (1)##56
 		..accept The Night Watch (2)##57
-	step //94
+	step //91
 		goto 45.1,67
 		.talk Watcher Dodds##888
 		..turnin Eight-Legged Menaces##245
-	step //95
+	step //92
 		goto 28.1,31.5
 		.talk Abercrombie##289
 		..turnin Deliver the Thread##157
 		..accept Zombie Juice##158
-	step //96
+	step //93
 		'Go outside to 18.2,56.6|goto 18.2,56.6
 		.talk Jitters##288
 		..turnin Return to Jitters##240
-	step //97
+	step //94
 		'Head to Westfall|goto Westfall
-	step //98
+	step //95
 		goto Westfall,41.5,66.7
 		.' Click the Old Footlocker|tip It's a small rectangular wooden box on the floor inside this house.
 		..turnin The Legend of Stalvan (2)##67
 		..accept The Legend of Stalvan (3)##68
-	step //99
+	step //96
 		goto Westfall,56.3,47.5
 		.talk Gryan Stoutmantle##234
 		..turnin The Defias Brotherhood (2)##132
 		..accept The Defias Brotherhood (3)##135
 		..turnin Messenger to Westfall (1)##143
 		..accept Messenger to Westfall (2)##144
-	step //100
-		ding 23
-	step //101
+	step //97
 		'Fly to Stormwind|goto Stormwind City|noway|c
-	step //102
+	step //98
 		goto 69.3,71.3
 		buy 1 Stormwind Seasoning Herbs|q 90/2
-	step //103
+	step //99
 		goto Stormwind City,78.3,70.7
 		.talk Master Mathias Shaw##332
 		..turnin The Defias Brotherhood (3)##135
 		//..accept The Defias Brotherhood (4)##141
-	step //104
+	step //100
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
-	step //105
+	step //101
+		ding 23
+	step //102
 		goto Loch Modan,34.8,47.1
 		.talk Mountaineer Kadrell##1340
 		..accept Report to Mountaineer Rockgar##468
-	step //106
+	step //103
 		goto 25.4,10.4
 		.talk Mountaineer Rockgar##1342
 		..turnin Report to Mountaineer Rockgar##468
 		..accept The Algaz Gauntlet##455
-	step //107
+	step //104
 		'Go into the tunnel to 49.7,79.5|goto Wetlands,49.7,79.5
 		.kill 8 Dragonmaw Scout|q 455/2
 		.kill 6 Dragonmaw Grunt|q 455/3
-	step //108
+	step //105
 		'Follow the path through the tunnels to 53.9,70.3|goto 53.9,70.3|n
 		.' Traverse Dun Algaz|goal Traverse Dun Algaz|q 455/1
-	step //109
+	step //106
 		goto 49.9,39.4
 		.talk Einar Stonegrip##2093
 		..accept Daily Delivery##469
-	step //110
+	step //107
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..accept In Search of The Excavation Team (1)##305
-	step //111
+	step //108
 		goto 8.5,55.7
 		.talk James Halloran##2094
 		..turnin Daily Delivery##469
 		..accept Young Crocolisk Skins##484
-	step //112
+	step //109
 		goto 8.3,58.6
 		.talk Karl Boran##1242
 		..accept Claws from the Deep##279
-	step //113
+	step //110
 		goto 9.5,59.7
 		.talk Shellei Brondir##1571
 		..fpath Menethil Harbor
-	step //114
+	step //111
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
 		..accept The Third Fleet##288
 		..accept The Greenwarden##463
-	step //115
+	step //112
 		goto 10.8,60.8
 		.talk Innkeeper Helbrek##1464
 		..buy Flagon of Mead|goal Flagon of Mead|q 288/1
-	step //116
+	step //113
 		home Menethil Harbor
-	step //117
+	step //114
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
 		..turnin The Third Fleet##288
 		..accept The Cursed Crew##289
-	step //118
+	step //115
 		goto 11.8,58
 		.talk Sida##2111
 		..accept Digging Through the Ooze##470
-	step //119
+	step //116
 		goto 10.1,56.9
 		.talk Valstag Ironjaw##2086
 		..turnin The Algaz Gauntlet##455
 		..accept Report to Captain Stoutfist##473
-	step //120
+	step //117
 		goto 9.9,57.5
 		.talk Captain Stoutfist##2104
 		..turnin Report to Captain Stoutfist##473
 		..accept War Banners##464
-	step //121
+	step //118
 		goto 18.1,39.8
 		.from Gobbler##1259
 		.get Gobbler's Head|q 279/2
-	step //122
+	step //119
 		goto 13.8,41.9
 		.kill 12 Bluegill Murloc|q 279/1
-	step //123
+	step //120
 		'Kill crocolisks while traveling.
 		.from Young Wetlands Crocolisk##1417+
 		.get 4 Young Crocolisk Skin|q 484/1
 		goto Wetlands,38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..accept Ormer's Revenge (1)##294
-	step //124
+	step //121
 		goto 38.8,52.3
 		.talk Merrin Rockweaver##1076
 		..turnin In Search of The Excavation Team (1)##305
 		..accept In Search of The Excavation Team (2)##306
-	step //125
+	step //122
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin The Greenwarden##463
 		..accept Tramping Paws##276
-	step //126
+	step //123
 		goto 63.9,61.8
 		.kill 15 Mosshide Gnoll|q 276/1
 		.kill 10 Mosshide Mongrel|q 276/2
-	step //127
+	step //124
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin Tramping Paws##276
 		..accept Fire Taboo##277
-	step //128
+	step //125
 		goto 44.3,25.5
 		.from Black Ooze##1032+, Crimson Ooze##1031+
 		.get Sida's Bag|q 470/1
-	step //129
+	step //126
 		goto 46.4,35.3
 		.from Mosshide Trapper##1011+, Mosshide Brute##1012+, Mosshide Fenrunner##1010+, Mosshide Mistweaver##1009+|tip Mosshide Gnolls and Mosshide Mongrels will not drop the Crude Flint.
 		.get 9 Crude Flint|q 277/1
-	step //130
+	step //127
 		goto 29.1,44.8
 		.kill 10 Mottled Raptor|q 294/1
 		.kill 10 Mottled Screecher|q 294/2
-	step //131
+	step //128
 		ding 24
-	step //132
+	step //129
 		goto Wetlands,38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..turnin Ormer's Revenge (1)##294
 		..accept Ormer's Revenge (2)##295
-	step //133
+	step //130
 		goto 42.9,41.2
 		.from Dragonmaw Raider##1034+
 		.get 8 Dragonmaw War Banner|q 464/1
-	step //134
+	step //131
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin Fire Taboo##277
 		..accept Blisters on The Land##275
-	step //135
+	step //132
 		'Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c
-	step //136
+	step //133
 		goto Wetlands,8.3,58.6
 		.talk Karl Boran##1242
 		..turnin Claws from the Deep##279
 		..accept Reclaiming Goods##281
-	step //137
+	step //134
 		goto 8.5,55.7
 		.talk James Halloran##2094
 		..turnin Young Crocolisk Skins##484
 		..accept Apprentice's Duties##471
-	step //138
+	step //135
 		goto 9.9,57.5
 		.talk Captain Stoutfist##2104
 		..turnin War Banners##464
 		..accept Nek'rosh's Gambit##465
-	step //139
+	step //136
 		goto 11.8,58
 		.talk Sida##2111
 		..turnin Digging Through the Ooze##470
-	step //140
+	step //137
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..turnin In Search of The Excavation Team (2)##306
-	step //141
+	step //138
 		'Fly to Lakeshire|goto Redridge Mountains,30.4,59.0,0.5|noway|c
+
+	step //139
+		goto 33.5,49
+		.talk Marshal Marris##382
+		..accept Tharil'zun##19
+		..accept Shadow Magic##115
+	step //140
+		goto Redridge Mountains,31.5,57.9
+		.talk Guard Howe##903
+		..accept Blackrock Bounty##128
+	step //141
+		goto 30,44.4
+		.talk Bailiff Conacher##900
+		..accept Solomon's Law##91
 	step //142
-		home Lakeshire
+		goto 29.6,46.2
+		.talk Wanted: Gath'Ilzogg
+		..accept Gath'Ilzogg##169
 	step //143
+		goto 26.8,46.4
+		.talk Wanted: Lieutenant Fangore
+		..accept Wanted: Lieutenant Fangore##180
+	step //144
+		home Lakeshire
+	step //145
 		'Head left when you enter the cave
 		goto Redridge Mountains,28.4,12.6
 		.talk Corporal Keeshan##349
 		..accept Missing In Action##219
-	step //144
+	step //146
 		' IMPORTANT NOTE: Pull the mobs AHEAD of him before he reaches them! Even though he's tough, he charges into fights and can quickly get many adds. Outside, when he says that he's taking a rest, quickly take the opportunity to single pull continuously from the two big camps. If you do not, then he'll walk into the two big camps and pull every mob and you'll be doomed. If you do fail, you can go back in the cave and get the quest again.
 		goal Escort Corporal Keeshan back to Redridge|q 219/1
 		kill 15 Blackrock Champion|q 128/1
-	step //145
+	step //147
 		ding 25
-	step //146
+	step //148
 		goto 33.5,49
 		.talk Marshal Marris##382
 		..turnin Missing in Action##219
-	step //147
+	step //149
 		goto 31.5,57.9
 		.talk Guard Howe##903
 		..turnin Blackrock Bounty##128
-	step //148
+	step //150
 		goto 80.2,37.1
 		.from Lieutenant Fangore##703
 		..get 1 Fangore's Paw|q 180/1
 		.from Shadowhide Assassin##579+, Shadowhide Brute##432+, Shadowhide Darkweaver##429+, Shadow Gnoll##433+, Shadowhide Slayer##431+, Shadowhide Warrior##568+
 		..get 10 Shadowhide Pendant|q 91/1
-	step //149
+	step //151
 		'If you got the Glowing Shadowhide Pendant; accept, otherwise skip this step.
 		accept Theocritus' Retrieval##178
-	step //150
+	step //152
 		goto 84.5,46.8
 		.talk Old Lion Statue
 		..turnin A Watchful Eye##94
 		..accept Looking Further##248
-	step //151
+	step //153
 		'The Jar is at the top of the stone tower next to the keep.
 		goto 63.2,49.8
 		.talk An Empty Jar
 		..turnin Looking Further##248
-	step //152
+	step //154
 		goto 67,52
 		.from Blackrock Shadowcaster##436+
 		.get 3 Midnight Orb|q 115/1
-	step //153
+	step //155
 		'Group quest, consider abandoning
 		goto 69.3,59.9
 		.from Tharil'Zun##486
 		..get Tharil'zun's Head|q 19/1
-	step //154
+	step //156
 		'Group quest, consider abandoning
 		goto 69.6,55.8
 		.from Gath'Ilzogg##334
 		..get Head of Gath'Ilzogg|q 169/1
-	step //155
+	step //157
 		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
-		
-	step //156
+	step //158
+		goto 21.9,46.3
+		.talk Martie Jainrose##342
+		..accept An Unwelcome Guest##34
+	step //159
 		goto 15.9,49.5
 		.from Bellygrub##345
 		.get Bellygrub's Tusk|q 34/1
-	step //157
+	step //160
 		goto 21.9,46.3
 		.talk Martie Jainrose##342
 		..turnin An Unwelcome Guest##34		
-	step //158
+	step //161
 		goto 30,44.5
 		.talk Magistrate Solomon##344
 		..turnin Wanted: Gath'Ilzogg##169
 		..turnin Wanted: Lieutenant Fangore##180
 		..turnin Messenger to Westfall (2)##144
 		..accept Messenger to Darkshire (1)##145
-	step //159
+	step //162
 		goto 29.7,44.3
 		.talk Bailiff Conacher##900
 		..turnin Solomon's Law##91
-	step //160
+	step //163
 		goto 33.5,49
 		.talk Marshal Marris##382
 		..turnin Tharil'zun##19
 		..turnin Shadow Magic##115
-	step //161
+	step //164
 		ding 26
-	step //162
+	step //165
 		'Fly to Stormwind City to train skills if any, otherwise skip|goto Stormwind City|noway|c
-	step //163
+	step //166
 		'Fly to Darkshire|goto Duskwood,77.6,44.4,0.1|noway|c
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-29)",[[
