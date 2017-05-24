@@ -27,7 +27,7 @@ Alliance 55-58 done
 ## Ding steps
 Ding steps are written from a Warlock speed run on an Azeroth Core server, attempting to kill the minimal amounts of enemies.
 Reached lvl 58 with 12655xp (7%), Skipped a lot of hard to do quests along the way.  
-*Skipped quests for that run:*
+**Skipped quests for that run:**
 - WANTED: Chok'sul.
 - Howling in the Hills.
 - Wanted: Gath'Ilzogg.
@@ -41,6 +41,7 @@ Reached lvl 58 with 12655xp (7%), Skipped a lot of hard to do quests along the w
 - Deadwood and Winterfall Ritual Totem.
 
 ## Guide todo
+**Vanilla**
 Do a timed run compare of grinding lvl 19 in westfall or heading to auberdine as is written.  
 Thelsamar blood sausage needs to be completed earlier, loss of xp due to gray.  
 Make some waypoints inside Deadmines for Collecting memories and Oh brother...  
