@@ -4,7 +4,7 @@ Discord: https://discord.gg/SjXbNRX
 
 ## Edits done to Ding80
 Auberdine added for lvl 19-20  
-Cracking Maury's Foot and Mai'Zoth added.
+Cracking Maury's Foot and Mai'Zoth added.  
 Desolace has been replaced by Arathi Highlands.  
 
 ## Tips
