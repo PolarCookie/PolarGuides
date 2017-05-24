@@ -47,7 +47,6 @@ Make some waypoints inside Deadmines for Collecting memories and Oh brother...
 Tempted to add The Absent Minded Professor questline, hooks into wetlands and all that.  
 Clean up Forest Song quest start and end route.  
 Add Bartolo's Yeti fur cloak  
-
 End badlands quest by going to searing gorge to get the flightpath?  
 Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in trinity and/or azeroth core  
 
