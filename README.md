@@ -26,8 +26,8 @@ Alliance 55-58 done
 
 ## Ding steps
 Ding steps are written from a Warlock speed run on an Azeroth Core server, attempting to kill the minimal amounts of enemies.
-Reached lvl 58 with 12655xp (7%), Skipped a lot of hard to do quests along the way.
-Skipped quests for that run:
+Reached lvl 58 with 12655xp (7%), Skipped a lot of hard to do quests along the way.  
+*Skipped quests for that run:*
 - WANTED: Chok'sul.
 - Howling in the Hills.
 - Wanted: Gath'Ilzogg.
@@ -48,7 +48,7 @@ Tempted to add The Absent Minded Professor questline, hooks into wetlands and al
 Clean up Forest Song quest start and end route.  
 Add Bartolo's Yeti fur cloak  
 
-End badlands quest by going to searing gorge to get the flightpath?
+End badlands quest by going to searing gorge to get the flightpath?  
 Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in trinity and/or azeroth core  
 
 ## Fixing step comments.
