@@ -41,7 +41,7 @@ Reached lvl 58 with 12655xp (7%), Skipped a lot of hard to do quests along the w
 - Deadwood and Winterfall Ritual Totem.
 
 ## Guide todo
-**Vanilla**
+**Vanilla**  
 Do a timed run compare of grinding lvl 19 in westfall or heading to auberdine as is written.  
 Thelsamar blood sausage needs to be completed earlier, loss of xp due to gray.  
 Make some waypoints inside Deadmines for Collecting memories and Oh brother...  
