@@ -4,13 +4,12 @@ Discord: https://discord.gg/SjXbNRX
 
 ## Edits done to Ding80
 Auberdine added for lvl 19-20  
-Colonel Kurzen and full Jungle Secrets chain is added.  
+Cracking Maury's Foot and Mai'Zoth added.
 Desolace has been replaced by Arathi Highlands.  
-
 
 ## Tips
 Warlocks learn voidwalker at lvl 15  
-Warlocks learn succubus at lvl 32  
+Warlocks learn succubus at lvl 33  
 Warlocks learn felhunter at lvl 38  
 
 ## Progress
@@ -25,18 +24,32 @@ Alliance 45-49 done
 Alliance 50-54 done  
 Alliance 55-58 done  
 
-## Guide todo
-Do a timed run compare of grinding lvl 19 in westfall or heading to auberdine as is written.
+## Ding steps
+Ding steps are written from a Warlock speed run on an Azeroth Core server, attempting to kill the minimal amounts of enemies.
+Reached lvl 58 with 12655xp (7%), Skipped a lot of hard to do quests along the way.
+Skipped quests for that run:
+- WANTED: Chok'sul.
+- Howling in the Hills.
+- Wanted: Gath'Ilzogg.
+- Theocritus' Retrieval.
+- Diabolical Plans.
+- Coolant Heads Prevail and the following chain.
+- Green Hills of Stranglethorn
+- Message in a Bottle and the following chain
+- Chasing A-Me 01 (part 2).
+- Ursius of the Shardtooth.
+- Deadwood and Winterfall Ritual Totem.
 
+## Guide todo
+Do a timed run compare of grinding lvl 19 in westfall or heading to auberdine as is written.  
 Thelsamar blood sausage needs to be completed earlier, loss of xp due to gray.  
 Make some waypoints inside Deadmines for Collecting memories and Oh brother...  
 Tempted to add The Absent Minded Professor questline, hooks into wetlands and all that.  
+Clean up Forest Song quest start and end route.  
+Add Bartolo's Yeti fur cloak  
 
-An OOX of Your Own should be instant?  
+End badlands quest by going to searing gorge to get the flightpath?
 Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in trinity and/or azeroth core  
-Need to redo the entire hearth usage, especially 50-58 section, lots of setting hearth stone here and there and never using it.  
-"Dousing the Flames of Protection" and "Ancient Spirits" can possibly be skipped, finished lvl 58 with 52685xp (31%), aim to end at timbermaw hold with the ritual totems + runecloth (need to make a note to save runecloth)  
-
 
 ## Fixing step comments.
 Don't worry about the step comments, just run `python step_fix.py <guide>` and it'll fix it for you.
