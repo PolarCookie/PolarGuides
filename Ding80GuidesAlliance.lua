@@ -6648,6 +6648,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-58)",[[
 	author PolarCookie
+	next Ding80's Alliance Leveling Guides\\Levels (58-61)
 	startlevel 55
 
 	step //1
@@ -7198,4 +7199,2582 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 	step //124
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 ]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (58-61)",[[
+	author PolarCookie
+	next Ding80's Alliance Leveling Guides\\Levels (62-63)
+	startlevel 58
+
+	step //1
+		'Go inside Nethergarde Keep at 63.5,17|goto Blasted Lands,63.5,17
+		.talk Bernie Heisten##3546
+		..buy 1 Nethergarde Bitter|q 9563/1
+	step //2
+		goto 58.3,55.9
+		.talk Watch Commander Relthorn Netherwane##16841
+		..accept Through the Dark Portal##10119
+	step //3
+		'Go into the big green portal to the Outlands|goto Hellfire Peninsula|noway|c
+	step //4
+		goto Hellfire Peninsula,87.3,50.7
+		.talk Commander Duron##19229
+		..turnin Through the Dark Portal##10119
+		..accept Arrival in Outland##10288
+	step //5
+		goto 87.4,52.4
+		.talk Amish Wildhammer##18931
+		..turnin Arrival in Outland##10288
+		..accept Journey to Honor Hold##10140
+	step //6
+		'Fly to Honor Hold|goto Hellfire Peninsula,54.6,62.6,0.5|noway|c
+	step //7
+		goto 54.5,62.8
+		.talk Marshal Isildor##19308
+		..turnin Journey to Honor Hold##10140
+		..accept Force Commander Danath##10254
+	step //8
+		home Honor Hold
+	step //9
+		goto 56.6,66.7
+		.talk Force Commander Danath Trollbane##16819
+		..turnin Force Commander Danath##10254
+		..accept The Legion Reborn##10141
+		..accept Know your Enemy##10160
+	step //10
+		goto 51.2,60
+		.talk Dumphry##21209
+		..accept Waste Not, Want Not##10055
+	step //11
+		goto 50.9,60.2
+		.talk Lieutenant Amadi##16820
+		..turnin Know your Enemy##10160
+		..accept Fel Orc Scavengers##10482
+	step //12
+		goto 60.4,52.1
+		.' Click the Salvaged Metal and Wood|They are scraps on the ground around this area.
+		.get 8 Salvaged Metal|q 10055/1
+		.get 8 Salvaged Wood|q 10055/2
+		.kill 20 Bonechewer Orc|q 10482/1
+	step //13
+		goto 51.2,60
+		.talk Dumphry##21209
+		..turnin Waste Not, Want Not##10055
+		..accept Laying Waste to the Unwanted##10078
+	step //14
+		goto 50.9,60.2
+		.talk Lieutenant Amadi##16820
+		..turnin Fel Orc Scavengers##10482
+		..accept Ill Omens##10483
+	step //15
+		goto 61.7,60.8
+		.talk Sergeant Altumus##19309
+		..turnin The Legion Reborn##10141
+		..accept The Path of Anguish##10142
+	step //16
+		goto 65.8,54.1
+		.' Be on the lookout for the giant Fel Reaver
+		.kill 1 Dreadcaller|q 10142/1
+		.kill 4 Flamewaker Imp|q 10142/2
+		.kill 6 Infernal Warbringer|q 10142/3
+	step //17
+		goto 58.7,47
+		.' Use your Flaming Torch on the Eastern Thrower to burn it|goal Eastern Thrower Burned|q 10078/1|use Flaming Torch##26002|tip It's a big catapult.
+	step //18
+		goto 55.9,46.7
+		.' Use your Flaming Torch on the Central Eastern Thrower to burn it|goal Central Eastern Thrower Burned|q 10078/2|use Flaming Torch##26002|tip It's a big catapult.
+	step //19
+		goto 53.5,47.2
+		.' Use your Flaming Torch on the Central Western Thrower to burn it|goal Central Western Thrower Burned|q 10078/3|use Flaming Torch##26002|tip It's a big catapult.
+	step //20
+		goto 52.8,47.1
+		.' Use your Flaming Torch on the Western Thrower to burn it|goal Western Thrower Burned|q 10078/4|use Flaming Torch##26002|tip It's a big catapult.
+	step //21
+		goto 51.2,60
+		.talk Dumphry##21209
+		..turnin Laying Waste to the Unwanted##10078
+	step //22
+		goto 61.7,60.8
+		.talk Sergeant Altumus##19309
+		..turnin The Path of Anguish##10142
+		..accept Expedition Point##10143
+	step //23
+		goto 65.8,67.2
+		.kill Bleeding Hollow orcs|n
+		.get Cursed Talisman|q 10483/1
+	step //24
+		goto 71,63.4
+		.talk Corporal Ironridge##21133
+		..turnin Ill Omens##10483
+		..accept Cursed Talismans##10484
+	step //25
+		goto 71.3,62.8
+		.talk Forward Commander Kingston##19310
+		..turnin Expedition Point##10143
+		..accept Disrupt Their Reinforcements##10144
+	step //26
+		goto 71.4,62.5
+		.talk Wing Commander Dabir'ee##19409
+		..accept Zeth'Gor Must Burn!##10895
+	step //27
+		goto 72.0,59.6
+		.kill the demons here|n
+		.collect 4 Demonic Rune Stone##28513|q 10144
+	step //28
+		goto 72.7,59
+		.' Stand inside the portal and click it to destroy it|goal Disrupt Portal Kaalez|q 10144/2
+	step //29
+		goto 71.7,56.4
+		.kill the demons here|n
+		.collect 4 Demonic Rune Stone##28513|q 10144
+	step //30
+		goto 71.4,55.2
+		.' Stand inside the portal and click it to destroy it|goal Disrupt Portal Grimh|q 10144/1
+	step //31
+		goto 71.3,62.8
+		.talk Forward Commander Kingston##19310
+		..turnin Disrupt Their Reinforcements##10144
+		..accept Mission: The Murketh and Shaadraz Gateways##10146
+	step //32
+		goto 71.3,62.8
+		.talk Wing Commander Dabir'ee##19409
+		..'Take the flight
+		..'Click the bomb in your bags, bomb Gateway Shaadraz|goal Gateway Shaadraz Destroyed|q 10146/2|use Seaforium PU-36 Explosive Nether Modulator##28038
+		..'Click the bomb in your bags, bomb Gateway Murketh|goal Gateway Murketh Destroyed|q 10146/1|use Seaforium PU-36 Explosive Nether Modulator##28038
+	step //33
+		goto 71.4,62.7
+		.talk Forward Commander Kingston##19310
+		..turnin Mission: The Murketh and Shaadraz Gateways##10146
+		..accept Shatter Point##10340
+	step //34
+		goto 68,67
+		use Smoke Beacon##31739
+		.goal Northern Tower Marked|q 10895/1
+	step //35
+		goto 70.1,69
+		use Smoke Beacon##31739
+		.goal Forge Tower Marked|q 10895/3
+	step //36
+		goto 70.9,71.5
+		use Smoke Beacon##31739
+		.goal Foothill Tower Marked|q 10895/4
+	step //37
+		goto 66.5,76.6
+		use Smoke Beacon##31739
+		.goal Southern Tower Marked|q 10895/2
+	step //38
+		goto 65.8,67.2
+		.kill Bleeding Hollow orcs|n
+		.get 12 Cursed Talisman|q 10484/1
+	step //39
+		ding 59
+	step //40
+		goto 71,63.4
+		.talk Corporal Ironridge##21133
+		..turnin Cursed Talismans##10484
+		..accept Warlord of the Bleeding Hollow##10485
+	step //41
+		goto 71.4,62.5
+		.talk Wing Commander Dabir'ee##19409
+		..turnin Zeth'Gor Must Burn!##10895
+	step //42
+		goto 70.1,77.1
+		.from Warlord Morkh##16964
+		..get Morkh's Shattered Armor|q 10485/1
+	step //43
+		goto 71,63.4
+		.talk Corporal Ironridge##21133
+		..turnin Warlord of the Bleeding Hollow##10485
+		..accept Return to Honor Hold##10903
+	step //44
+		goto 71.4,62.5
+		.talk Wing Commander Dabir'ee##19409
+		..'Fly to Shatter Point|goto Hellfire Peninsula,78.5,35.1,1|noway|c
+	step //45
+		goto 78.4,34.9
+		.talk Runetog Wildhammer##20234
+		..fpath Shatter Point
+	step //46
+		goto 78.4,34.9
+		.talk Runetog Wildhammer##20234
+		..turnin Shatter Point##10340
+		..accept Wing Commander Gryphongar##10344
+	step //47
+		goto 79.3,33.9
+		.talk Wing Commander Gryphongar##20232
+		..turnin Wing Commander Gryphongar##10344
+		..accept Mission: The Abyssal Shelf##10163
+	step //48
+		goto 78.3,34.5
+		.talk Gryphoneer Windbellow##20235
+		.' Take a flight to the Abyssal Shelf
+		.' Use the Area 52 Special bomb in your bags to bomb the mobs|use Area 52 Special##28132|tip If you don't complete this in the first run, you can keep flying until it's done.
+		..kill 20 Gan'arg Peon|q 10163/1
+		..kill 5 Mo'arg Overseer|q 10163/2
+		..'Destroy 5 Fel Cannons|goal 5 Fel Cannon Destroyed|q 10163/3
+	step //49
+		goto 79.3,33.9
+		.talk Wing Commander Gryphongar##20232
+		..turnin Mission: The Abyssal Shelf##10163
+		..accept Go to the Front##10382
+	step //50
+		goto 78.3,34.5|n
+		.talk Gryphoneer Windbellow|tip Right next to an Armored Gryphon Destroyer.
+		..'Fly to Honor Point|goto Hellfire Peninsula,68.7,28.2,1|noway|c
+	step //51
+		goto 68.3,28.6
+		.talk Field Marshal Brock##20793
+		..turnin Go to the Front##10382
+		..accept Disruption - Forge Camp: Mageddon##10394
+	step //52
+		goto 64.8,31.9
+		.kill 10 Gan'arg Servant|q 10394/1
+		.kill Razorsaw|q 10394/2
+	step //53
+		goto 68.3,28.6
+		.talk Field Marshal Brock##20793
+		..turnin Disruption - Forge Camp: Mageddon##10394
+		..accept Enemy of my Enemy...##10396
+	step //54
+		goto 65.5,33.5
+		.kill 3 Fel Cannon MKI|q 10396/1
+	step //55
+		goto 68.3,28.6
+		.talk Field Marshal Brock##20793
+		..turnin Enemy of my Enemy...##10396
+		..accept Invasion Point: Annihilator##10397
+	step //56
+		goto 53,27.7
+		.kill Warbringer Arix'Amal|q 10397/1
+		.get Burning Blade Missive|n
+		.' Click the Burning Blade Missive|use Burning Blade Missive##29588
+		..accept The Dark Missive##10395
+		.get Burning Legion Gate Key|q 10397/3
+		.goal Close Burning Legion Gate|q 10397/2
+	step //57
+		goto 68.3,28.6
+		.talk Field Marshal Brock##20793
+		..turnin Invasion Point: Annihilator##10397
+	step //58
+		'Fly to Honor Hold|goto Hellfire Peninsula,54.6,62.6,0.5|noway|c
+	step //59
+		goto 54.3,63.4
+		.talk Father Malgor Devidicus##16825
+		..accept An Old Gift##10058
+	step //60
+		goto 54.3,63.6
+		.talk Assistant Klatu##22430
+		..turnin Return to Honor Hold##10903
+		..accept Fel Spirits##10909
+		..accept Digging for Prayer Beads##10916
+	step //61
+		goto 54.06,63.22
+		.get Draenei Prayer Beads|q 10916/1
+	step //62
+		goto 54.3,63.6
+		.talk Assistant Klatu##22430
+		..turnin Digging for Prayer Beads##10916
+	step //63
+		goto 56.7,66.5
+		.talk Warp-Scryer Kryv##16839
+		..accept The Path of Glory##10047
+		..turnin The Dark Missive##10395
+		..accept The Heart of Darkness##10399
+	step //64
+		goto 56.6,66.7
+		.talk Force Commander Danath Trollbane##16819
+		..accept Overlord##10400
+	step //65
+		goto 56.7,66.3
+		.talk Lieutenant Chadwick##17557
+		..accept Weaken the Ramparts##9575
+	step //66
+		goto 50.9,60.2
+		.talk Honor Guard Wesilow##16827
+		..accept Unyielding Souls##10050
+	step //67
+		goto 52,62.6
+		.talk Foreman Biggums##16837
+		..accept A Job for an Intelligent Man##9355
+		..accept When This Mine's a-Rockin'##10079
+	step //68
+		'Go inside the cave to 54.9,62.9|goto 54.9,62.9
+		.kill 12 Gan'arg Sapper|q 10079/1
+	step //69
+		'Go outside the cave to 52,62.6|goto 52,62.6
+		.talk Foreman Biggums##16837
+		..turnin When This Mine's a-Rockin'##10079
+		..accept The Mastermind##10099
+	step //70
+		'Go inside the cave to 56.3,61.4|goto 56.3,61.4
+		.kill Z'kral|q 10099/1|tip He is all the way at the bottom of the cave way in the back of the big room.
+	step //71
+		'Go outside the cave to 52,62.6|goto 52,62.6
+		.talk Foreman Biggums##16837
+		..turnin The Mastermind##10099
+	step //72
+		goto 47.8,65.8
+		.kill 15 Marauding Crust Burster|q 9355/1|tip They are under the jumping piles of rocks, they come up to fight when you get close to the jumping rocks.
+		.kill Marauding Crustbusters|n
+		.get Eroded Leather Case|n
+		.' Click the Eroded Leather Case|use Eroded Leather Case##23338
+		..accept Missing Missive##9373
+	step //73
+		goto 52,62.6
+		.talk Foreman Biggums##16837
+		..turnin A Job for an Intelligent Man##9355
+	step //74
+		goto 49.2,74.8
+		.talk "Screaming" Screed Luckheed##19367
+		..accept In Case of Emergency...##10161
+		.talk Legassi##19344
+		..accept Ravager Egg Roundup##9349
+	step //75
+		goto 41.2,84.4
+		.' Click Ravenger Eggs|tip They look like big white eggs on the ground around this area.
+		.kill Razorfury Ravagers|n
+		.get 12 Ravager Egg|q 9349/1
+	step //76
+		ding 60|tip Grind for this here.
+	step //77
+		'Go south to Terokkar Forest|goto Terokkar Forest|noway|c
+	step //78
+		'Go south to Shattrath City|goto Shattrath City|noway|c
+	step //79
+		goto 64.1,41.1
+		.talk Nutral##18940
+		..fpath Shattrath City
+	step //80
+		'Take the appropriate capitol portal and train your skills
+	step //81
+		'Hearth to Honor Hold|goto Hellfire Peninsula,55.7,63.3,5|use Hearthstone##6948|noway|c
+	step //82
+		goto 54.3,63.4
+		.talk Sid Limbardi##16826
+		..accept The Longbeards##9558
+	step //83
+		goto 45.09,75
+		.use Anchorite Relic##31772
+		..goal 10 Jules Avenged|q 10909/1
+	step //84
+		goto 49.2,74.8
+		.talk Legassi##19344
+		..turnin Ravager Egg Roundup##9349
+		..accept Helboar, the Other White Meat##9361
+	step //85
+		goto 50.2,74.8
+		.kill Helboars|n
+		.get Tainted Helboar Meat|n
+		.' Use your Purification Mixture on the Tainted Helboar Meat|use Purification Mixture##23268|tip The meat won't become purified every time, it can become toxic as well.
+		.get 8 Purified Helboar Meat|q 9361/1
+	step //86
+		goto 49.2,74.8
+		.talk Legassi##19344
+		..turnin Helboar, the Other White Meat##9361
+		..accept Smooth as Butter##9356
+	step //87
+		goto 55,86.8
+		.' Click the small book|tip It's a small white book laying on the steps of the house.
+		.get Mysteries of the Light|q 10058/1
+	step //88
+		goto 58,79
+		.kill 10 Unyielding Sorcerer|q 10050/2
+		.kill 5 Unyielding Knight|q 10050/3
+		.kill 12 Unyielding Footman|q 10050/1
+	step //89
+		goto 58.1,71.3
+		.kill vultures|n
+		.get 12 Plump Buzzard Wing|q 9356/1
+		.get 30 Zeppelin Debris|q 10161/1|tip They look like scraps of metal all over the ground.
+	step //90
+		goto 66.1,48.8
+		.' Click the Trampled Skeletons|tip They look like little brown ribcages and spines.  You will find them on the grey road.  They are very easy to miss, but once you find one you will find them really fast.
+		.' Cleanse 8 Trampled Skeletons|goal 8 Cleanse Trampled Skeleton|q 10047/1
+	step //91
+		goto 54.3,63.4
+		.talk Father Malgor Devidicus##16825
+		..turnin An Old Gift##10058
+	step //92
+		goto 54.3,63.6
+		.talk Assistant Klatu##22430
+		..turnin Fel Spirits##10909
+		..accept The Exorcism of Colonel Jules##10935
+	step //93
+		goal Colonel Jules Saved|q 10935/1|tip This quest is notoriously broken on some servers.
+	step //94
+		goto 54.3,63.6
+		.talk Assistant Klatu##22430
+		..turnin The Exorcism of Colonel Jules##10935
+		..accept Trollbane is Looking for You##10936
+	step //95
+		goto 56.7,66.5
+		.talk Warp-Scryer Kryv##16839
+		..turnin The Path of Glory##10047
+		..accept The Temple of Telhamat##10093
+	step //96
+		goto 56.6,66.7
+		.talk Force Commander Danath Trollbane##16819
+		..turnin Trollbane is Looking for You##10936
+		..accept Drill the Drillmaster##10937
+	step //97
+		goto 50.9,60.2
+		.talk Honor Guard Wesilow##16827
+		..turnin Unyielding Souls##10050
+		..accept Looking to the Leadership##10057
+	step //98
+		goto 49.2,74.8
+		.talk "Screaming" Screed Luckheed##19367
+		..turnin In Case of Emergency...##10161
+		..accept Voidwalkers Gone Wild##9351
+		.talk Legassi##19344
+		..turnin Smooth as Butter##9356
+	step //99
+		goto 53.6,81.1
+		.kill Arch Mage Xintor|q 10057/1|tip Near a bunch of practice fighting dummies.
+	step //100
+		goto 54.7,83.7
+		.kill Lieutenant Commander Thalvos|q 10057/2|tip Walking around on a black platform thing. He's a blue ghost dwarf.
+	step //101
+		goto 50.9,60.2
+		.talk Honor Guard Wesilow##16827
+		..turnin Looking to the Leadership##10057
+	step //102
+		goto 23.1,40.3
+		.talk Anchorite Obadei##16834
+		..accept In Search of Sedai##9390
+		.talk Ikan##16799
+		..accept Cruel Taskmasters##9399
+		..accept The Rock Flayer Matriarch##9490
+	step //103
+		goto 23.4,39.7
+		.talk Scout Vanura##16797
+		..accept Deadly Predators##9398
+	step //104
+		goto 23.4,36.5
+		.talk Amaan the Wise##16796
+		..turnin The Temple of Telhamat##10093
+		..accept The Pools of Aggonar##9426
+	step //105
+		home Temple of Telhamat
+	step //106
+		goto 25.2,37.2
+		.talk Kuma##18785
+		..fpath Temple of Telhamat
+	step //107
+		goto 26.9,37.4
+		.' Click Sedai's Corpse|tip Right down the hill from the Temple of Telhamat Flight Path.
+		..turnin In Search of Sedai##9390
+		..accept Return to Obadei##9423
+	step //108
+		goto 23.1,40.3
+		.talk Anchorite Obadei##16834
+		..turnin Return to Obadei##9423
+		.talk Makuru##16833
+		..accept Makuru's Vengeance##9424
+	step //109
+		goto 34.6,34.7
+		.kill Mag'har Grunts and Debilitated Mag'har Grunts|n
+		.get 10 Mag'har Ancestral Beads|q 9424/1
+	step //110
+		goto 38.9,29.1
+		.kill 6 Terrorfiend|q 9426/1
+		.kill 6 Blistering Rot|q 9426/2
+	step //111
+		goto 23.1,40.3
+		.talk Makuru##16833
+		..turnin Makuru's Vengeance##9424
+		.talk Anchorite Obadei##16834
+		..accept Atonement##9543
+	step //112
+		goto 23.4,36.5
+		.talk Amaan the Wise##16796
+		..turnin Atonement##9543
+		..accept Sha'naar Relics##9430
+		..turnin The Pools of Aggonar##9426
+		..accept Cleansing the Waters##9427
+	step //113
+		goto 40.3,30.9
+		.' Get close to the ribcage of the skeleton and next to the poisoned water
+		.' Empty your Cleansing Vial in this spot|use Cleansing Vial##23361
+		.' Kill Aggonis|goal Aggonar's Presence Cleansed|q 9427/1
+	step //114
+		goto 43.63,31.69
+		.kill Arazzius the Cruel|q 10400/1
+	step //115
+		'Hearth to the Temple of Telhamat|goto Hellfire Peninsula,23.4,37.2,3|use Hearthstone##6948|noway|c
+	step //116
+		goto 23.4,36.5
+		.talk Amaan the Wise##16796
+		..turnin Cleansing the Waters##9427
+	step //117
+		goto 33.4,65.1
+		.from Blacktalon the Savage##17057
+		.get Blacktalon's Claw|q 9490/1
+	step //118
+		goto 34.16,61.69
+		.kill 8 Stonescythe Whelp|q 9398/2
+		.kill 4 Stonescythe Alpha|q 9398/1
+	step //119
+		goto 24,72.1
+		.talk Gremni Longbeard##16850
+		..turnin The Longbeards##9558
+		..accept The Arakkoa Threat##9417
+		..accept Rampaging Ravagers##9385
+		.talk Mirren Longbeard##16851
+		..accept Gaining Mirren's Trust##9563
+		..turnin Gaining Mirren's Trust##9563
+		..accept The Finest Down##9420
+	step //120
+		goto 26.1,77.1|n
+		.' The path up to Avruu starts here|goto Hellfire Peninsula,26.1,77.1,0.5|noway|c
+	step //121
+		goto 25.7,75.1
+		.from Avruu##17084
+		.get Avruu's Orb|n
+		.' Click Avruu's Orb|use Avruu's Orb##23580
+		..accept Avruu's Orb##9418
+	step //122
+		goto 29,81.5
+		.' Click the Haal'eshi Altar|tip It looks like an orb sitting in a claw thing, right in front of a big purple hut.
+		.' Fight Aeranas until he's almost dead
+		.talk Aeranas##17085
+		..turnin Avruu's Orb##9418
+	step //123
+		goto 25.6,70.3
+		.kill 4 Haal'eshi Windwalker|q 9417/1
+		.kill 6 Haal'eshi Talonguard|q 9417/2
+		.' Click the Kaliri nests and kill Kaliri birds|tip The nests look like little brown nests with pink eggs in them.
+		.get 8 Kaliri Feather|q 9420/1
+	step //124
+		goto 24,72.1
+		.talk Gremni Longbeard##16850
+		..turnin The Arakkoa Threat##9417
+		.talk Mirren Longbeard##16851
+		..turnin The Finest Down##9420
+	step //125
+		goto 23.7,69.2
+		.kill 10 Quillfang Ravager|q 9385/1
+	step //126
+		goto 24,72.1
+		.talk Gremni Longbeard##16850
+		..turnin Rampaging Ravagers##9385
+	step //127
+		ding 61
+	step //128
+		goto 15.6,58.8
+		.talk Akoru the Firecaller##20678
+		..accept Naladu##10403
+	step //129
+		goto 16.3,65.1
+		.talk Naladu##19361
+		..turnin Naladu##10403
+		..accept A Traitor Among Us##10367
+	step //130
+		goto 14.3,63.5
+		.' Click the metal coffer on the floor in the big red hut
+		.get Sha'naar Key|q 10367/1
+	step //131
+		goto 16.3,65.1
+		.talk Naladu##19361
+		..turnin A Traitor Among Us##10367
+		..accept The Dreghood Elders##10368
+	step //132
+		goto 15.6,58.8
+		.talk Akoru the Firecaller##20678
+		..' Free Akoru the Firecaller|goal Akoru Freed|q 10368/2
+	step //133
+		goto 13,58.4
+		.talk Aylaan the Waterwaker##20679
+		..' Free Aylaan the Waterwaker|goal Aylaan Freed|q 10368/3
+	step //134
+		goto 13.1,61
+		.talk Morod the Windstirrer##20677
+		..' Free Morod the Windstirrer|goal Morod Freed|q 10368/1
+	step //135
+		goto 16.3,65.1
+		.talk Naladu##19361
+		..turnin The Dreghood Elders##10368
+		..accept Arzeth's Demise##10369
+	step //136
+		goto 14.4,62.3
+		.' Wait until Arzeth the Merciless is up top of the stairs by himself
+		.' Use the Staff of the Dreghood Elders on Arzeth the Merciless|use Staff of the Dreghood Elders##29513
+		.kill Arzeth the Powerless|q 10369/1
+	step //137
+		goto 16.3,65.1
+		.talk Naladu##19361
+		..turnin Arzeth's Demise##10369
+	step //138
+		goto 15.1,55.7
+		.kill 4 Illidari Taskmaster|q 9399/1|tip If you kill the taskmaster first, his friends leave you alone.
+		.get 10 Sha'naar Relic|q 9430/1|tip The Sha'naar Relics look like little blue vases on the ground.
+	step //139
+		'Hearth to the Temple of Telhamat|goto Hellfire Peninsula,23.4,37.2,3|use Hearthstone##6948|noway|c
+	step //140
+		goto 23.4,36.5
+		.talk Amaan the Wise##16796
+		..turnin Sha'naar Relics##9430
+		..accept The Seer's Relic##9545
+		.talk Elsaana##17006
+		..accept An Ambitious Plan##9383
+	step //141
+		goto 23.4,39.7
+		.talk Scout Vanura##16797
+		..turnin Deadly Predators##9398
+	step //142
+		goto 23.1,40.3
+		.talk Ikan##16799
+		..turnin Cruel Taskmasters##9399
+		..turnin The Rock Flayer Matriarch##9490
+	step //143
+		goto 26.9,37.4
+		.' Use the Seer's Relic on Sedai's Corpse|use Seer's Relic##23645|tip Right down the hill from the Temple of Telhamat Flight Path.
+		.' See the vision|goal Vision Granted|q 9545/1
+	step //144
+		goto 23.4,36.5
+		.talk Amaan the Wise##16796
+		..turnin The Seer's Relic##9545
+	step //145
+		'Fly to Honor Hold|goto 54.6,62.6,0.5|noway|c
+	step //146
+		goto 49.5,81.8
+		.kill voidwalkers|n
+		.get 10 Condensed Voidwalker Essence|q 9351/1
+		.' Use your Sanctified Crystal on an Uncontrolled Voidwalker when it's almost dead|use Sanctified Crystal##23417
+		.' Click the red floating crystal over its corpse
+		.get Glowing Sanctified Crystal|q 9383/1
+	step //147
+		goto 49.2,74.8
+		.talk "Screaming" Screed Luckheed##19367
+		..turnin Voidwalkers Gone Wild##9351
+	step //148
+		goto 47.97,56.27
+		.kill Drillmaster Zurok|q 10937/1
+	step //149
+		goto 56.6,66.7
+		.talk Force Commander Danath Trollbane##16819
+		..turnin Drill the Drillmaster##10937 
+	step //150
+		goto 56.7,66.5
+		.talk Warp-Scryer Kryv##16839
+		..turnin The Heart of Darkness##10399
+	step //151
+		'Fly to the Temple of Telhamat|goto 25.05,37.18|noway|c
+	step //152
+		goto 23.4,36.5
+		.talk Elsaana##17006
+		..turnin An Ambitious Plan##9383
+		..accept Helping the Cenarion Post##10443
+	step //153
+		goto 15.7,52
+		.talk Thiah Redmane##16991
+		..turnin Missing Missive##9373
+		..turnin Helping the Cenarion Post##10443
+		..accept Demonic Contamination##9372
+	step //154
+		goto 18.4,54.7
+		.kill Hulking Helboars|n
+		.get 6 Helboar Blood Sample|q 9372/1
+	step //155
+		goto 15.7,52
+		.talk Thiah Redmane##16991
+		..turnin Demonic Contamination##9372
+		..accept Testing the Antidote##10255
+	step //156
+		goto 25,54
+		.' Use the Cenarion Antidote on a Hulking Helboar|use Cenarion Antidote##23337
+		.' Administer the Antidote|goal Administer Antidote|q 10255/1
+	step //157
+		goto 15.7,52
+		.talk Thiah Redmane##16991
+		..turnin Testing the Antidote##10255
+	step //158
+		goto 15.7,52
+		.talk Amythiel Mistwalker##16885
+		..accept The Cenarion Expedition##9912
+		.talk Mahuram Stouthoof##16888
+		..accept Keep Thornfang Hill Clear!##10159
+	step //159
+		goto 12.3,49.9
+		.kill 8 Thornfang Ravager|q 10159/1
+		.kill 8 Thornfang Venomspitter|q 10159/2
+	step //160
+		goto 15.7,52
+		.talk Mahuram Stouthoof##16888
+		..turnin Keep Thornfang Hill Clear!##10159
+	step //161
+		goto 15.6,52
+		.talk Tola'thion##19293
+		..accept Colossal Menace##10132
+	step //162
+		goto 15.37,45.41
+		.kill 5 Raging Colossus|q 10132/1
+		.get Crimson Crystal Shard|n
+		.' Click the Crimson Crystal Shard|use Crimson Crystal Shard##29476
+		..accept Crimson Crystal Clue##10134
+	step //163
+		goto 15.6,52
+		.talk Tola'thion##19293
+		..turnin Colossal Menace##10132
+		..turnin Crimson Crystal Clue##10134
+		..accept The Earthbinder##10349
+	step //164
+		ding 62
+	step //165
+		goto 15.8,51.6
+		.talk Earthbinder Galandria NIghtbreeze##19294
+		..turnin The Earthbinder##10349
+		..accept Natural Remedies##10351
+	step //166
+		goto 13.4,39.6
+		.goal Fallen Sky Ridge Revitalized|q 10351/1
+	step //167
+		goto 15.8,51.6
+		.talk Earthbinder Galandria NIghtbreeze##19294
+		..turnin Natural Remedies##10351
+]])
+
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (62-63)",[[
+	author PolarCookie
+	next Ding80's Alliance Leveling Guides\\Levels (64-65)
+	startlevel 62
+
+	step //1
+		'Go northwest to Zangarmarsh|goto Zangarmarsh|noway|c
+	step //2
+		goto Zangarmarsh,80.4,64.2
+		.talk Lauranna Thar'well##17909
+		..accept Plants of Zangarmarsh##9802
+		.talk Ikeyen##17956
+		..accept The Umbrafen Tribe##9747
+	step //3
+		goto 78.5,63.1
+		.talk Lethyn Moonfire##17834
+		..accept The Dying Balance##9895
+	step //4
+		goto 78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin The Cenarion Expedition##9912
+		..accept Disturbance at Umbrafen Lake##9716
+		..accept Warden Hamoot##9778
+	step //5
+		goto 79.13,64.78
+		.accept Leader of the Bloodscale##9817
+		.accept Leader of the Darkcrest##9730
+	step //6
+		goto 79.1,65.3
+		.talk Warden Hamoot##17858
+		..turnin Warden Hamoot##9778
+		..accept A Warm Welcome##9728
+	step //7
+		'Go northeast to Telredor|goto Zangarmarsh,68.3,49.2,2|noway|c
+	step //8
+		'Ride the elevator up into Telredor and go to 68.3,50.1|goto 68.3,50.1
+		.talk Vindicator Idaar##18004
+		..accept The Fate of Tuurem##9793
+		..accept The Dead Mire##9782
+	step //9
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..accept The Orebor Harborage##9776
+		..accept The Boha'mu Ruins##9786
+	step //10
+		goto 68.6,49.4
+		.talk Prospector Conall##18295
+		..accept Unfinished Business##9901
+	step //11
+		goto 68.6,48.7
+		.talk Ruam##18007
+		..accept Fulgor Spores##9777
+	step //12
+		goto 67.7,48
+		.talk Haalrun##18005
+		..accept Too Many Mouths to Feed##9781
+		.talk Noraani##18006
+		..accept Menacing Marshfangs##9791
+	step //13
+		goto 67.8,51.5
+		.talk Munci##18788
+		..fpath Telredor
+	step //14
+		goto 71.3,46.9
+		.' Click the little green glowing mushrooms around this area
+		.get 6 Fulgor Spore|q 9777/1
+	step //15
+		goto 73.2,41.5
+		.kill 10 Marshfang Ripper|q 9791/1
+	step //16
+		goto 77.2,45.9
+		.kill Sporewing|q 9901/1|tip He looks like a Sporebat.
+	step //17
+		goto 80.7,43.4
+		.' Click the Dead Mire Soil mound
+		.get Dead Mire Soil Sample|q 9782/1
+	step //18
+		goto 68.3,50.1
+		.talk Vindicator Idaar##18004
+		..turnin The Dead Mire##9782
+		..accept An Unnatural Drought##9783
+	step //19
+		goto 68.6,49.4
+		.talk Prospector Conall##18295
+		..turnin Unfinished Business##9901
+		..accept Blacksting's Bane##9896
+	step //20
+		goto 68.6,48.7
+		.talk Ruam##18007
+		..turnin Fulgor Spores##9777
+	step //21
+		goto 67.7,48
+		.talk Noraani##18006
+		..turnin Menacing Marshfangs##9791
+		..accept Umbrafen Eel Filets##9780
+	step //22
+		goto 78.3,45.2
+		.kill 12 Withered Giant|q 9783/1
+	step //23
+		goto 68.3,50.1
+		.talk Vindicator Idaar##18004
+		..turnin An Unnatural Drought##9783
+	step //24
+		goto 70.9,82.1
+		.' Stand here to Investigate Umbrafen Lake|goal Umbrafen Lake Investigated|q 9716/1
+	step //25
+		goto 77.73,72.51
+		.kill 10 Mire Hydra|q 9781/1
+		.kill Umbrafen Eels|n
+		.get 8 Eel Filet|q 9780/1
+	step //26
+		goto 80.1,73.3
+		.kill Boglash|q 9895/1|tip I found Boglash here. He is a tall alien looking thing with really long legs. He walks around in the water, so some searching may be necessary.
+	step //27
+		goto 85.3,90.9
+		.kill Kataru|q 9747/1|tip In the big building, all the way at the top.
+	step //28
+		goto 84.8,84.4
+		.kill 6 Umbrafen Oracle|q 9747/2
+		.kill 8 Umbrafen Seer|q 9747/3
+		.kill 6 Umbrafen Witchdoctor|q 9747/4
+	step //29
+		goto 83.4,85.5
+		.talk Kayra Longmane##17969
+		..accept Escape from Umbrafen##9752
+		..'Escort Kayra Longmane|goal Escort Kayra Longmane to safety|q 9752/1
+	step //30
+		goto 78.5,63.1
+		.talk Lethyn Moonfire##17834
+		..turnin The Dying Balance##9895
+		..accept Watcher Leesa'oh##9697
+		..accept What's Wrong at Cenarion Thicket?##9957
+	step //31
+		goto 78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin Escape from Umbrafen##9752
+		..turnin Disturbance at Umbrafen Lake##9716
+		..accept As the Crow Flies##9718
+		..'Use the Stormcrow Amulet in your bags|use Stormcrow Amulet##25465
+		..'Watch yourself fly as a crow
+		.talk Ysiel Windsinger##17841
+		..turnin As the Crow Flies##9718
+		..accept Balance Must Be Preserved##9720
+	step //32
+		goto 80.4,64.2
+		.talk Ikeyen##17956
+		..turnin The Umbrafen Tribe##9747
+		..accept A Damp, Dark Place##9788
+		.talk Lauranna Thar'well##17909
+		..accept Saving the Sporeloks##10096
+	step //33
+		goto 80.4,64.7
+		.talk Windcaller Blackhoof##18070
+		..accept Safeguarding the Watchers##9894
+	step //34
+		goto 74.7,91.6|n
+		.' The path to 'Ikeyen's Belongings' starts here|goto Zangarmarsh,74.7,91.6,0.3|noway|c
+	step //35
+		'Go southwest inside the cave to 70.5,97.9|goto 70.5,97.9
+		.' Click Ikeyen's Belongings|tip A little tan metal chest sitting on a beg flat rock.
+		.get Ikeyen's Belongings|q 9788/1
+	step //36
+		'Go northeast inside the cave to 72.5,94.0|goto 72.5,94.0
+		.kill Lord Klaq|q 9894/1|tip On the bottom level of the cave, in the small round room all the way in the back.
+	step //37
+		goto 75.7,90.2
+		.kill 10 Marsh Lurker|q 10096/2
+		.kill 10 Marsh Dredger|q 10096/1
+	step //38
+		goto 70.6,80.3
+		.' Use your Ironvine Seeds on the Umbrafen Lake Pump Controls|use Ironvine Seeds##24355|tip The pump controls look like a little box with some levers on it.
+		.' Disable the Umbrafen Lake Pump Controls|goal Umbrafen Lake Controls Disabled|q 9720/1
+	step //39
+		goto 65.1,68.7
+		.kill Rajah Haghazed|q 9730/1 	
+	step //40
+		goto 63.1,64.1
+		.' Use your Ironvine Seeds on the Lagoon Pump Controls|use Ironvine Seeds##24355|tip The pump controls look like a little box with some levers on it.
+		.' Disable the Lagoon Pump Controls|goal Lagoon Controls Disabled|q 9720/4
+	step //41
+		goto 62,40.8
+		.' Use your Ironvine Seeds on the Serpent Lake Controls|use Ironvine Seeds##24355|tip The pump controls look like a little box with some levers on it.
+		.' Disable the Serpent Lake Controls|goal Serpent Lake Controls Disabled|q 9720/3
+	step //42
+		goto 65.2,40.9
+		.kill Rajis Fyashe|q 9817/1
+	step //43
+		goto 41.3,29
+		.talk Halu##22485
+		..fpath Orebor Harborage
+	step //44
+		goto 41.2,28.7
+		.talk Timothy Daniels##18019
+		..accept Secrets of the Daggerfen##9848
+	step //45
+		goto 41.7,27.3
+		.' Click the Wanted Poster|tip On a pink crystal post.
+		..accept Wanted: Chieftain Mummaki##10116
+	step //46
+		goto 41.9,27.2
+		.talk Ikuti##18008
+		..turnin The Orebor Harborage##9776
+		..accept Ango'rosh Encroachment##9835
+		..accept Daggerfen Deviance##10115
+	step //47
+		goto 26.4,22.8
+		.' Click the Daggerfen Poison Vial|tip Little clear bottle with white liquid in it, sitting on the ground next to a hut.
+		.get Daggerfen Poison Vial|q 9848/2
+	step //48
+		goto 24.4,27
+		.' Click the Daggerfen Poison Manual|tip At the top of the big tower, to the right as you reach the top, on the floor.
+		.get Daggerfen Poison Manual|q 9848/1
+	step //49
+		goto 23.8,26.8
+		.from Chieftain Mummaki##19174
+		.get Chieftain Mummaki's Totem|q 10116/1
+	step //50
+		goto 28.2,22.1
+		.kill 3 Daggerfen Assassin|q 10115/1
+		.kill 15 Daggerfen Muckdweller|q 10115/2
+	step //51
+		goto 29.6,28.3
+		.kill 5 Ango'rosh Shaman|q 9835/1
+		.kill 10 Ango'rosh Ogre|q 9835/2
+	step //52
+		goto 41.2,28.7
+		.talk Timothy Daniels##18019
+		..turnin Secrets of the Daggerfen##9848
+	step //53
+		goto 41.9,27.2
+		.talk Ikuti##18008
+		..turnin Ango'rosh Encroachment##9835
+		..accept Overlord Gorefist##9839
+		..turnin Wanted: Chieftain Mummaki##10116
+		..turnin Daggerfen Deviance##10115
+	step //54
+		home Orebor Harborage
+	step //55
+		goto 41.6,27.3
+		.talk Maktu##18010
+		..accept Natural Armor##9834
+	step //56
+		goto 40.8,28.7
+		.talk Puluu##18009
+		..accept Stinger Venom##9830
+		..accept Lines of Communication##9833
+		..accept The Terror of Marshlight Lake##9902
+	step //57
+		goto 25.4,42.9
+		.' Use your Ironvine Seeds on the Marshlight Lake Pump Controls|use Ironvine Seeds##24355|tip The pump controls look like a little box with some levers on it.
+		.' Disable the Marshlight Lake Pump Controls|goal Marshlight Lake Controls Disabled|q 9720/2
+		.' Kill Steam Pump Overseers, keep using the seed to spawn them.
+		.get Drain Schematics|n
+		.' Click the Drain Schematics in your bags|use Drain Schematics##24330
+		..accept Drain Schematics##9731
+		.kill nagas|n
+		.get 30 Naga Claws|q 9728/1
+	step //58
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin Watcher Leesa'oh##9697
+		..accept Observing the Sporelings##9701
+	step //59
+		goto 19.1,63.9
+		.talk Fahssn##17923
+		..accept The Sporelings' Plight##9739
+		..accept Natural Enemies##9743
+	step //60
+		goto 13.6,59.8
+		.' Go here to Investigate the Spawning Glen|goal Investigate the Spawning Glen|q 9701/1
+		.collect 10 Mature Spore Sac##24290|q 9739|tip They look like pink balls tied to a little string bobbing on the ground.  You need 30 extra to turn in for Sporeggar reputation, so you can accept quests. |future
+		.kill Starving Fungal Giants|n
+		.collect 6 Bog Lord Tendril##24291|q 9743
+	step //61
+		goto 19.1,63.9
+		.talk Fahssn##17923
+		..turnin Natural Enemies##9743
+		..turnin The Sporelings' Plight##9739
+	step //62
+		ding 63
+	step //63
+		goto 19.1,63.9
+		.talk Fahssn##17923
+		..'Turn in all your Mature Spore Sacs
+		..'Turn in all your Bog Lord Tendrils
+		..accept Sporeggar##9919
+	step //64
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin Observing the Sporelings##9701
+		..accept A Question of Gluttony##9702
+	step //65
+		goto 27,63.3
+		.' Click the Discarded Nutriments|tip They look like green glowing mushroom stalks on the ground.
+		.get 10 Discarded Nutriment|q 9702/1
+	step //66
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin A Question of Gluttony##9702
+		..accept Familiar Fungi##9708
+	step //67
+		goto 32.8,59.1
+		.from "Count" Ungula##18285
+		.get "Count" Ungula's Mandible|n
+		.' Click "Count" Ungula's Mandible|use "Count" Ungula's Mandible##25459
+		..accept The Count of the Marshes##9911
+		.kill 12 Marshfang Slicer|q 9833/1
+	step //68
+		goto 44.5,66.1|n
+		.' The path up to 'The Boha'mu Ruins' starts here|goto Zangarmarsh,44.5,66.1,0.5|noway|c
+	step //69
+		goto 44.1,68.8
+		.' Explore the Boha'mu Ruins|goal Explore the Boha'mu Ruins|q 9786/1
+	step //70
+		goto 49.5,59.2
+		.from Blacksting##18283
+		.get Blacksting's Stinger|q 9896/1
+	step //71
+		goto 48.1,38.4
+		.kill Fenclaw Thrashers|n
+		.get 8 Fenclaw Hide|q 9834/1
+	step //72
+		goto 50.4,40.8
+		.' Locate the drain in Serpent Lake|q 9731/1|tip Swim straight down at this spot.
+	step //73
+		goto 40.8,28.7
+		.talk Puluu##18009
+		..turnin Lines of Communication##9833
+	step //74
+		goto 41.6,27.3
+		.talk Maktu##18010
+		..turnin Natural Armor##9834
+		..accept Maktu's Revenge##9905
+	step //75
+		'Fly to Telredor|goto Zangarmarsh,68.3,49.2,2|noway|c
+	step //76
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..turnin The Boha'mu Ruins##9786
+		..accept Idols of the Feralfen##9787
+	step //77
+		goto 68.6,49.4
+		.talk Prospector Conall##18295
+		..turnin Blacksting's Bane##9896
+	step //78
+		goto 67.7,48
+		.talk Noraani##18006
+		..turnin Umbrafen Eel Filets##9780
+		.talk Haalrun##18005
+		..turnin Too Many Mouths to Feed##9781
+		..accept Diaphanous Wings##9790
+	step //79
+		goto 78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin Balance Must Be Preserved##9720
+		..turnin Drain Schematics##9731
+		..accept Warning the Cenarion Circle##9724
+	step //80
+		goto 79.1,65.3
+		.talk Warden Hamoot##17858
+		..turnin A Warm Welcome##9728
+		..turnin Leader of the Bloodscale##9817
+		..turnin Leader of the Darkcrest##9730
+	step //81
+		goto 80.4,64.7
+		.talk Windcaller Blackhoof##18070
+		..turnin Safeguarding the Watchers##9894
+		..accept Blessings of the Ancients##9785
+	step //82
+		goto 80.4,64.2
+		.talk Ikeyen##17956
+		..turnin A Damp, Dark Place##9788
+		.talk Lauranna Thar'well##17909
+		..turnin Saving the Sporeloks##10096
+		..turnin Plants of Zangarmarsh##9802
+	step //83
+		goto 78.1,63.8
+		.talk Keleth##17901
+		.'Get the Mark of War|goal Mark of War|q 9785/2
+	step //84
+		goto 81.1,63.9
+		.talk Ashyen##17900
+		.'Get the Mark of Lore|goal Mark of Lore|q 9785/1
+	step //85
+		goto 80.4,64.7
+		.talk Windcaller Blackhoof##18070
+		..turnin Blessings of the Ancients##9785
+	step //86
+		'Go east to Hellfire Peninsula|goto Hellfire Peninsula|noway|c
+	step //87
+		goto 15.7,52
+		.talk Amythiel Mistwalker##16885
+		..turnin Warning the Cenarion Circle##9724
+		..accept Return to the Marsh##9732
+	step //88
+		'Go west to Zangarmarsh|goto Zangarmarsh|noway|c
+	step //89
+		goto Zangarmarsh,78.4,62
+		.talk Ysiel Windsinger##17841
+		..turnin Return to the Marsh##9732
+		..accept Failed Incursion##9876
+	step //90
+		'Hearth to Orebor Harborage|goto 41.87,26.25|noway|c
+	step //91
+		goto Zangarmarsh,42.2,41.4
+		.kill Mragesh|q 9905/1|tip He is a big brown hydra underwater.
+	step //92
+		goto 29.6,28.3
+		.get 15 Mushroom Sample|q 9708/1
+	step //93
+		goto 17.3,38.4
+		.kill Marshlight Bleeders|n|tip They are all around this area on the land, to the north and south.
+		.get 6 Marshlight Bleeder Venom|q 9830/1
+		.' You'll be able to find more around 19.6,33.3
+	step //94
+		goto 13.12,45.44
+		.kill Fenglow Stingers|n
+		.get 8 Diaphanous Wing|q 9790/1
+	step //95
+		goto 19.7,52.1
+		.talk Msshi'fn##17924
+		..turnin Sporeggar##9919
+		..accept Glowcap Mushrooms##9808
+		..turnin Glowcap Mushrooms##9808
+	step //96
+		goto 19.5,50
+		.talk Gzhun'tt##17856
+		..accept Now That We're Friends...##9726
+	step //97
+		goto 19.2,49.4
+		.talk Gshaff##17925
+		..accept Fertile Spores##9806
+		..turnin Fertile Spores##9806
+	step //98
+		goto 22.4,46.1
+		.kill Terrorclaw|q 9902/1|tip On a little island.
+	step //99
+		goto 26.8,43
+		.kill 12 Bloodscale Slavedriver|q 9726/1
+		.kill 6 Bloodscale Enchantress|q 9726/2
+	step //100
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin The Count of the Marshes##9911
+		..turnin Familiar Fungi##9708
+		..accept Stealing Back the Mushrooms##9709
+	step //101
+		goto 49.3,60.6
+		.' Click the Feralfen Idols|tip They are small grey and green eagle statues on the ground.
+		.get 6 Feralfen Idol|q 9787/1
+	step //102
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..turnin Idols of the Feralfen##9787
+		..accept Gathering the Reagents##9801
+	step //103
+		goto 67.7,48
+		.talk Haalrun##18005
+		..turnin Diaphanous Wings##9790
+	step //104
+		goto 63.3,52.1
+		.kill Spore Bats|n
+		.get 4 Sporebat Eye|q 9801/1
+		.kill Fen Striders|n
+		.get 4 Fen Strider Tentacle|q 9801/2
+	step //105
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..turnin Gathering the Reagents##9801
+		..accept Messenger to the Feralfen##9803
+	step //106
+		goto 44.6,66.1
+		.' Drink Ahuurn's Elixir|use Ahuurn's Elixir##24428
+		.' Walk up the big steps
+		.talk Elder Kuruti##18197
+		.' Get Elder Kuruti's Response|goal Elder Kuruti's Response|q 9803/1
+	step //107
+		goto 68.2,49.4
+		.talk Anchorite Ahuurn##18003
+		..turnin Messenger to the Feralfen##9803
+	step //108
+		'Fly to Orebor Harborage|goto Zangarmarsh,41.8,26.6,4|noway|c
+	step //109
+		goto 41.6,27.3
+		.talk Maktu##18010
+		..turnin Maktu's Revenge##9905
+	step //110
+		goto 40.8,28.7
+		.talk Puluu##18009
+		..turnin Stinger Venom##9830
+		..turnin The Terror of Marshlight Lake##9902
+	step //111
+		goto 18.3,7.7
+		.kill 1 Overlord Gorefist|q 9839/1|tip Follow the path up the hill. Overlord Gorefist is inside the small house on the left.
+	step //112
+		goto 17.3,10.2
+		.kill 10 Ango'rosh Mauler|q 9839/2
+		.' Click the brown crates and kill ogres around this area
+		.get 10 Box of Mushrooms|q 9709/1
+	step //113
+		goto 41.9,27.2
+		.talk Ikuti##18008
+		..turnin Overlord Gorefist##9839
+	step //114
+		goto 19.5,50
+		.talk Gzhun'tt##17856
+		..turnin Now That We're Friends...##9726
+	step //115
+		goto 23.3,66.2
+		.talk Watcher Leesa'oh##17831
+		..turnin Stealing Back the Mushrooms##9709
+		..'Don't follow her when she walks away
+	step //116
+		ding 64
+	step //117
+		'Go east to Terokkar Forest|goto Terokkar Forest|noway|c
+]])
+
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (64-65)",[[
+	author PolarCookie
+	next Ding80's Alliance Leveling Guides\\Levels (66-67)
+	startlevel 64
+
+	step //1
+		goto Terokkar Forest,44.3,26.3
+		.talk Earthbinder Tavgren##18446
+		..turnin What's Wrong at Cenarion Thicket?##9957
+		..accept Strange Energy##9968
+		..accept Clues in the Thicket##9971
+	step //2
+		goto 44.46,25.66
+		.talk Warden Treelos##18424
+		..accept It's Watching You!##9951
+	step //3
+		goto 43.4,22.1
+		.kill Naphthal'ar|q 9951/1|tip At the top of the big tower.
+	step //4
+		goto 45.1,21.8
+		.' Examine the Strange Object|goal Strange Object examined|q 9971/1|tip Inside the building, looks like a white ball on the floor next to a dead guy.
+	step //5
+		goto 44.46,25.66
+		.talk Warden Treelos##18424
+		..turnin It's Watching You!##9951
+	step //6
+		goto 44.3,26.3
+		.talk Earthbinder Tavgren##18446
+		..turnin Clues in the Thicket##9971
+	step //7
+		goto 44.1,23.8
+		.kill Vicious Teromoths|n
+		.get 4 Vicious Teromoth Sample|q 9968/2
+	step //8
+		goto 45.8,29.8
+		.kill Teromoths|n
+		.get 4 Teromoth Sample|q 9968/1
+	step //9
+		goto 44.3,26.3
+		.talk Earthbinder Tavgren##18446
+		..turnin Strange Energy##9968
+		..accept By Any Means Necessary##9978
+	step //10
+		goto 47.1,27
+		.' Fight Empoor until he's almost dead
+		.talk Empoor##18482
+		..turnin By Any Means Necessary##9978
+		..accept Wind Trader Lathrai##9979
+	step //11
+		goto 57.6,54.7
+		.' Click the Wanted Poster|tip Right in front of the town hall building, next to light post.
+		..accept Wanted: Bonelashers Dead!##10033
+	step //12
+		goto 57.4,55.4
+		.talk Ros'eleth##18390
+		..accept Olemba Seeds##9992
+	step //13
+		goto 57.5,55.8
+		.talk Lieutenant Gravelhammer##18713
+		..accept Speak with Private Weeks##10038
+		..accept Thin the Flock##10869
+	step //14
+		goto 57.8,56
+		.talk Lady Deno Kennedy##15991
+		..accept Secrets of the Arakkoa##10863
+	step //15
+		goto 57.8,54.3
+		.talk Thander##18389
+		..accept Stymying the Arakkoa##9986
+	step //16
+		goto 58.3,54.8
+		.talk Bertelm##18387
+		..accept Unruly Neighbors##9998
+	step //17
+		goto 58.5,53.6
+		.talk Andarl##18252
+		..turnin The Fate of Tuurem##9793
+		..accept Magical Disturbances##10026
+	step //18
+		goto 59.4,55.4
+		.talk Furnan Skysoar##18809
+		..fpath Allerian Stronghold
+	step //19
+		'Fly to Shattrath City|goto Shattrath City|noway|c
+	step //20
+		goto Shattrath City,61.2,12.6
+		.talk the Haggard War Veteran##19684
+		..accept A'dal##10210
+	step //21
+		goto 54,44.8
+		.talk A'dal##18481
+		..turnin A'dal##10210
+	step //22
+		goto 54.8,44.3
+		.talk Khadgar##18166
+		..accept City of Light##10211
+		..'Follow the pink voidwalker
+	step //23
+		'As you follow the pink voidwalker, go to 64.0,15.5||goto 64.0,15.5
+		.talk Seth##18653
+		..accept Rather Be Fishin'##10037
+	step //24
+		'As you follow the pink voidwalker, go to 52.6,21.0|goto 52.6,21.0
+		.talk Rilak the Redeemed##22292
+		..turnin Secrets of the Arakkoa##10863
+		..accept The Eyes of Skettis##10847
+	step //25
+		'Follow the pink voidwalker until the tour is over|goal City of Light|q 10211/1
+	step //26
+		goto 54.8,44.3
+		.talk Khadgar##18166
+		..turnin City of Light##10211
+		..accept Allegiance to the Aldor##10551 |instant
+		..accept Ishanah##10554
+	step //27
+		'Ride the elevator up to the Aldor Rise|goto Shattrath City,41.7,38.6,0.5|c
+	step //28
+		goto 24,29.7
+		.talk Ishanah##18538
+		..turnin Ishanah##10554
+		..accept Restoring the Light##10021
+	step //29
+		home Shattrath City
+	step //30
+		'Take the appropriate capitol portal and train your skills
+	step //31
+		'Hearth to Shattrath City|goto Shattrath City|use Hearthstone##6948|noway|c
+	step //32
+		goto 46.2,22.4
+		.talk Vekax##22429
+		..accept The Outcast's Plight##10917
+	step //33
+		goto 55,22.5
+		.talk Arcanist Adyria##18596
+		..accept Voren'thal's Visions##10024
+	step //34
+		goto 64.6,15.2
+		.talk Sha'nir##18597
+		..accept A Cure for Zahlia##10020
+	step //35
+		goto 72.2,30.7
+		.talk Wind Trader Lathrai##18484
+		..turnin Wind Trader Lathrai##9979
+		..accept A Personal Favor##10112
+	step //36
+		'Go northeast out to Terokkar Forest|goto Terokkar Forest|noway|c
+	step //37
+		goto Terokkar Forest,38.6,8.5
+		.kill Shimmerscale Eels|n
+		.get 8 Pristine Shimmerscale Eel|q 10037/1
+	step //38
+		goto 49.1,16.9
+		.kill Ashkaz##18539|q 9986/1
+	step //39
+		goto 50.1,19.4
+		.' Click the Eye of Veil Reskk|tip Looks like a big white orb at the top of the tower across the hanging bridge.
+		.get Eye of Veil Reskk|q 10847/1
+	step //40
+		goto 49.2,20.3
+		.' Click the Eastern Altar
+		.' Purify the Eastern Altar|goal Eastern Altar|q 10021/2
+	step //41
+		goto 50.7,16.6
+		.' Click the Northern Altar
+		.' Purify the Northern Altar|goal Northern Altar|q 10021/1
+	step //42
+		goto 48.1,14.5
+		.' Click the Western Altar
+		.' Purify the Western Altar|goal Western Altar|q 10021/3
+	step //43
+		goto 57.9,23.2
+		.' Click the Eye of Veil Shienor|tip Climb the path inside the other tree, run across the bridge, looks like a big white orb on the ground.
+		.get Eye of Veil Shienor|q 10847/2
+	step //44
+		goto 59.4,23.4
+		.kill Ayit##18540|q 9986/2
+	step //45
+		goto 48.9,17.3
+		.kill 14 Shienor Talonite|q 10869/1
+		.kill 6 Shienor Sorcerer|q 10869/2
+	step //46
+		goto 60.4,29.1
+		.from Stonegazer##18648
+		..get Stonegazer's Blood|q 10020/1
+	step //47
+		goto 63,33.67
+		.' Click the Olemba Cones|tip The cones look like little white glowing pine cones on the ground.
+		.get 30 Olemba Seed|q 9992/1
+		.kill 10 Warp Stalker|q 10026/1
+		.' Kill Basilisks
+		.get 8 Dampscale Basilisk Eye|q 10024/1|tip Don't fight Ironspine Chompers, they don't drop eyes.
+	step //48
+		'Hearth to Shattrath City|goto Shattrath City|use Hearthstone##6948|noway|c
+	step //49
+		goto Shattrath City,24,29.7
+		.talk Ishanah##18538
+		..turnin Restoring the Light##10021
+	step //50
+		goto 55,22.5
+		.talk Arcanist Adyria##18596
+		..turnin Voren'thal's Visions##10024
+	step //51
+		goto 52.6,21
+		.talk Rilak the Redeemed##22292
+		..turnin The Eyes of Skettis##10847
+		..accept Seek Out Kirrik##10849
+	step //52
+		goto 64,15.5
+		.talk Seth##18653
+		..turnin Rather Be Fishin'##10037
+	step //53
+		goto 64.6,15.2
+		.talk Sha'nir##18597
+		..turnin A Cure for Zahlia##10020
+	step //54
+		'Go southeast out to Terokkar Forest|goto Terokkar Forest|noway|c
+	step //55
+		goto 40.5,36.2
+		.talk Private Weeks##18715
+		..turnin Speak with Private Weeks##10038
+		..accept Who Are They?##10040
+		.'He puts an orc disguise on you|havebuff Shadowy Disguise|q 10040
+		.' Be careful, the hunter in the camp can see through the disguise
+		..'The hunter is the guy walking around the camp with a group of mobs
+	step //56
+		goto 40.3,39.1
+		.talk Shadowy Advisor##18719|goal Shadowy Advisor Spoken To|q 10040/3
+	step //57
+		goto 39,39.7
+		.talk Shadowy Initiate##18716|goal Shadowy Initiate Spoken To|q 10040/1
+	step //58
+		goto 38.4,39.3
+		.talk Shadowy Laborer##18717|goal Shadowy Laborer Spoken To|q 10040/2
+	step //59
+		goto 40.5,36.2
+		.talk Private Weeks##18715
+		..turnin Who Are They?##10040
+		..accept Kill the Shadow Council!##10042
+	step //60
+		goto 40.3,39.1
+		.kill Shadowmaster Grieve##18720|q 10042/3
+	step //61
+		goto 39.8,40.8
+		.kill 10 Shadowy Executioner|q 10042/1
+		.kill 10 Shadowy Summoner|q 10042/2
+	step //62
+		goto Terokkar Forest,37.4,51.5
+		.talk Kirrik the Awakened##22272
+		..turnin Seek Out Kirrik##10849
+		..accept Veil Skith: Darkstone of Terokk##10839
+	step //63
+		goto 37.7,51.3
+		.talk Ethan##22365
+		..accept Missing Friends##10852
+	step //64
+		goto 37.4,51.2
+		.talk Mekeda##22370
+		..accept Before Darkness Falls##10878
+	step //65
+		goto 37.9,51.7
+		.talk Lakotae##22420
+		..accept The Infested Protectors##10896
+	step //66
+		goto 31.4,42.5
+		.kill Urdak##18541|q 9986/3
+	step //67
+		goto 30.8,42.1
+		.' Use the Rod of Purification on the Darkstone of Terokk|use Rod of Purification##31610
+		.' Purify the Darkstone of Terokk|goal Attempt to purify the Darkstone of Terrok|q 10839/1
+	step //68
+		goto 32.3,41.7
+		.kill arakkoas|n
+		.get 5 Lathrai's Stolen Goods|q 10112/1
+		.get Veil Skith Prison Keys|n
+		.' Click the yellow cages around this area
+		.' Rescue 12 Children|goal 12 Children Rescued|q 10852/1
+		.get 30 Arakkoa Feather|q 10917/1
+	step //69
+		goto 35.2,48.8
+		.kill Infested Root-walkers|n
+		.kill the Wood Mites that come out of their corpses|n
+		.kill 25 Wood Mite|q 10896/1
+		.' You can find more Infested Root-walkers at 39.1,47.0|n
+	step //70
+		goto 37.4,51.5
+		.talk Kirrik the Awakened##22272
+		..turnin Veil Skith: Darkstone of Terokk##10839
+		..accept Veil Rhaze: Unliving Evil##10848
+	step //71
+		goto 37.7,51.3
+		.talk Ethan##22365
+		..turnin Missing Friends##10852
+	step //72
+		goto 37.9,51.7
+		.talk Lakotae##22420
+		..turnin The Infested Protectors##10896
+	step //73
+		goto 37.5,50.8
+		.talk High Priest Orglum##22278
+		..accept The Tomb of Lights##10840
+		..accept Vengeful Souls##10842
+	step //74
+		goto 39.59,58.52
+		.kill 8 Cabal Skirmisher|q 10878/1
+		.kill 4 Cabal Spell-weaver|q 10878/2
+		.kill 2 Cabal Initiate|q 10878/3
+		.get Cabal Orders|n
+		.' Click the Cabal Orders|use Cabal Orders##31707
+		..accept Cabal Orders##10880
+	step //75
+		goto 46.3,56.5
+		.kill 10 Ethereal Nethermancer|q 10840/1
+		.kill 10 Ethereal Plunderer|q 10840/2
+		.kill 5 Vengeful Draenei|q 10842/1
+	step //76
+		goto Terokkar Forest,41.6,51.6
+		.kill 20 Bonelasher|q 10033/1
+	step //77
+		goto 37.4,51.2
+		.talk Mekeda##22370
+		..turnin Cabal Orders##10880
+		..accept The Shadow Tomb##10881
+		..turnin Before Darkness Falls##10878
+	step //78
+		goto 37.5,50.8
+		.talk High Priest Orglum##22278
+		..turnin The Tomb of Lights##10840
+		..turnin Vengeful Souls##10842
+	step //79
+		goto 37.1,49.5
+		.talk Soolaveen##18675
+		..accept Recover the Bones##10030
+	step //80
+		'Hearth to Shattrath City|goto Shattrath City|use Hearthstone##6948|noway|c
+	step //81
+		goto 46.2,22.4
+		.talk Vekax##22429
+		..turnin The Outcast's Plight##10917
+	step //82
+		goto Shattrath City,72.2,30.7
+		.talk Wind Trader Lathrai##18484
+		..turnin A Personal Favor##10112
+		..accept Investigate Tuurem##9990
+	step //83
+		'Fly to Allerian Stronghold|goto Terokkar Forest,57.5,54.2,3|noway|c
+	step //84
+		goto 58.5,53.6
+		.talk Andarl##18252
+		..turnin Magical Disturbances##10026
+	step //85
+		goto 57.8,54.3
+		.talk Thander##18389
+		..turnin Stymying the Arakkoa##9986
+	step //86
+		goto 57.4,55.4
+		.talk Ros'eleth##18390
+		..turnin Olemba Seeds##9992
+		..accept Vessels of Power##10028
+	step //87
+		goto 57.5,55.8
+		.talk Lieutenant Gravelhammer##18713
+		..turnin Kill the Shadow Council!##10042
+		..turnin Thin the Flock##10869
+	step //88
+		goto 58.1,53.4
+		.talk Taela Everstride##18704
+		..turnin Wanted: Bonelashers Dead!##10033
+	step //89
+		goto 58.1,53.4
+		.talk Taela Everstride##18704
+		..accept Torgos!##10035
+	step //90
+		ding 65
+	step //91
+		goto 65.5,50.6
+		.kill 12 Warped Peon|q 9998/1
+	step //92
+		goto 69.7,44.2
+		.talk Theloria Shadecloak##18565
+		..turnin Unruly Neighbors##9998
+		..accept The Firewing Liaison##10002
+		..accept Thinning the Ranks##10007
+	step //93
+		goto 68,53.2
+		.kill Lisaile Fireweaver##18583|q 10002/1
+	step //94
+		goto 67.9,53.6
+		.' Click the Fel Orc Plans|tip Inside the big building, it's a brown flat scroll laying on the floor next to some big logs.
+		..accept Fel Orc Plans##10012
+	step //95
+		goto 66.3,55.0
+		.kill 10 Bonechewer Devastator|q 10007/1
+		.kill 6 Bonechewer Backbreaker|q 10007/2
+	step //96
+		goto 54,30
+		.' Click the Sealed Box|tip A green glowing crate inside the hut directly east of you if you are standing on the bridge.
+		.get Sealed Box|q 9990/1
+	step //97
+		goto 54.1,32.1
+		.' Click the Draenei Vessels on the ground|tip They look like little pink glowing lanterns. Not all of the little lanters give you a Dranei Vessel, some will AoE you. Note: you can reach some of them through the walls.
+		.get 8 Draenei Vessel|q 10028/1
+	step //98
+		goto 44.3,26.3
+		.talk Earthbinder Tavgren##18446
+		..turnin Investigate Tuurem##9990
+		..accept What Are These Things?##9994
+	step //99
+		goto 57,53.5
+		.talk Jenai Starwhisper##18459
+		..turnin What Are These Things?##9994
+		..accept Report to the Allerian Post##10444
+	step //100
+		goto 57.4,55.4
+		.talk Ros'eleth##18390
+		..turnin Vessels of Power##10028
+	step //101
+		goto 58.3,54.8
+		.talk Bertelm##18387
+		..turnin Fel Orc Plans##10012
+	step //102
+		goto 69.7,44.2
+		.talk Lieutenant Meridian##21006
+		..turnin Report to the Allerian Post##10444
+		..accept Attack on Firewing Point##9996
+	step //103
+		goto 69.7,44.2
+		.talk Theloria Shadecloak##18565
+		..turnin The Firewing Liaison##10002
+		..turnin Thinning the Ranks##10007
+	step //104
+		goto 68.1,36.5
+		.kill 10 Firewing Defender|q 9996/1
+		.kill 10 Firewing Bloodwarder|q 9996/2
+		.kill 10 Firewing Warlock|q 9996/3
+	step //105
+		goto 69.7,44.2
+		.talk Lieutenant Meridian##21006
+		..turnin Attack on Firewing Point##9996
+		..accept The Final Code##10446
+	step //106
+		goto 73.3,34.6
+		.' Click the Orb of Translocation|tip Upstairs from Isla Starmane, on the balcony.
+		.' It will teleport you to the top of the tower|goto 73.5,35.0,0.2|noway|c
+	step //107
+		goto 73.9,35.8
+		.from Sharth Voldoun##18554
+		.collect 1 The Final Code##29912|q 10446
+	step //108
+		goto 74.2,36.5
+		.' Click the Orb of Translocation|tip Up the ramp from Sharth Voldoun.
+		.' It will teleport you to the bottom of the tower|goto 73.3,36.3,0.2|noway|c
+	step //109
+		goto 71.3,37.4
+		.' Click the Mana Bomb
+		.' Activate the Mana Bomb using the Final Code|goal Mana Bomb Activated|q 10446/1
+	step //110
+		goto 73.9,35.1|tip Be quick about it before the central plaza starts respawning.
+		.talk Isla Starmane##18760
+		..accept Escape from Firewing Point!##10051
+	step //111
+		goal Escort Isla Starmane to Safety|q 10051/1
+	step //112
+		goto 57,53.5
+		.talk Jenai Starwhisper##18459
+		..turnin The Final Code##10446
+		..accept Letting Earthbinder Tavgren Know##10005
+	step //113
+		goto 57.2,55.7
+		.talk Captain Auric Sunchaser##18745
+		..turnin Escape from Firewing Point!##10051
+	step //114
+		'Fly to Shattrath City, drop by your capitol, train and hearth back.|goto Shattrath City|noway|c
+	step //115
+		goto Terokkar Forest,44.3,26.3
+		.talk Earthbinder Tavgren##18446
+		..turnin Letting Earthbinder Tavgren Know##10005
+	step //116
+		goto 43.2,51.6
+		.from Trachela##21515
+		..collect Trachela's Carcass##30618|q 10036
+	step //117
+		goto 30.2,51.1
+		.kill 4 Deathtalon Spirit|q 10848/1
+		.kill 4 Screeching Spirit|q 10848/2
+		.kill 2 Spirit Raven|q 10848/3
+	step //118
+		goto 26.9,55.6
+		.use Trachela's Carcass##30618
+		.from Torgos##18707
+		..get Tail Feather of Torgos|q 10035/1
+	step //119
+		goto 29.7,51.7
+		.' Click the Cabal Chest|tip Inside the Shadow Tomb, inside a Cabal Chest in the back left of the room on the ground.
+		.get Gavel of K'alen|q 10881/2
+	step //120
+		goto 32.1,51.2
+		.' Click the Cabal Chest|tip Inside the Shadow Tomb, inside a Cabal Chest in the back left of the room on the ground.
+		.get Scroll of Atalor|q 10881/3
+	step //121
+		goto 31.2,46.7
+		.' Click the Cabal Chest|tip Inside the Shadow Tomb, inside a Cabal Chest in the back right of the room on the ground.
+		.get Drape of Arunen|q 10881/1
+	step //122
+		goto 30.6,49.1
+		.talk Akuno##22377
+		..accept Escaping the Tomb##10887
+	step //123
+		goal Akuno escorted|q 10887/1
+	step //124
+		goto 37.4,51.2
+		.talk Mekeda##22370
+		..turnin The Shadow Tomb##10881
+		..turnin Escaping the Tomb##10887
+	step //125
+		goto 37.4,51.5
+		.talk Kirrik the Awakened##22272
+		..turnin Veil Rhaze: Unliving Evil##10848
+		..accept Veil Lithic: Preemptive Strike##10861
+	step //126
+		goto 24.2,70.5
+		.' Open the purple glowing, brown eggs on the ground around this area
+		.' Redeem 3 Hatchlings|goal 3 Hatchlings Redeemed|q 10861/1
+		.kill 3 Malevolent Hatchling|q 10861/2
+	step //127
+		goto 31,76.1
+		.talk Commander Ra'vaj##22446
+		..accept An Improper Burial##10913
+		.talk Chief Archaeologist Letoll##22458
+		..accept Digging Through Bones##10922
+		..'Escort the Archaeologists|goal Protect the Explorers|q 10922/1
+	step //128
+		goto 31,76.1
+		.talk Dwarfowitz##22481
+		..turnin Digging Through Bones##10922
+		..accept Fumping##10929
+	step //129
+		goto 35,76.5
+		.' Use your Sha'tari Torch on corpses|use Sha'tari Torch##31769
+		.' Burn 8 Slain Sha'tar Vindicator corpses|goal 8 Slain Sha'tar Vindicator corpse burned|q 10913/1
+		.' Burn 8 Slain Auchenai Warrior corpses|goal 8 Slain Auchenai Warrior corpse burned|q 10913/2
+		.' Use the Fumper on cooldown|use Fumper 31810##31810
+		.get 8 Mature Bone Sifter Carcass|q 10929/1
+		.' Pick up Restless bones while waiting around|get 10 Restless Bone|q 10030/1
+	step //130
+		goto 31,76.1
+		.talk Commander Ra'vaj##22446
+		..turnin An Improper Burial##10913
+		..accept A Hero Is Needed##10914
+	step //131
+		goto 31,76.1
+		.talk Dwarfowitz##22481
+		..turnin Fumping##10929
+		..accept The Big Bone Worm##10930
+	step //132
+		goto 31.1,76.5
+		.talk Oakun##22456
+		..accept The Dread Relic##10877
+	step //133
+		goto 31.4,75.7
+		.talk Scout Navrin##22364
+		..accept Taken in the Night##10873
+	step //134
+		goto 36.7,74.4
+		.kill 12 Auchenai Initiate|q 10914/1
+		.kill 5 Auchenai Doomsayer|q 10914/2
+	step //135
+		goto 43.9,76.4
+		.get Dread Relic|q 10877/1
+	step //136
+		goto 35.1,65.1
+		.talk Ha'lei##19697
+		..accept I See Dead Draenei##10227
+	step //137
+		goto 35.1,66.2
+		.talk Ramdor the Mad##19417
+		..turnin Recover the Bones##10030
+		..accept Helping the Lost Find Their Way##10031
+		..turnin I See Dead Draenei##10227
+		..accept Ezekiel##10228
+	step //138
+		goto 49.7,76.2
+		.talk Vindicator Haylen##22462
+		..accept For the Fallen##10920
+	step //139
+		goto 52.84,78.55
+		.kill 20 Dreadfang Widow|q 10920/1
+		.' Kill webs as you see them|goal 6 Sha'tar Warrior Freed|q 10873/1
+	step //140
+		goto 49.7,76.2
+		.talk Vindicator Haylen##22462
+		..turnin For the Fallen##10920
+	step //141
+		goto 38.23,78.51
+		.kill 10 Lost Spirit|q 10031/1
+		.kill 10 Broken Skeleton|q 10031/2
+	step //142
+		goto 31.1,76.5
+		.talk Oakun##22456
+		..turnin The Dread Relic##10877
+	step //143
+		goto 31,76.1
+		.talk Commander Ra'vaj##22446
+		..turnin A Hero Is Needed##10914
+		..accept The Fallen Exarch##10915
+	step //144
+		goto 31.4,75.7
+		.talk Scout Navrin##22364
+		..turnin Taken in the Night##10873
+	step //145
+		ding 66
+	step //146
+		goto 35.9,65.7
+		.' Click the black coffin up the steps
+		.'Kill the Reanimated Exarch|goal Contents of the Auchenai Coffin destroyed|q 10915/1
+	step //147
+		goto 31,76.1
+		.talk Commander Ra'vaj##22446
+		..turnin The Fallen Exarch##10915
+	step //148
+		goto 37.4,51.5
+		.talk Kirrik the Awakened##22272
+		..turnin Veil Lithic: Preemptive Strike##10861
+	step //149
+		goto 37.1,49.5
+		.talk Soolaveen##18675
+		..turnin Helping the Lost Find Their Way##10031
+	step //150
+		goto 58.1,53.4
+		.talk Taela Everstride##18704
+		..turnin Torgos!##10035
+	step //151
+		'Fly to Shattrath City|goto Shattrath City|noway|c
+	step //152
+		talk Ezekiel##19715
+		..turnin Exekiel##10228
+		..accept What Book? I Don't See Any Book.##10231
+	step //153
+		goto 43.6,29.8
+		goal Beat Down "Dirty" Larry and Get Information|q 10231
+		.talk "Dirty" Larry##19720
+		..turnin What Book? I Don't See Any Book.##10231
+		..accept The Master's Grand Design?##10251
+	step //154
+		'Go train and Hearth back.
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (66-67)",[[
+	author PolarCookie
+	startlevel 66
+	next Ding80's Alliance Leveling Guides\\Levels (67-68)
+	step //1
+		'Go east to Nagrand|goto Nagrand|noway|c
+	step //2
+		goto 61.7,67.1
+		.talk Wazat##19035
+		..accept I Must Have Them!##10109
+	step //3
+		goto 55,70.5
+		.talk Huntress Bintook##18353
+		..accept Do My Eyes Deceive Me##9917
+	step //4
+		goto 55,70.4
+		.talk "Shotgun" Jones##19137
+		..accept The Nesingwary Safari##10113
+	step //5
+		goto 54.8,71
+		.talk Warden Moi'bff Jill##18408
+		..accept Fierce Enemies##10476
+	step //6
+		goto 54.6,70.7
+		.' Click the Telaar Bulletin Board|tip To the left of a big tree in a little circle island section in the road.
+		..accept Wanted: Giselda the Crone##9936
+		..accept Wanted: Zorbo the Advisor##9940
+	step //7
+		goto 55.5,68.8
+		.talk Elementalist Ioki##18233
+		..accept The Throne of the Elements##9869
+	step //8
+		goto 54.5,72.2
+		.talk Otonbu the Sage##18222
+		..accept Stopping the Spread##9874
+		.talk Poli'lukluk the Wiser##18224
+		..accept Solving the Problem##9878
+	step //9
+		home Telaar
+	step //10
+		goto 54.2,75.1
+		.talk Furgu##18789
+		..fpath Telaar
+	step //11
+		goto 54.2,70
+		.talk Huntress Kima##18416
+		..accept The Ravaged Caravan##9956
+		..accept He Called Himself Altruis...##9982
+	step //12
+		goto 51.11,69.76
+		.talk Consortium Recruiter##18335
+		..accept The Consortium Needs You!##9913
+	step //13
+		goto Nagrand,71.6,40.5
+		.talk Shado "Fitz" Farstrider##18200
+		..accept Windroc Mastery (1)##9854
+		.talk Hemet Nesingwary##18180
+		..turnin The Nesingwary Safari##10113
+		..accept Clefthoof Mastery (1)##9789
+		.talk Harold Lane##18218
+		..accept Talbuk Mastery (1)##9857
+	step //14
+		goto 60.5,22.4
+		.talk Elementalist Sharvak##18072
+		..turnin The Throne of the Elements##9869
+		.talk Elementalist Untrag##18071
+		..accept The Underneath##9818
+		.talk Elementalist Lo'ap##18073
+		..accept A Rare Bean##9800
+		..accept Muck Diving##9815
+	step //15
+		goto 61.8,24.4
+		.talk Gordawg##18099
+		..turnin The Underneath##9818
+		..accept The Tortured Earth##9819
+	step //16
+		goto 66.5,39.5
+		.kill 12 Windroc|q 9854/1
+	step //17
+		goto 72.2,38.4
+		.kill 12 Talbuk Stag|q 9857/1
+		.' You can find more Talbuk Stags at 70.8,46.4|n
+	step //18
+		goto 64,45.1
+		.kill 12 Clefthoof|q 9789/1
+		.' Kill Elekks
+		.collect 3 Pair of Ivory Tusks##25463|q 9914 |future
+		.' Kill Dust Howlers
+		.get 3 Air Elemental Gas|q 10109/1
+		.get Howling Wind|n
+		.' Click the Howling Wind|use Howling Wind##24504
+		..accept The Howling Wind##9861
+		.' You can find more Clefthoofs, Elekks, and Dust Howlers at 70.8,46.4|n
+		.kill 10 Tortured Earth Spirit|q 9819/1
+	step //19
+		goto 71.6,40.5
+		.talk Shado "Fitz" Farstrider##18200
+		..turnin Windroc Mastery (1)##9854
+		..accept Windroc Mastery (2)##9855
+		.talk Hemet Nesingwary##18180
+		..turnin Clefthoof Mastery (1)##9789
+		..accept Clefthoof Mastery (2)##9850
+		.talk Harold Lane##18218
+		..turnin Talbuk Mastery (1)##9857
+		..accept Talbuk Mastery (2)##9858
+	step //20
+		goto 61.8,24.4
+		.talk Gordawg##18099
+		..turnin The Tortured Earth##9819
+		..accept Eating Damnation##9821
+	step //21
+		goto 60.5,22.4
+		.talk Elementalist Morgh##18074
+		..turnin The Howling Wind##9861
+		..accept Murkblood Corrupters##9862
+	step //22
+		goto 52.1,25.6
+		.' Click the Dung on the ground|tip The Dung looks like green piles of swirled poop.
+		.get 8 Digested Caracoli|q 9800/1
+		.kill 12 Talbuk Thorngrazer|q 9858/1
+	step //23
+		goto 51.6,30.8
+		.kill 12 Clefthoof Bull|q 9850/1
+		.' You can find more Clefthoof Bulls at 49.7,35.6|n
+	step //24
+		goto 52,20.2
+		.' Kill Enraged Crushers
+		.get 10 Enraged Crusher Core|q 9821/1
+	step //25
+		goto 40.5,26.4
+		.from Murkblood Invader##18238
+		.use Murkblood Invasion Plans##24559
+		..accept Murkblood Invaders##9871
+	step //26
+		goto 60.5,22.4
+		.talk Elementalist Lo'ap##18073
+		..turnin A Rare Bean##9800
+		..accept Agitated Spirits of Skysong##9804
+	step //27
+		goto 61.8,24.4
+		.talk Gordawg##18099
+		..turnin Eating Damnation##9821
+		..accept Shattering the Veil##9849
+	step //28
+		goto 59.7,27.3
+		.kill 8 Lake Spirit|q 9804/1
+	step //29
+		goto 60.5,22.4
+		.talk Elementalist Lo'ap##18073
+		..turnin Agitated Spirits of Skysong##9804
+		..accept Blessing of Incineratus##9805
+	step //30
+		'Hearth to Telaar|goto 54.267,76.088|use Hearthstone##6948|noway|c
+	step //31
+		goto 55.5,68.7
+		.talk Arechron##18183
+		..turnin Murkblood Invaders##9871
+		..accept Ortor My Old Friend...##9873
+	step //32
+		goto 48.4,61.5
+		.kill 12 Ravenous Windroc|q 9855/1
+	step //33
+		goto 51.8,56.8
+		.talk Nitrin the Learned##19844
+		..turnin The Master's Grand Design?##10251
+	step //34
+		goto 61.7,67.1
+		.talk Wazat##19035
+		..turnin I Must Have Them!##10109
+		..accept Bring Me The Egg!##10111
+	step //35
+		get Severed Talon of the Matriarch|q 10111/1
+	step //36
+		goto 61.7,67.1
+		.talk Wazat##19035
+		..turnin Bring Me The Egg!##10111
+	step //37
+		goto 63.1,73.2
+		.' Kill Boulderfist Hunters
+		.get Boulderfist Plans|q 9917/1
+	step //38
+		goto 55,70.5
+		.talk Huntress Bintook##18353
+		..turnin Do My Eyes Deceive Me##9917
+		..accept Not On My Watch!##9918
+	step //39
+		goto 62.7,71.4
+		.' Fight Lump until he's almost dead|tip Sleeping on the hill.
+		.'Talk to Lump to interrogate him|goal Lump Interrogated|q 9918/1
+	step //40
+		goto 55,70.5
+		.talk Huntress Bintook##18353
+		..turnin Not On My Watch!##9918
+		..accept Mo'mor the Breaker##9920
+	step //41
+		goto 54.5,72.2
+		.talk Mo'mor the Breaker##18223
+		..turnin Mo'mor the Breaker##9920
+		..accept The Ruins of Burning Blade##9921
+	step //42
+		goto 72.6,70.7
+		.talk Corki##18369
+		..accept HELP!##9923
+	step //43
+		goto 72.9,69.8
+		.kill 8 Boulderfist Crusher|q 9921/1
+		.kill 8 Boulderfist Mystic|q 9921/2
+		.get Boulderfist Key|n
+		.' Click Corki's cage to free him|goal Corki Freed|q 9923/1
+	step //44
+		goto 72.8,54.7
+		.' Go inside the hut
+		.' Use your Living Fire|use Living Fire##24467
+		.' Burn the Eastern Hut|goal Eastern Hut Destroyed|q 9805/4
+	step //45
+		goto 71.2,53.2
+		.' Go inside the hut
+		.' Use your Living Fire|use Living Fire##24467
+		.' Burn the Southern Hut|goal Southern Hut Destroyed|q 9805/3
+	step //46
+		goto 70.8,51.2
+		.' Go inside the hut
+		.' Use your Living Fire|use Living Fire##24467
+		.' Burn the Western Hut|goal Western Hut Destroyed|q 9805/2
+	step //47
+		goto 72.4,50.3
+		.' Go inside the hut
+		.' Use your Living Fire|use Living Fire##24467
+		.' Burn the Large Hut|goal Large Hut Destroyed|q 9805/1
+	step //48
+		goto 71.6,40.5
+		.talk Harold Lane##18218
+		..turnin Talbuk Mastery (2)##9858
+		..accept Talbuk Mastery (3)##9859
+		.talk Hemet Nesingwary##18180
+		..turnin Clefthoof Mastery (2)##9850
+		..accept Clefthoof Mastery (3)##9851
+		.talk Shado "Fitz" Farstrider##18200
+		..turnin Windroc Mastery (2)##9855
+		..accept Windroc Mastery (3)##9856
+	step //49
+		goto 60.5,22.4
+		.talk Elementalist Lo'ap##18073
+		..turnin Blessing of Incineratus##9805
+		..accept The Spirit Polluted##9810
+	step //50
+		goto 55.5,68.8|tip Hearth if it's ready.
+		.talk Arechron##18183
+		..turnin HELP!##9923
+		..accept Corki's Gone Missing Again!##9924
+	step //51
+		goto 54.5,72.2
+		.talk Mo'mor the Breaker##18223
+		..turnin The Ruins of Burning Blade##9921
+		..accept The Twin Clefts of Nagrand##9922
+	step //52
+		goto 41.5,40.9
+		.' Kill Muck Spawns in the water
+		.get 5 Muck-ridden Core|q 9815/1
+	step //53
+		goto 39.3,27.5
+		.kill 10 Boulderfist Warrior|q 9922/1
+		.kill 10 Boulderfist Mage|q 9922/2
+		.collect 1 Northwind Cleft Key##25509|q 9924|sticky
+		.' Free Corki inside the cave|goal Corki Freed Again|q 9924/1|tip Inside the cave, way in the back, in a yellow cage again.
+	step //54
+		goto 33.1,20
+		.from Gutripper##18257
+		..get Eye of Gutripper|q 9856/1
+	step //55
+		goto 33.8,48.9
+		.kill 8 Lake Surger|q 9810/2
+	step //56
+		goto 33.1,50.8
+		.kill Watoosun's Polluted Essence##18145|q 9810/1
+	step //57
+		goto 30.88,42.35
+		.kill Ortor of Murkblood|q 9873/1
+	step //58
+		goto 32.58,42.35
+		.' Use the Torch of Liquid Fire on Sunspring Villager Corpses in the water|use Torch of Liquid Fire##24560
+		.' Burn 10 Sunspring Villager Corpses|goal 10 Sunspring Villager Corpse Burned|q 9874/1
+	step //59
+		goto 33.2,42.3
+		.talk Kurenai Captive##18209
+		..accept The Totem of Kar'dash##9879
+	step //60
+		goal Free the Kurenai Captive|q 9879/1
+	step //61
+		goto 32.58,42.35
+		.kill 10 Murkblood Scavenger|q 9878/1
+		.kill 5 Murkblood Raider|q 9878/2
+		.kill 5 Murkblood Putrifier|q 9862/1
+	step //62
+		goto 27.3,43.1
+		.talk Altruis the Sufferer##18417
+		..turnin He Called Himself Altruis...##9982
+		..accept Survey the Land##9991
+	step //63
+		goal Forge Camps Surveyed|q 9991/1
+	step //64
+		goto 27.3,43.1
+		.talk Altruis the Sufferer##18417
+		..turnin Survey the Land##9991
+	step //65
+		goto 28.8,38.3
+		.from Bach'lor##18258
+		..get Hoof of Bach'lor|q 9859/1
+	step //66
+		goto 30.8,58.1
+		.talk Zerid##18276
+		..accept Gava'xi##9900
+		..accept Matters of Security##9925
+	step //67
+		goto 31.4,57.8
+		.talk Gezhe##18265
+		..turnin The Consortium Needs You!##9913
+		..accept Stealing from Thieves##9882
+	step //68
+		goto 31.8,56.8
+		.talk Shadrek##18333
+		..accept A Head Full of Ivory##9914
+		..turnin A Head Full of Ivory##9914
+	step //69
+		goto 33.4,62.4
+		.' Click the Oshu'gun Crystal Fragments on the ground|tip They are the green and white crystals on the ground.
+		.' Kill the mobs here
+		.get 10 Oshu'gun Crystal Fragment|q 9882/1
+	step //70
+		goto 30.6,67.5
+		.kill 8 Voidspawn|q 9925/1
+	step //71
+		goto 42.4,73.5
+		.kill Gava'xi##18298|q 9900/1
+	step //72
+		goto 27.9,77.6
+		.' Use Gordawg's Boulder on Shattered Rumblers|use Gordawg's Boulder##24501
+		.kill 30 Minion of Gurok|q 9849/1
+	step //73
+		goto 30.8,58.1
+		.talk Zerid##18276
+		..turnin Gava'xi##9900
+		..turnin Matters of Security##9925
+	step //74
+		goto 31.4,57.8
+		.talk Gezhe##18265
+		..turnin Stealing from Thieves##9882
+	step //75
+		goto 41.4,61.6
+		.from Banthar##18259
+		..get Horn of Banthar|q 9851/1
+	step //76
+		'Go outside to 54.5,72.2|goto 54.5,72.2
+		.talk Mo'mor the Breaker##18223
+		..turnin The Twin Clefts of Nagrand##9922
+		..accept Diplomatic Measures##10108
+		.talk Poli'lukluk the Wiser##18224
+		..turnin Solving the Problem##9878
+		.talk Otonbu the Sage##18222
+		..turnin Stopping the Spread##9874
+	step //77
+		goto 54.8,71
+		.talk Warden Moi'bff Jill##18408
+		..turnin Fierce Enemies##10476
+	step //78
+		goto 55.5,68.7
+		.talk Arechron##18183
+		..turnin Ortor My Old Friend...##9873
+		..turnin The Totem of Kar'dash##9879
+		..turnin Corki's Gone Missing Again!##9924
+		..accept Corki's Ransom##9954
+	step //79
+		ding 67
+	step //80
+		goto 73.8,62.6
+		.talk Lantressor of the Blade##18261
+		..'Listen to his story
+		..turnin Diplomatic Measures##10108
+		..accept Armaments for Deception##9928
+		..accept Ruthless Cunning##9927
+	step //81
+		goto 71.1,82.4
+		.kill Giselda the Crone##18391|q 9936/1
+	step //82
+		goto 71.4,79.4
+		.' Click the Kil'sorrow Armaments on the ground|tip The Kil'sorrow Armaments look like skinny, square, tan boxes with a red axe logo on them.
+		.get 10 Kil'sorrow Armaments|q 9928/1
+		.kill 10 Kil'sorrow Agent|q 9936/2
+		.' Use your Warmaul Ogre Banners on their corpses|use Warmaul Ogre Banner##25552
+		.' Plant 10 Warmaul Ogre Banners|goal 10 Warmaul Ogre Banner Planted|q 9927/1
+	step //83
+		goto 73.8,62.6
+		.talk Lantresor of the Blade##18261
+		..turnin Armaments for Deception##9928
+		..turnin Ruthless Cunning##9927
+		..accept Returning the Favor##9931
+		..accept Body of Evidence##9932
+	step //84
+		goto 71.6,40.5
+		.talk Harold Lane##18218
+		..turnin Talbuk Mastery (3)##9859
+		.talk Hemet Nesingwary##18180
+		..turnin Clefthoof Mastery (3)##9851
+		.talk Shado "Fitz" Farstrider##18200
+		..turnin Windroc Mastery (3)##9856
+	step //85
+		goto 60.5,22.4
+		.talk Elementalist Lo'ap##18073
+		..turnin Muck Diving##9815
+		..turnin The Spirit Polluted##9810
+		.talk Elementalist Morgh##18074
+		..turnin Murkblood Corrupters##9862
+	step //86
+		goto 61.8,24.4
+		.talk Gordawg##18099
+		..turnin Shattering the Veil##9849
+	step //87
+		goto 46.5,18.2
+		.kill Zorbo the Advisor##18413|q 9940/1
+	step //88
+		goto 48.3,21.5
+		.kill 5 Warmaul Shaman|q 9940/2
+		.kill 5 Warmaul Reaver|q 9940/3
+		.' Use your Kil'sorrow Banners on their corpses|use Kil'sorrow Banner##25555
+		.' Plant 10 Kil'sorrow Banners|goal 10 Kil'sorrow Banner Planted|q 9931/1
+	step //89
+		goto 46.5,24.3
+		.' Use the Damp Woolen Blanket on the Blazing Warmaul Pyre|use Damp Woolen Blanket##25658
+		.' Defend the 2 ogres that appear until they are done placing the corpses|goal Kil'sorrow Bodies Planted|q 9932/1
+	step //90
+		goto 27.9,29.7
+		.get 10 Telaar Supply Crate|q 9956/1|tip They look like little grey boxes on the ground.
+	step //91
+		goto 29.5,26.1
+		.talk Corki##18369
+		..turnin Corki's Ransom##9954
+	step //92
+		'Hearth to Telaar|goto 54.267,76.088|use Hearthstone##6948|noway|c
+	step //93
+		goto 54.2,70
+		.talk Huntress Kima##18416
+		..turnin The Ravaged Caravan##9956
+	step //94
+		goto 54.8,71
+		.talk Warden Moi'bff Jill##18408
+		..turnin Wanted: Giselda the Crone##9936
+		..turnin Wanted: Zorbo the Advisor##9940
+	step //95
+		goto 73.8,62.6
+		.talk Lantresor of the Blade##18261
+		..turnin Returning the Favor##9931
+		..turnin Body of Evidence##9932
+		..accept Message to Telaar##9933
+	step //96
+		goto 55.5,68.8
+		.talk Arechron##18183
+		..turnin Message to Telaar##9933
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (67-68)",[[
+	author PolarCookie
+	startlevel 67
+
+	step //1
+		'Fly to Orebor Harborage|goto Zangarmarsh,41.8,26.6,4|noway|c
+	step //2
+		goto Zangarmarsh,41.2,28.7
+		.talk Timothy Daniels##18019
+		..accept No Time for Curiosity##9794
+	step //3
+		goto Blade's Edge Mountains,32.2,91.1
+		.talk Sentinel Moonwhisper##22488
+		..accept Killing the Crawlers##10927
+	step //4
+		'Go into the tunnel|goto Blade's Edge Mountains,32.7,90.6,0.3|c
+	step //5
+		goto 34.5,87.3
+		.'Kill 6 Cavern Crawlers before you reach the other side|kill 6 Cavern Crawler|q 10927/1
+	step //6
+		goto 36,67.8
+		.talk Kialon Nightblade##18098
+		..turnin No Time for Curiosity##9794
+	step //7
+		goto 36.2,67.1
+		.talk Rina Moonspring##21066
+		..accept The Encroaching Wilderness##10455
+	step //8
+		goto 36.6,67.3
+		.' Click the Wanted Poster|tip Next to the road, to the left.
+		..accept The Den Mother##10690
+	step //9
+		goto 36.3,66.2
+		.talk Commander Skyshadow##21158
+		..turnin Killing the Crawlers##10927
+		..accept The Bloodmaul Ogres##10502
+	step //10
+		goto 37.1,65.6
+		.talk Daranelle##21469
+		..accept Malaise##10555
+	step //11
+		home Sylvanaar|goto 35.8,63.9
+	step //12
+		goto 37.4,65
+		.talk Bronwyn Stouthammer##21197
+		..accept Into the Draenethyst Mine##10510
+	step //13
+		goto 37.4,64.6
+		.talk Borgrim Stouthammer##21151
+		..accept Strange Brew##10511
+	step //14
+		goto 37.8,61.4
+		.talk Amerun Leafshade##18937
+		..fpath Sylvanaar
+	step //15
+		goto 37.1,70.5
+		.kill 12 Grovestalker Lynx|q 10455/1
+	step //16
+		goto 35,74.4
+		.' Kill Lashh'an bird men
+		.get 18 Plucked Lashh'an Feather|q 10555/1
+	step //17
+		goto 34.3,77.4
+		.' Click the Lashh'an Tome|tip It's an open book, up the ramp, to the right.
+		..turnin Malaise##10555
+		..accept Scratches##10556
+	step //18
+		goto 35.2,77.3
+		.' Walk inside the Lashh'an Summoning Circle|tip It's a circle with the purple hologram on the ground.
+		.' Use the Fistful of Feathers in your bag|use Fistful of Feathers##30530
+		.' Get the Kaliri aura cast on you|havebuff Ability_Hunter_Pet_DragonHawk|q 10556
+	step //19
+		goto 36.2,67.1
+		.talk Rina Moonspring##21066
+		..turnin The Encroaching Wilderness##10455
+		..accept Marauding Wolves##10456
+	step //20
+		goto 37.1,65.6
+		.talk Daranelle##21469
+		..goal Have Daranelle analyze the Kaliri aura|q 10556/1
+		..turnin Scratches##10556
+	step //21
+		goto 51.3,65.5
+		.' Kill Thunderlord Dire Wolves
+		.get 4 Thunderlord Dire Wolf Tail|q 10456/1
+	step //22
+		goto 51.6,75
+		.kill Rema##21596|q 10690/1
+	step //23
+		'Hearth to Sylvanaar|goto 35.83,63.89,2|use Hearthstone##6948|noway|c
+	step //24
+		goto 36.3,66.2
+		.talk Commander Skyshadow##21158
+		..turnin The Den Mother##10690
+	step //25
+		goto 36.2,67.1
+		.talk Rina Moonspring##21066
+		..turnin Marauding Wolves##10456
+		..accept Protecting Our Own##10457
+	step //26
+		goto 36.7,70.7
+		.' Click Grove Seedlings|tip They look like little green plant bulbs on the ground.
+		.' Summon 5 Living Grove Defenders|goal 5 Living Grove Defenders summoned|q 10457/1
+	step //27
+		goto 36.2,67.1
+		.talk Rina Moonspring##21066
+		..turnin Protecting Our Own##10457
+		..accept A Dire Situation##10506
+	step //28
+		'Go inside the cave to 42.4,83.4|goto 42.4,83.4 
+		.' Click Draenethyst Mine Crystals|tip They look like huge crystals growing out of the ground.
+		.get 5 Draenethyst Mine Crystal|q 10510/1
+	step //29
+		goto 42.4,79.4
+		.' Kill 30 Bloodmaul Ogres|goal 30 Bloodmaul Ogres killed|q 10502/1
+		.from Bloodmaul Brewmaster##19957
+		.' Click the Bloodmaul Brew Kegs|tip The Bloodmaul Brew Kegs look like barrels.
+		.get 16 Bloodmaul Brutebane Brew|q 10511/1
+		.' Use Rina's Diminution Powder on Bloodmaul Dire Wolves|use Rina's Diminution Powder##30251
+		.' Weaken 5 Bloodmaul Dire Wolves|goal 5 Bloodmaul Dire Wolf weakened|q 10506/1
+	step //30
+		'Go outside to 36.3,66.2|goto 36.3,66.2
+		.talk Commander Skyshadow##21158
+		..turnin The Bloodmaul Ogres##10502
+		..accept The Bladespire Ogres##10504
+	step //31
+		goto 37.4,65
+		.talk Bronwyn Stouthammer##21197
+		..turnin Into the Draenethyst Mine##10510
+	step //32
+		goto 37.4,64.6
+		.talk Borgrim Stouthammer##21151
+		..turnin Strange Brew##10511
+		..accept Getting the Bladespire Tanked##10512
+	step //33
+		goto 44,51.9
+		.talk Vindicator Vuuleen##21277
+		..accept The Trappings of a Vindicator##10516
+	step //34
+		goto 39.3,53
+		.' Pull the 2 non-elite guards one at a time and kill them
+		.' Place a beer in front of the fire|use Bloodmaul Brutebane Keg##30353|tip Inside this big building.
+		..'Don't aggro the ogres, though
+		.' Droggam will run up for the beer
+		.' Pull Droggam outside and kill him
+		.get Vindicator Vuuleen's Blade|q 10516/1
+	step //35
+		goto 42.1,57.8
+		.' Pull the 2 non-elite guards one at a time and kill them
+		.' Place a beer in front of the fire|use Bloodmaul Brutebane Keg##30353|tip Inside this big building.
+		..'Don't aggro the ogres, though
+		.' Mugdorg will run up for the beer
+		.' Pull Mugdorg outside and kill him
+		.get Vindicator Vuuleen's Shield|q 10516/2
+	step //36
+		goto 44,51.9
+		.talk Vindicator Vuuleen##21277
+		..turnin The Trappings of a Vindicator##10516
+		..accept Gorr'Dim, Your Time Has Come...##10517
+	step //37
+		goto 39.9,49.6
+		.' Place a beer in front of the fire|use Bloodmaul Brutebane Keg##30353
+		..'Don't aggro the ogres, though
+		.' Gorr'dim will run up for the beer
+		.' Pull Gorr'dim outside and kill him|kill Gorr'Dim|q 10517/1
+	step //38
+		goto 40.3,53
+		.' Kill 30 Bladespire ogres|goal 30 Bladespire Ogres killed|q 10504/1
+		.' Use your Bloodmaul Brutebane Keg when semi-close to an ogre|use Bloodmaul Brutebane Keg##30353
+		..'Don't aggro the ogre, though
+		.' The ogre will run up to the beer and drink it
+		.' Get 5 Bladespire ogres drunk|goal 5 Bladespire Ogres drunk|q 10512/1
+	step //39
+		goto 44,51.9
+		.talk Vindicator Vuuleen##21277
+		..turnin Gorr'Dim, Your Time Has Come...##10517
+		..accept Planting the Banner##10518
+	step //40
+		goto 41.3,46.7
+		.from Bladespire Champion##21296
+		..get Bladespire Clan Banner|q 10518/1
+	step //41
+		goto 46.62,74.71
+		.use Bladespire Clan Banner##30416
+		.from Gurn Grubnosh##20116
+		..get Helm of Gurn Grubnosh|q 10518/2
+	step //42
+		'Hearth to Sylvanaar|goto Blade's Edge Mountains,38.3,65.3,3|use Hearthstone##6948|noway|c
+	step //43
+		goto 37.4,64.6
+		.talk Borgrim Stouthammer##21151
+		..turnin Getting the Bladespire Tanked##10512
+	step //44
+		goto 36.3,66.2
+		.talk Commander Skyshadow##21158
+		..turnin The Bladespire Ogres##10504
+		..turnin Planting the Banner##10518
+	step //45
+		ding 68
+	step //46
+		'Fly to Shattrath City|goto Shattrath City|noway|c
+	step //47
+		'Take the portal to Ironforge|goto Ironforge|noway|c
+		only !Druid
+	step //48
+		'Take the portal to Stormwind City|goto Stormwind City|noway|c
+		only Druid
+	step //49
+		'Train your skills, then fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.1|noway|c
+	step //50
+		goto 4.6,57.2|n
+		'Ride the boat to Howling Fjord|goto Howling Fjord|noway|c
+]])
+
+
+
+
+
+
 

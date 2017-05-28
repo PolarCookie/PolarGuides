@@ -6,6 +6,8 @@ Discord: https://discord.gg/SjXbNRX
 Auberdine added for lvl 19-20  
 Cracking Maury's Foot and Mai'Zoth added.  
 Desolace has been replaced by Arathi Highlands.  
+Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.
+Removed Withered Basidium, to much grind.
 
 ## Tips
 Warlocks learn voidwalker at lvl 15  
@@ -14,15 +16,7 @@ Warlocks learn felhunter at lvl 38
 
 ## Progress
 Dun Morogh 1-12 done  
-Alliance 13-19 done, except druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
-Alliance 20-24 done  
-Alliance 25-29 done  
-Alliance 30-34 done  
-Alliance 35-39 done  
-Alliance 40-44 done  
-Alliance 45-49 done  
-Alliance 50-54 done  
-Alliance 55-58 done  
+Alliance 13-68 done  
 
 ## Ding steps
 Ding steps are written from a Warlock speed run on an Azeroth Core server, attempting to kill the minimal amounts of enemies.
@@ -50,6 +44,7 @@ Clean up Forest Song quest start and end route.
 Add Bartolo's Yeti fur cloak  
 End badlands quest by going to searing gorge to get the flightpath?  
 Adding "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in trinity and/or azeroth core  
+Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.
 
 ## Fixing step comments.
 Don't worry about the step comments, just run `python step_fix.py <guide>` and it'll fix it for you.
