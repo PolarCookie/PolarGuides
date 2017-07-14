@@ -7146,9 +7146,53 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 47.4,49.7
 		.' Unlock the Locked Cabinet with the Dalson Cabinet Key|tip In the house, on the second floor in the small room.
 		..accept Locked Away##5060|instant
-	step
-		goto 55.2,23.5
+	step //179
+		goto 50.0,30.4|n
+		.' The path down to Kirsta Deepshadow starts here|goto Western Plaguelands,50.0,30.4,0.5|noway|c
+	step //180
+		goto 51.9,28
+		.talk Kirsta Deepshadow##11610
+		..accept Unfinished Business (1)##6004
+	step //181
+		goto 50.3,41.5
+		.kill 2 Scarlet Knight|q 6004/4
+		.kill 2 Scarlet Mage|q 6004/3
+	step //182
+		goto 51.1,43.7
+		.kill 2 Scarlet Hunter|q 6004/2
+		.kill 2 Scarlet Medic|q 6004/1
+	step //183
+		goto 51.9,28
+		.talk Kirsta Deepshadow##11610
+		..turnin Unfinished Business (1)##6004
+		..accept Unfinished Business (2)##6023
+	step //184
+		goto 56.4,34.0|n
+		.' The path up to Huntsman Radley starts here|goto Western Plaguelands,56.4,34.0,0.5|noway|c
+	step //185
+		goto 57.7,36.3
+		.kill Huntsman Radley|q 6023/1
+	step //186
+		goto 54.2,24.2
+		.kill 1 Cavalier Durgen|q 6023/2|tip Stay in front of the tower. Cavalier Durgen will eventually walk out of the tower down the front.
+		.' Go to the top of the tower
+		.' Click the small brown chest
 		.get Mark of the Lightbringer|q 9474/1
+	step //187
+		goto 52.8,25.2|n
+		.' Jump off the cliff down to Kirsta Deepshadow|goto Western Plaguelands,52.8,25.2,0.3|noway|c
+	step //188
+		goto 51.9,28
+		.talk Kirsta Deepshadow##11610
+		..turnin Unfinished Business (2)##6023
+		..accept Unfinished Business (3)##6025
+	step
+		goto 45.8,18.3
+		.goal Overlook Hearthglen from a high vantage point|q 6025/1
+	step //188
+		goto 51.9,28
+		.talk Kirsta Deepshadow##11610
+		..turnin Unfinished Business (3)##6025
 	step //164
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 	step //165
@@ -7161,8 +7205,23 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Ol' Emma##3520
 		..turnin Good Natured Emma##5048
 		..accept Good Luck Charm##5050
+	step //181
+		goto 80,38.4
+		.talk King Varian Wrynn##29611
+		..accept The First and the Last##6182
+	step //182
+		goto 78.3,70.7
+		.talk Master Mathias Shaw##332
+		..turnin The First and the Last##6182
+		..accept Honor the Dead##6183
+		..turnin Honor the Dead##6183
+		..accept Flint Shadowmore##6184
 	step //170
 		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
+	step //184
+		goto Western Plaguelands,43.6,84.5
+		.talk Flint Shadowmore##12425
+		..turnin Flint Shadowmore##6184
 	step //171
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
@@ -7706,6 +7765,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Jaron Stoneshaper##10301
 		..turnin The Ruins of Kel'Theril##5244
 		..accept Enraged Wildkin (2)##4861
+		..accept Troubled Spirits of Kel'Theril##5245
 	step //93
 		goto 61.6,38.6
 		.talk Felnok Steelspring##10468
@@ -7715,40 +7775,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 61.9,38.4
 		.talk Storm Shadowhoof##10303
 		..accept Ursius of the Shardtooth##5054
+	step
+		goto 61.9,38.3
+		.talk Witch Doctor Mau'ari##10307
+		..accept Luck Be With You##969
 	step //95
 		goto 60.9,37.6
 		.talk Umi Rumplesnicker##10305
 		..accept Are We There, Yeti? (1)##3783
-	step //96
-		goto 65,41.6
-		.kill yetis|n
-		.get 10 Thick Yeti Fur|q 3783/1
-	step //97
-		goto 59,59.8
-		.turnin Enraged Wildkin (2)##4861
-		.accept Enraged Wildkin (3)##4863
-	step //98
-		goto 61.4,60.7
-		.turnin Enraged Wildkin (3)##4863
-		.accept Enraged Wildkin (4)##4864
-		..get Jaron's Supplies|q 4864/1		
-	step //99
-		goto 63.06,59.14
-		.kill Moontouched OwlBeast|n
-		..get Blue-feathered Amulet|q 4864/2
-	step //100
-		goto 59.8,74.3
-		.' Discover Darkwhisper Gorge|goal Discover Darkwhisper Gorge|q 4842/1
-	step //101
-		goto 60.9,37.6
-		.talk Umi Rumplesnicker##10305
-		..turnin Are We There, Yeti? (1)##3783
-		..accept Are We There. Yeti? (2)##977
-	step //102
-		goto 66,42.8
-		.kill Ice Thistle Matriarchs|n
-		.kill Ice Thistle Patriarchs|n
-		.get 2 Pristine Yeti Horn|q 977/1
 	step //103
 		goto 67,35
 		.kill 8 Winterfall Shaman |q 8464/1
@@ -7767,43 +7801,94 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 61.9,38.4
 		.talk Storm Shadowhoof##10303
 		..turnin Ursius of the Shardtooth##5054
+		..accept Brumeran of the Chillwind##5055
+	step //97
+		goto 59,59.8
+		.turnin Enraged Wildkin (2)##4861
+		.accept Enraged Wildkin (3)##4863
+	step //98
+		goto 61.4,60.7
+		.turnin Enraged Wildkin (3)##4863
+		.accept Enraged Wildkin (4)##4864
+		..get Jaron's Supplies|q 4864/1		
+	step //99
+		goto 63.06,59.14
+		.kill Moontouched OwlBeast|n
+		..get Blue-feathered Amulet|q 4864/2
+	step //100
+		goto 59.8,74.3
+		.' Discover Darkwhisper Gorge|goal Discover Darkwhisper Gorge|q 4842/1
+	step
+		goto 60.8,67.8
+		.from Frostmaul Giant##7428+,Frostmaul Preserver##7429+
+		..get Frostmaul Shards|q 969/1
+	step
+		goto 55,46
+		.kill Brumeran|q 5055/1
+	step
+		goto 55.1,43
+		.get First Relic Fragment|q 5245/1
+	step
+		goto 53.3,43.4
+		.get Third Relic Fragment|q 5245/3
+	step
+		goto 52.4,41.5
+		.get Fourth Relic Fragment|q 5245/4
+	step
+		goto 50.9,41.7
+		.get Second Relic Fragment|q 5245/2
+	step //96
+		goto 65,41.6
+		.kill yetis|n
+		.get 10 Thick Yeti Fur|q 3783/1
+	step //101
+		goto 60.9,37.6
+		.talk Umi Rumplesnicker##10305
+		..turnin Are We There, Yeti? (1)##3783
+		..accept Are We There. Yeti? (2)##977
+	step
+		goto 61.9,38.3
+		.talk Witch Doctor Mau'ari##10307
+		..turnin Luck Be With You##969
+	step //106
+		goto 61.9,38.4
+		.talk Storm Shadowhoof##10303
+		..turnin Brumeran of the Chillwind##5055
+		..accept Shy-Rotam##5056
+	step //102
+		goto 66,42.8
+		.kill Ice Thistle Matriarchs|n
+		.kill Ice Thistle Patriarchs|n
+		.get 2 Pristine Yeti Horn|q 977/1
 	step //107
 		goto 60.9,37.6
 		.talk Umi Rumplesnicker##10305
 		..turnin Are We There. Yeti? (2)##977
+		..accept Are We There. Yeti? (3)##5163
+	step //67
+		goto 61.5,38.5
+		.' Use Umi's Mechanical Yeti on Legacki|use Umi's Mechanical Yeti##12928|tip Under a blue canopy, next to a table.
+		.' Scare Legacki|goal Scare Legacki|q 5163/1
 	step //108
 		goto 52.1,30.4
 		.talk Jaron Stoneshaper##10301
 		..turnin Enraged Wildkin (4)##4864
+	step
+		goto 49.8,9.8
+		.kill Shy-Rotam|q 5056/1
+	step //106
+		goto 61.9,38.4
+		.talk Storm Shadowhoof##10303
+		..turnin Shy-Rotam##5056
 	step //109
 		'Make sure you have 10 Moontouched Feathers in your bags|get 10 Moontouched Feather|q 978/1|c
-	step //110
-		goto 31.3,45.2
-		.talk Donova Snowden##9298
-		..turnin Strange Sources##4842
-		..turnin Threat of the Winterfall##5082
-		..turnin Winterfall Firewater##5083
-	step //111
-		goto 27.7,34.5
-		.talk Salfa##11556
-		..turnin Winterfall Activity##8464
-	step //112
-		'If you found the Deadwood and/or Winterfall Ritual Totem|goto Felwood,65.5,3.3
-		.talk Kernda##11558
-		.' Click the Deadwood Ritual Totem|use Deadwood Ritual Totem##20741
-		..accept Deadwood Ritual Totem##8470
-		.' Click the Winterfall Ritual Totem|use Winterfall Ritual Totem##20742
-		..accept Winterfall Ritual Totem##8471
-		..turnin Deadwood Ritual Totem##8470
-		..turnin Winterfall Ritual Totem##8471
-	step //113
-		'Go through the tunnel to Felwood|goto Felwood|noway|c
 	step //114
-		'Go south to Talonbranch Glade and fly to Emerald Sanctuary|goto Felwood,51.1,81.6,2|noway|c
+		'Fly to Emerald Sanctuary|goto Felwood,51.1,81.6,2|noway|c
 	step //115
 		goto 51.2,82.3
 		.talk Greta Mosshoof##10922
 		..turnin Dousing the Flames of Protection##5165
+		..accept A Final Blow##5242
 	step //116
 		'Fly to Forest Song|goto Ashenvale,85.04,43.51,5|noway|c	
 	step //117
@@ -7822,14 +7907,517 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 34.8,9.3
 		.talk Arch Druid Fandral Staghelm##3516
 		..accept Un'Goro Soil##3764
+		..accept The New Frontier##6761
+	step
+		goto 35.4,8.4
+		.talk Mathrengyl Bearwalker##4217
+		..turnin The New Frontier##6761
+		..accept Rabine Saturna##6762
 	step //122
 		goto 31.5,8.2
 		.talk Jenal##9047
 		..turnin Un'Goro Soil##3764
-	step //123
-		ding 58
+	step //222
+		'Fly to Feathermoon Stronghold|goto Feralas,30.3,43.3,0.5|noway|c
+	step //225
+		'Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c
+	step //226
+		goto 45.1,25.6
+		.talk Gregan Brewspewer##7775
+		..turnin A Visit to Gregan##4142
+		..'Buy 1 Bait from Gregan Brewspewer|collect 1 Bait##11141|q 3909
+	step //227
+		goto 44.9,10.8
+		.' Click the Bait in your bags to place it here|use Bait##11141
+		.' Miblan Snarltooth will run over to the bait and start eating it
+		.' The door behind him will slide open
+		.' Run into the stone building
+		.' Click the Evoroot on the pedestal
+		.collect 1 Evoroot##11242|q 4041/1 |future
+	step //228
+		goto 45.1,25.6
+		.talk Gregan Brewspewer##7775
+		..'Accept The Videre Elixir from him to give him the Evoroot
+		..collect 3 Videre Elixir##11243|q 3909/1
+	step //229
+		goto 43.5,42.8|n
+		.' Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,0.5|noway|c
+	step //52
+		'Fly to Everlook|goto Winterspring,61.2,38.3,3|noway|c
+	step //110
+		goto 31.3,45.2
+		.talk Donova Snowden##9298
+		..turnin Strange Sources##4842
+		..turnin Threat of the Winterfall##5082
+		..turnin Winterfall Firewater##5083
+		..accept Falling to Corruption##5084
+		..turnin The Videre Elixir##3909
+		..accept Meet at the Grave##3912
+	step //111
+		goto 27.7,34.5
+		.talk Salfa##11556
+		..turnin Winterfall Activity##8464
+	step //112
+		'If you found the Deadwood and/or Winterfall Ritual Totem|goto Felwood,65.5,3.3
+		.talk Kernda##11558
+		.' Click the Deadwood Ritual Totem|use Deadwood Ritual Totem##20741
+		..accept Deadwood Ritual Totem##8470
+		.' Click the Winterfall Ritual Totem|use Winterfall Ritual Totem##20742
+		..accept Winterfall Ritual Totem##8471
+		..turnin Deadwood Ritual Totem##8470
+		..turnin Winterfall Ritual Totem##8471
+	step //72
+		'Go through the tunnel to Felwood|goto Felwood|noway|c
+	step //73
+		goto Felwood,60.2,5.8
+		.' Click the Deadwood Cauldron|tip Up the hill, in a camp of furbolgs. You may need help with this.
+		..turnin Falling to Corruption##5084
+		..accept Mystery Goo##5085
+	step //74
+		'Go through the tunnel to Winterspring|goto Winterspring|noway|c
+	step //75
+		goto Winterspring,31.3,45.2
+		.talk Donova Snowden##9298
+		..turnin Mystery Goo##5085
+		..accept Toxic Horrors##5086
+	step //76
+		'Go northwest through the tunnel to Felwood|goto Felwood|noway|c
+	step //77
+		goto Felwood,50.4,26.4
+		.kill Toxic Horrors|n
+		.get 3 Toxic Horror Droplet|q 5086/1
+	step //87
+		'Fly to Moonglade|goto Moonglade|noway|c
+	step //88
+		goto Moonglade,51.7,45.1
+		.talk Rabine Saturna##11801
+		..turnin Rabine Saturna##6762
+		..accept Wasteland##1124
+		..accept A Reliquary of Purity##5527
+	step //78
+		'Go southeast through the tunnel to Winterspring|goto Winterspring|noway|c
+	step //79
+		goto Winterspring,31.3,45.2
+		.talk Donova Snowden##9298
+		..turnin Toxic Horrors##5086
+		..accept Winterfall Runners##5087
+	step
+		'Travel the north road to Everlook
+		.get Winterfall Crate|q 5087/1
+	step //18
+		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
+	step
+		goto 51.1,26.9
+		.' Use Umi's Mechanical Yeti on Sprinkle|use Umi's Mechanical Yeti##12928|tip Standing next to a small cart.
+		.' Scare Sprinkle|goal Scare Sprinkle|q 5163/2
+	step //19
+		goto Tanaris,54,28.7
+		.' Drink a Videre Elixir in the graveyard|use Videre Elixir##11243
+		.' You will die.  Release your spirit, but DON'T resurrect yet
+		.' Skip to the next step of the guide
+	step //20
+		goto 54,23.4
+		.talk Gaeriyan##9299
+		..turnin Meet at the Grave##3912
+		..accept A Grave Situation##3913
+	step //21
+		'Go south as a ghost to the graveyard
+		.' Resurrect now in the graveyard, and skip to the next step in the guide
+	step //22
+		goto 53.8,29.1
+		.' Click the Conspicuous Gravestone|tip It's the only grave that looks like a stone tombstone.
+		..turnin A Grave Situation##3913
+		..accept Linken's Sword##3914
+	
+	step //126
+		'Fly to Marshal's Refuge|goto Un'Goro Crater,44.9,8.2,3|noway|c
+	step //127
+		goto Un'Goro Crater,43.7,9.4
+		.' Use Umi's Mechanical Yeti on Quixxil|use Umi's Mechanical Yeti##12928|tip Standing next to some trees.
+		.' Scare Quixxil|goal Scare Quixxil|q 5163/3
+	step //30
+		goto 44.7,8.1
+		.talk Linken##8737
+		..turnin Linken's Sword##3914
+		..accept A Gnome's Assistance##3941
+
+	step //31
+		goto 41.9,2.7
+		.talk J.D. Collie##9117
+		..turnin A Gnome's Assistance##3941
+		..accept Linken's Memory##3942
+	step //39
+		'Fly to Emerald Sanctuary|goto Felwood,51.1,81.6,2|noway|c
+	step //41
+		goto 51.3,81.5
+		.talk Eridan Bluewind##9116
+		..turnin Linken's Memory##3942
+		..accept Silver Heart##4084
+	step //42
+		goto 48.7,79.2
+		.kill wolves and bears|n
+		.get 11 Silvery Claws|q 4084/1
+	step //43
+		goto 35.4,58.7|n
+		.' The cave entrance and path down to Dousing the Flames of Protection starts here|goto Felwood,35.4,58.7,0.3|noway|c
+	step
+		get Shadow Lord Fel'dan's Head|q 5242/1
+		kill Moora|q 5242/2
+		kill Salia|q 5242/3
+	step //48
+		'Leave the cave and go to 48.5,20.2|goto 48.5,20.2
+		.kill Irontree Stompers|n
+		.get Irontree Heart|q 4084/2
+	step //78
+		'Go northheast through the tunnel to Winterspring|goto Winterspring|noway|c
+	step //79
+		goto Winterspring,31.3,45.2
+		.talk Donova Snowden##9298
+		..turnin Winterfall Runners##5087
+		..accept High Chief Winterfall##5121
+	step //245
+		goto Winterspring,60.9,37.6
+		.talk Umi Rumplesnicker##10305
+		..turnin Are We There, Yeti? (3)##5163
+	step //54
+		goto 61.3,39
+		.talk Jessica Redpath##11629
+		..accept Sister Pamela##5601
+		.talk Gregor Greystone##10431
+		..accept The Everlook Report##6028
+		..accept Duke Nicholas Zverenhoff##6030
+	step
+		goto 69.6,38.3
+		.kill High Chief Winterfall|q 5121/1
+		..collect Crudely-written Log|q 5123
+		..use Crudely-written Log##12842
+		..accept The Final Piece##5123
+	step //79
+		goto Winterspring,31.3,45.2
+		.talk Donova Snowden##9298
+		..turnin High Chief Winterfall##5121
+		..turnin The Final Piece##5123
+		..accept Words of the High Chief##5128
+	step //49
+		'Fly to Emerald Sanctuary|goto Felwood,51.1,81.6,2|noway|c
+	step
+		goto 51.1,81.8
+		.talk Kelek Skykeeper##10920
+		..turnin Words of the High Chief##5128
+	step //115
+		goto 51.2,82.3
+		.talk Greta Mosshoof##10922
+		..turnin A Final Blow##5242
+	step //51
+		goto 51.3,81.5
+		.talk Eridan Bluewind##9116
+		..turnin Silver Heart##4084
+		..accept Aquementas##4005
+	step //121
+		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
 	step //124
-		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
+		goto 70.4,49.9
+		.' Unpack Eridan's Supplies into your bags|use Eridan's Supplies##11617
+		.' Use the Book of Aquor to summon Aquementas inside the circle of stones|use Book of Aquor##11169
+		.from Aquementas##9453
+		.get Silver Totem of Aquementas|q 4005/1
+	step //126
+		'Fly to Marshal's Refuge|goto Un'Goro Crater,44.9,8.2,3|noway|c
+	step //128
+		goto 41.9,2.7
+		.talk J.D. Collie##9117
+		..turnin Aquementas##4005
+		..accept Linken's Adventure##3961
+	step //129
+		goto 44.7,8.1
+		.talk Linken##8737
+		..turnin Linken's Adventure##3961
+		..accept It's Dangerous to go alone##3962
+	step
+		goto 49.4,49.3
+		.kill Blazerunner|q 3962/2
+		.get Golden Flame|q 3962/1
+	step //129
+		goto 44.7,8.1
+		.talk Linken##8737
+		..turnin It's Dangerous to go alone##3962
+	step //92
+		'Fly to Theramore|goto Dustwallow Marsh|noway|c
+	step //151
+		'Ride the boat to Menethil Harbor|goto Wetlands,4.6,56.8,9|noway|c
+	step //152
+		'Fly to Ironforge|goto Ironforge|noway|c
+	step //93
+		goto 75.8,23.4
+		.talk Laris Geardawdle##9616
+		..turnin A Little Slime Goes a Long Way (2)##4513
+	step //183
+		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
+	step //189
+		goto 42.9,84.5
+		.talk High Priestess MacDonnell##11053
+		..accept Target: Gahrron's Withering##5225
+	step //158
+		goto Western Plaguelands,43,83.5
+		.talk Argent Officer Pureheart##10840
+		..turnin The Everlook Report##6028
+	step //184
+		goto Western Plaguelands,43.6,84.5
+		.talk Flint Shadowmore##12425
+		..accept The Eastern Plagues##6185
+	step //194
+		goto 62.6,59.9
+		.from Cauldron Lord Soulwrath##11078
+		.get the Gahrron's Withering Cauldron Key|n
+		.' Click the Scourge Cauldron
+		..turnin Target: Gahrron's Withering##5225
+		..accept Return to Chillwind Camp##5226
+	step //211
+		'Go northeast to the Eastern Plaguelands|goto Eastern Plaguelands|noway|c
+	step //212
+		'Go north up the coast to 4.7,38.4|goto Eastern Plaguelands,4.7,38.4
+		.talk Tirion Fordring##1855
+		..accept Demon Dogs##5542
+		..accept Blood Tinged Skies##5543
+		..accept Carrion Grubbage##5544
+	step //213
+		goto 25.1,73.1
+		.' Click the Mangled Human Remains
+		.get SI:7 Insignia (Rutger)##16003|q 6185/2
+	step //214
+		goto 25.1,68.4
+		.' Click the Mangled Human Remains
+		.get SI:7 Insignia (Turyen)##16002|q 6185/4
+	step //215
+		goto 23.5,68.4
+		.' Click the Mangled Human Remains
+		.get SI:7 Insignia (Fredo)##16001|q 6185/3
+		.' See a message saying you Uncovered the Blightcaller|goal The Blightcaller Uncovered|q 6185/1
+	step //216
+		goto 24.9,63.6
+		.kill 20 Plaguehound Runt|q 5542/1
+		.kill 30 Plaguebat|q 5543/1
+		.kill Carrion Grubs|n
+		.get 15 Slab of Carrion Worm Meat|q 5544/1
+	step //217
+		goto 32.4,83.7
+		.talk Pamela Redpath##10926
+		..turnin Sister Pamela##5601
+		..accept Pamela's Doll##5149
+	step //218
+		goto 35.0,84.3
+		.' The doll parts spawn in the house here, except the house Pamela is in
+		.get Pamela's Doll's Head|n
+		.get Pamela's Doll's Left Side|n
+		.get Pamela's Doll's Right Side|n
+		.' Click Pamela's Doll's Head to put the doll parts together to make Pamela's Doll|q 5149/1|use Pamela's Doll's Head##12886
+	step //219
+		goto 32.4,83.7
+		.talk Pamela Redpath##10926
+		..turnin Pamela's Doll##5149
+		..accept Uncle Carlin##5241
+		..accept Auntie Marlene##5152
+	step //220
+		goto 52.5,49.1
+		.kill 5 Plaguehound|q 5542/2
+	step //221
+		goto 50.3,25.9
+		.kill 5 Frenzied Plaguehound|q 5542/3
+	step
+		goto 48.8,17.6
+		.talk Aurora Skycaller##10304
+		..turnin Troubled Spirits of Kel'Theril##5245
+	step //222
+		goto 75.7,53.9
+		.talk Duke Nicholas Zverenhoff##11039
+		..turnin Duke Nicholas Zverenhoff##6030
+		.talk Carlin Redpath##11063
+		..turnin Uncle Carlin##5241
+	step
+		goto 73.8,57.8
+		.talk Caretaker Alen##11038
+		..accept Zaeldarr the Outcast##6021
+	step //223
+		goto 75.9,53.4
+		.talk Khaelyn Steelwing##12617
+		..fpath Light's Hope Chapel
+	step //224
+		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
+	step //225
+		goto Western Plaguelands,42.9,84.5
+		.talk High Priestess MacDonnell##11053
+		..turnin Return to Chillwind Camp##5226
+	step //197
+		goto 42.7,84
+		.talk Commander Ashlam Valorfist##10838
+		..accept Mission Accomplished!##5238 |instant
+	step //226
+		goto 43.6,84.5
+		.talk Flint Shadowmore##12425
+		..turnin The Eastern Plagues##6185
+		..accept The Blightcaller Cometh##6186
+	step //227
+		'Fly to Stormwind|goto Stormwind City|noway|c
+	step //228
+		goto Stormwind City,80,38.4
+		.talk King Varian Wrynn##29611
+		..turnin The Blightcaller Cometh##6186
+		..accept Order Must Be Restored##6187
+	step //229
+		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
+	step //230
+		goto Western Plaguelands,49.2,78.5
+		.talk Marlene Redpath##10927
+		..turnin Auntie Marlene##5152
+		..accept A Strange Historian##5153
+	step //231
+		goto 49.7,76.8
+		.' Click Joseph Redpath's Monument|tip It's a squarish stone gravestone with a gold plaque on it. It's a lighter color than all the other graves.
+		.get Joseph's Wedding Ring|q 5153/1
+	step //232
+		goto 39.5,66.8
+		.talk Chromie##10667
+		..turnin A Strange Historian##5153
+		..accept The Annals of Darrowshire##5154
+		..accept A Matter of Time##4971
+	step //233
+		goto 43.5,69.4
+		.get Annals of Darrowshire|q 5154/1|tip In the building that isn's crumbled in the middle of the town - you can enter from the south side by hugging the wall of the building until you get inside safely.
+	step //234
+		goto 46.9,65.7
+		.' Use your Temporal Displacer on the disco ball towers|use Temporal Displacer##12627|tip In this area, you will see towers that have light shining out of them like a disco ball.
+		.kill 10 Temporal Parasite|q 4971/1
+	step //235
+		goto 39.5,66.8
+		.talk Chromie##10667
+		..turnin The Annals of Darrowshire##5154
+		..turnin A Matter of Time##4971
+		..accept Counting Out Time##4972
+	step //236
+		goto 38.8,68.3
+		.' Click the Small Lockboxes on the ground in the crumbled houses
+		.get 5 Andorhal Watch |q 4972/1
+	step //237
+		goto 39.5,66.8
+		.talk Chromie##10667
+		..turnin Counting Out Time##4972
+		..accept Brother Carlin##5210
+	step //239
+		'Go northeast to the Eastern Plaguelands|goto Eastern Plaguelands|noway|c
+	step //240
+		'Go north up the coast to 4.7,38.4|goto Eastern Plaguelands,4.7,38.4
+		.talk Tirion Fordring##1855
+		..turnin Demon Dogs##5542
+		..turnin Blood Tinged Skies##5543
+		..turnin Carrion Grubbage##5544
+		..accept Redemption##5742
+		..'Listen to his story
+		..turnin Redemption##5742
+		..accept Of Forgotten Memories##5781
+	step
+		goto 23,68.2
+		.kill Nathanos Blightcaller|q 6187/1
+	step
+		goto 24.6,79.9
+		.get Taelan's Hammer|q 5781/1
+	step
+		goto 24.4, 79.2
+		.accept Hameya's Plea##6024
+		.from Zaeldarr the Outcast##12250
+		..get Zaeldarr's Head|q 6021/1
+	step //240
+		'Go north up the coast to 4.7,38.4|goto Eastern Plaguelands,4.7,38.4
+		.talk Tirion Fordring##1855
+		..turnin Of Forgotten Memories##5781
+		..accept Of Lost Honor##5845
+	step
+		goto 73.8,57.8
+		.talk Caretaker Alen##11038
+		..turnin Zaeldarr the Outcast##6021
+	step //222
+		goto 75.7,53.9
+		.talk Carlin Redpath##11063
+		..accept Defenders of Darrowshire##5211
+		..turnin Brother Carlin##5210
+		..accept Villains of Darrowshire##5181
+		..accept Heroes of Darrowshire##5168
+	step
+		goto 66,29.1
+		.get Symbol of Lost Honor|q 5845/1
+	step
+		goto 65.3,12.3
+		.from Infiltrator Hameya##12248
+		..get Hameya's Key|q 6024/1
+	step
+		goto 67.3,11.4
+		.get Fourth Mosh'aru Tablet|q 5065/2
+	step
+		goto 66.9,8.8
+		.get Third Mosh'aru Tablet|q 5065/1
+	step
+		goto 46.5,44.4
+		.get Skull of Horgus|q 5181/1
+	step
+		goto 49.2,59.6
+		.get Shattered Sword of Marduk|q 5181/2
+	step
+		goto 24.4,79.2
+		.turnin Hameya's Plea##6024
+	step //240
+		'Go north up the coast to 4.7,38.4|goto Eastern Plaguelands,4.7,38.4
+		.talk Tirion Fordring##1855
+		..turnin Of Lost Honor##5845
+		..accept Of Love and Family##5846
+	step
+		goto Western Plaguelands,63.8,57.2
+		.get Redpath's Shield|q 5168/2
+	step
+		goto 42.5,19
+		.get Davil's Libram|q 5168/1
+	step
+		goto 65.8,75.4
+		.talk Artist Renfray##11936
+		..turnin Of Love and Family##5846
+	step
+		'Fly to Light's Hope Chapel|goto Eastern Plaguelands|noway|c	
+	step //222
+		goto 75.7,53.9
+		.talk Carlin Redpath##11063
+		..turnin Villains of Darrowshire##5181
+		..turnin Heroes of Darrowshire##5168
+		..accept Marauders of Darrowshire##5206
+	step
+		goto 76.5,37.4
+		.get 5 Resonating Skulls|q 5206/1
+		.goal 15 Darrowshire Spirits Freed|q 5211/1
+	step //222
+		goto 75.7,53.9
+		.talk Carlin Redpath##11063
+		..turnin Defenders of Darrowshire##5211	
+		..turnin Marauders of Darrowshire##5206
+		..accept Return to Chromie##5941
+	step //224
+		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
+	step //235
+		goto 39.5,66.8
+		.talk Chromie##10667
+		..turnin Return to Chromie##5941
+		..accept The Battle of Darrowshire##5721
+	step
+		goto Eastern Plaguelands,		
+	step //241
+		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
+
+
+
+
+
+
+
+
+	step
+		ding 70
+
 ]])
 
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (58-61)",[[
