@@ -3,10 +3,10 @@ if not ZygorGuidesViewer then return end
 --TRIAL if ZygorGuidesViewer.AllianceInstalled then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (1-12)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Dun Morogh (1-12)",[[
 	author PolarCookie
 	defaultfor Gnome,Dwarf
-	next Ding80's Alliance Leveling Guides\\Main Guide (13-19)
+	next Ding80's Alliance Leveling Guides TBC duo\\Main Guide (13-19)
 	startlevel 1
 	step //1
 		goto Dun Morogh,29.9,71.9
@@ -255,21 +255,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 		.talk Hegnar Rumbleshot##1243
 		..turnin Ammo for Rumbleshot##5541
 	step //60
-		'Hearth to Kharanos|goto Dun Morogh,47.3,52.5,0.5|use Hearthstone##6948|noway|c
-	step //61
 		goto 46.8,52.4
 		.talk Ragnar Thunderbrew##1267
 		..turnin Beer Basted Boar Ribs##384
-	step //62
+	step //61
 		goto 49.6,48.5
 		.talk Pilot Bellowfiz##1378
 		..turnin Stocking Jetsteam##317
 		..accept Evershine##318
 		.talk Pilot Stonegear##1377
 		..turnin The Grizzled Den##313
-	step //63
+	step //62
 		ding 7
-	step //64
+	step //63
 		goto 30.2,45.6
 		.talk Rejold Barleybrew##1374
 		..turnin Evershine##318
@@ -277,459 +275,428 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 		..accept The Perfect Stout##315
 		.talk Marleth Barleybrew##1375
 		..accept Bitter Rivals##310
-	step //65
+	step //64
 		goto 27.8,48.3
 		.kill 6 Ice Claw Bear|q 319/1
 		.kill 8 Elder Crag Boar|q 319/2
 		.kill 8 Snow Leopard|q 319/3
-	step //66
+	step //65
 		goto 30.2,45.6
 		.talk Rejold Barleybrew##1374
 		..turnin A Favor for Evershine##319
 		..accept Return to Bellowfiz##320
-	step //67
+	step //66
 		goto 47.3,52.3
 		.talk Innkeeper Belm##1247
 		..buy 1 Thunder Ale|q 308/1
-	step //68
+	step //67
 		goto 47.6,52.7
 		.talk Jarven Thunderbrew##1373
 		..'Give him the Thunder Ale
 		.' Click the barrel next to him
 		..turnin Bitter Rivals##310
 		..accept Return to Marleth##311
-	step //69
+	step //68
 		goto 46.7,53.8
 		.talk Senir Whitebeard##1252
 		..accept Frostmane Hold##287
-	step //70
+	step //69
 		goto 49.6,48.5
 		.talk Pilot Bellowfiz##1378
 		..turnin Return to Bellowfiz##320
-	step //71
-		ding 8
-	step //72
+	step //70
 		goto 45.8,49.4
 		.talk Razzle Sprysprocket##1269
 		..accept Operation Recombobulation##412
-	step //73
+	step //71
 		goto 37.9,42.1|n
 		.' The path up to Shimmerweed starts here|goto Dun Morogh,37.9,42.1,0.3|noway|c
-	step //74
+	step //72
 		goto 41.2,36.4
 		.from Frostmane Seer##1397+
 		.' Click the Shimmerweed Baskets|tip The Shimmerweed Baskets look like woven wooden baskets on the ground around this area.
 		.get 6 Shimmerweed|q 315/1
-	step //75
+	step //73
 		goto 30.2,45.6
 		.talk Rejold Barleybrew##1374
 		..turnin The Perfect Stout##315
 		..accept Shimmer Stout##413
 		.talk Marleth Barleybrew##1375
 		..turnin Return to Marleth##311
-	step //76
+	step //74
+		ding 8
+	step //75
 		goto 25.9,43.2
 		.from Leper Gnome##1211+
 		.get 8 Restabilization Cog|q 412/1
 		.get 8 Gyromechanic Gear|q 412/2
-	step //77
-		goto 21.2,52.3
+	step //76
+		goto 22.77,52.07
 		.' Explore Frostmane Hold|goal Fully explore Frostmane Hold|q 287/1|tip By the time you reach this point, you should have seen the "Explore Frostmane Hold" completed message.
 		.kill 5 Frostmane Headhunter|q 287/2
-	step //78
-		ding 9
-	step //79
+	step //77
 		'Hearth to Kharanos|goto Dun Morogh,47.3,52.5,0.5|use Hearthstone##6948|noway|c
-	step //80
+	step //78
 		goto 46.7,53.8
 		.talk Senir Whitebeard##1252
 		..turnin Frostmane Hold##287
-	step //81
+	step //79
 		goto 46.7,53.8
 		.talk Senir Whitebeard##1252
 		..turnin Frostmane Hold##287
 		..accept The Reports##291
-	step //82
+	step //80
 		goto 45.8,49.4
 		.talk Razzle Sprysprocket##1269
 		..turnin Operation Recombobulation##412
-	step //83
+	step //81
 		goto 63.1,49.9
 		.talk Rudra Amberstill##1265
 		..accept Protecting the Herd##314
-	step //84
+	step //82
 		goto 59.8,50.0|n
 		.' The path up to Protecting the Herd starts here|goto Dun Morogh,59.8,50.0,0.5|noway|c
-	step //85
+	step //83
 		goto 62.6,46.1
 		.from Vagash##1388
 		.get Fang of Vagash|q 314/1
-	step //86
+	step //84
 		goto 63.1,49.9
 		.talk Rudra Amberstill##1265
 		..turnin Protecting the Herd##314
-	step //87
+	step //85
 		goto 68.7,56
 		.talk Senator Mehr Stonehallow##1977
 		..accept The Public Servant##433
-	step //88
+	step //86
 		goto 69.1,56.3
 		.talk Foreman Stonebrow##1254
 		..accept Those Blasted Troggs!##432
-	step //89
+	step //87
 		'Go inside the cave to 70.7,56.5|goto 70.7,56.5
 		.kill 6 Rockjaw Skullthumper|q 432/1
 		.kill 10 Rockjaw Bonesnapper|q 433/1
-	step //90
+	step //88
+		ding 9
+	step //89
 		'Go outside to 68.7,56.0|goto 68.7,56.0
 		.talk Senator Mehr Stonehallow##1977
 		..turnin The Public Servant##433
-	step //91
+	step //90
 		goto 69.1,56.3
 		.talk Foreman Stonebrow##1254
 		..turnin Those Blasted Troggs!##432
-	step //92
-		ding 10
-	step //93
-		goto 47.4,52.6
-		.talk Granis Swiftaxe##1229
-		..accept Muren Stormpike##1679
-		only Gnome Warrior,Dwarf Warrior
-	step //94
-		'Go northeast to Ironforge|goto Ironforge|noway|c
-		only Gnome Warrior,Dwarf Warrior
-	step //95
-		goto Ironforge,70.8,90.3
-		.talk Muren Stormpike##6114
-		..turnin Muren Stormpike##1679
-		..accept Vejrek##1678
-		only Gnome Warrior,Dwarf Warrior
-	step //96
-		'Go outside to Dun Morogh|goto Dun Morogh|noway|c
-		only Gnome Warrior,Dwarf Warrior
-	step //97
-		goto Dun Morogh,27.8,58
-		.from Vejrek##6113
-		.get Vejrek's Head|q 1678/1
-		only Gnome Warrior,Dwarf Warrior
-	step //98
-		'Go northeast to Ironforge|goto Ironforge|noway|c
-		only Gnome Warrior,Dwarf Warrior
-	step //99
-		goto Ironforge,70.8,90.3
-		.talk Muren Stormpike##6114
-		..turnin Vejrek##1678
-		only Gnome Warrior,Dwarf Warrior
-	step //100
-		'Go outside to Dun Morogh|goto Dun Morogh|noway|c
-		only Gnome Warrior,Dwarf Warrior
-	step //101
-		goto Dun Morogh,83.9,39.2
+	step //91
+		goto Dun Morogh,83.9,39.2|tip Kill anything on the road now, there's a grind wall coming before leaving this zone.
 		.talk Pilot Hammerfoot##1960
 		..accept The Lost Pilot##419
-	step //102
+	step //92
 		goto 79.7,36.2
 		.talk A Dwarven Corpse##2059
 		..turnin The Lost Pilot##419
 		..accept A Pilot's Revenge##417
-	step //103
+	step //93
 		goto 78.3,37.80
 		.from Mangeclaw##1961
 		.get Mangy Claw|q 417/1
-	step //104
+	step //94
 		goto Dun Morogh,83.9,39.2
 		.talk Pilot Hammerfoot##1960
 		..turnin A Pilot's Revenge##417
-	step //105
+	step //95
+		goto 79.62,54.10
+		.ding 10|tip This one is important, grind mobs here and further south before continuing.
+	step //96
 		goto Dun Morogh,86.3,48.8
 		.talk Mountaineer Barleybrew##1959
 		..turnin Shimmer Stout##413
 		..accept Stout to Kadrell##414
-	step //106
+	step //97
 		'Go southeast to Loch Modan|goto Loch Modan|noway|c
-	step //107
+	step //98
 		goto Loch Modan,22.1,73.1
 		.talk Mountaineer Cobbleflint##1089
 		..accept In Defense of the King's Lands (1)##224
-	step //108
+	step //99
 		goto Loch Modan,23.2,73.7
 		.talk Captain Rugelfuss##1092
 		..accept The Trogg Threat##267
-	step //109
+	step //100
 		goto Loch Modan,33.9,51
 		.talk Thorgrum Borrelson##1572
 		..fpath Thelsamar
-	step //110
+	step //101
 		goto Loch Modan,34.8,47.1
 		.talk Mountaineer Kadrell##1340
 		..turnin Stout to Kadrell##414
-	step //111
+	step //102
 		goto 33.9,51
 		.talk Thorgrum Borrelson##1572
 		..'Fly to Ironforge|goto Ironforge|noway|c
-	step //112
+	step //103
 		goto Ironforge,39.5,57.5
 		.talk Senator Barin Redstone##1274
 		..turnin The Reports##291
-	step //113
+	step //104
 		goto 47.6,9.3
 		.talk Lago Blackwrench##6120
 		..accept The Slaughtered Lamb##1715
-	step //114
+		only Gnome Warlock
+	step //105
 		goto 76.9,51.2|n
-		'Enter the Deeprun Tram|goto Deeprun Tram|noway|c|tip Buy a Bronze Tube from an engineering supplies vendor either in Tinker Town or Dwarven District. You'll need one later in Duskwood.
-	step //115
+		'Enter the Deeprun Tram|goto Deeprun Tram|noway|c
+	step //106
 		.talk Monty##12997
 		..accept Deeprun Rat Roundup##6661
-	step //116
+	step //107
 		goal 5 Rats Captured |q 6661/1
-	step //117
+	step //108
 		.talk Monty##12997
 		..turnin Deeprun Rat Roundup##6661
 		..accept Me Brother, Nipsy##6662
-	step //118
+	step //109
 		'Ride the train to Stormwind|n
-	step //119
+	step //110
 		.talk Nipsy##13018
 		..turnin Me Brother, Nipsy##6662
-	step //120
+	step //111
 		'Exit Tram to Stormwind|goto Stormwind City|noway|c
-	step //121
+	step //112
 		goto Stormwind City,57.7,47.9
 		.talk Baros Alexston##1646
 		..accept Humble Beginnings##399
-	step //122
+	step //113
 		goto Stormwind City,39.2,85.3
 		.talk Gakin the Darkbinder##6122
 		..turnin The Slaughtered Lamb##1715
 		..accept Surena Caledon##1688
 		only Gnome Warlock
-	step //123
+	step //114
 		goto 71,72.5
 		.talk Dungar Longdrink##352
 		..fpath Stormwind City
-	step //124
+	step //115
 		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c
-	step //125
+	step //116
 		goto Elwynn Forest,43.8,65.8
 		.talk Innkeeper Farley##295
 		..home Goldshire
-	step //126
+	step //117
 		goto 43.3,65.7
 		.talk William Pestle##253
 		..accept Kobold Candles##60
-	step //127
+	step //118
 		goto 42.1,67.3
 		.talk Remy "Two Times"##241
 		..accept Gold Dust Exchange##47
 		..accept A Fishy Peril##40
-	step //128
+	step //119
 		goto 42.1,65.9
 		.talk Marshal Dughan##240
 		..turnin A Fishy Peril##40
 		..accept Further Concerns##35
 		..accept The Fargodeep Mine##62
 		..accept Report to Gryan Stoutmantle##109
-	step //129
+	step //120
 		goto 41.7,65.6
 		.talk Smith Argus##514
 		..accept Elmore's Task##1097
-	step //130
+	step //121
 		goto 34.5,84.2
 		.talk "Auntie" Bernice Stonefield##246
 		..accept Lost Necklace##85
-	step //131
+	step //122
 		goto 34.6,84.5
 		.talk Ma Stonefield##244
 		..accept Princess Must Die!##88
-	step //132
+	step //123
 		goto 43.2,89.6
 		.talk Maybell Maclure##251
 		..accept Young Lovers##106
-	step //133
+	step //124
 		goto 43.1,85.7
 		.talk Billy Maclure##247
 		..turnin Lost Necklace##85
 		..accept Pie for Billy##86
-	step //134
+	step //125
 		goto 41.7,86.9
 		.from Stonetusk Boar##113+
 		.get 4 Chunk of Boar Meat|q 86/1
-	step //135
+	step //126
 		goto 34.5,84.2
 		.talk "Auntie" Bernice Stonefield##246
 		..turnin Pie for Billy##86
 		..accept Back to Billy##84
-	step //136
+	step //127
 		goto 29.8,86
 		.talk Tommy JoeStonefield##252
 		..turnin Young Lovers##106
 		..accept Speak with Gramma##111
-	step //137
+	step //128
 		goto 34.9,83.9
 		.talk Gramma Stonefield##248
 		..turnin Speak with Gramma##111
 		..accept Note to William##107
-	step //138
+	step //129
 		goto 43.1,85.7
 		.talk Billy Maclure##247
 		..turnin Back to Billy##84
 		..accept Goldtooth##87
-	step //139
+	step //130
 		'Go into the Fargodeep Mine to 38.3,81.6|goto 38.3,81.6|n
 		.' Enter using the lower entrance|goto Elwynn Forest,38.3,81.6,0.5|noway|n
 		.' Explore the Fargodeep Mine|goal Scout through the Fargodeep Mine|q 62/1
-	step //140
+	step //131
 		'Follow the path inside the cave to 41.7,78.3|goto 41.7,78.3
 		.from Goldtooth##327
 		.get Bernice's Necklace|q 87/1
-	step //141
+	step //132
 		.from Kobold Tunneler##475+, Kobold Miner##40+
 		.get 10 Gold Dust|q 47/1
 		.get 8 Large Candle|q 60/1
-	step //142
+	step //133
 		goto 42.1,67.3
 		.talk Remy "Two Times"##241
 		..turnin Gold Dust Exchange##47
-	step //143
+	step //134
 		goto 42.1,65.9
 		.talk Marshal Dughan##240
 		..turnin The Fargodeep Mine##62
 		..accept The Jasperlode Mine##76
-	step //144
+	step //135
 		goto 43.3,65.7
 		.talk William Pestle##253
 		..turnin Kobold Candles##60
 		..accept Shipment to Stormwind##61
 		..turnin Note to William##107
 		..accept Collecting Kelp##112
-	step //145
-		ding 11
-	step //146
+	step //136
 		goto 49.7,66.3
 		.from Murloc##285+, Murloc Steamrunner##735+
 		.get 4 Crystal Kelp Frond|q 112/1
-	step //147
+	step //137
 		'Go inside the mine to 60.4,49.7|goto 60.4,49.7
 		.' Explore the Jasperlode Mine|goal Scout through the Jasperlode Mine|q 76/1
-	step //148
+	step //138
 		goto 74,72.2
 		.talk Guard Thomas##261
 		..turnin Further Concerns##35
 		..accept Find the Lost Guards##37
 		..accept Protect the Frontier##52
-	step //149
+	step //139
 		goto 72.7,60.3
 		.' Click the Half-Eaten body|tip On the ground next to some big rocks by the river and a tree.
 		..turnin Find the Lost Guards##37
 		..accept Discover Rolf's Fate##45
-	step //150
+	step //140
 		goto 79.8,55.5
 		.' Click Rolf's Corpse|tip On the ground next to a murloc hut.
 		..turnin Discover Rolf's Fate##45
 		..accept Report to Thomas##71
-	step //151
+	step //141
+		ding 11
+	step //142
 		goto 81.4,66.1
 		.talk Supervisor Raelen##10616
 		..accept A Bundle of Trouble##5545
-	step //152
+	step //143
 		goto 79.5,68.8
 		.talk Sara Timberlain##278
 		..accept Red Linen Goods##83
-	step //153
+	step //144
 		goto 81.3,60.6
 		.' Click the small stacks of wood at the base of trees|tip They look like little stacks of 3 firewood at the base of trees in this area.
 		.get 8 Bundle of Wood|q 5545/1
-	step //154
+	step //145
 		goto 80,77.8
 		.kill 8 Prowler|q 52/1
 		.kill 5 Young Forest Bear|q 52/2
-	step //155
+	step //146
 		goto 70.6,76.3
 		.from Defias Bandit##116+
 		.get 6 Red Linen Bandana|q 83/1
-	step //156
+	step //147
 		goto 69.7,79.5
 		'Kill Princess
 		.get Brass Collar##1006|q 88/1
-	step //157
+	step //148
 		goto Elwynn Forest,71,80.8
 		.from Surena Caledon##881
 		.get Surena's Choker|q 1688/1
 		only Gnome Warlock
-	step //158
+	step //149
 		goto 74,72.2
 		.talk Guard Thomas##261
 		..turnin Protect the Frontier##52
 		..turnin Report to Thomas##71
 		..accept Deliver Thomas' Report##39
-	step //159
+	step //150
 		goto 79.5,68.8
 		.talk Sara Timberlain##278
 		..turnin Red Linen Goods##83
-	step //160
+	step //151
 		goto 81.4,66.1
 		.talk Supervisor Raelen##10616
 		..turnin A Bundle of Trouble##5545
-	step //161
+	step //152
 		'Hearth to Goldshire|goto Elwynn Forest,42.4,65.8,2|use Hearthstone##6948|noway|c
-	step //162
+	step //153
 		goto 43.3,65.7
 		.talk William Pestle##253
 		..turnin Collecting Kelp##112
 		..accept The Escape##114
-	step //163
+	step //154
 		goto 42.1,65.9
 		.talk Marshal Dughan##240
 		..turnin Deliver Thomas' Report##39
 		..turnin The Jasperlode Mine##76
 		..accept Westbrook Garrison Needs Help!##239
-	step //164
-		ding 12
-	step //165
+	step //155
 		goto 43.2,89.6
 		.talk Maybell Maclure##251
 		..turnin The Escape##114
-	step //166
+	step //156
 		goto 34.6,84.5
 		.talk Ma Stonefield##244
 		..turnin Princess Must Die!##88
-	step //167
+	step //157
 		goto 34.5,84.2
 		.talk "Auntie" Bernice Stonefield##246
 		..turnin Goldtooth##87
-	step //168
+	step //158
+		ding 12
+	step //159
 		goto 24.3,74.8
 		.talk Deputy Rainer##963
 		..turnin Westbrook Garrison Needs Help!##239
 		..accept Riverpaw Gnoll Bounty##11
-	step //169
+	step //160
 		goto 24.5,74.7
 		.talk Wanted Poster##68
 		..accept Wanted: "Hogger"##176
-	step //170
+	step //161
 		goto 26.4,93.70
 		.from Hogger##448
 		.get 1 Huge Gnoll Claw|q 176/1
-	step //171
+	step //162
 		goto 26.8,86.3
 		.from Riverpaw Outrunner##478+, Riverpaw Runt##97+
 		.get 8 Painted Gnoll Armband|q 11/1
-	step //172
+	step //163
 		goto 42.1,65.9|tip Remember to train while you're in Goldshire.
 		.talk Marshal Dughan##240
 		..turnin Wanted: "Hogger"##176
-	step //173
+	step //164
 		goto 24.3,74.8
 		.talk Deputy Rainer##963
 		..turnin Riverpaw Gnoll Bounty##11
-	step //174
+	step //165
 		'Go southwest to Westfall|goto Westfall|noway|c
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (13-19)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main Guide (13-19)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (20-24)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (20-24)
 	startlevel 12
 	step //1
 		goto Westfall,60,19.4
@@ -756,37 +723,39 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		.talk Captain Danuvin##821
 		..accept Patrolling Westfall##102
 	step //5
-		ding 13
-	step //6
 		goto 56.6,52.6
 		.talk Thor##523
 		..fpath Sentinel Hill
-	step //7
+	step //6
 		goto 54.0,52.9
 		.talk Scout Galiaan##878
 		..accept Red Leather Bandanas##153
-	step //8
+	step //7
 		home Sentinel Hill
-	step //9
+	step //8
 		goto 48.6,46.8
 		.kill 15 Defias Trapper|q 12/1
 		.kill 15 Defias Smuggler|q 12/2
 		.get 15 Red Leather Bandana|q 153/1
-	step //10
+	step //9
 		goto 53.8,42.5
 		.from Goretusk##157+, Young Goretusk##454+
 		.get 8 Goretusk Liver|q 22/1
 		.get 3 Goretusk Snout|q 38/3
 		.collect 3 Boar Intestines |q 418 |future
-	step //11
+	step //10
 		goto 59,43.7
 		.from Fleshripper##1109+
 		.get 3 Stringy Vulture Meat|q 38/1
+	step //11
+		ding 13
 	step //12
 		goto 51.1,21.8
 		.get 3 Okra|q 38/4
 		.from Harvest Watcher##114+
 		.collect 5 Flask of Oil##814|q 103 |future
+		.collect 5 Hops##1274|q 116 |future
+		
 		.' You can find more Harvest Watchers at 53.5,29.4|n
 	step //13
 		goto 49.4,19.2
@@ -802,856 +771,826 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		.from Murloc Raider##515+, Murloc Coastrunner##126+
 		.get 3 Murloc Eye|q 38/2
 	step //16
-		ding 14
-	step //17
 		goto 57.1,19.3
 		.get 7 Handful of Oats|q 151/1
-	step //18
+	step //17
 		goto 60,19.4
 		.talk Farmer Furlbrow##237
 		..turnin The Forgotten Heirloom##64
 		.talk Verna Furlbrow##238
 		..turnin Poor Old Blanchy##151
-	step //19
+	step //18
 		goto 53.8,31.7
 		.kill 20 Harvest Watcher|q 9/1
 		.collect 5 Flask of Oil##814|q 103 |future
-	step //20
+	step //19
 		goto 56.4,30.5
 		.talk Salma Saldean##235
 		..turnin Westfall Stew (2)##38
 		..turnin Goretusk Liver Pie##22
 		..turnin The Killing Fields##9
-	step //21
+	step //20
 		goto Westfall,56.3,47.5
 		.talk Gryan Stoutmantle##234
 		..turnin The People's Militia (1)##12
 		..accept The People's Militia (2)##13
-	step //22
+	step //21
 		goto 56.3,47.5
 		.talk Captain Danuvin##821
 		..turnin Patrolling Westfall##102
-	step //23
+	step //22
 		ding 14
 		only NightElf Druid
-	step //24
+	step //23
 		'Fly to Stormwind|goto Stormwind City|noway|c
 		only NightElf Druid
-	step //25
+	step //24
 		'Buy the following from the Auction House:
 		.' 5 Earthroot|buy 5 Earthroot|q 6123/1
 		only NightElf Druid
-	step //26
+	step //25
 		'Ride the boat to Auberdine|goto Darkshore,32.8,42.0,9|noway|c
 		only NightElf Druid
-	step //27
+	step //26
 		'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
 		only NightElf Druid
-	step //28
+	step //27
 		goto Darnassus|goto Darnassus|noway|c
 		only NightElf Druid
-	step //29
+	step //28
 		goto Darnassus,35.2,8.1
 		.talk Mathrengyl Bearwalker##4217
 		..accept Lessons Anew##6121
 		only NightElf Druid
-	step //30
+	step //29
 		'Remember, you have the spell Teleport: Moonglade
 		.' Teleport to Moonglade|goto Moonglade|cast Teleport: Moonglade|c
 		only NightElf Druid
-	step //31
+	step //30
 		goto 56.2,30.5
 		.talk Dendrite Starblaze##11802
 		..turnin Lessons Anew##6121
 		..accept The Principal Source##6122
 		only NightElf Druid
-	step //32
+	step //31
 		goto 44.2,45.3|n
 		.talk Silva Fil'naveth##11800
 		..'Fly to Rut'theran Village|goto Teldrassil,58.4,93.9,0.3|c
 		only NightElf Druid
-	step //33
+	step //32
 		'Fly to Auberdine|goto Darkshore,36.4,45.6,0.3|noway|c
 		only NightElf Druid
-	step //34
+	step //33
 		goto 54.6,31.7|n
 		.' The path up to 'The Principal Source' starts here|goto Darkshore,54.6,31.7,0.5|noway|c
 		only NightElf Druid
-	step //35
+	step //34
 		goto 54.7,33.1
 		.' Stand in the calmer looking water
 		.' Use the Empty Cliffspring Falls Sampler in your bags|use Empty Cliffspring Falls Sampler##15844
 		.get Filled Cliffspring Falls Sampler|q 6122/1
 		only NightElf Druid
-	step //36
+	step //35
 		goto 38,41
 		.talk Alanndarian Nightsong##3702
 		..turnin The Principal Source##6122
 		..accept Gathering the Cure##6123
 		only NightElf Druid
-	step //37
+	step //36
 		goto 43,50.5
 		.' Click the Lunar Fungal Blooms inside the 3 caves around this area
 		.get 12 Lunar Fungus|q 6123/2
 		only NightElf Druid
-	step //38
+	step //37
 		goto 37.7,40.6
 		.talk Alanndarian Nightsong##3702
 		..turnin Gathering the Cure##6123
 		..accept Curing the Sick##6124
 		only NightElf Druid
-	step //39
+	step //38
 		'They are all around Darkshore in no specific spot:
 		.' Use your Curative Animal Salve on Sickly Deers|use Curative Animal Salve##15826
 		.' Cure 10 Sickly Deers|goal 10 Sickly Deer cured|q 6124/1
 		only NightElf Druid
-	step //40
+	step //39
 		'Teleport to Moonglade|goto Moonglade|cast Teleport: Moonglade|c
 		only NightElf Druid
-	step //41
+	step //40
 		goto 56.2,30.5
 		.talk Dendrite Starblaze##11802
 		..turnin Curing the Sick##6124
 		..accept Power over Poison##6125
 		only NightElf Druid
-	step //42
+	step //41
 		goto 44.2,45.3
 		.talk Silva Fil'naveth##11800
 		..'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
 		only NightElf Druid
-	step //43
+	step //42
 		goto Darnassus|goto Darnassus|noway|c
 		only NightElf Druid
-	step //44
+	step //43
 		goto Darnassus,35.2,8.1
 		.talk Mathrengyl Bearwalker##4217
 		..turnin Power over Poison##6125
 		only NightElf Druid
-	step //45
+	step //44
 		'Hearth to Sentinel Hill|goto Westfall,52.9,53.6,0.5|use Hearthstone##6948|noway|c
 		only NightElf Druid
-	step //46
+	step //45
 		goto 36.2,54.5
 		.get A Simple Compass##2998|q 399/1
-	step //47
+	step //46
 		goto Westfall,31.4,44.5
 		.kill 15 Defias Looter|q 13/2
 		.kill 15 Defias Pillager|q 13/1
+	step //47
+		ding 14
 	step //48
-		ding 15
-	step //49
 		goto 56.3,47.5
 		.talk Gryan Stoutmantle##234
 		..turnin The People's Militia (2)##13
 		..accept The People's Militia (3)##14
 		..accept The Defias Brotherhood (1)##65
-	step //50
+	step //49
 		goto 54.0,52.9
 		.talk Scout Galiaan##878
 		..turnin Red Leather Bandanas##153
-	step //51
+	step //50
 		'Fly to Stormwind City|goto Stormwind City|noway|c
-	step //52
+	step //51
 		goto 63.2,74.4
 		.talk Morgan Pestle##279
 		..turnin Shipment To Stormwind##61
-	step //53
+	step //52
 		home Stormwind City
-	step //54
+	step //53
 		goto Stormwind City,39.2,85.3
 		.talk Gakin the Darkbinder##6122
 		..turnin Surena Caledon##1688
 		..accept The Binding##1689
 		only Gnome Warlock
-	step //55
+	step //54
 		'Go downstairs into the catacombs to 39.1,84.3|goto 39.1,84.3
 		.' Use your Bloodstone Choker while standing on the pink Summoning Circle|use Bloodstone Choker##6928
 		.kill Summoned Voidwalker|q 1689/1
 		only Gnome Warlock
-	step //56
+	step //55
 		'Go upstairs to 39.2,85.3|goto 39.2,85.3
 		.talk Gakin the Darkbinder##6122
 		..turnin The Binding##1689
 		only Gnome Warlock
+	step //56
+		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c	
 	step //57
+		'Go east to Redridge Mountains|goto Redridge Mountains|noway|c
+	step //58
+		goto Redridge Mountains,15.3,71.5
+		.talk Guard Parker##464
+		..accept Encroaching Gnolls##244
+	step //59
+		goto 30.7,60
+		.talk Deputy Feldon##1070
+		..turnin Encroaching Gnolls##244
+	step //60
+		goto 30.6,59.4
+		.talk Ariena Stormfeather##931
+		..fpath Lakeshire
+	step //61
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..accept The Price of Shoes##118
+	step //62
+		goto 29.3,53.6
+		.talk Shawn##8965
+		..accept Hilary's Necklace##3741
+	step //63
+		goto 30,44.5
+		.talk Magistrate Solomon##344
+		..accept Messenger to Stormwind (1)##120
+	step //64
+		goto 26.5,44
+		.talk Barkeep Daniels##346
+		..accept Dry Times##116
+	step //65
+		goto 26.5,45.3
+		.talk Wiley the Black##266
+		..turnin The Defias Brotherhood (1)##65
+		..accept The Defias Brotherhood (2)##132
+	step //66
+		goto 20.6,52.1
+		.' Click the Glinting Mud|tip The Glinting Mud spawns in random places around this area, so some searching may be necessary.
+		.get Hilary's Necklace|q 3741/1
+	step //67
+		goto 29.3,53.6
+		.talk Hilary##8962
+		..turnin Hilary's Necklace##3741
+	step //68
+		'Fly to Stormwind City|goto Stormwind City|noway|c
+	step //69
+		goto 69.2,82.7
+		.talk General Marcus Jonathan##466
+		..turnin Messenger to Stormwind (1)##120
+		..accept Messenger to Stormwind (2)##121
+	step //70
+		goto Elwynn Forest,41.7,65.5
+		.talk Smith Argus##514
+		..turnin The Price of Shoes##118
+		..accept Return to Verner##119
+	step //71
+		goto 44,65.7
+		buy Skin of Sweet Rum|q 116/4
+	step //72
+		'Head back to Stormwind City|goto Stormwind City|noway|c
+	step //73
+		'Fly to Lakeshire|goto Redridge Mountains|noway|c
+	step //74
+		goto 30,44.5
+		.talk Magistrate Solomon##344
+		..turnin Messenger to Stormwind (2)##121
+		..accept Messenger to Westfall (1)##143
+	step //75
+		'Fly to Westfall|goto Westfall|noway|c
+	step //76
+		goto 56.3,47.5
+		.talk Gryan Stoutmantle##234
+		..turnin The Defias Brotherhood (2)##132
+		..accept The Defias Brotherhood (3)##135
+		..turnin Messenger to Westfall (1)##143
+		..accept Messenger to Westfall (2)##144
+	step //77
+		'Fly to Stormwind City|goto Stormwind City|noway|c
+	step //78
+		goto Stormwind City,78.3,70.7
+		.talk Master Mathias Shaw##332
+		..turnin The Defias Brotherhood (3)##135
+		..accept The Defias Brotherhood (4)##141
+	step //79
 		goto 57.7,47.9
 		.talk Baros Alexston##1646
 		..turnin Humble Beginnings##399
-	step //58
+	step //80
 		goto 59.7,33.8
 		.talk Grimand Elmore##1416
 		..turnin Elmore's Task##1097
 		..accept Stormpike's Delivery##353
-	step //59
+	step //81
 		goto 67,33.85
 		'Ride the tram to Ironforge|goto Ironforge|noway|c
-	step //60
+	step //82
 		goto 69.2,50.55
 		.talk Gnoarn##6569
 		..accept Find Bingles##2039
-	step //61
+	step //83
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
-	step //62
+	step //84
 		goto 22.1,73.1
 		.talk Mountaineer Cobbleflint##1089
 		..accept In Defense of the King's Lands (1)##224
-	step //63
+	step //85
 		goto 23.2,73.7
 		.talk Captain Rugelfuss##1092
 		..accept The Trogg Threat##267
-	step //64
+	step //86
 		goto 31.1,70.7
 		.kill 10 Stonesplinter Trogg|q 224/1
 		.kill 10 Stonesplinter Scout|q 224/2
-	step //65
+	step //87
 		goto 22.1,73.1
 		.talk Mountaineer Cobbleflint##1089
 		..turnin In Defense of the King's Lands (1)##224
-	step //66
+	step //88
 		goto 23.5,76.4
 		.talk Mountaineer Gravelgaw##1091
 		..accept In Defense of the King's Lands (2)##237
-	step //67
+	step //89
 		goto 36.2,80.7
 		.kill 10 Stonesplinter Skullthumper|q 237/1
 		.kill 10 Stonesplinter Seer|q 237/2
-	step //68
+	step //90
 		.from Stonesplinter Scout##1162+, Stonesplinter Trogg##1161+, Stonesplinter Skullthumper##1163+, Stonesplinter Seer##1166+
 		.get 8 Trogg Stone Tooth|q 267/1
-	step //69
+	step //91
 		goto 23.5,76.4
 		.talk Mountaineer Gravelgaw##1091
 		..turnin In Defense of the King's Lands (2)##237
-	step //70
+	step //92
 		goto 23.5,74.5
 		.talk Mountaineer Wallbang##1090
 		..accept In Defense of the King's Lands (3)##263
-	step //71
+	step //93
 		goto 23.2,73.7
 		.talk Captain Rugelfuss##1092
 		..turnin The Trogg Threat##267
-	step //72
+	step //94
 		goto 34.3,47.7
 		.talk Mountaineer Kadrell##1340
 		..accept Rat Catching##416
 		..accept Mountaineer Stormpike's Task##1339
-	step //73
+	step //95
 		goto 37.3,46.5
 		.talk WANTED##256
 		..accept WANTED: Chok'sul##256
-	step //74
+	step //96
 		goto 37.2,47.4
 		.talk Jern Hornhelm##1105
 		..accept Ironband's Excavation##436
-	step //75
+	step //97
 		goto 34.8,49.3
 		.talk Vidra Hearthstove##1963
 		..accept Thelsamar Blood Sausages##418
-	step //76
-		goto 34.7,43.2
-		.talk Magistrate Bluntnose##1139
-		..accept Mercenaries##255
-	step //77
+	step //98
 		goto 35,35
 		'Kill spiders, boars and bears while traveling.
 		'Just a reminder; skip to the next step.
 		.collect 3 Boar Intestines |q 418 |future
 		.collect 3 Spider Ichor |q 418 |future
 		.collect 3 Bear Meat |q 418 |future
-	step //78
+	step //99
 		goto 24.8,18.4
 		.talk Mountaineer Stormpike##1343
 		..turnin Stormpike's Delivery##353
 		..turnin Mountaineer Stormpike's Task##1339
 		..accept Stormpike's Order##1338
 		..accept Filthy Paws##307
-	step //79
-		ding 16
-	step //80
+	step //100
+		ding 15
+	step //101
 		goto 35.4,18.5
 		.' Click Miners' League Crates inside the cave
 		.get 4 Miners' Gear|q 307/1
 		.from Tunnel Rat Forager##1176+, Tunnel Rat Geomancer##1174+, Tunnel Rat Kobold##1202+, Tunnel Rat Surveyor##1177+, Tunnel Rat Vermin##1172+, Tunnel Rat Vermin##1175+
 		.get 12 Trogg Stone Tooth|q 416/1
-	step //81
+	step //102
 		'Go outside to 24.8,18.4|goto 24.8,18.4
 		.talk Mountaineer Stormpike##1343
 		..turnin Filthy Paws##307
-	step //82
+	step //103
 		goto 34.3,47.7
 		.talk Mountaineer Kadrell##1340
 		..turnin Rat Catching##416
-	step //83
+	step //104
+		goto 34.7,43.2
+		.talk Magistrate Bluntnose##1139
+		..accept Mercenaries##255
+	step //105
 		goto 64.9,66.7
 		.talk Magmar Fellhew##1345
 		..turnin Ironband's Excavation##436
 		..accept Gathering Idols##297
-	step //84
+	step //106
 		'Go northeast to 65.9,65.6|goto 65.9,65.6
 		.talk Prospector Ironband##1344
 		..accept Excavation Progress Report##298
-	step //85
+	step //107
 		goto 81.8,61.7
 		.talk Marek Ironheart##1154
 		..accept Crocolisk Hunting##385
-	step //86
+	step //108
 		goto 83.5,65.5
 		.talk Daryl the Youngling##1187
 		..accept A Hunter's Boast##257
-	step //87
+	step //109
 		goto 77.4,58.3
 		.kill 6 Mountain Buzzard|q 257/1
-	step //88
+	step //110
 		goto 83.5,65.5
 		.talk Daryl the Youngling##1187
 		..turnin A Hunter's Boast##257
 		.'The next quest is timed. Make sure you are ready.
 		..accept A Hunter's Challenge##258
-	step //89
+	step //111
 		goto 65.3,39.1
 		.kill 5 Elder Mountain Boar|q 258/1
-	step //90
+	step //112
 		goto 83.5,65.5
 		.talk Daryl the Youngling##1187
 		..turnin A Hunter's Challenge##258
-	step //91
+	step //113
 		goto 81.7,64.2
 		.talk Vyrin Swiftwind##1156
 		..accept Vyrin's Revenge (1)##271
-	step //92
+	step //114
 		goto 63.6,47.9
 		.talk Bingles Blastenheimer##6577
 		..turnin Find Bingles##2039
 		..accept Bingles' Missing Supplies##2038
-	step //93
+	step //115
 		goto 55.2,38
 		.from Loch Crocolisk##1693+
 		.get 5 Crocolisk Meat|q 385/1
 		.get 6 Crocolisk Skin|q 385/2
-	step //94
+	step //116
 		goto 54.2,26.6
 		.' Click Bingles' Blastencapper|tip It's the little bitty barrel to the right of the hut entrance with a fuse on it.
 		.get Bingles' Blastencapper|q 2038/4
-	step //95
+	step //117
 		goto 51.8,24.1
 		.' Click Bingles's Toolbucket|tip It's a little silver bucket on the ground.
 		.get Bingles' Hammer|q 2038/3
-	step //96
+	step //118
 		goto 48.1,21.1
 		.' Click Bingles' Toolbucket|tip It's a little silver bucket on the ground.
 		.get Bingles' Screwdriver|q 2038/2
-	step //97
+	step //119
 		goto 48.7,30.1
 		.' Click Bingles's Toolbucket|tip It's a little silver bucket on the ground.
 		.get Bingles' Wrench|q 2038/1
-	step //98
+	step //120
 		goto 53.35,25.5
 		.kill 10 Stonesplinter Shaman|q 263/1
 		.kill 10 Stonesplinter Bonesnapper|q 263/2
-	step //99
-		ding 17
-	step //100
+	step //121
 		goto 63.6,47.9
 		.talk Bingles Blastenheimer##6577
 		..turnin Bingles' Missing Supplies##2038
-	step //101
+	step //122
+		ding 16
+	step //123
 		goto 37.2,47.4
 		.talk Jern Hornhelm##1105
 		..turnin Excavation Progress Report##298
 		..accept Report to Ironforge##301
-	step //102
+	step //124
 		'Fly to Ironforge|goto Ironforge|noway|c
-	step //103
+	step //125
 		goto Ironforge,74.7,11.7
 		.talk Prospector Stormpike##1356
 		..turnin Report to Ironforge##301
 		..accept Powder to Ironband##302
-	step //104
+	step //126
+		goto 69.5,50.6
+		.talk Gnoarn##6569
+		..accept Speak with Shoni##2041
+	step //127
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
-	step //105
+	step //128
 		goto 37.2,47.4
 		.talk Jern Hornhelm##1105
 		..turnin Powder to Ironband##302
 		..accept Resupplying the Excavation##273
-	step //106
-		ding 17
-	step //107
+	step //129
 		goto 23.5,74.5
 		.talk Mountaineer Wallbang##1090
 		..turnin In Defense of the King's Lands (3)##263
-	step //108
+	step //130
 		goto 23.2,73.7
 		.talk Captain Rugelfuss
 		..accept In Defense of the King's Lands (4)##217
-	step //109
+	step //131
 		goto 34.8,90.5
 		.kill Grawmug##1205|q 217/1
 		.kill Gnasher##1206|q 217/2
 		.kill Brawler##1207|q 217/3
-	step //110
+	step //132
 		goto 43,64
 		.from Ol' Sooty##1225
-		.get Ol' Sooty's Head|q 271/1
-	step //111
+		..get Ol' Sooty's Head|q 271/1
+	step //133
 		goto 52.2,69.3
 		.talk Huldar
 		..turnin Resupplying the Excavation##273
 		..accept After the Ambush##454
-	step //112
+	step //134
 		goto 52.2,69.4
 		.talk Miran##1379
 		..turnin After the Ambush##454
 		..accept Protecting the Shipment##309
-	step //113
+	step //135
 		goto 65.9,65.6
 		.talk Prospector Ironband##1344
 		..turnin Protecting the Shipment##309
-	step //114
+	step //136
 		goto 68.1,63.2
 		.from Stoneplinter Digger##1167+, Stonesplinter Geomancer##1165+ 
 		.get 8 Carved Stone Idol|q 297/1
-	step //115
+	step //137
 		goto 64.9,66.7
 		.talk Magmar Fellhew##1345
 		..turnin Gathering Idols##297
-	step //116
+	step //138
 		goto 81.8,61.7
 		.talk Marek Ironheart##1154
 		..turnin Crocolisk Hunting##385
-	step //117
+	step //139
 		goto 83.5,65.5
 		.talk Daryl the Youngling##1187
 		..turnin Vyrin's Revenge (1)##271
 		..accept Vyrin's Revenge (2)##531
-	step //118
+	step //140
 		goto 81.7,64.2
 		.talk Vyrin Swiftwind##1156
 		..turnin Vyrin's Revenge (2)##531
-	step //119
+	step //141
 		goto 67.1,22.2
 		.kill 4 Mo'grosh Ogre|q 255/1
 		.kill 4 Mo'grosh Enforcer|q 255/3
-	step //120
+	step //142
 		goto 75,19.8
 		.kill 4 Mo'grosh Brute|q 255/2
-	step //121
-		ding 18
-	step //122
+	step //143
+		goto 79.70,14.60
+		.from Chok'sul##1210
+		..get Chok'sul's Head|q 256/1
+	step //144
 		goto 46,13.6
 		.talk Chief Engineer Hinderweir VII##1093
 		..accept A Dark Threat Looms (1)##250
-	step //123
+	step //145
 		goto 56,13.3
 		.' Click the Suspicious Barrel|tip Its a little barrel sitting on the ground right next to the wall.
 		..turnin A Dark Threat Looms (1)##250
 		..accept A Dark Threat Looms (2)##199
-	step //124
+	step //146
 		goto 46,13.6
 		.talk Chief Engineer Hinderweir VII##1093
 		..turnin A Dark Threat Looms (2)##199
-	step //125
+	step //147
+		ding 17
+	step //148
 		'Last call to get the meat before leaving Loch Modan.
 		.get 3 Boar Intestines |q 418/1
 		.get 3 Spider Ichor |q 418/2
 		.get 3 Bear Meat |q 418/3
-	step //126
+	step //149
 		goto 34.7,43.2
 		.talk Magistrate Bluntnose##1139
 		..turnin Mercenaries##255
-	step //127
+		..turnin Chok'sul##256
+	step //150
 		goto 34.8,49.3
 		.talk Vidra Hearthstove##1963
 		..turnin Thelsamar Blood Sausages##418
-	step //128
+	step //151
 		goto 23.2,73.7
 		.talk Captain Rugelfuss
 		..turnin In Defense of the King's Lands (4)##217
 	//todo: druid water form here
-	step //129
+	step //152
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
-	step //130
+	step //153
+		goto 62.6,34.1
+		.talk Shoni the Shilent##6579
+		..turnin Speak with Shoni##2041
+		..accept Underground Assault##2040
+	step //154
 		goto 64.6,37.2
 		.talk Furen Longbeard##5413
 		..turnin Stormpike's Order##1338
-	step //131
+	step //155
 		goto 70.3,40.8
 		.talk Wilder Thistlenettle##656
 		..accept Collecting Memories##168
 		..accept Oh Brother...##167
-	step //132
+	step //156
 		'Fly to Westfall|goto Westfall|noway|c
-	step //133
-		'IMPORTANT
-		'Tip: buy a lot of water/food, 3 stacks at least
-	step //134
+	step //157
+		goto 56.3,47.5
+		.talk Gryan Stoutmantle##234
+		..turnin The Defias Brotherhood (4)##141
+		..accept The Defias Brotherhood (5)##142
+	step //158
+		home Westfall
+	step //159
 		collect 5 Flask of Oil
-	step //135
-		goto 52.6,72.3
+		collect 5 Hops
+	step //160
+		goto 44.6,80.3
+		.talk Grimbooze Thunderbrew##239
+		..get Keg of Thunderbrew Lager##1262|q 116/1
 		.kill 15 Defias Highwayman|q 14/1
 		.kill 5 Defias Pathstalker|q 14/2
 		.kill 5 Defias Knuckleduster|q 14/3
-	step //136
+	step //161
 		goto 30,86
 		.talk Captain Grayson##392
 		..accept The Coastal Menace##104
 		..accept Keeper of the Flame##103
 		..turnin Keeper of the Flame##103
-	step //137
+	step //162
+		ding 18
+	step //163
 		goto 34,84
 		.from Old Murk-Eye##391
 		.get Scale of Old Murk-Eye|q 104/1
-	step //138
+	step //164
 		goto 30,86
 		.talk Captain Grayson##392
 		..turnin The Coastal Menace##104
-	step //139
-		goto 43,71.30
+	step //165
+		'Find the Defias Messenger, look up his patrol route in a database or ask around.
+		from Defias Messenger##550
+		.get A Mysterious Message|q 142/1
+	step //166
+		goto 56.3,47.5
+		.talk Gryan Stoutmantle##234
+		..turnin The People's Militia (3)##14
+		..turnin The Defias Brotherhood (5)##142
+	step //167
+		goto 55.7,47.5
+		.talk The Defias Traitor##467
+		..accept The Defias Brotherhood (6)##155	
+	step //168
+		goal Escort The Defias Traitor to discover where VanCleef is hiding|q 155/1
+	step //169
+		goto 56.3,47.5
+		.talk Gryan Stoutmantle##234
+		..turnin The Defias Brotherhood (6)##155
+		..accept The Defias Brotherhood (7)##166
+	step //170
+		goto 56.7,47.3
+		.talk Scout Riell##820
+		..accept Red Silk Bandanas##214
+	step //171
+		'Make/find a group for Deadmines|goto The Deadmines|noway|c
+	step //172
+		.from Defias Mobs
+		..get Red Silk Bandanas|q 214/1
 		.from Foreman Thistlenettle##626
 		..get Thistlenettle's Badge|q 167/1
 		.from Skeletal Miner##623+, Undead Dynamiter##625+, Undead Excavator##624+
 		..get 4 Miners' Union Card|q 168/1
-	step //140
+	step //173
+		from Sneed's Shredder##642
+		.get Gnoam Sprecklesprocket|q 2040/1
+		from Edwin VanCleef##639
+		.get Head of VanCleef|q 166/1
+		.' Click the Unsent Letter|use An Unsent Letter##2874
+		..accept The Unsent Letter##373
+	step //174
 		ding 19
-	step //141
-		'Die inside the mine and spirit res at Sentinel Hill|goto 51.7,49.7|c
-	step //142
+	step //175
+		'Hearth to Sentinel Hill|goto Westfall|use Hearthstone##6948|noway|c
+	step //176
 		goto 56.3,47.5
 		.talk Gryan Stoutmantle##234
-		..turnin The People's Militia (3)##14
-		..accept The Defias Brotherhood##65
-	step //143
-		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
-	step //144
+		..turnin The Defias Brotherhood (7)##166
+	step //177
+		goto 56.7,47.3
+		.talk Scout Riell##820
+		..turnin Red Silk Bandanas##214
+	step //178
+		'Fly to Stormwind City|goto Stormwind City|noway|c
+	step //179
 		goto 70.3,40.8
 		.talk Wilder Thistlenettle##656
 		..turnin Collecting Memories##168
 		..turnin Oh Brother...##167
-	step //145
-		goto Stormwind City,22.6,56.1|n
-		'Ride the boat to Auberdine, this part is just to reach 20, skip to the next guide whenever you do.|goto Darkshore,32.4,43.7,1|noway|c
-	step //146
-		goto 36.1,44.9
-		.talk Gubber Blump##10216
-		..accept Fruit of the Sea##1138
-	step //147
-		goto 34.4,48
-		.talk Daelyshia##4267
-		..fpath Astranaar
-	step //148
-		goto 37.3,43.6
-		.talk Barithras Moonshade##3583
-		..accept Cave Mushrooms##947
-	step //149
-		goto 38.1,41.2
-		.talk Gorbold Steelhand##6301
-		..accept Deep Ocean, Vast Sea##982
-	step //150
-		goto 39,43.6
-		.talk Sentinel Elissa Starbreeze##3657
-		..accept The Tower of Althalaxx (1)##965
-	step //151
-		'Go underwater to 38.2,28.8|goto 38.2,28.8
-		.' Click the Silver Dawning's Lockbox|tip It's a small grey chest at the very bottom of this ship.
-		.get Silver Dawning's Lockbox|q 982/1
-	step //152
-		'Go underwater to 39.6,27.5|goto 39.6,27.5
-		.' Click the Mist Veil's Lockbox|tip It's a small grey chest at the very bottom of the ship.
-		.get Mist Veil's Lockbox|q 982/2
-	step //153
-		goto 50.93,22.44
-		.from Reef Crawler##2235+, Encrusted Tide Crawler##2233+
-		.get 6 Fine Crab Chunks|q 1138/1
-	step //154
-		goto 55,24.9
-		.talk Balthule Shadowstrike##3661
-		..turnin The Tower of Althalaxx (1)##965
-		..accept The Tower of Althalaxx (2)##966
-	step //155
-		goto 55.2,26.4
-		.from Dark Strand Fanatic##2336+
-		.get 4 Worn Parchment|q 966/1
-	step //156
-		goto 55,24.9
-		.talk Balthule Shadowstrike##3661
-		..turnin The Tower of Althalaxx (2)##966
-	step //157
-		goto 55.1,33.6
-		.' Click the mushrooms up the hill, inside the cave
-		.get 5 Scaber Stalk|q 947/1
-		.get 1 Death Cap|q 947/2
-	step //158
-		goto 38.1,41.2
-		.talk Gorbold Steelhand##6301
-		..turnin Deep Ocean, Vast Sea##982
-	step //159
-		goto 37.4,41.8
-		.talk Archaeologist Hollee##2913
-		..accept The Absent Minded Prospector##729
-	step //160
-		goto 37.3,43.6
-		.talk Barithras Moonshade##3583
-		..turnin Cave Mushrooms##947
-		..accept Onu##948
-	step //161
-		goto 36.1,44.9
-		.talk Gubber Blump##10216
-		..turnin Fruit of the Sea##1138
-	step //162
-		goto 43.5,76.3
-		.talk Onu##3616
-		..turnin Onu##948
-		..accept The Master's Glaive##944
-	step //163
-		goto 38.5,86.2
-		.' Clear the mobs around the table
-		.' Jump on the table with the remains on it
-		.' Click your Phial of Scrying in your bags|use Phial of Scrying##5251
-		.' Create the Scrying Bowl
-		.' Click the Scrying Bowl
-		..turnin The Master's Glaive##944
-		..accept The Twilight Camp##949
-		.' Click the Twilight Tome
-		..turnin The Twilight Camp##949
-		..accept Return to Onu##950
-	step //164
-		goto 35.7,83.7
-		.talk Prospector Remtravel##2917
-		..turnin The Absent Minded Prospector##729
-	step //165
-		goto 43.5,76.3
-		.talk Onu##3616
-		..turnin Return to Onu##950	
-	step //166
-		ding 20
+	step //180
+		goto 62.6,34.1
+		.talk Shoni the Shilent##6579
+		..turnin Underground Assault##2040
+	step //181
+		goto 57.7,47.9
+		.talk Baros Alexston##1646
+		..turnin The Unsent Letter##373
+		..accept Bazil Thredd##389
+	step //182
+		goto 51.5,69.3
+		.talk Warden Thelwater##1719
+		..turnin Bazil Thredd##389
+	step //183
+		goto 60,76.9
+		buy Cask of Merlot|q 116/2
 ]])
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-24)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (20-24)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (25-29)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (25-29)
 	startlevel 20
+
 	step //1
-		goto Darkshore,30.80,41.02|n
-		'Ride the boat to Azuremyst Isle|goto Azuremyst Isle|noway|c
-		only Draenei
+		'Buy a Bronze Tube from the Auction House|buy 1 Bronze Tube|q 174/1
+		'Also sold by <Engineering Supplies> vendors near Engineering trainers.
 	step //2
-		'Train your riding skill outside the Exodar|goto The Exodar,81.64,52.26|c
-		only Draenei
+		'Fly to Lakeshire|goto Redridge Mountains|noway|c
 	step //3
-		goto 44.2,45.3|n
-		.talk Silva Fil'naveth##11800
-		..'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
-		only NightElf
-	step //4
-		'Go northwest into the big pink portal to Darnassus|goto Darnassus|noway|c
-		only NightElf
-	step //5
-		'Train your riding skill in the Cenarion Enclave|goto 38.31,16.02|c
-		only NightElf
-	step //6
-		'Hearth to Stormwind|goto Stormwind City|noway|c
-	step //7
-		'Fly to Ironforge|goto Ironforge|noway|c
-		only Dwarf,Gnome
-	step //8
-		'Train your riding skill at Steelgrill's Depot|goto Dun Morogh,49.21,48.01|c
-		only Gnome
-	step //9
-		'Train your riding skill at Amberstill Ranch|goto Dun Morogh,64,50.16|c
-		only Dwarf
-	step //10
-		'Fly to Stormwind City|goto Stormwind City|noway|c
-		only dwarf,gnome
-	step //11
-		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c	
-	step //12
-		goto 65.2,69.7
-		.talk Theocritus##313
-		..accept A Watchful Eye##94
-	step //13
-		'Train your riding skill at the Eastvale Logging Camp|goto 84.15,65.23
-		only Human
-	step //14
-		'Go east to Redridge Mountains|goto Redridge Mountains|noway|c
-	step //15
-		goto Redridge Mountains,15.3,71.5
-		.talk Guard Parker##464
-		..accept Encroaching Gnolls##244
-	step //16
 		goto 30.7,60
 		.talk Deputy Feldon##1070
-		..turnin Encroaching Gnolls##244
 		..accept Assessing the Threat##246
-	step //17
-		goto 30.6,59.4
-		.talk Ariena Stormfeather##931
-		..fpath Lakeshire
-	step //18
+	step //4
 		goto 33.5,49
 		.talk Marshal Marris##382
 		..accept Blackrock Menace##20
-	step //19
+	step //5
 		goto 32.1,48.6
 		.talk Foreman Oslow##341
 		..accept The Lost Tools##125
-	step //20
-		goto 31,47.3
-		.talk Verner Osgood##415
-		..accept The Price of Shoes##118
-	step //21
-		goto 29.3,53.6
-		.talk Shawn##8965
-		..accept Hilary's Necklace##3741
-	step //22
-		goto 30,44.5
-		.talk Magistrate Solomon##344
-		..accept Messenger to Stormwind (1)##120
-	step //23
-		goto 27.7,47.4
-		.talk Dockmaster Baren##381
-		..accept Selling Fish##127
-		..accept Murloc Poachers##150
-	step //24
-		goto 26.6,44.3
-		.talk Darcy##379
-		..accept A Free Lunch##129
-	step //25
-		home Lakeshire
-	step //26
-		goto 26.5,45.3
-		.talk Wiley the Black##266
-		..turnin The Defias Brotherhood (1)##65
-		..accept The Defias Brotherhood (2)##132
-	step //27
-		goto 22.7,43.8
-		.talk Chef Breanna##343
-		..accept Redridge Goulash##92
-	step //28
-		'Fly to Stormwind City|goto Stormwind City|noway|c
-	step //29
-		goto 69.2,82.7
-		.talk General Marcus Jonathan##466
-		..turnin Messenger to Stormwind (1)##120
-		..accept Messenger to Stormwind (2)##121
-	step //30
-		goto Elwynn Forest,41.7,65.5
-		.talk Smith Argus##514
-		..turnin The Price of Shoes##118
-		..accept Return to Verner##119
-	step //31
-		'Head back to Stormwind City|goto Stormwind City|noway|c
-	step //32
-		'Buy a Bronze Tube from the Auction House|buy 1 Bronze Tube|q 174/1
-		'Also sold by <Engineering Supplies> vendors near Engineering trainers.
-	step //33
-		'Fly to Lakeshire|goto Redridge Mountains|noway|c
-	step //34
+	step //6
 		goto 31,47.3
 		.talk Verner Osgood##415
 		..turnin Return to Verner##119
 		..accept Underbelly Scales##122
 		..accept A Baying of Gnolls##124
-	step //35
+	step //7
+		goto 27.7,47.4
+		.talk Dockmaster Baren##381
+		..accept Selling Fish##127
+	step //8
+		goto 26.6,44.3
+		.talk Darcy##379
+		..accept A Free Lunch##129
+	step //9
+		home Lakeshire
+	step //10
+		goto 22.7,43.8
+		.talk Chef Breanna##343
+		..accept Redridge Goulash##92
+	step //11
 		goto 30,44.5
 		.talk Magistrate Solomon##344
-		..turnin Messenger to Stormwind (2)##121
-		..accept Messenger to Westfall (1)##143
-	step //36
-		goto 29.1,55.1
-		.' Click the Glinting Mud|tip The Glinting Mud spawns in random places around this area, so some searching may be necessary.
-		.get Hilary's Necklace|q 3741/1
-	step //37
+		..turnin Messenger to Westfall (2)##144
+		..accept Messenger to Darkshire (1)##145
+	step //12
 		goto 41.5,54.6
 		.' Click the Sunken Chest
 		.get Oslow's Toolbox|q 125/1
-	step //38
-		goto 40.82,49.11|tip Don't wait around for respawns, skip to the next step if no Murlocs around.
+	step //13
+		goto 40.82,49.11|tip Don't wait for respawns, skip to the next step if there are no Murlocs around.
 		.from Murloc Flesheater##422+, Murloc Shorestriker##1083+, Murloc Minor Tidecaller##548+
 		.get 10 Spotted Sunfish|q 127/1
-		.get 8 Murloc Fin##1468|q 150/1
-	step //39
+		.collect 8 Murloc Fin##1468|q 150/1|future
+	step //14
 		goto 34.2,67.4
 		.from Black Dragon Whelp##1221+
 		.get 6 Underbelly Whelp Scale|q 122/1
 		.from Great Goretusk##2296+|tip Skip this step if there's no Boars around, keep killing them as you met them in your travels.
 		.get 5 Great Goretusk Snout|q 92/1
-	step //40
+	step //15
 		goto 15.62,64.16|tip Don't wait around for respawns, skip to the next step if no Gnolls around.
 		.kill 10 Redridge Mongrel|q 246/1
 		.kill 6 Redridge Poacher|q 246/2
-	step //41
+	step //16
 		goto 15.3,71.5
 		.talk Guard Parker##464
 		..turnin A Free Lunch##129
 		..accept Visit the Herbalist##130
-	step //42
+	step //17
 		goto 19.3,73.2
 		.from Tarantula##442+|tip Skip this step if there's no Spiders around, keep killing them as you met them in your travels.
 		.get 5 Crisp Spider Meat|q 92/3
-	step //43
+	step //18
 		goto 26.8,80.2
 		.kill 10 Redridge Mongrel|q 246/1
 		.kill 6 Redridge Poacher|q 246/2
-	step //44
+	step //19
 		goto Redridge Mountains,48.2,73.3
 		.from Murloc Flesheater##422+, Murloc Shorestriker##1083+, Murloc Minor Tidecaller##548+
 		.get 10 Spotted Sunfish|q 127/1
-		.get 8 Murloc Fin##1468|q 150/1
-	step //45
+		.collect 8 Murloc Fin##1468|q 150/1|future
+	step //20
 		goto 55.5,74.7
 		.from Dire Condor##428+|tip Skip this step if there's no Condors around, keep killing them as you met them in your travels.
 		.get 5 Tough Condor Meat|q 92/2
-	step //46
+	step //21
 		goto 70.6,78.8
 		.from Blackrock Grunt##440+, Blackrock Outrunner##485+
 		.get 10 Battleworn Axe|q 20/1
-	step //47
+	step //22
 		'Finish collecting items for Redridge Gulash at this point before you return to Lakeshire
 		.get 5 Great Goretusk Snout|q 92/1
 		.get 5 Tough Condor Meat|q 92/2
 		.get 5 Crisp Spider Meat|q 92/3
-	step //48
+	step //23
+		ding 20
+	step //24
 		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
-	step //49
+	step //25
 		goto Redridge Mountains,21.9,46.3
 		.talk Martie Jainrose##342
 		..turnin Visit the Herbalist##130
 		..accept Delivering Daffodils##131
-	step //50
+	step //26
 		goto 22.7,43.8
 		.talk Chef Breanna##343
 		..turnin Redridge Goulash##92
-	step //51
+	step //27
 		goto 26.6,44.3
 		.talk Darcy##379
 		..turnin Delivering Daffodils##131
-	step //52
+	step //28
 		goto 27.7,47.4
 		.talk Dockmaster Baren##381
 		..turnin Selling Fish##127
+		..accept Murloc Poachers##150
 		..turnin Murloc Poachers##150
-	step //53
-		ding 21
-	step //54
-		goto 29.3,53.6
-		.talk Hilary##8962
-		..turnin Hilary's Necklace##3741
-	step //55
+	step //29
 		goto 31,47.3
 		.talk Verner Osgood##415
 		..turnin Underbelly Scales##122
-	step //56
+	step //30
 		goto 32.1,48.6
 		.talk Foreman Oslow##341
 		..turnin The Lost Tools##125
 		..accept The Everstill Bridge##89
-	step //57
+	step //31
 		goto 33.5,49
 		.talk Marshal Marris##382
 		..turnin Blackrock Menace##20
-	step //58
+	step //32
 		goto 30.7,60
 		.talk Deputy Feldon##1070
 		..turnin Assessing the Threat##246
-	step //59
+	step //33
 		goto 38.86,32.07
 		.kill 10 Redridge Brute|q 124/1
 		.kill 8 Redridge Mystic|q 124/2
@@ -1659,454 +1598,386 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		.get 5 Iron Pike|q 89/1
 		.get 5 Iron Rivet|q 89/2
 		.' You can find more Gnolls at 22.75,37.49|n
-	step //60
+	step //34
 		goto 32.1,48.6
 		.talk Foreman Oslow##341
 		..turnin The Everstill Bridge##89
-	step //61
+	step //35
 		goto 31,47.3
 		.talk Verner Osgood##415
 		..turnin A Baying of Gnolls##124
 		..accept Howling in the Hills##126
-	step //62
-		goto 27.7,21.4|tip This one is hard and tedious to solo, either grab a friend or skip if you're impatient.
+	step //36
+		goto 27.7,21.4
 		.from Yowler##518
 		..get Yowler's Paw|q 126/1
-	step //63
+	step //37
 		goto 31,47.3
 		.talk Verner Osgood##415
 		..turnin Howling in the Hills##126
-	step //64
+	step //38
 		'Go southwest to Duskwood|goto Duskwood|noway|c
-	step //65
+	step //39
 		goto 73.8,43.5
 		.talk Chef Grual##272
 		..accept Seasoned Wolf Kabobs##90
-	step //66
-		home Darkshire	
-	step //67
+	step //40
+		goto 73.7,44
+		buy Bottle of Moonshine|q 116/3
+	step //41
+		home Darkshire
+	step //42
 		goto 73.5,46.8
 		.talk Commander Althea Ebonlocke##264
 		..accept The Night Watch (1)##56
-	step //68
+	step //43
+		goto 71.9,46.4
+		.talk Lord Ello Ebonlocke##263
+		..turnin Messenger to Darkshire (1)##145
+		..accept Messenger to Darkshire (2)##146
+	step //44
 		goto 75.3,48.7
 		.talk Elaine Carevin##633
 		..accept Deliveries to Sven##164
 		..accept The Hermit##165
 		..accept Raven Hill##163
-	step //69
+	step //45
 		goto 77.5,44.3
 		.talk Felicia Maline##2409
 		..fpath Darkshire
-	step //70
+	step //46
+		'Fly to Lakeshire|goto Redridge Mountains|noway|c
+	step //47
+		goto 30,44.5
+		.talk Magistrate Solomon##344
+		..turnin Messenger to Darkshire (2)##146
+	step //48
+		goto 26.5,44
+		.talk Barkeep Daniels##346
+		..turnin Dry Times##116
+	step //49
+		'Fly to Darkshire|goto Duskwood|noway|c
+	step //50
 		goto 79.8,48.1
 		.talk Viktori Prism'Antras##276
 		..accept Look To The Stars (1)##174
 		..turnin Look To The Stars (1)##174
 		..accept Look To The Stars (2)##175
-	step //71
+	step //51
+		ding 21
+	step //52
 		goto Duskwood,75.8,45.3
 		.talk Madame Eva##265
 		..accept The Totem of Infliction##101
-	step //72
+	step //53
 		goto 45.1,67
 		.talk Watcher Dodds##888
 		..accept Eight-Legged Menaces##245
-	step //73
+	step //54
 		'Go outside to 18.2,56.6|goto 18.2,56.6
 		.talk Jitters##288
 		..turnin Raven Hill##163
 		..accept Jitters' Growling Gut##5
-	step //74
+	step //55
 		'Travel north along the river towards Sven.
 		goto 14.05,70.27|n
 		.kill 15 Pygmy Venom Web Spider|q 245/1
 		..get 5 Vial of Spider Venom|q 101/2
 		..collect 6 Gooey Spider Leg|q 93/1|future
-	step //75
+	step //56
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
 		..turnin Deliveries to Sven##164
 		..accept Sven's Revenge##95
-	step //76
-		ding 22
-	step //77
+	step //57
 		goto 7.7,33.2
 		.talk Lars##893
 		..accept Wolves at Our Heels##226
-	step //78
+	step //58
 		goto 28.1,31.5
 		.talk Abercrombie##289
 		..turnin The Hermit##165
 		..accept Supplies from Darkshire##148
-	step //79
+	step //59
 		kill 12 Starving Dire Wolf|q 226/1
 		kill 8 Rabid Dire Wolf|q 226/2
 		get 10 Lean Wolf Flank|q 90/1
-	step //80
+	step //60
 		goto 7.7,33.2
 		.talk Lars##893
 		..turnin Wolves at Our Heels##226
-	step //81
+	step //61
 		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
-	step //82
+	step //62
 		goto 73.8,43.5
 		.talk Chef Grual##272
 		..turnin Jitters' Growling Gut##5
 		..accept Dusky Crab Cakes##93
 		..turnin Dusky Crab Cakes##93
 		..accept Return to Jitters##240
-	step //83
+	step //63
 		goto 75.8,45.3
 		.talk Madame Eva##265
 		..turnin Supplies from Darkshire##148
 		..accept Ghost Hair Thread##149
-		..accept The Legend of Stalvan (1)##66
-	step //84
-		goto 72.5,46.8
-		.talk Clerk Daltry##267
-		..turnin The Legend of Stalvan (1)##66
-		..accept The Legend of Stalvan (2)##67
-	step //85
+	step //64
 		goto 81.9,59.2
 		.talk Blind Mary##302
 		..turnin Look To The Stars (2)##175
 		..accept Look To The Stars (3)##177
 		..turnin Ghost Hair Thread##149
 		..accept Return the Comb##154
-	step //86
+	step //65
 		goto 79.3,70.3
 		.kill 8 Skeletal Warrior|q 56/1
 		.kill 6 Skeletal Mage|q 56/2
-	step //87
+	step //66
 		goto 80.9,71.6
 		.from Insane Ghoul##511
 		.get Mary's Looking Glass|q 177/1
-	step //88
+	step //67
 		goto 79.8,48.1
 		.talk Viktori Prism'Antras##276
 		..turnin Look To The Stars (3)##177
 		..accept Look To The Stars (4)##181
-	step //89
-		goto 75.8,45.3
-		.talk Madame Eva##265
-		..turnin Return the Comb##154
-		..accept Deliver the Thread##157
-	step //90
+	step //68
 		goto 73.5,46.8
 		.talk Commander Althea Ebonlocke##264
 		..turnin The Night Watch (1)##56
 		..accept The Night Watch (2)##57
-	step //91
+	step //69
+		goto 75.8,45.3
+		.talk Madame Eva##265
+		..turnin Return the Comb##154
+		..accept Deliver the Thread##157
+	step //70
+		ding 22|tip Important, grind mobs nearby if needed.
+	step //71
+		goto 75.8,45.3
+		.talk Madame Eva##265
+		..accept The Legend of Stalvan (1)##66
+	step //72
+		goto 72.5,46.8
+		.talk Clerk Daltry##267
+		..turnin The Legend of Stalvan (1)##66
+		..accept The Legend of Stalvan (2)##67
+	step //73
 		goto 45.1,67
 		.talk Watcher Dodds##888
 		..turnin Eight-Legged Menaces##245
-	step //92
+	step //74
 		goto 28.1,31.5
 		.talk Abercrombie##289
 		..turnin Deliver the Thread##157
 		..accept Zombie Juice##158
-	step //93
+	step //75
 		'Go outside to 18.2,56.6|goto 18.2,56.6
 		.talk Jitters##288
 		..turnin Return to Jitters##240
-	step //94
+	step //76
 		'Head to Westfall|goto Westfall
-	step //95
+	step //77
 		goto Westfall,41.5,66.7
 		.' Click the Old Footlocker|tip It's a small rectangular wooden box on the floor inside this house.
 		..turnin The Legend of Stalvan (2)##67
 		..accept The Legend of Stalvan (3)##68
-	step //96
-		goto Westfall,56.3,47.5
-		.talk Gryan Stoutmantle##234
-		..turnin The Defias Brotherhood (2)##132
-		..accept The Defias Brotherhood (3)##135
-		..turnin Messenger to Westfall (1)##143
-		..accept Messenger to Westfall (2)##144
-	step //97
-		'Fly to Stormwind|goto Stormwind City|noway|c
-	step //98
-		goto 69.3,71.3
-		buy 1 Stormwind Seasoning Herbs|q 90/2
-	step //99
-		goto Stormwind City,78.3,70.7
-		.talk Master Mathias Shaw##332
-		..turnin The Defias Brotherhood (3)##135
-		//..accept The Defias Brotherhood (4)##141
-	step //100
+	step //78
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
-	step //101
+	step //79
 		goto Loch Modan,34.8,47.1
 		.talk Mountaineer Kadrell##1340
 		..accept Report to Mountaineer Rockgar##468
-	step //102
+	step //80
 		goto 25.4,10.4
 		.talk Mountaineer Rockgar##1342
 		..turnin Report to Mountaineer Rockgar##468
 		..accept The Algaz Gauntlet##455
-	step //103
+	step //81
 		'Go into the tunnel to 49.7,79.5|goto Wetlands,49.7,79.5
 		.kill 8 Dragonmaw Scout|q 455/2
 		.kill 6 Dragonmaw Grunt|q 455/3
-	step //104
+	step //82
 		'Follow the path through the tunnels to 53.9,70.3|goto 53.9,70.3|n
 		.' Traverse Dun Algaz|goal Traverse Dun Algaz|q 455/1
-	step //105
+	step //83
 		goto 49.9,39.4
 		.talk Einar Stonegrip##2093
 		..accept Daily Delivery##469
-	step //106
+	step //84
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..accept In Search of The Excavation Team (1)##305
-	step //107
+	step //85
 		goto 8.5,55.7
 		.talk James Halloran##2094
 		..turnin Daily Delivery##469
 		..accept Young Crocolisk Skins##484
-	step //108
+	step //86
 		goto 8.3,58.6
 		.talk Karl Boran##1242
 		..accept Claws from the Deep##279
-	step //109
+	step //87
 		goto 9.5,59.7
 		.talk Shellei Brondir##1571
 		..fpath Menethil Harbor
-	step //110
+	step //88
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
 		..accept The Third Fleet##288
 		..accept The Greenwarden##463
-	step //111
+	step //89
 		goto 10.8,60.8
 		.talk Innkeeper Helbrek##1464
 		..buy Flagon of Mead|goal Flagon of Mead|q 288/1
-	step //112
+	step //90
 		home Menethil Harbor
-	step //113
+	step //91
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
 		..turnin The Third Fleet##288
 		..accept The Cursed Crew##289
-	step //114
+	step //92
 		goto 11.8,58
 		.talk Sida##2111
 		..accept Digging Through the Ooze##470
-	step //115
+	step //93
 		goto 10.1,56.9
 		.talk Valstag Ironjaw##2086
 		..turnin The Algaz Gauntlet##455
-		..accept Report to Captain Stoutfist##473
-	step //116
-		goto 9.9,57.5
-		.talk Captain Stoutfist##2104
-		..turnin Report to Captain Stoutfist##473
-		..accept War Banners##464
-	step //117
-		ding 23
-	step //118
+	step //94
 		goto 18.1,39.8
 		.from Gobbler##1259
 		.get Gobbler's Head|q 279/2
-	step //119
+	step //95
 		goto 13.8,41.9
 		.kill 12 Bluegill Murloc|q 279/1
-	step //120
+	step //96
 		'Kill crocolisks while traveling.
 		.from Young Wetlands Crocolisk##1417+
 		.get 4 Young Crocolisk Skin|q 484/1|n
 		goto Wetlands,38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..accept Ormer's Revenge (1)##294
-	step //121
+	step //97
 		goto 38.8,52.3
 		.talk Merrin Rockweaver##1076
 		..turnin In Search of The Excavation Team (1)##305
 		..accept In Search of The Excavation Team (2)##306
-	step //122
+	step //98
 		goto 53.27,36
 		.from Young Wetlands Crocolisk##1417+
 		.get 4 Young Crocolisk Skin|q 484/1
-	step //123
+	step //99
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin The Greenwarden##463
 		..accept Tramping Paws##276
-	step //124
+	step //100
 		goto 63.9,61.8
 		.kill 15 Mosshide Gnoll|q 276/1
 		.kill 10 Mosshide Mongrel|q 276/2
-	step //125
+	step //101
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin Tramping Paws##276
 		..accept Fire Taboo##277
-	step //126
+	step //102
 		goto 44.3,25.5
 		.from Black Ooze##1032+, Crimson Ooze##1031+
 		.get Sida's Bag|q 470/1
-	step //127
+	step //103
 		goto 46.4,35.3
 		.from Mosshide Trapper##1011+, Mosshide Brute##1012+, Mosshide Fenrunner##1010+, Mosshide Mistweaver##1009+|tip Mosshide Gnolls and Mosshide Mongrels will not drop the Crude Flint.
 		.get 9 Crude Flint|q 277/1
-	step //128
+	step //104
 		goto 29.1,44.8
 		.kill 10 Mottled Raptor|q 294/1
 		.kill 10 Mottled Screecher|q 294/2
-	step //129
+	step //105
 		goto Wetlands,38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..turnin Ormer's Revenge (1)##294
 		..accept Ormer's Revenge (2)##295
-	step //130
-		goto 42.9,41.2
-		.from Dragonmaw Raider##1034+
-		.get 8 Dragonmaw War Banner|q 464/1
-	step //131
+	step //106
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin Fire Taboo##277
 		..accept Blisters on The Land##275
-	step //132
-		ding 24
-	step //133
+	step //107
 		'Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c
-	step //134
+	step //108
 		goto Wetlands,8.3,58.6
 		.talk Karl Boran##1242
 		..turnin Claws from the Deep##279
 		..accept Reclaiming Goods##281
-	step //135
+	step //109
 		goto 8.5,55.7
 		.talk James Halloran##2094
 		..turnin Young Crocolisk Skins##484
 		..accept Apprentice's Duties##471
-	step //136
-		goto 9.9,57.5
-		.talk Captain Stoutfist##2104
-		..turnin War Banners##464
-		..accept Nek'rosh's Gambit##465
-	step //137
+	step //110
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..turnin In Search of The Excavation Team (2)##306
-	step //138
+	step //111
 		goto 11.8,58
 		.talk Sida##2111
 		..turnin Digging Through the Ooze##470
-	step //139
+	step //112
+		ding 23
+	step //113
+		'Fly to Stormwind|goto Stormwind City|noway|c
+	step //114
+		goto 69.3,71.3
+		buy 1 Stormwind Seasoning Herbs|q 90/2
+	step //115
 		'Fly to Lakeshire|goto Redridge Mountains,30.4,59.0,0.5|noway|c
-	step //140
+	step //116
 		goto 31.5,57.9
 		.talk Guard Howe##903
 		..accept Blackrock Bounty##128
-	step //141
+	step //117
 		goto 33.5,49
 		.talk Marshal Marris##382
 		..accept Tharil'zun##19
 		..accept Shadow Magic##115
-	step //142
+	step //118
 		goto 30,44.4
 		.talk Bailiff Conacher##900
 		..accept Solomon's Law##91
-	step //143
+	step //119
 		goto 29.6,46.2
 		.talk Wanted: Gath'Ilzogg
 		..accept Gath'Ilzogg##169
-	step //144
+	step //120
 		goto 26.8,46.4
 		.talk Wanted: Lieutenant Fangore
 		..accept Wanted: Lieutenant Fangore##180
-	step //145
+	step //121
 		home Lakeshire
-	step //146
+	step //122
 		'Head left when you enter the cave
 		goto Redridge Mountains,28.4,12.6
 		.talk Corporal Keeshan##349
 		..accept Missing In Action##219
-	step //147
+	step //123
 		' IMPORTANT NOTE: Pull the mobs AHEAD of him before he reaches them! Even though he's tough, he charges into fights and can quickly get many adds. Outside, when he says that he's taking a rest, quickly take the opportunity to single pull continuously from the two big camps. If you do not, then he'll walk into the two big camps and pull every mob and you'll be doomed. If you do fail, you can go back in the cave and get the quest again. SUPER WARNING: STOCK SUNWELL WILL DESPAWN THE ESCORTEE IF YOU TRAVEL TO FAR AWAY FROM HIM, MAKE SURE HE'S ALWAYS IN YOU'RE VIEW DISTANCE.
 		goal Escort Corporal Keeshan back to Redridge|q 219/1
 		kill 15 Blackrock Champion|q 128/1
-	step //148
+	step //124
 		goto 33.5,49
 		.talk Marshal Marris##382
 		..turnin Missing in Action##219
-	step //149
+	step //125
 		goto 31.5,57.9
 		.talk Guard Howe##903
 		..turnin Blackrock Bounty##128
-	step //150
-		goto 80.2,37.1
-		.from Lieutenant Fangore##703
-		..get 1 Fangore's Paw|q 180/1
-		.from Shadowhide Assassin##579+, Shadowhide Brute##432+, Shadowhide Darkweaver##429+, Shadow Gnoll##433+, Shadowhide Slayer##431+, Shadowhide Warrior##568+
-		..get 10 Shadowhide Pendant|q 91/1
-	step //151
-		'If you got the Glowing Shadowhide Pendant; accept, otherwise skip this step.
-		accept Theocritus' Retrieval##178
-	step //152
-		goto 84.5,46.8
-		.talk Old Lion Statue
-		..turnin A Watchful Eye##94
-		..accept Looking Further##248
-	step //153
-		'The Jar is at the top of the stone tower next to the keep.
-		goto 63.2,49.8
-		.talk An Empty Jar
-		..turnin Looking Further##248
-	step //154
-		goto 67,52
-		.from Blackrock Shadowcaster##436+
-		.get 3 Midnight Orb|q 115/1
-	step //155
-		goto 69.3,59.9
-		.from Tharil'Zun##486
-		..get Tharil'zun's Head|q 19/1
-	step //156
-		'Group quest, consider abandoning
-		goto 69.6,55.8
-		.from Gath'Ilzogg##334
-		..get Head of Gath'Ilzogg|q 169/1
-	step //157
-		ding 25
-	step //158
-		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
-	step //159
-		goto 21.9,46.3
-		.talk Martie Jainrose##342
-		..accept An Unwelcome Guest##34
-	step //160
-		goto 15.9,49.5
-		.from Bellygrub##345
-		.get Bellygrub's Tusk|q 34/1
-	step //161
-		goto 21.9,46.3
-		.talk Martie Jainrose##342
-		..turnin An Unwelcome Guest##34		
-	step //162
-		goto 30,44.5
-		.talk Magistrate Solomon##344
-		..turnin Wanted: Gath'Ilzogg##169
-		..turnin Wanted: Lieutenant Fangore##180
-		..turnin Messenger to Westfall (2)##144
-		..accept Messenger to Darkshire (1)##145
-	step //163
-		goto 29.7,44.3
-		.talk Bailiff Conacher##900
-		..turnin Solomon's Law##91
-	step //164
-		goto 33.5,49
-		.talk Marshal Marris##382
-		..turnin Tharil'zun##19
-		..turnin Shadow Magic##115
-	step //165
+	step //126
 		'Fly to Darkshire|goto Duskwood,77.6,44.4,0.1|noway|c
 ]])
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-29)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (25-29)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (30-34)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (30-34)
 	startlevel 25
 
 	step //1
@@ -2119,291 +1990,383 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		..turnin Zombie Juice##158
 		..accept Gather Rot Blossoms##156
 	step //3
-		home Darkshire
-	step //4
 		goto 72.5,46.8
 		.talk Clerk Daltry##267
 		..turnin The Legend of Stalvan (3)##68
 		..accept The Legend of Stalvan (4)##69
-	step //5
-		goto 71.9,46.4
-		.talk Lord Ello Ebonlocke##263
-		..turnin Messenger to Darkshire##145
-	step //6
+	step //4
 		goto 49.9,77.7
 		.' Click the Mound of Loose Dirt|tip It's easiest to work your way around to behind the farm around this spot.
 		..turnin Sven's Revenge##95
 		..accept Sven's Camp##230
-	step //7
+	step //5
 		goto 17.6,47.2
 		.kill 15 Skeletal Fiend|q 57/1
 		.kill 15 Skeletal Horror|q 57/2
 		.from Skeletal Horror##202+, Skeletal Fiend##531+
 		.get 8 Rot Blossom|q 156/1
-	step //8
+	step //6
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
 		..turnin Sven's Camp##230
 		..accept The Shadowy Figure##262
-	step //9
+	step //7
 		'Go north to Elwynn Forest|goto Elwynn Forest|noway|c
-	step //10
+	step //8
 		goto Elwynn Forest,43.8,65.8
 		.talk Innkeeper Farley##295
 		..turnin The Legend of Stalvan (4)##69
 		..accept The Legend of Stalvan (5)##70
-	step //11
+	step //9
 		'Go upstairs in the inn to 44.3,65.8|goto 44.3,65.8
 		.' Click the Storage Chest|tip It's a brown chest sitting on the floor in this room, upstairs inside the inn.
 		.get An Undelivered Letter|q 70/1
-	step //12
+	step //10
 		'Go northwest to Stormwind|goto Stormwind City|noway|c
-	step //13
+	step //11
 		goto Stormwind City,42.5,72.4
 		.talk Caretaker Folsom##297
 		..turnin The Legend of Stalvan (5)##70
 		..accept The Legend of Stalvan (6)##72
-	step //14
+	step //12
 		goto 42.5,72.41
 		.' Click the Sealed Crate|tip It's a wooden crate on the side of the road.
 		..turnin The Legend of Stalvan (6)##72
 		..accept The Legend of Stalvan (7)##74
-	step //15
+	step //13
 		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c
-	step //16
-		'If you didn't get the Glowing Shadowhide Pendant skip this step. |goto 65.2,69.7
+	step //14
+		goto Elwynn Forest,65.2,69.7
 		.talk Theocritus##313
-		..turnin Theocritus' Retrieval##178
-	step //17
+		..accept A Watchful Eye##94
+	step //15
 		goto Elwynn Forest,84.6,69.4
 		.talk Marshal Haggard##294
 		..turnin The Legend of Stalvan (7)##74
 		..accept The Legend of Stalvan (8)##75
-	step //18
+	step //16
 		goto 85.7,69.5
 		.' Click Marshal Haggard's Chest|tip It's a brown chest on the floor next to a bed, upstairs in this house.
 		.get A Faded Journal Page|q 75/1
-	step //19
+	step //17
 		goto 84.6,69.4
 		.talk Marshal Haggard##294
 		..turnin The Legend of Stalvan (8)##75
 		..accept The Legend of Stalvan (9)##78
+	step //18
+		goto 69.3,59.9
+		.from Tharil'Zun##486
+		..get Tharil'zun's Head|q 19/1
+	step //19
+		goto Redridge Mountains,67,52
+		.from Blackrock Shadowcaster##436+
+		.get 3 Midnight Orb|q 115/1
 	step //20
-		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
+		goto 69.6,55.8
+		.from Gath'Ilzogg##334
+		..get Head of Gath'Ilzogg|q 169/1
 	step //21
+		goto 80.2,37.1
+		.from Lieutenant Fangore##703
+		..get 1 Fangore's Paw|q 180/1
+		.from Shadowhide Assassin##579+, Shadowhide Brute##432+, Shadowhide Darkweaver##429+, Shadow Gnoll##433+, Shadowhide Slayer##431+, Shadowhide Warrior##568+
+		..get 10 Shadowhide Pendant|q 91/1
+	step //22
+		goto 84.5,46.8
+		.talk Old Lion Statue
+		..turnin A Watchful Eye##94
+		..accept Looking Further##248
+	step //23
+		'The Jar is at the top of the stone tower next to the keep.
+		goto 63.2,49.8
+		.talk An Empty Jar
+		..turnin Looking Further##248
+	step //24
+		goto 84.5,46.8
+		.talk Old Lion Statue
+		..accept Morganth##249
+	step //25
+		goto 80.1,49.5
+		.from Morganth##397
+		..get Pendant of Shadow|q 249/1
+	step //26
+		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
+	step //27
+		goto 21.9,46.3
+		.talk Martie Jainrose##342
+		..accept An Unwelcome Guest##34
+	step //28
+		goto 15.9,49.5
+		.from Bellygrub##345
+		.get Bellygrub's Tusk|q 34/1
+	step //29
+		goto 21.9,46.3
+		.talk Martie Jainrose##342
+		..turnin An Unwelcome Guest##34		
+	step //30
+		goto 26.3,46.6
+		.talk Guard Berton##859
+		..accept What Comes Around...##386
+	step //31
+		goto 30,44.5
+		.talk Magistrate Solomon##344
+		..turnin Wanted: Gath'Ilzogg##169
+		..turnin Wanted: Lieutenant Fangore##180
+	step //32
+		goto 29.7,44.3
+		.talk Bailiff Conacher##900
+		..turnin Solomon's Law##91
+	step //33
+		goto 33.5,49
+		.talk Marshal Marris##382
+		..turnin Tharil'zun##19
+		..turnin Shadow Magic##115
+	step //34
+		goto Elwynn Forest,65.2,69.7
+		.talk Theocritus##313
+		..turnin Morganth##249
+	step //35
+		'If you didn't get the Glowing Shadowhide Pendant skip this step. |goto 65.2,69.7
+		.' Click the Glowing Shadowhide Pendant|use Glowing Shadowhide Pendant##1962		
+		..accept Theocritus' Retrieval##178
+		.talk Theocritus##313
+		..turnin Theocritus' Retrieval##178
+	step //36
+		ding 25
+	step //37
 		goto Duskwood,74.1,44.7
 		.talk Tavernkeep Smitts##273
 		..turnin The Legend of Stalvan (9)##78
 		..accept The Legend of Stalvan (10)##79
 		..turnin Gather Rot Blossoms##156
 		..accept Juice Delivery##159
-	step //22
+	step //38
+		home Darkshire
+	step //39
 		goto Duskwood,75.8,45.3
 		.talk Madame Eva##265
 		..turnin The Shadowy Figure##262
 		..accept The Shadowy Search Continues##265
-	step //23
+	step //40
 		goto 73.5,46.8
 		.talk Commander Althea Ebonlocke##264
 		..turnin The Legend of Stalvan (10)##79
 		..accept The Legend of Stalvan (11)##80
 		..turnin The Night Watch (2)##57
 		..accept The Night Watch (3)##58
-	step //24
+	step //41
 		goto 72.5,46.8
 		.talk Clerk Daltry##267
 		..turnin The Legend of Stalvan (11)##80
 		..accept The Legend of Stalvan (12)##97
 		..turnin The Shadowy Search Continues##265
 		..accept Inquire at the Inn##266
-	step //25
+	step //42
 		goto 73.5,46.8
 		.talk Commander Althea Ebonlocke##264
 		..turnin The Legend of Stalvan (12)##97
 		..accept The Legend of Stalvan (13)##98
-	step //26
+	step //43
 		goto Duskwood,74.1,44.7
 		.talk Tavernkeep Smitts##273
 		..turnin Inquire at the Inn##266
 		..accept Finding the Shadowy Figure##453
-	step //27
-		ding 26
-	step //28
+	step //44
 		goto 75.7,47.6
 		.talk Calor##663
 		..accept Worgen in the Woods (1)##173
-	step //29
-		goto 70.2,45.1|n
-		.' The path over to Worgen in the Woods starts here
-		.' Run up the hill behind the town hall building|goto Duskwood,70.2,45.1,0.5|noway|c
-	step //30
-		goto 66,47
-		.kill 6 Nightbane Shadow Weaver|q 173/1
-	step //31
-		goto Duskwood,28,31.5
-		.talk Abercrombie##289
-		..turnin Juice Delivery##159
-		..accept Ghoulish Effigy##133
-	step //32
-		goto 18.2,56.6
-		.talk Jitters##288
-		..turnin Finding the Shadowy Figure##453
-		..accept Return to Sven##268
-	step //33
-		goto 7.8,34.2
-		.talk Sven Yorgen##311
-		..turnin Return to Sven##268
-		..accept Proving Your Worth##323
-	step //34
-		goto 15.3,37.6
-		.kill 15 Skeletal Raider|q 323/1
-		.kill 3 Skeletal Healer|q 323/2
-		.kill 3 Skeletal Warder|q 323/3
-		.from Skeletal Raider##1110+, Skeletal Healer##787+, Skeleton Warder##785+
-		..get 10 Skeleton Finger|q 101/3
-	step //35
-		goto 23.6,34.91
-		.kill 20 Plague Spreader|q 58/1
-		.from Flesh Eater##3+, Rotted One##948+, Bone Chewer##210+, Plague Spreader##604+
-		.get 10 Ghoul Fang|q 101/1
-		.get 7 Ghoul Rib|q 133/1
-	step //36
-		goto 28,31.5
-		.talk Abercrombie##289
-		..turnin Ghoulish Effigy##133
-		..accept Ogre Thieves##134
-	step //37
-		goto 17.7,29
-		.' Click the Weathered Grave|tip It's a grave on the hillside all by itself.
-		..accept The Weathered Grave##225
-	step //38
-		goto 7.8,34.2
-		.talk Sven Yorgen##311
-		..turnin Proving Your Worth##323
-		..accept Seeking Wisdom##269
-	step //39
-		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
-	step //40
-		goto 75.8,45.3
-		.talk Madame Eva##265
-		..turnin The Totem of Infliction##101
-	step //41
-		goto 72.6,47.7
-		.talk Sirra Von'Indi##268
-		..turnin The Weathered Grave##225
-		..accept Morgan Ladimore##227
-	step //42
-		goto 73.5,46.8
-		.talk Commander Althea Ebonlocke##264
-		..turnin Morgan Ladimore##227
-		..accept Mor'Ladim##228
-		..turnin The Night Watch (3)##58
-	step //43
-		goto 75.7,47.6
-		.talk Calor##663
-		..turnin Worgen in the Woods (1)##173
-		..accept Worgen in the Woods (2)##221
-	step //44
-		ding 27
 	step //45
 		goto 70.2,45.1|n
 		.' The path over to Worgen in the Woods starts here
 		.' Run up the hill behind the town hall building|goto Duskwood,70.2,45.1,0.5|noway|c
 	step //46
 		goto 66,47
-		.kill 12 Nightbane Dark Runner|q 221/1
+		.kill 6 Nightbane Shadow Weaver|q 173/1
 	step //47
+		goto Duskwood,28,31.5
+		.talk Abercrombie##289
+		..turnin Juice Delivery##159
+		..accept Ghoulish Effigy##133
+	step //48
+		goto 18.2,56.6
+		.talk Jitters##288
+		..turnin Finding the Shadowy Figure##453
+		..accept Return to Sven##268
+	step //49
+		goto 7.8,34.2
+		.talk Sven Yorgen##311
+		..turnin Return to Sven##268
+		..accept Proving Your Worth##323
+	step //50
+		goto 15.3,37.6
+		.kill 15 Skeletal Raider|q 323/1
+		.kill 3 Skeletal Healer|q 323/2
+		.kill 3 Skeletal Warder|q 323/3
+		.from Skeletal Raider##1110+, Skeletal Healer##787+, Skeleton Warder##785+
+		..get 10 Skeleton Finger|q 101/3
+	step //51
+		goto 23.6,34.91
+		.kill 20 Plague Spreader|q 58/1
+		.from Flesh Eater##3+, Rotted One##948+, Bone Chewer##210+, Plague Spreader##604+
+		.get 10 Ghoul Fang|q 101/1
+		.get 7 Ghoul Rib|q 133/1
+	step //52
+		goto 28,31.5
+		.talk Abercrombie##289
+		..turnin Ghoulish Effigy##133
+		..accept Ogre Thieves##134
+	step //53
+		goto 17.7,29
+		.' Click the Weathered Grave|tip It's a grave on the hillside all by itself.
+		..accept The Weathered Grave##225
+	step //54
+		goto 7.8,34.2
+		.talk Sven Yorgen##311
+		..turnin Proving Your Worth##323
+		..accept Seeking Wisdom##269
+	step //55
+		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
+	step //56
+		goto 75.8,45.3
+		.talk Madame Eva##265
+		..turnin The Totem of Infliction##101
+	step //57
+		goto 72.6,47.7
+		.talk Sirra Von'Indi##268
+		..turnin The Weathered Grave##225
+		..accept Morgan Ladimore##227
+	step //58
+		goto 71.9,47.8
+		.talk Councilman Millstipe##270
+		..accept Crime and Punishment##377
+	step //59
+		goto 73.5,46.8
+		.talk Commander Althea Ebonlocke##264
+		..turnin Morgan Ladimore##227
+		..accept Mor'Ladim##228
+		..turnin The Night Watch (3)##58
+	step //60
+		goto 75.7,47.6
+		.talk Calor##663
+		..turnin Worgen in the Woods (1)##173
+		..accept Worgen in the Woods (2)##221
+	step //61
+		goto 70.2,45.1|n
+		.' The path over to Worgen in the Woods starts here
+		.' Run up the hill behind the town hall building|goto Duskwood,70.2,45.1,0.5|noway|c
+	step //62
+		goto 66,47
+		.kill 12 Nightbane Dark Runner|q 221/1
+	step //63
+		ding 26
+	step //64
 		goto 75.7,47.6
 		.talk Calor##663
 		..turnin Worgen in the Woods (2)##221
 		..accept Worgen in the Woods (3)##222
-	step //48
+	step //65
 		'Fly to Stormwind|goto Stormwind City|noway|c
-	step //49
+	step //66
 		goto Stormwind City,49.9,46
 		.talk Bishop Farthing##1212
 		..turnin Seeking Wisdom##269
 		..accept The Doomed Fleet##270
-	step //50
+	step //67
 		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
-	step //51
+	step //68
 		goto 10.6,60.6
 		.talk Glorin Steelbrow##1217
 		..turnin The Doomed Fleet##270
 		..accept Lightforge Iron##321
-	step //52
+	step //69
 		home Menethil Harbor
-	step //53
+	step //70
 		goto 12.1,64.2
 		.' Click the Waterlogged Chest|tip It's a brown chest sitting on this tiny island between 2 broken ship halves.
 		..turnin Lightforge Iron##321
 		..accept The Lost Ingots##324
-	step //54
+	step //71
 		goto 12.4,65.7
 		.from Bluegill Raider##1418+
 		.get 5 Lightforge Ingot|q 324/1
-	step //55
+	step //72
 		goto 10.6,60.6
 		.talk Glorin Steelbrow##1217
 		..turnin The Lost Ingots##324
 		..accept Blessed Arm##322
-	step //56
+	step //73
 		goto 10.8,55.9
 		.talk Harlo Barnaby##2097
 		..accept Fall of Dun Modr##472
-	step //57
+	step //74
+		goto 10.1,56.9
+		.talk Valstag Ironjaw##2086
+		..accept Report to Captain Stoutfist##473
+	step //75
+		goto 9.9,57.5
+		.talk Captain Stoutfist##2104
+		..turnin Report to Captain Stoutfist##473
+		..accept War Banners##464
+	step //76
 		goto 13.5,41.4
 		.' Click the Damaged Crate on the ground by the murloc huts
 		..turnin Reclaiming Goods##281
 		..accept The Search Continues##284
-	step //58
+	step //77
 		goto 13.6,38.2
 		.' Click the Sealed Barrel on the ground next to the murloc huts
 		..turnin The Search Continues##284
 		..accept Search More Hovels##285
-	step //59
+	step //78
 		goto 13.9,34.8
 		.' Click the Half-buried Barrel next to the murloc hut
 		..turnin Search More Hovels##285
 		..accept Return the Statuette##286
-	step //60
+	step //79
 		'Go downstairs in the ship to 14.1,30.1|goto 14.1,30.1
 		.from First Mate Snellig##1159
 		.get Snellig's Snuffbox|q 289/3
-	step //61
+	step //80
 		goto 14.1,29.3
 		.kill 13 Cursed Sailor|q 289/1
 		.kill 5 Cursed Marine|q 289/2
-	step //62
-		'Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c
-	step //63
+	step //81
+		goto 42.9,41.2
+		.from Dragonmaw Raider##1034+
+		.get 8 Dragonmaw War Banner|q 464/1
+	step //82
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
 		..turnin The Cursed Crew##289
 		..accept Lifting the Curse##290
-	step //64
+	step //83
 		goto 8.3,58.6
 		.talk Karl Boran##1242
 		..turnin Return the Statuette##286
-	step //65
+	step //84
+		goto 9.9,57.5
+		.talk Captain Stoutfist##2104
+		..turnin War Banners##464
+		..accept Nek'rosh's Gambit##465
+	step //85
 		goto 15.5,23.5
 		.from Captain Halyndor##1160
 		.get Intrepid Strongbox Key|q 290/1
-	step //66
+	step //86
 		'Go underwater to the bottom of the ship to 14.4,24|goto 14.4,24
 		.' Click Intrepid's Locked Strongbox|tip At the very bottom of this sunken ship, underwater.  It looks like a small metal chest.
 		..turnin Lifting the Curse##290
 		..accept The Eye of Paleth##292
-	step //67
+	step //87
 		goto 18.5,27.3
 		.kill 8 Fen Creeper|q 275/1
 		.kill Giant Wetlands Crocolisks|n
 		.get 6 Giant Crocolisk Skin|q 471/1
-	step //68
+	step //88
 		goto 38.8,52.3
 		.talk Prospector Whelgar##1077
 		..accept Uncovering the Past##299
-	step //69
+	step //89
 		goto 34.8,45.4
 		.kill 10 Mottled Scytheclaw|q 295/1
 		.kill 10 Mottled Razormaw|q 295/2
@@ -2412,48 +2375,46 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		..'Modr Fragment|get Modr Fragment|q 299/2|tip The Modr Fragment looks like a thin, tall red vase with a yellow face on it.
 		..'Golm Fragment|get Golm Fragment|q 299/3|tip The Golm Fragment looks like a wide yellow vase with black silhouettes on it.
 		..'Neru Fragment|get Neru Fragment|q 299/4|tip The Neru Fragment looks like a mound of dirt.
-	step //70
+	step //90
 		goto 38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..turnin Ormer's Revenge (2)##295
 		..accept Ormer's Revenge (3)##296
-	step //71
+	step //91
 		goto 38.8,52.3
 		.talk Prospector Whelgar##1077
 		..turnin Uncovering the Past##299
-	step //72
-		ding 28
-	step //73
+	step //92
 		goto 33.2,51.4
 		.from Sarltooth##1353
 		.get Sarltooth's Talon|q 296/1
-	step //74
+	step //93
 		goto 38.1,51.1
 		.talk Ormer Ironbraid##1078
-		..turnin Ormer's Revenge (3)##296		
-	step //75
+		..turnin Ormer's Revenge (3)##296
+	step //94
+		ding 27
+	step //95
 		goto 47.5,46.9
 		.' Click the Dragonmaw Catapult
 		..turnin Nek'rosh's Gambit##465
 		..accept Defeat Nek'rosh##474
-	step //76
+	step //96
 		goto 53.5,54.7
 		.from Chieftain Nek'rosh##2091
 		.get Nek'rosh's Head|q 474/1
-	step //77
+	step //97
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin Blisters on The Land##275
-	step //78
+	step //98
 		goto 49.8,18.3
 		.talk Longbraid the Grim##1071
 		..turnin Fall of Dun Modr##472
 		..accept A Grim Task##304
-		.talk Rhag Garmason##1075
-		..accept The Thandol Span (1)##631
 		.talk Motley Garmason##1074
 		..accept The Dark Iron War##303
-	step //79
+	step //99
 		goto 62.2,28.3
 		.kill 10 Dark Iron Dwarf|q 303/1
 		.kill 5 Dark Iron Tunneler|q 303/2
@@ -2461,72 +2422,90 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		.kill 5 Dark Iron Demolitionist|q 303/4
 		.from Balgaras the Foul##1364
 		.get Ear of Balgaras|q 304/1
-	step //80
+	step //100
 		goto 49.8,18.3
 		.talk Longbraid the Grim##1071
 		..turnin A Grim Task##304
 		.talk Motley Garmason##1074
 		..turnin The Dark Iron War##303
-	step //81
-		goto 51.3,8
-		.' Click Ebenezer Rustlocke's Corpse|tip Down the passage to the right in the middle of the bridge, all the way downstairs.
-		..turnin The Thandol Span (1)##631
-		..accept The Thandol Span (2)##632
-	step //82
-		goto 49.8,18.3
-		.talk Rhag Garmason##1075
-		..turnin The Thandol Span (2)##632
-		..accept The Thandol Span (3)##633
-	step //83
+		..accept The Fury Runs Deep##378
+	step //101
 		'Jump down into the waters below and dive to find a Waterlogged Letter at the bottom, it's tiny and doesn't have any exclamation mark so look carefully|goto Arathi Highlands,44.3,92.9
-		.accept Sully Balloo's Letter##637
-	step //84
-		goto 53.09,90.78,0.3|n
-		.' The path up starts here|goto 53.09,90.78,0.3|noway|c
-	step //85
-		goto Arathi Highlands,48.8,88.1
-		.' Click the Cache of Explosives|tip To the right across the hanging bridge after walking across the big bridge from the Wetlands.
-		.' Destroy the Cache of Explosives|goal Cache of Explosives Destroyed|q 633/1
-	step //86
-		'Go south to the Wetlands|goto Wetlands|noway|c
-	step //87
-		goto Wetlands,49.8,18.3
-		.talk Rhag Garmason##1075
-		..turnin The Thandol Span (3)##633
-		..accept Plea To The Alliance##634
-	step //88
-		ding 29
-	step //89
+		.' Click the Waterlogged Letter|use Waterlogged Letter##4433
+		..accept Sully Balloo's Letter##637
+	step //102
 		'Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c
-	step //90
+	step //103
 		goto 10.6,60.6
 		.talk Glorin Steelbrow##1217
 		..turnin The Eye of Paleth##292
 		..accept Cleansing the Eye##293
-	step //91
+	step //104
 		goto 8.5,55.7
 		.talk James Halloran##2094
 		..turnin Apprentice's Duties##471
-	step //92
+	step //105
 		goto 9.9,57.5
 		.talk Captain Stoutfist##2104
 		..turnin Defeat Nek'rosh##474
-	step //93
+	step //106
 		'Fly to Stormwind City|goto Stormwind City|noway|c
-	step //94
+	step //107
+		goto 76.6,60.5
+		.talk Nikova Raskol##1721
+		..accept The Color of Blood##388
+	step //108
+		goto 51.5,69.3
+		.talk Warden Thelwater##1719
+		..accept The Stockade Riots##391
+		..accept Quell The Uprising##387
+	step //109
+		'Make/Find a Stockade Group|goto The Stockade|noway|c		
+	//todo, make stockade step	
+	step //110
+		goto Stormwind City,51.5,69.3
+		.talk Warden Thelwater##1719
+		..turnin Quell The Uprising##387
+		..turnin The Stockade Riots##391
+		..accept The Curious Visitor##392
+	step //111
 		goto 50.3,45.5
 		.talk Archbishop Benedictus##1284
 		..turnin Cleansing the Eye##293
-	step //95
+	step //112
 		goto 49.6,44.5
 		.talk Tomas##4982
 		..accept The Missing Diplomat (1)##1274
-	step //96
+	step //113
+		goto 57.7,47.9
+		.talk Baros Alexston##1646
+		..turnin The Curious Visitor##392
+		..accept Shadow of the Past##393
+	step //114
 		goto 59.7,33.8
 		.talk Grimand Elmore##1416
 		..turnin Blessed Arm##322
 		..accept Armed and Ready##325
-	step //97
+	step //115
+		goto 76.6,60.5
+		.talk Nikova Raskol##1721
+		..turnin The Color of Blood##388
+	step //116
+		goto 78.3,70.7
+		.talk Master Mathias Shaw##332
+		..turnin Shadow of the Past##393
+		..accept Look to an Old Friend##350
+	step //117
+		goto 66,74.1
+		.talk Elling Trias##482
+		..turnin Look to an Old Friend##350
+		..accept Infiltrating the Castle##2745
+	step //118
+		goto 73.2,35.7
+		.talk Tyrion##7766
+		..turnin Infiltrating the Castle##2745
+		..accept Items of Some Consequence##2746
+	step //119
 		'If you found the Old History Book from Duskwood accept this quest now, otherwise skip.
 		.get An Old History Book|n
 		.' Click the Old History Book|use An Old History Book##2794
@@ -2535,157 +2514,194 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		.talk Milton Sheaf##1440
 		..turnin An Old History Book##337
 		..accept Southshore##538
-	step //98
+	step //120
 		goto 80.3,44.1
 		.talk Bishop DeLavey##4960
 		..turnin The Missing Diplomat (1)##1274
 		..accept The Missing Diplomat (2)##1241
-	step //99
+	step //121
 		goto 76.3,85.1
 		.talk Jorgen##4959
 		..turnin The Missing Diplomat (2)##1241
 		..accept The Missing Diplomat (3)##1242
-	step //100
-		goto 66,74.1
+	step //122
+		goto Elwynn Forest,34,57.2
+		.get 2 Clara's Fresh Apple|q 2746/2
+		.get 3 Silk Cloth|q 2746/1
+	step //123
+		goto 73.2,35.7
+		.talk Tyrion##7766
+		..turnin Items of Some Consequence##2746
+		..accept The Attack!##434
+	step //124
+		goal Overhear Lescovar and Marzon's Conversation|q 434/1
+		kill Lord Gregor Lescovar|q 434/2
+		kill Marzon the Silent Blade|q 434/3
+	step //125
+		goto Stormwind City,66,74.1
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (3)##1242
 		..accept The Missing Diplomat (4)##1243
-	step //101
+		..turnin The Attack!##434
+		..accept The Head of the Beast##394
+	step //126
+		goto 78.3,70.7
+		.talk Master Mathias Shaw##332
+		..turnin The Head of the Beast##394
+		..accept Brotherhood's End##395
+	step //127
+		goto 57.7,47.9
+		.talk Baros Alexston##1646
+		..turnin Brotherhood's End##395
+		..accept An Audience with the King##396
+	step //128
+		goto 80,38.5
+		.talk King Varian Wrynn##29611
+		..turnin An Audience with the King##396
+	step //129
+		'Fly to Lakeshire|goto Redridge Mountains|noway|c
+	step //130
+		goto 26.3,46.6
+		.talk Guard Berton##859
+		..turnin What Comes Around...##386
+	step //131
 		'Fly to Darkshire|goto Duskwood,77.6,44.4,0.1|noway|c
-	step //102
+	step //132
 		home Darkshire
-	step //103
+	step //133
+		goto 71.9,47.8
+		.talk Councilman Millstipe##270
+		..turnin Crime and Punishment##377
+	step //134
 		goto 72.6,33.5
 		.talk Watcher Backus##840
 		..turnin The Missing Diplomat (4)##1243
 		..accept The Missing Diplomat (5)##1244
-	step //104
+	step //135
 		goto 33.4,76.4
 		.' Click Abercrombie's Crate|tip It looks like a wooden crate sitting next to a bunch of wooden barrels.
 		.get Abercrombie's Crate|q 134/1
-	step //105
+	step //136
 		goto 37.05,82.84
 		.from Zzarc'Vul##300
 		.' He spawns at random points inside of the cave.
 		.get Ogre's Monocle|q 181/1
-	step //106
+	step //137
 		goto 23.9,72.1
 		.get Defias Docket|q 1244/1
-	step //107
+	step //138
 		goto 28,31.5
 		.talk Abercrombie##289
 		..turnin Ogre Thieves##134
 		..accept Note to the Mayor##160
-	step //108
+	step //139
 		goto 7.8,34.1
 		.talk Sven Yorgen##311
 		..turnin Armed and Ready##325
 		..accept Morbent Fel##55
-	step //109
+	step //140
 		'Kill Mor'Ladim now to get the most out of this questline
 		goto 17.6,35.9
 		.from Mor'Ladim
 		.get Mor'Ladim's Skull|q 228/1
-	step //110
+	step //141
 		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
-	step //111
+	step //142
 		goto 73.6,46.9
 		.talk Commander Althea Ebonlocke##264
 		..turnin Mor'Ladim##228
 		..accept The Daughter Who Lived##229
-	step //112
+	step //143
 		goto 74,47.8
 		.talk Watcher Ladimore##576
 		..turnin The Daughter Who Lived##229
 		..accept A Daughter's Love##231
-	step //113
+	step //144
 		goto 71.9,46.4
 		.talk Lord Ello Ebonlocke##263
 		..turnin Note to the Mayor##160
 		..accept Translate Abercrombie's Note##251
-	step //114
+	step //145
 		goto 72.6,47.7
 		.talk Sirra Von'Indi##268
 		..turnin Translate Abercrombie's Note##251
 		..accept Wait for Sirra to Finish##401
 		..turnin Wait for Sirra to Finish##401
 		..accept Translation to Ello##252
-	step //115
+	step //146
 		goto 71.9,46.4
 		.talk Lord Ello Ebonlocke##263
 		..turnin Translation to Ello##252
 		..accept Bride of the Embalmer##253
-	step //116
+	step //147
 		goto 79.8,48.1
 		.talk Viktori Prism'Antras##276
 		..turnin Look To The Stars (4)##181
-	step //117
+	step //148
 		goto 72.6,33.5
 		.talk Watcher Backus##840
 		..turnin The Missing Diplomat (5)##1244
 		..accept The Missing Diplomat (6)##1245
-	step //118
+	step //149
 		goto Duskwood,77.4,36.1
 		.from Stalvan Mistmantle##315
 		.get Mistmantle Family Ring|q 98/1
-	step //119
+	step //150
 		goto 28.9,30.8
 		.' Click Eliza's Grave Dirt|tip It looks like a single dirt grave.
 		..accept Digging Through the Dirt##254 |instant
 		.from Eliza##314
 		.get The Embalmer's Heart|q 253/1
-	step //120
+	step //151
 		goto 17.7,29.1
 		.turnin A Daughter's Love##231
-	step //121
+	step //152
 		goto 16.9,33.4
 		.goal Morbent Fel Slain|q 55/1
-	step //122
+	step //153
 		goto 7.8,34.1
 		.talk Sven Yorgen##311
 		..turnin Morbent Fel##55
-	step //123
+	step //154
 		goto 72.7,69.7
 		.kill 8 Nightbane Vile Fang|q 222/1
 		.kill 8 Nightbane Tainted One|q 222/2
-	step //124
-		ding 30
-	step //125
+	step //155
 		goto 75.7,47.6
 		.talk Calor##663
 		..turnin Worgen in the Woods (3)##222
 		..accept Worgen in the Woods (4)##223
-	step //126
+	step //156
 		goto 75.3,48.7
 		.talk Jonathan Carevin##661
 		..turnin Worgen in the Woods (4)##223
-	step //127
+	step //157
 		goto 71.9,46.4
 		.talk Lord Ello Ebonlocke##263
 		..turnin Bride of the Embalmer##253
-	step //128
+	step //158
 		goto 75.8,45.3
 		.talk Madame Eva##265
 		..turnin The Legend of Stalvan (13)##98
-	step //129
+	step //159
 		'Fly to Stormwind City|goto Stormwind City|noway|c
-	step //130
+	step //160
 		goto 66,74.1
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (6)##1245
 		..accept The Missing Diplomat (7)##1246
-	step //131
+	step //161
 		goto 74.3,59.2
 		.talk Dashel Stonefist
 		..turnin The Missing Diplomat (7)##1246
 		..accept The Missing Diplomat (8)##1447
-	step //132
+	step //162
 		goal Defeat Dashel Stonefist|q 1447
-	step //133
+	step //163
 		.talk Dashel Stonefist
 		..turnin The Missing Diplomat (8)##1447
 		..accept The Missing Diplomat (9)##1247		
-	step //134
+	step //164
 		'If you found the Old History Book from Duskwood accept this quest now, otherwise skip.
 		.get An Old History Book|n
 		.' Click the Old History Book|use An Old History Book##2794
@@ -2694,15 +2710,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		.talk Milton Sheaf##1440
 		..turnin An Old History Book##337
 		..accept Southshore##538
-	step //135
+	step //165
 		goto 66,74.1
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (9)##1247
 		..accept The Missing Diplomat (10)##1248
 ]])
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-34)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (30-34)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (35-39)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (35-39)
 	startlevel 30
 
 	step //1
@@ -2737,574 +2753,656 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 	step //8
 		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
 	step //9
-		'Go north to the Arathi Highlands|goto Arathi Highlands|noway|c
+		goto 49.8,18.3
+		.talk Motley Garmason##1074
+		..turnin The Fury Runs Deep##378
+		.talk Rhag Garmason##1075
+		..accept The Thandol Span (1)##631
 	step //10
-		'Go to the broken edge of the north-west part of the bridge and face south|goto 43.13,90.92|c
+		goto 51.3,8
+		.' Click Ebenezer Rustlocke's Corpse|tip Down the passage to the right in the middle of the bridge, all the way downstairs.
+		..turnin The Thandol Span (1)##631
+		..accept The Thandol Span (2)##632
 	step //11
-		'Mount up and jump down to the beam below, you need to jump at the very edge to make it|goto 43.29,92.07|c
+		goto 49.8,18.3
+		.talk Rhag Garmason##1075
+		..turnin The Thandol Span (2)##632
+		..accept The Thandol Span (3)##633
 	step //12
+		'Go north to the Arathi Highlands|goto Arathi Highlands|noway|c
+	step //13
+		'Go to the broken edge of the north-west part of the bridge and face south|goto 43.13,90.92|c
+	step //14
+		'Mount up and jump down to the beam below, you need to jump at the very edge to make it|goto 43.29,92.07|c
+	step //15
 		goto 43.2,92.6
 		.talk Foggy MacKreel##2696
 		..accept MacKreel's Moonshine##647
-	step //13
+	step //16
+		goto 53.09,90.78,0.3|n
+		.' The path up starts here|goto 53.09,90.78,0.3|noway|c
+	step //17
+		goto Arathi Highlands,48.8,88.1
+		.' Click the Cache of Explosives|tip To the right across the hanging bridge after walking across the big bridge from the Wetlands.
+		.' Destroy the Cache of Explosives|goal Cache of Explosives Destroyed|q 633/1
+	step //18
+		'Go south to the Wetlands|goto Wetlands|noway|c
+	step //19
+		goto Wetlands,49.8,18.3
+		.talk Rhag Garmason##1075
+		..turnin The Thandol Span (3)##633
+		..accept Plea To The Alliance##634
+	step //20
 		goto Arathi Highlands,45.8,47.6
 		.talk Captain Nials##2700
 		..turnin Plea To The Alliance##634
-	step //14
+	step //21
 		goto 45.8,46.1
 		.talk Cedrik Prose##2835
 		..fpath Refuge Pointe
-	step //15
+	step //22
 		'Go northwest to the Hillsbrad Foothills|goto Hillsbrad Foothills|noway|c
-	step //16
+	step //23
 		goto 52.1,58.7
 		.talk Brewmeister Bilger##2705
 		..turnin MacKreel's Moonshine##647
-	step //17
+	step //24
 		'If you didn't get the Old History Book from Duskwood, skip this step.
 		goto 50.6,57.1
 		.talk Loremaster Dibbs##2277
 		..turnin Southshore##538
-	step //18
+	step //25
 		goto Hillsbrad Foothills,49.3,52.3
 		.talk Darla Harris##2432
 		..fpath Southshore
-	step //19
-		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
-	step //20
+	step //26
+		'Fly to Ironforge|goto Ironforge|noway|c
+		only Gnome Warrior,Dwarf Warrior
+	step //27
+		goto 70.3,90.7
+		.talk Kelv Sternhammer##5113
+		..accept The Islander##1718
+		only Gnome Warrior,Dwarf Warrior
+	step //28
 		'Fly to Stormwind City|goto Stormwind City|noway|c
-	step //21
+		only Warlock
+	step //29
 		goto 39.2,85.2
 		.talk Gakin the Darkbinder##6122
 		..turnin Gakin's Summons##1717
 		..accept Devourer of Souls##1716
 		only Warlock
-	step //22
+	step //30
+		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
+	step //31
 		goto 22.6,56.1|n
 		'Ride the boat to Auberdine|goto Darkshore,32.4,43.7,1|noway|c
-	step //23
+	step //32
 		goto 36.3,45.6
 		.talk Caylais Moonfeather##3841
 		..fpath Auberdine
-	step //24
+	step //33
 		'Travel south to Ashenvale|goto Ashenvale|noway|c
-	step //25
+	step //34
 		goto 34.4,48
 		.talk Daelyshia##4267
 		..fpath Astranaar
-	step //26
+	step //35
 		goto Ashenvale,34.7,48.8
 		.talk Shindrell Swiftfire##3845
 		..accept Kayneth Stillwind##4581
-	step //27
+	step //36
 		goto 34.9,49.8
 		.talk Vindicator Palanaar##17106
 		..accept A Helping Hand##9533
-	step //28
+	step //37
 		goto 86.4,46.5
 		.talk Gnarl##17310
 		..accept Reclaiming Felfire Hill##9526
-	step //29
+	step //38
 		goto 86.8,44.8
 		.talk Architect Nemos##17291
 		..turnin A Helping Hand##9533
 		..accept A Shameful Waste##9517
-	step //30
+	step //39
 		goto 87.1,43.5
 		.talk Illiyana##3901
 		..accept Vile Satyr! Dryads in Danger!##1021
-	step //31
+	step //40
 		goto 86.5,43.6
 		.talk Vindicator Vedaar##17303
 		..accept Destroy the Legion##9516
-	step //32
+	step //41
 		goto 86,44.1
 		.talk Sentinel Luciel Starwhisper##17287
 		..accept Agents of Destruction##9518
-	step //33
+	step //42
 		goto 85.2,44.7
 		.talk Kayneth Stillwind##3848
 		..turnin Kayneth Stillwind##4581
 		..accept Forsaken Diseases##1011
 		..accept The Lost Chalice##9519
-	step //34
+	step //43
 		goto 84.7,43.9
 		.talk Suralais Farwind##22935
 		..fpath Forest Song
-	step //35
+	step //44
 		goto 78.3,44.8
 		.talk Anilia##3920
 		..turnin Vile Satyr! Dryads in Danger!##1021
 		..accept The Branch of Cenarius##1031
-	step //36
+	step //45
 		goto 78,42.6
 		.from Geltharis##4619
 		.get Branch of Cenarius|q 1031/1
-	step //37
+	step //46
 		goto 87.1,43.5
 		.talk Illiyana##3901
 		..turnin The Branch of Cenarius##1031
 		..accept Satyr Slaying!##1032
-	step //38
+	step //47
 		goto 81.3,49.1
 		.' Click the Chalice of Elune|tip It's a blue glowing pedestal sitting ont he right side of the red tower thing.
 		.get Chalice of Elune|q 9519/1
-	step //39
+	step //48
 		goto 80.3,49.1
 		.from Xavian Felsworn##3755+, Xavian Betrayer##3754+, Xavian Rogue##3752+, Xavian Hellcaller##3757+
 		.get 16 Satyr Horns|q 1032/1
 		.' Click the Tainted Wood bundles|tip They look like little bundles of wood on the ground around this area.
 		.get 5 Satyrnaar Fel Wood|q 9517/2
-	step //40
-		ding 31
-	step //41
+	step //49
 		goto 86.4,52.9
 		.' Click the Lumber Piles|tip The Lumber Piles look like stacked planks of wood around this area.
 		.get 15 Warsong Lumber|q 9517/1
 		.kill 2 Warsong Shredder|q 9518/2
 		.kill 5 Horde Deforester|q 9518/3
 		.kill 10 Horde Scout|q 9518/4
-	step //42
+	step //50
 		goto 88.8,59.5
 		.kill Overseer Gorthak##17304|q 9518/1
-	step //43
+	step //51
 		goto 83.8,67.7
 		.kill 6 Mannoroc Lasher|q 9516/1
 		.kill 6 Roaming Felguard|q 9516/2
 		.kill 6 Searing Infernal|q 9516/3
 		.' Click the Fertile Dirt Mounds
 		.' Plant 8 Tree Seedlings|goal 8 Tree Seedling Planted|q 9526/1
-		.get Diabolical Plans|n|tip Random 2% drop from the demons, don't stick around for this if you don't get it.
+		.get Diabolical Plans|n|tip Random 2% drop from the demons, stick around until you get it.
 		.' Click the Diabolical Plans|use Diabolical Plans##23777
 		..accept Diabolical Plans##9520
-	step //44
+	step //52
 		goto 75.3,72.3
 		.' Click the Bottle of Disease on the table
 		.get Bottle of Disease|q 1011/1
-	step //45
+	step //53
 		goto 86.4,46.5
 		.talk Gnarl##17310
 		..turnin A Shameful Waste##9517
 		..turnin Reclaiming Felfire Hill##9526
-	step //46
+	step //54
 		goto 86.5,43.6
 		.talk Vindicator Vedaar##17303
 		..turnin Destroy the Legion##9516
 		..turnin Diabolical Plans##9520
-	step //47
+		..accept Never Again!##9522
+	step //55
 		goto 86,44.1
 		.talk Sentinel Luciel Starwhisper##17287
 		..turnin Agents of Destruction##9518
-	step //48
+	step //56
 		goto 85.2,44.7
 		.talk Kayneth Stillwind##3848
-		..turnin Forsaken Diseases##1011
 		..turnin The Lost Chalice##9519
-	step //49
+		..turnin Forsaken Diseases##1011
+		..accept Insane Druids##1012
+	step //57
 		goto 87.1,43.5
 		.talk Illiyana##3901
 		..turnin Satyr Slaying!##1032
-	step //50
+	step //58
+		goto 89.9,76.7
+		.kill Gorgannon|q 9522/1
+	step //59
+		goto 79,84.7
+		.kill Diathorus the Seeker|q 9522/2
+	step //60
+		goto 75.93,75.36|c
+	step //61
+		goto 75.1,74.2
+		.kill Mavoris Cloudsbreak|q 1012/3
+	step //62
+		goto 77.2,74
+		.kill Taneel Darkwood|q 1012/1
+	step //63
+		goto 78,72.7
+		.kill Uthil Mooncall|q 1012/2
+	step //64
+		goto 85.2,44.7
+		.talk Kayneth Stillwind##3848
+		..turnin Insane Druids##1012
+	step //65
+		goto 86.5,43.6
+		.talk Vindicator Vedaar##17303
+		..turnin Never Again!##9522
+	step //66
 		'Travel south to the Barrens|goto The Barrens|noway|c
-	step //51
+	step //67
 		goto 62.6,35.5
 		.talk Strahad Farsan##6251
 		..turnin Seeking Strahad##1798
 		..accept Tome of the Cabal (1)##1758
 		only Warlock
-	step //52
+	step //68
 		goto 63.1,37.2
 		.talk Bragok##16227
 		..fpath Ratchet
-	step //53
+	step //69
+		goto 68.6,49.2
+		.talk Klannoc Macleod##
+		..turnin The Islander##1718
+		..accept The Affray##1719
+		only Warrior
+	step //70
+		goal Step on the grate to begin the Affray|q 1719/1
+		kill Big Will|q 1719/2
+		only Warrior
+	step //71
+		goto 68.6,49.2
+		.talk Klannoc Macleod##
+		..turnin The Affray##1719
+		..accept The Windwatcher##1791
+		only Warrior
+	step //72
 		goto 49.3,57.1
 		.talk Takar the Seer##6244	
 		..turnin Devourer of Souls##1716
 		..accept Heartswood##1738
 		only Warlock
-	step //54
+	step //73
 		'Fly to Astranaar|goto Ashenvale,35.5,50.2,5|noway|c
 		only Warlock
-	step //55
+	step //74
 		goto 31.2,31.2
 		.' Click the Heartswood tree|tip It's a tall tree.
 		.get Heartswood|q 1738/1
 		only Warlock
-	step //56
+	step //75
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 		only Warlock
-	step //57
+	step //76
 		goto 74.2,9.4
 		.talk Krom Stoutarm##6294
 		..turnin Tome of the Cabal (1)##1758
 		..accept Tome of the Cabal (2)##1802
 		only Warlock
-	step //58
+	step //77
 		'Fly to Menethil Harbor|goto Wetlands|noway|c
 		only Warlock
-	step //59
+	step //78
 		'Take the boat to Theramore|goto Dustwallow Marsh|noway|c
 		only Warlock
-	step //60
+	step //79
 		'Travel west to the Barrens|goto The Barrens|noway|c
 		only Warlock
-	step //61
+	step //80
 		'Go southwest to Thousand Needles|goto Thousand Needles|noway|c
-	step //62
+	step //81
 		goto Thousand Needles,30.7,24.3
 		.' Click Henrig Lonebrow's Journal|tip In the hand of a corpse laying on the side of the road at the bottom of the Great Lift.
 		.' Click Henrig Lonebrow's Journal in your bags|use Henrig Lonebrow's Journal##5791
 		..accept Lonebrow's Journal##1100
-	step //63
+	step //82
 		goto 7.8,17.9
 		.talk Thyssiana##4319
 		..fpath Thalanaar
-	step //64
+	step //83
 		goto 8.1,19
 		.talk Falfindel Waywarder##4048
 		..turnin Lonebrow's Journal##1100
-	step //65
+	step //84
 		goto 43.4,32.7
 		.get Tattered Manuscript|q 1802/2
 		only warlock
-	step //66
+	step //85
 		goto 78.1,77.1
 		.talk Wizzle Brassbolts##4453
 		..turnin The Brassbolts Brothers##1179
 		..accept Hardened Shells##1105
 		.talk Fizzle Brassbolts##4454
 		..accept Salt Flat Venom##1104
-	step //67
+	step //86
 		goto 77.8,77.3
 		.talk Kravel Koalbeard##4452
 		..accept Hemet Nesingwary Jr.##5762
 		..accept Rocket Car Parts##1110
 		..accept Wharfmaster Dizzywig##1111
-	step //68
+	step //87
 		goto 80.2,75.9
 		.talk Pozzik##4630
 		..accept Load Lightening##1176
-	step //69
+	step //88
 		goto 81.6,77.9
 		.talk Trackmaster Zherin##4629
 		..accept A Bump in the Road##1175
-	step //70
+	step //89
 		'Get Rocket Car Parts as you walk around in the Shimmering Flats|n|tip They look like metal scraps on the ground.
-	step //71
+	step //90
 		goto 87.6,66.7
 		.from Salt Flats Scavenger##4154+
 		.get 10 Hollow Vulture Bone|q 1176/1
-	step //72
+	step //91
 		goto 83.2,55.4
 		.from Sparkleshell Snapper##4143+
 		.get 9 Hardened Tortoise Shell|q 1105/1
 		.collect 10 Turtle Meat|q 555|future|tip Don't stay for the turtle meat, just don't sell them for now.
-	step //73
+	step //92
 		goto 75.4,55
 		.kill 10 Saltstone Basilisk|q 1175/1
 		.' Finish getting the 30 Rocket Car Parts you need|goal 30 Rocket Car Parts|q 1110/1
-	step //74
+	step //93
 		goto 79.1,85.2
 		.kill 10 Saltstone Crystalhide|q 1175/2
 		.kill 6 Saltstone Gazer|q 1175/3
-	step //75
-		ding 32
-	step //76
+	step //94
 		goto 77.8,77.3
 		.talk Kravel Koalbeard##4452
 		..turnin Rocket Car Parts##1110
-	step //77
+	step //95
 		goto 78.1,77.1
 		.talk Wizzle Brassbolts##4453
 		..turnin Hardened Shells##1105
 		.talk Fizzle Brassbolts##4454
 		..turnin Salt Flat Venom##1104
 		..accept Martek the Exiled##1106
-	step //78
+	step //96
 		goto 80.2,75.9
 		.talk Pozzik##4630
 		..turnin Load Lightening##1176
 		..accept Goblin Sponsorship (1)##1178
-	step //79
+	step //97
 		goto 81.6,77.9
 		.talk Trackmaster Zherin##4629
 		..turnin A Bump in the Road##1175
-	step //80
+	step //98
+		ding 32|tip Important, being 39630/41600 is enough.
+	step //99
 		'Go southwest to Tanaris|goto Tanaris|noway|c
-	step //81
+	step //100
 		goto Tanaris,51,29.3
 		.talk Bera Stonehammer##7823
 		..fpath Gadgetzan
-	step //82
+	step //101
 		'Fly to Ratchet|goto The Barrens,63.0,38.1,2|noway|c
-	step //83
+	step //102
 		goto The Barrens,62.7,36.2
 		.talk Gazlowe##3391
 		..turnin Goblin Sponsorship (1)##1178
 		..accept Goblin Sponsorship (2)##1180
-	step //84
+	step //103
 		goto 63.4,38.5
 		.talk Wharfmaster Dizzywig##3453
 		..turnin Wharfmaster Dizzywig##1111
-	step //85
+	step //104
 		'Ride the boat to Booty Bay|goto Stranglethorn Vale|noway|c
-	step //86
+	step //105
 		goto Stranglethorn Vale,26.3,73.6
 		.talk Wharfmaster Lozgil##4631
 		..turnin Goblin Sponsorship (2)##1180
 		..accept Goblin Sponsorship (3)##1181
-	step //87
+	step //106
 		goto 27.1,77.2
 		.talk Crank Fizzlebub##2498
 		..accept Singing Blue Shards##605
-	step //88
+	step //107
 		goto 27,77.1
 		.talk Kebok##737
 		..accept Bloodscalp Ears##189
 		..accept Hostile Takeover##213
-	step //89
+	step //108
 		goto 26.9,77.2
 		.talk Krazek##773
 		..accept The Haunted Isle##616
 		..accept Investigate the Camp##201
 		..accept Supplies to Private Thorsen##198
-	step //90
+	step //109
 		goto 27.2,77
 		.talk Baron Revilgaz##2496
 		..turnin The Haunted Isle##616
 		..accept The Stone of the Tides##578
 		..turnin Goblin Sponsorship (3)##1181
 		..accept Goblin Sponsorship (4)##1182
-	step //91
-		goto 27.8,77.1
-		.talk "Sea Wolf" MacKinley##2501
-		..accept Scaring Shaky##606
-	step //92
+	step //111
 		goto 28.3,77.6
 		.talk Drizzlik##2495
 		..accept Supply and Demand##575
-	step //93
+	step //112
 		goto 27.5,77.8
 		.talk Gyll##2859
 		..fpath Booty Bay
-	step //94
+	step //113
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
-	step //95
+	step //114
 		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
-	step //96
+	step //115
 		goto 49.5,58.7
 		.talk Marshal Redpath##2263
 		..accept Crushridge Bounty##500
-	step //97
+	step //116
 		goto 48.1,59.1
 		.talk Magistrate Henry Maleb##2276
 		..accept Syndicate Assassins##505
-	step //98
+	step //117
 		goto 51,58.7
 		.talk Huraan##17218
 		..accept Missing Crystals##9435
-	step //99
+	step //118
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..accept Down the Coast##536
-	step //100
+	step //119
 		goto 51.9,58.7
 		.talk Chef Jessen##2430
 		..accept Soothing Turtle Bisque##555
-	step //101
+	step //120
 		goto 52.4,56
 		.talk Darren Malvew##2382
 		..accept Costly Menace##564
-	step //102
+	step //121
 		goto 46.4,64
 		.kill 10 Torn Fin Tidehunter|q 536/1
 		.kill 10 Torn Fin Oracle|q 536/2
-	step //103
+	step //122
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..turnin Down the Coast##536
 		..accept Farren's Proof (1)##559
-	step //104
+	step //123
 		goto 27.8,72.8
 		.get Moldy Tome|q 1802/1
 		only warlock
-	step //105
+	step //124
 		goto 46.4,64
 		.from Torn Fin Tidehunter##2377+, Torn Fin Oracle##2376+
 		.get 10 Murloc Head|q 559/1
-	step //106
+	step //125
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..turnin Farren's Proof (1)##559
 		..accept Farren's Proof (2)##560
-	step //107
+	step //126
 		goto 49.5,58.7
 		.talk Marshal Redpath##2263
 		..turnin Farren's Proof (2)##560
 		..accept Farren's Proof (3)##561
-	step //108
+	step //127
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..turnin Farren's Proof (3)##561
 		..accept Stormwind Ho!##562
-	step //109
+	step //128
 		goto 56.2,65
 		.kill 10 Daggerspine Shorehunter|q 562/1
 		.kill 10 Daggerspine Siren|q 562/2
-	step //110
+	step //129
 		goto 55.7,57
 		.from Snapjaw##2408
 		.get 10 Turtle Meat|q 555/1
-	step //111
-		goto 51.9,58.7
-		.talk Chef Jessen##2430
-		..turnin Soothing Turtle Bisque##555
-	step //112
-		goto 51.5,58.4
-		.talk Lieutenant Farren Orinelle##2228
-		..turnin Stormwind Ho!##562
-		..accept Reassignment##563
-	step //113
-		ding 33
-	step //114
+	step //130
 		goto 55.6,35.2
 		.' Click the Unopened Crate|tip Inside the crumbled tower, under the broken staircase, on the floor to the right as you enter.
 		.get Shipment of Rare Crystals|q 9435/1
-	step //115
+	step //131
 		'Enter the cave and get Granite|goto 46.18,31.85
 		.get 5 Alterac Granite|q 689/1
-	step //116
+	step //132
 		'Go north to the Alterac Mountains|goto Alterac Mountains|noway|c
-	step //117
+	step //133
 		goto 38.33,87.09
 		.kill 8 Mountain Lion|q 564/1
 		.kill 10 Hulking Mountaimn Lion|q 564/2
-	step //118
+	step //134
 		goto 56.9,66.7
 		.kill 12 Syndicate Footpad|q 505/1
 		.kill 8 Syndicate Thief|q 505/2
 		.' You can find more of these around 47.9,79.5|goto 47.9,79.5|n
-	step //119
+	step //135
 		goto 58.3,68
 		.' Click the Syndicate Documents on the little round table in the middle of the small camp
 		..accept Foreboding Plans##510
 		..accept Encrypted Letter##511
-	step //120
+	step //136
 		goto 49.7,60.8
 		.kill ogres|n
 		.get 9 Dirty Knucklebones|q 500/1
-	step //121
+	step //137
+		goto 80.5,66.9
+		.talk Bath'rah the Windwatcher##6176
+		..turnin The Windwatcher##1791
+		..accept Cyclonian##1712
+		only Warrior
+	step //138
 		goto Hillsbrad Foothills,52.4,56
 		.talk Darren Malvew##2382
 		..turnin Costly Menace##564
-	step //122
+	step //139
 		goto 50.6,57.1
 		.talk Loremaster Dibbs##2277
 		..turnin Encrypted Letter##511
 		..accept Letter to Stormpike##514
-	step //123
+	step //140
+		goto 50.3,59
+		.talk Phin Odelic##2711
+		..accept Hints of a New Plague?##659
+	step //141
 		goto Hillsbrad Foothills,51,58.7
 		.talk Huraan##17218
 		..turnin Missing Crystals##9435
-	step //124
+	step //142
+		goto 51.5,58.4
+		.talk Lieutenant Farren Orinelle##2228
+		..turnin Stormwind Ho!##562
+		..accept Reassignment##563
+	step //143
+		goto 51.9,58.7
+		.talk Chef Jessen##2430
+		..turnin Soothing Turtle Bisque##555
+	step //144
 		goto Hillsbrad Foothills,49.5,58.7
 		.talk Marshal Redpath##2263
 		..turnin Crushridge Bounty##500
-	step //125
+	step //145
 		goto 48.1,59.1
 		.talk Magistrate Henry Maleb##2276
 		..turnin Syndicate Assassins##505
 		..turnin Foreboding Plans##510
-	step //126
-		goto 50.3,59
-		.talk Phin Odelic##2711
-		..accept Hints of a New Plague?##659
-	step //127
+	step //146
+		ding 33
+	step //147
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
-	step //128
+	step //148
 		goto 39,88.1
 		.talk Grand Mason Marblesten##2790
 		..turnin A King's Tribute (2)##689
 		..accept A King's Tribute (3)##700
-	step //129
+	step //149
 		goto 39.1,56.2
 		.talk King Magni Bronzebeard##2784
 		..turnin A King's Tribute (3)##700
-	step //130
+	step //150
 		goto 74.7,11.7
 		.talk Prospector Stormpike##1356
 		..turnin Letter to Stormpike##514
 		..accept Further Mysteries##525
-	step //131
+	step //151
 		goto 74.2,9.4
 		.talk Krom Stoutarm##6294
 		..turnin Tome of the Cabal (2)##1802
 		..accept Tome of the Cabal (3)##1804
 		only Warlock
-	step //132
+	step //152
 		'Fly to Stormwind|goto Stormwind City|noway|c
-	step //133
+	step //153
 		goto 75.8,36.7
 		.talk Major Samuelson##2439
 		..turnin Reassignment##563
-	step //134
+	step //154
 		goto 76.9,47.8
 		.talk Count Remington Ridgewell##2285
 		..accept The Perenolde Tiara##543
-	step //135
+	step //155
 		goto 39.2,85.2
 		.talk Gakin the Darkbinder##6122
 		..turnin Heartswood##1738
 		..accept The Binding##1739
 		only Warlock
-	step //136
+	step //156
 		'Go downstairs into the catacombs to 39.1,84.3|goto 39.1,84.3
 		.' Use your Heartswood Core while standing on the pink Summoning Circle|use Heartswood Core##6913
 		.kill Summoned Succubus|q 1739/1
 		only Warlock
-	step //137
+	step //157
 		'Go upstairs to 39.6,84.6|goto 39.2,85.2
 		.talk Gakin the Darkbinder##6122
 		..turnin The Binding##1739
 		only Warlock
-	step //138
+	step //158
 		goto 50.4,87.5
 		.talk Archmage Malin##2708
 		..accept Malin's Request##690
-	step //139
+	step //159
 		goto 51.1,95.5
 		.talk Connor Rivers##5081
 		..accept James Hyal##1301
 		.talk Angus Stern##1141
 		..accept Morgan Stern##1260
-	step //140
+	step //160
 		'Fly to Darkshire|goto Duskwood,74.7,46.9,7|noway|c
-	step //141
+	step //161
 		'Go southwest to Stranglethorn Vale|goto Stranglethorn Vale|noway|c
-	step //142
+	step //162
 		goto Stranglethorn Vale,38.2,4
 		.talk Nizzle##24366
 		..fpath Rebel Camp
-	step //143
+	step //163
 		goto 38,3.3
 		.talk Sergeant Yohwa##733
 		..accept The Second Rebellion##203
 		..accept Bad Medicine##204
-	step //144
-		goto 37.7,3.3
-		.talk Corporal Kaleb##770
-		..accept Krazek's Cookery##210
-	step //145
+	step //164
 		goto 38,3.4
 		.talk Private Thorsen##738
 		..turnin Supplies to Private Thorsen##198
 		..accept Jungle Secrets##215
-	step //146
+	step //165
+		goto 37.7,3.3
+		.talk Corporal Kaleb##770
+		..accept Krazek's Cookery##210
+	step //166
 		goto 38,3
 		.talk Lieutenant Doren##469
 		..turnin Jungle Secrets##215
 		..accept Bookie Herod##200
-	step //147
+	step //167
 		goto 35.8,10.7
 		.talk Barnil Stonepot##716
 		..accept Welcome to the Jungle##583
@@ -3316,47 +3414,54 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		..accept Tiger Mastery (1)##185
 		.talk Sir S. J. Erlgadin##718
 		..accept Panther Mastery (1)##190
-	step //148
+	step //168
 		ding 34
-	step //149
+	step //169
 		goto 40.6,13.3
 		.from River Crocolisk##1150
 		.get 2 Large River Crocolisk Skin|q 575/1
-	step //150
+	step //170
 		goto 33.6,11.5
 		.kill 10 Young Stranglethorn Tiger|q 185/1
-	step //151
+	step //171
 		goto 40.8,10.9
 		.kill 10 Young Panther|q 190/1
-	step //152
+	step //172
 		goto 35.8,10.7
 		.talk Sir S. J. Erlgadin##718
 		..turnin Panther Mastery (1)##190
 		..accept Panther Mastery (2)##191
-	step //153
+	step //173
 		goto 35.8,10.7
 		.talk Ajeck Rouack##717
 		..turnin Tiger Mastery (1)##185
 		..accept Tiger Mastery (2)##186
-	step //154
+	step //174
 		goto 31,10
 		.kill 10 Panther|q 191/1
 		.kill 10 Stranglethorn Tiger|q 186/1
-	step //155
+	step //175
 		goto 27,16.3
 		.kill 10 Stranglethorn Raptor|q 194/1
-	step //156
+	step //176
 		goto 24.5,16.8
 		.from Crystal Spine Basilisks##689
 		..get 10 Singing Crystal Shard|q 605/1
-	step //157
+	step //177
 		goto 21.5,22.7
 		.goal Locate the haunted island|q 578/1
-	step //158
-		'I prefer this camp, less risk of horde interference|goto 20.5,13.5
+	step //178
+		'I prefer this camp, less risk of horde interference|goto 21.4,10.2
 		.kill Bloodscalp trolls|n
 		.get 15 Bloodscalp Ear|q 189/1
-	step //159
+		only !Warrior
+	step //178
+		'I prefer this camp, less risk of horde interference|goto 21.4,10.2
+		.kill Bloodscalp trolls|n
+		.get 15 Bloodscalp Ear|q 189/1
+		.get 30 Bloodscalp Tusk|q 1712/2
+		only Warrior
+	step //179
 		goto 35.8,10.7
 		.talk Hemet Nesingwary Jr.##715
 		..turnin Raptor Mastery (1)##194
@@ -3367,64 +3472,57 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.talk Sir S. J. Erlgadin##718
 		..turnin Panther Mastery (2)##191
 		..accept Panther Mastery (3)##192
-	step //160
+	step //180
 		goto 43.7,9.4
 		.turnin Bookie Herod##200
-	step //161
+	step //181
 		goto 44,11.2
 		.kill 15 Kurzen Jungle Fighter|q 203/1
 		.from Kurzen Medicine Man##940+, Kurzen Jungle Fighter##937+
 		.get 7 Jungle Remedy|q 204/1
-	step //162
+	step //182
 		goto 44.5,9.7
 		.' Click the Kurzen Supplies|tip They look like a pile of brown boxes in the small camp.
 		.get Venom Fern Extract|q 204/2
-	step //163
+	step //183
 		goto 38,3.3
 		.talk Sergeant Yohwa##733
 		..turnin The Second Rebellion##203
 		..turnin Bad Medicine##204
 		..accept Special Forces##574
-	step //164
-		goto 37.8,3.6
-		.talk Brother Nimetz##739
-		..accept Kurzen's Mystery##207
-	step //165
+	step //185
 		goto 38.2,4|n
 		.talk Nizzle##24366
 		..'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
-	step //166
+	step //186
 		goto 28.3,77.6
 		.talk Drizzlik##2495
 		..turnin Supply and Demand##575
 		..accept Some Assembly Required##577
-	step //167
-		goto 27,77.1
-		.talk Kebok##737
-		..turnin Bloodscalp Ears##189
-	step //168
+	step //188
 		goto 26.9,77.2
 		.talk Krazek##773
 		..turnin Investigate the Camp##201
 		..turnin Krazek's Cookery##210
-	step //169
+	step //187
+		goto 27,77.1
+		.talk Kebok##737
+		..turnin Bloodscalp Ears##189
+	step //189
 		goto 27.2,77
 		.talk Baron Revilgaz##2496
 		..turnin The Stone of the Tides##578
 		..accept Water Elementals##601
-	step //170
+	step //190
 		goto 27.1,77.2
 		.talk Crank Fizzlebub##2498
 		..turnin Singing Blue Shards##605
-		..accept Venture Company Mining##600
-	step //171
-		ding 35
-	step //172
+	step //192
 		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
 ]])
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-39)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (35-39)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (40-44)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (40-44)
 	startlevel 35
 
 	step //1
@@ -3495,11 +3593,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		goto 28.3,77.6
 		.talk Drizzlik##2495
 		..turnin Some Assembly Required##577
-		..accept Excelsior##628
-	step //17
-		ding 36
 	step //18
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
+	step //67
+		'Buy 8 Liferoot from herbalists.
+		.buy 8 Liferootl|q 1712/1
+		only Warrior
 	step //19
 		'Fly to Refuge Point|goto Arathi Highlands,45.8,46.1|noway|c
 	step //20
@@ -3538,6 +3637,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 	step //28
 		goto 66.7,29.7
 		.get Cresting Key|q 651/2
+	step
+		goto 66.7,29.7
+		.collect 8 Cresting Charm|q 1712
+		only Warrior
 	step //29
 		goto 60.2,53.8
 		.talk Quae##2712
@@ -3573,6 +3676,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 	step //35
 		goto 52,50.7
 		.get Thundering Key|q 651/3
+	step
+		goto 52,50.7
+		.collect 8 Thundering Charm|q 1712
+		only Warrior
 	step //36
 		goto 46.2,47.8
 		.talk Apprentice Kryten##2788
@@ -3597,8 +3704,32 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 	step //41
 		goto 25.5,30.1
 		.get Burning Key|q 651/1
+	step
+		goto 25.5,30.1
+		.collect 8 Burning Charm|q 1712
+		only Warrior
+	step //137
+		goto Alterac Mountains,79.4,66.6
+		.'Use the cauldron
+		.get Essence of the Exile|q 1712/3
+	step
+		goto 80.5,66.9
+		.talk Bath'rah the Windwatcher##6176
+		..turnin Cyclonian##1712
+		..accept The Summoning##1713
+		only Warrior
+	step
+		from Cyclonian##6239
+		.get Whirlwind Heart|q 1713/1
+		only Warrior
+	step
+		goto 80.5,66.9
+		.talk Bath'rah the Windwatcher##6176
+		..turnin The Summoning##1713
+		..accept Whirlwind Weapon##1792|instant
+		only Warrior
 	step //42
-		goto 45.8,47.6
+		goto Arathi Highlands,45.8,47.6
 		.talk Captain Nials##2700
 		..turnin Northfold Manor##681
 		..accept Stromgarde Badges##682
@@ -3623,8 +3754,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		goto 17.8,69.1
 		.from Boulderfist Shaman##2570+
 		..get 1 Azure Agate|q 694/1
-	step //48
-		ding 37
 	step //49
 		goto 45.8,47.6
 		.talk Captain Nials##2700
@@ -3762,8 +3891,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		.talk Vincent Hyal##5082
 		..turnin James Hyal##1301
 		..accept James Hyal##1302
-	step //84
-		ding 38
 	step //85
 		'Ride the boat to Theramore|goto Dustwallow Marsh|noway|c
 	step //86
@@ -3990,8 +4117,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		'Tervosh and Jaina are supposed to teleport in like last time, if it doesn't happen, turn this in when you get the quest Jaina Must Know, which is very soon.
 		..turnin The Missing Diplomat (14)##1324
 		..accept The Missing Diplomat (15)##1267|instant
-	step //137
-		ding 39
 	step //138
 		goto 35.1,23
 		.kill Darkmist spiders|n
@@ -4023,7 +4148,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 	step //145
 		goto 65.1,47.1
 		.talk Lieutenant Aden##23951
-		..accept Mission to Mudsprocket##11214
 		..turnin The Orc Report##1219
 		..accept Captain Vimes##1220
 	step //146
@@ -4107,10 +4231,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		.talk Balos Jacken##5089
 		..turnin The Deserters (1)##1286
 		..accept The Deserters (2)##1287
-	step //163
-		goto 42.3,72.9
-		.talk Drazzit Dripvalve##23572
-		..turnin Mission to Mudsprocket##11214
 	step //164
 		goto 42.8,72.4
 		.talk Dyslix Silvergrub##23612
@@ -4134,8 +4254,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		goto 66.3,49
 		.talk Lady Jaina Proudmore##4968
 		..turnin Survey Alcaz Island##11142
-	step //170
-		ding 40
 	step //171
 		'Go outside to 46.6,24.6|goto 46.6,24.6
 		.talk Captain Darill##23568
@@ -4190,9 +4308,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (35-3
 		..turnin Arms of the Grimtotems##11148
 		..accept Tabetha's Assistance##11149
 ]])
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-44)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (40-44)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (45-49)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (45-49)
 	startlevel 40
 
 	step //1
@@ -4201,6 +4319,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		..turnin Tabetha's Farm##11212
 		..turnin Tabetha's Assistance##11149
 		..accept Raze Direhorn Post!##11150
+		..accept Help for Mudsprocket##11211
 		.talk Apprentice Garion##23601
 		..accept The Grimtotem Weapon##11169
 		..accept The Reagent Thief##11173
@@ -4209,7 +4328,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.talk Apprentice Morlann##23600
 		..accept Direhorn Raiders##11156
 		..accept The Zeppelin Crash##11172
-
 	step //3
 		goto 43.8,57
 		.' Use your Captured Totem|use Captured Totem##33101
@@ -4220,16 +4338,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.kill Darkfang Creepers|n
 		.kill Noxious Shredders|n
 		.get 6 Marsh Venom|q 11173/1
+	step //6
+		goto 47.4,47.6
+		.' Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
+		.' Burn the East Tent|goal East Tent Burned|q 11150/3
 	step //5
 		goto 47.2,46.6
 		.from Apothecary Cylla##23881
 		.get the Sealed Letter|n
 		.' Click the Sealed Letter|use Sealed Letter##33114
 		..accept The Apothecary's Letter##11185
-	step //6
-		goto 47.4,47.6
-		.' Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
-		.' Burn the East Tent|goal East Tent Burned|q 11150/3
 	step //7
 		goto 47.3,46.6
 		.' Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
@@ -4291,6 +4409,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 	step //19
 		goto 42.3,72.9
 		.talk Drazzit Dripvalve##23572
+		..turnin Help for Mudsprocket##11211
 		..turnin Delivery for Drazzit##11208
 	step //20
 		goto 32,65.7
@@ -4309,8 +4428,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		..turnin Bloodfen Feathers##11158
 		..accept Banner of the Stonemaul##11160
 		..accept The Essence of Enmity##11161
-	step //24
-		ding 41
 	step //25
 		'Go inside the cave to 38.1,69.4|goto 38.1,69.4
 		.' Click the Stonemaul Banner|tip It looks like a hanging tiger skin with an eye painted on it inside the cave.
@@ -4373,16 +4490,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		..turnin Peace at Last##11152
 	step //38
 		'Travel your own way to Southshore, this is a good time to drop by your race's capitol city to train skills and riding|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
+	step //40
+		goto 49.5,58.7
+		.talk Marshal Redpath##2263
+		..accept Crushridge Warmongers##504
 	step //39
 		goto Hillsbrad Foothills,48.1,59.1
 		.talk Magistrate Henry Maleb##2276
 		..turnin Further Mysteries##525
 		..accept Dark Council##537
 		..accept Noble Deaths##512
-	step //40
-		goto 49.5,58.7
-		.talk Marshal Redpath##2263
-		..accept Crushridge Warmongers##504
 	step //41
 		goto 50.3,59
 		.talk Phin Odelic##2711
@@ -4420,6 +4537,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		..get Head of Nagaz|q 537/2
 		.'Loot the chest inside the house, next to Nagaz
 		.collect Ensorcelled Parchment|q 551
+		.'Click the Ensorcelled Parchment|use Ensorcelled Parchment##3706
 		..accept The Ensorcelled Parchment##551
 	step //49
 		'Hearth to Southshore|goto Hillsbrad Foothills,51.2,58.9,0.5|use Hearthstone##6948|noway|c
@@ -4450,15 +4568,22 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.talk Keystone
 		..turnin Breaking the Keystone##652
 		..accept Myzrael's Allies##653
-	step //56
-		ding 42
 	step //57
 		'Fly to Ironforge|goto Ironforge|noway|c
+	step
+		goto 67.9,46.1
+		.talk Klockmort Spannerspan##6169
+		..accept The Brassboltbrothers##2769
 	step //58
 		goto 74.6,11.7
 		.talk Prospector Stormpike##1356
 		..turnin Stormpike's Deciphering##554
 		..accept Ironband Wants You!##707
+		..accept The Lost Dwarves##2398
+	step
+		goto 74.2,9.4
+		.talk Krom Stoutarm##6294
+		..accept Reclaimed Treasure##1360
 	step //59
 		goto 50.8,5.6
 		.talk Gerrig Bonegrip##2786
@@ -4475,18 +4600,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.talk Milton Sheaf##1440
 		'If you didn't get the Old History Book from Duskwood, skip this step.
 		..turnin Return to Milton##542
-	step //63
-		goto 69.5,40.4
-		.talk Brohann Caskbelly##5384
-		..accept In Search of The Temple##1448
 	step //64
 		goto 50.4,87.5
 		.talk Archmage Malin##2708
 		..turnin Malin's Request##697
-	step //65
-		goto 48.7,87.6
-		.talk High Sorcerer Andromath##5694
-		..accept Vital Supplies##1477
 	step //66
 		home Stormwind City
 	step //67
@@ -4531,8 +4648,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 	step //76
 		goto 53.6,43.3
 		.talk Prospector Ryedol##2910
-		..turnin A Sign of Hope##720
 		..turnin A Dwarf and His Tools##719
+		..turnin A Sign of Hope##720
+		..accept A Sign of Hope##721
 		.talk Sigrun Ironhew##2860
 		..turnin Mirages##718
 		..accept Scrounging##733
@@ -4543,6 +4661,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		..accept Indurium##1108
 		.talk Rigglefuzz##2817
 		..accept Barbecued Buzzard Wings##703
+		..accept Power Stones##2418
+	step
+		goto 61.9,54.3
+		.talk Garek##2888
+		..accept Tremors of the Earth##732
 	step //78
 		goto 50.9,62.4
 		.' Click the Battered Dwarven Skeleton on the ground
@@ -4569,11 +4692,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		goto 51.4,76.9
 		.talk Theldurin the Lost##2785
 		..turnin The Lost Fragments##692
-		..accept Sumoning the Princess##656
+		..accept Summoning the Princess##656
+		..accept Solution to Doom##709
 	step //83
 		goto 42.2,52.7
 		.talk Martek the Exiled##4618
 		..turnin Indurium##1108
+		..accept News for Fizzle##1137
 	step //84
 		goto 25.9,44.6
 		.talk Lotwil Veriatus##2921
@@ -4608,10 +4733,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.kill Buzzards|n
 		.get 4 Buzzard Wing|q 703/1
 		.get 5 Buzzard Gizzard|q 2500/1
-	step //90
-		goto 9.65,74.56
-		.kill ogres|n
-		.get 7 Scrap Metal|q 733/1
 	step //91
 		goto 7.9,74.1|n
 		.' The path up to 'Study of the Elements: Rock (3)' starts here|goto Badlands,7.9,74.1,0.5|noway|c
@@ -4620,6 +4741,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.kill Greater Rock Elementals|n
 		.get 5 Bracers of Rock Binding|q 712/1
 		.get 5 Rock Elemental Shard|q 2500/3
+	step //90
+		goto 9.65,74.56
+		.kill ogres|n
+		.get 7 Scrap Metal|q 733/1
+		.from Boss Tho'Grun##2944
+		.get Sign of the Earth|q 732/1
 	step //93
 		goto 25.9,44.6
 		.talk Lotwil Veriatus##2921
@@ -4641,6 +4768,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		goto 42.2,52.7
 		.talk Rigglefuzz##2817
 		..turnin Barbecued Buzzard Wings##703
+	step
+		goto 61.9,54.3
+		.talk Garek##2888
+		..turnin Tremors of the Earth##732
 	step //96
 		goto 53.6,43.3
 		.talk Sigrun Ironhew##2860
@@ -4652,15 +4783,108 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 	step //98
 		goto Loch Modan,65.9,65.6
 		.talk Prospector Ironband##1344
-		..turnin Murdaloc##739	
+		..turnin Murdaloc##739
+		..accept Agmond's Fate##704
 	step //99
 		goto 37.1,49.4
 		.talk Ghak Healtouch##1470
 		..turnin Badlands Reagent Run##2500
+		..accept Uldaman Reagent Run##17
+	step 
+		'Make/Find Uldaman group|goto Uldaman
+		//TODO uldaman
+	step //82
+		goto Badlands,51.4,76.9
+		.talk Theldurin the Lost##2785
+		..turnin Solution to Doom##709
+		..accept To Ironforge for Yagyin's Digest##727
+	step //77
+		goto 42.2,52.7
+		.talk Rigglefuzz##2817
+		..turnin Power Stones##2418
+	step //76
+		goto 53.6,43.3
+		.talk Prospector Ryedol##2910
+		..turnin Prospect of Faith##723
+		..accept Prospect of Faith##724
 	step //100
 		ding 43
+	step //98
+		goto Loch Modan,65.9,65.6
+		.talk Prospector Ironband##1344
+		..turnin Agmond's Fate##704
+	step //99
+		goto 37.1,49.4
+		.talk Ghak Healtouch##1470
+		..turnin Uldaman Reagent Run##17
+	step //45
+		'Fly to Ironforge|goto Ironforge|noway|c
+	step
+		buy 5 Silver Bar|q 2199/1
+	step
+		goto 36.4,3.6
+		.talk Talvash del Kissel##6826
+		..turnin The Shattered Necklace##2198
+		..accept Lore for a Price##2199
+		..turnin Lore for a Price##2199
+	step //82
+		goto 50.8,5.6
+		.talk Gerrig Bonegrip##2786
+		..turnin To Ironforge for Yagyin's Digest##727
+	step
+		goto 69.9,18.6
+		.talk High Explorer Magellas##5387
+		..turnin The Platinum Discs##2279
+		..accept The Platinum Discs##2439
+	step
+		goto 74.6,11.7
+		.talk Prospector Stormpike##1356
+		..turnin The Hidden Chamber##2240
+	step
+		goto 74.2,9.4
+		.talk Krom Stoutarm##6294
+		..turnin Reclaimed Treasure##1360
+	step
+		goto 77.5,11.8
+		.talk Historian Karnik##2916
+		..turnin Prospect of Faith##724
+		..accept Passing Word of a Threat##725
+	step
+		goto 77.3,9.7
+		.talk Advisor Belgrum##2918
+		..turnin Passing Word of a Threat##725
+		..accept Passing Word of a Threat##726
+	step
+		goto 77.5,11.8
+		.talk Historian Karnik##2916
+		..turnin Passing Word of a Threat##726
+	step
+		goto 33.9,59.3
+		.talk Dinita Stonemantle##7292
+		..turnin The Platinum Discs##2439
 	step //101
 		'Hearth to Stormwind|goto Stormwind City|noway|c
+	step //63
+		goto 69.5,40.4
+		.talk Brohann Caskbelly##5384
+		..accept In Search of The Temple##1448
+	step //65
+		goto 48.7,87.6
+		.talk High Sorcerer Andromath##5694
+		..accept Vital Supplies##1477
+	step
+		'Walk through the portal
+		.talk Jennea Cannon##5497
+		..accept Tabetha's Task##2861
+	step
+		goto 51.8,74.3
+		.talk Mazen Mac'Nadir##338
+		..accept Mazen's Behest##1363
+	step
+		goto 51.4,73.8
+		.talk Acolyte Dellis##5386
+		..turnin Mazen's Behest##1363
+		..accept Mazen's Behest##1364
 	step //102
 		'Buy the following items from the Auction House, double check in Booty when you get there if not enough in Stormwind City.
 		.buy 1 Green Hills of Stranglethorn - Page 1|q 339/1
@@ -4701,6 +4925,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		goto 27.1,77.2
 		.talk Crank Fizzlebub##2498
 		..accept Zanzil's Secret##621
+		..accept Venture Company Mining##600
 	step //109
 		goto 27.1,77.5
 		.talk Whiskey Slim##2491
@@ -4713,6 +4938,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		goto 27.8,77.1
 		.talk "Sea Wolf" MacKinley##2501
 		..accept Stoley's Debt##2872
+		..accept Scaring Shaky##606
 	step //112
 		goto 27.6,76.7
 		.talk Fin Fizracket##2486
@@ -4721,6 +4947,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		goto Stranglethorn Vale,28.1,76.2
 		.talk First Mate Crazz##2490
 		..accept The Bloodsail Buccaneers (1)##595
+	step //16
+		goto 28.3,77.6
+		.talk Drizzlik##2495
+		..accept Excelsior##628
 	step //114
 		goto 27.4,69.4
 		.from "Pretty Boy" Duncan##2545
@@ -4794,12 +5024,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		goto 28.6,75.9
 		.talk Dizzy One-Eye##2493
 		..accept Keep An Eye Out##576
-	step //129
-		goto 35.1,72.9
-		.' Click the Half-Buried Bottles|tip They are little blue bottles that can spawn anywhere along this beach close to the water. This is mostly a reminder to look out for them, skip to next step.
-		.get the Carefully Folded Note|n
-		.' Click the Carefully Folded Note|use Carefully Folded Note##4098
-		..accept Message in a Bottle (1)##594
 	step //130
 		goto 29.6,80.9
 		.' Click the Bloodsail Orders|tip They are scrolls laying on a box and in the tent here.
@@ -4826,19 +5050,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		.talk Fleet Master Seahorn##2487
 		..turnin The Bloodsail Buccaneers (4)##604
 		..accept The Bloodsail Buccaneers (5)##608
-	step //135
-		goto 38.5,80.6
-		.talk Princess Poobah##2634
-		..turnin Message in a Bottle (1)##594
-		..accept Message in a Bottle (2)##630
-	step //136
-		goto 41,83
-		.from King Mukla##1559
-		.get Shackle Key|q 630/1
-	step //137
-		goto 38.5,80.6
-		.talk Princess Poobah##2634
-		..turnin Message in a Bottle (2)##630
 	step //138
 		'While doing the next 3 steps, look for Cortello's Riddle on the ships:
 		.' Click Cortello's Riddle|tip It's a scroll.
@@ -4863,6 +5074,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 		..turnin The Bloodsail Buccaneers (5)##608
 	step //144
 		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
+	step //184
+		goto 37.8,3.6
+		.talk Brother Nimetz##739
+		..accept Kurzen's Mystery##207
 	step //145
 		goto 24.7,8.9
 		.get The Fourth Troll Legend|q 207/4
@@ -5010,9 +5225,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (40-4
 	step //179
 		ding 45
 ]])
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-49)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (45-49)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (50-54)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (50-54)
 	startlevel 45
 
 	step //1
@@ -5031,6 +5246,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		.' Click the Soggy Scroll|tip It's a rolled up scroll laying in the water under the bridge. It's very easy to to miss, so search hard.
 		.turnin Cortello's Riddle (1)##624
 		.accept Cortello's Riddle (2)##625
+	step
+		goto 16.87,38.4
+		.from Swampwalker##764
+		..get Khadgar's Essays on Dimensional Convergence|q 1364/1
 	step //6
 		goto 25.9,32.4
 		.talk Holaaru##18221
@@ -5057,6 +5276,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto Blasted Lands,66.5,21.4
 		.talk Quartermaster Lungertz##5393
 		..turnin Supplies for Nethergarde##1395
+	step
+		goto 67.6,19.2
+		.talk Watcher Mahar Ba##5385
+		..turnin Mazen'r Behest##1364
 	step //13
 		goto 65.5,24.3
 		.talk Alexandra Constantine##8609
@@ -5083,6 +5306,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		.' Click the Musty Scroll|tip A little white scroll on a small rock in the cave.
 		..turnin Cortello's Riddle (2)##625
 		..accept Cortello's Riddle (3)##626
+	step //1
+		goto Dustwallow Marsh,46.1,57.2
+		.talk Tabetha##6546
+		..turnin Tabetha's Task##2861
+		..accept Tiara of the Deep##2846
 	step //21
 		'Go southeast to Mudsprocket and fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
 	step //22
@@ -5104,8 +5332,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto 51.6,26.8
 		.talk Tran'rek##7876
 		..turnin Tran'rek##2864
+	step //66
+		goto Thousand Needles,78.1,77.1
+		.talk Wizzle Brassbolts##4453
+		..turnin The Brassbolts Brothers##2769
+		..accept Gahz'rilla##2770
+		.talk Fizzle Brassbolts##4454
+		..turnin News for Fizzle##1137
 	step //26
-		goto 59.8,24.7
+		goto Tanaris,59.8,24.7
 		.kill 10 Wastewander Bandit|q 1690/1
 		.kill 10 Wastewander Thief|q 1690/2
 		.kill Wastewander mobs|n
@@ -5207,6 +5442,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		.talk Jer'kai Moonweaver##7957
 		..turnin Doling Justice (1)##2970
 		..accept Doling Justice (2)##2972
+	step //142
+		goto 44.8,43.4
+		.talk Zorbin Fandazzle##14637
+		..accept Zapped Giants##7003
+		..accept Fuel for the Zapping##7721
+	step //143
+		'Continue to next step once there are no more spawns around.|goto 44.8,47.3
+		.' Use Zorbin's Ultra-Shrinker on giants|use Zorbin's Ultra-Shrinker##18904
+		.kill the shrunken giants|n
+		.get 15 Miniaturization Residue|q 7003/1
 	step //47
 		goto Feralas,43.5,42.8|n
 		.' Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,2|noway|c
@@ -5279,6 +5524,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		.' Use Yeh'kinya's Bramble on their corpses|use Yeh'kinya's Bramble##10699
 		.' Talk to their spirits that appear to collect their spirits
 		.' Collect 3 Screecher Spirits|goal 3 Screecher Spirits Collected|q 3520/1
+		.' Use Zorbin's Ultra-Shrinker on giants|use Zorbin's Ultra-Shrinker##18904
+		.kill the shrunken giants|n
+		.get 15 Miniaturization Residue|q 7003/1
+		.kill water elementals|n
+		.get 10 Water Elemental Core|q 7721/1
 	step //62
 		goto 43.5,42.7|n
 		.' Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,0.5|noway|c
@@ -5310,6 +5560,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 	step //68
 		goto 31.0,39.9|n
 		'Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c
+	step //160
+		goto 44.8,43.4
+		.talk Zorbin Fandazzle##14637
+		..turnin Zapped Giants##7003
+		..turnin Fuel for the Zapping##7721
 	step //69
 		goto 55.5,54.8
 		.kill yetis|n
@@ -5433,6 +5688,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		..turnin Cracking Maury's Foot##613
 	step //100
 		'Fly to Stormwind and train your skills|goto Stormwind City|noway|c
+	step //167
+		'Fly to Refuge Point|goto Arathi Highlands,45.8,46.1|noway|c
+	step //168
+		goto 62.5,33.7
+		.use Scroll of Myzrael##4472
+		.get 1 Eldritch Shackles|q 656/1
+	step //169
+		.talk Shards of Myzrael
+		..turnin Summoning the Princess##656
 	step //101
 		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
 	step //102
@@ -5501,6 +5765,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto 34.1,72.9
 		.' Click the Gryphon Eggs|tip They look like medium sized white eggs with blue spots on them.
 		.get 5 Gryphon Egg|q 9475/1
+	step
+		goto 33.8,75.2
+		.talk Atal'ai Exile##5598
+		..accept Jammal'an the Prophet##1446
 	step //118
 		goto 32.1,57.3
 		.' Click the Third Witherbark Cage to check it|goal Check Third Cage|q 2988/3
@@ -5555,13 +5823,32 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto 9.8,44.5
 		.talk Gryphon Master Talonaxe##5636
 		..turnin Witherbark Cages##2988
-	step //132
-		ding 48
-	step //133
-		'Fly to Stormwind|goto Stormwind City|noway|c
+		..accept The Altar of Zul##2989
+	step
+		goto 49,68.7
+		.goal Search the Altar of Zul|q 2989/1
+		.from Qiaga##7996
+		..collect Sacred Mallet##9241
+	step
+		goto 59.7,77.8
+		use Sacred Mallet##9241
+		.collect Mallet of Zul'Farrak##11435
+	step //131
+		goto 9.8,44.5
+		.talk Gryphon Master Talonaxe##5636
+		..turnin The Altar of Zul##2989
+		..accept Thadius Grimshade##2990
+	step //52
+		'Fly to Nethergarde Keep|goto Blasted Lands,65.4,19.2,9|noway|c
+	step
+		goto 66.9,19.5
+		.talk Thadius Grimshade##8022
+		..turnin Thadius Grimshade##2990
+		..accept Nekrum's Medallion##2991
+	step //78
+		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
 	step //134
-		goto Stormwind City,22.6,56.1|n
-		.'Ride the boat to Auberdine|goto Darkshore,32.4,43.7,1|noway|c
+		'Ride the boat to Auberdine|goto Darkshore,32.4,43.7,1|noway|c
 	step //135
 		'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
 	step //136
@@ -5585,22 +5872,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 	step //141
 		goto 31.0,39.9|n
 		'Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c
-	step //142
-		goto 44.8,43.4
-		.talk Zorbin Fandazzle##14637
-		..accept Zapped Giants##7003
-		..accept Fuel for the Zapping##7721
-	step //143
-		'Continue to next step once you have 10 Cores, you'll get more giants later.|goto 44.8,47.3
-		.' Use Zorbin's Ultra-Shrinker on giants|use Zorbin's Ultra-Shrinker##18904
-		.kill the shrunken giants|n
-		.get 15 Miniaturization Residue|q 7003/1
-		.kill water elementals|n
-		.get 10 Water Elemental Core|q 7721/1
-	step //144
-		goto 44.8,43.4
-		.talk Zorbin Fandazzle##14637
-		..turnin Fuel for the Zapping##7721
 	step //145
 		goto 51.5,32.4|n
 		.' The path up to the yeti cave starts here|goto Feralas,51.5,32.4,0.3|noway|c
@@ -5612,11 +5883,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto 42.4,22
 		.talk Rockbiter##7765
 		..accept The Giant Guardian##2844
-	step //148
-		goto 39.9,21.69
-		.' Use Zorbin's Ultra-Shrinker on giants|use Zorbin's Ultra-Shrinker##18904
-		.kill the shrunken giants|n
-		.get 15 Miniaturization Residue|q 7003/1
 	step //149
 		goto 38.5,15.8
 		.' Click the Flame of Byltan|tip It's a purple flame in the dark gazeebo.
@@ -5667,10 +5933,26 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		..accept Rescue OOX-22/FE!##2767
 	step //159
 		goal Escort OOX-22/FE to safety|q 2767/1|tip DON'T GET TO FAR AWAY FROM THE CHICKEN, IF HE LEAVES YOUR VIEW DISTANCE HE DESPAWNS. IMPORTANT DURING THE SECOND WAVE WHEN 3 APES SPAWN WAY FAR AHEAD ON THE ROAD. BE PATIENT.
-	step //160
-		goto 44.8,43.4
-		.talk Zorbin Fandazzle##14637
-		..turnin Zapped Giants##7003
+	step
+		goto Desolace,50.5,86.7
+		.talk Centaur Pariah##13717
+		..accept The Pariah's Instruction##7067
+	step
+		goto 62.2,39.6
+		.talk Willow##13656
+		..accept Twisted Evil##7028
+	step //164
+		goto 64.7,10.5
+		.talk Baritanas Skyriver##6706
+		..fpath Nijel's Point
+	step
+		goto 63.8,10.7
+		.talk Keeper Marandis##13698
+		..accept Corruption of Earth and Seed##7065
+	step
+		goto 68.5,8.9
+		.talk Talendria##11715
+		..accept Vyletongue Corruption##7041
 	step //161
 		'Hearth to Feathermoon Stronghold|goto Feralas,31.0,44.0,5|use Hearthstone##6948|noway|c
 	step //162
@@ -5689,10 +5971,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		ding 49
 	step //165
 		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,0.1|noway|c
+	step
+		goto 51.4,28.8
+		.talk Trenton Lighthammer##7804
+		..accept Troll Temper##3042
 	step //166
-		goto Tanaris,51.8,28.7
+		goto 51.8,28.7
 		.talk Marin Noggenfogger##7564
 		..accept The Thirsty Goblin##2605
+	step
+		goto 52.5,28.5
+		.talk Chief Engineer Bilgewhizzle##7407
+		..accept Divino-matic Rod##2768
 	step //167
 		home Gadgetzan
 	step //168
@@ -5704,6 +5994,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		.talk Tran'rek##7876
 		..accept Thistleshrub Valley##3362
 		..accept Super Sticky##4504
+		..accept Scarab Shells##2865
 	step //170
 		goto 50.2,27.5
 		.talk Senior Surveyor Fizzledowser##7724
@@ -5764,6 +6055,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto 67,22.4
 		.talk Yeh'kinya##8579
 		..turnin Screecher Spirits##3520
+		..accept The Prophecy of Mosh'aru##3527
 	step //184
 		goto 51.6,26.8
 		.talk Tran'rek##7876
@@ -5781,6 +6073,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto 51.1,26.9
 		.talk Sprinkle##7583
 		..turnin In Good Taste##2606
+		..accept Sprinkle's Secret Ingredient##2641
 	step //188
 		goto 50.9,27
 		.talk Alchemist Pestlezugg##5594
@@ -5789,6 +6082,50 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		goto 50.2,27.5
 		.talk Senior Surveyor Fizzledowser##7724
 		..accept The Scrimshank Redemption##10
+	step
+		'Make/find a Zul Farrak group|goto Zul Farrak|noway|c
+	step //169
+		goto Tanaris,51.6,26.8
+		.talk Tran'rek##7876
+		..turnin Scarab Shells##2865
+	step
+		goto 51.4,28.8
+		.talk Trenton Lighthammer##7804
+		..turnin Troll Temper##3042
+	step
+		goto 52.5,28.5
+		.talk Chief Engineer Bilgewhizzle##7407
+		..turnin Divino-matic Rod##2768
+	step //66
+		goto Thousand Needles,78.1,77.1
+		.talk Wizzle Brassbolts##4453
+		..turnin Gahz'rilla##2770
+	step
+		'Fly to Nijel's Point|goto Desolace|noway|c
+	step
+		home Nijel's Point
+	step
+		'Make/find group for Maraudon|goto Maraudon|noway|c
+	step //77
+		'Hearth to Nijel's Point|goto Desolace|use Hearthstone##6948|noway|c
+	step
+		goto 63.8,10.7
+		.talk Keeper Marandis##13698
+		..turnin Corruption of Earth and Seed##7065
+	step
+		goto 68.5,8.9
+		.talk Talendria##11715
+		..turnin Vyletongue Corruption##7041
+	step
+		goto 62.2,39.6
+		.talk Willow##13656
+		..turnin Twisted Evil##7028
+	step
+		goto 50.5,86.7
+		.talk Centaur Pariah##13717
+		..turnin The Pariah's Instruction##7067
+	step //21
+		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
 	step //190
 		goto 56.0,70.2|n
 		.' The path down to 'The Scrimshank Redemption' starts here|goto Tanaris,56.0,70.2,0.3|noway|c
@@ -5811,6 +6148,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		..accept Rescue OOX-17/TN!##648
 	step //194
 		goal Escort OOX-17/TN to safety|q 648/1
+	step //183
+		goto 67,22.4
+		.talk Yeh'kinya##8579
+		..turnin The Prophecy of Mosh'aru##3527
+		..accept The Ancient Egg##4787
 	step //195
 		'Go outside to 50.2,27.5|goto 50.2,27.5
 		.talk Senior Surveyor Fizzledowser##7724
@@ -5826,6 +6168,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		.talk Senior Surveyor Fizzledowser##7724
 		..turnin Insect Part Analysis (2)##113
 		..accept Rise of the Silithid##162
+	step //19
+		'Fly to Mudsprocket|goto Dustwallow Marsh,42.9,72.4,0.5|noway|c
+	step //1
+		goto Dustwallow Marsh,46.1,57.2
+		.talk Tabetha##6546
+		..turnin Tiara of the Deep##2846
 	step //198
 		'Fly to Ratchet|goto The Barrens,63.0,38.1,2|noway|c
 	step //199
@@ -5849,12 +6197,25 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (45-4
 		..turnin Rescue OOX-17/TN!##648
 		..turnin Rescue OOX-22/FE!##2767
 		..accept An OOX of Your Own##3721|instant
+	step //52
+		'Fly to Nethergarde Keep|goto Blasted Lands,65.4,19.2,9|noway|c
+	step
+		goto 66.9,19.5
+		.talk Thadius Grimshade##8022
+		..turnin Nekrum's Medallion##2991
+		..accept The Divination##2992
+		..turnin The Divination##2992
+		..accept Return to the Hinterlands##2993
+	step //53
+		goto Blasted Lands,67.5,19.3
+		.talk Ambassador Ardalan##7826
+		..accept Petty Squabbles##2783
 	step //204
 		ding 50
 ]])
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-54)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (50-54)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (55-58)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (55-58)
 	startlevel 50
 
 	step //1
@@ -5867,6 +6228,40 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
 	step //5
 		'Go southeast to the Badlands|goto Badlands|noway|c
+	step
+		goto 53.8,43.3
+		.talk Sigrun Ironhew##2860
+		..accept Fiery Blaze Enchantments##706
+	step
+		goto 61.9,54.3
+		.talk Garek##2888
+		..accept Tremors of the Earth##717
+	step
+		goto 72.3,66.9
+		.collect Opal Runestone|q 717
+	step
+		goto 81.3,64.3
+		.collect Amethyst Runestone|q 717
+	step
+		goto 83.5,32.8
+		.collect Diamond Runestone|q 717
+	step
+		goto 81.5,49.9
+		'Open the Seal of Earth
+		from Blacklash##2757
+		.get Blacklash's Bindings|q 717/1
+		from Hematus##2759
+		.get Chains of Hematus|q 717/2
+		from Scorched Guardian##2726
+		.get Black Drake's Heart|q 706/1
+	step
+		goto 53.8,43.3
+		.talk Sigrun Ironhew##2860
+		..turnin Fiery Blaze Enchantments##706
+	step
+		goto 61.9,54.3
+		.talk Garek##2888
+		..turnin Tremors of the Earth##717
 	step //6
 		goto Badlands,4.9,61.2|n
 		.' The path over to Searing Gorge starts here|goto Badlands,4.9,61.2,0.3|noway|c
@@ -5984,6 +6379,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.talk Squire Maltrake##8509
 		..turnin Squire Maltrake##3462
 		..accept Set Them Ablaze!##3463
+	step
+		kill Dark Iron dwarves|n
+		.get Grimesilt Outhouse Key|n
+		.' Click the Grimesilt Outhouse Key|use Grimesilt Outhouse Key##11818
+		..accept The Key to Freedom##4451
 	step //32
 		goto 33.3,54.5
 		.' Click the Sentry Brazier|tip At the top of the tower, click the little metal blazer on the ground.
@@ -6009,13 +6409,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		..accept Caught!##4449
 	step //37
 		ding 51
-	step //38
-		goto 63.3,59.7
-		.kill 8 Dark Iron Geologist|q 4449/1
-	step //39
-		goto 65.5,62.3
-		.' Click the Wooden Outhouse
-		..turnin Caught!##4449
 	step //40
 		goto 63.9,61
 		.talk Dorius Stonetender##8284
@@ -6025,6 +6418,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.' Click the Singed Letter
 		..turnin Suntara Stones (1)##3367
 		..accept Suntara Stones (2)##3368
+	step //38
+		goto 63.3,59.7
+		.kill 8 Dark Iron Geologist|q 4449/1
+	step //35
+		goto 65.5,62.3
+		.' Click the Wooden Outhouse
+		..turnin Caught!##4449
 	step //41
 		goto 39.1,39
 		.talk Squire Maltrake##8509
@@ -6054,8 +6454,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		..turnin What the Flux?##7722
 	step //45
 		'Fly to Ironforge|goto Ironforge|noway|c
-	step //46
-		home Ironforge
+	step
+		goto 69.9,18.6
+		.talk High Explorer Magellas##5387
+		..accept Portents of Uldum##2963
 	step //47
 		goto Ironforge,67.8,8.3
 		.talk Curator Thorius##8256
@@ -6064,6 +6466,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		goto Ironforge,77.5,11.8
 		.talk Historian Karnik##2916
 		..accept Passing the Burden##3448
+		..turnin Portents of Uldum##2963
+		..accept Seeing What Happens##2946
 	step //49
 		goto 75.8,23.4
 		.talk Laris Geardawdle##9616
@@ -6074,18 +6478,21 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		..turnin Passing the Burden##3448
 		..accept Arcane Runes##3449
 		..accept An Easy Pickup##3450
+	step //46
+		home Ironforge
 	step //51
 		goto 70.9,94.6
 		.talk Xiggs Fuselighter##8517
 		..turnin An Easy Pickup##3450
 		..accept Signal for Pickup##3451
 		..turnin Signal for Pickup##3451
+	step
+		goto 70.3,90.7
+		.talk Kelv Sternhammer##5113
+		..accept A Troubled Spirit##8417
+		only Gnome Warrior, Dwarf Warrior
 	step //52
 		'Fly to Nethergarde Keep|goto Blasted Lands,65.4,19.2,9|noway|c
-	step //53
-		goto Blasted Lands,67.5,19.3
-		.talk Ambassador Ardalan##7826
-		..accept Petty Squabbles##2783
 	step //54
 		'Go northwest to the Swamp of Sorrows|goto Swamp of Sorrows|noway|c
 	step //55
@@ -6095,41 +6502,108 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		..accept A Tale of Sorrow##2801
 		..'Listen to his story
 		..turnin A Tale of Sorrow##2801
+		..accept The Stones That Bind Us##2681
+	step //55
+		goto 34.3,66.1
+		.talk the Fallen Hero of the Horde##7572
+		..turnin A Troubled Spirit##8417
+		..accept Warrior Kinship##8423
+		only Warrior
 	step //56
 		'Go southeast to the Blasted Lands|goto Blasted Lands|noway|c
-	step //57
-		goto Blasted Lands,50.6,14.2
-		.talk Bloodmage Drazial##7505
-		..accept Snickerfang Jowls##2581
-		..accept A Boar's Vitality##2583
-		..accept The Decisive Striker##2585
-		.talk Bloodmage Lynnore##7506
-		..accept The Basilisk's Bite##2601
-		..accept Vulture's Vigor##2603
-	step //58
-		.' At Grind Point 1: 49,18
-		.' At Grind Point 2: 45,26
-		.' At Grind Point 3: 46,34
-		.' At Grind Point 4: 56,37
-		.' At Grind Point 5: 56.3,30.5
-		.' At Grind Point 6: 63,28
-		'Follow the Grinding Circle killing boars, hyenas, vultures, basilisks, and scorpions until you:
-		..collect 6 Blasted Boar Lung##8392
-		..collect 5 Snickerfang Jowl##8391
-		..collect 14 Vulture Gizzard##8396
-		..collect 11 Basilisk Brain##8394
-		..collect 6 Scorpok Pincer##8393
-	step //59
-		goto 50.7,14.2
-		.talk Bloodmage Lynnore##7506
-		..turnin The Basilisk's Bite##2601
-		..turnin Vulture's Vigor##2603
-		.talk Bloodmage Drazial##7505
-		..turnin Snickerfang Jowls##2581
-		..turnin A Boar's Vitality##2583
-		..turnin The Decisive Striker##2585
-	step //60
-		ding 52
+	step
+		goto 43.4,10.6
+		.kill 1 Servant of Grol|q 2681/2
+	step
+		goto 41.2,14.4
+		.kill 2 Servant of Grol|q 2681/2
+	step
+		goto 43.3,40.7
+		.kill 1 Servant of Sevine|q 2681/4
+	step
+		goto 41,40.1
+		.kill 2 Servant of Sevine|q 2681/4
+	step
+		goto 38.2,33.9
+		.kill 3 Servant of Sevine|q 2681/4
+	step
+		goto 48.3,42.9
+		.kill 3 Servant of Grol|q 2681/2
+	step
+		goto 51.7,57.1
+		.kill 1 Servant of Razelikh|q 2681/1
+	step
+		goto 53.3,58.8
+		.kill 2 Servant of Razelikh|q 2681/1
+	step
+		goto 54.1,52.5
+		.kill 3 Servant of Razelikh|q 2681/1
+	step
+		goto 55,48.5
+		.kill 4 Servant of Razelikh|q 2681/1
+	step
+		goto 61.8,51.2
+		.kill 5 Servant of Razelikh|q 2681/1
+	step
+		goto 63.1,55.7
+		.kill 6 Servant of Razelikh|q 2681/1
+	step
+		goto 62.8,56.8
+		.kill 7 Servant of Razelikh|q 2681/1
+	step
+		goto 56.2,47.3
+		.kill 7 Hellboar|q 8423/1
+		only Warrior
+	step
+		goto Blasted Lands,64.3,46.8
+		.kill 1 Servant of Allistarj|q 2681/3
+	step
+		goto 63.3,40.8
+		.kill 2 Servant of Allistarj|q 2681/3
+	step
+		goto 64.4,34.3
+		.kill 3 Servant of Allistarj|q 2681/3
+	step
+		'Find 2 respawns
+		.kill 9 Servant of Razelikh|q 2681/1
+	step //55
+		goto Swamp of Sorrows,34.3,66.1
+		.talk the Fallen Hero of the Horde##7572
+		..turnin The Stones That Bind Us##2681
+		..accept Heroes of Old##2702
+		.talk Corporal Thund Splithoof##7750
+		..turnin Heroes of Old##2702
+		..accept Heroes of Old##2701|instant
+		.talk the Fallen Hero of the Horde##7572
+		..accept Kirith##2721
+	step //55
+		goto Swamp of Sorrows,34.3,66.1
+		.talk the Fallen Hero of the Horde##7572
+		..turnin Warrior Kinship##8423
+		..accept War on the Shadowsworn##8424
+		only Warrior
+	step
+		goto Blasted Lands,69.2,31
+		.kill Kirith the Damned##7728|n
+		.talk Spirit of Kirith##7729
+		..turnin Kirith##2721
+		..accept The Cover of Darkness##2743
+	step
+		goto Blasted Lands,64.8,33.2
+		.kill 20 Shadowsworn Adept|q 8424/1
+		.kill 10 Shadowsworn Cultist|q 8424/2
+		.kill 20 Shadowsworn Thug|q 8424/3
+	step //55
+		goto Swamp of Sorrows,34.3,66.1
+		.talk the Fallen Hero of the Horde##7572
+		..turnin The Cover of Darkness##2743
+		..accept The Demon Hunter##2744
+	step //55
+		goto Swamp of Sorrows,34.3,66.1
+		.talk the Fallen Hero of the Horde##7572
+		..turnin War on the Shadowsworn##8424
+		..accept Voodoo Feathers##8425
+		only Warrior
 	step //61
 		'Fly to Stormwind|goto Stormwind City|noway|c
 	step //62
@@ -6261,9 +6735,32 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.kill 8 Jadefire Betrayer|q 4906/2
 		.kill 8 Jadefire Trickster|q 4906/3
 		.get 5 Jadefire Felbind|q 939/1
+	step //83
+		goto 64.8,8.1
+		.talk Nafien##15395
+		..turnin Speak to Nafien##8462
+		..accept Deadwood of the North##8461
+	step //84
+		goto 63.1,8.9
+		.kill 6 Deadwood Den Watcher|q 8461/1
+		.kill 6 Deadwood Avenger|q 8461/2
+		.kill 6 Deadwood Shaman|q 8461/3
+	step //85
+		goto 64.8,8.1
+		.talk Nafien##15395
+		..turnin Deadwood of the North##8461
+	step //87
+		'Go through the tunnel to Moonglade|goto Moonglade|noway|c
+		.' At the fork, the tunnel heading north is the tunnel to Moonglade
+	step
+		goto 36.2,41.8
+		.talk Keeper Remulos##11832
+		..turnin Seed of Life##7066
 	step //93
-		goto 62.5,24.2|n
-		.talk Mishellena##12578
+		goto 48.1,67.3
+		.talk Sindrayl##10897
+		..fpath Moonglade
+	step
 		'Fly to Emerald Sanctuary|goto Felwood,51.1,81.6,2|noway|c
 	step //94
 		goto 51.2,82.3
@@ -6307,6 +6804,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.talk Loh'atu##11548
 		..turnin Spiritual Unrest##5535
 		..turnin A Land Filled with Hatred##5536
+	step
+		goto 42.4,42.6
+		.talk Ogtinc##8405
+		..turnin Cenarion Aid##8254
+		..accept Of Coursers We Know##8255
+		only Priest
 	step //104
 		goto 53.5,21.8
 		.talk Kim'jael##8420
@@ -6324,6 +6827,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.talk Kim'jael##8420
 		..turnin Kim'jael Indeed!##3601
 		..accept Kim'jael's "Missing" Equipment##5534
+	step
+		goto 51.6,25
+		from Mosshoof Courser##8761
+		.get 4 Healthy Courser Gland|q 8255/1
+		only Priest
+	step
+		goto 42.4,42.6
+		.talk Ogtinc##8405
+		..turnin Of Coursers We Know##8255
+		..accept The Ichor of Undeath##8256
+		only Priest
 	step //107
 		goto 39.5,50.2
 		.' Click the Rune of Jin'yael|tip A tall, purple glowing monument looking thing.
@@ -6344,13 +6858,65 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		goto 47.2,42.9
 		.kill nagas|n
 		.get Some Rune|q 5534/1
+	step //111
+		goto 47.2,42.9
+		from Undead
+		.get Ichor of Undeath|q 8256/1
+		only Priest
+	step
+		goto 60.8,66.3
+		.talk Loramus Thalipedes##7783
+		..turnin The Demon Hunter##2744
+		..accept Loramus##3141
+		..turnin Loramus##3141
+		..accept Breaking the Ward##3508
+		..turnin Breaking the Ward##3508
+		..accept Name of the Beast##3509
 	step //112
 		goto 46.1,39.0|n
 		.' The path out of the naga beach starts here|goto Azshara,46.1,39.0,0.5|noway|c
+	step
+		goto 42.4,42.6
+		.talk Ogtinc##8405
+		..turnin The Ichor of Undeath##8256
+		..accept Blood of Morphaz##8257
+		only Priest
 	step //113
 		goto 53.5,21.8
 		.talk Kim'jael##8420
 		..turnin Kim'jael's "Missing" Equipment##5534
+	step
+		goto 77.1,42.8
+		.talk Lord Arkkoroc##6134
+		..turnin Name of the Beast##3509
+		..accept Name of the Beast##3510
+	step
+		goto 56.7,44.8
+		from Hetaera##6140
+		.get Hetaera's Beaten Head|q 3510/1
+		.get Hetaera's Bloodied Head|q 3510/2
+		.get Hetaera's Bruised Head|q 3510/3
+	step
+		goto 77.1,42.8
+		.talk Lord Arkkoroc##6134
+		..turnin Name of the Beast##3510
+		..accept Name of the Beast##3511
+	step
+		goto 60.8,66.3
+		.talk Loramus Thalipedes##7783
+		..turnin Name of the Beast##3511
+		..accept Azsharite##3602
+	step //114
+		goto 46.12,66.83|n
+		.' The path out of the naga beach starts here|goto Azshara,46.12,66.83,0.5|noway|c
+	step
+		goto 60.9,79.8
+		.get 20 Crystallized Azsharite|q 3602/1
+	step
+		goto 60.8,66.3
+		.talk Loramus Thalipedes##7783
+		..turnin Azsharite##3602
+		..accept The Formation of Felbane##3621
 	step //114
 		goto 46.12,66.83|n
 		.' The path out of the naga beach starts here|goto Azshara,46.12,66.83,0.5|noway|c
@@ -6367,6 +6933,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		goto 75.8,23.4
 		.talk Laris Geardawdle##9616
 		..turnin A Little Slime Goes a Long Way (1)##4512
+		..accept A Little Slime Goes a Long Way (2)##4513
 	step //118
 		goto 31,4.8
 		.talk Tymor##8507
@@ -6405,6 +6972,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.kill 15 Firegut Ogre Mage|q 3823/1
 		.kill 7 Firegut Ogre|q 3823/2
 		.kill 7 Firegut Brute|q 3823/3
+	step //137
+		goto 84.6,68.7
+		.talk Oralius##9177
+		..turnin Extinguish the Firegut##3823
+		..accept Gor'tesh the Brute Lord##3824
 	step //129
 		goto 66.1,21.9
 		.talk Yuka Screwspigot##9544
@@ -6427,9 +6999,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.' Click the red crystals that float over their corpses
 		.get 8 Broodling Essence|q 4726/1
 	step //133
-		goto 51.58,56.74
+		goto 39.3,55.3
 		.kill Blackrock orcs|n
 		.get 50 Blackrock Medallion|q 4283/1
+		.from Gor'tesh##9176
+		..get Gor'tesh's Lopped Off Head|q 3824/1
 	step //134
 		goto 54.1,40.7
 		.' Click the Tablet of Seven to Transcribe it|tip It looks like a small stone block in front of a dwarf statue.
@@ -6448,8 +7022,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 	step //137
 		goto 84.6,68.7
 		.talk Oralius##9177
-		..turnin Extinguish the Firegut##3823
+		..turnin Gor'tesh the Brute Lord##3824
+		..accept Ogre Head On A Stick = Party##3825
 		..turnin FIFTY! YEP!##4283
+	step
+		goto 81,46.8
+		.goal Gor'tesh Head Planted|q 3825/1
+	step //137
+		goto 84.6,68.7
+		.talk Oralius##9177
+		..turnin Ogre Head On A Stick = Party##3825
+
 	step //138
 		'Fly to Ironforge|goto Ironforge|noway|c
 	step //139
@@ -6537,6 +7120,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.talk High Priestess MacDonnell##11053
 		..turnin Return to Chillwind Camp##5217
 		..accept Target: Dalson's Tears##5219
+	step
+		goto 42.9,84.5
+		.talk Anchronite Truuen##17238
+		..accept The Mark of the Lightbringer##9474
 	step //160
 		goto 46.2,52.4
 		.from Cauldron Lord Malvinious##11077
@@ -6559,6 +7146,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		goto 47.4,49.7
 		.' Unlock the Locked Cabinet with the Dalson Cabinet Key|tip In the house, on the second floor in the small room.
 		..accept Locked Away##5060|instant
+	step
+		goto 55.2,23.5
+		.get Mark of the Lightbringer|q 9474/1
 	step //164
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 	step //165
@@ -6571,15 +7161,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.talk Ol' Emma##3520
 		..turnin Good Natured Emma##5048
 		..accept Good Luck Charm##5050
-	step //167
-		'Fly to Refuge Point|goto Arathi Highlands,45.8,46.1|noway|c
-	step //168
-		goto 62.5,33.7
-		.use Scroll of Myzrael##4472
-		.get 1 Eldritch Shackles|q 656/1
-	step //169
-		.talk Shards of Myzrael
-		..turnin Summoning the Princess##656
 	step //170
 		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
 	step //171
@@ -6587,6 +7168,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.talk High Priestess MacDonnell##11053
 		..turnin Return to Chillwind Camp##5220
 		..accept Target: Writhing Haunt##5222
+	step
+		goto 42.9,84.5
+		.talk Anchronite Truuen##17238
+		..turnin The Mark of the Lightbringer##9474
+		..accept Tomb of the Lightbringer##9446
+	step
+		goal Escort Anchorite Truuen to Uther's Tomb|q 9446/1
 	step //172
 		goto 53,66
 		.from Cauldron Lord Razarch##11076
@@ -6637,12 +7225,34 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
 		..turnin Return to Chillwind Camp##5223
+		..turnin Tomb of the Lightbringer##9446
+	step //128
+		'Fly to Aerie Peak|goto The Hinterlands|noway|c
+	step //131
+		goto 9.8,44.5
+		.talk Gryphon Master Talonaxe##5636
+		..turnin Return to the Hinterlands##2993
+		..accept Saving Sharpbeak##2994
+	step
+		goto 41,59.8
+		.get Violet Tragan|q 2641/1
+	step
+		goto 57.6,86.8
+		.get Ancient Egg|q 4787/1
+	step
+		goto 53.4,67.1
+		.goal Open Sharpbeak's Cage|q 2994/1
+	step //131
+		goto 9.8,44.5
+		.talk Gryphon Master Talonaxe##5636
+		..turnin Saving Sharpbeak##2994
+	
 	step //183
-		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
+		'Fly to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 ]])
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-58)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (55-58)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (58-61)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (58-61)
 	startlevel 55
 
 	step //1
@@ -6686,10 +7296,44 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		.talk Alchemist Pestlezugg##5594
 		..turnin March of the Silithid##4493
 		..accept Bungle in the Jungle##4496
+	step //187
+		goto 51.1,26.9
+		.talk Sprinkle##7583
+		..turnin Sprinkle's Secret Ingredient##2641
+		..accept Delivery for Marin##2661
+	step
+		goto 51.8,28.7
+		.talk Marin Noggenfogger##7564
+		..turnin Delivery for Marin##2661
+		..accept Noggenfogger Elixir##2662
+		..turnin Noggenfogger Elixir##2662
+	step //183
+		goto 67,22.4
+		.talk Yeh'kinya##8579
+		..turnin The Ancient Egg##4787
+		..accept The God Hakkar##3528
 	step //13
 		goto 52.7,45.9
 		.talk Marvon Rivetseeker##7771
 		..turnin The Stone Circle##3444
+		..accept Into the Depths##3446
+		..accept Secret of the Circle##3447
+	step
+		goto 37.6,81.4
+		.turnin Seeing What Happens##2946
+		.accept The Stone Watcher##2954
+		.turnin The Stone Watcher##2954
+		.accept Return to Ironforge##2977
+	step
+		'Make Sunken Temple Group
+	step //55
+		goto Swamp of Sorrows,34.3,66.1
+		.talk the Fallen Hero of the Horde##7572
+		..turnin Voodoo Feathers##8425
+		only Warrior
+	step
+		//TODO
+		'Deliver whatever and go to ungoro
 	step //14
 		'Go southwest to the Un'Goro Crater|goto Un'Goro Crater|noway|c
 	step //15
@@ -6764,7 +7408,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		goto 44.7,8.1
 		.talk Linken##8737
 		..turnin It's a Secret to Everybody (2)##3845
-		..accept It's a Secret to Everybody (3)##3908
 	step //28
 		goto 45.2,5.8
 		.talk Gryfe##10583
@@ -6884,15 +7527,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		..turnin Chasing A-Me 01 (2)##4244
 		..accept Chasing A-Me 01 (3)##4245
 		.' Escort A-Me 01 to Karna Remtravel|goal Protect A-Me 01 until you reach Karna Remtravel|q 4245/1
+	step //53
+		goto 46.4,13.4
+		.talk Karna Remtravel##9618
+		..turnin Chasing A-Me 01 (3)##4245
 	step //52
 		goto 56.5,12.4
 		.' Go up the hill
 		.' Click the Northern Pylon|tip It looks like a big machine with a huge crystal spinning on top of it.
 		.' Examine the Northern Pylon|goal Discover and examine the Northern Crystal Pylon|q 4285/1
-	step //53
-		goto 46.4,13.4
-		.talk Karna Remtravel##9618
-		..turnin Chasing A-Me 01 (3)##4245
 	step //54
 		'Follow the path up the moutain to 49.7,45.7|goto 49.7,45.7
 		.' Use Krakle's Thermometer on the Fire Plume Ridge Hot Spot|use Krakle's Thermometer##12472|tip It's a big black rock with a bunch of red cracks in it.
@@ -6948,10 +7591,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		goto 42.9,9.6
 		.talk Muigin##9119
 		..turnin Muigin and Larion##4141
+		..accept A Visit to Gregan##4142
 	step //65
 		goto 44.2,11.6
 		.talk Shizzle##9998
 		..turnin Shizzle's Flyer##4503
+	step //27
+		goto 44.7,8.1
+		.talk Linken##8737
+		..accept It's a Secret to Everybody (3)##3908
 	step //66
 		'You need 25 Un'Goro Soil before leaving Un'Goro Crater.
 		.collect 25 Un'Goro Soil##11018
@@ -7015,20 +7663,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		...accept Ancient Spirit##4261
 	step //82
 		goal Help Arei get to Safety|q 4261/1
-	step //83
-		goto 64.8,8.1
-		.talk Nafien##15395
-		..turnin Speak to Nafien##8462
-		..accept Deadwood of the North##8461
-	step //84
-		goto 63.1,8.9
-		.kill 6 Deadwood Den Watcher|q 8461/1
-		.kill 6 Deadwood Avenger|q 8461/2
-		.kill 6 Deadwood Shaman|q 8461/3
 	step //85
 		goto 64.8,8.1
 		.talk Nafien##15395
-		..turnin Deadwood of the North##8461
 		..accept Speak to Salfa##8465
 	step //86
 		ding 57
@@ -7046,6 +7683,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		..turnin The New Springs##980
 		..accept Strange Sources##4842
 		..turnin It's a Secret to Everybody (3)##3908
+		..accept The Videre Elixir##3909
 		..accept Threat of the Winterfall##5082
 	step //90
 		'As you run around Winterspring, look for big blue feathers on the ground:
@@ -7194,15 +7832,53 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (58-61)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (58-61)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (62-63)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (62-63)
 	startlevel 58
-
+	
+	step
+		'Travel to Rebel Camp, Stranglethorn Vale|goto Stranglethorn Vale|noway|c
+	step
+		goto 50.6,20.5
+		.talk Galvan the Ancient##7802
+		..turnin The Formation of Felbane##3621
+		..accept Enchanted Azsharite Fel Weaponry##3625
+		..turnin Enchanted Azsharite Fel Weaponry##3625
+		..accept Return to the Blasted Lands##3626
+	step //52
+		'Fly to Nethergarde Keep|goto Blasted Lands,65.4,19.2,9|noway|c
 	step //1
 		'Go inside Nethergarde Keep at 63.5,17|goto Blasted Lands,63.5,17
 		.talk Bernie Heisten##3546
 		..buy 1 Nethergarde Bitter|q 9563/1
+	step
+		goto Swamp of Sorrow,34.3,66.2
+		.talk Fallen Hero of the Horde##7572
+		..turnin Return to the Blasted Lands##3626
+		..accept Uniting the Shattered Amulet##3627
+	step
+		goto Blasted Lands,42.6,13
+		.from Grol the Destroyer##7665
+		..get Amulet of Grol|q 3627/2
+	step
+		goto 40.8,30
+		.from Lady Sevine##7667
+		..get Amulet of Sevine|q 3627/3
+	step
+		goto 66.7,29.2
+		.from Archmage Allistarj##7666
+		..get Amulet of Allistarj|q 3627/1
+	step
+		goto Swamp of Sorrow,34.3,66.2
+		.talk Fallen Hero of the Horde##7572
+		..turnin Uniting the Shattered Amulet##3627
+		..accept You Are Rakh'likh, Demon##3628
+
+	step
+		goto Swamp of Sorrow,34.3,66.2
+		.talk Fallen Hero of the Horde##7572
+		..turnin You Are Rakh'likh, Demon##3628
 	step //2
 		goto 58.3,55.9
 		.talk Watch Commander Relthorn Netherwane##16841
@@ -7410,44 +8086,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (58-6
 		.talk Wing Commander Gryphongar##20232
 		..turnin Mission: The Abyssal Shelf##10163
 		..accept Go to the Front##10382
-	step //50
-		goto 78.3,34.5|n
-		.talk Gryphoneer Windbellow|tip Right next to an Armored Gryphon Destroyer.
-		..'Fly to Honor Point|goto Hellfire Peninsula,68.7,28.2,1|noway|c
-	step //51
-		goto 68.3,28.6
-		.talk Field Marshal Brock##20793
-		..turnin Go to the Front##10382
-		..accept Disruption - Forge Camp: Mageddon##10394
-	step //52
-		goto 64.8,31.9
-		.kill 10 Gan'arg Servant|q 10394/1
-		.kill Razorsaw|q 10394/2
-	step //53
-		goto 68.3,28.6
-		.talk Field Marshal Brock##20793
-		..turnin Disruption - Forge Camp: Mageddon##10394
-		..accept Enemy of my Enemy...##10396
-	step //54
-		goto 65.5,33.5
-		.kill 3 Fel Cannon MKI|q 10396/1
-	step //55
-		goto 68.3,28.6
-		.talk Field Marshal Brock##20793
-		..turnin Enemy of my Enemy...##10396
-		..accept Invasion Point: Annihilator##10397
-	step //56
-		goto 53,27.7
-		.kill Warbringer Arix'Amal|q 10397/1
-		.get Burning Blade Missive|n
-		.' Click the Burning Blade Missive|use Burning Blade Missive##29588
-		..accept The Dark Missive##10395
-		.get Burning Legion Gate Key|q 10397/3
-		.goal Close Burning Legion Gate|q 10397/2
-	step //57
-		goto 68.3,28.6
-		.talk Field Marshal Brock##20793
-		..turnin Invasion Point: Annihilator##10397
 	step //58
 		'Fly to Honor Hold|goto Hellfire Peninsula,54.6,62.6,0.5|noway|c
 	step //59
@@ -7467,20 +8105,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (58-6
 		goto 54.3,63.6
 		.talk Assistant Klatu##22430
 		..turnin Digging for Prayer Beads##10916
-	step //63
-		goto 56.7,66.5
-		.talk Warp-Scryer Kryv##16839
-		..accept The Path of Glory##10047
-		..turnin The Dark Missive##10395
-		..accept The Heart of Darkness##10399
-	step //64
-		goto 56.6,66.7
-		.talk Force Commander Danath Trollbane##16819
-		..accept Overlord##10400
-	step //65
-		goto 56.7,66.3
-		.talk Lieutenant Chadwick##17557
-		..accept Weaken the Ramparts##9575
 	step //66
 		goto 50.9,60.2
 		.talk Honor Guard Wesilow##16827
@@ -7545,6 +8169,63 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (58-6
 		goto 54.3,63.4
 		.talk Sid Limbardi##16826
 		..accept The Longbeards##9558
+	step //44
+		goto 71.4,62.5
+		..'Fly to Shatter Point|goto Hellfire Peninsula,78.5,35.1,1|noway|c
+	step //50
+		goto 78.3,34.5|n
+		.talk Gryphoneer Windbellow|tip Right next to an Armored Gryphon Destroyer.
+		..'Fly to Honor Point|goto Hellfire Peninsula,68.7,28.2,1|noway|c
+	step //51
+		goto 68.3,28.6
+		.talk Field Marshal Brock##20793
+		..turnin Go to the Front##10382
+		..accept Disruption - Forge Camp: Mageddon##10394
+	step //52
+		goto 64.8,31.9
+		.kill 10 Gan'arg Servant|q 10394/1
+		.kill Razorsaw|q 10394/2
+	step //53
+		goto 68.3,28.6
+		.talk Field Marshal Brock##20793
+		..turnin Disruption - Forge Camp: Mageddon##10394
+		..accept Enemy of my Enemy...##10396
+	step //54
+		goto 65.5,33.5
+		.kill 3 Fel Cannon MKI|q 10396/1
+	step //55
+		goto 68.3,28.6
+		.talk Field Marshal Brock##20793
+		..turnin Enemy of my Enemy...##10396
+		..accept Invasion Point: Annihilator##10397
+	step //56
+		goto 53,27.7
+		.kill Warbringer Arix'Amal|q 10397/1
+		.get Burning Blade Missive|n
+		.' Click the Burning Blade Missive|use Burning Blade Missive##29588
+		..accept The Dark Missive##10395
+		.get Burning Legion Gate Key|q 10397/3
+		.goal Close Burning Legion Gate|q 10397/2
+	step //57
+		goto 68.3,28.6
+		.talk Field Marshal Brock##20793
+		..turnin Invasion Point: Annihilator##10397
+	step //58
+		'Fly to Honor Hold|goto Hellfire Peninsula,54.6,62.6,0.5|noway|c
+	step //63
+		goto 56.7,66.5
+		.talk Warp-Scryer Kryv##16839
+		..accept The Path of Glory##10047
+		..turnin The Dark Missive##10395
+		..accept The Heart of Darkness##10399
+	step //64
+		goto 56.6,66.7
+		.talk Force Commander Danath Trollbane##16819
+		..accept Overlord##10400
+	step //65
+		goto 56.7,66.3
+		.talk Lieutenant Chadwick##17557
+		..accept Weaken the Ramparts##9575
 	step //83
 		goto 45.09,75
 		.use Anchorite Relic##31772
@@ -7928,9 +8609,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (58-6
 ]])
 
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (62-63)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (62-63)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (64-65)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (64-65)
 	startlevel 62
 
 	step //1
@@ -8447,9 +9128,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (62-6
 ]])
 
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (64-65)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (64-65)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (66-67)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (66-67)
 	startlevel 64
 
 	step //1
@@ -9093,10 +9774,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (64-6
 		'Go train and Hearth back.
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (66-67)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (66-67)",[[
 	author PolarCookie
 	startlevel 66
-	next Ding80's Alliance Leveling Guides\\Levels (67-68)
+	next Ding80's Alliance Leveling Guides TBC duo\\Levels (67-68)
 	step //1
 		'Go east to Nagrand|goto Nagrand|noway|c
 	step //2
@@ -9552,7 +10233,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (66-6
 		..turnin Message to Telaar##9933
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (67-68)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (67-68)",[[
 	author PolarCookie
 	startlevel 67
 
