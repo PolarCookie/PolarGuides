@@ -44,7 +44,7 @@ Currently this guide starts in outland at around lvl 63.5.
 
 ### But Azeroth leveling is inefficent
 It was in WotLK that quest xp was doubled from the starting zones and onwards. In tbc there's little to no difference in XP between Azeroth and Outland for quests of the same level.
-Doing Stratholme is worth 166,850xp from quests for this guide, 197,850 when you finish In Dreams. Hellfire Ramparts and Blood Furnace is worth 61,700xp.
+Doing Stratholme is worth 166,850xp from quests, 197,850 when you finish In Dreams. Hellfire Ramparts and Blood Furnace are worth 81,800xp.
 Outland does have the advantage of less traveling between quests.
 
 ### Guide todo
