@@ -85,9 +85,30 @@ Quest xp works like this.
 		<td>Green</td>
 		<td>80%</th>
 	</tr>
+	<tr>
+		<td>Player Level - 7</th>
+		<td>Gray</td>
+		<td>60%</th>
+	</tr>
+	<tr>
+		<td>Player Level - 8</th>
+		<td>Gray</td>
+		<td>40%</th>
+	</tr>
+	<tr>
+		<td>Player Level - 9</th>
+		<td>Gray</td>
+		<td>20%</th>
+	</tr>
+	<tr>
+		<td>Player Level - 10</th>
+		<td>Gray</td>
+		<td>10%</th>
+	</tr>
 </table>
 
-I recommend getting an addon like  [Bayi's Extended Questlog](https://www.wowace.com/projects/bayis-extended-questlog) addon, it shows the quest level in the log.
+I recommend getting an addon like  [Bayi's Extended Questlog](https://www.wowace.com/projects/bayis-extended-questlog) addon, it shows the quest level in the log.  
+TLDR: You're safe if you do quests that are 5 levels below you, but at 6 level you get 80%, most cases it's ok to finish these as they are on route with other 100% quests, but any lower and you can start dropping.
 
 # step_fix.py
 Run this program to either fix or remove all step comments.
