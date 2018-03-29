@@ -20,7 +20,6 @@ Warlocks learn voidwalker, succubus and felhunter along the way.
 Warriors get Berserker Stance and Whirlwind weapon.  
 
 ### Guide todo
-**Vanilla**  
 Do a timed run comparison of grinding lvl 19 in westfall or heading to auberdine as is written.  
 If auberdine stays, tempted to add The Absent Minded Professor questline, it hooks into wetlands.  
 Thelsamar blood sausage needs to be completed earlier, loss of xp due to gray.  
@@ -29,13 +28,16 @@ Clean up Forest Song quest start and end route.
 Add Bartolo's Yeti fur cloak.  
 Add "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in Trinity Core.  
 Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
+Add Northrend section
 
 ## Ding80GuidesAllianceTBC.lua (TO BE ADDED)
-Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redrigde instead of 20, as no mount yet.
+Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redridge instead of 20, as no mount yet.
 Also changes travel paths.
 
 ### Guide todo
+Add Deadmines? I want this guide to be group independent, but if you can't get Deadmines and Stockades done you're missing out so much.
 Adjust Stormwind City and Eastern Plaguelands coordinates to TBC values.
+Add full Blade Edge Mountain, Netherstorm and Shadowmoon Valley.
 
 ## Ding80GuidesAllianceTBCduo.lua
 Same as Ding80GuidesAllianceTBC.lua, but now it's tuned for 2 people leveling together, doing more quests and Deadmines, Stockades, Razorfen Kraul, Zul Farrak, Maraudon, Sunken Temple and Stratholme along the way. Outland dungeons are at your own leisure.  
@@ -43,7 +45,7 @@ This guide has a chapter called "TBC Gold Rush"; the idea is to maximize experie
 Currently this guide starts in outland at around lvl 63.5.  
 
 ### But Azeroth leveling is inefficent
-It was in WotLK that quest xp was doubled from the starting zones and onwards. In tbc there's little to no difference in XP between Azeroth and Outland for quests of the same level.
+It was in WotLK that quest xp was doubled from the starting zones and onwards. In TBC there's little to no difference in XP between Azeroth and Outland for quests of the same level.
 Doing Stratholme is worth 166,850xp from quests, 197,850 when you finish In Dreams. Hellfire Ramparts and Blood Furnace are worth 81,800xp.
 Outland does have the advantage of less traveling between quests.
 
@@ -51,7 +53,7 @@ Outland does have the advantage of less traveling between quests.
 Add Blackrock Dephts.  
 Add Scholomance key questline and Scholomance itself.
 
-# PANIC, MY QUESTS ARE GREEN!
+# PANIC; MY QUESTS ARE GREEN!
 Don't worry to much about that.  
 Quest xp works like this.
 <table>

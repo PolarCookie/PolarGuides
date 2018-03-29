@@ -9853,53 +9853,34 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 23.4,36.5
 		.talk Amaan the Wise##16796
 		..turnin Cleansing the Waters##9427
-
-	step //117
-		goto 24,72.1
-		.talk Gremni Longbeard##16850
-		..turnin The Longbeards##9558
-		..accept The Arakkoa Threat##9417
-		..accept Rampaging Ravagers##9385
-		.talk Mirren Longbeard##16851
-		..accept Gaining Mirren's Trust##9563
-		..turnin Gaining Mirren's Trust##9563
-		..accept The Finest Down##9420
-	step //118
-		goto 26.1,77.1|n
-		.' The path up to Avruu starts here|goto Hellfire Peninsula,26.1,77.1,0.5|noway|c
-	step //119
-		goto 25.7,75.1
-		.from Avruu##17084
-		.get Avruu's Orb|n
-		.' Click Avruu's Orb|use Avruu's Orb##23580
-		..accept Avruu's Orb##9418
-	step //120
-		goto 29,81.5
-		.' Click the Haal'eshi Altar|tip It looks like an orb sitting in a claw thing, right in front of a big purple hut.
-		.' Fight Aeranas until he's almost dead
-		.talk Aeranas##17085
-		..turnin Avruu's Orb##9418
-	step //121
-		goto 25.6,70.3
-		.kill 4 Haal'eshi Windwalker|q 9417/1
-		.kill 6 Haal'eshi Talonguard|q 9417/2
-		.' Click the Kaliri nests and kill Kaliri birds|tip The nests look like little brown nests with pink eggs in them.
-		.get 8 Kaliri Feather|q 9420/1
-	step //122
-		goto 24,72.1
-		.talk Gremni Longbeard##16850
-		..turnin The Arakkoa Threat##9417
-		.talk Mirren Longbeard##16851
-		..turnin The Finest Down##9420
-	step //123
-		goto 23.7,69.2
-		.kill 10 Quillfang Ravager|q 9385/1
-	step //124
-		goto 24,72.1
-		.talk Gremni Longbeard##16850
-		..turnin Rampaging Ravagers##9385
-	step //125
-		ding 61
+		..accept Helping the Cenarion Post##10443
+	step //138
+		goto 23.2,36.7
+		.talk Elsaana##17006
+		..accept An Ambitious Plan##9383
+	step //151
+		goto 15.7,52
+		.talk Thiah Redmane##16991
+		..turnin Missing Missive##9373
+		..turnin Helping the Cenarion Post##10443
+		..accept Demonic Contamination##9372
+	step //152
+		goto 18.4,54.7
+		.kill Hulking Helboars|n
+		.get 6 Helboar Blood Sample|q 9372/1
+	step //153
+		goto 15.7,52
+		.talk Thiah Redmane##16991
+		..turnin Demonic Contamination##9372
+		..accept Testing the Antidote##10255
+	step //154
+		goto 25,54
+		.' Use the Cenarion Antidote on a Hulking Helboar|use Cenarion Antidote##23337
+		.' Administer the Antidote|goal Administer Antidote|q 10255/1
+	step //155
+		goto 15.7,52
+		.talk Thiah Redmane##16991
+		..turnin Testing the Antidote##10255
 	step //126
 		goto 15.6,58.8
 		.talk Akoru the Firecaller##20678
@@ -9948,34 +9929,58 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 15.1,55.7
 		.kill 4 Illidari Taskmaster|q 9399/1|tip If you kill the taskmaster first, his friends leave you alone.
 		.get 10 Sha'naar Relic|q 9430/1|tip The Sha'naar Relics look like little blue vases on the ground.
-	step //137
-		'Hearth to the Temple of Telhamat|goto Hellfire Peninsula,23.4,37.2,3|use Hearthstone##6948|noway|c
-	step //138
-		goto 23.4,36.5
-		.talk Amaan the Wise##16796
-		..turnin Sha'naar Relics##9430
-		..accept The Seer's Relic##9545
-		.talk Elsaana##17006
-		..accept An Ambitious Plan##9383
-	step //139
-		goto 23.4,39.7
-		.talk Scout Vanura##16797
-		..turnin Deadly Predators##9398
-	step //140
-		goto 23.1,40.3
-		.talk Ikan##16799
-		..turnin Cruel Taskmasters##9399
-		..turnin The Rock Flayer Matriarch##9490
-	step //141
-		goto 26.9,37.4
-		.' Use the Seer's Relic on Sedai's Corpse|use Seer's Relic##23645|tip Right down the hill from the Temple of Telhamat Flight Path.
-		.' See the vision|goal Vision Granted|q 9545/1
-	step //142
-		goto 23.4,36.5
-		.talk Amaan the Wise##16796
-		..turnin The Seer's Relic##9545
-	step //143
-		'Fly to Honor Hold|goto 54.6,62.6,0.5|noway|c
+	step //117
+		goto 24,72.1
+		.talk Gremni Longbeard##16850
+		..turnin The Longbeards##9558
+		..accept The Arakkoa Threat##9417
+		..accept Rampaging Ravagers##9385
+		.talk Mirren Longbeard##16851
+		..accept Gaining Mirren's Trust##9563
+		..turnin Gaining Mirren's Trust##9563
+		..accept The Finest Down##9420
+	step //118
+		goto 26.1,77.1|n
+		.' The path up to Avruu starts here|goto Hellfire Peninsula,26.1,77.1,0.5|noway|c
+	step //119
+		goto 25.7,75.1
+		.from Avruu##17084
+		.get Avruu's Orb|n
+		.' Click Avruu's Orb|use Avruu's Orb##23580
+		..accept Avruu's Orb##9418
+	step //120
+		goto 29,81.5
+		.' Click the Haal'eshi Altar|tip It looks like an orb sitting in a claw thing, right in front of a big purple hut.
+		.' Fight Aeranas until he's almost dead
+		.talk Aeranas##17085
+		..turnin Avruu's Orb##9418
+	step //121
+		goto 25.6,70.3
+		.kill 4 Haal'eshi Windwalker|q 9417/1
+		.kill 6 Haal'eshi Talonguard|q 9417/2
+		.' Click the Kaliri nests and kill Kaliri birds|tip The nests look like little brown nests with pink eggs in them.
+		.get 8 Kaliri Feather|q 9420/1
+	step //122
+		goto 24,72.1
+		.talk Gremni Longbeard##16850
+		..turnin The Arakkoa Threat##9417
+		.talk Mirren Longbeard##16851
+		..turnin The Finest Down##9420
+	step //123
+		goto 23.7,69.2
+		.kill 10 Quillfang Ravager|q 9385/1
+	step //124
+		goto 24,72.1
+		.talk Gremni Longbeard##16850
+		..turnin Rampaging Ravagers##9385
+	step //117
+		goto 33.4,65.1
+		.from Blacktalon the Savage##17057
+		.get Blacktalon's Claw|q 9490/1
+	step //118
+		goto 34.16,61.69
+		.kill 8 Stonescythe Whelp|q 9398/2
+		.kill 4 Stonescythe Alpha|q 9398/1
 	step //144
 		goto 49.5,81.8
 		.kill voidwalkers|n
@@ -9994,6 +9999,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 56.6,66.7
 		.talk Force Commander Danath Trollbane##16819
 		..turnin Drill the Drillmaster##10937 
+		..turnin Overlord##10400
 	step //148
 		goto 56.7,66.5
 		.talk Warp-Scryer Kryv##16839
@@ -10004,30 +10010,28 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 23.4,36.5
 		.talk Elsaana##17006
 		..turnin An Ambitious Plan##9383
-		..accept Helping the Cenarion Post##10443
-	step //151
-		goto 15.7,52
-		.talk Thiah Redmane##16991
-		..turnin Missing Missive##9373
-		..turnin Helping the Cenarion Post##10443
-		..accept Demonic Contamination##9372
-	step //152
-		goto 18.4,54.7
-		.kill Hulking Helboars|n
-		.get 6 Helboar Blood Sample|q 9372/1
-	step //153
-		goto 15.7,52
-		.talk Thiah Redmane##16991
-		..turnin Demonic Contamination##9372
-		..accept Testing the Antidote##10255
-	step //154
-		goto 25,54
-		.' Use the Cenarion Antidote on a Hulking Helboar|use Cenarion Antidote##23337
-		.' Administer the Antidote|goal Administer Antidote|q 10255/1
-	step //155
-		goto 15.7,52
-		.talk Thiah Redmane##16991
-		..turnin Testing the Antidote##10255
+	step //138
+		goto 23.4,36.5
+		.talk Amaan the Wise##16796
+		..turnin Sha'naar Relics##9430
+		..accept The Seer's Relic##9545
+	step //139
+		goto 23.4,39.7
+		.talk Scout Vanura##16797
+		..turnin Deadly Predators##9398
+	step //140
+		goto 23.1,40.3
+		.talk Ikan##16799
+		..turnin Cruel Taskmasters##9399
+		..turnin The Rock Flayer Matriarch##9490
+	step //141
+		goto 26.9,37.4
+		.' Use the Seer's Relic on Sedai's Corpse|use Seer's Relic##23645|tip Right down the hill from the Temple of Telhamat Flight Path.
+		.' See the vision|goal Vision Granted|q 9545/1
+	step //142
+		goto 23.4,36.5
+		.talk Amaan the Wise##16796
+		..turnin The Seer's Relic##9545
 	step //156
 		goto 15.7,52
 		.talk Amythiel Mistwalker##16885
@@ -10058,8 +10062,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Colossal Menace##10132
 		..turnin Crimson Crystal Clue##10134
 		..accept The Earthbinder##10349
-	step //162
-		ding 62
 	step //163
 		goto 15.8,51.6
 		.talk Earthbinder Galandria NIghtbreeze##19294
