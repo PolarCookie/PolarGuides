@@ -70,7 +70,7 @@ Quest xp works like this.
 		<td>100%</th>
 	</tr>
 	<tr>
-		<td color="green">-6</th>
+		<td><span color="green">-6</span></th>
 		<td>80%</th>
 	</tr>
 </table>
