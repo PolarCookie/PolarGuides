@@ -42,7 +42,13 @@ Same as Ding80GuidesAllianceTBC.lua, but now it's tuned for 2 people leveling to
 This guide has a chapter called "TBC Gold Rush"; the idea is to maximize experience gained in Azeroth before starting outland; in order to hit 70 earlier and get more gold from quests thereafter.  
 Currently this guide starts in outland at around lvl 63.5.  
 
+### But Azeroth leveling is inefficent
+It was in WotLK that quest xp was doubled from the starting zones and onwards. In tbc there's little to no difference in XP between Azeroth and Outland for quests of the same level.
+Doing Stratholme is worth 166,850xp from quests for this guide, 197,850 when you finish In Dreams. Hellfire Ramparts and Blood Furnace is worth 61,700xp.
+Outland does have the advantage of less traveling between quests.
+
 ### Guide todo
+Add Blackrock Dephts
 Add Scholomance key questline and Scholomance itself.
 
 # PANIC, MY QUESTS ARE GREEN!
