@@ -1,7 +1,7 @@
 # PolarGuides
 Discord: https://discord.gg/tJJMwEX
 
-##Ding80GuidesAlliance.lua
+## Ding80GuidesAlliance.lua
 Translated the Ding80 leveling guide to the Zygor syntax to work within the addon.  
 
 ### Edits done to Ding80
@@ -53,23 +53,23 @@ Quest xp works like this.
 		<th>Quest Level</th>
 		<th>Quest XP</th>
 	</tr>
-	<tr>
+	<tr style="color:red">
 		<td>+5</td>
 		<td>100%</td>
 	</tr>
-	<tr>
+	<tr style="color:orange">
 		<td>+3</th>
 		<td>100%</th>
 	</tr>
-	<tr>
+	<tr style="color:yellow">
 		<td>0</th>
 		<td>100%</th>
 	</tr>
-	<tr>
+	<tr style="color:green">
 		<td>-3</th>
 		<td>100%</th>
 	</tr>
-	<tr>
+	<tr style="color:green">
 		<td>-6</th>
 		<td>80%</th>
 	</tr>
