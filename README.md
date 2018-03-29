@@ -1,25 +1,25 @@
-## PolarGuides
+# PolarGuides
 Discord: https://discord.gg/tJJMwEX
 
 ##Ding80GuidesAlliance.lua
 Translated the Ding80 leveling guide to the Zygor syntax to work within the addon.  
 
-# Edits done to Ding80
+### Edits done to Ding80
 Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
 Cracking Maury's Foot and Mai'Zoth added.  
 Desolace has been replaced by Arathi Highlands.  
 Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
 Removed Withered Basidium, to much grind.  
 
-# Progress
+### Progress
 Dun Morogh 1-12 done  
 Alliance 13-68 done  
 
-# Class quest included
+### Class quest included
 Warlocks learn voidwalker, succubus and felhunter along the way.  
 Warriors get Berserker Stance and Whirlwind weapon.  
 
-# Guide todo
+### Guide todo
 **Vanilla**  
 Do a timed run comparison of grinding lvl 19 in westfall or heading to auberdine as is written.  
 If auberdine stays, tempted to add The Absent Minded Professor questline, it hooks into wetlands.  
@@ -34,7 +34,7 @@ Add druid water form questline, it fits into late westfall questing and it's wri
 Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redrigde instead of 20, as no mount yet.
 Also changes travel paths.
 
-# Guide todo
+### Guide todo
 Adjust Stormwind City and Eastern Plaguelands coordinates to TBC values.
 
 ## Ding80GuidesAllianceTBCduo.lua
@@ -42,10 +42,10 @@ Same as Ding80GuidesAllianceTBC.lua, but now it's tuned for 2 people leveling to
 This guide has a chapter called "TBC Gold Rush"; the idea is to maximize experience gainend in Azeroth before starting outland, in order to hit 70 earlier and get more gold from quests thereafter.  
 Currently this guide starts in outland at around lvl 63.5.  
 
-# Guide todo
+### Guide todo
 Add Scholomance key questline and Scholomance itself.
 
-## PANIC, MY QUESTS ARE GREEN!
+# PANIC, MY QUESTS ARE GREEN!
 Don't worry to much about that.  
 Quest xp works like this.
 <table>
@@ -75,12 +75,12 @@ Quest xp works like this.
 	</tr>
 </table>
 
-## step_fix.py
+# step_fix.py
 Run this program to either fix or remove all step comments.
 Run `python step_fix.py [-c] <guide>[ <guide]*`.
 
 ##Out of date, old and to be removed, kept for my convenience
-# Ding steps
+### Ding steps
 Ding steps are written from a Warlock speed run on an Azeroth Core server, attempting to kill the minimal amounts of enemies.
 Reached lvl 58 with 12655xp (7%), Skipped a lot of hard to do quests along the way.  
 **Skipped quests for that run:**
