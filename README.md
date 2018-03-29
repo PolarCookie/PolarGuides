@@ -108,7 +108,7 @@ Quest xp works like this.
 </table>
 
 I recommend getting an addon like  [Bayi's Extended Questlog](https://www.wowace.com/projects/bayis-extended-questlog) addon, it shows the quest level in the log.  
-TLDR: You're safe if you do quests that are 5 levels below you, but at 6 level you get 80%, most cases it's ok to finish these as they are on route with other 100% quests, but any lower and you can start dropping.
+TLDR: You're safe if you do quests that are 5 levels below you, but at 6 level you get 80% xp, for most cases it's ok to finish these as they are on route with other 100% quests, but any lower and you can start dropping.
 
 # step_fix.py
 Run this program to either fix or remove all step comments.
