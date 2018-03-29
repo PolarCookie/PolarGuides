@@ -80,7 +80,8 @@ Quest xp works like this.
 		<td>80%</th>
 	</tr>
 </table>
-I recommend getting an addon like [Bayi](https://www.wowace.com/projects/bayis-extended-questlog) addon, it shows the quest level in the log.
+
+I recommend getting an addon like  [Bayi's Extended Questlog](https://www.wowace.com/projects/bayis-extended-questlog) addon, it shows the quest level in the log.
 
 # step_fix.py
 Run this program to either fix or remove all step comments.
