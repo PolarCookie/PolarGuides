@@ -12,8 +12,8 @@ Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde
 Removed Withered Basidium, to much grind.  
 
 ### Progress
-Dun Morogh 1-12 done  
-Alliance 13-68 done  
+Dun Morogh 1-12 done.  
+Alliance 13-68 done.  
 
 ### Class quest included
 Warlocks learn voidwalker, succubus and felhunter along the way.  
@@ -48,7 +48,7 @@ Doing Stratholme is worth 166,850xp from quests for this guide, 197,850 when you
 Outland does have the advantage of less traveling between quests.
 
 ### Guide todo
-Add Blackrock Dephts
+Add Blackrock Dephts.  
 Add Scholomance key questline and Scholomance itself.
 
 # PANIC, MY QUESTS ARE GREEN!
