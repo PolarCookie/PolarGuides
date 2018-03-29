@@ -39,7 +39,7 @@ Adjust Stormwind City and Eastern Plaguelands coordinates to TBC values.
 
 ## Ding80GuidesAllianceTBCduo.lua
 Same as Ding80GuidesAllianceTBC.lua, but now it's tuned for 2 people leveling together, doing more quests and Deadmines, Stockades, Razorfen Kraul, Zul Farrak, Maraudon, Sunken Temple and Stratholme along the way. Outland dungeons are at your own leisure.  
-This guide has a chapter called "TBC Gold Rush"; the idea is to maximize experience gainend in Azeroth before starting outland, in order to hit 70 earlier and get more gold from quests thereafter.  
+This guide has a chapter called "TBC Gold Rush"; the idea is to maximize experience gained in Azeroth before starting outland; in order to hit 70 earlier and get more gold from quests thereafter.  
 Currently this guide starts in outland at around lvl 63.5.  
 
 ### Guide todo
@@ -80,7 +80,7 @@ Quest xp works like this.
 		<td>80%</th>
 	</tr>
 </table>
-I recommend getting an addon like Bayis Questlog addon, it shows the quest level in the log.
+I recommend getting an addon like [https://www.wowace.com/projects/bayis-extended-questlog](Bayi's Extended Questlog) addon, it shows the quest level in the log.
 
 # step_fix.py
 Run this program to either fix or remove all step comments.
