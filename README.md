@@ -80,12 +80,13 @@ Quest xp works like this.
 		<td>80%</th>
 	</tr>
 </table>
+I recommend getting an addon like Bayis Questlog addon, it shows the quest level in the log.
 
 # step_fix.py
 Run this program to either fix or remove all step comments.
 Run `python step_fix.py [-c] <guide>[ <guide]*`.
 
-##Out of date, old and to be removed, kept for my convenience
+## Out of date, old and to be removed, kept for my convenience
 ### Ding steps
 Ding steps are written from a Warlock speed run on an Azeroth Core server, attempting to kill the minimal amounts of enemies.
 Reached lvl 58 with 12655xp (7%), Skipped a lot of hard to do quests along the way.  
