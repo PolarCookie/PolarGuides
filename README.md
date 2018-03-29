@@ -55,27 +55,27 @@ Quest xp works like this.
 		<th>Quest XP</th>
 	</tr>
 	<tr>
-		<td>+5</td>
+		<td>Player Level + 5</td>
 		<td>Red</td>
 		<td>100%</td>
 	</tr>
 	<tr>
-		<td>+3</th>
+		<td>Player Level + 3</th>
 		<td>Orange</td>
 		<td>100%</th>
 	</tr>
 	<tr>
-		<td>0</th>
+		<td>Player Level</th>
 		<td>Yellow</td>
 		<td>100%</th>
 	</tr>
 	<tr>
-		<td>-3</th>
+		<td>Player Level - 3</th>
 		<td>Green</td>
 		<td>100%</th>
 	</tr>
 	<tr>
-		<td>-6</th>
+		<td>Player Level - 6</th>
 		<td>Green</td>
 		<td>80%</th>
 	</tr>
