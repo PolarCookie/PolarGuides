@@ -51,26 +51,32 @@ Quest xp works like this.
 <table>
 	<tr>
 		<th>Quest Level</th>
+		<th>Quest Color</th>
 		<th>Quest XP</th>
 	</tr>
 	<tr>
-		<td style="red">+5</td>
+		<td>+5</td>
+		<td>Red</td>
 		<td>100%</td>
 	</tr>
 	<tr>
-		<td style="orange">+3</th>
+		<td>+3</th>
+		<td>Orange</td>
 		<td>100%</th>
 	</tr>
 	<tr>
-		<td color="yellow">0</th>
+		<td>0</th>
+		<td>Yellow</td>
 		<td>100%</th>
 	</tr>
 	<tr>
-		<td color="green">-3</th>
+		<td>-3</th>
+		<td>Green</td>
 		<td>100%</th>
 	</tr>
 	<tr>
-		<td><span color="green">-6</span></th>
+		<td>-6</th>
+		<td>Green</td>
 		<td>80%</th>
 	</tr>
 </table>
