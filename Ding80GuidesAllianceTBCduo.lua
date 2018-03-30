@@ -11318,7 +11318,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	startlevel 66
 	next Ding80's Alliance Leveling Guides TBC duo\\Levels (67-68)
 	step //1
-		'Go east to Nagrand|goto Nagrand|noway|c
+		'Go west to Nagrand|goto Nagrand|noway|c
 	step //2
 		goto 61.7,67.1
 		.talk Wazat##19035
