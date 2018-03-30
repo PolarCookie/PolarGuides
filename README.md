@@ -115,25 +115,8 @@ I recommend getting an addon like  [Bayi's Extended Questlog](https://www.wowace
 TLDR: You're safe if you do quests that are 5 levels below you, but at 6 level you get 80% xp, for most cases it's ok to finish these as they are on route with other 100% quests, but any lower and you can start dropping.
 
 ## PANIC; ZYGOR IS SPAMMING MY CHAT!
-If you're getting "Zygor Guides Viewer: WARNING: quest has no such goal! Step X, line Y, quest Z, goal W", it means the server fix the goals for quest Z. Usually happens for exploration or escort quests.
+If you're getting "Zygor Guides Viewer: WARNING: quest has no such goal! Step X, line Y, quest Z, goal W", it means that the server needs to fix fix the goals for quest Z. Usually happens for exploration or escort quests.
 
 # step_fix.py
 Run this program to either fix or remove all step comments.
 Run `python step_fix.py [-c] <guide>[ <guide]*`.
-
-## Out of date, old and to be removed, kept for my convenience
-### Ding steps
-Ding steps are written from a Warlock speed run on an Azeroth Core server, attempting to kill the minimal amounts of enemies.
-Reached lvl 58 with 12655xp (7%), Skipped a lot of hard to do quests along the way.  
-**Skipped quests for that run:**
-- WANTED: Chok'sul.
-- Howling in the Hills.
-- Wanted: Gath'Ilzogg.
-- Theocritus' Retrieval.
-- Diabolical Plans.
-- Coolant Heads Prevail and the following chain.
-- Green Hills of Stranglethorn
-- Message in a Bottle and the following chain
-- Chasing A-Me 01 (part 2).
-- Ursius of the Shardtooth.
-- Deadwood and Winterfall Ritual Totem.
