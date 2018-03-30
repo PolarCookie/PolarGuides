@@ -10080,7 +10080,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (62-63)",[[
 	author PolarCookie
 	next Ding80's Alliance Leveling Guides TBC duo\\Levels (64-65)
-	startlevel 62
 
 	step //1
 		'Go northwest to Zangarmarsh|goto Zangarmarsh|noway|c
@@ -10100,6 +10099,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin The Cenarion Expedition##9912
 		..accept Disturbance at Umbrafen Lake##9716
 		..accept Warden Hamoot##9778
+	step
+		home Cenarion Refuge
 	step //5
 		goto 79.13,64.78
 		.accept Leader of the Bloodscale##9817
@@ -10139,13 +10140,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 67.8,51.5
 		.talk Munci##18788
 		..fpath Telredor
-	step //14
-		goto 71.3,46.9
-		.' Click the little green glowing mushrooms around this area
-		.get 6 Fulgor Spore|q 9777/1
-	step //15
-		goto 73.2,41.5
-		.kill 10 Marshfang Ripper|q 9791/1
 	step //16
 		goto 77.2,45.9
 		.kill Sporewing|q 9901/1|tip He looks like a Sporebat.
@@ -10153,6 +10147,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 80.7,43.4
 		.' Click the Dead Mire Soil mound
 		.get Dead Mire Soil Sample|q 9782/1
+	step //14
+		goto 73.2,41.5
+		.' Click the little green glowing mushrooms around this area
+		.get 6 Fulgor Spore|q 9777/1
+		.kill 10 Marshfang Ripper|q 9791/1
 	step //18
 		goto 68.3,50.1
 		.talk Vindicator Idaar##18004
@@ -10199,10 +10198,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.kill 8 Umbrafen Seer|q 9747/3
 		.kill 6 Umbrafen Witchdoctor|q 9747/4
 	step //29
+		'WARNING: ESCORT
 		goto 83.4,85.5
 		.talk Kayra Longmane##17969
-		..accept Escape from Umbrafen##9752
-		..'Escort Kayra Longmane|goal Escort Kayra Longmane to safety|q 9752/1
+		..accept Escape from Umbrafen##9752|noautoaccept
+	step
+		'Escort Kayra Longmane|goal Escort Kayra Longmane to safety|q 9752/1
 	step //30
 		goto 78.5,63.1
 		.talk Lethyn Moonfire##17834
@@ -10301,6 +10302,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 29.6,28.3
 		.kill 5 Ango'rosh Shaman|q 9835/1
 		.kill 10 Ango'rosh Ogre|q 9835/2
+		.collect 10 Glowcap|n|tip You'll come back here later.
+
 	step //52
 		goto 41.2,28.7
 		.talk Timothy Daniels##18019
@@ -10486,6 +10489,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step //92
 		goto 29.6,28.3
 		.get 15 Mushroom Sample|q 9708/1
+		.collect 10 Glowcap|q 9808/1|future
 	step //93
 		goto 17.3,38.4
 		.kill Marshlight Bleeders|n|tip They are all around this area on the land, to the north and south.
