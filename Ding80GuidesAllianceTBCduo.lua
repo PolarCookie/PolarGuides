@@ -11390,14 +11390,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept The Tortured Earth##9819
 	step //16
 		goto 66.5,39.5
-		.kill 12 Windroc|q 9854/1
+		.kill 30 Windroc|q 9854/1
 	step //17
 		goto 72.2,38.4
-		.kill 12 Talbuk Stag|q 9857/1
+		.kill 30 Talbuk Stag|q 9857/1
 		.' You can find more Talbuk Stags at 70.8,46.4|n
 	step //18
 		goto 64,45.1
-		.kill 12 Clefthoof|q 9789/1
+		.kill 30 Clefthoof|q 9789/1
 		.' Kill Elekks
 		.collect 3 Pair of Ivory Tusks##25463|q 9914 |future
 		.' Kill Dust Howlers
@@ -11431,16 +11431,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step //22
 		goto 52.1,25.6
 		.' Click the Dung on the ground|tip The Dung looks like green piles of swirled poop.
-		.get 8 Digested Caracoli|q 9800/1
-		.kill 12 Talbuk Thorngrazer|q 9858/1
-	step //23
-		goto 51.6,30.8
-		.kill 12 Clefthoof Bull|q 9850/1
-		.' You can find more Clefthoof Bulls at 49.7,35.6|n
+		.get 15 Digested Caracoli|q 9800/1
+		.kill 30 Talbuk Thorngrazer|q 9858/1
 	step //24
 		goto 52,20.2
 		.' Kill Enraged Crushers
 		.get 10 Enraged Crusher Core|q 9821/1
+	step //23
+		goto 51.6,30.8
+		.kill 30 Clefthoof Bull|q 9850/1
+		.' You can find more Clefthoof Bulls at 49.7,35.6|n
 	step //25
 		goto 40.5,26.4
 		.from Murkblood Invader##18238
@@ -11458,7 +11458,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept Shattering the Veil##9849
 	step //28
 		goto 59.7,27.3
-		.kill 8 Lake Spirit|q 9804/1
+		.kill 12 Lake Spirit|q 9804/1
 	step //29
 		goto 60.5,22.4
 		.talk Elementalist Lo'ap##18073
@@ -11473,11 +11473,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept Ortor My Old Friend...##9873
 	step //32
 		goto 48.4,61.5
-		.kill 12 Ravenous Windroc|q 9855/1
+		.kill 30 Ravenous Windroc|q 9855/1
 	step //33
 		goto 51.8,56.8
 		.talk Nitrin the Learned##19844
 		..turnin The Master's Grand Design?##10251
+		..accept Vision of the Dead##10252
 	step //34
 		goto 61.7,67.1
 		.talk Wazat##19035
@@ -11518,8 +11519,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept HELP!##9923
 	step //43
 		goto 72.9,69.8
-		.kill 8 Boulderfist Crusher|q 9921/1
-		.kill 8 Boulderfist Mystic|q 9921/2
+		.kill 15 Boulderfist Crusher|q 9921/1
+		.kill 15 Boulderfist Mystic|q 9921/2
 		.get Boulderfist Key|n
 		.' Click Corki's cage to free him|goal Corki Freed|q 9923/1
 	step //44
@@ -11574,19 +11575,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.get 5 Muck-ridden Core|q 9815/1
 	step //53
 		goto 39.3,27.5
-		.kill 10 Boulderfist Warrior|q 9922/1
-		.kill 10 Boulderfist Mage|q 9922/2
+		.kill 25 Boulderfist Warrior|q 9922/1
+		.kill 25 Boulderfist Mage|q 9922/2
 		.collect 1 Northwind Cleft Key##25509|q 9924|sticky
 		.' Free Corki inside the cave|goal Corki Freed Again|q 9924/1|tip Inside the cave, way in the back, in a yellow cage again.
 	step //54
 		goto 33.1,20
 		.from Gutripper##18257
 		..get Eye of Gutripper|q 9856/1
+		.from Greater Windroc##17129
+		..get Flawless Greater Windroc Beak|q 10252/2
 	step //55
-		goto 33.8,48.9
-		.kill 8 Lake Surger|q 9810/2
-	step //56
 		goto 33.1,50.8
+		.kill 10 Lake Surger|q 9810/2
 		.kill Watoosun's Polluted Essence##18145|q 9810/1
 	step //57
 		goto 30.88,42.35
@@ -11618,10 +11619,38 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 27.3,43.1
 		.talk Altruis the Sufferer##18417
 		..turnin Survey the Land##9991
+		..accept Buying Time##9999
+	step
+		goto 24.5,36.6
+		.kill 2 Felguard Legionnaire|q 9999/1
+		.kill 3 Mo'arg Engineer|q 9999/2
+		.kill 8 Gan'arg Tinkerer|q 9999/3
+	step //64
+		goto 27.3,43.1
+		.talk Altruis the Sufferer##18417
+		..turnin Buying Time##9999
+		..accept The Master Planner##10001
+	step
+		goto 23.6,34.6
+		.from Mo'arg Master Planner##18567
+		..get The Master Planner's Blueprints|q 10001/1
+	step //64
+		goto 27.3,43.1
+		.talk Altruis the Sufferer##18417
+		..turnin The Master Planner##10001
+		..accept Patience and Understanding##10004
 	step //65
 		goto 28.8,38.3
 		.from Bach'lor##18258
 		..get Hoof of Bach'lor|q 9859/1
+	step
+		goto 27.5,50.6
+		.from Mountain Gronn##19201
+		..get Mountain Gronn Eyeball|q 10252/1
+	step
+		goto 29.1,59.8
+		.from Aged Clefthoof##17133
+		..get Aged Clefthoof Blubber|q 10252/3
 	step //66
 		goto 30.8,58.1
 		.talk Zerid##18276
@@ -11644,7 +11673,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.get 10 Oshu'gun Crystal Fragment|q 9882/1
 	step //70
 		goto 30.6,67.5
-		.kill 8 Voidspawn|q 9925/1
+		.kill 12 Voidspawn|q 9925/1
 	step //71
 		goto 42.4,73.5
 		.kill Gava'xi##18298|q 9900/1
@@ -11685,8 +11714,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin The Totem of Kar'dash##9879
 		..turnin Corki's Gone Missing Again!##9924
 		..accept Corki's Ransom##9954
-	step //79
-		ding 67
 	step //80
 		goto 73.8,62.6
 		.talk Lantressor of the Blade##18261
@@ -11700,10 +11727,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step //82
 		goto 71.4,79.4
 		.' Click the Kil'sorrow Armaments on the ground|tip The Kil'sorrow Armaments look like skinny, square, tan boxes with a red axe logo on them.
-		.get 10 Kil'sorrow Armaments|q 9928/1
-		.kill 10 Kil'sorrow Agent|q 9936/2
+		.get 20 Kil'sorrow Armaments|q 9928/1
+		.kill 15 Kil'sorrow Agent|q 9936/2
 		.' Use your Warmaul Ogre Banners on their corpses|use Warmaul Ogre Banner##25552
-		.' Plant 10 Warmaul Ogre Banners|goal 10 Warmaul Ogre Banner Planted|q 9927/1
+		.' Plant 20 Warmaul Ogre Banners|goal 10 Warmaul Ogre Banner Planted|q 9927/1
 	step //83
 		goto 73.8,62.6
 		.talk Lantresor of the Blade##18261
@@ -11719,6 +11746,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Clefthoof Mastery (3)##9851
 		.talk Shado "Fitz" Farstrider##18200
 		..turnin Windroc Mastery (3)##9856
+	step
+		goto 71.5,40.8
+		.talk Hemet Nesingwary##18180
+		..accept The Ultimate Bloodsport##9852
+	step //86
+		goto 61.8,24.4
+		.talk Gordawg##18099
+		..turnin Shattering the Veil##9849
+		..accept Gurok the Usurper##9853
 	step //85
 		goto 60.5,22.4
 		.talk Elementalist Lo'ap##18073
@@ -11726,30 +11762,47 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin The Spirit Polluted##9810
 		.talk Elementalist Morgh##18074
 		..turnin Murkblood Corrupters##9862
-	step //86
-		goto 61.8,24.4
-		.talk Gordawg##18099
-		..turnin Shattering the Veil##9849
 	step //87
 		goto 46.5,18.2
 		.kill Zorbo the Advisor##18413|q 9940/1
-	step //88
-		goto 48.3,21.5
-		.kill 5 Warmaul Shaman|q 9940/2
-		.kill 5 Warmaul Reaver|q 9940/3
-		.' Use your Kil'sorrow Banners on their corpses|use Kil'sorrow Banner##25555
-		.' Plant 10 Kil'sorrow Banners|goal 10 Kil'sorrow Banner Planted|q 9931/1
 	step //89
 		goto 46.5,24.3
 		.' Use the Damp Woolen Blanket on the Blazing Warmaul Pyre|use Damp Woolen Blanket##25658
 		.' Defend the 2 ogres that appear until they are done placing the corpses|goal Kil'sorrow Bodies Planted|q 9932/1
-	step //90
-		goto 27.9,29.7
-		.get 10 Telaar Supply Crate|q 9956/1|tip They look like little grey boxes on the ground.
+	step //88
+		goto 48.3,21.5
+		.kill 10 Warmaul Shaman|q 9940/2
+		.kill 10 Warmaul Reaver|q 9940/3
+		.' Use your Kil'sorrow Banners on their corpses|use Kil'sorrow Banner##25555
+		.' Plant 20 Kil'sorrow Banners|goal 10 Kil'sorrow Banner Planted|q 9931/1
+	step
+		'Enter the cave here|goto 26.9,23.4
 	step //91
 		goto 29.5,26.1
 		.talk Corki##18369
 		..turnin Corki's Ransom##9954
+		..accept Cho'war the Pillager##9955
+	step
+		'Enter the cave here|goto 27,19.4
+	step
+		goto Zangarmarsh,12.1,71.5
+		.from Cho'war the Pillager##18423
+		..collect Cho'war's Key##25648
+	step
+		'Enter the cave here|goto Nagrand,26.9,23.4
+	step //91
+		goto 29.5,26.1
+		goal Corki Freed|q 9955/1
+	step
+		goto 29,25
+		.from Ogres
+		..collect 7 Warmaul Skull##24502|sticky
+		.use Warmaul Skull##24502
+		..from Gurok the Usurper##18182
+		...get Gurok's Earthen Head|q 9853/1
+	step //90
+		goto 27.9,29.7
+		.get 20 Telaar Supply Crate|q 9956/1|tip They look like little grey boxes on the ground.
 	step //92
 		'Hearth to Telaar|goto 54.267,76.088|use Hearthstone##6948|noway|c
 	step //93
@@ -11759,18 +11812,41 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step //94
 		goto 54.8,71
 		.talk Warden Moi'bff Jill##18408
+		..turnin Cho'war the Pillager##9955
 		..turnin Wanted: Giselda the Crone##9936
 		..turnin Wanted: Zorbo the Advisor##9940
+	step
+		goto 44.2,65.2
+		.from Tusker##18290
+		..get Heart of Tusker|q 9852/1
+	step //33
+		goto 51.8,56.8
+		.talk Nitrin the Learned##19844
+		..turnin Vision of the Dead##10252
+		..accept Levixus the Soul Caller##10253
 	step //95
 		goto 73.8,62.6
 		.talk Lantresor of the Blade##18261
 		..turnin Returning the Favor##9931
 		..turnin Body of Evidence##9932
 		..accept Message to Telaar##9933
+	step
+		goto 71.5,40.8
+		.talk Hemet Nesingwary##18180
+		..turnin The Ultimate Bloodsport##9852
+	step //86
+		goto 61.8,24.4
+		.talk Gordawg##18099
+		..turnin Gurok the Usurper##9853
 	step //96
 		goto 55.5,68.8
 		.talk Arechron##18183
 		..turnin Message to Telaar##9933
+	step
+		goto 55.4,68.7
+		.talk Seer Jovar##23268
+		..accept A Mystifying Vision##11042
+		..accept Visions of Destruction##11044
 ]])
 
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (67-68)",[[
@@ -11893,6 +11969,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.get 16 Bloodmaul Brutebane Brew|q 10511/1
 		.' Use Rina's Diminution Powder on Bloodmaul Dire Wolves|use Rina's Diminution Powder##30251
 		.' Weaken 5 Bloodmaul Dire Wolves|goal 5 Bloodmaul Dire Wolf weakened|q 10506/1
+	step //27
+		goto 36.2,67.1
+		.talk Rina Moonspring##21066
+		..turnin A Dire Situation##10506
 	step //30
 		'Go outside to 36.3,66.2|goto 36.3,66.2
 		.talk Commander Skyshadow##21158
@@ -11938,13 +12018,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..'Don't aggro the ogres, though
 		.' Gorr'dim will run up for the beer
 		.' Pull Gorr'dim outside and kill him|kill Gorr'Dim|q 10517/1
-	step //38
-		goto 40.3,53
-		.' Kill 30 Bladespire ogres|goal 30 Bladespire Ogres killed|q 10504/1
-		.' Use your Bloodmaul Brutebane Keg when semi-close to an ogre|use Bloodmaul Brutebane Keg##30353
-		..'Don't aggro the ogre, though
-		.' The ogre will run up to the beer and drink it
-		.' Get 5 Bladespire ogres drunk|goal 5 Bladespire Ogres drunk|q 10512/1
 	step //39
 		goto 44,51.9
 		.talk Vindicator Vuuleen##21277
@@ -11954,6 +12027,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 41.3,46.7
 		.from Bladespire Champion##21296
 		..get Bladespire Clan Banner|q 10518/1
+	step //38
+		goto 40.3,53
+		.' Kill 30 Bladespire ogres|goal 30 Bladespire Ogres killed|q 10504/1
+		.' Use your Bloodmaul Brutebane Keg when semi-close to an ogre|use Bloodmaul Brutebane Keg##30353
+		..'Don't aggro the ogre, though
+		.' The ogre will run up to the beer and drink it
+		.' Get 5 Bladespire ogres drunk|goal 5 Bladespire Ogres drunk|q 10512/1
 	step //41
 		goto 46.62,74.71
 		.use Bladespire Clan Banner##30416
@@ -11970,8 +12050,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Commander Skyshadow##21158
 		..turnin The Bladespire Ogres##10504
 		..turnin Planting the Banner##10518
-	step //45
-		ding 68
 ]])
 
 
