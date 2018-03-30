@@ -55,7 +55,7 @@ Outland does have the advantage of less traveling between quests.
 Add Blackrock Dephts.  
 Add Scholomance key questline and Scholomance itself.
 
-# PANIC; MY QUESTS ARE GREEN!
+## PANIC; MY QUESTS ARE GREEN!
 Don't worry to much about that.  
 Quest xp works like this.
 <table>
