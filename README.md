@@ -29,10 +29,12 @@ Add Bartolo's Yeti fur cloak.
 Add "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in Trinity Core.  
 Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
 Add Northrend section
+Add Scryer questline
 
 ## Ding80GuidesAllianceTBC.lua (TO BE ADDED)
 Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redridge instead of 20, as no mount yet.
 Also changes travel paths.
+Vengeful Souls to Vengeful Harbringer
 
 ### Guide todo
 Add Deadmines? I want this guide to be group independent, but if you can't get Deadmines and Stockades done you're missing out so much.
@@ -111,6 +113,9 @@ Quest xp works like this.
 
 I recommend getting an addon like  [Bayi's Extended Questlog](https://www.wowace.com/projects/bayis-extended-questlog) addon, it shows the quest level in the log.  
 TLDR: You're safe if you do quests that are 5 levels below you, but at 6 level you get 80% xp, for most cases it's ok to finish these as they are on route with other 100% quests, but any lower and you can start dropping.
+
+## PANIC; ZYGOR IS SPAMMING MY CHAT!
+If you're getting "Zygor Guides Viewer: WARNING: quest has no such goal! Step X, line Y, quest Z, goal W", it means the server fix the goals for quest Z. Usually happens for exploration or escort quests.
 
 # step_fix.py
 Run this program to either fix or remove all step comments.

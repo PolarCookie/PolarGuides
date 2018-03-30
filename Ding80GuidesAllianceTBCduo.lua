@@ -10750,6 +10750,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto Terokkar Forest,38.6,8.5
 		.kill Shimmerscale Eels|n
 		.get 8 Pristine Shimmerscale Eel|q 10037/1
+	step //42
+		goto 48.1,14.5
+		.' Click the Western Altar
+		.' Purify the Western Altar|goal Western Altar|q 10021/3
 	step //38
 		goto 49.1,16.9
 		.kill Ashkaz##18539|q 9986/1
@@ -10757,18 +10761,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 50.1,19.4
 		.' Click the Eye of Veil Reskk|tip Looks like a big white orb at the top of the tower across the hanging bridge.
 		.get Eye of Veil Reskk|q 10847/1
-	step //40
-		goto 49.2,20.3
-		.' Click the Eastern Altar
-		.' Purify the Eastern Altar|goal Eastern Altar|q 10021/2
 	step //41
 		goto 50.7,16.6
 		.' Click the Northern Altar
 		.' Purify the Northern Altar|goal Northern Altar|q 10021/1
-	step //42
-		goto 48.1,14.5
-		.' Click the Western Altar
-		.' Purify the Western Altar|goal Western Altar|q 10021/3
+	step //40
+		goto 49.2,20.3
+		.' Click the Eastern Altar
+		.' Purify the Eastern Altar|goal Eastern Altar|q 10021/2
 	step //43
 		goto 57.9,23.2
 		.' Click the Eye of Veil Shienor|tip Climb the path inside the other tree, run across the bridge, looks like a big white orb on the ground.
@@ -10949,6 +10949,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 58.5,53.6
 		.talk Andarl##18252
 		..turnin Magical Disturbances##10026
+	step //88
+		goto 58.1,53.4
+		.talk Taela Everstride##18704
+		..turnin Wanted: Bonelashers Dead!##10033
+		..accept Torgos!##10035
 	step //85
 		goto 57.8,54.3
 		.talk Thander##18389
@@ -10963,14 +10968,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Lieutenant Gravelhammer##18713
 		..turnin Kill the Shadow Council!##10042
 		..turnin Thin the Flock##10869
-	step //88
-		goto 58.1,53.4
-		.talk Taela Everstride##18704
-		..turnin Wanted: Bonelashers Dead!##10033
-	step //89
-		goto 58.1,53.4
-		.talk Taela Everstride##18704
-		..accept Torgos!##10035
 	step //90
 		ding 65
 	step //91
@@ -11081,12 +11078,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.from Trachela##21515
 		..collect Trachela's Carcass##30618|q 10036
 	step //117
-		goto 30.2,51.1
+		goto 26.9,55.6
 		.kill 4 Deathtalon Spirit|q 10848/1
 		.kill 4 Screeching Spirit|q 10848/2
 		.kill 2 Spirit Raven|q 10848/3
-	step //118
-		goto 26.9,55.6
 		.use Trachela's Carcass##30618
 		.from Torgos##18707
 		..get Tail Feather of Torgos|q 10035/1
@@ -11193,14 +11188,34 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 49.7,76.2
 		.talk Vindicator Haylen##22462
 		..turnin For the Fallen##10920
+		..accept Terokkantula##10921
+	step
+		goto 54.3,81.8
+		.kill Terokkarantula|q 10921/1
+	step //140
+		goto 49.7,76.2
+		.talk Vindicator Haylen##22462
+		..turnin Terokkantula##10921
+		..accept Return to Sha'tari Base Camp##10926
+	step
+		goto 48,76
+		.kill Decrepit Clefthoof|n
+		.'Use the Fumber on Decrepit Clefthoof corpse|use Fumper##31825
+		.kill Hai'shulud|n
+		..get Enormous Bone Worm Organs|q 10930/1
 	step //141
 		goto 38.23,78.51
 		.kill 10 Lost Spirit|q 10031/1
 		.kill 10 Broken Skeleton|q 10031/2
+	step //131
+		goto 31,76.1
+		.talk Dwarfowitz##22481
+		..turnin The Big Bone Worm##10930
 	step //142
 		goto 31.1,76.5
 		.talk Oakun##22456
 		..turnin The Dread Relic##10877
+		..accept Evil Draws Near##10923
 	step //143
 		goto 31,76.1
 		.talk Commander Ra'vaj##22446
@@ -11210,24 +11225,58 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 31.4,75.7
 		.talk Scout Navrin##22364
 		..turnin Taken in the Night##10873
-	step //145
-		ding 66
+		..turnin Return to Sha'tari Base Camp##10926
 	step //146
 		goto 35.9,65.7
 		.' Click the black coffin up the steps
 		.'Kill the Reanimated Exarch|goal Contents of the Auchenai Coffin destroyed|q 10915/1
-	step //147
-		goto 31,76.1
-		.talk Commander Ra'vaj##22446
-		..turnin The Fallen Exarch##10915
 	step //148
 		goto 37.4,51.5
 		.talk Kirrik the Awakened##22272
 		..turnin Veil Lithic: Preemptive Strike##10861
+		..accept Veil Shalas: Signal Fires##10874
 	step //149
 		goto 37.1,49.5
 		.talk Soolaveen##18675
 		..turnin Helping the Lost Find Their Way##10031
+	step
+		'WARNING: ESCORT
+		goto 53,8,72.4
+		.talk Skywing##22424
+		..accept Skywing##10898|noautoaccept
+	step
+		goto 56.1,72.5
+		.goal Bloodstone Fire Extinguished|q 10874/4
+	step
+		goto 56.7,69.2
+		.goal Violet Fire Extinguished|q 10874/3
+	step
+		goto 55.5,69.8
+		.goal Emerald Fire Extinguished|q 10874/2
+	step
+		goto 55.2,67.2
+		.goal Sapphire Fire Extinguished|q 10874/1
+	step
+		goal Escort Skywing|q 10898/1
+	step
+		goto 48.7,67.2
+		.kill Auchenai Death-Speaker, Auchenai Doomsayer|n
+		..collect 20 Doom Skull##31812|n
+		.use Dread Relic##31811
+		..kill Teribus the Cursed|q 10923/1
+	step //147
+		goto 31,76.1
+		.talk Commander Ra'vaj##22446
+		..turnin The Fallen Exarch##10915
+	step //142
+		goto 31.1,76.5
+		.talk Oakun##22456
+		..turnin Evil Draws Near##10923
+	step //148
+		goto 37.4,51.5
+		.talk Kirrik the Awakened##22272
+		..turnin Veil Shalas: Signal Fires##10874
+		..accept Return to Shattrath##10889
 	step //150
 		goto 58.1,53.4
 		.talk Taela Everstride##18704
@@ -11244,6 +11293,22 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk "Dirty" Larry##19720
 		..turnin What Book? I Don't See Any Book.##10231
 		..accept The Master's Grand Design?##10251
+	step
+		goto 52.5,21
+		.talk Rilak the Redeemed##22292
+		..turnin Return to Shattrath##10889
+		..turnin Skywing##10898
+	step
+		'WARNING: EVENT
+		goto 51.7,20.8
+		.talk Defender Grashna##22373
+		..accept The Skettis Offensive##10879|noautoaccept
+	step
+		goal Attack thwarted|q 10879/1
+	step
+		goto 52.5,21
+		.talk Rilak the Redeemed##22292
+		..turnin The Skettis Offensive##10879
 	step //154
 		'Go train and Hearth back.
 ]])
