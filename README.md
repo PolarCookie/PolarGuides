@@ -1,6 +1,18 @@
 # PolarGuides
 Discord: https://discord.gg/tJJMwEX
 
+## Setup
+1. Install your Zygor addon, the TBC version has been backported [here](https://www.reddit.com/r/wowservers/comments/6c9b2z/335_wrath_zygor_downgrade_to_243/)  
+2. Copy the files in "replace<expansion>" into ZygorGuidesViewer  
+3. Add the .lua files to the ZygorGuidesViewer/Guides folder, edit Autoload.xml by adding the lines
+```
+<Script file="Ding80GuidesAlliance.lua"/>
+<Script file="Ding80GuidesAllianceTBC.lua"/>
+<Script file="Ding80GuidesAllianceTBCduo.lua"/>
+```
+You may want to remove all other script lines here to save load time.
+
+
 ## Ding80GuidesAlliance.lua
 Translated the Ding80 leveling guide to the Zygor syntax to work within the addon.  
 
@@ -44,7 +56,7 @@ Add full Blade Edge Mountain, Netherstorm and Shadowmoon Valley.
 ## Ding80GuidesAllianceTBCduo.lua
 Same as Ding80GuidesAllianceTBC.lua, but now it's tuned for 2 people leveling together, doing more quests and Deadmines, Stockades, Razorfen Kraul, Zul Farrak, Maraudon, Sunken Temple and Stratholme along the way. Outland dungeons are at your own leisure.  
 This guide has a chapter called "TBC Gold Rush"; the idea is to maximize experience gained in Azeroth before starting outland; in order to hit 70 earlier and get more gold from quests thereafter.  
-Currently this guide starts in outland at around lvl 63.5.  
+Currently this guide starts in Outland at around lvl 63.5 and you should hit 70 in early Blade Edge Mountain.  
 
 ### But Azeroth leveling is inefficent
 It was in WotLK that quest xp was doubled from the starting zones and onwards. In TBC there's little to no difference in XP between Azeroth and Outland for quests of the same level.
@@ -119,4 +131,4 @@ If you're getting "Zygor Guides Viewer: WARNING: quest has no such goal! Step X,
 
 # step_fix.py
 Run this program to either fix or remove all step comments.
-Run `python step_fix.py [-c] <guide>[ <guide]*`.
+Run `python step_fix.py [-c] <guide>[ <guide>]*`.
