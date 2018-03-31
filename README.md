@@ -127,6 +127,9 @@ TLDR: You're safe if you do quests that are 5 levels below you, but at 6 level y
 ## PANIC; ZYGOR IS SPAMMING MY CHAT!
 If you're getting "Zygor Guides Viewer: WARNING: quest has no such goal! Step X, line Y, quest Z, goal W", it means that the server needs to fix fix the goals for quest Z. Usually happens for exploration or escort quests.
 
+## Will you translate the horde guide?
+Lol, no. (get in touch if you feel like doing it yourself, I can help out).
+
 # step_fix.py
 Run this program to either fix or remove all step comments.
 Run `python step_fix.py [-c] <guide>[ <guide>]*`.
