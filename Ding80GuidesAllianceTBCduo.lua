@@ -1321,10 +1321,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		goto 64.9,66.7
 		.talk Magmar Fellhew##1345
 		..turnin Gathering Idols##297
-	step //139
-		goto 81.8,61.7
-		.talk Marek Ironheart##1154
-		..turnin Crocolisk Hunting##385
 	step //140
 		goto 83.5,65.5
 		.talk Daryl the Youngling##1187
@@ -1334,6 +1330,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		goto 81.7,64.2
 		.talk Vyrin Swiftwind##1156
 		..turnin Vyrin's Revenge (2)##531
+	step //139
+		goto 81.8,61.7
+		.talk Marek Ironheart##1154
+		..turnin Crocolisk Hunting##385
 	step //142
 		ding 17
 	step //143

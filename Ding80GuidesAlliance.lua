@@ -23,43 +23,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 		.talk Sten Stoutarm##658
 		..turnin Dwarven Outfitters##179
 		..accept Coldridge Valley Mail Delivery (1)##233
-	step //5
-		.talk Sten Stoutarm##658
-		..accept Glyphic Memorandum##3114
-		only Gnome Mage
-	step //6
-		.talk Sten Stoutarm##658
-		..accept Simple Memorandum##3112
-		only Gnome Warrior
-	step //7
-		.talk Sten Stoutarm##658
-		..accept Tainted Memorandum##3115
-		only Gnome Warlock
-	step //8
-		.talk Sten Stoutarm##658
-		..accept Encrypted Memorandum##3113
-		only Gnome Rogue
-	step //9
-		.talk Sten Stoutarm##658
-		..accept Simple Rune##3106
-		only Dwarf Warrior
-	step //10
-		.talk Sten Stoutarm##658
-		..accept Encrypted Rune##3109
-		only Dwarf Rogue
-	step //11
-		.talk Sten Stoutarm##658
-		..accept Hallowed Rune##3110
-		only Dwarf Priest
-	step //12
-		.talk Sten Stoutarm##658
-		..accept Consecrated Rune##3107
-		only Dwarf Paladin
-	step //13
-		.talk Sten Stoutarm##658
-		..accept Etched Rune##3108
-		only Dwarf Hunter
+		..accept Glyphic Memorandum##3114|only Gnome Mage
+		..accept Simple Memorandum##3112|only Gnome Warrior
+		..accept Tainted Memorandum##3115|only Gnome Warlock
+		..accept Encrypted Memorandum##3113|only Gnome Rogue
+		..accept Simple Rune##3106|only Dwarf Warrior
+		..accept Encrypted Rune##3109|only Dwarf Rogue
+		..accept Hallowed Rune##3110|only Dwarf Priest
+		..accept Consecrated Rune##3107|only Dwarf Paladin
+		..accept Etched Rune##3108|only Dwarf Hunter
 	step //14
+		goto 29.7,71.3
 		.talk Balir Frosthammer##713
 		..accept A New Threat##170
 	step //15
@@ -189,6 +163,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 		goto 28.5,67.7
 		.talk Felix Whindlebolt##8416
 		..turnin A Refugee's Quandary##3361
+	step //32
+		goto 28.6,66.4
+		.talk Branstock Khalder##837
+		..accept In Favor of the Light##5626
+		only Priest
 	step //45
 		goto 33.5,71.8
 		.talk Mountaineer Thalos##1965
@@ -215,6 +194,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 		..buy Rhapsody Malt|goal 1 Rhapsody Malt|q 384/2
 	step //50
 		home Kharanos
+	step
+		goto 47.3,52.2
+		.talk Maxan Anvol##1226
+		..turnin In Favor of the Light##5626
+		..accept Garments of the Light##5625
+	step
+		goto 45.8,54.6
+		goal Heal and Fortify Mountaineer Dolf|q 5625/1
+	step
+		goto 47.3,52.2
+		.talk Maxan Anvol##1226
+		..turnin Garments of the Light##5625
 	step //51
 		goto 46,51.7
 		.talk Tharek Blackstone##1872
@@ -774,8 +765,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		..accept The People's Militia (1)##12
 		.talk Captain Danuvin##821
 		..accept Patrolling Westfall##102
-	step //5
-		ding 13
 	step //6
 		goto 56.6,52.6
 		.talk Thor##523
@@ -791,6 +780,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		.kill 15 Defias Trapper|q 12/1
 		.kill 15 Defias Smuggler|q 12/2
 		.get 15 Red Leather Bandana|q 153/1
+	step //5
+		ding 13
 	step //10
 		goto 53.8,42.5
 		.from Goretusk##157+, Young Goretusk##454+
@@ -820,11 +811,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 55.1,12.3
 		.from Murloc Raider##515+, Murloc Coastrunner##126+
 		.get 3 Murloc Eye|q 38/2
-	step //16
-		ding 14
 	step //17
 		goto 57.1,19.3
-		.get 7 Handful of Oats|q 151/1
+		.get 8 Handful of Oats|q 151/1
 	step //18
 		goto 60,19.4
 		.talk Farmer Furlbrow##237
@@ -835,6 +824,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 53.8,31.7
 		.kill 20 Harvest Watcher|q 9/1
 		.collect 5 Flask of Oil##814|q 103 |future
+	step //16
+		ding 14
 	step //20
 		goto 56.4,30.5
 		.talk Salma Saldean##235
@@ -956,8 +947,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto Westfall,31.4,44.5
 		.kill 15 Defias Looter|q 13/2
 		.kill 15 Defias Pillager|q 13/1
-	step //48
-		ding 15
 	step //49
 		goto 56.3,47.5
 		.talk Gryan Stoutmantle##234
@@ -968,6 +957,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 54.0,52.9
 		.talk Scout Galiaan##878
 		..turnin Red Leather Bandanas##153
+	step //48
+		ding 15
 	step //51
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step //52
@@ -1073,10 +1064,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //77
 		goto 35,35
 		'Kill spiders, boars and bears while traveling.
-		'Just a reminder; skip to the next step.
-		.collect 3 Boar Intestines |q 418 |future
-		.collect 3 Spider Ichor |q 418 |future
-		.collect 3 Bear Meat |q 418 |future
+		.get 3 Boar Intestines|q 418/1
+		.get 3 Bear Meat|q 418/2
+		.get 3 Spider Ichor|q 418/3
 	step //78
 		goto 24.8,18.4
 		.talk Mountaineer Stormpike##1343
@@ -1084,14 +1074,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		..turnin Mountaineer Stormpike's Task##1339
 		..accept Stormpike's Order##1338
 		..accept Filthy Paws##307
-	step //79
-		ding 16
 	step //80
 		goto 35.4,18.5
 		.' Click Miners' League Crates inside the cave
 		.get 4 Miners' Gear|q 307/1
 		.from Tunnel Rat Forager##1176+, Tunnel Rat Geomancer##1174+, Tunnel Rat Kobold##1202+, Tunnel Rat Surveyor##1177+, Tunnel Rat Vermin##1172+, Tunnel Rat Vermin##1175+
-		.get 12 Trogg Stone Tooth|q 416/1
+		.get 12 Tunnel Rat Ear|q 416/1
+	step //79
+		ding 16
 	step //81
 		'Go outside to 24.8,18.4|goto 24.8,18.4
 		.talk Mountaineer Stormpike##1343
@@ -1100,6 +1090,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 34.3,47.7
 		.talk Mountaineer Kadrell##1340
 		..turnin Rat Catching##416
+	step //128
+		goto 34.8,49.3
+		.talk Vidra Hearthstove##1963
+		..turnin Thelsamar Blood Sausages##418
 	step //83
 		goto 64.9,66.7
 		.talk Magmar Fellhew##1345
@@ -1167,8 +1161,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 53.35,25.5
 		.kill 10 Stonesplinter Shaman|q 263/1
 		.kill 10 Stonesplinter Bonesnapper|q 263/2
-	step //99
-		ding 17
 	step //100
 		goto 63.6,47.9
 		.talk Bingles Blastenheimer##6577
@@ -1256,8 +1248,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //121
 		goto 75,19.8
 		.kill 4 Mo'grosh Brute|q 255/2
-	step //122
-		ding 18
 	step //123
 		goto 46,13.6
 		.talk Chief Engineer Hinderweir VII##1093
@@ -1271,19 +1261,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 46,13.6
 		.talk Chief Engineer Hinderweir VII##1093
 		..turnin A Dark Threat Looms (2)##199
-	step //126
-		'Last call to get the meat before leaving Loch Modan.
-		.get 3 Boar Intestines |q 418/1
-		.get 3 Spider Ichor |q 418/2
-		.get 3 Bear Meat |q 418/3
+	step //122
+		ding 18
 	step //127
 		goto 34.7,43.2
 		.talk Magistrate Bluntnose##1139
 		..turnin Mercenaries##255
-	step //128
-		goto 34.8,49.3
-		.talk Vidra Hearthstove##1963
-		..turnin Thelsamar Blood Sausages##418
 	step //129
 		goto 23.2,73.7
 		.talk Captain Rugelfuss
