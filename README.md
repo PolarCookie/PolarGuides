@@ -15,6 +15,9 @@ You may want to remove all other script lines here to save load time.
 
 ## Ding80GuidesAlliance.lua
 Translated the Ding80 leveling guide to the Zygor syntax to work within the addon.  
+A note about this addon, at lvl 19 the original suggested you grind for a full level, before getting a mount at 20 and then traveling to redrigde, you pick up a quest along the way that requires lvl20, so theoretically you save time by not backtracking to it later.
+You can either take this option, or head to Darkshore as I've written into the guide, or use the TBC version of this guide which goes to redridge at lvl 14-15, completes the Deadmines questline and then do Deadmine. Ideally this guide would be group independent, but Deadmines with the chains before and after are really good.
+If you take the third option, stick with the TBC version until Stockades.
 
 ### Edits done to Ding80
 Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
