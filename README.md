@@ -34,13 +34,12 @@ Warriors get Berserker Stance and Whirlwind weapon.
 ### Guide todo
 Do a timed run comparison of grinding lvl 19 in westfall or heading to auberdine as is written.  
 If auberdine stays, tempted to add The Absent Minded Professor questline, it hooks into wetlands.  
-Thelsamar blood sausage needs to be completed earlier, loss of xp due to gray.  
 Make some waypoints inside Deadmines for Collecting memories and Oh brother...  
 Clean up Forest Song quest start and end route.  
 Add Bartolo's Yeti fur cloak.  
 Add "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in Trinity Core.  
 Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
-Add Northrend section
+Add Northrend section  
 Add Scryer questline
 
 ## Ding80GuidesAllianceTBC.lua (TO BE ADDED)
