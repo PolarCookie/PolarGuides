@@ -3,7 +3,7 @@ Discord: https://discord.gg/tJJMwEX
 
 ## Setup
 1. Install your Zygor addon, the TBC version has been backported [here](https://www.reddit.com/r/wowservers/comments/6c9b2z/335_wrath_zygor_downgrade_to_243/)  
-2. Copy the files in "replace<expansion>" into ZygorGuidesViewer  
+2. Copy the files in "replace(TBC/WotLK)" into ZygorGuidesViewer  
 3. Add the .lua files to the ZygorGuidesViewer/Guides folder, edit Autoload.xml by adding the lines
 ```
 <Script file="Ding80GuidesAlliance.lua"/>
@@ -15,9 +15,9 @@ You may want to remove all other script lines here to save load time.
 
 ## Ding80GuidesAlliance.lua
 Translated the Ding80 leveling guide to the Zygor syntax to work within the addon.  
-A note about this addon, at lvl 19 the original suggested you grind for a full level, before getting a mount at 20 and then traveling to Redridge, you pick up a quest along the way that requires lvl20, so theoretically you save time by not backtracking to it later.
-You can either take this option, or head to Darkshore as I've written into the guide, or use the TBC version of this guide which goes to Redridge at lvl 14-15, completes the Deadmines questline and then do Deadmine. Ideally this guide would be group independent, but Deadmines with the chains before and after are really good.
-If you take the third option, stick with the TBC version until Stockades.
+At lvl 19 the original suggested you grind for a full level, before getting a mount at 20 and then traveling to Redridge, you pick up a quest along the way that requires lvl20, so theoretically you save time by not backtracking to it later.
+You can either take this option, or head to Darkshore as I've written into the guide, or use the TBCduo version of this guide which goes to Redridge at lvl 14-15, completes the Deadmines questline and then do Deadmine. Ideally this guide would be group independent, but Deadmines with the chains before and after are really good.
+If you take the third option, stick with the TBCduo version until Stockades.
 
 ### Edits done to Ding80
 Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
@@ -36,8 +36,10 @@ Warriors get Berserker Stance and Whirlwind weapon.
 
 ### Guide todo
 Do a timed run comparison of grinding lvl 19 in westfall or heading to auberdine as is written.  
-If auberdine stays, tempted to add The Absent Minded Professor questline, it hooks into wetlands.  
-Make some waypoints inside Deadmines for Collecting memories and Oh brother...  
+If auberdine stays, add WANTED: Murkdeep! once this works in stock TC  
+If Auberdine stays, can Kerlonian Evershade help with The Absent Minded Prospector? No, not scripted right, supposed to be a defensive pet http://www.wowhead.com/quest=5321/the-sleeper-has-awakened#comments:id=228579  
+If Auberdine stays, do The Tower of Althalaxx (4)##970?  
+
 Add Bartolo's Yeti fur cloak.  
 Add "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in Trinity Core.  
 Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.  

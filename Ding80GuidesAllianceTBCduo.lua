@@ -6130,7 +6130,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 80.8,46.8
 		.turnin Cortello's Riddle##626
 	step //140
-		'Hearth to Aerie Peak|goto The Hinterlands,13.9,42.1,0.5|use Hearthstone##6948|noway|c
+		'Hearth to Aerie Peak|goto The Hinterlands,13.9,42.1,0.5|noway|c
 	step //141
 		goto 14.8,44.6
 		.talk Fraggar Thundermantle##7884
