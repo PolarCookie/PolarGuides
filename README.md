@@ -71,12 +71,12 @@ Also changes travel paths to Auberdine.
 - [ ] Vengeful Souls to Vengeful Harbringer.
 
 ## Ding80GuidesAllianceTBCduo.lua
-WARNING: GET IN TOUCH IF YOU WANT TO TRY THIS, I'D LIKE TO DO A FINAL TEST RUN ON IT!
+WARNING: GET IN TOUCH IF YOU WANT TO TRY THIS, I'D LIKE TO DO A FINAL TEST RUN ON IT!  
 Same as Ding80GuidesAllianceTBCsolo.lua, but now it's tuned for 2 people leveling together, doing more quests and Deadmines, Stockades, Razorfen Kraul, Zul Farrak, Maraudon, Sunken Temple and Stratholme along the way. Outland dungeons are at your own leisure.  
 This guide has a chapter called "TBC Gold Rush"; the idea is to maximize experience gained in Azeroth before starting outland; in order to hit 70 earlier and get more gold from quests thereafter.  
 Currently this guide starts in Outland at around lvl 63.5 and you should hit 70 in early Blade Edge Mountain.  
 
-### But Azeroth leveling is inefficent
+### But Azeroth leveling is inefficent!
 It was in WotLK that quest xp was doubled from the starting zones and onwards. In TBC there's little to no difference in XP between Azeroth and Outland for quests of the same level.
 Doing Stratholme is worth 166,850xp from quests, 197,850 when you finish In Dreams. Hellfire Ramparts and Blood Furnace are worth 81,800xp.
 Outland does have the advantage of less traveling between quests.
