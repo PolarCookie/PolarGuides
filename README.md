@@ -144,10 +144,10 @@ I recommend getting an addon like  [Bayi's Extended Questlog](https://www.wowace
 TLDR: You're safe if you do quests that are 5 levels below you, but at 6 level you get 80% xp, for most cases it's ok to finish these as they are on route with other 100% quests, but any lower and you can start dropping.
 
 ## PANIC; ZYGOR IS SPAMMING MY CHAT!
-If you're getting "Zygor Guides Viewer: WARNING: quest has no such goal! Step X, line Y, quest Z, goal W", it means that the server needs to fix fix the goals for quest Z. Usually happens for exploration or escort quests.
+If you're getting "Zygor Guides Viewer: WARNING: quest has no such goal! Step X, line Y, quest Z, goal W", it means that the server needs to fix the goals for quest Z. Usually happens for exploration or escort quests.
 
 ## Will you translate the horde guide?
-Lol, no. (get in touch if you feel like doing it yourself, I can help out).
+Lol, no. (get in touch if you feel like doing it yourself, I can help).
 
 # step_fix.py
 Run this program to either fix or remove all step comments.
