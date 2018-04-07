@@ -12,11 +12,11 @@ Discord: https://discord.gg/tJJMwEX
 ```
 You may want to remove all other script lines here to save load time.
 
-##Disclaimer
+## Disclaimer
 Your milage with these guides may and will vary, they have been tested on a stock TC server I host myself. Depending on population, droprates, spawn positions and scripting you will have to improvise.
 Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up.
 
-##Can you help this project?
+## Want to help this project?
 It would help me a lot if you could take a screenshot every time you ding, with the current step and /played on display. Send me a zip of the images and I'll fix the rest.
 
 ## Ding80GuidesAlliance.lua
