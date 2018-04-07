@@ -7,7 +7,7 @@ Discord: https://discord.gg/tJJMwEX
 3. Add the .lua files to the ZygorGuidesViewer/Guides folder, edit Autoload.xml by adding the lines
 ```
 <Script file="Ding80GuidesAlliance.lua"/>
-<Script file="Ding80GuidesAllianceTBC.lua"/>
+<Script file="Ding80GuidesAllianceTBCsolo.lua"/>
 <Script file="Ding80GuidesAllianceTBCduo.lua"/>
 ```
 You may want to remove all other script lines here to save load time.
@@ -45,16 +45,17 @@ Add "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they ar
 Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
 Add Northrend section  
 Add Scryer questline
+Research moving burning steppes to a later time
 
-## Ding80GuidesAllianceTBC.lua (TO BE ADDED)
+## Ding80GuidesAllianceTBC.lua
 Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redridge instead of 20, as no mount yet.
+Deadmines is planned, it's either that or grind for a full level, otherwise you get into trouble in Duskwood.
 Also changes travel paths.
-Vengeful Souls to Vengeful Harbringer
 
 ### Guide todo
-Add Deadmines? I want this guide to be group independent, but if you can't get Deadmines and Stockades done you're missing out so much.
 Adjust Stormwind City and Eastern Plaguelands coordinates to TBC values.
 Add full Blade Edge Mountain, Netherstorm and Shadowmoon Valley.
+Vengeful Souls to Vengeful Harbringer
 
 ## Ding80GuidesAllianceTBCduo.lua
 Same as Ding80GuidesAllianceTBC.lua, but now it's tuned for 2 people leveling together, doing more quests and Deadmines, Stockades, Razorfen Kraul, Zul Farrak, Maraudon, Sunken Temple and Stratholme along the way. Outland dungeons are at your own leisure.  
