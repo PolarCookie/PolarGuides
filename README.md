@@ -19,6 +19,10 @@ Most ding steps can be safely ignored, but give me a shout if you reached a ques
 ## Want to help this project?
 It would help me a lot if you could take a screenshot every time you ding, with the current step and /played on display. Send me a zip of the images and I'll fix the rest.
 
+## Can I use these guides for Vanilla?
+Not tested, but Ding80GuidesAllianceTBCduo will probably work pretty well as solo, It will probably be a lot better than Joannas. But why bother when you can AoE group grind on K3?
+(If anyone want to try backporting Zygor to Vanilla and any Vanilla server admins wanna give me a gm account on a ptr; get in touch).
+
 ## Ding80GuidesAlliance.lua
 Translated the Ding80 leveling guide to the Zygor syntax to work within the addon.  
 At lvl 19 the original suggested you grind for a full level, before getting a mount at 20 and then traveling to Redridge, you pick up a quest along the way that requires lvl20, so theoretically you save time by not backtracking to it later.
