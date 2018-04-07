@@ -23,7 +23,7 @@ If you take the third option, stick with the TBCduo version until Stockades.
 Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
 Cracking Maury's Foot and Mai'Zoth added.  
 Desolace has been replaced by Arathi Highlands.  
-Felwood round 1 swapped with Azarah to save travel time
+Felwood round 1 swapped with Azarah to save travel time  
 Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
 Removed Withered Basidium, to much grind.  
 
