@@ -29,7 +29,7 @@ If you take the third option, stick with the TBCduo version until Stockades.
 Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
 Cracking Maury's Foot and Mai'Zoth added.  
 Desolace has been replaced by Arathi Highlands.  
-Felwood round 1 swapped with Azshara to save travel time  
+Felwood round 1 swapped with Azshara to save travel time.  
 Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
 Removed Withered Basidium, to much grind.  
 
@@ -40,18 +40,21 @@ Removed Withered Basidium, to much grind.
 ### Class quest included
 - [x] Warlocks learn voidwalker, succubus and felhunter along the way.  
 - [x] Warriors get Berserker Stance and Whirlwind weapon.  
-- [x] Warrior, Mage, Priest Sunken Temple included
+- [x] Warrior, Mage, Priest Sunken Temple included.
 
 ### Guide todo
+- [ ] Human starting zone (high priority).  
+- [ ] Draenei starting zone.  
+- [ ] Night Elf starting zone.  
 - [ ] Do a timed run comparison of grinding lvl 19 in westfall or heading to auberdine as is written.  
-- [ ] If auberdine stays, add WANTED: Murkdeep! once this works in stock TC  
+- [ ] If auberdine stays, add WANTED: Murkdeep! once this works in stock TC.  
 - [ ] If Auberdine stays, can Kerlonian Evershade help with The Absent Minded Prospector? No, not scripted right, supposed to be a defensive pet http://www.wowhead.com/quest=5321/the-sleeper-has-awakened#comments:id=228579  
 - [ ] If Auberdine stays, do The Tower of Althalaxx (4)##970?  
 - [ ] Add "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in Trinity Core.  
 - [ ] Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
-- [ ] Add Northrend section  
-- [ ] Add Scryer questline
-- [ ] Research moving burning steppes to a later time
+- [ ] Add Northrend section.  
+- [ ] Add Scryer questline.
+- [ ] Research moving burning steppes to a later time.
 
 ## Ding80GuidesAllianceTBCsolo.lua
 Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redridge instead of 20, as no mount yet.
@@ -61,10 +64,10 @@ Also changes travel paths to Auberdine.
 ### Guide todo
 - [ ] Adjust Stormwind City and Eastern Plaguelands coordinates to TBC values.
 - [ ] Add full Blade Edge Mountain, Netherstorm and Shadowmoon Valley.
-- [ ] Vengeful Souls to Vengeful Harbringer
+- [ ] Vengeful Souls to Vengeful Harbringer.
 
 ## Ding80GuidesAllianceTBCduo.lua
-WARNING: GET IN TOUCH IF YOU WANT TO TRY THIS, I'D LIKE TO DO A FINAL TEST RUN ON IT
+WARNING: GET IN TOUCH IF YOU WANT TO TRY THIS, I'D LIKE TO DO A FINAL TEST RUN ON IT!
 Same as Ding80GuidesAllianceTBCsolo.lua, but now it's tuned for 2 people leveling together, doing more quests and Deadmines, Stockades, Razorfen Kraul, Zul Farrak, Maraudon, Sunken Temple and Stratholme along the way. Outland dungeons are at your own leisure.  
 This guide has a chapter called "TBC Gold Rush"; the idea is to maximize experience gained in Azeroth before starting outland; in order to hit 70 earlier and get more gold from quests thereafter.  
 Currently this guide starts in Outland at around lvl 63.5 and you should hit 70 in early Blade Edge Mountain.  
