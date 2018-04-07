@@ -86,7 +86,7 @@ Outland does have the advantage of less traveling between quests.
 - [ ] Add Scholomance key questline and Scholomance itself.
 
 ## Ding80GuidesAllianceDungeon (WIP)
-To Be Done: A solo oriented leveling guide visitng 5 man dungeons to avoid farming out in the world. A solo version of duo.
+To Be Done: A solo oriented leveling guide visiting 5 man dungeons to avoid farming out in the world. A solo version of duo, will have to prune a lot of quests.
 
 ## PANIC; MY QUESTS ARE GREEN!
 Don't worry to much about that.  
