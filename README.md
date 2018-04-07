@@ -28,25 +28,24 @@ Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde
 Removed Withered Basidium, to much grind.  
 
 ### Progress
-[x] Dun Morogh 1-12 done.  
-[x] Alliance 13-68 done.  
+- [x] Dun Morogh 1-12 done.  
+- [x] Alliance 13-68 done.  
 
 ### Class quest included
-[x] Warlocks learn voidwalker, succubus and felhunter along the way.  
-[x] Warriors get Berserker Stance and Whirlwind weapon.  
-[x] Warrior, Mage, Priest Sunken Temple included
+- [x] Warlocks learn voidwalker, succubus and felhunter along the way.  
+- [x] Warriors get Berserker Stance and Whirlwind weapon.  
+- [x] Warrior, Mage, Priest Sunken Temple included
 
 ### Guide todo
-[] Do a timed run comparison of grinding lvl 19 in westfall or heading to auberdine as is written.  
-[] If auberdine stays, add WANTED: Murkdeep! once this works in stock TC  
-[] If Auberdine stays, can Kerlonian Evershade help with The Absent Minded Prospector? No, not scripted right, supposed to be a defensive pet http://www.wowhead.com/quest=5321/the-sleeper-has-awakened#comments:id=228579  
-[] If Auberdine stays, do The Tower of Althalaxx (4)##970?  
-
-[] Add "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in Trinity Core.  
-[] Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
-[] Add Northrend section  
-[] Add Scryer questline
-[] Research moving burning steppes to a later time
+- [] Do a timed run comparison of grinding lvl 19 in westfall or heading to auberdine as is written.  
+- [] If auberdine stays, add WANTED: Murkdeep! once this works in stock TC  
+- [] If Auberdine stays, can Kerlonian Evershade help with The Absent Minded Prospector? No, not scripted right, supposed to be a defensive pet http://www.wowhead.com/quest=5321/the-sleeper-has-awakened#comments:id=228579  
+- [] If Auberdine stays, do The Tower of Althalaxx (4)##970?  
+- [] Add "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in Trinity Core.  
+- [] Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
+- [] Add Northrend section  
+- [] Add Scryer questline
+- [] Research moving burning steppes to a later time
 
 ## Ding80GuidesAllianceTBCsolo.lua
 Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redridge instead of 20, as no mount yet.
@@ -54,9 +53,9 @@ Deadmines and stockades are included, it's either that or grind for a full level
 Also changes travel paths to Auberdine.
 
 ### Guide todo
-[] Adjust Stormwind City and Eastern Plaguelands coordinates to TBC values.
-[] Add full Blade Edge Mountain, Netherstorm and Shadowmoon Valley.
-[] Vengeful Souls to Vengeful Harbringer
+- [] Adjust Stormwind City and Eastern Plaguelands coordinates to TBC values.
+- [] Add full Blade Edge Mountain, Netherstorm and Shadowmoon Valley.
+- [] Vengeful Souls to Vengeful Harbringer
 
 ## Ding80GuidesAllianceTBCduo.lua
 Same as Ding80GuidesAllianceTBCsolo.lua, but now it's tuned for 2 people leveling together, doing more quests and Deadmines, Stockades, Razorfen Kraul, Zul Farrak, Maraudon, Sunken Temple and Stratholme along the way. Outland dungeons are at your own leisure.  
@@ -69,8 +68,8 @@ Doing Stratholme is worth 166,850xp from quests, 197,850 when you finish In Drea
 Outland does have the advantage of less traveling between quests.
 
 ### Guide todo
-[] Add Blackrock Dephts.  
-[] Add Scholomance key questline and Scholomance itself.
+- [] Add Blackrock Dephts.  
+- [] Add Scholomance key questline and Scholomance itself.
 
 ## Ding80GuidesAllianceDungeon (WIP)
 To Be Done: A solo oriented leveling guide visitng 5 man dungeons to avoid farming out in the world. A solo version of duo.
