@@ -12,6 +12,12 @@ Discord: https://discord.gg/tJJMwEX
 ```
 You may want to remove all other script lines here to save load time.
 
+##Disclaimer
+Your milage with these guides may and will vary, they have been tested on a stock TC server I host myself. Depending on population, droprates, spawn positions and scripting you will have to improvise.
+Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up.
+
+##Can you help this project?
+It would help me a lot if you could take a screenshot every time you ding, with the current step and /played on display. Send me a zip of the images and I'll fix the rest.
 
 ## Ding80GuidesAlliance.lua
 Translated the Ding80 leveling guide to the Zygor syntax to work within the addon.  
@@ -23,7 +29,7 @@ If you take the third option, stick with the TBCduo version until Stockades.
 Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
 Cracking Maury's Foot and Mai'Zoth added.  
 Desolace has been replaced by Arathi Highlands.  
-Felwood round 1 swapped with Azarah to save travel time  
+Felwood round 1 swapped with Azshara to save travel time  
 Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
 Removed Withered Basidium, to much grind.  
 
@@ -58,6 +64,7 @@ Also changes travel paths to Auberdine.
 - [ ] Vengeful Souls to Vengeful Harbringer
 
 ## Ding80GuidesAllianceTBCduo.lua
+WARNING: GET IN TOUCH IF YOU WANT TO TRY THIS, I'D LIKE TO DO A FINAL TEST RUN ON IT
 Same as Ding80GuidesAllianceTBCsolo.lua, but now it's tuned for 2 people leveling together, doing more quests and Deadmines, Stockades, Razorfen Kraul, Zul Farrak, Maraudon, Sunken Temple and Stratholme along the way. Outland dungeons are at your own leisure.  
 This guide has a chapter called "TBC Gold Rush"; the idea is to maximize experience gained in Azeroth before starting outland; in order to hit 70 earlier and get more gold from quests thereafter.  
 Currently this guide starts in Outland at around lvl 63.5 and you should hit 70 in early Blade Edge Mountain.  
