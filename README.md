@@ -82,7 +82,7 @@ Doing Stratholme is worth 166,850xp from quests, 197,850 when you finish In Drea
 Outland does have the advantage of less traveling between quests.
 
 ### Guide todo
-- [ ] Add Blackrock Dephts.  
+- [ ] Add Blackrock Depths.  
 - [ ] Add Scholomance key questline and Scholomance itself.
 
 ## Ding80GuidesAllianceDungeon (WIP)
