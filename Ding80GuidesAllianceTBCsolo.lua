@@ -2122,10 +2122,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.talk Scout Jorli##17927
 		..turnin Cutting a Path##10065
 	step
+		goto 24.9,34.4
+		.talk Researcher Cornelius##17686
+		..accept They're Alive! Maybe...##9670
+	step
 		goto 18.2,37.9
 		.kill Zarakh##17683|q 9669/3
 		.kill 8 Myst Leecher##17523+|q 9669/1
 		.kill 8 Myst Spinner##17522+|q 9669/2
+		'Rescue Expedition Researchers from the Webs|goal 5 Expedition Researcher Freed|q 9670/1
+	step
+		goto 24.9,34.4
+		.talk Researcher Cornelius##17686
+		..turnin They're Alive! Maybe...##9670
 	step
 		goto 30,36.6
 		.kill 6 Fouled Water Spirit##17358+|q 10067/1
@@ -2163,15 +2172,64 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.talk Vindicator Aesom##17844
 		..turnin Limits of Physical Exhaustion##9746
 		..accept The Sun Gate##9740
+		..accept What We Know...##9753|only Draenei
+	step
+		goto 52.7,53.2
+		.talk Exarch Admetius##17658
+		..turnin What We Know...##9753
+		..accept What We Don't Know...##9756
+		only Draenei
+	step
+		goto 54.4,54.1
+		'Talk to the Captured Sunhawk Agent
+		.goal Sunhawk Information Recovered|q 9756/1
+		only Draenei
+	step
+		goto 52.7,53.2
+		.talk Exarch Admetius##17658
+		..turnin What We Don't Know...##9756
+		..accept Vindicator's Rest##9760
+		only Draenei
+	step
+		'Look for a partner to fight Matis the Cruel with
+		goto 30.7,46.8
+		.talk Vindicator Corin##17986
+		..turnin Vindicator's Rest##9760
+		..accept Clearing the Way##9761
+		only Draenei
 	step
 		'Look for a partner to fight Matis the Cruel with
 		goto 18.7,64
 		.kill 12 Void Critter##17887+|q 9741/1
 		.goal The Sun Gate Destroyed|q 9740/1
 	step
+		goto 18.5,45.6
+		.kill 8 Sunhawk Agent##17610+|q 9761/1
+		.kill 8 Sunhawk Saboteur##17609+|q 9761/2
+		only Draenei
+	step
 		'Travel on the road looking for Matis the Cruel
 		'Summon aid with the Flare gun while in combat|use Flare Gun##24278
 		.goal Matis the Cruel Captured|q 9711/1
+	step
+		goto 30.7,46.8
+		.talk Vindicator Corin##17986
+		..turnin Clearing the Way##9761
+		only Draenei
+	step
+		'WARNING: ESCORT
+		goto 30.8,46.6
+		.talk Demolitionist Legoso##17982
+		..accept Ending Their World##9759|noautoaccept
+		only Draenei
+	step
+		goal Vector Coil Destroyed and Sironas Slain|q 9759/1
+		only Draenei
+	step
+		goto 52.7,53.2
+		.talk Exarch Admetius##17658
+		..turnin Ending Their World##9759
+		only Draenei
 	step
 		goto 55.4,55.3
 		.talk Vindicator Kuros##17843
@@ -2181,7 +2239,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.talk Vindicator Aesom##17844
 		..turnin Critters of the Void##9741
 		..turnin The Sun Gate##9740
-		..accept What We Know...##9753|only Draenei
 	step
 		goto 61.3,49.6
 		.talk Mound of Dirt
@@ -2244,7 +2301,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..accept Razormaw##9689
 	step
 		goto 72.8,20.8
-		.'Summon Razormaw|use Bundle of Dragon Bones##24221
+		.'Click the Ever-burning Pyre to summon Razormaw
 		..kill Razormaw##17592|q 9689/1
 	step
 		goto 75.1,34.4
@@ -2257,52 +2314,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.talk Jessera of Mac'Aree##17663
 		..turnin Ysera's Tears##9649
 	step
-		goto 52.7,53.2
-		.talk Exarch Admetius##17658
-		..turnin What We Know...##9753
-		..accept What We Don't Know...##9756
-		only Draenei
+		'Fly to the Exodar|goto The Exodar
 	step
-		goto 54.4,54.1
-		'Talk to the Captured Sunhawk Agent
-		.goal Sunhawk Information Recovered|q 9756/1
-		only Draenei
-	step
-		goto 52.7,53.2
-		.talk Exarch Admetius##17658
-		..turnin What We Don't Know...##9756
-		..accept Vindicator's Rest##9756
-		only Draenei
-	step
-		goto 30.7,46.8
-		.talk Vindicator Corin##17986
-		..turnin Vindicator's Rest##9756
-		..accept Clearing the Way##9761
-		only Draenei
-	step
-		goto 18.5,45.6
-		.kill 8 Sunhawk Agent##17610+|q 9761/1
-		.kill 8 Sunhawk Saboteur##17609+|q 9761/2
-		only Draenei
-	step
-		goto 30.7,46.8
-		.talk Vindicator Corin##17986
-		..turnin Clearing the Way##9761
-		only Draenei
-	step
-		'WARNING: ESCORT
-		goto 30.8,46.6
-		.talk Demolitionist Legoso##17982
-		..accept Ending Their World##9759|noautoaccept
-		only Draenei
-	step
-		goal Vector Coil Destroyed and Sironas Slain|q 9759/1
-		only Draenei
-	step
-		goto 52.7,53.2
-		.talk Exarch Admetius##17658
-		..turnin Ending Their World##9759
-		only Draenei
+		'Buy 5 flask of oil from the Auction Hous
+		.buy 5 Flask of Oil
 	step
 		'Make/find a group for Deadmines and get teleported|goto The Deadmines|noway|c
 	step
@@ -2325,7 +2340,39 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 	step
 		'Leave by the backdoor|goto Westfall|noway|c
 	step
-		'Fly to Stormwind City|goto Stormwind City|noway|c
+		'You need to be at least 12745/19300 xp at lvl 19 at this point, not including the Lighthouse quests 
+		'Ask if you can buy Flask of oils from someone in your group, otherwise farm some Golems outside Deadmines
+		.get 5 Flask of Oil|q 103/1|future
+	step
+		goto 30,86
+		.talk Captain Grayson##392
+		..accept The Coastal Menace##104
+		..accept Keeper of the Flame##103
+		..turnin Keeper of the Flame##103
+	step
+		goto 34,84
+		.from Old Murk-Eye##391
+		.get Scale of Old Murk-Eye|q 104/1
+	step
+		goto 30,86
+		.talk Captain Grayson##392
+		..turnin The Coastal Menace##104
+	step
+		goto 56.3,47.5
+		.talk Gryan Stoutmantle##234
+		..accept The Defias Brotherhood##65
+	step
+		goto 56.6,52.6
+		.talk Thor##523
+		..fpath Sentinel Hill
+	step
+		'Travel east to Elwynn Forest|goto Elwynn Forest|noway|c
+	step
+		'Travel north to Stormwind City|goto Stormwind City|noway|c
+	step
+		goto 71,72.5
+		.talk Dungar Longdrink##352
+		..fpath Stormwind City
 	step
 		goto 70.3,40.8
 		.talk Wilder Thistlenettle##656
@@ -2346,6 +2393,242 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..turnin Bazil Thredd##389
 	step
 		ding 20
+	step
+		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c	
+	step
+		goto 65.2,69.7
+		.talk Theocritus##313
+		..accept A Watchful Eye##94
+	step
+		'Go east to Redridge Mountains|goto Redridge Mountains|noway|c
+	step
+		goto 15.3,71.5
+		.talk Guard Parker##464
+		..accept Encroaching Gnolls##244
+	step
+		goto 30.7,60
+		.talk Deputy Feldon##1070
+		..turnin Encroaching Gnolls##244
+		..accept Assessing the Threat##246
+	step
+		goto 30.6,59.4
+		.talk Ariena Stormfeather##931
+		..fpath Lakeshire
+	step
+		goto 33.5,49
+		.talk Marshal Marris##382
+		..accept Blackrock Menace##20
+	step
+		goto 32.1,48.6
+		.talk Foreman Oslow##341
+		..accept The Lost Tools##125
+	step
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..accept The Price of Shoes##118
+	step
+		goto 29.3,53.6
+		.talk Shawn##8965
+		..accept Hilary's Necklace##3741
+	step
+		goto 30,44.5
+		.talk Magistrate Solomon##344
+		..accept Messenger to Stormwind (1)##120
+	step
+		goto 27.7,47.4
+		.talk Dockmaster Baren##381
+		..accept Selling Fish##127
+		..accept Murloc Poachers##150
+	step
+		goto 26.6,44.3
+		.talk Darcy##379
+		..accept A Free Lunch##129
+	step
+		home Lakeshire
+	step
+		goto 26.5,45.3
+		.talk Wiley the Black##266
+		..turnin The Defias Brotherhood (1)##65
+		..accept The Defias Brotherhood (2)##132
+	step
+		goto 22.7,43.8
+		.talk Chef Breanna##343
+		..accept Redridge Goulash##92
+	step
+		'Fly to Stormwind City|goto Stormwind City|noway|c
+	step
+		goto 69.2,82.7
+		.talk General Marcus Jonathan##466
+		..turnin Messenger to Stormwind (1)##120
+		..accept Messenger to Stormwind (2)##121
+	step
+		goto Elwynn Forest,41.7,65.5
+		.talk Smith Argus##514
+		..turnin The Price of Shoes##118
+		..accept Return to Verner##119
+	step
+		'Head back to Stormwind City|goto Stormwind City|noway|c
+	step
+		'Buy a Bronze Tube from the Auction House|buy 1 Bronze Tube|q 174/1
+		'Also sold by <Engineering Supplies> vendors near Engineering trainers.
+	step
+		'Fly to Lakeshire|goto Redridge Mountains|noway|c
+	step
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..turnin Return to Verner##119
+		..accept Underbelly Scales##122
+		..accept A Baying of Gnolls##124
+	step
+		goto 30,44.5
+		.talk Magistrate Solomon##344
+		..turnin Messenger to Stormwind (2)##121
+		..accept Messenger to Westfall (1)##143
+	step
+		goto 19.2,51.7
+		.' Click the Glinting Mud|tip The Glinting Mud spawns in random places around this area, so some searching may be necessary.
+		.get Hilary's Necklace|q 3741/1
+	step
+		goto 41.5,54.6
+		.' Click the Sunken Chest
+		.get Oslow's Toolbox|q 125/1
+	step
+		goto 40.82,49.11|tip Don't wait around for respawns, skip to the next step if there are no Murlocs around.
+		.from Murloc Flesheater##422+, Murloc Shorestriker##1083+, Murloc Minor Tidecaller##548+
+		.get 10 Spotted Sunfish|q 127/1
+		.get 8 Murloc Fin##1468|q 150/1
+	step
+		goto 34.2,67.4
+		.from Black Dragon Whelp##1221+
+		.get 6 Underbelly Whelp Scale|q 122/1
+		.from Great Goretusk##2296+|tip Skip this step if there's no Boars around, keep killing them as you met them in your travels.
+		.get 5 Great Goretusk Snout|q 92/1
+	step
+		goto 15.62,64.16|tip Don't wait around for respawns, skip to the next step if no Gnolls around.
+		.kill 10 Redridge Mongrel|q 246/1
+		.kill 6 Redridge Poacher|q 246/2
+	step
+		goto 15.3,71.5
+		.talk Guard Parker##464
+		..turnin A Free Lunch##129
+		..accept Visit the Herbalist##130
+	step
+		goto 19.3,73.2
+		.from Tarantula##442+|tip Skip this step if there's no Spiders around, keep killing them as you met them in your travels.
+		.get 5 Crisp Spider Meat|q 92/3
+	step
+		goto 26.8,80.2
+		.kill 10 Redridge Mongrel|q 246/1
+		.kill 6 Redridge Poacher|q 246/2
+	step
+		goto Redridge Mountains,48.2,73.3
+		.from Murloc Flesheater##422+, Murloc Shorestriker##1083+, Murloc Minor Tidecaller##548+
+		.get 10 Spotted Sunfish|q 127/1
+		.get 8 Murloc Fin##1468|q 150/1
+	step
+		goto 55.5,74.7
+		.from Dire Condor##428+|tip Skip this step if there's no Condors around, keep killing them as you met them in your travels.
+		.get 5 Tough Condor Meat|q 92/2
+	step
+		goto 70.6,78.8
+		.from Blackrock Grunt##440+, Blackrock Outrunner##485+
+		.get 10 Battleworn Axe|q 20/1
+	step
+		'Finish collecting items for Redridge Gulash at this point before you return to Lakeshire
+		.get 5 Great Goretusk Snout|q 92/1
+		.get 5 Tough Condor Meat|q 92/2
+		.get 5 Crisp Spider Meat|q 92/3
+	step
+		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
+	step
+		goto 38.86,32.07
+		.kill 10 Redridge Brute|q 124/1
+		.kill 8 Redridge Mystic|q 124/2
+		.from Redridge Brute##426+, Redridge Mystic##430+
+		.get 5 Iron Pike|q 89/1
+		.get 5 Iron Rivet|q 89/2
+		.' You can find more Gnolls at 22.75,37.49|n
+	step
+		goto 32.1,48.6
+		.talk Foreman Oslow##341
+		..turnin The Everstill Bridge##89
+	step
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..turnin A Baying of Gnolls##124
+	step
+		'Go southwest to Duskwood|goto Duskwood|noway|c
+	step
+		goto 73.8,43.5
+		.talk Chef Grual##272
+		..accept Seasoned Wolf Kabobs##90
+	step
+		home Darkshire
+	step
+		goto 73.5,46.8
+		.talk Commander Althea Ebonlocke##264
+		..accept The Night Watch (1)##56
+	step
+		goto 75.3,48.7
+		.talk Elaine Carevin##633
+		..accept Deliveries to Sven##164
+		..accept The Hermit##165
+		..accept Raven Hill##163
+	step
+		goto 77.5,44.3
+		.talk Felicia Maline##2409
+		..fpath Darkshire
+	step
+		goto 79.8,48.1
+		.talk Viktori Prism'Antras##276
+		..accept Look To The Stars (1)##174
+		..turnin Look To The Stars (1)##174
+		..accept Look To The Stars (2)##175
+	step
+		goto Duskwood,75.8,45.3
+		.talk Madame Eva##265
+		..accept The Totem of Infliction##101
+	step
+		goto 45.1,67
+		.talk Watcher Dodds##888
+		..accept Eight-Legged Menaces##245
+	step
+		'Go outside to 18.2,56.6|goto 18.2,56.6
+		.talk Jitters##288
+		..turnin Raven Hill##163
+		..accept Jitters' Growling Gut##5
+	step
+		'Travel north along the river towards Sven.
+		goto 14.05,70.27|n
+		.kill 15 Pygmy Venom Web Spider|q 245/1
+		..get 5 Vial of Spider Venom|q 101/2
+		..collect 6 Gooey Spider Leg|q 93/1|future
+	step
+		goto 7.8,34.2
+		.talk Sven Yorgen##311
+		..turnin Deliveries to Sven##164
+		..accept Sven's Revenge##95
+	step
+		goto 7.7,33.2
+		.talk Lars##893
+		..accept Wolves at Our Heels##226
+	step
+		goto 28.1,31.5
+		.talk Abercrombie##289
+		..turnin The Hermit##165
+		..accept Supplies from Darkshire##148
+	step
+		kill 12 Starving Dire Wolf|q 226/1
+		kill 8 Rabid Dire Wolf|q 226/2
+		get 10 Lean Wolf Flank|q 90/1
+	step
+		ding 22
+	step
+		goto 7.7,33.2
+		.talk Lars##893
+		..turnin Wolves at Our Heels##226
+	step
+		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
 ]])
 
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dun Morogh (1-10)",[[
