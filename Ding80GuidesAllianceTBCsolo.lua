@@ -3,10 +3,2355 @@ if not ZygorGuidesViewer then return end
 --TRIAL if ZygorGuidesViewer.AllianceInstalled then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dun Morogh (1-12)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Night Elf (1-10)",[[
+	author PolarCookie
+	defaultfor NightElf
+	next Ding80's Alliance Leveling Guides TBC solo\\Main Guide (10-12)
+	startlevel 1
+
+	step //1
+		goto Teldrassil,58.7,44.3
+		.talk Conservator Ilthalaine##2079
+		..accept The Balance of Nature (1)##456
+	step //2
+		goto 58.5,45.9
+		.kill 7 Young Nightsaber|q 456/1
+		.kill 4 Young Thistle Boar|q 456/2
+	step //3
+		ding 2
+	step //4
+		goto 58.7,44.3
+		.talk Conservator Ilthalaine##2079
+		..turnin The Balance of Nature (1)##456
+		..accept The Balance of Nature (2)##457
+		..accept Simple Sigil##3116|only NightElf Warrior
+		..accept Encrypted Sigil##3118|only NightElf Rogue
+		..accept Hallowed Sigil##3119|only NightElf Priest
+		..accept Etched Sigil##3117|only NightElf Hunter
+		..accept Verdant Sigil##3120|only NightElf Druid
+	step //9
+		goto 59.9,42.5
+		.talk Melithar Staghelm##2077
+		..accept The Woodland Protector (1)##458
+	step //10
+		goto 59.6,38.4
+		.talk Alyissia##3593
+		..turnin Simple Sigil##3116
+		only NightElf Warrior
+	step //11
+		goto 59.6,38.7
+		.talk Frahun Shadewhisper##3594
+		..turnin Encrypted Sigil##3118
+		only NightElf Rogue
+	step //12
+		goto 59.2,40.4
+		.talk Shanda##3595
+		..turnin Hallowed Sigil##3119
+		only NightElf Priest
+	step //13
+		goto 60.9,42
+		.talk Dirania Silvershine##8583
+		..accept A Good Friend##4495
+	step //21
+		goto 61.9,36.3
+		.kill 7 Mangy Nightsaber|q 457/1
+		.kill 7 Thistle Boar|q 457/2
+	step //17
+		ding 3
+	step //26
+		goto 58.7,44.3
+		.talk Conservator Ilthalaine##2079
+		..turnin The Balance of Nature (2)##457
+	step //14
+		goto 57.6,45.3
+		.talk Tarindrella##1992
+		..turnin The Woodland Protector (1)##458
+		..accept The Woodland Protector (2)##459
+	step //15
+		goto 56.5,45.5
+		.from Grell##1988+, Grellkin##1989+
+		.get 8 Fel Moss|q 459/1
+	step //16
+		goto 57.6,45.3
+		.talk Tarindrella##1992
+		..turnin The Woodland Protector (2)##459
+	step //18
+		goto 57.8,41.7
+		.talk Gilshalan Windwalker##2082
+		..accept Webwood Venom##916
+	step //19
+		'Go up the huge spiral ramp to 58.7,40.5|goto 58.7,40.5
+		.talk Ayanna Everstride##3596
+		..turnin Etched Sigil##3117
+		only NightElf Hunter
+	step //20
+		'Go up the huge spiral ramp to 58.6,40.3|goto 58.6,40.3
+		.talk Mardant Strongoak##3597
+		..turnin Verdant Sigil##3120
+		only NightElf Druid
+	step //23
+		goto 54.6,33
+		.talk Iverron##8584
+		..turnin A Good Friend##4495
+		..accept A Friend in Need##3519
+	step //22
+		goto 58.3,32.9
+		.from Webwood Spider##1986+
+		.get 10 Webwood Venom Sac|q 916/1
+	step //24
+		ding 4
+	step //25
+		goto 57.8,41.7
+		.talk Gilshalan Windwalker##2082
+		..turnin Webwood Venom##916
+		..accept Webwood Egg##917
+	step //27
+		goto 60.9,42
+		.talk Dirania Silvershine##8583
+		..turnin A Friend in Need##3519
+		..accept Iverron's Antidote (1)##3521
+	step //28
+		goto 55.2,39.6
+		.from Grell##1988+, Grellkin##1989+
+		.get 7 Hyacinth Mushroom|q 3521/1
+	step //29
+		goto 57.7,38.5
+		.' Click Moonpetal Lilies|tip The Moonpetal Lillies look like tall flower with orange petals around the pond here.
+		.get 4 Moonpetal Lily|q 3521/2
+	step //30
+		goto 56.7,32.1
+		.from Webwood Spider##1986+
+		.get Webwood Ichor|q 3521/3
+	step //31
+		'Go into the cave at 56.8,31.7|goto 56.8,31.7|n
+		.' Follow the path in the middle, then go left
+		.' Go up to the ledge above|goto Teldrassil,55.8,25.5,0.5|c
+	step //32
+		goto 56.7,26.4
+		.' Click a Webwood Egg
+		.get Webwood Egg|q 917/1
+	step //38
+		ding 5
+	step //33
+		'Leave the cave|goto Teldrassil,56.8,32.0,0.5|noway|c
+	step //34
+		goto 57.8,41.7
+		.talk Gilshalan Windwalker##2082
+		..turnin Webwood Egg##917
+		..accept Tenaron's Summons##920
+	step //35
+		'Follow the ramp to the top of the tree|goto Teldrassil,59.4,39.0,0.5|noway|c
+	step //36
+		goto 59.1,39.4
+		.talk Tenaron Stormgrip##3514
+		..turnin Tenaron's Summons##920
+		..accept Crown of the Earth (1)##921
+	step //37
+		goto 60.9,42
+		.talk Dirania Silvershine##8583
+		..turnin Iverron's Antidote (1)##3521
+		..accept Iverron's Antidote (2)##3522
+	step //39
+		goto 54.6,33
+		.talk Iverron##8584
+		..turnin Iverron's Antidote (2)##3522
+	step //40
+		goto 59.9,33.1
+		.' Use your Crystal Phial in the moonwell water|use Crystal Phial##5185
+		.get Filled Crystal Phial|q 921/1
+	step //41
+		goto 59.1,39.4
+		.talk Tenaron Stormgrip##3514
+		..'Go to the top of the big tree
+		..turnin Crown of the Earth (1)##921
+		..accept Crown of the Earth (2)##928
+	step //42
+		goto 61.2,47.6
+		.talk Porthannius##6780
+		..accept Dolanaar Delivery##2159
+	step //43
+		goto 60.4,56.3
+		.talk Zenn Foulhoof##2150
+		..accept Zenn's Bidding##488
+	step //44
+		goto 63.8,54.2
+		.from Strigid Owl##1995+
+		.get 3 Strigid Owl Feather|q 488/2
+	step //45
+		goto 60.6,58.2
+		.from Webwood Lurker##1998+
+		.get 3 Webwood Spider Silk|q 488/3
+		.collect 7 Small Spider Leg|q 4161/1|future
+		.from Nightsaber##2042+
+		.get 3 Nightsaber Fang|q 488/1
+	step //47
+		ding 6
+	step //46
+		goto 60.4,56.3
+		.talk Zenn Foulhoof##2150
+		..turnin Zenn's Bidding##488
+	step //48
+		goto 56.1,57.7
+		.talk Syral Bladeleaf##2083
+		..accept Seek Redemption!##489
+		..accept Denalan's Earth##997
+	step //49
+		goto 56,57.3
+		.talk Athridas Bearmantle##2078
+		..accept A Troubling Breeze##475
+	step //50
+		'Go to the top of the tower|goto Teldrassil,55.0,57.2,0.5|noway|c
+	step //51
+		goto 55.6,56.9
+		.talk Tallonkai Swiftroot##3567
+		..accept The Emerald Dreamcatcher##2438
+	step //52
+		goto 55.6,59.8
+		.talk Innkeeper Keldamyr##6736
+		..turnin Dolanaar Delivery##2159
+	step //53
+		home Dolanaar
+	step //54
+		goto 56.1,61.7
+		.talk Corithras Moonrage##3515
+		..turnin Crown of the Earth (2)##928
+		..accept Crown of the Earth (3)##929
+	step
+		goto 57.1,61.3
+		.talk Zarrin##6286
+		..accept Recipe of the Kaldorei##4161|tip If he doesn't offer the quest, learn Cooking from him.
+		..turnin Recipe of the Kaldorei##4161
+	step //55
+		goto 63.3,58.1
+		.' Use your Jade Phial in the moonwell water|use Jade Phial##5619
+		.get Filled Jade Phial|q 929/1
+	step //56
+		goto 66.3,58.5
+		.talk Gaerolas Talvethren##2107
+		..turnin A Troubling Breeze##475
+		..accept Gnarlpine Corruption##476
+	step //57
+		goto 68,59.6
+		.' Click Tallonkai's Dresser|tip To the right in the small house.
+		.get Emerald Dreamcatcher|q 2438/1
+	step //58
+		goto 63.6,62.3
+		.' Click Fel Cones|tip They are big, brown, green smoking pine cones at the base of trees.
+		.get 3 Fel Cone|q 489/1
+	step //63
+		goto 60.4,56.3
+		.talk Zenn Foulhoof##2150
+		..turnin Seek Redemption!##489
+	step //64
+		ding 7
+	step //62
+		goto 56.1,61.7
+		.talk Corithras Moonrage##3515
+		..turnin Crown of the Earth (3)##929
+		..accept Crown of the Earth (4)##933
+	step //59
+		goto 56,57.3
+		.talk Athridas Bearmantle##2078
+		..turnin Gnarlpine Corruption##476
+	step //60
+		'Go to the top of the tower|goto Teldrassil,55.0,57.2,0.5|noway|c
+	step //61
+		goto 55.6,56.9
+		.talk Tallonkai Swiftroot##3567
+		..turnin The Emerald Dreamcatcher##2438
+		..accept Ferocitas the Dream Eater##2459
+	step //65
+		goto 60.9,68.5
+		.talk Denalan##2080
+		..turnin Denalan's Earth##997
+		..accept Timberling Seeds##918
+		..accept Timberling Sprouts##919
+	step //66
+		goto 61.2,66.8
+		.from Timberling##2022+
+		.get 8 Timberling Seed|q 918/1
+		.' Click Timberling Sprouts|tip They are brown and green bulbs on the ground.
+		.get 12 Timberling Sprout|q 919/1
+	step //67
+		goto 60.9,68.5
+		.talk Denalan##2080
+		..turnin Timberling Seeds##918
+		..accept Rellian Greenspyre##922
+		..turnin Timberling Sprouts##919
+	step //71
+		ding 8
+	step //69
+		goto 69.4,53.3
+		.from Ferocitas the Dream Eater##7234
+		.get Gnarlpine Necklace|n
+		.' Click the Gnarlpine Necklace|use Gnarlpine Necklace##8049
+		.get Tallonkai's Jewel|q 2459/2
+	step //68
+		goto 68.3,53.7
+		.kill 7 Gnarlpine Mystic|q 2459/1
+	step //70
+		'Go outside and go to the top of the tower to 55.6,56.9|goto 55.6,56.9
+		.talk Tallonkai Swiftroot##3567
+		..turnin Ferocitas the Dream Eater##2459
+	step //72
+		goto 52.4,56.5
+		.talk Moon Priestess Amara##2151
+		..accept The Road to Darnassus##487
+	step //73
+		goto 46.7,53.5
+		.kill 6 Gnarlpine Ambusher|q 487/1
+	step //90
+		goto 42.4,67.1
+		.' Use your Tourmaline Phial in the moonwell water|use Tourmaline Phial##5621
+		.get Filled Tourmaline Phial|q 933/1
+	step //85
+		'Hearth to Dolanaar|goto Teldrassil,55.7,59.8,1|use Hearthstone##6948|noway|c
+	step //93
+		goto 56.1,61.7
+		.talk Corithras Moonrage##3515
+		..turnin Crown of the Earth (4)##933
+		..accept Crown of the Earth (5)##7383
+	step //94
+		goto 52.4,56.5
+		.talk Moon Priestess Amara##2151
+		..turnin The Road to Darnassus##487
+	step
+		home Darnassus|goto Darnassus,67.4,15.6
+	step //145
+		goto 38.2,21.6
+		.talk Rellian Greenspyre##3517
+		..turnin Rellian Greenspyre##922
+		..accept Tumors##923
+	step
+		goto 28.9,45.8
+		.talk Sister Aquinne##7316
+		..accept The Temple of the Moon##2519
+	step
+		goto 36.7,85.9
+		.talk Priestess A'moora##7313
+		..turnin The Temple of the Moon##2519
+		..accept Tears of the Moon##2518
+	step //95
+		goto Teldrassil,38.3,34.4
+		.talk Sentinel Arynia Cloudsbreak##3519
+		..accept The Enchanted Glade##937
+	step //96
+		goto 38.4,34.1
+		.' Click the Amethyst Phial in your bags|use Amethyst Phial##18152
+		.get Filled Amethyst Phial|q 7383/1
+	step //97
+		'WARNING: On Felmyst casters are fucked, especially on lower levels; casters at every level regen mana at 17 per tick. Depending on your class Bloodfeather Matriarchs will be impossible to kill. Skip the next step if you're having trouble.
+		goto 31.5,31.6
+		.from Bloodfeather Rogue##2017+, Bloodfeather Sorceress##2018+, Bloodfeather Harpy##2015+
+		.get 6 Bloodfeather Belt|q 937/1
+	step
+		goto 31.5,31.6
+		.talk Mist##3568
+		..accept Mist##938
+	step
+		goal Lead Mist safely to Sentinel Arynia Cloudsbreak|q 938/1
+	step
+		ding 9
+	step //99
+		goto 38.3,34.4
+		.talk Sentinel Arynia Cloudsbreak##3519
+		..turnin Mist##938
+		..turnin The Enchanted Glade##937
+		..accept Teldrassil##940
+	step //100
+		goto 34.7,29
+		.' Click the Strange Fronded Plant|tip It's a big glowing pink plant up on a hill.
+		..accept The Shimmering Frond##931
+	step
+		goto 48.1,25.1
+		.from Lady Sathrah##7319
+		..get Silvery Spinnerets##8344|q 2518/1
+	step
+		goto 44,30.2
+		.from Blackmoss the Fetid##3535|tip He's a rare spawn with 2 hour respawn timer, don't stick around if he's not there.
+		..collect Moss-twined Heart##5179
+		.use Moss-twined Heart##5179
+		..accept The Moss-twined Heart##927
+		.from Timberling
+		..get 5 Mossy Tumor|q 923/1
+	step //145
+		goto Darnassus,38.2,21.6
+		.talk Rellian Greenspyre##3517
+		..turnin Tumors##923
+		..accept Return to Denalan##2498
+	step
+		goto 36.7,85.9
+		.talk Priestess A'moora##7313
+		..turnin Tears of the Moon##2518
+		..accept Sathrah's Sacrifice##2520
+	step
+		goto 39.2,85.6
+		.use Sathrah's Sacrifice##8155
+		..goal Offer the sacrifice at the fountain|q 2520/1
+	step
+		goto 36.7,85.9
+		.talk Priestess A'moora##7313
+		..turnin Sathrah's Sacrifice##2520
+	step //102
+		goto Teldrassil,56.1,61.7
+		.talk Corithras Moonrage##3515
+		..turnin Crown of the Earth (5)##7383
+		..accept Crown of the Earth (6)##935
+	step //141
+		goto 60.9,68.5
+		.talk Denalan##2080
+		..turnin Return to Denalan##2498
+		..accept Oakenscowl##2499
+		..turnin The Shimmering Frond##931
+	step
+		ding 10
+	step
+		goto 53.8,75.1
+		.from Oakenscowl##2166
+		..get Gargantuan Tumor|q 2499/1
+	step //141
+		goto 60.9,68.5
+		.talk Denalan##2080
+		..turnin Oakenscowl##2499
+	step //122
+		goto 56.0,61.5
+		.talk Kal##3602
+		..accept Heeding the Call##5923
+		only NightElf Druid
+	step //101
+		'Hearth to Darnassus|goto Darnassus|use Hearthstone##6948|noway|c
+	step //144
+		goto Darnassus,70.7,45.4
+		.talk Mydrannul##4241
+		..accept Nessa Shadowsong##6344
+	step //146
+		goto 35.1,9.1
+		.talk Arch Druid Fandral Staghelm##3516
+		..turnin Crown of the Earth (6)##935
+		..turnin Teldrassil##940
+	step //103
+		goto 56.2,59.2
+		.talk Kyra Windblade##3598
+		..accept Elanaria##1684
+		only NightElf Warrior
+	step //104
+		'Go west to Darnassus|goto Darnassus|noway|c
+		only NightElf Warrior
+	step //105
+		goto Darnassus,57.3,34.6
+		.talk Elanaria##4088
+		..turnin Elanaria##1684
+		..accept Vorlus Vilehoof##1683
+		only NightElf Warrior
+	step //106
+		'Go east out of Darnassus to Teldrassil|goto Teldrassil|noway|c
+		only NightElf Warrior
+	step //107
+		goto 49.0,62.0|n
+		.' The path up to 'Vorlus Vilehoof' starts here|goto Teldrassil,49.0,62.0,1|noway|c
+		only NightElf Warrior
+	step //108
+		'Follow the path up to 47.4,63.6|goto 47.4,63.6
+		.from Vorlus Vilehoof##6128
+		.get Horn of Vorlus|q 1683/1
+		only NightElf Warrior
+	step //109
+		'Go northwest to Darnassus|goto Darnassus|noway|c
+		only NightElf Warrior
+	step //110
+		goto Darnassus,57.3,34.6
+		.talk Elanaria##4088
+		..turnin Vorlus Vilehoof##1683
+		only NightElf Warrior
+	step //111
+		'Go east out of Darnassus to Teldrassil|goto Teldrassil|noway|c
+		only NightElf Warrior
+	step //112
+		goto Teldrassil,56.7,59.5
+		.talk Dazalar##3601
+		..accept Taming the Beast (1)##6063
+		only NightElf Hunter
+	step //113
+		goto 59,60
+		.' Use your Taming Rod on a Webwood Lurker around this area|use Taming Rod##15921
+		.goal Tame a Webwood Lurker|q 6063/1
+		only NightElf Hunter
+	step //114
+		goto 56.7,59.5
+		.talk Dazalar##3601
+		..turnin Taming the Beast (1)##6063
+		..accept Taming the Beast (2)##6101
+		only NightElf Hunter
+	step //115
+		goto 56,72
+		.' Use your Taming Rod on a Nightsaber Stalker around this area|use Taming Rod##15922
+		.goal Tame a Nightsaber Stalker|q 6101/1
+		only NightElf Hunter
+	step //116
+		goto 56.7,59.5
+		.talk Dazalar##3601
+		..turnin Taming the Beast (2)##6101
+		..accept Taming the Beast (3)##6102
+		only NightElf Hunter
+	step //117
+		goto 38.9,51.7
+		.' Use your Taming Rod on a Strigid Screecher around this area|use Taming Rod##15923
+		.goal Tame a Strigid Screecher|q 6102/1
+		only NightElf Hunter
+	step //118
+		goto 56.7,59.5
+		.talk Dazalar##3601
+		..turnin Taming the Beast (3)##6102
+		..accept Training the Beast##6103
+		only NightElf Hunter
+	step //119
+		'Go west to Darnassus|goto Darnassus|noway|c
+		only NightElf Hunter
+	step //120
+		goto Darnassus,40.4,8.5
+		.talk Jocaste##4146
+		..turnin Training the Beast##6103
+		only NightElf Hunter
+	step //121
+		'Go east out of Darnassus to Teldrassil|goto Teldrassil|noway|c
+		only NightElf Hunter
+	step //124
+		goto Darnassus,35.2,8.1
+		.talk Mathrengyl Bearwalker##4217
+		..turnin Heeding the Call##5923
+		..accept Moonglade##5921
+		only NightElf Druid
+	step //125
+		'He gives you a spell called Teleport: Moonglade
+		.' Teleport to Moonglade|goto Moonglade|cast Teleport: Moonglade|c
+		only NightElf Druid
+	step //126
+		goto Moonglade,56.2,30.5
+		.talk Dendrite Starblaze##11802
+		..turnin Moonglade##5921
+		..accept Great Bear Spirit##5929
+		only NightElf Druid
+	step //127
+		goto 39.1,27.3
+		.talk Great Bear Spirit##11956
+		.goal Seek out the Great Bear Spirit and learn what it has to share with you about the nature of the bear.|q 5929/1
+		only NightElf Druid
+	step //128
+		.' Teleport to Moonglade|goto Moonglade|cast Teleport: Moonglade|c
+		only NightElf Druid
+	step //129
+		goto 56.2,30.5
+		.talk Dendrite Starblaze##11802
+		..turnin Great Bear Spirit##5929
+		..accept Back to Darnassus##5931
+		only NightElf Druid
+	step //130
+		goto 44.2,45.3|n
+		.talk Silva Fil'naveth##11800
+		..'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
+		only NightElf Druid
+	step //131
+		'Go northwest into the big pink portal to Darnassus|goto Darnassus|noway|c
+		only NightElf Druid
+	step //132
+		goto Darnassus,35.2,8.1
+		.talk Mathrengyl Bearwalker##4217
+		..turnin Back to Darnassus##5931
+		..accept Body and Heart##6001
+		only NightElf Druid
+	step //147
+		.' Go into the pink portal to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
+	step //148
+		goto 56.3,92.4
+		.talk Nessa Shadowsong##10118
+		..turnin Nessa Shadowsong##6344
+		..accept The Bounty of Teldrassil##6341
+	step //149
+		goto 58.4,94
+		.talk Vesprystus##3838
+		..turnin The Bounty of Teldrassil##6341
+		..accept Flight to Auberdine##6342
+	step //134
+		'Fly to Auberdine|goto Darkshore,36.4,45.6,0.3|noway|c
+	step //135
+		'Go into the cave at 43,46|goto Darkshore,43,46
+		.' Use your Cenarion Moondust on the Moonkin Stone to summon Lunaclaw|use Cenarion Moondust##15208
+		.from Lunaclaw##12138
+		.talk Lunaclaw Spirit##12144
+		.goal Face Lunaclaw and earn the strength of body and heart it possesses.|q 6001/1
+		only NightElf Druid
+	step //152
+		goto 36.8,44.3
+		.talk Laird##4200
+		..turnin Flight to Auberdine##6342
+		..accept Return to Nessa##6343
+	step //154
+		'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
+	step //137
+		'Go into the big pink portal to Darnassus|goto Darnassus|noway|c
+		only NightElf Druid
+	step //138
+		goto Darnassus,35.2,8.1
+		.talk Mathrengyl Bearwalker##4217
+		..turnin Body and Heart##6001
+		only NightElf Druid
+	step //147
+		.' Go into the pink portal to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
+		only NightElf Druid
+	step //155
+		goto Teldrassil,56.3,92.4
+		.talk Nessa Shadowsong##10118
+		..turnin Return to Nessa##6343
+	step //156
+		'Fly to Auberdine|goto Darkshore,36.4,45.6,0.5|noway|c
+	step
+		'You can continue this guide which travels to Westfall, or skip to the guide Bloodmyst Isle which ends with you being teleported to a DM group.
+	step //153
+		ding 11
+	step
+		'Ride the boat to Menethil Harbor|goto Wetlands|noway|c
+	step
+		goto 9.5,59.7
+		.talk Shellei Brondir##1571
+		..fpath Menethil Harbor
+	step
+		'Follow the road southeast to Loch Modan|goto Loch Modan|noway|c
+	step
+		goto Loch Modan,33.9,51
+		.talk Thorgrum Borrelson##1572
+		..fpath Thelsamar
+	step
+		goto Loch Modan,22.1,73.1
+		.talk Mountaineer Cobbleflint##1089
+		..accept In Defense of the King's Lands (1)##224
+	step
+		goto Loch Modan,23.2,73.7
+		.talk Captain Rugelfuss##1092
+		..accept The Trogg Threat##267
+	step
+		'Go southwest to Dun Morogh|goto Dun Morogh|noway|c
+	step
+		'Go northwest to Ironforge|goto Ironforge|noway|c
+	step
+		goto 55.5,47.7
+		.talk Gryth Thurden##1573
+		..fpath Ironforge
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Draenei (1-13)",[[
+	author PolarCookie
+	defaultfor Draenei
+	next Ding80's Alliance Leveling Guides TBC solo\\Main Guide (10-12)
+
+	startlevel 1
+	step //1
+		goto Azuremyst Isle,84.2,43.0
+		.talk Megelon##16475
+		..accept You Survived!##9279
+	step //2
+		goto 80.4,45.9
+		.talk Proenitus##16477
+		..turnin You Survived!##9279
+		..accept Replenishing the Healing Crystals##9280
+	step //3
+		goto 79.1,46.5
+		.talk Botanist Taerix##16514
+		..accept Volatile Mutations##10302
+	step //4
+		goto 78.6,45.4
+		.kill 8 Volatile Mutation|q 10302/1
+		.from Vale Moth##16520+
+		.get 8 Vial of Moth Blood|q 9280/1
+	step //5
+		ding 2
+	step //6
+		goto 79.1,46.5
+		.talk Botanist Taerix##16514
+		..turnin Volatile Mutations##10302
+		..accept What Must Be Done...##9293
+		.talk Apprentice Vishael##20233
+		..accept Botanical Legwork##9799
+	step //7
+		goto 80.4,45.9
+		.talk Proenitus##16477
+		..turnin Replenishing the Healing Crystals##9280
+		..accept Urgent Delivery!##9409
+	step //8
+		goto 80.1,48.8
+		.talk Zalduun##16502
+		..turnin Urgent Delivery!##9409
+		..accept Rescue the Survivors!##9283
+	step //9
+		goto 79.6,48.8
+		.talk Valaatu##16500
+		..accept Mage Training##9290|instant
+		only Draenei Mage
+	step //10
+		goto 79.6,49.4
+		.talk Kore##16503
+		..accept Warrior Training##9289|instant
+		only Draenei Warrior
+	step //11
+		goto 79.3,49.1
+		.talk Firmanvaar##17089
+		..accept Shaman Training##9421|instant
+		only Draenei Shaman
+	step //12
+		goto 80.1,48.8
+		.talk Zalduun##16502
+		..accept Priest Training##9291|instant
+		only Draenei Priest
+	step //13
+		goto 79.7,48.2
+		.talk Aurelon##16501
+		..accept Paladin Training##9287|instant
+		only Draenei Paladin
+	step //14
+		goto 79.9,49.7
+		.talk Keilnei##16499
+		..accept Hunter Training##9288|instant
+		only Draenei Hunter
+	step //19
+		goto 74.9,50.4
+		.' Use your racial ability, Gift of the Naaru, on a Draenei Survivor
+		..' Save a Draenei Survivor|goal Draenei Survivors Saved|q 9283/1
+		.from Mutated Root Lasher##16517+
+		..get 10 Lasher Sample|q 9293/1
+		.' Click the Corrupted Flowers|tip The Corrupted Flowers are tall red flowers around this area.
+		..get 3 Corrupted Flower|q 9799/1
+	step //18
+		ding 3
+	step //20
+		goto 79.1,46.5
+		.talk Botanist Taerix##16514
+		..turnin What Must Be Done...##9293
+		..accept Healing the Lake##9294
+		.talk Apprentice Vishael##20233
+		..turnin Botanical Legwork##9799
+	step //17
+		goto 80.1,48.8
+		.talk Zalduun##16502
+		..turnin Rescue the Survivors!##9283
+	step
+		ding 4
+	step //27
+		goto 79.3,49.1
+		.talk Firmanvaar##17089
+		..accept Call of Earth (1)##9449
+		only Draenei Shaman
+	step //28
+		goto 74.0,42.0|n
+		.' The path over to the Spirit of the Vale starts here|goto Azuremyst Isle,74.0,42.0,0.5|noway|c
+		only Draenei Shaman
+	step //29
+		goto 71.3,39
+		.talk Spirit of the Vale##17087
+		..turnin Call of Earth (1)##9449
+		..accept Call of Earth (2)##9450
+		only Draenei Shaman
+	step //30
+		goto 70.8,37.8
+		.kill 4 Restless Spirit of Earth|q 9450/1
+		only Draenei Shaman
+	step //31
+		goto 71.3,39
+		.talk Spirit of the Vale##17087
+		..turnin Call of Earth (2)##9450
+		..accept Call of Earth (3)##9451
+		only Draenei Shaman
+	step //32
+		goto 79.3,49.1
+		.talk Firmanvaar##17089
+		..turnin Call of Earth (3)##9451
+		only Draenei Shaman
+	step //15
+		goto 79.5,51.4
+		.talk Technician Zhanaa##17071
+		..accept Spare Parts##9305
+		.talk Vindicator Aldar##16535
+		..accept Inoculation##9303
+	step //21
+		goto 77.3,58.7
+		.' Click the Irradiated Power Crystal|tip It's a huge purple crystal sitting in the lake.
+		.' Disperse the Neutralizing Agent|goal Disperse the Neutralizing Agent|q 9294/1
+	step //23
+		goto 84.7,65.6
+		.' Go through the tunnel into the small clearing
+		.' Use your Inoculating Crystal on Nestlewood Owlkins|use Inoculating Crystal##22962
+		..' Inoculate 6 Nestlewood Owlkins|goal 6 Nestlewood Owlkin inoculated|q 9303/1
+		.' Click the Emitter Spare Parts|tip They look like purple crystal guns sitting on the ground.
+		..get 4 Emitter Spare Part|q 9305/1
+	step //24
+		'Hearth to Ammen Vale|goto Azuremyst Isle,84.3,43.0,0.5|use Hearthstone##6948|noway|c
+	step //25
+		goto 79.1,46.5
+		.talk Botanist Taerix##16514
+		..turnin Healing the Lake##9294
+	step //33
+		goto 79.5,51.4
+		.talk Technician Zhanaa##17071
+		..turnin Spare Parts##9305
+		.talk Vindicator Aldar##16535
+		..turnin Inoculation##9303
+		..accept The Missing Scout##9309
+	step //34
+		goto 72,60.8
+		.talk Tolaan##16546
+		..turnin The Missing Scout##9309
+		..accept The Blood Elves##10303
+	step //35
+		goto 71.3,60.7
+		.kill 10 Blood Elf Scout|q 10303/1
+	step //36
+		goto 72,60.8
+		.talk Tolaan##16546
+		..turnin The Blood Elves##10303
+		..accept Blood Elf Spy##9311
+	step //37
+		goto 69.3,65.7
+		.kill Surveyor Candress##16522|q 9311/1
+		.'Get the Blood Elf Plans
+		.' Click the Blood Elf Plans|use Blood Elf Plans##24414
+		..accept Blood Elf Plans##9798
+	step //38
+		goto 79.5,51.4
+		.talk Vindicator Aldar##16535
+		..turnin Blood Elf Spy##9311
+		..turnin Blood Elf Plans##9798
+		..accept The Emitter##9312
+		.talk Technician Zhanaa##17071
+		..turnin The Emitter##9312
+		..accept Travel to Azure Watch##9313
+	step //39
+		ding 5
+	step //40
+		'Go west through the mountains|goto Azuremyst Isle,67.6,53.7,0.5
+	step //41
+		goto 64.5,54
+		.talk Aeun##16554
+		..accept Word from Azure Watch##9314
+	step //42
+		goto 61.1,54.2
+		.talk Diktynna##17101
+		..accept Red Snapper - Very Tasty!##9452
+	step //43
+		goto 61.9,51.6
+		.' Use your Draenei Fishing Net next to the Schools of Red Snapper|use Draenei Fishing Net##23654|tip They look like little round schools of fish in the water.
+		.get 10 Red Snapper|q 9452/1
+	step //44
+		goto 61.1,54.2
+		.talk Diktynna##17101
+		..turnin Red Snapper - Very Tasty!##9452
+		..accept Find Acteon!##9453
+	step //45
+		goto 49.8,51.9
+		.talk Acteon##17110
+		..turnin Find Acteon!##9453
+		..accept The Great Moongraze Hunt (1)##9454
+	step //46
+		goto 48.4,51.8
+		.talk Anchorite Fateema##17214
+		..accept Medicinal Purpose##9463
+	step //47
+		goto 48.7,50.3
+		.talk Technician Dyvuun##16551
+		..turnin Travel to Azure Watch##9313
+	step //48
+		goto 48.3,49.2
+		.talk Caregiver Chellan##16553
+		..turnin Word from Azure Watch##9314
+	step //49
+		home Azure Watch
+	step //50
+		goto 50.3,56.6
+		.from Moongraze Stag##17200+
+		..get 6 Moongraze Stag Tenderloin|q 9454/1
+		.from Root Trapper##17196+
+		..get 8 Root Trapper Vine|q 9463/1
+	step //51
+		ding 7
+	step //67
+		goto 48.4,51.8
+		.talk Anchorite Fateema##17214
+		..turnin Medicinal Purpose##9463
+		.talk Daedal##17215
+		..accept An Alternative Alternative##9473
+	step //68
+		goto 49.8,51.9
+		.talk Acteon##17110
+		..turnin The Great Moongraze Hunt (1)##9454
+		..accept The Great Moongraze Hunt (2)##10324
+	step //69
+		goto 50.6,46.2
+		.from Moongraze Buck##17201+
+		.get 6 Moongraze Buck Hide|q 10324/1
+		.from Infected Nightstalker Runt##17202+
+		.' Get a Faintly Glowing Crystal
+		.' Click the Faintly Glowing Crystal|use Faintly Glowing Crystal##23678
+		..accept Strange Findings##9455
+	step //70
+		goto 50.4,37.1
+		.' Click the Azure Snapdragons|tip They are tall flowers with big bulbs that puff smoke at the base of trees.
+		.get 5 Azure Snapdragon Bulb|q 9473/1
+	step //75
+		goto 49.8,51.9
+		.talk Acteon##17110
+		..turnin The Great Moongraze Hunt (2)##10324
+	step //72
+		goto 48.4,51.8
+		.talk Daedal##17215
+		..turnin An Alternative Alternative##9473
+		..accept The Prophecy of Velen##9505
+	step //71
+		goto 47.1,50.6
+		.talk Exarch Menelaous##17116
+		..turnin Strange Findings##9455
+		..accept Nightstalker Clean Up, Isle 2...##9456
+	step //76
+		goto 45.7,43.9
+		.kill 8 Infected Nightstalker Runt|q 9456/1
+	step //77
+		goto 47.1,50.6
+		.talk Exarch Menelaous##17116
+		..turnin Nightstalker Clean Up, Isle 2...##9456
+	step
+		ding 8
+	step //52
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..turnin The Prophecy of Velen##9505
+		..accept A Small Start##9506
+	step //53
+		goto 46.7,70.5
+		.talk "Cookie" McWeaksauce##17246
+		..accept Cookie's Jumbo Gumbo##9512
+	step //54
+		goto 52.9,69.1
+		.from Skittering Crawler##17216+
+		.get 6 Skittering Crawler Meat|q 9512/1
+	step //58
+		goto 58.6,66.4
+		.' Click the Nautical Map sitting on a box under a green canopy
+		.get Nautical Map##23739|q 9506/2
+	step //59
+		goto 59.6,67.6
+		.' Click the Nautical Compass under the blue canopy with a green stripe on it
+		.get Nautical Compass##23738|q 9506/1
+	step //60
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..turnin A Small Start##9506
+		..accept I've Got a Plant##9530
+	step //56
+		goto 47,70.2
+		.talk Priestess Kyleen Il'dinare##17241
+		..accept Reclaiming the Ruins##9513
+	step //57
+		goto 47.2,70
+		.talk Archaeologist Adamant Ironheart##17242
+		..accept Precious and Fragile Things Need Special Handling##9523
+	step //55
+		goto 46.7,70.5
+		.talk "Cookie" McWeaksauce##17246
+		..turnin Cookie's Jumbo Gumbo##9512
+	step //62
+		goto 45.9,65.7
+		.' Click a Hollowed Out Tree|tip They look like tall, skinny tree stumps around this area.
+		.get Hollowed Out Tree|q 9530/1
+		.' Click the small piles of purple leaves
+		.get 5 Pile of Leaves|q 9530/2
+	step //64
+		goto 36.1,77
+		.' Click the white glowing orbs
+		.get 8 Ancient Relic|q 9523/1
+		.kill 5 Wrathscale Myrmidon|q 9513/1
+		.kill 5 Wrathscale Naga|q 9513/2
+		.kill 5 Wrathscale Siren|q 9513/3
+		.from Wrathscale Myrmidon##17194+, Wrathscale Naga##17193+, Wrathscale Siren##17195+
+		.' Get a Rune Covered Tablet
+		.' Click the Rune Covered Tablet|use Rune Covered Tablet##23759
+		..accept Rune Covered Tablet##9514
+	step //63
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..turnin I've Got a Plant##9530
+		..accept Tree's Company##9531
+	step //56
+		goto 47,70.2
+		.talk Priestess Kyleen Il'dinare##17241
+		..turnin Reclaiming the Ruins##9513
+		..turnin Rune Covered Tablet##9514
+		..accept Warlord Sriss'tiz##9515
+	step //79
+		goto 47.2,70
+		.talk Archaeologist Adamant Ironheart##17242
+		..turnin Precious and Fragile Things Need Special Handling##9523
+	step
+		ding 9
+	step //74
+		goto 49,51.1
+		.talk Dulvi##17488
+		..accept The Missing Fisherman##10428
+	step //84
+		goto 49.40,51.0
+		.talk Cryptographer Aurren##17232
+		..accept Learning the Language##9538
+		.' Click the Stillpine Furbolg Language Primer in your bags|use Stillpine Furbolg Language Primer##23818
+		.' Click the Totem of Akida next to Cryptographer Aurren|tip In the middle of town, next to the giant bone altar thing with the huge pink crystal in it.
+		..turnin Learning the Language##9538
+		..accept Totem of Coo##9539
+	step //85
+		'Follow the ghost furbolg as he runs up the hill northeast to 55.2,41.6|goto 55.2,41.6
+		.' Click the Totem of Coo
+		..turnin Totem of Coo##9539
+		..accept Totem of Tikti##9540
+	step //86
+		'Follow the ghost furbolg to the edge of the cliff
+		.' He will give you wings
+		.' Jump off the cliff and glide to the ground to 64.5,39.8|goto 64.5,39.8|n
+		.' Click the Totem of Tikti
+		..turnin Totem of Tikti##9540
+		..accept Totem of Yor##9541
+	step //87
+		'Follow the ghost furbolg to the river
+		.' He will give you a swim speed buff
+		.' Swim south to 63,67.9|goto 63,67.9|n
+		.' Click the Totem of Yor underwater
+		..turnin Totem of Yor##9541
+		..accept Totem of Vark##9542
+	step //88
+		'Follow the ghost furbolg out of the water
+		.' He will turn you into a ghost panther
+		.' Follow him as he runs northwest to 28.1,62.4|goto 28.1,62.4|n
+		.' Click the Totem of Vark
+		..turnin Totem of Vark##9542
+		..accept The Prophecy of Akida##9544
+	step //89
+		goto 28.5,66.4
+		.from Bristlelimb Ursa##17185+, Bristlelimb Windcaller##17184+, Bristlelimb Furbolg##17183+
+		.collect 8 Bristlelimb Key##23801|n
+		.' Click the yellow cages
+		.' Free 8 Stillpine Captives|goal 8 Stillpine Captive Freed|q 9544/1
+	step //90
+		goto 27,76.7|n
+		.' The path down to 'Warlord Sriss'tiz' starts here
+		.' Go inside the cave|goto Azuremyst Isle,27.0,76.7,0.3|noway|c
+	step //91
+		'Follow the path to the bottom of the cave to 25.2,74.2|goto 25.2,74.2
+		.kill Warlord Sriss'tiz|q 9515/1
+	step //92
+		'Leave the cave|goto Azuremyst Isle,27.0,76.7,0.3|noway|c
+	step
+		goto 13.6,73.2
+		.talk Magwin##17312
+		..accept A Cry For Help##9528
+	step
+		goal Magwin Escorted to Safety|q 9528/1
+	step //93
+		goto 16.6,94.5
+		.talk Cowlen##17311
+		..turnin A Cry For Help##9528
+		..turnin The Missing Fisherman##10428
+		..accept All That Remains##9527
+	step //94
+		goto 14.8,92
+		.from Raving Owlbeast##17188+, Aberrant Owlbeast##17187+, Deranged Owlbeast##17186+
+		..get Remains of Cowlen's Family|q 9527/1
+	step //95
+		goto 16.6,94.5
+		.talk Cowlen##17311
+		..turnin All That Remains##9527
+	step //65
+		goto 18.5,84.3
+		.' Use your Tree Disguise Kit next to the Naga Flag on the beach|use Tree Disguise Kit##23792
+		.' Watch the conversation
+		.' Uncover the Traitor|goal The Traitor Uncovered|q 9531/1
+	step //78
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..turnin Tree's Company##9531
+		..accept Show Gnomercy##9537
+	step //98
+		goto 47,70.2
+		.talk Priestess Kyleen Il'dinare##17241
+		..turnin Warlord Sriss'tiz##9515
+	step //80
+		goto 48.2,72.5
+		.from Engineer "Spark" Overgrind##17243
+		..get Traitor's Communication|q 9537/1
+	step //81
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..turnin Show Gnomercy##9537
+		..accept Deliver Them From Evil...##9602
+	step //97
+		goto 49.41,51.0
+		.talk Arugoo the Stillpine##17114
+		..turnin The Prophecy of Akida##9544
+		..accept Stillpine Hold##9559
+	step //82
+		goto 47.1,50.6
+		.talk Exarch Menelaous##17116
+		..turnin Deliver Them From Evil...##9602
+	step //99
+		ding 10
+	step //100
+		goto 50,50.5
+		.talk Ruada##17480
+		..accept Strength of One##9582
+		only Draenei Warrior
+	step //101
+		goto 53.9,10
+		.' Click the Ravager Cage
+		.kill Death Ravager|q 9582/1
+		only Draenei Warrior
+	step //102
+		goto 50,50.5
+		.talk Ruada##17480
+		..turnin Strength of One##9582
+		..accept Behomat##10350
+		only Draenei Warrior
+	step //103
+		'Go northwest to the Exodar|goto The Exodar|noway|c
+		only Draenei Warrior
+	step //104
+		goto The Exodar,55.6,82.3
+		.talk Behomat##17120
+		..turnin Behomat##10350
+		only Draenei Warrior
+	step //105
+		'Go outside to Azuremyst Isle|goto Azuremyst Isle|noway|c
+		only Draenei Warrior
+	step //109
+		goto Azuremyst Isle,48.1,50.4
+		.talk Tuluun##17212
+		..accept Call of Fire (2)##9464
+		only Draenei Shaman
+	step //120
+		goto Azuremyst Isle,49.8,51.9
+		.talk Acteon##17110
+		..accept Seek Huntress Kella Nightbow##9757
+		only Draenei Hunter
+	step //121
+		goto 24.2,54.3
+		.talk Huntress Kella Nightbow##17614
+		..turnin Seek Huntress Kella Nightbow##9757
+		..accept Taming the Beast (1)##9591
+		only Draenei Hunter
+	step //122
+		goto 22.8,75
+		.' Use your Taming Totem on a Barbed Crawler around this area|use Taming Totem##23896
+		.goal Tame a Barbed Crawler|q 9591/1
+		only Draenei Hunter
+	step //123
+		goto 24.2,54.3
+		.talk Huntress Kella Nightbow##17614
+		..turnin Taming the Beast (1)##9591
+		..accept Taming the Beast (2)##9592
+		only Draenei Hunter
+	step //124
+		goto 34.9,35.1
+		.' Use your Taming Totem on a Greater Timberstrider around this area|use Taming Totem##23897
+		.goal Tame a Greater Timberstrider|q 9592/1
+		only Draenei Hunter
+	step //125
+		goto 24.2,54.3
+		.talk Huntress Kella Nightbow##17614
+		..turnin Taming the Beast (2)##9592
+		..accept Taming the Beast (3)##9593
+		only Draenei Hunter
+	step //126
+		goto 36.6,40.8
+		.' Use your Taming Totem on a Nightstalker around this area|use Taming Totem##23898
+		.goal Tame a Nightstalker|q 9593/1
+		only Draenei Hunter
+	step //127
+		goto 24.2,54.3
+		.talk Huntress Kella Nightbow##17614
+		..turnin Taming the Beast (3)##9593
+		..accept Beast Training##9675
+		only Draenei Hunter
+	step //128
+		'Go northeast to the Exodar|goto The Exodar|noway|c
+		only Draenei Hunter
+	step //129
+		goto The Exodar,44,86.7
+		.talk Ganaar##16712
+		..turnin Beast Training##9675
+		only Draenei Hunter
+	step //130
+		'Go outside of the Exodar to Azuremyst Isle|goto Azuremyst Isle|noway|c
+		only Draenei Hunter
+	step //132
+		goto 46.7,20.6
+		.talk High Chief Stillpine##17440
+		..turnin Stillpine Hold##9559
+	step
+		goto 44.8,23.9
+		.talk Moordo##17442
+		..accept Beasts of the Apocalypse!##9560
+	step //133
+		goto 44.7,23.6
+		.talk Gurf##17441
+		..accept Murlocs... Why Here? Why Now?##9562
+	step
+		goto 55.3,19.2
+		.from Ravager Specimen##17199+
+		..get 8 Ravager Hide|q 9560/1
+	step //110
+		goto 59.5,18.1
+		.talk Temper##17205
+		..turnin Call of Fire (2)##9464
+		..accept Call of Fire (3)##9465
+		only Draenei Shaman
+	step //134
+		goto 33.8,25.7
+		.from Siltfin Hunter##17192+, Siltfin Murloc##17190+, Siltfin Oracle##17191+
+		.' Click the Stillpine Grain bags near the murloc huts
+		.get 5 Stillpine Grain|q 9562/1
+		.from Murgurgala##17475
+		.' Get Gurf's Dignity|n
+		.' Click Gurf's Dignity|use Gurf's Dignity##23850
+		..accept Gurf's Dignity##9564
+	step //135
+		goto 44.7,23.6
+		.talk Gurf##17441
+		..turnin Murlocs... Why Here? Why Now?##9562
+		..turnin Gurf's Dignity##9564
+	step
+		goto 44.8,23.9
+		.talk Moordo##17442
+		..turnin Beasts of the Apocalypse!##9560
+	step //136
+		goto 46.7,20.6
+		.talk High Chief Stillpine##17440
+		..accept Search Stillpine Hold##9565
+	step //137
+		goto 46.9,21.2
+		.talk Stillpine the Younger##17445
+		..accept Chieftain Oomooroo##9573
+	step
+		ding 11
+	step //140
+		'Go upstairs to the right at the first intersection in the cave|goto 47.4,14.1
+		.kill Chieftain Oomooroo##17448|q 9573/1
+	step //139
+		goto 47.4,16.0
+		.kill 9 Crazed Wildkin|q 9573/2
+	step //142
+		goto 46.9,21.2
+		.talk Stillpine the Younger##17445
+		..turnin Chieftain Oomooroo##9573
+	step //143
+		goto 47,22.3
+		.talk Kurz the Revelator##17443
+		..accept The Kurken is Lurkin'##9570
+	step //144
+		'Go inside the big cave to 49.9,13.0|goto 49.9,13.0
+		.from The Kurken##17447
+		..get The Kurken's Hide|q 9570/1
+	step //138
+		goto 50.5,11.5
+		.' Click the Blood Crystal|tip It's a huge red crystal on a little dirt island in the water.
+		..turnin Search Stillpine Hold##9565
+		..accept Blood Crystals##9566
+	step //111
+		goto 46.1,16.6
+		.from Crazed Wildkin##17189+
+		..get Ritual Torch|q 9465/1
+		only Draenei Shaman
+	step //145
+		'Go outside the cave to 47.0,22.3|goto 47.0,22.3
+		.talk Kurz the Revelator##17443
+		..turnin The Kurken is Lurkin'##9570
+		..accept The Kurken's Hide##9571
+	step //141
+		'Go outside the cave to 46.7,20.6|goto 46.7,20.6
+		.talk High Chief Stillpine##17440
+		..turnin Blood Crystals##9566
+		..accept Warn Your People##9622
+	step //146
+		goto 44.8,23.9
+		.talk Moordo##17442
+		..turnin The Kurken's Hide##9571
+	step //112
+		goto 59.5,18.1
+		.talk Temper##17205
+		..turnin Call of Fire (3)##9465
+		..accept Call of Fire (4)##9467
+		only Draenei Shaman
+	step //82
+		goto 47.1,50.6
+		.talk Exarch Menelaous##17116
+		..accept Coming of Age##9623
+		..turnin Warn Your People##9622
+	step //148
+		goto 35.1,43.4
+		.talk Torallius the Pack Handler##17584
+		..turnin Coming of Age##9623
+	step //113
+		goto 11.4,82.3
+		.' Unpack the Ritual Torch and Orb of Returning from your Fireproof Satchel in your bags|use Fireproof Satchel##24336
+		..collect Ritual Torch##23682|q 9467
+		..collect Orb of Returning##24335|q 9467
+		.' Click the Wickerman Effigy to summon Hauteur
+		.from Hauteur##17206
+		..get Hauteur's Ashes|q 9467/1
+		.' Click the Orb of Returning in your bags to return to Temper|goto 59.5,18.1,1|c|use Orb of Returning##24335
+		only Draenei Shaman
+	step //114
+		goto 59.5,18.1
+		.talk Temper##17205
+		..turnin Call of Fire (4)##9467
+		..accept Call of Fire (5)##9468
+		only Draenei Shaman
+	step //115
+		goto 48.1,50.4
+		.talk Tuluun##17212
+		..turnin Call of Fire (5)##9468
+		..accept Call of Fire (6)##9461
+		only Draenei Shaman
+	step //116
+		'Go northwest to the Exodar|goto The Exodar|noway|c
+		only Draenei Shaman
+	step //117
+		goto The Exodar,32.8,54.5
+		.talk Prophet Velen##17468
+		..turnin Call of Fire (6)##9461
+		..accept Call of Fire (7)##9555
+		only Draenei Shaman
+	step //118
+		goto 31.4,27.7
+		.talk Farseer Nobundo##17204
+		..turnin Call of Fire (7)##9555
+		only Draenei Shaman
+	step //119
+		'Go outside to Azuremyst Isle|goto Azuremyst Isle|noway|c
+		'If you want to level through Bloodmyst Isle, swap to the Bloodmyst Isle chapter now. You will end there by being teleported to a Deadmine group.
+		only Draenei Shaman
+	step //119
+		'If you want to level through Bloodmyst Isle, swap to the Bloodmyst Isle chapter now. You will end there by being teleported to a Deadmine group.
+		only Draenei !Shaman
+	step //149
+		ding 12
+	step //174
+		goto Azuremyst Isle,48.4,49.6
+		.talk Tullas##17483
+		..accept Jol##10366
+		only Draenei Paladin
+	step //175
+		'Go west to the Exodar|goto The Exodar|noway|c
+		only Draenei Paladin
+	step //176
+		goto The Exodar,38,82
+		.talk Jol##17509
+		..turnin Jol##10366
+		..accept Redemption (1)##9598
+		.' Click the Tome of Divinity in your bags to read it|use Tome of Divinity##23926
+		..turnin Redemption (1)##9598
+		..accept Redemption (2)##9600
+		only Draenei Paladin
+	step //177
+		'Go outside to Azuremyst Isle|goto Azuremyst Isle|noway|c
+		only Draenei Paladin
+	step //178
+		'Go northeast to Bloodmyst Isle|goto Bloodmyst Isle|noway|c
+		only Draenei Paladin
+	step //179
+		goto Bloodmyst Isle,65.3,77.6
+		.' Use your Symbol of Life in your bags on the Young Furbolg Shaman|use Symbol of Life##6866|tip He's a white furbolg laying on the ground.
+		.' Resurrect the Young Furbolg Shaman|goal Young Furbolg Shaman Resurrected|q 9600/1
+		only Draenei Paladin
+	step //180
+		'Go south to Azuremyst Isle|goto Azuremyst Isle|noway|c
+		only Draenei Paladin
+	step //181
+		'Go southwest to the Exodar|goto The Exodar|noway|c
+		only Draenei Paladin
+	step //182
+		goto The Exodar,38,82
+		.talk Jol##17509
+		..turnin Redemption (2)##9600
+		only Draenei Paladin
+	step //183
+		goto 22,54|n
+		.' Ride the boat to Auberdine|goto Darkshore|noway|c
+		only Draenei Paladin
+	step //150
+		goto 21.6,54|n
+		.' Ride the boat to Auberdine|goto Darkshore|noway|c
+	step
+		'Ride the boat to Menethil Harbor|goto Wetlands|noway|c
+	step
+		goto 9.5,59.7
+		.talk Shellei Brondir##1571
+		..fpath Menethil Harbor
+	step
+		'Follow the road southeast to Loch Modan|goto Loch Modan|noway|c
+	step
+		goto Loch Modan,33.9,51
+		.talk Thorgrum Borrelson##1572
+		..fpath Thelsamar
+	step
+		goto Loch Modan,22.1,73.1
+		.talk Mountaineer Cobbleflint##1089
+		..accept In Defense of the King's Lands (1)##224
+	step
+		goto Loch Modan,23.2,73.7
+		.talk Captain Rugelfuss##1092
+		..accept The Trogg Threat##267
+	step
+		'Go southwest to Dun Morogh|goto Dun Morogh|noway|c
+	step
+		'Go northwest to Ironforge|goto Ironforge|noway|c
+	step
+		goto 55.5,47.7
+		.talk Gryth Thurden##1573
+		..fpath Ironforge
+]])
+
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bloodmyst Isle",[[
+	author PolarCookie
+	next Ding80's Alliance Leveling Guides TBC solo\\Levels (20-24)
+	startlevel 12
+
+	step
+		'Take the boat to Azuremyst Isle, it's the middle pier|goto Azuremyst Isle|noway|c
+		only !Draenei
+	step
+		ding 11
+	step //52
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..accept A Small Start##9506
+		only !Draenei
+	step //58
+		goto 58.6,66.4
+		.' Click the Nautical Map sitting on a box under a green canopy
+		.get Nautical Map##23739|q 9506/2
+		only !Draenei
+	step //59
+		goto 59.6,67.6
+		.' Click the Nautical Compass under the blue canopy with a green stripe on it
+		.get Nautical Compass##23738|q 9506/1
+		only !Draenei
+	step //60
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..turnin A Small Start##9506
+		..accept I've Got a Plant##9530
+		only !Draenei
+	step //62
+		goto 45.9,65.7
+		.' Click a Hollowed Out Tree|tip They look like tall, skinny tree stumps around this area.
+		.get Hollowed Out Tree|q 9530/1
+		.' Click the small piles of purple leaves
+		.get 5 Pile of Leaves|q 9530/2
+		only !Draenei
+	step //63
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..turnin I've Got a Plant##9530
+		..accept Tree's Company##9531
+		only !Draenei
+	step //74
+		goto 49,51.1
+		.talk Dulvi##17488
+		..accept The Missing Fisherman##10428
+		only !Draenei
+	step //84
+		goto 49.40,51.0
+		.talk Cryptographer Aurren##17232
+		..accept Learning the Language##9538
+		.' Click the Stillpine Furbolg Language Primer in your bags|use Stillpine Furbolg Language Primer##23818
+		.' Click the Totem of Akida next to Cryptographer Aurren|tip In the middle of town, next to the giant bone altar thing with the huge pink crystal in it.
+		..turnin Learning the Language##9538
+		..accept Totem of Coo##9539
+		only !Draenei
+	step //85
+		'Follow the ghost furbolg as he runs up the hill northeast to 55.2,41.6|goto 55.2,41.6
+		.' Click the Totem of Coo
+		..turnin Totem of Coo##9539
+		..accept Totem of Tikti##9540
+		only !Draenei
+	step //86
+		'Follow the ghost furbolg to the edge of the cliff
+		.' He will give you wings
+		.' Jump off the cliff and glide to the ground to 64.5,39.8|goto 64.5,39.8|n
+		.' Click the Totem of Tikti
+		..turnin Totem of Tikti##9540
+		..accept Totem of Yor##9541
+		only !Draenei
+	step //87
+		'Follow the ghost furbolg to the river
+		.' He will give you a swim speed buff
+		.' Swim south to 63,67.9|goto 63,67.9|n
+		.' Click the Totem of Yor underwater
+		..turnin Totem of Yor##9541
+		..accept Totem of Vark##9542
+		only !Draenei
+	step //88
+		'Follow the ghost furbolg out of the water
+		.' He will turn you into a ghost panther
+		.' Follow him as he runs northwest to 28.1,62.4|goto 28.1,62.4|n
+		.' Click the Totem of Vark
+		..turnin Totem of Vark##9542
+		..accept The Prophecy of Akida##9544
+		only !Draenei
+	step //89
+		goto 28.5,66.4
+		.from Bristlelimb Ursa##17185+, Bristlelimb Windcaller##17184+, Bristlelimb Furbolg##17183+
+		.collect 8 Bristlelimb Key##23801|n
+		.' Click the yellow cages
+		.' Free 8 Stillpine Captives|goal 8 Stillpine Captive Freed|q 9544/1
+		only !Draenei
+	step
+		goto 13.6,73.2
+		.talk Magwin##17312
+		..accept A Cry For Help##9528
+		only !Draenei
+	step
+		goal Magwin Escorted to Safety|q 9528/1
+		only !Draenei
+	step //93
+		goto 16.6,94.5
+		.talk Cowlen##17311
+		..turnin A Cry For Help##9528
+		..turnin The Missing Fisherman##10428
+		..accept All That Remains##9527
+		only !Draenei
+	step //94
+		goto 14.8,92
+		.from Raving Owlbeast##17188+, Aberrant Owlbeast##17187+, Deranged Owlbeast##17186+
+		..get Remains of Cowlen's Family|q 9527/1
+		only !Draenei
+	step //95
+		goto 16.6,94.5
+		.talk Cowlen##17311
+		..turnin All That Remains##9527
+		only !Draenei
+	step //65
+		goto 18.5,84.3
+		.' Use your Tree Disguise Kit next to the Naga Flag on the beach|use Tree Disguise Kit##23792
+		.' Watch the conversation
+		.' Uncover the Traitor|goal The Traitor Uncovered|q 9531/1
+		only !Draenei
+	step //78
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..turnin Tree's Company##9531
+		..accept Show Gnomercy##9537
+		only !Draenei
+	step //80
+		goto 48.2,72.5
+		.from Engineer "Spark" Overgrind##17243
+		..get Traitor's Communication|q 9537/1
+		only !Draenei
+	step //81
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..turnin Show Gnomercy##9537
+		..accept Deliver Them From Evil...##9602
+		only !Draenei
+	step //97
+		goto 49.41,51.0
+		.talk Arugoo the Stillpine##17114
+		..turnin The Prophecy of Akida##9544
+		..accept Stillpine Hold##9559
+		only !Draenei
+	step //82
+		goto 47.1,50.6
+		.talk Exarch Menelaous##17116
+		..turnin Deliver Them From Evil...##9602
+		only !Draenei
+	step //132
+		goto 46.7,20.6
+		.talk High Chief Stillpine##17440
+		..turnin Stillpine Hold##9559
+		only !Draenei
+	step
+		goto 44.8,23.9
+		.talk Moordo##17442
+		..accept Beasts of the Apocalypse!##9560
+		only !Draenei
+	step //133
+		goto 44.7,23.6
+		.talk Gurf##17441
+		..accept Murlocs... Why Here? Why Now?##9562
+		only !Draenei
+	step
+		goto 55.3,19.2
+		.from Ravager Specimen##17199+
+		..get 8 Ravager Hide|q 9560/1
+		only !Draenei
+	step
+		ding 12
+		only !Draenei
+	step //134
+		goto 33.8,25.7
+		.from Siltfin Hunter##17192+, Siltfin Murloc##17190+, Siltfin Oracle##17191+
+		.' Click the Stillpine Grain bags near the murloc huts
+		.get 5 Stillpine Grain|q 9562/1
+		.from Murgurgala##17475
+		.' Get Gurf's Dignity|n
+		.' Click Gurf's Dignity|use Gurf's Dignity##23850
+		..accept Gurf's Dignity##9564
+		only !Draenei
+	step //135
+		goto 44.7,23.6
+		.talk Gurf##17441
+		..turnin Murlocs... Why Here? Why Now?##9562
+		..turnin Gurf's Dignity##9564
+		only !Draenei
+	step
+		goto 44.8,23.9
+		.talk Moordo##17442
+		..turnin Beasts of the Apocalypse!##9560
+		only !Draenei
+	step //136
+		goto 46.7,20.6
+		.talk High Chief Stillpine##17440
+		..accept Search Stillpine Hold##9565
+		only !Draenei
+	step //137
+		goto 46.9,21.2
+		.talk Stillpine the Younger##17445
+		..accept Chieftain Oomooroo##9573
+		only !Draenei
+	step //140
+		'Go upstairs to the right at the first intersection in the cave|goto 47.4,14.1
+		.kill Chieftain Oomooroo##17448|q 9573/1
+		only !Draenei
+	step //139
+		goto 47.4,16.0
+		.kill 9 Crazed Wildkin|q 9573/2
+		only !Draenei
+	step //142
+		goto 46.9,21.2
+		.talk Stillpine the Younger##17445
+		..turnin Chieftain Oomooroo##9573
+		only !Draenei
+	step //143
+		goto 47,22.3
+		.talk Kurz the Revelator##17443
+		..accept The Kurken is Lurkin'##9570
+		only !Draenei
+	step //144
+		'Go inside the big cave to 49.9,13.0|goto 49.9,13.0
+		.from The Kurken##17447
+		..get The Kurken's Hide|q 9570/1
+		only !Draenei
+	step //138
+		goto 50.5,11.5
+		.' Click the Blood Crystal|tip It's a huge red crystal on a little dirt island in the water.
+		..turnin Search Stillpine Hold##9565
+		..accept Blood Crystals##9566
+		only !Draenei
+	step //145
+		'Go outside the cave to 47.0,22.3|goto 47.0,22.3
+		.talk Kurz the Revelator##17443
+		..turnin The Kurken is Lurkin'##9570
+		..accept The Kurken's Hide##9571
+		only !Draenei
+	step //141
+		'Go outside the cave to 46.7,20.6|goto 46.7,20.6
+		.talk High Chief Stillpine##17440
+		..turnin Blood Crystals##9566
+		..accept Warn Your People##9622
+		only !Draenei
+	step //146
+		goto 44.8,23.9
+		.talk Moordo##17442
+		..turnin The Kurken's Hide##9571
+		only !Draenei
+	step
+		goto The Exodar,81.5,51.4
+		.talk Torallius the Pack Handler##17584
+		..accept Elekks of Serious Business##9625
+		only Draenei
+	step
+		'Travel north to Bloodmyst Isle|goto Bloodmyst Isle
+	step
+		goto 63,87.5
+		.talk Kessel##17649
+		..accept The Kessel Run##9663
+	step
+		goto Azuremyst Isle,46.7,20.6
+		.talk High Chief Stillpine##17440
+		..goal High Chief Stillpine Warned|q 9663/1
+	step
+		goto 47.1,50.6
+		.talk Exarch Menelaous##17116
+		..goal Exarch Menelaous Warned|q 9663/2
+		..accept Coming of Age##9623|only !Draenei
+		..turnin Warn Your People##9622|only !Draenei
+	step
+		goto 47,70.2
+		.talk Admiral Odesyus##17240
+		..goal Admiral Odesyus Warned|q 9663/3
+	step
+		goto The Exodar,68.3,63.5
+		.talk Stephanos##17555
+		..fpath The Exodar
+		only !Draenei
+	step
+		goto The Exodar,81.5,51.4
+		.talk Torallius the Pack Handler##17584
+		..turnin Coming of Age##9623
+		..accept Elekks of Serious Business##9625
+		only !Draenei
+	step
+		goto Bloodmyst Isle,63,87.5
+		.talk Kessel##17649
+		..turnin The Kessel Run##9663
+		..accept Declaration of Power##9666
+	step
+		goto 63,87.9
+		.talk Vorkhan the Elekk Herder##17586
+		..turnin Elekks of Serious Business##9625
+		..accept Alien Predators##9634
+	step
+		goto 63.4,88.8
+		.talk Aonar##17599
+		..accept A Favorite Treat##9624
+	step
+		goto 68.3,81
+		.talk Princess Stillpine##17682
+		..accept Saving Princess Stillpine##9667
+	step
+		goto 64.2,76.7
+		'Kill Bristlelimb mobs in this area to make him appear
+		.from High Chief Bristlelimb##17702
+		..collect The High Chief's Key|c
+	step
+		goto 68.3,81
+		'Click Princess Stillpines Cage|goal Princess Stillpine Saved|q 9667/1
+	step
+		goto 68.8,68.2
+		.kill Lord Xiz##17701|q 9666/1
+		'Use the Draenei Banner on Lord Xiz' corpse|use Draenei Banner##24084
+		.goal Declaration of Power|q 9666/1
+	step //96
+		home Blood Watch|goto 55.8,59.8
+	step
+		goto 53.2,57.7
+		.talk Morae##1434
+		..accept Catch and Release##9629
+	step
+		goto 55.2,55.9
+		.talk Stillpine Ambassador Frasaboo##18803
+		..turnin Saving Princess Stillpine##9667
+	step
+		goto 56.4,56.8
+		.talk Jessera of Mac'Aree##17663
+		..accept Mac'Aree Mushroom Menagerie##9648
+	step
+		goto 52.6,53.2
+		.talk Harbringer Mikolaas##17423
+		..accept Learning from the Crystals##9581
+	step
+		goto 53.6,67
+		'Click the Blood Mushroom
+		.get Blood Mushroom|q 9648/2
+	step
+		goto 56,79.6
+		'Either from a Stinkhorn Striker or a Aquatic Stinkhorn doodad
+		.get Aquatic Stinkhorn|q 9648/1
+	step
+		goto 58.2,83.4
+		'Use the Crystal Mining Pick at the Impact Site Crystal|use Crystal Mining Pick##23875
+		.get Impact Site Crystal Sample|q 9581/1
+	step
+		goto 58.2,88.8
+		.kill 10 Bloodmyst Hatchling|q 9634/1
+		.get 10 Sand Pear|q 9624/1
+	step
+		goto 63,87.5
+		.talk Kessel##17649
+		..turnin Declaration of Power##9666
+		..accept Report to Exarch Admetius##9668
+	step
+		goto 63,87.9
+		.talk Vorkhan the Elekk Herder##17586
+		..turnin Alien Predators##9634
+	step
+		goto 63.4,88.8
+		.talk Aonar##17599
+		..turnin A Favorite Treat##9624
+	step
+		goto 47.8,95.8
+		'Use Murloc Tagger on Scouts|use Murloc Tagger##23995
+		.goal 6 Blacksilt Scouts Tagged|q 9629/1
+	step
+		'Travel along the coast where Murlocs are, Cruelfin patrols between the camps.
+		from Cruelfin <Rawgrlgrlgrlgrlgrrgle>##17496
+		.collect Red Crystal Pendant##23870
+		.use Red Crystal Pendant##23870
+		..accept Cruelfin's Necklace##9576
+	step
+		'Hearth to Blood Watch|goto 55.8,59.8,2|use Hearthstone##6948|noway|c
+	step
+		goto 53.2,57.7
+		.talk Morae##1434
+		..turnin Cruelfin's Necklace##9576
+		..turnin Catch and Release##9629
+		..accept Victims of Corruption##9574
+	step
+		goto 52.7,53.2
+		.talk Exarch Admetius##17658
+		..turnin Report to Exarch Admetius##9668
+		..accept What Argus Means to Me##9693
+	step
+		goto 52.6,53.2
+		.talk Harbringer Mikolaas##17423
+		..turnin Learning from the Crystals##9581
+		..accept The Missing Survey Team##9620
+	step
+		goto 55.4,55.3
+		.talk Vindicator Boros##17684
+		..turnin What Argus Means to Me##9693
+		..accept Blood Watch##9694
+	step
+		ding 13
+	step
+		goto 55.1,58
+		.talk Vindicator Aalesia##17433
+		..accept Know Thine Enemy##9567
+	step
+		goto 46.4,73
+		'Click the Fel Cone Fungus
+		.get Fel Cone Fungus|q 9648/4
+	step
+		goto 36.5,71.2
+		'Retrieve the Nazzivus Monument Glyph
+		.get Nazzivus Monument Glyph|q 9567/1
+	step
+		goto 38.4,82
+		.from Tzerak##17528|tip Patrols up and down the camp, or stays infront of the monument.
+		..collect Tzerak's Armor Plate|sticky
+		.use Tzerak's Armor Plate##23900
+		..accept Signs of the Legion##9594
+	step
+		kill 8 Nazzivus Satyr|q 9594/1
+		kill 8 Nazzivus Felsworn|q 9594/2
+	step
+		goto 49.3,74.3
+		.from Corrupted Treant##17352+
+		..get 6 Crystallized Bark|q 9574/1
+	step
+		goto 55.1,58
+		.talk Vindicator Aalesia##17433
+		..turnin Signs of the Legion##9594
+		..turnin Know Thine Enemy##9567
+		..accept Containing the Threat##9569
+	step
+		goto 53.2,57.7
+		.talk Morae##1434
+		..turnin Victims of Corruption##9574
+	step
+		goto 61.2,48.7
+		.talk Draenei Cartographer##17600
+		..turnin The Missing Survey Team##9620
+		..accept Salvaging the Data##9628
+	step
+		goto 62.1,49.5
+		'Click the Ruinous Polyspore
+		.get Ruinous Polyspore|q 9648/3
+	step
+		from Wrathscale mobs
+		.get Survey Data Crystal|q 9628/1
+	step
+		goto 52.6,53.2
+		.talk Harbringer Mikolaas##17423
+		..turnin Salvaging the Data##9628
+		..accept The Second Sample##9584
+	step
+		goto 56.4,56.8
+		.talk Jessera of Mac'Aree##17663
+		..turnin Mac'Aree Mushroom Menagerie##9648
+	step
+		goto 55.9,57
+		.talk Tracker Lyceon##17642|tip Don't do The Bear Necessities, drop rate is terrible.
+		..accept Constrictor Vines##9643
+	step
+		ding 14|tip Don't go to Exodar to train just yet.
+	step
+		goto 45.7,47.8
+		'Use the Crystal Mining Pick at the Altered Bloodmyst Crystal|use Crystal Mining Pick##23876
+		.get Altered Crystal Sample|q 9584/1
+		.kill 10 Sunhawk Spy|q 9694/1
+	step
+		goto 55.4,55.3
+		.talk Vindicator Boros##17684
+		..turnin Blood Watch##9694
+		..accept Intercepting the Message##9779
+	step
+		goto 45.7,47.8
+		.from Sunhawk Spy##17604
+		..get Sunfury Missive|q 9779/1
+	step
+		goto 55.4,55.3
+		.talk Vindicator Boros##17684
+		..turnin Intercepting the Message##9779
+		..accept Translations...##9696
+	step
+		goto 54.4,54.5
+		.talk Interrogator Elysia##17825
+		..turnin Translations...##9696
+		..accept Audience with the Prophet##9698
+	step
+		goto 52.6,53.2
+		.talk Harbringer Mikolaas##17423
+		..turnin The Second Sample##9584
+		..accept The Final Sample##9585
+	step
+		goto 55.8,59.8
+		.talk Caregiver Topher Loaal##17553
+		..accept Beds, Bandages, and Beyond##9603
+		only Draenei
+	step
+		goto 57.7,53.9
+		.talk Laando##17554
+		..turnin Beds, Bandages, and Beyond##9603
+		..accept On the Wings of a Hippogryph##9604
+		only Draenei
+	step
+		'Fly to the Exodar|goto The Exodar
+	step
+		goto 57,50.1
+		.talk Nurguni##16768
+		..turnin On the Wings of a Hippogryph##9604
+		..accept Hippogryph Master Stephanos##9605
+		only Draenei
+	step
+		goto 32.9,54.5
+		.talk Prophet Velen##17468
+		..turnin Audience with the Prophet##9698
+		..accept Truth or Fiction##9699
+	step
+		goto 68.3,63.5
+		.talk Stephanos##17555
+		..turnin Hippogryph Master Stephanos##9605
+		..accept Return to Topher Loaal##9606
+		only Draenei
+	step
+		'Fly to Blood Watch|goto Bloodmyst Isle
+	step
+		goto 55.4,55.3
+		.talk Vindicator Boros##17684
+		..turnin Truth or Fiction##9699
+		..accept I Shoot Magic Into the Darkness##9700
+	step
+		goto 55.3,59.1
+		.talk Wanted Poster
+		..accept WANTED:Deathclaw##9646
+	step
+		goto 55.8,59.8
+		.talk Caregiver Topher Loaal##17553
+		..turnin Return to Topher Loaal##9606
+		only Draenei
+	step
+		goto 56.3,54.2
+		.talk Prospector Nachlan##18804
+		..accept Explorers' League, Is That Something for Gnomes?##10063
+	step
+		goto 53.8,18.6
+		.goal Sun Portal Site Confirmed|q 9700/1
+		.kill 5 Void Anomoly|q 9700/2
+	step
+		goto 45.1,32.9
+		.from Mutated Constrictor##17344+
+		..get 6 Thorny Constrictor Vines|q 9643/1
+	step
+		ding 15
+	step
+		goto 41.9,29.5
+		.kill Zevrax|q 9569/1
+		.kill 5 Axxarien Shadowstalker|q 9569/2
+		.kill 5 Axxarien Hellcaller|q 9569/3
+		.'Click Corrupted Crystals
+		.get 5 Corrupted Crystal|q 9569/4
+		.'Mine the big red crystal close to Zevrax|use Crystal Mining Pick##23877
+		..get Axxarien Crystal Sample|q 9585/1
+	step
+		goto 42.1,21.2
+		.talk Clopper Wizbank##17421
+		..turnin Explorers' League, Is That Something for Gnomes?##10063
+		..accept Pilfered Equipment##9548
+	step
+		goto 40.5,20.1
+		.'Click Clopper's Equipment
+		..get Clopper's Equipment|q 9548/1
+	step
+		goto 42.1,21.2
+		.talk Clopper Wizbank##17421
+		..turnin Pilfered Equipment##9548
+		..accept Artifacts of the Blacksilt##9549
+	step
+		from Blacksilt Seer##17330+
+		.get 3 Crude Murloc Idol|q 9549/1
+		from Blacksilt Shorestriker##17328+, Blacksilt Warrior##17329+
+		.get 6 Crude Murloc Knife|q 9549/2
+	step
+		goto 42.1,21.2
+		.talk Clopper Wizbank##17421
+		..turnin Artifacts of the Blacksilt##9549
+		.use Weathered Treasure Map##23837
+		..accept A Map to Where?##9550
+	step
+		goto 37.2,29.9
+		.from Deathclaw##17661
+		..get Deathclaw's Paw|q 9646/1
+	step
+		'Hearth to Blood Watch|goto 55.8,59.8,2|use Hearthstone##6948|noway|c
+	step
+		goto 53.2,57.7
+		.talk Morae##17434
+		..accept Searching for Galaen##9578
+	step
+		goto 55.1,58
+		.talk Vindicator Aalesia##17433
+		..turnin Containing the Threat##9569
+	step
+		goto 55.9,57
+		.talk Tracker Lyceon##17642
+		..turnin Constrictor Vines##9643
+		..accept Culling the Flutterers##9647
+	step
+		goto 56.4,56.8
+		.talk Jessera of Mac'Aree##17663
+		..accept Ysera's Tears##9649
+	step
+		goto 55.4,55.3
+		.talk Vindicator Boros##17684
+		..turnin I Shoot Magic Into the Darkness##9700
+		.talk Vindicator Kuros##17843
+		..accept The Cryo-Core##9703
+	step
+		goto 55.4,55.3
+		.talk Messenger Hermesius##17703|tip He Patrols around the middle.
+		..accept Urgent Delivery##9671|instant
+	step
+		goto 55.2,59.2
+		.'Check the mailbox
+		..collect A Letter from the Admiral##24132|sticky 
+		.'Read the letter|use A Letter from the Admiral##24132
+		..accept The Bloodcurse Legacy##9672
+	step
+		goto 52.6,53.2
+		.talk Harbringer Mikolaas##17423
+		..turnin The Final Sample##9585
+		..turnin WANTED:Deathclaw##9646
+	step
+		ding 16
+	step
+		goto 52.6,53.2
+		.talk Harbringer Mikolaas##17423
+		..accept Talk to the Hand##10064
+	step
+		goto 53.2,57
+		.talk Achelus##17676
+		..accept The Missing Expedition##9669
+	step
+		goto 61.2,41.9
+		.talk Battered Ancient Book
+		..turnin A Map to Where?##9550
+		..accept Deciphering the Book##9557
+	step
+		goto 54.7,53.9
+		.talk Anchorite Paetheus##17424
+		..turnin Deciphering the Book##9557
+		..accept Nolkai's Words##9561
+	step
+		goto 37.5,61.2
+		'Kill some Royal Blue Flutterers if you travel past them.
+		.talk Galaen's Corpes##17508
+		..turnin Searching for Galaen##9578
+		..accept Galaen's Fate##9579
+	step
+		goto 37.5,61.3
+		.'Click Galaen's Journal
+		..accept Galaen's Journal - The Fate of Vindicator Saruan##9706
+	step
+		from Sunhawk Reclaimer##17606+
+		.get 12 Medical Supplies|q 9703/1
+		.get Galaen's Amulet|q 9579/1
+	step
+		goto 55.4,55.3
+		.talk Vindicator Kuros##17843
+		..turnin The Cryo-Core##9703
+		..turnin Galaen's Journal - The Fate of Vindicator Saruan##9706
+		..accept Matis the Cruel##9711
+		.talk Vindicator Aesom##17844
+		..accept Don't Drink the Water##9748
+	step
+		goto 53.2,57.7
+		.talk Morae##17434
+		..turnin Galaen's Fate##9579
+	step
+		goto 43.6,62.2
+		.kill 10 Royal Blue Flutterers|q 9647/1
+		.' Kill while traveling northwest at 31.3,42.7
+	step
+		goto 30.3,45.9
+		.talk Scout Jorli##17927
+		..turnin Talk to the Hand##10064
+		..accept Cutting a Path##10065
+	step
+		goto 30.2,45.9
+		.talk Scout Loryi##17926
+		..accept Critters of the Void##9741
+	step
+		goto 30.7,46.8
+		.talk Vindicator Corin##17986
+		..accept Oh, the Tangled Webs They Weave##10066
+		..accept Fouled Water Spirits##10067
+	step
+		goto 30.3,58.4
+		.kill 10 Enraged Ravager##17527+|q 10065/1
+		.kill 8 Mutated Tangler##17346+|q 10066/1
+	step
+		ding 17
+	step
+		goto 30.7,46.8
+		.talk Vindicator Corin##17986
+		..turnin Oh, the Tangled Webs They Weave##10066
+	step
+		goto 30.3,45.9
+		.talk Scout Jorli##17927
+		..turnin Cutting a Path##10065
+	step
+		goto 18.2,37.9
+		.kill Zarakh##17683|q 9669/3
+		.kill 8 Myst Leecher##17523+|q 9669/1
+		.kill 8 Myst Spinner##17522+|q 9669/2
+	step
+		goto 30,36.6
+		.kill 6 Fouled Water Spirit##17358+|q 10067/1
+	step
+		goto 34.4,33.7
+		.'Use the Water Sample Flask|use Water Sample Flask##24318
+		..get Bloodmyst Water Sample|q 9748/1
+	step
+		'Hearth to Blood Watch|goto 55.8,59.8,2|use Hearthstone##6948|noway|c
+	step
+		goto 53.2,57
+		.talk Achelus##17676
+		..turnin The Missing Expedition##9669
+	step
+		goto 55.9,57
+		.talk Tracker Lyceon##17642
+		..turnin Culling the Flutterers##9647
+	step
+		goto 55.6,55.4
+		.talk Vindicator Aesom##17844
+		..turnin Don't Drink the Water##9748
+		..accept Limits of Physical Exhaustion##9746
+	step
+		goto 30.7,46.8
+		.talk Vindicator Corin##17986
+		..turnin Fouled Water Spirits##10067
+	step
+		goto 23.8,59.4
+		.kill 10 Sunhawk Pyromancer##17608+|q 9746/1
+		.kill 10 Sunhawk Defender##17607+|q 9746/2
+	step
+		ding 18
+	step
+		goto 55.6,55.4
+		.talk Vindicator Aesom##17844
+		..turnin Limits of Physical Exhaustion##9746
+		..accept The Sun Gate##9740
+	step
+		'Look for a partner to fight Matis the Cruel with
+		goto 18.7,64
+		.kill 12 Void Critter##17887+|q 9741/1
+		.goal The Sun Gate Destroyed|q 9740/1
+	step
+		'Travel on the road looking for Matis the Cruel
+		'Summon aid with the Flare gun while in combat|use Flare Gun##24278
+		.goal Matis the Cruel Captured|q 9711/1
+	step
+		goto 55.4,55.3
+		.talk Vindicator Kuros##17843
+		..turnin Matis the Cruel##9711
+	step
+		goto 55.6,55.4
+		.talk Vindicator Aesom##17844
+		..turnin Critters of the Void##9741
+		..turnin The Sun Gate##9740
+		..accept What We Know...##9753|only Draenei
+	step
+		goto 61.3,49.6
+		.talk Mound of Dirt
+		..turnin Nolkai's Words##9561
+	step
+		goto 75.1,34.4
+		.talk Prince Toreth##17674
+		..accept Restoring Sanctity##9687
+	step
+		goto 57,34.4
+		.'Pick up Dragon Bones lying on the ground
+		..get 8 Dragon Bone|q 9687/1
+	step
+		goto 75.1,34.4
+		.talk Prince Toreth##17674
+		..turnin Restoring Sanctity##9687
+		..accept Into the Dream##9688
+	step
+		'All over the island
+		.kill 5 Veridian Whelp##17588+|q 9688/1
+		.kill 5 Veridian Broodling##17589+|q 9688/2
+		.'Click Ysera's Tear
+		..get 2 Ysera's Tear|q 9649/1
+	step
+		goto 79.2,22.7
+		.talk Captain Edward Hanes##17712
+		..turnin The Bloodcurse Legacy##9672
+		..accept The Bloodcursed Naga##9674
+	step
+		goto 81,16.2
+		.kill 10 Bloodcursed Naga|q 9674/1
+	step
+		goto 79.2,22.7
+		.talk Captain Edward Hanes##17712
+		..turnin The Bloodcursed Naga##9674
+		..accept The Hopeless Ones..##9682
+	step
+		goto 83.1,20.9
+		.from Bloodcursed Voyager##17714+
+		..get 4 Bloodcursed Soul|q 9682/1
+	step
+		goto 79.2,22.7
+		.talk Captain Edward Hanes##17712
+		..turnin The Hopeless Ones..##9682
+		..accept Ending the Bloodcurse##9683
+	step
+		goto 86.1,54.6
+		.'Destroy the Statue of Queen Azshara
+		..kill Atoph the Bloodcursed|q 9683/1
+	step
+		ding 19
+	step
+		goto 79.2,22.7
+		.talk Captain Edward Hanes##17712
+		..turnin Ending the Bloodcurse##9683
+	step
+		goto 75.1,34.4
+		.talk Prince Toreth##17674
+		..turnin Into the Dream##9688
+		..accept Razormaw##9689
+	step
+		goto 72.8,20.8
+		.'Summon Razormaw|use Bundle of Dragon Bones##24221
+		..kill Razormaw##17592|q 9689/1
+	step
+		goto 75.1,34.4
+		.talk Prince Toreth##17674
+		..turnin Razormaw##9689
+	step
+		'Hearth to Blood Watch|goto 55.8,59.8,2|use Hearthstone##6948|noway|c
+	step
+		goto 56.4,56.8
+		.talk Jessera of Mac'Aree##17663
+		..turnin Ysera's Tears##9649
+	step
+		goto 52.7,53.2
+		.talk Exarch Admetius##17658
+		..turnin What We Know...##9753
+		..accept What We Don't Know...##9756
+		only Draenei
+	step
+		goto 54.4,54.1
+		'Talk to the Captured Sunhawk Agent
+		.goal Sunhawk Information Recovered|q 9756/1
+		only Draenei
+	step
+		goto 52.7,53.2
+		.talk Exarch Admetius##17658
+		..turnin What We Don't Know...##9756
+		..accept Vindicator's Rest##9756
+		only Draenei
+	step
+		goto 30.7,46.8
+		.talk Vindicator Corin##17986
+		..turnin Vindicator's Rest##9756
+		..accept Clearing the Way##9761
+		only Draenei
+	step
+		goto 18.5,45.6
+		.kill 8 Sunhawk Agent##17610+|q 9761/1
+		.kill 8 Sunhawk Saboteur##17609+|q 9761/2
+		only Draenei
+	step
+		goto 30.7,46.8
+		.talk Vindicator Corin##17986
+		..turnin Clearing the Way##9761
+		only Draenei
+	step
+		'WARNING: ESCORT
+		goto 30.8,46.6
+		.talk Demolitionist Legoso##17982
+		..accept Ending Their World##9759|noautoaccept
+		only Draenei
+	step
+		goal Vector Coil Destroyed and Sironas Slain|q 9759/1
+		only Draenei
+	step
+		goto 52.7,53.2
+		.talk Exarch Admetius##17658
+		..turnin Ending Their World##9759
+		only Draenei
+	step
+		'Make/find a group for Deadmines and get teleported|goto The Deadmines|noway|c
+	step
+		'Have the group share quests with you.
+		.accept Collecting Memories##168
+		.accept Oh Brother...##167
+		.accept Underground Assault##2040
+	step
+		.from Foreman Thistlenettle##626
+		..get Thistlenettle's Badge|q 167/1
+		.from Skeletal Miner##623+, Undead Dynamiter##625+, Undead Excavator##624+
+		..get 4 Miners' Union Card|q 168/1
+	step
+		from Sneed's Shredder##642
+		.get Gnoam Sprecklesprocket|q 2040/1
+		from Edwin VanCleef##639
+		.collect An Unsent Letter|sticky
+		.' Click the Unsent Letter|use An Unsent Letter##2874
+		..accept The Unsent Letter##373
+	step
+		'Leave by the backdoor|goto Westfall|noway|c
+	step
+		'Fly to Stormwind City|goto Stormwind City|noway|c
+	step
+		goto 70.3,40.8
+		.talk Wilder Thistlenettle##656
+		..turnin Collecting Memories##168
+		..turnin Oh Brother...##167
+	step
+		goto 62.6,34.1
+		.talk Shoni the Shilent##6579
+		..turnin Underground Assault##2040
+	step
+		goto 57.7,47.9
+		.talk Baros Alexston##1646
+		..turnin The Unsent Letter##373
+		..accept Bazil Thredd##389
+	step
+		goto 51.5,69.3
+		.talk Warden Thelwater##1719
+		..turnin Bazil Thredd##389
+	step
+		ding 20
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dun Morogh (1-10)",[[
 	author PolarCookie
 	defaultfor Gnome,Dwarf
-	next Ding80's Alliance Leveling Guides TBC solo\\Main Guide (13-19)
+	next Ding80's Alliance Leveling Guides TBC solo\\Main Guide (10-12)
 	startlevel 1
 	step
 		goto Dun Morogh,29.9,71.9
@@ -434,8 +2779,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dun
 		.talk Lago Blackwrench##6120
 		..accept The Slaughtered Lamb##1715
 		only Gnome Warlock
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Main Guide (10-12)",[[
+	author PolarCookie
+	next Ding80's Alliance Leveling Guides TBC solo\\Main Guide (13-19)
+	startlevel 10
+
 	step
-		goto 76.9,51.2|n
+		goto Ironforge,76.9,51.2|n
 		'Enter the Deeprun Tram|goto Deeprun Tram|noway|c|tip Buy a Bronze Tube from the engineering supplies vendor in Tinker Town if you don't have one. You will need it later in Duskwood.
 	step
 		.talk Monty##12997
