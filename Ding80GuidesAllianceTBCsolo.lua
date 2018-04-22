@@ -2257,12 +2257,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..turnin Restoring Sanctity##9687
 		..accept Into the Dream##9688
 	step
-		'All over the island
-		.kill 5 Veridian Whelp##17588+|q 9688/1
-		.kill 5 Veridian Broodling##17589+|q 9688/2
-		.'Click Ysera's Tear
-		..get 2 Ysera's Tear|q 9649/1
-	step
 		goto 79.2,22.7
 		.talk Captain Edward Hanes##17712
 		..turnin The Bloodcurse Legacy##9672
@@ -2294,6 +2288,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		goto 79.2,22.7
 		.talk Captain Edward Hanes##17712
 		..turnin Ending the Bloodcurse##9683
+	step
+		'All over the island
+		.kill 5 Veridian Whelp##17588+|q 9688/1
+		.kill 5 Veridian Broodling##17589+|q 9688/2
+		.'Click Ysera's Tear
+		..get 2 Ysera's Tear|q 9649/1
 	step
 		goto 75.1,34.4
 		.talk Prince Toreth##17674
@@ -2342,7 +2342,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 	step
 		'You need to be at least 12745/19300 xp at lvl 19 at this point, not including the Lighthouse quests 
 		'Ask if you can buy Flask of oils from someone in your group, otherwise farm some Golems outside Deadmines
-		.get 5 Flask of Oil|q 103/1|future
+		.collect 5 Flask of Oil|q 103|future
 	step
 		goto 30,86
 		.talk Captain Grayson##392
