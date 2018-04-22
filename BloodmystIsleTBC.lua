@@ -5,7 +5,7 @@ if UnitFactionGroup("player")~="Alliance" then return end
 
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bloodmyst Isle",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides TBC solo\\Levels (20-24)
+	next Ding80's Alliance Leveling Guides TBC solo\\Levels (25-29)
 	startlevel 12
 
 	step
@@ -1133,6 +1133,47 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 	step
 		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
 	step
+		goto 21.9,46.3
+		.talk Martie Jainrose##342
+		..turnin Visit the Herbalist##130
+		..accept Delivering Daffodils##131
+	step
+		goto 22.7,43.8
+		.talk Chef Breanna##343
+		..turnin Redridge Goulash##92
+	step
+		goto 26.6,44.3
+		.talk Darcy##379
+		..turnin Delivering Daffodils##131
+	step
+		goto 27.7,47.4
+		.talk Dockmaster Baren##381
+		..turnin Selling Fish##127
+		..turnin Murloc Poachers##150
+	step
+		ding 21
+	step
+		goto 29.3,53.6
+		.talk Hilary##8962
+		..turnin Hilary's Necklace##3741
+	step
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..turnin Underbelly Scales##122
+	step
+		goto 32.1,48.6
+		.talk Foreman Oslow##341
+		..turnin The Lost Tools##125
+		..accept The Everstill Bridge##89
+	step
+		goto 33.5,49
+		.talk Marshal Marris##382
+		..turnin Blackrock Menace##20
+	step
+		goto 30.7,60
+		.talk Deputy Feldon##1070
+		..turnin Assessing the Threat##246
+	step
 		goto 38.86,32.07
 		.kill 10 Redridge Brute|q 124/1
 		.kill 8 Redridge Mystic|q 124/2
@@ -1221,4 +1262,401 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..turnin Wolves at Our Heels##226
 	step
 		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
+	step
+		goto 73.8,43.5
+		.talk Chef Grual##272
+		..turnin Jitters' Growling Gut##5
+		..accept Dusky Crab Cakes##93
+		..turnin Dusky Crab Cakes##93
+		..accept Return to Jitters##240
+	step
+		goto 75.8,45.3
+		.talk Madame Eva##265
+		..turnin Supplies from Darkshire##148
+		..accept Ghost Hair Thread##149
+		..accept The Legend of Stalvan (1)##66
+	step
+		goto 72.5,46.8
+		.talk Clerk Daltry##267
+		..turnin The Legend of Stalvan (1)##66
+		..accept The Legend of Stalvan (2)##67
+	step
+		goto 81.9,59.2
+		.talk Blind Mary##302
+		..turnin Look To The Stars (2)##175
+		..accept Look To The Stars (3)##177
+		..turnin Ghost Hair Thread##149
+		..accept Return the Comb##154
+	step
+		goto 79.3,70.3
+		.kill 8 Skeletal Warrior|q 56/1
+		.kill 6 Skeletal Mage|q 56/2
+	step
+		goto 80.9,71.6
+		.from Insane Ghoul##511
+		.get Mary's Looking Glass|q 177/1
+	step
+		goto 79.8,48.1
+		.talk Viktori Prism'Antras##276
+		..turnin Look To The Stars (3)##177
+		..accept Look To The Stars (4)##181
+	step
+		goto 75.8,45.3
+		.talk Madame Eva##265
+		..turnin Return the Comb##154
+		..accept Deliver the Thread##157
+	step
+		goto 73.5,46.8
+		.talk Commander Althea Ebonlocke##264
+		..turnin The Night Watch (1)##56
+		..accept The Night Watch (2)##57
+	step
+		goto 45.1,67
+		.talk Watcher Dodds##888
+		..turnin Eight-Legged Menaces##245
+	step
+		goto 28.1,31.5
+		.talk Abercrombie##289
+		..turnin Deliver the Thread##157
+		..accept Zombie Juice##158
+	step
+		'Go outside to 18.2,56.6|goto 18.2,56.6
+		.talk Jitters##288
+		..turnin Return to Jitters##240
+	step
+		'Head to Westfall|goto Westfall
+	step
+		goto Westfall,41.5,66.7
+		.' Click the Old Footlocker|tip It's a small rectangular wooden box on the floor inside this house.
+		..turnin The Legend of Stalvan (2)##67
+		..accept The Legend of Stalvan (3)##68
+	step
+		goto Westfall,56.3,47.5
+		.talk Gryan Stoutmantle##234
+		..turnin The Defias Brotherhood (2)##132
+		..accept The Defias Brotherhood (3)##135
+		..turnin Messenger to Westfall (1)##143
+		..accept Messenger to Westfall (2)##144
+	step
+		'Fly to Stormwind|goto Stormwind City|noway|c
+	step
+		goto 69.3,71.3
+		buy 1 Stormwind Seasoning Herbs|q 90/2
+	step
+		goto Stormwind City,78.3,70.7
+		.talk Master Mathias Shaw##332
+		..turnin The Defias Brotherhood (3)##135
+	step
+		'Fly to Ironforge|goto Ironforge|noway|c
+	step
+		goto 50.8,5.6
+		.talk Gerrig Bonegrip##2786
+		..turnin The Powers Below##968
+	step
+		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
+	step
+		goto Loch Modan,34.8,47.1
+		.talk Mountaineer Kadrell##1340
+		..accept Report to Mountaineer Rockgar##468
+	step
+		goto 25.4,10.4
+		.talk Mountaineer Rockgar##1342
+		..turnin Report to Mountaineer Rockgar##468
+		..accept The Algaz Gauntlet##455
+	step
+		'Go into the tunnel to 49.7,79.5|goto Wetlands,49.7,79.5
+		.kill 8 Dragonmaw Scout|q 455/2
+		.kill 6 Dragonmaw Grunt|q 455/3
+	step
+		'Follow the path through the tunnels to 53.9,70.3|goto 53.9,70.3|n
+		.' Traverse Dun Algaz|goal Traverse Dun Algaz|q 455/1
+	step
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind long the way.
+		goto 49.9,39.4
+		.talk Einar Stonegrip##2093
+		..accept Daily Delivery##469
+	step
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind long the way.
+		goto 11.5,52.2
+		.talk Tarrel Rockweaver##2096
+		..accept In Search of The Excavation Team (1)##305
+	step
+		goto 8.5,55.7
+		.talk James Halloran##2094
+		..turnin Daily Delivery##469
+		..accept Young Crocolisk Skins##484
+	step
+		goto 8.3,58.6
+		.talk Karl Boran##1242
+		..accept Claws from the Deep##279
+	step
+		goto 9.5,59.7
+		.talk Shellei Brondir##1571
+		..fpath Menethil Harbor
+	step
+		goto 10.9,59.6
+		.talk First Mate Fitzsimmons##1239
+		..accept The Third Fleet##288
+		..accept The Greenwarden##463
+	step
+		goto 10.8,60.8
+		.talk Innkeeper Helbrek##1464
+		..buy Flagon of Mead|goal Flagon of Mead|q 288/1
+	step
+		home Menethil Harbor
+	step
+		goto 10.8,60.4|tip 2nd Floor. In the middle room as you go up the stairs.
+		.talk Archaeologist Flagongut##2911
+		..turnin The Absent Minded Prospector##942
+		..accept The Absent Minded Prospector##943
+	step
+		goto 10.9,59.6
+		.talk First Mate Fitzsimmons##1239
+		..turnin The Third Fleet##288
+		..accept The Cursed Crew##289
+	step
+		goto 11.8,58
+		.talk Sida##2111
+		..accept Digging Through the Ooze##470
+	step
+		goto 10.1,56.9
+		.talk Valstag Ironjaw##2086
+		..turnin The Algaz Gauntlet##455
+	step
+		ding 23
+	step
+		goto 10.1,56.9
+		.talk Valstag Ironjaw##2086
+		..accept Report to Captain Stoutfist##473
+	step
+		goto 9.9,57.5
+		.talk Captain Stoutfist##2104
+		..turnin Report to Captain Stoutfist##473
+		..accept War Banners##464
+	step
+		ding 23
+	step
+		goto 18.1,39.8
+		.from Gobbler##1259
+		.get Gobbler's Head|q 279/2
+	step
+		goto 13.8,41.9
+		.kill 12 Bluegill Murloc|q 279/1
+	step
+		'Kill crocolisks while traveling.
+		.from Young Wetlands Crocolisk##1417+
+		.get 4 Young Crocolisk Skin|q 484/1|n
+		goto Wetlands,38.1,51.1
+		.talk Ormer Ironbraid##1078
+		..accept Ormer's Revenge (1)##294
+	step
+		goto 38.8,52.3
+		.talk Merrin Rockweaver##1076
+		..turnin In Search of The Excavation Team (1)##305
+		..accept In Search of The Excavation Team (2)##306
+	step
+		goto 38.9,52.2
+		.'Click the Fossil inside the cave
+		..get Flagongut's Fossil|q 943/2
+	step
+		goto 53.27,36
+		.from Young Wetlands Crocolisk##1417+
+		.get 4 Young Crocolisk Skin|q 484/1
+	step
+		goto 56.3,40.5
+		.talk Rethiel the Greenwarden##1244
+		..turnin The Greenwarden##463
+		..accept Tramping Paws##276
+	step
+		goto 63.9,61.8
+		.kill 15 Mosshide Gnoll|q 276/1
+		.kill 10 Mosshide Mongrel|q 276/2
+	step
+		goto 56.3,40.5
+		.talk Rethiel the Greenwarden##1244
+		..turnin Tramping Paws##276
+		..accept Fire Taboo##277
+	step
+		goto 44.3,25.5
+		.from Black Ooze##1032+, Crimson Ooze##1031+
+		.get Sida's Bag|q 470/1
+	step
+		goto 46.4,35.3
+		.from Mosshide Trapper##1011+, Mosshide Brute##1012+, Mosshide Fenrunner##1010+, Mosshide Mistweaver##1009+|tip Mosshide Gnolls and Mosshide Mongrels will not drop the Crude Flint.
+		.get 9 Crude Flint|q 277/1
+	step
+		goto 29.1,44.8
+		.kill 10 Mottled Raptor|q 294/1
+		.kill 10 Mottled Screecher|q 294/2
+		.get Stone of Relu|q 943/1
+	step
+		goto Wetlands,38.1,51.1
+		.talk Ormer Ironbraid##1078
+		..turnin Ormer's Revenge (1)##294
+		..accept Ormer's Revenge (2)##295
+	step
+		goto 42.9,41.2
+		.from Dragonmaw Raider##1034+
+		.get 8 Dragonmaw War Banner|q 464/1
+	step
+		goto 56.3,40.5
+		.talk Rethiel the Greenwarden##1244
+		..turnin Fire Taboo##277
+		..accept Blisters on The Land##275
+	step
+		ding 24
+	step
+		'Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c
+	step
+		goto 10.8,60.4|tip 2nd Floor. In the middle room as you go up the stairs.
+		.talk Archaeologist Flagongut##2911
+		..turnin The Absent Minded Prospector##943
+	step
+		goto Wetlands,8.3,58.6
+		.talk Karl Boran##1242
+		..turnin Claws from the Deep##279
+		..accept Reclaiming Goods##281
+	step
+		goto 8.5,55.7
+		.talk James Halloran##2094
+		..turnin Young Crocolisk Skins##484
+		..accept Apprentice's Duties##471
+	step
+		goto 9.9,57.5
+		.talk Captain Stoutfist##2104
+		..turnin War Banners##464
+		..accept Nek'rosh's Gambit##465
+	step
+		goto 11.5,52.2
+		.talk Tarrel Rockweaver##2096
+		..turnin In Search of The Excavation Team (2)##306
+	step
+		goto 11.8,58
+		.talk Sida##2111
+		..turnin Digging Through the Ooze##470
+	step
+		'Fly to Lakeshire|goto Redridge Mountains,30.4,59.0,0.5|noway|c
+	step
+		goto 31.5,57.9
+		.talk Guard Howe##903
+		..accept Blackrock Bounty##128
+	step
+		goto 33.5,49
+		.talk Marshal Marris##382
+		..accept Tharil'zun##19
+		..accept Shadow Magic##115
+	step
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..accept Howling in the Hills##126
+	step
+		goto 30,44.4
+		.talk Bailiff Conacher##900
+		..accept Solomon's Law##91
+	step
+		goto 30,44.5
+		.talk Magistrate Solomon##344
+		..turnin Messenger to Westfall (2)##144
+		..accept Messenger to Darkshire (1)##145
+	step
+		goto 29.6,46.2
+		.talk Wanted: Gath'Ilzogg
+		..accept Gath'Ilzogg##169
+	step
+		goto 26.8,46.4
+		.talk Wanted: Lieutenant Fangore
+		..accept Wanted: Lieutenant Fangore##180
+	step
+		home Lakeshire
+	step
+		goto 27.7,21.4
+		.from Yowler##518
+		..get Yowler's Paw|q 126/1
+	step
+		'Head left when you enter the cave
+		'WARNING: ESCORT!
+		goto 28.4,12.6
+		.talk Corporal Keeshan##349
+		..accept Missing In Action##219|noautoaccept
+	step
+		' IMPORTANT NOTE: Pull the mobs AHEAD of him before he reaches them! Even though he's tough, he charges into fights and can quickly get many adds. Outside, when he says that he's taking a rest, quickly take the opportunity to single pull continuously from the two big camps. If you do not, then he'll walk into the two big camps and pull every mob and you'll be doomed. If you do fail, you can go back in the cave and get the quest again. SUPER WARNING: SERVER WILL DESPAWN THE ESCORTEE IF YOU TRAVEL TO FAR AWAY FROM HIM, MAKE SURE HE'S ALWAYS IN YOUR VIEW DISTANCE.
+		goal Escort Corporal Keeshan back to Redridge|q 219/1
+		kill 15 Blackrock Champion|q 128/1
+	step
+		goto 33.5,49
+		.talk Marshal Marris##382
+		..turnin Missing in Action##219
+	step
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..turnin Howling in the Hills##126
+	step
+		goto 31.5,57.9
+		.talk Guard Howe##903
+		..turnin Blackrock Bounty##128
+	step
+		ding 25
+	step
+		goto 80.2,37.1
+		.from Lieutenant Fangore##703
+		..get 1 Fangore's Paw|q 180/1
+		.from Shadowhide Assassin##579+, Shadowhide Brute##432+, Shadowhide Darkweaver##429+, Shadow Gnoll##433+, Shadowhide Slayer##431+, Shadowhide Warrior##568+
+		..get 10 Shadowhide Pendant|q 91/1
+	step
+		'If you got the Glowing Shadowhide Pendant; accept, otherwise skip this step.
+		.use Glowing Shadowhide Pendant##1962
+		..accept Theocritus' Retrieval##178
+	step
+		goto 84.5,46.8
+		.talk Old Lion Statue
+		..turnin A Watchful Eye##94
+		..accept Looking Further##248
+	step
+		'The Jar is at the top of the stone tower next to the keep.
+		goto 63.2,49.8
+		.talk An Empty Jar
+		..turnin Looking Further##248
+	step
+		goto 67,52
+		.from Blackrock Shadowcaster##436+
+		.get 3 Midnight Orb|q 115/1
+	step
+		goto 69.3,59.9
+		.from Tharil'Zun##486
+		..get Tharil'zun's Head|q 19/1
+	step
+		'Group quest, consider abandoning
+		goto 69.6,55.8
+		.from Gath'Ilzogg##334
+		..get Head of Gath'Ilzogg|q 169/1
+	step
+		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
+	step
+		goto 21.9,46.3
+		.talk Martie Jainrose##342
+		..accept An Unwelcome Guest##34
+	step
+		goto 15.9,49.5
+		.from Bellygrub##345
+		.get Bellygrub's Tusk|q 34/1
+	step
+		goto 21.9,46.3
+		.talk Martie Jainrose##342
+		..turnin An Unwelcome Guest##34
+	step
+		goto 30,44.5
+		.talk Magistrate Solomon##344
+		..turnin Wanted: Gath'Ilzogg##169
+		..turnin Wanted: Lieutenant Fangore##180
+	step
+		goto 29.7,44.3
+		.talk Bailiff Conacher##900
+		..turnin Solomon's Law##91
+	step
+		goto 33.5,49
+		.talk Marshal Marris##382
+		..turnin Tharil'zun##19
+		..turnin Shadow Magic##115
+	step
+		'Fly to Darkshire|goto Duskwood,77.6,44.4,0.1|noway|c
 ]])

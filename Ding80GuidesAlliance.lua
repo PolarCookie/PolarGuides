@@ -1556,7 +1556,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 	step
 		'Go east to Redridge Mountains|goto Redridge Mountains|noway|c
 	step
-		goto Redridge Mountains,15.3,71.5
+		goto 15.3,71.5
 		.talk Guard Parker##464
 		..accept Encroaching Gnolls##244
 	step
