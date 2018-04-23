@@ -7,6 +7,7 @@ Discord: https://discord.gg/tJJMwEX
 3. Add the .lua files to the ZygorGuidesViewer/Guides folder, edit ZygorGuidesViewer/Guides/Autoload.xml by adding the lines
 ```
 <Script file="Ding80GuidesAlliance.lua"/>
+<Script file="BloodmystIsleTBC.lua"/>
 <Script file="Ding80GuidesAllianceTBCsolo.lua"/>
 <Script file="Ding80GuidesAllianceTBCduo.lua"/>
 ```

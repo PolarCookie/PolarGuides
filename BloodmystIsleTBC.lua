@@ -1347,13 +1347,22 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.talk Master Mathias Shaw##332
 		..turnin The Defias Brotherhood (3)##135
 	step
-		'Fly to Ironforge|goto Ironforge|noway|c
+		goto 67,33.85,5|sticky
+		'Enter the Deeprun Tram|goto Deeprun Tram|noway|c
 	step
-		goto 50.8,5.6
-		.talk Gerrig Bonegrip##2786
-		..turnin The Powers Below##968
+		'Ride the tram to Ironforge|goto Ironforge|noway|c
 	step
-		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
+		goto 55.5,47.7
+		.talk Gryth Thurden##1573
+		..fpath Ironforge
+	step
+		'Go southwest to Dun Morogh|goto Dun Morogh|noway|c
+	step
+		'Go east to Loch Modan|goto Loch Modan|noway|c
+	step
+		goto Loch Modan,33.9,51
+		.talk Thorgrum Borrelson##1572
+		..fpath Thelsamar
 	step
 		goto Loch Modan,34.8,47.1
 		.talk Mountaineer Kadrell##1340
@@ -1405,11 +1414,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 	step
 		home Menethil Harbor
 	step
-		goto 10.8,60.4|tip 2nd Floor. In the middle room as you go up the stairs.
-		.talk Archaeologist Flagongut##2911
-		..turnin The Absent Minded Prospector##942
-		..accept The Absent Minded Prospector##943
-	step
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
 		..turnin The Third Fleet##288
@@ -1455,10 +1459,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..turnin In Search of The Excavation Team (1)##305
 		..accept In Search of The Excavation Team (2)##306
 	step
-		goto 38.9,52.2
-		.'Click the Fossil inside the cave
-		..get Flagongut's Fossil|q 943/2
-	step
 		goto 53.27,36
 		.from Young Wetlands Crocolisk##1417+
 		.get 4 Young Crocolisk Skin|q 484/1
@@ -1488,9 +1488,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		goto 29.1,44.8
 		.kill 10 Mottled Raptor|q 294/1
 		.kill 10 Mottled Screecher|q 294/2
-		.get Stone of Relu|q 943/1
 	step
-		goto Wetlands,38.1,51.1
+		goto 38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..turnin Ormer's Revenge (1)##294
 		..accept Ormer's Revenge (2)##295
@@ -1508,11 +1507,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 	step
 		'Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c
 	step
-		goto 10.8,60.4|tip 2nd Floor. In the middle room as you go up the stairs.
-		.talk Archaeologist Flagongut##2911
-		..turnin The Absent Minded Prospector##943
-	step
-		goto Wetlands,8.3,58.6
+		goto 8.3,58.6
 		.talk Karl Boran##1242
 		..turnin Claws from the Deep##279
 		..accept Reclaiming Goods##281
