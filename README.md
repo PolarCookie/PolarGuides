@@ -25,7 +25,7 @@ Not tested, but Ding80GuidesAllianceTBCduo will probably work pretty well as sol
 (If anyone want to try backporting Zygor to Vanilla and any Vanilla server admins wanna give me a gm account on a ptr; get in touch).
 
 ## Ding80GuidesAlliance.lua
-Translated the Ding80 leveling guide to the Zygor syntax to work within the addon.  
+Translation of the Ding80 leveling guide to the Zygor syntax, to work within the addon.  
 At lvl 19 the original suggested you grind for a full level, before getting a mount at 20 and then traveling to Redridge, you pick up a quest along the way that requires lvl20, so theoretically you save time by not backtracking to it later.
 You can either take this option, or head to Darkshore as I've written into the guide, or use the TBCsolo version of this guide which goes to Redridge at lvl 14-15, completes the Deadmines questline and then do Deadmine and Stockades. Ideally this guide would be group independent, but Deadmines/Stockades with the chains before and after are really good.
 If you take the third option, stick with the TBCduo version until Stockades.
@@ -59,9 +59,9 @@ If you find a class quest missing, or could be structured better, make a pull re
 - [ ] Research moving burning steppes to a later time.
 
 ## Ding80GuidesAllianceTBCsolo.lua
-Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redridge instead of 20, as no mount yet.
+Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redridge instead of 20, as you won't have a mount yet.
 Deadmines and stockades are included, it's either that or grind for a full level, otherwise you get into trouble in Duskwood.
-Also changes travel paths to Auberdine.
+Also changes travel paths to and from Auberdine.
 
 ### Guide todo
 - [ ] Adjust Stormwind City and Eastern Plaguelands coordinates to TBC values.
