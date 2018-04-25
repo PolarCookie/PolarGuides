@@ -38,10 +38,13 @@ Felwood round 1 swapped with Azshara to save travel time.
 Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
 Removed Withered Basidium, to much grind.  
 
-### Class quest included
+### Class quest
+Some class quests are included in the guide, including but not limited to
 - [x] Warlocks learn voidwalker, succubus and felhunter along the way.  
 - [x] Warriors get Berserker Stance and Whirlwind weapon.  
-- [x] Warrior, Mage, Priest Sunken Temple included.
+- [x] Warrior, Mage, Priest Sunken Temple included.  
+- [x] Draenei Paladin resurection.  
+If you find a quest missing, or could be structured better, make a pull request or issue ticket about it; I haven't tested class quests for everyone that thoroughly.
 
 ### Guide todo
 - [ ] Do a timed run comparison of grinding lvl 19 in westfall or heading to auberdine as is written.  
