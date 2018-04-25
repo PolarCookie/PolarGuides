@@ -6,7 +6,7 @@ if UnitFactionGroup("player")~="Alliance" then return end
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Human (1-5)",[[
 	author PolarCookie
 	defaultfor Human
-	next Ding80's Alliance Leveling Guides TBC solo\\Main Guide (5-10)
+	next Ding80's Alliance Leveling Guides\\Main Guide (5-10)
 	startlevel 1
 
 	step
@@ -1234,10 +1234,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Night Elf (1
 		'Ride the boat to Stormwind Harbor|goto Stormwind City|noway|c
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Draenei (1-12)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Draenei (1-12)",[[
 	author PolarCookie
 	defaultfor Draenei
-	next Ding80's Alliance Leveling Guides TBC solo\\Main Guide (10-12)
+	next Ding80's Alliance Leveling Guides\\Main Guide (10-12)
 
 	startlevel 1
 	step
@@ -1979,9 +1979,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		'Ride the boat to Stormwind Harbor|goto Stormwind City|noway|c
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Main Guide (10-12)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (10-12)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides TBC solo\\Main Guide (13-19)
+	next Ding80's Alliance Leveling Guides\\Main Guide (13-19)
 	startlevel 10
 
 	step
