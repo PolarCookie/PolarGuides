@@ -38,19 +38,12 @@ Felwood round 1 swapped with Azshara to save travel time.
 Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
 Removed Withered Basidium, to much grind.  
 
-### Progress
-- [x] Dun Morogh 1-12 done.  
-- [x] Alliance 13-68 done.  
-
 ### Class quest included
 - [x] Warlocks learn voidwalker, succubus and felhunter along the way.  
 - [x] Warriors get Berserker Stance and Whirlwind weapon.  
 - [x] Warrior, Mage, Priest Sunken Temple included.
 
 ### Guide todo
-- [ ] Human starting zone (high priority).  
-- [ ] Draenei starting zone.  
-- [ ] Night Elf starting zone.  
 - [ ] Do a timed run comparison of grinding lvl 19 in westfall or heading to auberdine as is written.  
 - [ ] If auberdine stays, add WANTED: Murkdeep! once this works in stock TC.  
 - [ ] If Auberdine stays, can Kerlonian Evershade help with The Absent Minded Prospector? No, not scripted right, supposed to be a defensive pet http://www.wowhead.com/quest=5321/the-sleeper-has-awakened#comments:id=228579  
