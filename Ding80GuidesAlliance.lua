@@ -2034,6 +2034,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		goto 43.8,65.8
 		.talk Innkeeper Farley##295
 		..home Goldshire
+		..turnin Rest and Relaxation##2158|only Human
 	step
 		goto 43.3,65.7
 		.talk William Pestle##253
@@ -2046,6 +2047,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		goto 42.1,65.9
 		.talk Marshal Dughan##240
+		..turnin Report to Goldshire##54|only Human
 		..turnin A Fishy Peril##40
 		..accept Further Concerns##35
 		..accept The Fargodeep Mine##62
