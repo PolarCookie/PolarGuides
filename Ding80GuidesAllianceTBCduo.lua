@@ -9,38 +9,38 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Huma
 	next Ding80's Alliance Leveling Guides TBC duo\\Main Guide (5-10)
 	startlevel 1
 
-	step //1
+	step
 		goto Elwynn Forest,48.1,43.6
 		.talk Deputy Willem##823
 		..accept A Threat Within##783
-	step //2
+	step
 		goto 48.9,41.6
 		.talk Marshal McBride##197
 		..turnin A Threat Within##783
 		..accept Kobold Camp Cleanup##7
-	step //3
+	step
 		goto 48.1,43.6
 		.talk Deputy Willem##823
 		..accept Eagan Peltskinner##5261
-	step //4
+	step
 		goto 48.9,40.2
 		.talk Eagan Peltskinner##196
 		..turnin Eagan Peltskinner##5261
 		..accept Wolves Across the Border##33
-	step //5
+	step
 		goto 47.4,39.7
 		.from Young Wolf
 		.get 8 Tough Wolf Meat|q 33/1
-	step //6
+	step
 		ding 2
-	step //7
+	step
 		goto 47.9,37.1
 		.kill 10 Kobold Vermin|q 7/1
-	step //8
+	step
 		goto 48.9,40.2
 		.talk Eagan Peltskinner##196
 		..turnin Wolves Across the Border##33
-	step //9
+	step
 		goto 48.9,41.6
 		.talk Marshal McBride##197
 		..turnin Kobold Camp Cleanup##7
@@ -51,99 +51,99 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Huma
 		..accept Encrypted Letter##3102|only Human Rogue
 		..accept Hallowed Letter##3103|only Human Priest
 		..accept Consecrated Letter##3101|only Human Paladin
-	step //15
+	step
 		goto 49.7,39.4
 		.talk Khelden Bremen##198
 		..turnin Glyphic Letter##3104
 		only Human Mage
-	step //16
+	step
 		goto 50.2,42.3
 		.talk Llane Beshere##911
 		..turnin Simple Letter##3100
 		only Human Warrior
-	step //17
+	step
 		goto 49.8,39.5
 		.talk Priestess Anetta##375
 		..turnin Hallowed Letter##3103
 		only Human Priest
-	step //18
+	step
 		goto 50.4,42.1
 		.talk Brother Sammuel##925
 		..turnin Consecrated Letter##3101
 		only Human Paladin
-	step //19
+	step
 		goto 48.1,43.6
 		.talk Deputy Willem##823
 		..accept Brotherhood of Thieves##18
 		..accept Milly Osworth##3903
-	step //20
+	step
 		goto 49.9,42.6
 		.talk Drusilla La Salle##459
 		..turnin Tainted Letter##3105
 		only Human Warlock
-	step //21
+	step
 		goto 50.3,39.9
 		.talk Jorik Kerridan##915
 		..turnin Encrypted Letter##3102
 		only Human Rogue
-	step //28
+	step
 		goto 50.7,39.3
 		.talk Milly Osworth##9296
 		..turnin Milly Osworth##3903
 		..accept Milly's Harvest##3904
-	step //22
+	step
 		ding 3
-	step //23
+	step
 		goto 51.3,37.0
 		.kill 10 Kobold Workers|q 15/1
-	step //27
+	step
 		goto 48.9,41.6
 		.talk Marshal McBride##197
 		..turnin Investigate Echo Ridge##15
 		..accept Skirmish at Echo Ridge##21
-	step //35
+	step
 		goto 47.7,32
 		.kill 12 Kobold Laborer##80|q 21/1
-	step //26
+	step
 		ding 4
-	step //29
+	step
 		goto 53.6,47.3
 		.' Click Milly's Harvest barrels around the vineyard|tip Milly's Harvest look like barrels of grapes.
 		.get 8 Milly's Harvest|q 3904/1
 		.from Defias Thug##38+
 		.get 12 Red Burlap Bandana|q 18/1
-	step //31
+	step
 		goto 50.7,39.3
 		.talk Milly Osworth##9296
 		..turnin Milly's Harvest##3904
 		..accept Grape Manifest##3905
-	step //37
+	step
 		goto 48.9,41.6
 		.talk Marshal McBride##197
 		..turnin Skirmish at Echo Ridge##21
 		..accept Report to Goldshire##54
-	step //34
+	step
 		goto 49.5,41.6
 		.talk Brother Neals##952
 		..turnin Grape Manifest##3905
-	step //25
+	step
 		goto 48.1,43.6
 		.talk Deputy Willem##823
 		..turnin Brotherhood of Thieves##18
 		..accept Bounty on Garrick Padfoot##6
-	step //38
+	step
 		ding 5
-	step //30
+	step
 		goto 57.5,48.3
 		.from Garrick Padfoot##103
 		.get Garrick's Head|q 6/1
-	step //36
+	step
 		'Hearth to Northshire Valley|goto Elwynn Forest,48.1,43.7,1|use Hearthstone##6948|noway|c
-	step //32
+	step
 		goto 48.1,43.6
 		.talk Deputy Willem##823
 		..turnin Bounty on Garrick Padfoot##6
-	step //39
+	step
 		goto 45.6,47.7
 		.talk Falkhaan Isenstrider##6774
 		..accept Rest and Relaxation##2158

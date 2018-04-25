@@ -13,46 +13,46 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		only !Draenei
 	step
 		ding 11
-	step //52
+	step
 		goto 47,70.2
 		.talk Admiral Odesyus##17240
 		..accept A Small Start##9506
 		only !Draenei
-	step //58
+	step
 		goto 58.6,66.4
 		.' Click the Nautical Map sitting on a box under a green canopy
 		.get Nautical Map##23739|q 9506/2
 		only !Draenei
-	step //59
+	step
 		goto 59.6,67.6
 		.' Click the Nautical Compass under the blue canopy with a green stripe on it
 		.get Nautical Compass##23738|q 9506/1
 		only !Draenei
-	step //60
+	step
 		goto 47,70.2
 		.talk Admiral Odesyus##17240
 		..turnin A Small Start##9506
 		..accept I've Got a Plant##9530
 		only !Draenei
-	step //62
+	step
 		goto 45.9,65.7
 		.' Click a Hollowed Out Tree|tip They look like tall, skinny tree stumps around this area.
 		.get Hollowed Out Tree|q 9530/1
 		.' Click the small piles of purple leaves
 		.get 5 Pile of Leaves|q 9530/2
 		only !Draenei
-	step //63
+	step
 		goto 47,70.2
 		.talk Admiral Odesyus##17240
 		..turnin I've Got a Plant##9530
 		..accept Tree's Company##9531
 		only !Draenei
-	step //74
+	step
 		goto 49,51.1
 		.talk Dulvi##17488
 		..accept The Missing Fisherman##10428
 		only !Draenei
-	step //84
+	step
 		goto 49.40,51.0
 		.talk Cryptographer Aurren##17232
 		..accept Learning the Language##9538
@@ -61,13 +61,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..turnin Learning the Language##9538
 		..accept Totem of Coo##9539
 		only !Draenei
-	step //85
+	step
 		'Follow the ghost furbolg as he runs up the hill northeast to 55.2,41.6|goto 55.2,41.6
 		.' Click the Totem of Coo
 		..turnin Totem of Coo##9539
 		..accept Totem of Tikti##9540
 		only !Draenei
-	step //86
+	step
 		'Follow the ghost furbolg to the edge of the cliff
 		.' He will give you wings
 		.' Jump off the cliff and glide to the ground to 64.5,39.8|goto 64.5,39.8|n
@@ -75,7 +75,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..turnin Totem of Tikti##9540
 		..accept Totem of Yor##9541
 		only !Draenei
-	step //87
+	step
 		'Follow the ghost furbolg to the river
 		.' He will give you a swim speed buff
 		.' Swim south to 63,67.9|goto 63,67.9|n
@@ -83,7 +83,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..turnin Totem of Yor##9541
 		..accept Totem of Vark##9542
 		only !Draenei
-	step //88
+	step
 		'Follow the ghost furbolg out of the water
 		.' He will turn you into a ghost panther
 		.' Follow him as he runs northwest to 28.1,62.4|goto 28.1,62.4|n
@@ -91,7 +91,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..turnin Totem of Vark##9542
 		..accept The Prophecy of Akida##9544
 		only !Draenei
-	step //89
+	step
 		goto 28.5,66.4
 		.from Bristlelimb Ursa##17185+, Bristlelimb Windcaller##17184+, Bristlelimb Furbolg##17183+
 		.collect 8 Bristlelimb Key##23801|n
@@ -106,58 +106,58 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 	step
 		goal Magwin Escorted to Safety|q 9528/1
 		only !Draenei
-	step //93
+	step
 		goto 16.6,94.5
 		.talk Cowlen##17311
 		..turnin A Cry For Help##9528
 		..turnin The Missing Fisherman##10428
 		..accept All That Remains##9527
 		only !Draenei
-	step //94
+	step
 		goto 14.8,92
 		.from Raving Owlbeast##17188+, Aberrant Owlbeast##17187+, Deranged Owlbeast##17186+
 		..get Remains of Cowlen's Family|q 9527/1
 		only !Draenei
-	step //95
+	step
 		goto 16.6,94.5
 		.talk Cowlen##17311
 		..turnin All That Remains##9527
 		only !Draenei
-	step //65
+	step
 		goto 18.5,84.3
 		.' Use your Tree Disguise Kit next to the Naga Flag on the beach|use Tree Disguise Kit##23792
 		.' Watch the conversation
 		.' Uncover the Traitor|goal The Traitor Uncovered|q 9531/1
 		only !Draenei
-	step //78
+	step
 		goto 47,70.2
 		.talk Admiral Odesyus##17240
 		..turnin Tree's Company##9531
 		..accept Show Gnomercy##9537
 		only !Draenei
-	step //80
+	step
 		goto 48.2,72.5
 		.from Engineer "Spark" Overgrind##17243
 		..get Traitor's Communication|q 9537/1
 		only !Draenei
-	step //81
+	step
 		goto 47,70.2
 		.talk Admiral Odesyus##17240
 		..turnin Show Gnomercy##9537
 		..accept Deliver Them From Evil...##9602
 		only !Draenei
-	step //97
+	step
 		goto 49.41,51.0
 		.talk Arugoo the Stillpine##17114
 		..turnin The Prophecy of Akida##9544
 		..accept Stillpine Hold##9559
 		only !Draenei
-	step //82
+	step
 		goto 47.1,50.6
 		.talk Exarch Menelaous##17116
 		..turnin Deliver Them From Evil...##9602
 		only !Draenei
-	step //132
+	step
 		goto 46.7,20.6
 		.talk High Chief Stillpine##17440
 		..turnin Stillpine Hold##9559
@@ -167,7 +167,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.talk Moordo##17442
 		..accept Beasts of the Apocalypse!##9560
 		only !Draenei
-	step //133
+	step
 		goto 44.7,23.6
 		.talk Gurf##17441
 		..accept Murlocs... Why Here? Why Now?##9562
@@ -180,7 +180,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 	step
 		ding 12
 		only !Draenei
-	step //134
+	step
 		goto 33.8,25.7
 		.from Siltfin Hunter##17192+, Siltfin Murloc##17190+, Siltfin Oracle##17191+
 		.' Click the Stillpine Grain bags near the murloc huts
@@ -190,7 +190,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.' Click Gurf's Dignity|use Gurf's Dignity##23850
 		..accept Gurf's Dignity##9564
 		only !Draenei
-	step //135
+	step
 		goto 44.7,23.6
 		.talk Gurf##17441
 		..turnin Murlocs... Why Here? Why Now?##9562
@@ -201,58 +201,58 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.talk Moordo##17442
 		..turnin Beasts of the Apocalypse!##9560
 		only !Draenei
-	step //136
+	step
 		goto 46.7,20.6
 		.talk High Chief Stillpine##17440
 		..accept Search Stillpine Hold##9565
 		only !Draenei
-	step //137
+	step
 		goto 46.9,21.2
 		.talk Stillpine the Younger##17445
 		..accept Chieftain Oomooroo##9573
 		only !Draenei
-	step //140
+	step
 		'Go upstairs to the right at the first intersection in the cave|goto 47.4,14.1
 		.kill Chieftain Oomooroo##17448|q 9573/1
 		only !Draenei
-	step //139
+	step
 		goto 47.4,16.0
 		.kill 9 Crazed Wildkin|q 9573/2
 		only !Draenei
-	step //142
+	step
 		goto 46.9,21.2
 		.talk Stillpine the Younger##17445
 		..turnin Chieftain Oomooroo##9573
 		only !Draenei
-	step //143
+	step
 		goto 47,22.3
 		.talk Kurz the Revelator##17443
 		..accept The Kurken is Lurkin'##9570
 		only !Draenei
-	step //144
+	step
 		'Go inside the big cave to 49.9,13.0|goto 49.9,13.0
 		.from The Kurken##17447
 		..get The Kurken's Hide|q 9570/1
 		only !Draenei
-	step //138
+	step
 		goto 50.5,11.5
 		.' Click the Blood Crystal|tip It's a huge red crystal on a little dirt island in the water.
 		..turnin Search Stillpine Hold##9565
 		..accept Blood Crystals##9566
 		only !Draenei
-	step //145
+	step
 		'Go outside the cave to 47.0,22.3|goto 47.0,22.3
 		.talk Kurz the Revelator##17443
 		..turnin The Kurken is Lurkin'##9570
 		..accept The Kurken's Hide##9571
 		only !Draenei
-	step //141
+	step
 		'Go outside the cave to 46.7,20.6|goto 46.7,20.6
 		.talk High Chief Stillpine##17440
 		..turnin Blood Crystals##9566
 		..accept Warn Your People##9622
 		only !Draenei
-	step //146
+	step
 		goto 44.8,23.9
 		.talk Moordo##17442
 		..turnin The Kurken's Hide##9571
@@ -324,7 +324,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.kill Lord Xiz##17701|q 9666/1
 		'Use the Draenei Banner on Lord Xiz' corpse|use Draenei Banner##24084
 		.goal Declaration of Power|q 9666/1
-	step //96
+	step
 		home Blood Watch|goto 55.8,59.8
 	step
 		goto 53.2,57.7
