@@ -1234,7 +1234,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Night Elf (1
 		'Ride the boat to Stormwind Harbor|goto Stormwind City|noway|c
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Draenei (1-13)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Draenei (1-12)",[[
 	author PolarCookie
 	defaultfor Draenei
 	next Ding80's Alliance Leveling Guides TBC solo\\Main Guide (10-12)
@@ -1309,7 +1309,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		only Draenei Hunter
 	step
 		goto 74.9,50.4
-		.' Use your racial ability, Gift of the Naaru, on a Draenei Survivor
+		.' Use your racial ability, Gift of the Naaru, on a Draenei Survivor|cast Gift of the Naaru
 		..' Save a Draenei Survivor|goal Draenei Survivors Saved|q 9283/1
 		.from Mutated Root Lasher##16517+
 		..get 10 Lasher Sample|q 9293/1
@@ -1328,8 +1328,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		goto 80.1,48.8
 		.talk Zalduun##16502
 		..turnin Rescue the Survivors!##9283
-	step
-		ding 4
 	step
 		goto 79.3,49.1
 		.talk Firmanvaar##17089
@@ -1378,6 +1376,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		.' Click the Emitter Spare Parts|tip They look like purple crystal guns sitting on the ground.
 		..get 4 Emitter Spare Part|q 9305/1
 	step
+		ding 4
+	step
 		'Hearth to Ammen Vale|goto Azuremyst Isle,84.3,43.0,0.5|use Hearthstone##6948|noway|c
 	step
 		goto 79.1,46.5
@@ -1410,6 +1410,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		.' Click the Blood Elf Plans|use Blood Elf Plans##24414
 		..accept Blood Elf Plans##9798
 	step
+		ding 5
+	step
 		goto 79.5,51.4
 		.talk Vindicator Aldar##16535
 		..turnin Blood Elf Spy##9311
@@ -1418,8 +1420,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		.talk Technician Zhanaa##17071
 		..turnin The Emitter##9312
 		..accept Travel to Azure Watch##9313
-	step
-		ding 5
 	step
 		'Go west through the mountains|goto Azuremyst Isle,67.6,53.7,0.5
 	step
@@ -1459,13 +1459,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 	step
 		home Azure Watch
 	step
+		ding 6
+	step
 		goto 50.3,56.6
 		.from Moongraze Stag##17200+
 		..get 6 Moongraze Stag Tenderloin|q 9454/1
 		.from Root Trapper##17196+
 		..get 8 Root Trapper Vine|q 9463/1
-	step
-		ding 7
 	step
 		goto 48.4,51.8
 		.talk Anchorite Fateema##17214
@@ -1486,7 +1486,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		.' Click the Faintly Glowing Crystal|use Faintly Glowing Crystal##23678
 		..accept Strange Findings##9455
 	step
-		goto 50.4,37.1
+		goto 44.8,38.5
 		.' Click the Azure Snapdragons|tip They are tall flowers with big bulbs that puff smoke at the base of trees.
 		.get 5 Azure Snapdragon Bulb|q 9473/1
 	step
@@ -1504,14 +1504,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		..turnin Strange Findings##9455
 		..accept Nightstalker Clean Up, Isle 2...##9456
 	step
+		ding 7
+	step
 		goto 45.7,43.9
 		.kill 8 Infected Nightstalker Runt|q 9456/1
 	step
 		goto 47.1,50.6
 		.talk Exarch Menelaous##17116
 		..turnin Nightstalker Clean Up, Isle 2...##9456
-	step
-		ding 8
 	step
 		goto 47,70.2
 		.talk Admiral Odesyus##17240
@@ -1551,6 +1551,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		.talk "Cookie" McWeaksauce##17246
 		..turnin Cookie's Jumbo Gumbo##9512
 	step
+		ding 8
+	step
 		goto 45.9,65.7
 		.' Click a Hollowed Out Tree|tip They look like tall, skinny tree stumps around this area.
 		.get Hollowed Out Tree|q 9530/1
@@ -1582,8 +1584,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		goto 47.2,70
 		.talk Archaeologist Adamant Ironheart##17242
 		..turnin Precious and Fragile Things Need Special Handling##9523
-	step
-		ding 9
 	step
 		goto 49,51.1
 		.talk Dulvi##17488
@@ -1631,12 +1631,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 	step
 		goto 27,76.7|n
 		.' The path down to 'Warlord Sriss'tiz' starts here
-		.' Go inside the cave|goto Azuremyst Isle,27.0,76.7,0.3|noway|c
+		.' Go inside the cave|goto Azuremyst Isle,27.0,76.7,1|noway|c
 	step
 		'Follow the path to the bottom of the cave to 25.2,74.2|goto 25.2,74.2
 		.kill Warlord Sriss'tiz|q 9515/1
 	step
-		'Leave the cave|goto Azuremyst Isle,27.0,76.7,0.3|noway|c
+		'Leave the cave|goto Azuremyst Isle,27.0,76.7,1|noway|c
+	step
+		ding 9
 	step
 		goto 13.6,73.2
 		.talk Magwin##17312
@@ -1827,8 +1829,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		.talk Stillpine the Younger##17445
 		..accept Chieftain Oomooroo##9573
 	step
-		ding 11
-	step
 		'Go upstairs to the right at the first intersection in the cave|goto 47.4,14.1
 		.kill Chieftain Oomooroo##17448|q 9573/1
 	step
@@ -1842,6 +1842,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		goto 47,22.3
 		.talk Kurz the Revelator##17443
 		..accept The Kurken is Lurkin'##9570
+	step
+		ding 11
 	step
 		'Go inside the big cave to 49.9,13.0|goto 49.9,13.0
 		.from The Kurken##17447
@@ -1923,13 +1925,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dra
 		only Draenei Shaman
 	step
 		'Go outside to Azuremyst Isle|goto Azuremyst Isle|noway|c
-		'If you want to level through Bloodmyst Isle, swap to the Bloodmyst Isle chapter now. You will end there by being teleported to a Deadmine group.
 		only Draenei Shaman
 	step
-		'If you want to level through Bloodmyst Isle, swap to the Bloodmyst Isle chapter now. You will end there by being teleported to a Deadmine group.
-		only Draenei !Shaman
+		'If you want to level through Bloodmyst Isle, swap to the Bloodmyst Isle chapter now.
 	step
+		'This is for your resurection spell, grind a bit
 		ding 12
+		only Draenei Paladin
 	step
 		goto Azuremyst Isle,48.4,49.6
 		.talk Tullas##17483

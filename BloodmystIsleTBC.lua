@@ -265,6 +265,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 	step
 		'Travel north to Bloodmyst Isle|goto Bloodmyst Isle
 	step
+		goto 63.4,88.8
+		.talk Aonar##17599
+		..accept A Favorite Treat##9624
+	step
+		goto 63,87.9
+		.talk Vorkhan the Elekk Herder##17586
+		..turnin Elekks of Serious Business##9625
+		..accept Alien Predators##9634
+	step
+		'This is for your resurection spell, grind a bit
+		ding 12
+		only Draenei Paladin
+	step
 		goto 63,87.5
 		.talk Kessel##17649
 		..accept The Kessel Run##9663
@@ -272,6 +285,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		goto Azuremyst Isle,46.7,20.6
 		.talk High Chief Stillpine##17440
 		..goal High Chief Stillpine Warned|q 9663/1
+	step
+		goto 48.4,49.6
+		.talk Tullas##17483
+		..accept Jol##10366
+		only Draenei Paladin
 	step
 		goto 47.1,50.6
 		.talk Exarch Menelaous##17116
@@ -294,19 +312,28 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		..accept Elekks of Serious Business##9625
 		only !Draenei
 	step
+		'Go west to the Exodar|goto The Exodar|noway|c
+		only Draenei Paladin
+	step
+		goto The Exodar,38,82
+		.talk Jol##17509
+		..turnin Jol##10366
+		..accept Redemption (1)##9598
+		.' Click the Tome of Divinity in your bags to read it|use Tome of Divinity##23926
+		..turnin Redemption (1)##9598
+		..accept Redemption (2)##9600
+		only Draenei Paladin
+	step
+		'Go outside to Azuremyst Isle|goto Azuremyst Isle|noway|c
+		only Draenei Paladin
+	step
+		'Go northeast to Bloodmyst Isle|goto Bloodmyst Isle|noway|c
+		only Draenei Paladin
+	step
 		goto Bloodmyst Isle,63,87.5
 		.talk Kessel##17649
 		..turnin The Kessel Run##9663
 		..accept Declaration of Power##9666
-	step
-		goto 63,87.9
-		.talk Vorkhan the Elekk Herder##17586
-		..turnin Elekks of Serious Business##9625
-		..accept Alien Predators##9634
-	step
-		goto 63.4,88.8
-		.talk Aonar##17599
-		..accept A Favorite Treat##9624
 	step
 		goto 68.3,81
 		.talk Princess Stillpine##17682
@@ -316,6 +343,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		'Kill Bristlelimb mobs in this area to make him appear
 		.from High Chief Bristlelimb##17702
 		..collect The High Chief's Key|c
+	step
+		goto Bloodmyst Isle,65.3,77.6
+		.' Use your Symbol of Life in your bags on the Young Furbolg Shaman|use Symbol of Life##6866|tip He's a white furbolg laying on the ground.
+		.' Resurrect the Young Furbolg Shaman|goal Young Furbolg Shaman Resurrected|q 9600/1
+		only Draenei Paladin
 	step
 		goto 68.3,81
 		'Click Princess Stillpines Cage|goal Princess Stillpine Saved|q 9667/1
@@ -521,6 +553,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blo
 		.talk Prophet Velen##17468
 		..turnin Audience with the Prophet##9698
 		..accept Truth or Fiction##9699
+	step
+		goto The Exodar,38,82
+		.talk Jol##17509
+		..turnin Redemption (2)##9600
+		only Draenei Paladin
 	step
 		goto 68.3,63.5
 		.talk Stephanos##17555
