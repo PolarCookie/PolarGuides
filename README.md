@@ -12,6 +12,7 @@ Discord: https://discord.gg/tJJMwEX
 <Script file="Ding80GuidesAllianceTBCduo.lua"/>
 ```
 You may want to remove all other script lines here to save load time.
+4. Turn off all dynamic progress, don't skip any step automatically. You can find this option in Interface->AddOns->ZygorGuidesViewer->Dynamic Progress, uncheck everything.
 
 ## Disclaimer
 Your milage with these guides may and will vary, they have been tested on a stock TC server I host myself. Depending on population, droprates, spawn positions and scripting you will have to improvise.
