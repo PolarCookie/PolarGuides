@@ -253,6 +253,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dun
 		goto 28.7,66.1
 		.talk Alamar Grimm##460
 		..turnin Tainted Memorandum##3115
+		..accept Beginnings##1599
 		only Gnome Warlock
 	step
 		goto 28.4,67.5
@@ -313,7 +314,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dun
 	step
 		'Follow the path on the left to 30.5,80.2|goto 30.5,80.2
 		.from Grik'nir the Cold##808
-		.get Grelin Whitebeard's Journal|q 218/1
+		..get Grelin Whitebeard's Journal|q 218/1
+		.from Frostmane Novice##6753+|only Gnome Warlock
+		..get 3 Feather Charm|q 1599/1|only Gnome Warlock
 	step
 		goto 25,76
 		.talk Grelin Whitebeard##786
@@ -323,6 +326,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Dun
 		goto 28.5,67.7
 		.talk Felix Whindlebolt##8416
 		..turnin A Refugee's Quandary##3361
+	step
+		goto 28.7,66.1
+		.talk Alamar Grimm##460
+		..turnin Beginnings##1599
+		only Gnome Warlock
 	step
 		goto 28.6,66.4
 		.talk Branstock Khalder##837
