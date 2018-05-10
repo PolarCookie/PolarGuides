@@ -2578,6 +2578,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c	
 	step
+		goto 42.1,65.9
+		.talk Marshal Dughan##240
+		..accept Cloth and Leather Armor##59
+	step
+		goto 79.5,68.8
+		.talk Sara Timberlain##278
+		..turnin Cloth and Leather Armor##59
+	step
 		'Go east to Redridge Mountains|goto Redridge Mountains|noway|c
 	step
 		goto Redridge Mountains,15.3,71.5
@@ -2640,6 +2648,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		'Fly to Lakeshire|goto Redridge Mountains|noway|c
 	step
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..turnin Return to Verner##119
+	step
 		goto 30,44.5
 		.talk Magistrate Solomon##344
 		..turnin Messenger to Stormwind (2)##121
@@ -2656,21 +2668,23 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
-		goto Stormwind City,78.3,70.7
+		goto 75.8,59.8
 		.talk Master Mathias Shaw##332
 		..turnin The Defias Brotherhood (3)##135
 		..accept The Defias Brotherhood (4)##141
 	step
-		goto 57.7,47.9
+		goto 49.2,30.3
 		.talk Baros Alexston##1646
 		..turnin Humble Beginnings##399
 	step
-		goto 59.7,33.8
+		goto 51.8,12.1
 		.talk Grimand Elmore##1416
 		..turnin Elmore's Task##1097
 		..accept Stormpike's Delivery##353
 	step
-		goto 67,33.85
+		goto 60.3,12.6|sticky
+		'Enter the Deeprun Tram|goto Deeprun Tram|noway|c
+	step
 		'Ride the tram to Ironforge|goto Ironforge|noway|c
 	step
 		goto 69.2,50.55
@@ -2962,16 +2976,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 	step
-		goto 70.3,40.8
+		goto 65.4,21.2
 		.talk Wilder Thistlenettle##656
 		..accept Collecting Memories##168
 		..accept Oh Brother...##167
 	step
-		goto 64.6,37.2
+		goto 58.1,16.5
 		.talk Furen Longbeard##5413
 		..turnin Stormpike's Order##1338
 	step
-		goto 62.6,34.1
+		goto 55.5,12.5
 		.talk Shoni the Shilent##6579
 		..turnin Speak with Shoni##2041
 		..accept Underground Assault##2040
@@ -3067,26 +3081,27 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
-		goto 70.3,40.8
+		goto 65.4,21.2
 		.talk Wilder Thistlenettle##656
 		..turnin Collecting Memories##168
 		..turnin Oh Brother...##167
 	step
-		goto 62.6,34.1
+		goto 55.5,12.5
 		.talk Shoni the Shilent##6579
 		..turnin Underground Assault##2040|tip Check the Engineering Supplies vendor in this area for a Bronze Tube, you'll need it later.
 	step
-		goto 57.7,47.9
+		goto 49.2,30.3
 		.talk Baros Alexston##1646
 		..turnin The Unsent Letter##373
 		..accept Bazil Thredd##389
 	step
-		goto 51.5,69.3
+		goto 41.2,58
 		.talk Warden Thelwater##1719
 		..turnin Bazil Thredd##389
 	step
-		goto 60,76.9
-		buy Cask of Merlot|q 116/2
+		goto 52.2,67.8
+		.talk Roberto Pupellyverbos##277
+		..buy Cask of Merlot|q 116/2
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (20-24)",[[
 	author PolarCookie
@@ -3113,7 +3128,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 31,47.3
 		.talk Verner Osgood##415
-		..turnin Return to Verner##119
 		..accept Underbelly Scales##122
 		..accept A Baying of Gnolls##124
 	step
@@ -3253,7 +3267,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Seasoned Wolf Kabobs##90
 	step
 		goto 73.7,44
-		buy Bottle of Moonshine|q 116/3
+		.talk Barkeep Hann##274
+		..buy Bottle of Moonshine|q 116/3
 	step
 		home Darkshire
 	step
@@ -3528,15 +3543,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.from Mosshide Trapper##1011+, Mosshide Brute##1012+, Mosshide Fenrunner##1010+, Mosshide Mistweaver##1009+|tip Mosshide Gnolls and Mosshide Mongrels will not drop the Crude Flint.
 		.get 9 Crude Flint|q 277/1
 	step
-		goto 29.1,44.8
-		.kill 10 Mottled Raptor|q 294/1
-		.kill 10 Mottled Screecher|q 294/2
-	step
-		goto Wetlands,38.1,51.1
-		.talk Ormer Ironbraid##1078
-		..turnin Ormer's Revenge (1)##294
-		..accept Ormer's Revenge (2)##295
-	step
 		goto 42.9,41.2
 		.from Dragonmaw Raider##1034+
 		.get 8 Dragonmaw War Banner|q 464/1
@@ -3575,8 +3581,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Stormwind|goto Stormwind City|noway|c
 	step
-		goto 69.3,71.3
-		buy 1 Stormwind Seasoning Herbs|q 90/2
+		goto 64.2,60.6
+		.talk Felicia Gump##1303
+		..buy 1 Stormwind Seasoning Herbs|q 90/2
 	step
 		'Fly to Lakeshire|goto Redridge Mountains,30.4,59.0,0.5|noway|c
 	step
@@ -3593,13 +3600,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Verner Osgood##415
 		..accept Howling in the Hills##126
 	step
-		goto 30,44.4
-		.talk Bailiff Conacher##900
-		..accept Solomon's Law##91
-	step
 		goto 29.6,46.2
 		.talk Wanted: Gath'Ilzogg
 		..accept Gath'Ilzogg##169
+	step
+		goto 30,44.4
+		.talk Bailiff Conacher##900
+		..accept Solomon's Law##91
 	step
 		goto 26.8,46.4
 		.talk Wanted: Lieutenant Fangore
@@ -3686,18 +3693,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Guard Berton##859
 		..accept What Comes Around...##386
 	step
-		goto 21.9,46.3
-		.talk Martie Jainrose##342
-		..accept An Unwelcome Guest##34
-	step
-		goto 15.9,49.5
-		.from Bellygrub##345
-		.get Bellygrub's Tusk|q 34/1
-	step
-		goto 21.9,46.3
-		.talk Martie Jainrose##342
-		..turnin An Unwelcome Guest##34
-	step
 		goto 30,44.5
 		.talk Magistrate Solomon##344
 		..turnin Wanted: Gath'Ilzogg##169
@@ -3767,12 +3762,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Go northwest to Stormwind|goto Stormwind City|noway|c
 	step
-		goto Stormwind City,42.5,72.4
+		goto 29.6,61.9
 		.talk Caretaker Folsom##297
 		..turnin The Legend of Stalvan (5)##70
 		..accept The Legend of Stalvan (6)##72
 	step
-		goto 42.5,72.41
+		goto 29.4,61.5
 		.' Click the Sealed Crate|tip It's a wooden crate on the side of the road.
 		..turnin The Legend of Stalvan (6)##72
 		..accept The Legend of Stalvan (7)##74
@@ -4012,6 +4007,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill Giant Wetlands Crocolisks|n
 		.get 6 Giant Crocolisk Skin|q 471/1
 	step
+		goto 29.1,44.8
+		.kill 10 Mottled Raptor|q 294/1
+		.kill 10 Mottled Screecher|q 294/2
+	step
+		goto Wetlands,38.1,51.1
+		.talk Ormer Ironbraid##1078
+		..turnin Ormer's Revenge (1)##294
+		..accept Ormer's Revenge (2)##295
+	step
 		goto 38.8,52.3
 		.talk Prospector Whelgar##1077
 		..accept Uncovering the Past##299
@@ -4130,7 +4134,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Nikova Raskol##1721
 		..accept The Color of Blood##388
 	step
-		goto 51.5,69.3
+		goto 41.2,58
 		.talk Warden Thelwater##1719
 		..accept The Stockade Riots##391
 		..accept Quell The Uprising##387
@@ -4150,7 +4154,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		from Bazil Thread##1716
 		.get Head of Bazil Thredd|q 391/1
 	step
-		goto Stormwind City,51.5,69.3
+		goto Stormwind City,41.2,58
 		.talk Warden Thelwater##1719
 		..turnin Quell The Uprising##387
 		..turnin The Stockade Riots##391
@@ -4164,12 +4168,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Tomas##4982
 		..accept The Missing Diplomat (1)##1274
 	step
-		goto 57.7,47.9
+		goto 49.2,30.3
 		.talk Baros Alexston##1646
 		..turnin The Curious Visitor##392
 		..accept Shadow of the Past##393
 	step
-		goto 59.7,33.8
+		goto 51.8,12.1
 		.talk Grimand Elmore##1416
 		..turnin Blessed Arm##322
 		..accept Armed and Ready##325
@@ -4178,7 +4182,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Nikova Raskol##1721
 		..turnin The Color of Blood##388
 	step
-		goto 78.3,70.7
+		goto 75.8,59.8
 		.talk Master Mathias Shaw##332
 		..turnin Shadow of the Past##393
 		..accept Look to an Old Friend##350
@@ -4235,12 +4239,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		ding 30
 	step
-		goto 78.3,70.7
+		goto 75.8,59.8
 		.talk Master Mathias Shaw##332
 		..turnin The Head of the Beast##394
 		..accept Brotherhood's End##395
 	step
-		goto 57.7,47.9
+		goto 49.2,30.3
 		.talk Baros Alexston##1646
 		..turnin Brotherhood's End##395
 		..accept An Audience with the King##396
