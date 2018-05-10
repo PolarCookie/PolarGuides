@@ -3825,7 +3825,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin The Legend of Stalvan (12)##97
 		..accept The Legend of Stalvan (13)##98
 	step
-		goto Duskwood,74.1,44.7
+		goto 74.1,44.7
 		.talk Tavernkeep Smitts##273
 		..turnin Inquire at the Inn##266
 		..accept Finding the Shadowy Figure##453
@@ -3925,10 +3925,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Stormwind|goto Stormwind City|noway|c
 	step
-		goto Stormwind City,49.9,46
+		goto 39.1,27.9
 		.talk Bishop Farthing##1212
 		..turnin Seeking Wisdom##269
 		..accept The Doomed Fleet##270
+	step
+		'Fly to Ironforge|goto Ironforge|noway|c
+		only Warlock
+	step
+		goto 47.6,9.3
+		.talk Lago Blackwrench##6120
+		..accept Gakin's Summons##1717
+		only Warlock
 	step
 		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
 	step
@@ -4130,7 +4138,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c|tip Start looking for a Stockades group
 	step
-		goto 76.6,60.5
+		goto 69.3,40.2
 		.talk Nikova Raskol##1721
 		..accept The Color of Blood##388
 	step
@@ -4160,11 +4168,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin The Stockade Riots##391
 		..accept The Curious Visitor##392
 	step
-		goto 50.3,45.5
+		goto 39.6,27.2
 		.talk Archbishop Benedictus##1284
 		..turnin Cleansing the Eye##293
 	step
-		goto 49.6,44.5
+		goto 38.7,25.9
 		.talk Tomas##4982
 		..accept The Missing Diplomat (1)##1274
 	step
@@ -4178,7 +4186,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Blessed Arm##322
 		..accept Armed and Ready##325
 	step
-		goto 76.6,60.5
+		goto 69.3,40.2
 		.talk Nikova Raskol##1721
 		..turnin The Color of Blood##388
 	step
@@ -4187,12 +4195,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Shadow of the Past##393
 		..accept Look to an Old Friend##350
 	step
-		goto 66,74.1
+		goto 59.9,64.2
 		.talk Elling Trias##482
 		..turnin Look to an Old Friend##350
 		..accept Infiltrating the Castle##2745
 	step
-		goto 73.2,35.7
+		goto 69.2,14.5
 		.talk Tyrion##7766
 		..turnin Infiltrating the Castle##2745
 		..accept Items of Some Consequence##2746
@@ -4201,17 +4209,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get An Old History Book|n
 		.' Click the Old History Book|use An Old History Book##2794
 		..accept An Old History Book##337
-		goto 77.1,30.2
+		goto 74.2,7.5
 		.talk Milton Sheaf##1440
 		..turnin An Old History Book##337
 		..accept Southshore##538
 	step
-		goto 80.3,44.1
+		goto 77.8,25.5
 		.talk Bishop DeLavey##4960
 		..turnin The Missing Diplomat (1)##1274
 		..accept The Missing Diplomat (2)##1241
 	step
-		goto 76.3,85.1
+		goto 73.2,78.4
 		.talk Jorgen##4959
 		..turnin The Missing Diplomat (2)##1241
 		..accept The Missing Diplomat (3)##1242
@@ -4221,7 +4229,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get 3 Silk Cloth|q 2746/1
 	step
 		'WARNING: EVENT!
-		goto Stormwind City,73.2,35.7
+		goto Stormwind City,69.2,14.5
 		.talk Tyrion##7766
 		..turnin Items of Some Consequence##2746
 		..accept The Attack!##434|noautoaccept
@@ -4230,7 +4238,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		kill Lord Gregor Lescovar|q 434/2
 		kill Marzon the Silent Blade|q 434/3
 	step
-		goto 66,74.1
+		goto 59.9,64.2
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (3)##1242
 		..accept The Missing Diplomat (4)##1243
@@ -4249,9 +4257,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Brotherhood's End##395
 		..accept An Audience with the King##396
 	step
-		goto 80,38.5
-		.talk King Varian Wrynn##29611
+		goto 78,17.8
+		.talk Lady Katrana Prestor##1749
 		..turnin An Audience with the King##396
+	step
+		goto 39.2,85.2
+		.talk Gakin the Darkbinder##6122
+		..turnin Gakin's Summons##1717
+		..accept Devourer of Souls##1716
+		..accept Seeking Strahad##1798
+		only Warlock
 	step
 		'Fly to Lakeshire|goto Redridge Mountains|noway|c
 	step
@@ -4382,19 +4397,20 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
-		goto 66,74.1
+		goto 59.9,64.2
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (6)##1245
 		..accept The Missing Diplomat (7)##1246
 	step
 		'WARNING: EVENT
-		goto 74.3,59.2
+		goto 70.5,44.9
 		.talk Dashel Stonefist
 		..turnin The Missing Diplomat (7)##1246
 		..accept The Missing Diplomat (8)##1447|noautoaccept
 	step
 		goal Defeat Dashel Stonefist|q 1447
 	step
+		goto 70.5,44.9
 		.talk Dashel Stonefist
 		..turnin The Missing Diplomat (8)##1447
 		..accept The Missing Diplomat (9)##1247
@@ -4403,12 +4419,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get An Old History Book|n
 		.' Click the Old History Book|use An Old History Book##2794
 		..accept An Old History Book##337
-		goto 77.1,30.2
+		goto 74.2,7.5
 		.talk Milton Sheaf##1440
 		..turnin An Old History Book##337
 		..accept Southshore##538
 	step
-		goto 66,74.1
+		goto 59.9,64.2
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (9)##1247
 		..accept The Missing Diplomat (10)##1248
@@ -4446,12 +4462,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept A King's Tribute (2)##689
 	step
 		home Ironforge
-	step
-		goto 47.6,9.3
-		.talk Lago Blackwrench##6120
-		..accept Seeking Strahad##1798
-		..accept Gakin's Summons##1717
-		only Warlock
 	step
 		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
 	step
@@ -4491,18 +4501,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto Hillsbrad Foothills,49.3,52.3
 		.talk Darla Harris##2432
 		..fpath Southshore
-	step
-		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
-		only Warlock
-	step
-		'Fly to Stormwind City|goto Stormwind City|noway|c
-		only Warlock
-	step
-		goto 39.2,85.2
-		.talk Gakin the Darkbinder##6122
-		..turnin Gakin's Summons##1717
-		..accept Devourer of Souls##1716
-		only Warlock
 	step
 		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
 	step
@@ -6288,7 +6286,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Count Remington Ridgewell##2285
 		..turnin The Perenolde Tiara##543
 	step
-		goto 77.1,30.2
+		goto 74.2,7.5
 		.talk Milton Sheaf##1440
 		'If you didn't get the Old History Book from Duskwood, skip this step.
 		..turnin Return to Milton##542
