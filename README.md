@@ -12,11 +12,11 @@ Discord: https://discord.gg/tJJMwEX
 <Script file="Ding80GuidesAllianceTBCsolo.lua"/>
 <Script file="Ding80GuidesAllianceTBCduo.lua"/>
 ```
-5. Turn off all dynamic progress, don't skip any step automatically. You can find this option in Interface->AddOns->ZygorGuidesViewer->Dynamic Progress, uncheck everything.
+5. Turn off all dynamic progress, don't skip any step automatically. You can find this option in Interface->AddOns->ZygorGuidesViewer->Dynamic Progress, uncheck everything. Feel free to skip as you wish, but do it manually is all. F.ex at lvl 30 you'll go to Forest Song in eastern Ashenvale, but if you're already lvl 32 you can safely skip that entire quest hub.
 
 ## Disclaimer
 Your milage with these guides may and will vary, they have been tested on a stock TC server I host myself. Depending on population, droprates, spawn positions and scripting you will have to improvise.
-Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up. While playing on Gummy's Felmyst I was consistently 0.5-1 level ahead of TrinityCore.
+Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up. While playing on Gummy's Felmyst, I was consistently 0.5-1 level ahead of TrinityCore.
 
 ## Want to help this project?
 It would help me a lot if you could take a screenshot every time you ding, with the current step and /played on display. Send me a zip of the images and I'll fix the rest.

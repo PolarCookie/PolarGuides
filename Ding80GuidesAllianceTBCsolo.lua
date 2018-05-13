@@ -6262,7 +6262,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Captain Garran Vimes##4944
 		..turnin Peace at Last##11152
 	step
-		'Travel your own way to Southshore, this is a good time to drop by your race's capitol city to train.|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
+		'Travel your own way to Southshore, this is a good time to drop by your race's capitol city to train.|goto Hillsbrad Foothills|noway|c
 	step
 		'If you didn't get the Old History Book from Duskwood, skip this step.
 		goto 50.6,57.1
@@ -6303,7 +6303,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 58.7,30.5
 		'Start here and kill 1 Argus Shadow Mage every camp moving northwest
 		.kill 4 Argust Shadow Mage|q 537/1
-		.get 7 Alterac Signet Ring|q 512/1
 	step
 		'APPROACH THE HOUSE CAREFULLY, LOTS OF STEALTHED ASSASSINS HERE
 		goto 39.2,14.3
@@ -6313,6 +6312,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.collect Ensorcelled Parchment|q 551
 		.'Click the Ensorcelled Parchment|use Ensorcelled Parchment##3706
 		..accept The Ensorcelled Parchment##551
+		.from Syndicate Assassin##2246+
+		..get 7 Alterac Signet Ring|q 512/1
 	step
 		'Hearth to Southshore|goto Hillsbrad Foothills,51.2,58.9,0.5|use Hearthstone##6948|noway|c
 	step
@@ -6368,19 +6369,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'If you didn't get the Old History Book from Duskwood, skip this step.
 		..turnin Return to Milton##542
 	step
-		goto 69.5,40.4
+		goto 64.3,20.7
 		.talk Brohann Caskbelly##5384
 		..accept In Search of The Temple##1448
 	step
-		goto 48.7,87.6
+		goto 37.5,81.7
 		.talk High Sorcerer Andromath##5694
 		..accept Vital Supplies##1477
 	step
-		goto 51.8,74.3
+		goto 41.5,64.4
 		.talk Mazen Mac'Nadir##338
 		..accept Mazen's Behest##1363
 	step
-		goto 51.4,73.8
+		goto 41,63.8
 		.talk Acolyte Dellis##5386
 		..turnin Mazen's Behest##1363
 		..accept Mazen's Behest##1364
@@ -6393,6 +6394,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.buy 1 Healing Potion|q 715/1
 		.buy 1 Lesser Invisibility Potion|q 715/2
 		.buy 1 Patterned Bronze Bracers|q 716/1
+		.buy 9 Blue Pearl|q 705/1
 	step
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
 	step
@@ -6440,6 +6442,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Indurium##1108
 		.talk Rigglefuzz##2817
 		..accept Barbecued Buzzard Wings##703
+		..accept Pearl Diving##705
+		..turnin Pearl Diving##705
 	step
 		goto 61.9,54.3
 		.talk Garek##2888
@@ -6722,17 +6726,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 32.8,76.2
 		.kill 10 Bloodsail Swashbuckler|q 604/1
-		.' Kill Bloodsail pirates along the beach around this area
-		.get Dizzy's Eye|q 576/1
-		.get 15 Snuff|q 587/1
-	step
-		goto 28.6,75.9
-		.talk Dizzy One-Eye##2493
-		..turnin Keep An Eye Out##576
-	step
-		'Go north to Booty Bay to 26.9,77.3|goto 26.9,77.3
-		.talk Deeg##2488
-		..turnin Up to Snuff##587
 	step
 		goto 27.2,77
 		.talk Fleet Master Seahorn##2487
@@ -6771,6 +6764,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'Make sure you have accepted the Cortello's Riddle quest:
 		.'Click Cortello's Riddle|use Cortello's Riddle##4056
 		..accept Cortello's Riddle (1)##624
+		' Kill Bloodsail pirates anywhere in this corner of the world
+		.get Dizzy's Eye|q 576/1
+		.get 15 Snuff|q 587/1
+	step
+		goto 28.6,75.9
+		.talk Dizzy One-Eye##2493
+		..turnin Keep An Eye Out##576
+	step
+		'Go north to Booty Bay to 26.9,77.3|goto 26.9,77.3
+		.talk Deeg##2488
+		..turnin Up to Snuff##587
 	step
 		goto 27.2,77
 		.talk Fleet Master Seahorn##2487
@@ -6990,7 +6994,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 	step
-		goto 69.5,40.4
+		goto 64.3,20.7
 		.talk Brohann Caskbelly##5384
 		..turnin In Search of The Temple##1448
 		..accept To The Hinterlands##1449
