@@ -16,7 +16,7 @@ Discord: https://discord.gg/tJJMwEX
 
 ## Disclaimer
 Your milage with these guides may and will vary, they have been tested on a stock TC server I host myself. Depending on population, droprates, spawn positions and scripting you will have to improvise.
-Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up.
+Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up. While playing on Gummy's Felmyst I was consistently 0.5-1 level ahead of TrinityCore.
 
 ## Want to help this project?
 It would help me a lot if you could take a screenshot every time you ding, with the current step and /played on display. Send me a zip of the images and I'll fix the rest.
