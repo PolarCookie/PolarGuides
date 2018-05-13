@@ -2077,7 +2077,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		..accept Marshall Haggard##1666
 		only Warrior
 	step
-		goto 39.2,85.3
+		goto 25.3,78.6
 		.talk Gakin the Darkbinder##6122
 		..turnin The Slaughtered Lamb##1715
 		..accept Surena Caledon##1688
@@ -2560,18 +2560,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		home Stormwind City
 	step
-		goto Stormwind City,39.2,85.3
+		goto 25.3,78.6
 		.talk Gakin the Darkbinder##6122
 		..turnin Surena Caledon##1688
 		..accept The Binding##1689
 		only Gnome Warlock
 	step
-		'Go downstairs into the catacombs to 39.1,84.3|goto 39.1,84.3
+		'Go downstairs into the catacombs to 25.1,77.4|goto 25.1,77.4
 		.' Use your Bloodstone Choker while standing on the pink Summoning Circle|use Bloodstone Choker##6928
 		.kill Summoned Voidwalker|q 1689/1
 		only Gnome Warlock
 	step
-		'Go upstairs to 39.2,85.3|goto 39.2,85.3
+		'Go upstairs to 25.3,78.6|goto 25.3,78.6
 		.talk Gakin the Darkbinder##6122
 		..turnin The Binding##1689
 		only Gnome Warlock
@@ -4261,7 +4261,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Lady Katrana Prestor##1749
 		..turnin An Audience with the King##396
 	step
-		goto 39.2,85.2
+		goto 25.3,78.6
 		.talk Gakin the Darkbinder##6122
 		..turnin Gakin's Summons##1717
 		..accept Devourer of Souls##1716
@@ -4841,6 +4841,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Bartolo Ginsetti##2438
 		..accept Bartolo's Yeti Fur Cloak##565
 	step
+		goto 48.9,55
+		.talk Micha Yance##2381
+		..buy Fine Thread|q 565/2
+		..buy Soothing Spices|q 555/2
+	step
 		goto 49.5,58.7
 		.talk Marshal Redpath##2263
 		..accept Crushridge Bounty##500
@@ -4951,7 +4956,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Cyclonian##1712
 		only Warrior
 	step
-		goto Hillsbrad Foothills,52.4,56
+		goto Hillsbrad Foothills,49.4,55.5
+		.talk Bartolo Ginsetti##2438
+		..turnin Bartolo's Yeti Fur Cloak##565
+	step
+		goto 52.4,56
 		.talk Darren Malvew##2382
 		..turnin Costly Menace##564
 	step
@@ -5001,39 +5010,41 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Stormwind|goto Stormwind City|noway|c
 	step
-		goto 75.8,36.7
+		goto 72.6,15.9
 		.talk Major Samuelson##2439
 		..turnin Reassignment##563
 	step
-		goto 76.9,47.8
+		goto 74,30.2
 		.talk Count Remington Ridgewell##2285
 		..accept The Perenolde Tiara##543
 	step
-		goto 39.2,85.2
+		goto 25.3,78.6
 		.talk Gakin the Darkbinder##6122
 		..turnin Heartswood##1738
 		..accept The Binding##1739
 		only Warlock
 	step
-		'Go downstairs into the catacombs to 39.1,84.3|goto 39.1,84.3
+		'Go downstairs into the catacombs to 25.1,77.4|goto 25.1,77.4
 		.' Use your Heartswood Core while standing on the pink Summoning Circle|use Heartswood Core##6913
 		.kill Summoned Succubus|q 1739/1
 		only Warlock
 	step
-		'Go upstairs to 39.6,84.6|goto 39.2,85.2
+		'Go upstairs to 25.3,78.6|goto 25.3,78.6
 		.talk Gakin the Darkbinder##6122
 		..turnin The Binding##1739
 		only Warlock
 	step
-		goto 50.4,87.5
+		goto 39.8,81.5
 		.talk Archmage Malin##2708
 		..accept Malin's Request##690
 	step
-		goto 51.1,95.5
-		.talk Connor Rivers##5081
-		..accept James Hyal##1301
+		goto 41.5,89.5
 		.talk Angus Stern##1141
 		..accept Morgan Stern##1260
+	step
+		goto 40.8,92.3
+		.talk Connor Rivers##5081
+		..accept James Hyal##1301
 	step
 		'Buy the following items from the Auction House 
 		.buy 4 Lesser Bloodstone Ore|q 627/1
@@ -5201,30 +5212,30 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 21.7,25
 		.kill Lesser Water Elementals|n
-		.get 6 Water Elemental Bracers|q 601/1
+		..get 6 Water Elemental Bracers|q 601/1
 	step
 		goto 37.1,24.4
 		.kill 10 Lashtail Raptor|q 195/1
 	step
 		goto 40,29
 		.kill Snapjaw Crocolisks|n
-		.get 5 Snapjaw Crocolisk Skin|q 577/1|tip Cross the river and kill some Shadowmaw Panthers too, search around the trees.
+		..get 5 Snapjaw Crocolisk Skin|q 577/1|tip Cross the river and kill some Shadowmaw Panthers too, search around the trees.
 	step
 		goto 42.7,18.3
 		.from Foreman Cozzle##4723
-		.collect Cozzle's Key##5851|q 1182
+		..collect Cozzle's Key##5851|q 1182
 	step
 		goto 43.3,20.3
 		.' Click Cozzle's Footlocker|tip It's a brown chest in the small house.
-		.get Fuel Regulator Blueprints|q 1182/1
+		..get Fuel Regulator Blueprints|q 1182/1
 	step
 		goto 44.4,21.6
 		.from Venture Co. Geologist##1096
-		.get 8 Tumbled Crystal|q 213/1
+		..get 8 Tumbled Crystal|q 213/1
 	step
 		goto 45.7,8.2
 		.kill 10 Kurzen Commando|q 574/1
-		.kill 6 Kurzen Headshrinker|q 574/2
+		.kill 6 Kurzen Headshrinker|q 574/2|tip If there's someone around to team up with, get them to join for the followup Colonel Kurzen and The Hidden Key. You'll get 13,230xp from quests alone.
 	step
 		goto 35.8,10.7
 		.talk Ajeck Rouack##717
@@ -5236,7 +5247,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 32.2,17.3
 		.from Sin'Dall##729
-		.get Paw of Sin'Dall|q 188/1
+		..get Paw of Sin'Dall|q 188/1
 	step
 		goto 35.8,10.7
 		.talk Ajeck Rouack##717
@@ -5266,6 +5277,46 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Drizzlik##2495
 		..turnin Some Assembly Required##577
 		..accept Excelsior##628
+	step
+		'If you have a friend to join for Colonel Kurzen; skip to the next step, otherwise skip to the next Hearth to Ironforge step.
+	step
+		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
+	step
+		goto 38.0,3.1
+		.talk Lieutenant Doren##469
+		..accept Colonel Kurzen##202
+	step
+		goto 43.7,9.4
+		.accept The Hidden Key##328
+	step
+		'Enter the cave at 45.7,8.2|goto 45.7,8.2|c
+	step
+		goto 49.6,7.6
+		.turnin The Hidden Key##328
+		.accept The Spy Revealed!##329
+	step
+		goto 49.9,4
+		.kill 6 Kurzen's Elite|q 202/1
+		.kill 4 Kurzen's Subchief|q 202/2
+		.from Colonel Kurzen##813
+		..get Kurzen's Head|q 202/3
+	step
+		'Leave the cave at 45.7,8.2|goto 45.7,8.2|c|tip Spawning at the Spirit Guide also works...
+	step
+		goto 38.0,3.1
+		.talk Lieutenant Doren##469
+		..turnin Colonel Kurzen##202
+		..turnin The Spy Revealed!##329
+		..accept Patrol Schedules##330
+	step
+		goto 37.7,3.4
+		.talk Corporal Sethman##1422
+		..turnin Patrol Schedules##330
+		..accept Report to Doren##331
+	step
+		goto 38.0,3.1
+		.talk Lieutenant Doren##469
+		..turnin Report to Doren##331
 	step
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step
@@ -5494,6 +5545,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Sunken Treasure (1)##665
 		..accept Sunken Treasure (2)##666
 	step
+		'Equip the Goggles of Gem Hunting|use Goggles of Gem Hunting##4491
 		'Get as many gems as possible, then head to next step while waiting on respawns|goto 21.92,87.94
 		.get 10 Elven Gem|q 666/1
 	step
@@ -5897,6 +5949,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Secondhand Diving Gear##11139
 		..accept Recover the Cargo!##11140
 	step
+		'Open Renn's Supplies|use Renn's Supplies##33045
+		.collect Repaired Diving Gear
+		.collect Salvage Kit
+	step
+		'Put on the Repaired Diving Gear|use Repaired Diving Gear##33040
+		'Use Salvage Kit on Shipwreck Debris|use Salvage Kit##33044
 		get 6 Salvaged Strongbox|q 11140/1
 	step
 		goto 63.7,17
@@ -5945,6 +6003,25 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 66.3,49
 		.talk Lady Jaina Proudmore##4968
 		..turnin Survey Alcaz Island##11142
+		..accept Warn Bolvar!##11222
+	step
+		'Have Jaina Teleport you to Stormwind|goto Stormwind City|noway|c|tip You may want to wait until 40 before doing this. You will gain 5,500xp in Stormwind.
+	step
+		goto 39.8,81.5
+		.talk Archmage Malin##2708
+		..turnin Malin's Request##697
+	step
+		goto 78.2,18.1
+		.talk Highlord Bolvar Fordragon##1748
+		..turnin Warn Bolvar!##11222
+		..accept Return to Jaina##11223
+	step
+		goto 39.8,81.5|n
+		'Have Archmage Malin teleport you back to Jaina|goto Dustwallow Marsh|noway|c
+	step
+		goto 66.3,49
+		.talk Lady Jaina Proudmore##4968
+		..turnin Return to Jaina##11223
 	step
 		ding 40
 	step
@@ -6185,7 +6262,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Captain Garran Vimes##4944
 		..turnin Peace at Last##11152
 	step
-		'Travel your own way to Southshore, this is a good time to drop by your race's capitol city to train skills and riding|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
+		'Travel your own way to Southshore, this is a good time to drop by your race's capitol city to train.|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
 	step
 		'If you didn't get the Old History Book from Duskwood, skip this step.
 		goto 50.6,57.1
@@ -6282,7 +6359,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
-		goto 76.9,47.8
+		goto 74,30.2
 		.talk Count Remington Ridgewell##2285
 		..turnin The Perenolde Tiara##543
 	step
@@ -6294,10 +6371,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 69.5,40.4
 		.talk Brohann Caskbelly##5384
 		..accept In Search of The Temple##1448
-	step
-		goto 50.4,87.5
-		.talk Archmage Malin##2708
-		..turnin Malin's Request##697
 	step
 		goto 48.7,87.6
 		.talk High Sorcerer Andromath##5694
