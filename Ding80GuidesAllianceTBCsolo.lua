@@ -7365,7 +7365,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Auberdine|goto Darkshore,36.4,45.6,0.3|noway|c|tip You're going to Rut'theran, fly directly if you can and skip some steps.
 	step
-		'Ride the boat to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
+		'Ride the boat to Rut'theran Village|goto Teldrassil|noway|c
 	step
 		goto 55.5,92
 		.talk Erelas Ambersky##7916
@@ -7420,6 +7420,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk "Sea Wolf" MacKinley##2501
 		..turnin Deliver to MacKinley##2874
 		..turnin Cracking Maury's Foot##613
+	step
+		goto 28.4,76.4
+		.talk Oglethorpe Obnoticus##7406
+		..turnin Rescue OOX-22/FE!##2767
 	step
 		ding 48
 	step
@@ -7513,7 +7517,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Find OOX-09/HL!##485
 		.talk OOX-09/HL##7806
 		..turnin Find OOX-09/HL!##485
-		..accept Rescue OOX-09/HL!##836
+		..accept Rescue OOX-09/HL!##836|noautoaccept
 	step
 		goal Escort OOX-09/HL to safety|q 836/1
 	step
@@ -7814,7 +7818,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Oglethorpe Obnoticus##7406
 		..turnin Rescue OOX-09/HL!##836
 		..turnin Rescue OOX-17/TN!##648
-		..turnin Rescue OOX-22/FE!##2767
 		..accept An OOX of Your Own##3721|instant
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (50-54)",[[
