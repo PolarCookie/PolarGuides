@@ -3740,7 +3740,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 15 Skeletal Fiend|q 57/1
 		.kill 15 Skeletal Horror|q 57/2
 		.from Skeletal Horror##202+, Skeletal Fiend##531+
-		.get 8 Rot Blossom|q 156/1
+		..get 8 Rot Blossom|q 156/1
 	step
 		ding 26
 	step
@@ -3758,7 +3758,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Go upstairs in the inn to 44.3,65.8|goto 44.3,65.8
 		.' Click the Storage Chest|tip It's a brown chest sitting on the floor in this room, upstairs inside the inn.
-		.get An Undelivered Letter|q 70/1
+		..get An Undelivered Letter|q 70/1
 	step
 		'Go northwest to Stormwind|goto Stormwind City|noway|c
 	step
@@ -3785,7 +3785,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 85.7,69.5
 		.' Click Marshal Haggard's Chest|tip It's a brown chest on the floor next to a bed, upstairs in this house.
-		.get A Faded Journal Page|q 75/1
+		..get A Faded Journal Page|q 75/1
 	step
 		goto 84.6,69.4
 		.talk Marshal Haggard##294
@@ -6829,14 +6829,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 50,24
 		.from Bhag'thera##728
-		.get Fang of Bhag'thera|q 193/1
+		..get Fang of Bhag'thera|q 193/1
 		.'Bhag'thera can also be found:
 		.'At 47.2,28.6|goto 47.2,28.6|n
 		.'At 48.8,20.1|goto 48.8,20.1|n
 	step
 		goto 42.5,36.7
 		.kill Skullsplitter trolls|n
-		.get 18 Skullsplitter Tusk|q 209/1
+		..get 18 Skullsplitter Tusk|q 209/1
 		.' You can find more of these trolls at 45.4,32
 		' Look for Mystics and Witch Doctors further in the camp
 		..get 4 Skullsplitter Fetish|q 205/1
@@ -6847,23 +6847,23 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 28.7,44.8
 		.from Tethis##730
-		.get Talon of Tethis|q 197/1
+		..get Talon of Tethis|q 197/1
 	step
 		goto 34.9,51.9
 		.from Jon-Jon the Crow##2536
-		.get Jon-Jon's Golden Spyglass|q 609/2
+		..get Jon-Jon's Golden Spyglass|q 609/2
 	step
 		goto 35.1,51.1
 		.from Maury "Club Foot" Wilkins##2535
-		.get Maury's Clubbed Foot|q 609/1
+		..get Maury's Clubbed Foot|q 609/1
 	step
 		goto 40,58.2
 		.from Chucky "Ten Thumbs"##2537
-		.get Chucky's Huge Ring|q 609/3
+		..get Chucky's Huge Ring|q 609/3
 	step
 		goto 39.2,57.1
 		.kill Zanzil mobs|n
-		.get 12 Zanzil's Mixture|q 621/1
+		..get 12 Zanzil's Mixture|q 621/1
 	step
 		goto 37,69.7
 		.from Gorlash##1492
@@ -6968,7 +6968,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 70.6,56.6
 		.goal Search for the Temple of Atal'Hakkar|q 1448/1
-		.get 5 Atal'ai Artifact|q 9610/1
+		.get 10 Atal'ai Artifact|q 9610/1
 	step
 		goto 25.9,32.4
 		.talk Holaaru##18221
@@ -7014,7 +7014,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Cortello's Riddle (2)##625
 		..accept Cortello's Riddle (3)##626
 	step
-		'Go southeast to Mudsprocket and fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
+		'Go southeast to Mudsprocket and fly to Gadgetzan|goto Tanaris|noway|c
 	step
 		goto Tanaris,52.5,28.5
 		.talk Chief Engineer Bilgewhizzle##7407
@@ -7066,7 +7066,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 64.7,35.3
 		.from Caliph Scorpidsting##7847
-		.get Caliph Scorpidsting's Head|q 2781/1
+		..get Caliph Scorpidsting's Head|q 2781/1
 		.kill 8 Wastewander Rogue|q 1691/1
 		.kill 6 Wastewander Assassin|q 1691/2
 		.kill 10 Wastewander Shadow Mage|q 1691/3
