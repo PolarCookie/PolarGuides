@@ -3925,6 +3925,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Stormwind|goto Stormwind City|noway|c
 	step
+		goto 26.4,78.7
+		.talk Zardeth of the Black Claw##1435
+		..accept A Noble Brew (1)##335
+		only Warlock
+	step
 		goto 39.1,27.9
 		.talk Bishop Farthing##1212
 		..turnin Seeking Wisdom##269
@@ -4066,6 +4071,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin Blisters on The Land##275
+	step
+		goto 64.8,75.3
+		'Pick up the Musquash Root.
+		.get Musquash Root|q 335/2
+		only Warlock
 	step
 		goto 49.8,18.3
 		.talk Longbraid the Grim##1071
@@ -4352,9 +4362,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin The Missing Diplomat (5)##1244
 		..accept The Missing Diplomat (6)##1245
 	step
-		goto Duskwood,77.4,36.1
+		goto 77.4,36.1
 		.from Stalvan Mistmantle##315
 		.get Mistmantle Family Ring|q 98/1
+	step
+		goto 78.4,35.9
+		'Pick up the Tear of Tilloa
+		.get Tear of Tilloa|q 335/1
+		only Warlock
 	step
 		goto 28.9,30.8
 		.' Click Eliza's Grave Dirt|tip It looks like a single dirt grave.
@@ -4397,6 +4412,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
+		goto 26.4,78.7
+		.talk Zardeth of the Black Claw##1435
+		..turnin A Noble Brew (1)##335
+		..accept A Noble Brew (2)##336
+		only Warlock
+	step
 		goto 59.9,64.2
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (6)##1245
@@ -4415,6 +4436,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin The Missing Diplomat (8)##1447
 		..accept The Missing Diplomat (9)##1247
 	step
+		goto 75.2,31.7
+		.talk Lord Baurles K. Wishock##1439
+		..turnin A Noble Brew (2)##336
+		only Warlock
+	step
 		'If you found the Old History Book from Duskwood accept this quest now, otherwise skip.
 		.get An Old History Book|n
 		.' Click the Old History Book|use An Old History Book##2794
@@ -4428,6 +4454,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Elling Trias##482
 		..turnin The Missing Diplomat (9)##1247
 		..accept The Missing Diplomat (10)##1248
+	step
+		goto 26.4,78.7
+		.talk Zardeth of the Black Claw##1435
+		..accept You Have Served Us Well##397
+		only Warlock
+	step
+		goto 26.5,78.7
+		.talk Zggi##1733
+		..turnin You Have Served Us Well##397
+		only Warlock
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (30-34)",[[
 	author PolarCookie
