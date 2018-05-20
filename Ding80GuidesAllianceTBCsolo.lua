@@ -8276,6 +8276,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Use your Empty Canteen near the green moonwell|use Empty Canteen##12922
 		.get Corrupt Moonwell Water|q 5157/1
 	step
+		goto 41.4,45
+		.talk Impsy##14470
+		..turnin The Wrong Stuff##8421
+	step
 		goto 43.1,21.3|n
 		.' The path up to 'Further Corruption' starts here|goto Felwood,43.1,21.3,0.5|noway|c
 	step
