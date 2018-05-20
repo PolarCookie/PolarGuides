@@ -4068,14 +4068,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.from Chieftain Nek'rosh##2091
 		.get Nek'rosh's Head|q 474/1
 	step
-		goto 56.3,40.5
-		.talk Rethiel the Greenwarden##1244
-		..turnin Blisters on The Land##275
-	step
 		goto 64.8,75.3
 		'Pick up the Musquash Root.
 		.get Musquash Root|q 335/2
 		only Warlock
+	step
+		goto 56.3,40.5
+		.talk Rethiel the Greenwarden##1244
+		..turnin Blisters on The Land##275
 	step
 		goto 49.8,18.3
 		.talk Longbraid the Grim##1071
@@ -7593,7 +7593,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 38.5,15.8
 		.' Click the Flame of Byltan|tip It's a purple flame in the dark gazeebo.
-		.collect 1 Byltan Essence##9258|q 2879/1
+		.collect 1 Byltan Essence##9258|q 2879
 	step
 		goto 40.3,11|n
 		.' The path up to the Flame of Samha starts here
@@ -7601,15 +7601,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 40.5,12.7
 		.' Click the Flame of Samha|tip On top of the white building.
-		.collect 1 Samha Essence##9257|q 2879/1
+		.collect 1 Samha Essence##9257|q 2879
 	step
 		goto 39.9,9.4
 		.' Click the Flame of Imbel|tip In the middle of 3 rocks.
-		.collect 1 Imbel Essence##9256|q 2879/1
+		.collect 1 Imbel Essence##9256|q 2879
 	step
 		goto 37.7,12.2
 		.' Click the Flame of Lahassa|tip It's a purple flame in a dark gazeebo.
-		.collect 1 Lahassa Essence##9255|q 2879/1
+		.collect 1 Lahassa Essence##9255|q 2879
 	step
 		goto 38.8,13.2
 		.' Use Troyas' Stave next to the Equinex Monolith|use Troyas' Stave##9263|tip On a white platform, looks like a Japanese building.
@@ -7626,8 +7626,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Wandering Shay##2845|noautoaccept
 		.' Click the small chest next to Shay Leafrunner
 		.collect 1 Shay's Bell##9189|q 2845/2
-		.' Take Shay Leafrunner to Rockbiter's camp at 42.4,22|goal Take Shay Leafrunner to Rockbiter's camp|q 2845/1
-		..'When she runs off, use Shay's Bell to call her back|use Shay's Bell##9189
+	step
+		' Take Shay Leafrunner to Rockbiter's camp at 42.4,22|goal Take Shay Leafrunner to Rockbiter's camp|q 2845/1
+		.'When she runs off, use Shay's Bell to call her back|use Shay's Bell##9189
 	step
 		goto 42.4,22
 		.talk Rockbiter##7765
@@ -7691,23 +7692,25 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Gahz'ridian##3161
 	step
 		goto 34.8,51
-		.kill Centipaar insects|n
-		.get 5 Centipaar Insect Parts|q 82/1
+		.kill Centipaar insects|n|tip Don't attack the swarmers, unless you have some reflect ability.
+		..get 5 Centipaar Insect Parts|q 82/1
 	step
 		goto 41.5,57.8
-		.kill Gor'marok the Ravager|q 5863/3|tip Standing inside the cave.
+		.kill Gor'marok the Ravager|q 5863/3|tip Standing inside the cave. Kill 5 enforcers and 5 brutes while you're here.
 	step
 		goto 38.5,72.6
+		.'Equip the Gahz'ridian Detector|use Gahz'ridian Detector##9978
 		.' Click Gahz'ridian Ornaments|tip They look like white bumps on the ground.
-		.get 30 Gahz'ridian Ornament|q 3161/1
+		..get 30 Gahz'ridian Ornament|q 3161/1
 		.kill 10 Dunemaul Brute|q 5863/1
 		.kill 10 Dunemaul Enforcer|q 5863/2
+		.' You can find more at 47.4,65.8
 	step
 		goto 28.5,65.3
 		.kill 8 Gnarled Thistleshrub|q 3362/1
 		.kill 8 Thistleshrub Rootshaper|q 3362/2
 		.kill Thistleshrub Dew Collectors|n
-		.get Laden Dew Gland|q 2605/1
+		..get Laden Dew Gland|q 2605/1
 	step
 		.'WARNING: ESCORT
 		goto 31.8,74.1
@@ -7939,7 +7942,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Zamael Lunthistle##8436
 		..turnin Prayer to Elune (1)##3377
 		..accept Prayer to Elune (2)##3378
-		.kill Twilight mobs|n
+	step
+		kill Twilight mobs|n
 		.get Prayer to Elune|q 3378/1
 		.get Symbol of Ragnaros|q 3452/1
 	step
@@ -7956,12 +7960,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Squire Maltrake##3462
 		..accept Set Them Ablaze!##3463
 	step
-		kill Dark Iron dwarves|n
-		.get Grimesilt Outhouse Key|n
-		.' Click the Grimesilt Outhouse Key|use Grimesilt Outhouse Key##11818
-		..accept The Key to Freedom##4451
-	step
 		goto 33.3,54.5
+		.' Equip the Torch of Retribution|use Torch of Retribution##10515
 		.' Click the Sentry Brazier|tip At the top of the tower, click the little metal blazer on the ground.
 		.' Set the Northern Tower Ablaze|goal Northern Tower Ablaze|q 3463/4
 	step
@@ -8046,6 +8046,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Curator Thorius##8256
 		..turnin Suntara Stones (2)##3368
 	step
+		goto 50.3,5.7
+		.talk Briarthorn##5172
+		..accept An Imp's Request##8419
+		only Warlock
+	step
 		goto 31,4.8
 		.talk Tymor##8507
 		..turnin Passing the Burden##3448
@@ -8123,11 +8128,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 50.7,14.2
 		.talk Bloodmage Lynnore##7506
+		..accept The Basilisk's Bite##2601
 		..turnin The Basilisk's Bite##2601
+		..accept Vulture's Vigor##2603
 		..turnin Vulture's Vigor##2603
 		.talk Bloodmage Drazial##7505
+		..accept Snickerfang Jowls##2581
 		..turnin Snickerfang Jowls##2581
+		..accept A Boar's Vitality##2583
 		..turnin A Boar's Vitality##2583
+		..accept The Decisive Striker##2585
 		..turnin The Decisive Striker##2585
 	step
 		goto Swamp of Sorrows,34.3,66.1
@@ -8195,11 +8205,26 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 11 Jadefire Felsworn|q 4421/1
 		.kill 9 Jadefire Shadowstalker|q 4421/2
 		.kill 9 Jadefire Rogue|q 4421/3
+		..get Felcloth|q 8419/1|only Warlock
+	step
+		goto 41.4,44.9
+		.talk Niby the Almighty##14469
+		..accept What Niby Commands##7601
+		only Warlock
+	step
+		goto 41.4,45
+		.talk Impsy##14470
+		..turnin An Imp's Request##8419
+		..accept The Wrong Stuff##8421
+		..turnin What Niby Commands##7601
+		..accept Flawless Fel Essence##7602
+		only Warlock
 	step
 		goto 41,59.7
 		.kill Tainted Oozes|n
 		.' Use your Empty Tainted Ooze Jars on their corpses|use Empty Tainted Ooze Jar##11948
 		.get 6 Filled Tainted Ooze Jar|q 4512/2
+		.get 4 Bloodvenom Essence|q 8421/2|only Warlock
 		.' You can find more Tainted Oozes at 40.5,55.7|n
 	step
 		goto 38.5,59.2
@@ -8212,6 +8237,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 2 Entropic Beast|q 5156/2
 		.kill 2 Entropic Horror|q 5156/3
 		.' Explore the craters in the Shatter Scar Vale|goal Explore the craters in Shatter Scar Vale|q 5156/1
+	step
+		goto 50.7,21.1
+		.from Irontree Stomper##7139+
+		..get 10 Rotting Wood|q 8421/1
+		only Warlock
 	step
 		goto 54.3,16.5
 		.kill Warpwood Tree Elementals|n
