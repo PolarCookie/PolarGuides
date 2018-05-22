@@ -557,7 +557,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		ding 10
 	step
-		goto Dun Morogh,83.9,39.2
+		goto 83.9,39.2
 		.talk Pilot Hammerfoot##1960
 		..accept The Lost Pilot##419
 	step
@@ -570,30 +570,30 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		.from Mangeclaw##1961
 		.get Mangy Claw|q 417/1
 	step
-		goto Dun Morogh,83.9,39.2
+		goto 83.9,39.2
 		.talk Pilot Hammerfoot##1960
 		..turnin A Pilot's Revenge##417
 	step
-		goto Dun Morogh,86.3,48.8
+		goto 86.3,48.8
 		.talk Mountaineer Barleybrew##1959
 		..turnin Shimmer Stout##413
 		..accept Stout to Kadrell##414
 	step
 		'Go southeast to Loch Modan|goto Loch Modan|noway|c
 	step
-		goto Loch Modan,22.1,73.1
+		goto 22.1,73.1
 		.talk Mountaineer Cobbleflint##1089
 		..accept In Defense of the King's Lands (1)##224
 	step
-		goto Loch Modan,23.2,73.7
+		goto 23.2,73.7
 		.talk Captain Rugelfuss##1092
 		..accept The Trogg Threat##267
 	step
-		goto Loch Modan,33.9,51
+		goto 33.9,51
 		.talk Thorgrum Borrelson##1572
 		..fpath Thelsamar
 	step
-		goto Loch Modan,34.8,47.1
+		goto 34.8,47.1
 		.talk Mountaineer Kadrell##1340
 		..turnin Stout to Kadrell##414
 	step
@@ -601,7 +601,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		.talk Thorgrum Borrelson##1572
 		..'Fly to Ironforge|goto Ironforge|noway|c
 	step
-		goto Ironforge,39.5,57.5
+		goto 39.5,57.5
 		.talk Senator Barin Redstone##1274
 		..turnin The Reports##291
 	step
@@ -627,7 +627,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		..turnin Me Brother, Nipsy##6662
 	step
 		'Exit Tram to Stormwind|goto Stormwind City|noway|c
-
 ]])
 
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Night Elf (1-10)",[[
@@ -2041,22 +2040,22 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	startlevel 10
 
 	step
-		goto Stormwind City,57.7,47.9
+		goto Stormwind City,49.2,30.2
 		.talk Baros Alexston##1646
 		..accept Humble Beginnings##399
 	step
-		goto 80.4,59.8
+		goto 78.5,45.7
 		.talk Ilsa Corbin##5480
 		..accept A Warrior's Training##1638
 		only Warrior
 	step
-		goto 77.1,53.3
+		goto 74.3,37.3
 		.talk Harry Burlguard##6089
 		..turnin A Warrior's Training##1638
 		..accept Bartleby the Drunk##1639
 		only Warrior
 	step
-		goto 76.8,52.5
+		goto 73.8,36.3
 		.talk Bartleby##6090
 		..turnin Bartleby the Drunk##1639
 		..accept Beat Bartleby##1640
@@ -2065,13 +2064,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		goal Beat Bartleby|q 1640/1
 		only Warrior
 	step
-		goto 76.8,52.5
+		goto 73.8,36.3
 		.talk Bartleby##6090
 		..turnin Beat Bartleby##1640
 		..accept Bartleby's Mug##1665
 		only Warrior
 	step
-		goto 77.1,53.3
+		goto 74.3,37.3
 		.talk Harry Burlguard##6089
 		..turnin Bartleby's Mug##1665
 		..accept Marshall Haggard##1666
@@ -2083,7 +2082,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		..accept Surena Caledon##1688
 		only Gnome Warlock
 	step
-		goto 71,72.5
+		goto 66.2,62.5
 		.talk Dungar Longdrink##352
 		..fpath Stormwind City
 	step
@@ -2554,7 +2553,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
-		goto 63.2,74.4
+		goto 56.2,64.6
 		.talk Morgan Pestle##279
 		..turnin Shipment To Stormwind##61
 	step
@@ -3500,7 +3499,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 18.1,39.8
 		.from Gobbler##1259
-		.get Gobbler's Head|q 279/2
+		..get Gobbler's Head|q 279/2
 	step
 		goto 13.8,41.9
 		.kill 12 Bluegill Murloc|q 279/1
@@ -3772,6 +3771,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin The Legend of Stalvan (6)##72
 		..accept The Legend of Stalvan (7)##74
 	step
+		goto 26.4,78.7
+		.talk Zardeth of the Black Claw##1435
+		..accept A Noble Brew (1)##335
+		only Warlock
+	step
 		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c
 	step
 		'If you didn't get the Glowing Shadowhide Pendant skip this step. |goto 65.2,69.7
@@ -3841,7 +3845,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 66,47
 		.kill 6 Nightbane Shadow Weaver|q 173/1
 	step
-		goto Duskwood,28,31.5
+		goto 28,31.5
 		.talk Abercrombie##289
 		..turnin Juice Delivery##159
 		..accept Ghoulish Effigy##133
@@ -3924,11 +3928,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Worgen in the Woods (3)##222
 	step
 		'Fly to Stormwind|goto Stormwind City|noway|c
-	step
-		goto 26.4,78.7
-		.talk Zardeth of the Black Claw##1435
-		..accept A Noble Brew (1)##335
-		only Warlock
 	step
 		goto 39.1,27.9
 		.talk Bishop Farthing##1212
@@ -4271,13 +4270,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Lady Katrana Prestor##1749
 		..turnin An Audience with the King##396
 	step
-		goto 25.3,78.6
-		.talk Gakin the Darkbinder##6122
-		..turnin Gakin's Summons##1717
-		..accept Devourer of Souls##1716
-		..accept Seeking Strahad##1798
-		only Warlock
-	step
 		'Fly to Lakeshire|goto Redridge Mountains|noway|c
 	step
 		goto 26.3,46.6
@@ -4416,6 +4408,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Zardeth of the Black Claw##1435
 		..turnin A Noble Brew (1)##335
 		..accept A Noble Brew (2)##336
+		only Warlock
+	step
+		goto 25.3,78.6
+		.talk Gakin the Darkbinder##6122
+		..turnin Gakin's Summons##1717
+		..accept Devourer of Souls##1716
+		..accept Seeking Strahad##1798
 		only Warlock
 	step
 		goto 59.9,64.2
@@ -4944,16 +4943,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 55.7,57
 		.from Snapjaw##2408
-		.get 10 Turtle Meat|q 555/1
-	step
-		goto 51.9,58.7
-		.talk Chef Jessen##2430
-		..turnin Soothing Turtle Bisque##555
-	step
-		goto 51.5,58.4
-		.talk Lieutenant Farren Orinelle##2228
-		..turnin Stormwind Ho!##562
-		..accept Reassignment##563
+		..get 10 Turtle Meat|q 555/1
 	step
 		goto 55.6,35.2
 		.' Click the Unopened Crate|tip Inside the crumbled tower, under the broken staircase, on the floor to the right as you enter.
@@ -5012,6 +5002,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto Hillsbrad Foothills,51,58.7
 		.talk Huraan##17218
 		..turnin Missing Crystals##9435
+	step
+		goto 51.5,58.4
+		.talk Lieutenant Farren Orinelle##2228
+		..turnin Stormwind Ho!##562
+		..accept Reassignment##563
+	step
+		goto 51.9,58.7
+		.talk Chef Jessen##2430
+		..turnin Soothing Turtle Bisque##555
 	step
 		goto Hillsbrad Foothills,49.5,58.7
 		.talk Marshal Redpath##2263
@@ -5293,30 +5292,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Lieutenant Doren##469
 		..turnin Special Forces##574
 	step
-		ding 36
-	step
-		goto 38.2,4|n
-		.talk Nizzle##24366
-		..'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
-	step
-		goto 27,77.1
-		.talk Kebok##737
-		..turnin Hostile Takeover##213
-	step
-		goto 27.2,76.9
-		.talk Baron Revilgaz##2496
-		..turnin Water Elementals##601
-		..accept Magical Analysis##602
-		..turnin Goblin Sponsorship (4)##1182
-	step
-		goto 28.3,77.6
-		.talk Drizzlik##2495
-		..turnin Some Assembly Required##577
-		..accept Excelsior##628
-	step
-		'If you have a friend to join for Colonel Kurzen; skip to the next step, otherwise skip to the next Hearth to Ironforge step.
-	step
-		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
+		'If you have a friend to join for Colonel Kurzen; skip to the next step, otherwise skip to the next fly to Booty Bay step.
 	step
 		goto 38.0,3.1
 		.talk Lieutenant Doren##469
@@ -5328,8 +5304,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'Enter the cave at 45.7,8.2|goto 45.7,8.2|c
 	step
 		goto 49.6,7.6
-		.turnin The Hidden Key##328
-		.accept The Spy Revealed!##329
+		.talk Bookie Herod's Strongbox
+		..turnin The Hidden Key##328
+		..accept The Spy Revelead##329
 	step
 		goto 49.9,4
 		.kill 6 Kurzen's Elite|q 202/1
@@ -5353,6 +5330,27 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 38.0,3.1
 		.talk Lieutenant Doren##469
 		..turnin Report to Doren##331
+	step
+		ding 36
+	step
+		goto 38.2,4|n
+		.talk Nizzle##24366
+		..'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
+	step
+		goto 27,77.1
+		.talk Kebok##737
+		..turnin Hostile Takeover##213
+	step
+		goto 27.2,76.9
+		.talk Baron Revilgaz##2496
+		..turnin Water Elementals##601
+		..accept Magical Analysis##602
+		..turnin Goblin Sponsorship (4)##1182
+	step
+		goto 28.3,77.6
+		.talk Drizzlik##2495
+		..turnin Some Assembly Required##577
+		..accept Excelsior##628
 	step
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step
@@ -6298,7 +6296,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Captain Garran Vimes##4944
 		..turnin Peace at Last##11152
 	step
-		'Travel your own way to Southshore, this is a good time to drop by your race's capitol city to train.|goto Hillsbrad Foothills|noway|c
+		'Travel your own way to Southshore, this is a good time to drop by a capitol city to train.|goto Hillsbrad Foothills|noway|c
 	step
 		'If you didn't get the Old History Book from Duskwood, skip this step.
 		goto 50.6,57.1
@@ -7365,7 +7363,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Auberdine|goto Darkshore,36.4,45.6,0.3|noway|c|tip You're going to Rut'theran, fly directly if you can and skip some steps.
 	step
-		'Ride the boat to Rut'theran Village|goto Teldrassil|noway|c
+		'Ride the boat to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
 	step
 		goto 55.5,92
 		.talk Erelas Ambersky##7916
@@ -8103,15 +8101,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Go southeast to the Blasted Lands|goto Blasted Lands|noway|c
 	step
-		goto Blasted Lands,50.6,14.2
-		.talk Bloodmage Drazial##7505
-		..accept Snickerfang Jowls##2581
-		..accept A Boar's Vitality##2583
-		..accept The Decisive Striker##2585
-		.talk Bloodmage Lynnore##7506
-		..accept The Basilisk's Bite##2601
-		..accept Vulture's Vigor##2603
-	step
 		.' At Grind Point 1: 49,18
 		.' At Grind Point 2: 45,26
 		.' At Grind Point 3: 46,34
@@ -8279,6 +8268,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 41.4,45
 		.talk Impsy##14470
 		..turnin The Wrong Stuff##8421
+		only Warlock
 	step
 		goto 43.1,21.3|n
 		.' The path up to 'Further Corruption' starts here|goto Felwood,43.1,21.3,0.5|noway|c
@@ -8339,6 +8329,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Cenarion Aid##8254
 		..accept Of Coursers We Know##8255
 		only Priest
+	step
+		goto 52.1,19.1
+		.from Legashi Satyr##6200, Legashi Rogue##6201+, Legashi Hellcaller##6202+
+		..get Flawless Fel Essence (Azshara)|q 7602/1
+		only Warlock
 	step
 		goto 53.5,21.8
 		.talk Kim'jael##8420
@@ -8431,7 +8426,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		only Mage
 	step
 		goto 46.12,66.83|n
-		.' The path out of the naga beach starts here|goto Azshara,46.12,66.83,0.5|noway|c
+		.' The path out of the naga beach starts here|goto Azshara,46.12,66.83,1|noway|c
 	step
 		goto 77.8,91.3
 		.' Stand on the landing pad on the small island
@@ -8489,6 +8484,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Extinguish the Firegut##3823
 		..accept Gor'tesh the Brute Lord##3824
 	step
+		goto 85.8,68.9
+		.talk Helendis Riverhorn##9562
+		..accept Dragonkin Menace##4182
+	step
 		goto 66.1,21.9
 		.talk Yuka Screwspigot##9544
 		..turnin Yuka Screwspigot##4324
@@ -8509,6 +8508,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Use your Draco-Incarcinatrix 900 on Black Broodlings and kill them|use Draco-Incarcinatrix 900##12284
 		.' Click the red crystals that float over their corpses
 		.get 8 Broodling Essence|q 4726/1
+		.kill 15 Black Broodling|q 4182/1
+		.kill 10 Black Dragonspawn|q 4182/2
+		.kill 1 Black Drake|q 4182/3
+		.kill 4 Black Wyrmkin|q 4182/4
 	step
 		goto 39.3,55.3
 		.kill Blackrock orcs|n
@@ -8536,6 +8539,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Gor'tesh the Brute Lord##3824
 		..accept Ogre Head On A Stick = Party##3825
 		..turnin FIFTY! YEP!##4283
+	step
+		goto 85.8,68.9
+		.talk Helendis Riverhorn##9562
+		..turnin Dragonkin Menace##4182
 	step
 		ding 54
 	step
@@ -8565,7 +8572,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Shards of Myzrael
 		..turnin Summoning the Princess##656
 	step
-		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
+		'Fly to Southshore|goto Hillsbrad Foothills,49.6,52.1,1|noway|c
 	step
 		'Go north to the Alterac Mountains|goto Alterac Mountains|noway|c
 	step
@@ -8579,6 +8586,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Commander Ashlam Valorfist##10838
 		..turnin A Call to Arms: The Plaguelands!##5090
 		..accept Clear the Way##5092
+		..accept Scholomance##5533
+	step
+		goto 42.7,83.8
+		.talk Alchemist Arbington##11056
+		..turnin Scholomance##5533
+		..accept Skeletal Fragments##5537
 	step
 		goto 43,83.5|tip Equip the trinket you receive.
 		.talk Argent Officer Pureheart##10840
@@ -8664,17 +8677,32 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 	step
-		goto Stormwind City,57.2,48.1
+		goto 48.5,30.5
 		.talk Royal Factor Bathrilor##10782
 		..turnin Better Late Than Never (2)##5022
 		..accept Good Natured Emma##5048
 	step
-		goto 60.2,57
+		goto 52.4,42.1
 		.talk Ol' Emma##3520
 		..turnin Good Natured Emma##5048
 		..accept Good Luck Charm##5050
 	step
+		goto 80,38.4
+		.talk King Varian Wrynn##29611
+		..accept The First and the Last##6182
+	step
+		goto 78.3,70.7
+		.talk Master Mathias Shaw##332
+		..turnin The First and the Last##6182
+		..accept Honor the Dead##6183
+		..turnin Honor the Dead##6183
+		..accept Flint Shadowmore##6184
+	step
 		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
+	step
+		goto Western Plaguelands,43.6,84.5
+		.talk Flint Shadowmore##12425
+		..turnin Flint Shadowmore##6184
 	step
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
@@ -8709,6 +8737,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Janice Felstone##10778
 		..turnin Two Halves Become One##5051
 	step
+		'From any Skeleton at the farms or in Andorhal.
+		.get 15 Skeletal Fragments|q 5537/1
+	step
 		goto 42.8,55.4
 		.kill 8 Diseased Wolf|q 4984/1 |tip The wolves in this area share a respawn with the spiders so killing them as well will spawn wolves faster.
 		..'You can also find more wolves at 45.6,47.4 |n
@@ -8726,6 +8757,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Mulgris Deepriver##10739
 		..turnin The Wildlife Suffers Too (2)##4985
 		..accept Glyphed Oaken Branch##4986
+	step
+		goto 42.7,83.8
+		.talk Alchemist Arbington##11056
+		..turnin Skeletal Fragments##5537
 	step
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
@@ -8774,7 +8809,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 31,42|n
 		.' Go into the pink portal to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
 	step
-		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
+		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,1|noway|c
 	step
 		goto 50.9,27
 		.talk Alchemist Pestlezugg##5594
@@ -8846,7 +8881,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Kill Un'Goro Stompers inside the cave
 		.get 2 Un'Goro Stomper Pelt|q 4289/2
 		.' Kill Un'Goro Thunderers inside the cave
-		.get 2 Un'Goro Thunderer Pelt|q 4289/3
+		.get 2 Un'Goro Thunderer Pelt|q 4289/3|tip If you're waiting on respawns, kill some Tar mobs south of the cave, or search for Power Crystals.
 	step
 		collect 7 Green Power Crystal##11185
 		collect 7 Red Power Crystal##11186
@@ -8913,7 +8948,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Examine the Western Pylon|goal Discover and examine the Western Crystal Pylon|q 4288/1
 	step
 		goto 21.4,59.4
-		.kill 10 Frenzied Pterrordax|q 4501/1
+		.kill 15 Frenzied Pterrordax|q 4501/2
 		.from Frenzied Pterrordax##9167
 		.get 8 Webbed Pterrordax Scale|q 4503/2
 		.' You can find more Frenzied Pterrordax at 23.3,42.3|n
@@ -8982,7 +9017,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Chasing A-Me 01 (2)##4244
 		..turnin Chasing A-Me 01 (2)##4244
 		..accept Chasing A-Me 01 (3)##4245|noautoaccept
-		.' Escort A-Me 01 to Karna Remtravel|goal Protect A-Me 01 until you reach Karna Remtravel|q 4245/1
+	step
+		' Escort A-Me 01 to Karna Remtravel|goal Protect A-Me 01 until you reach Karna Remtravel|q 4245/1
 	step
 		goto 46.4,13.4
 		.talk Karna Remtravel##9618
@@ -8992,6 +9028,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Go up the hill
 		.' Click the Northern Pylon|tip It looks like a big machine with a huge crystal spinning on top of it.
 		.' Examine the Northern Pylon|goal Discover and examine the Northern Crystal Pylon|q 4285/1
+	step
+		goto 56.6,8.5
+		.kill 10 Pterrordax|q 4501/1
 	step
 		'Follow the path up the moutain to 49.7,45.7|goto 49.7,45.7
 		.' Use Krakle's Thermometer on the Fire Plume Ridge Hot Spot|use Krakle's Thermometer##12472|tip It's a big black rock with a bunch of red cracks in it.
@@ -9016,9 +9055,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Ringo##9999
 		..turnin Lost!##4492
 		..accept A Little Help From My Friends##4491|noautoaccept
+	step
+		goto 43.6,8.5
 		.goal Escort Ringo to Spraggle Frock at Marshal's Refuge|q 4491/1
 		.' When Ringo faints, use Spraggle's Canteen on him to revive him|use Spraggle's Canteen##11804
-		.' When escorting Ringo, bring him to 43.6,8.5|n
 	step
 		goto 43.6,8.5
 		.talk Spraggle Frock##9997
@@ -9054,7 +9094,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'You need 25 Un'Goro Soil before leaving Un'Goro Crater.
 		.collect 25 Un'Goro Soil##11018
 	step
-		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,0.5|noway|c
+		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,1|noway|c
 	step
 		goto Tanaris,51.6,26.8
 		.talk Tran'rek##7876
@@ -9129,6 +9169,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goal Protect Arko'narin out of Shadow Hold|q 5203/1
 	step
+		'Go back into the hold if you must.
+		from Jaedenar Legionnaire##9862+
+		.get Flawless Fel Essence (Jaedenar)|q 7602/2
+		only Warlock
+	step
 		.'WARNING: ESCORT
 		goto 49.6,30.4
 		.use Flute of the Ancients##11445
@@ -9174,11 +9219,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 33.22,36.48|tip Don't worry about Den Watchers, there's more later.
 		.kill 8 Winterfall Pathfinder|q 5082/1
 		.kill 8 Winterfall Totemic|q 5082/3
-		.kill Winterfall furbolgs|n
-		.get Empty Firewater Flask|n
-		.' Click the Empty Firewater Flask|use Empty Firewater Flask##12771
-		..accept Winterfall Firewater##5083
-		.' You can find more furbolgs at 39.4,43.8|n
 	step
 		goto 52.1,30.4
 		.talk Wynd Nightchaser##11079
@@ -9209,6 +9249,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 8 Winterfall Shaman |q 8464/1
 		.kill 8 Winterfall Den Watcher|q 8464/2
 		.kill 8 Winterfall Ursa |q 8464/3
+		.kill Winterfall furbolgs|n
+		.get Empty Firewater Flask|n
+		.' Click the Empty Firewater Flask|use Empty Firewater Flask##12771
+		..accept Winterfall Firewater##5083
+		.' You can find more furbolgs at 39.4,43.8|n
 	step
 		goto 65.6,30.7
 		.kill Chillwind Chimaera|n
@@ -9249,7 +9294,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 65,41.6
 		.kill yetis|n
-		.get 10 Thick Yeti Fur|q 3783/1
+		..get 10 Thick Yeti Fur|q 3783/1
 	step
 		goto 60.9,37.6
 		.talk Umi Rumplesnicker##10305
@@ -9263,11 +9308,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 61.9,38.4
 		.talk Storm Shadowhoof##10303
 		..turnin Brumeran of the Chillwind##5055
+		..accept Shy-Rotam##5056
 	step
 		goto 66,42.8
 		.kill Ice Thistle Matriarchs|n
 		.kill Ice Thistle Patriarchs|n
-		.get 2 Pristine Yeti Horn|q 977/1
+		..get 2 Pristine Yeti Horn|q 977/1
 	step
 		goto 60.9,37.6
 		.talk Umi Rumplesnicker##10305
@@ -9276,6 +9322,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 52.1,30.4
 		.talk Jaron Stoneshaper##10301
 		..turnin Enraged Wildkin (4)##4864
+	step
+		goto 49.8,9.8
+		.kill Frostsabers|n
+		..collect Sacred Frostsaber Meat##12733|n
+		.'Use the meat at the stone slab|use Sacred Frostsaber Meat##12733
+		.kill Shy-Rotam|q 5056/1
+	step
+		goto 61.9,38.4
+		.talk Storm Shadowhoof##10303
+		..turnin Shy-Rotam##5056
+		..accept Past Endeavors##5057|instant
 	step
 		'Make sure you have 10 Moontouched Feathers in your bags|get 10 Moontouched Feather|q 978/1|c
 	step
@@ -9310,7 +9367,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Greta Mosshoof##10922
 		..turnin Dousing the Flames of Protection##5165
 	step
-		'Fly to Forest Song|goto Ashenvale,85.04,43.51,5|noway|c	
+		'Fly to Forest Song|goto Ashenvale,85.04,43.51,5|noway|c
 	step
 		goto 85.2,44.7
 		.talk Kayneth Stillwind##3848
@@ -9318,7 +9375,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
 	step
-		goto Teldrassil,55.5,92
+		goto 55.5,92
 		.talk Erelas Ambersky##7916
 		..turnin Moontouched Wildkin##978
 	step
@@ -9348,6 +9405,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'Go inside Nethergarde Keep at 63.5,17|goto Blasted Lands,63.5,17
 		.talk Bernie Heisten##3546
 		..buy 1 Nethergarde Bitter|q 9563/1
+	step
+		'Deliver this quest in Felwood at your own leisure.
+		goto 58.2,51.3
+		.from Felguard Sentry##6011+
+		..get Flawless Fel Essence (Dark Portal)|q 7602/3
+		only Warlock
 	step
 		goto 58.3,55.9
 		.talk Watch Commander Relthorn Netherwane##16841
@@ -11317,14 +11380,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept The Tortured Earth##9819
 	step
 		goto 66.5,39.5
-		.kill 12 Windroc|q 9854/1
+		.kill 30 Windroc|q 9854/1
 	step
 		goto 72.2,38.4
-		.kill 12 Talbuk Stag|q 9857/1
+		.kill 30 Talbuk Stag|q 9857/1
 		.' You can find more Talbuk Stags at 70.8,46.4|n
 	step
 		goto 64,45.1
-		.kill 12 Clefthoof|q 9789/1
+		.kill 30 Clefthoof|q 9789/1
 		.' Kill Elekks
 		.collect 3 Pair of Ivory Tusks##25463|q 9914 |future
 		.' Kill Dust Howlers
@@ -11358,15 +11421,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 52.1,25.6
 		.' Click the Dung on the ground|tip The Dung looks like green piles of swirled poop.
-		.get 8 Digested Caracoli|q 9800/1
-		.kill 12 Talbuk Thorngrazer|q 9858/1
+		.get 15 Digested Caracoli|q 9800/1
+		.kill 30 Talbuk Thorngrazer|q 9858/1
 	step
 		goto 52,20.2
 		.' Kill Enraged Crushers
 		.get 10 Enraged Crusher Core|q 9821/1
 	step
 		goto 51.6,30.8
-		.kill 12 Clefthoof Bull|q 9850/1
+		.kill 30 Clefthoof Bull|q 9850/1
 		.' You can find more Clefthoof Bulls at 49.7,35.6|n
 	step
 		goto 40.5,26.4
@@ -11385,7 +11448,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Shattering the Veil##9849
 	step
 		goto 59.7,27.3
-		.kill 8 Lake Spirit|q 9804/1
+		.kill 12 Lake Spirit|q 9804/1
 	step
 		goto 60.5,22.4
 		.talk Elementalist Lo'ap##18073
@@ -11400,7 +11463,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Ortor My Old Friend...##9873
 	step
 		goto 48.4,61.5
-		.kill 12 Ravenous Windroc|q 9855/1
+		.kill 30 Ravenous Windroc|q 9855/1
 	step
 		goto 51.8,56.8
 		.talk Nitrin the Learned##19844
@@ -11445,8 +11508,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept HELP!##9923
 	step
 		goto 72.9,69.8
-		.kill 8 Boulderfist Crusher|q 9921/1
-		.kill 8 Boulderfist Mystic|q 9921/2
+		.kill 15 Boulderfist Crusher|q 9921/1
+		.kill 15 Boulderfist Mystic|q 9921/2
 		.get Boulderfist Key|n
 		.' Click Corki's cage to free him|goal Corki Freed|q 9923/1
 	step
@@ -11501,8 +11564,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get 5 Muck-ridden Core|q 9815/1
 	step
 		goto 39.3,27.5
-		.kill 10 Boulderfist Warrior|q 9922/1
-		.kill 10 Boulderfist Mage|q 9922/2
+		.kill 25 Boulderfist Warrior|q 9922/1
+		.kill 25 Boulderfist Mage|q 9922/2
 		.collect 1 Northwind Cleft Key##25509|q 9924|sticky
 		.' Free Corki inside the cave|goal Corki Freed Again|q 9924/1|tip Inside the cave, way in the back, in a yellow cage again.
 	step
@@ -11511,7 +11574,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..get Eye of Gutripper|q 9856/1
 	step
 		goto 33.1,50.8
-		.kill 8 Lake Surger|q 9810/2
+		.kill 10 Lake Surger|q 9810/2
 		.kill Watoosun's Polluted Essence##18145|q 9810/1
 	step
 		goto 30.88,42.35
@@ -11569,7 +11632,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get 10 Oshu'gun Crystal Fragment|q 9882/1
 	step
 		goto 30.6,67.5
-		.kill 8 Voidspawn|q 9925/1
+		.kill 12 Voidspawn|q 9925/1
 	step
 		goto 42.4,73.5
 		.kill Gava'xi##18298|q 9900/1
@@ -11625,10 +11688,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 71.4,79.4
 		.' Click the Kil'sorrow Armaments on the ground|tip The Kil'sorrow Armaments look like skinny, square, tan boxes with a red axe logo on them.
-		.get 10 Kil'sorrow Armaments|q 9928/1
-		.kill 10 Kil'sorrow Agent|q 9936/2
+		.get 20 Kil'sorrow Armaments|q 9928/1
+		.kill 15 Kil'sorrow Agent|q 9936/2
 		.' Use your Warmaul Ogre Banners on their corpses|use Warmaul Ogre Banner##25552
-		.' Plant 10 Warmaul Ogre Banners|goal 10 Warmaul Ogre Banner Planted|q 9927/1
+		.' Plant 20 Warmaul Ogre Banners|goal 10 Warmaul Ogre Banner Planted|q 9927/1
 	step
 		goto 73.8,62.6
 		.talk Lantresor of the Blade##18261
@@ -11664,10 +11727,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Defend the 2 ogres that appear until they are done placing the corpses|goal Kil'sorrow Bodies Planted|q 9932/1
 	step
 		goto 48.3,21.5
-		.kill 5 Warmaul Shaman|q 9940/2
-		.kill 5 Warmaul Reaver|q 9940/3
+		.kill 10 Warmaul Shaman|q 9940/2
+		.kill 10 Warmaul Reaver|q 9940/3
 		.' Use your Kil'sorrow Banners on their corpses|use Kil'sorrow Banner##25555
-		.' Plant 10 Kil'sorrow Banners|goal 10 Kil'sorrow Banner Planted|q 9931/1
+		.' Plant 20 Kil'sorrow Banners|goal 10 Kil'sorrow Banner Planted|q 9931/1
 	step
 		goto 27.9,29.7
 		.get 10 Telaar Supply Crate|q 9956/1|tip They look like little grey boxes on the ground.
@@ -11899,21 +11962,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Commander Skyshadow##21158
 		..turnin The Bladespire Ogres##10504
 		..turnin Planting the Banner##10518
-	step
-		ding 68
-	step
-		'Fly to Shattrath City|goto Shattrath City|noway|c
-	step
-		'Take the portal to Ironforge|goto Ironforge|noway|c
-		only !Druid
-	step
-		'Take the portal to Stormwind City|goto Stormwind City|noway|c
-		only Druid
-	step
-		'Train your skills, then fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.1|noway|c
-	step
-		goto 4.6,57.2|n
-		'Ride the boat to Howling Fjord|goto Howling Fjord|noway|c
 ]])
 
 
