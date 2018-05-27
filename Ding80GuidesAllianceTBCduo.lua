@@ -8064,10 +8064,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Return to Chillwind Camp##5217
 		..accept Target: Dalson's Tears##5219
 	step
-		goto 42.9,84.5
-		.talk Anchronite Truuen##17238
-		..accept The Mark of the Lightbringer##9474
-	step
 		goto 46.2,52.4
 		.from Cauldron Lord Malvinious##11077
 		.get Dalson's Tears Cauldron Key|n
@@ -8091,53 +8087,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept Locked Away##5060|instant
 	step
 		ding 56
-	step
-		goto 50.0,30.4|n
-		.' The path down to Kirsta Deepshadow starts here|goto Western Plaguelands,50.0,30.4,0.5|noway|c
-	step
-		goto 51.9,28
-		.talk Kirsta Deepshadow##11610
-		..accept Unfinished Business (1)##6004
-	step
-		goto 50.3,41.5
-		.kill 2 Scarlet Knight|q 6004/4
-		.kill 2 Scarlet Mage|q 6004/3
-	step
-		goto 51.1,43.7
-		.kill 2 Scarlet Hunter|q 6004/2
-		.kill 2 Scarlet Medic|q 6004/1
-	step
-		goto 51.9,28
-		.talk Kirsta Deepshadow##11610
-		..turnin Unfinished Business (1)##6004
-		..accept Unfinished Business (2)##6023
-	step
-		goto 56.4,34.0|n
-		.' The path up to Huntsman Radley starts here|goto Western Plaguelands,56.4,34.0,0.5|noway|c
-	step
-		goto 57.7,36.3
-		.kill Huntsman Radley|q 6023/1
-	step
-		goto 54.2,24.2
-		.kill 1 Cavalier Durgen|q 6023/2|tip Stay in front of the tower. Cavalier Durgen will eventually walk out of the tower down the front.
-		.' Go to the top of the tower
-		.' Click the small brown chest
-		.get Mark of the Lightbringer|q 9474/1
-	step
-		goto 52.8,25.2|n
-		.' Jump off the cliff down to Kirsta Deepshadow|goto Western Plaguelands,52.8,25.2,0.3|noway|c
-	step
-		goto 51.9,28
-		.talk Kirsta Deepshadow##11610
-		..turnin Unfinished Business (2)##6023
-		..accept Unfinished Business (3)##6025
-	step
-		goto 45.8,18.3
-		.goal Overlook Hearthglen from a high vantage point|q 6025/1
-	step
-		goto 51.9,28
-		.talk Kirsta Deepshadow##11610
-		..turnin Unfinished Business (3)##6025
 	step
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 	step
@@ -8172,14 +8121,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk High Priestess MacDonnell##11053
 		..turnin Return to Chillwind Camp##5220
 		..accept Target: Writhing Haunt##5222
-	step
-		.'WARNING: ESCORT
-		goto 42.9,84.5
-		.talk Anchronite Truuen##17238
-		..turnin The Mark of the Lightbringer##9474
-		..accept Tomb of the Lightbringer##9446|noautoaccept
-	step
-		goal Escort Anchorite Truuen to Uther's Tomb|q 9446/1
 	step
 		goto 53,66
 		.from Cauldron Lord Razarch##11076
@@ -8228,14 +8169,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin The Wildlife Suffers Too (2)##4985
 		..accept Glyphed Oaken Branch##4986
 	step
+		'ATTENTION: DO NOT CONTINUE THIS QUESTLINE UNLESS YOU'RE PLANNING ON FOLLOWING THE GOLD RUSH GUIDE.
+		'ATTENTION: the following questline costs 15g, but rewards 28250xp without any extra detours, and Scholomance key!
 		goto 42.7,83.8
 		.talk Alchemist Arbington##11056
 		..turnin Skeletal Fragments##5537
+		..accept Mold Rhymes with...##5538
 	step
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
 		..turnin Return to Chillwind Camp##5223
-		..turnin Tomb of the Lightbringer##9446
 	step
 		'Fly to Ironforge|goto Ironforge|noway|c
 ]])
@@ -8246,7 +8189,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 
 	step
 		'Buy the following items from the Auction House:|tip If you cannot buy some of these, ask people to make them for you in General and Trade chat.  Offer to pay well and you will usually get someone to do it for you.
-		.buy 1 Mithril Casing|q 4244/1
+		.buy 1 Mithril Casing|q 4244
+		.buy 2 Thorium Bar|q 5801
 	step
 		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
 	step
@@ -8268,6 +8212,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.' Go into the pink portal to Rut'theran Village|goto Teldrassil,56.3,92.4,6|noway|c
 	step
 		'Fly to Gadgetzan|goto Tanaris,51.0,29.3,1|noway|c
+	step
+		'ATTENTION: DO NOT CONTINUE THIS QUESTLINE UNLESS YOU'RE PLANNING ON FOLLOWING THE GOLD RUSH GUIDE.
+		'ATTENTION: DO NOT TURN IN IF YOU DO NOT HAVE 2 THORIUM BARS
+		'ATTENTION: the following questline costs 15g, but rewards 28250xp without any extra detours, and Scholomance key!
+		goto 51.5,28.8
+		.talk Krinkle Goodsteel##5411
+		..turnin Mold Rhymes with...##5538
+		..accept Fire Plume Forged##5801
 	step
 		goto 67,22.4
 		.talk Yeh'kinya##8579
@@ -8526,6 +8478,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		'Follow the path up the moutain to 49.7,45.7|goto 49.7,45.7
 		.' Use Krakle's Thermometer on the Fire Plume Ridge Hot Spot|use Krakle's Thermometer##12472|tip It's a big black rock with a bunch of red cracks in it.
 		.' Find the hottest area of Fire Plume Ridge|goal Find the hottest area of Fire Plume Ridge|q 974/1
+	step
+		goto 48.9,47
+		'Forge the Unfinished Skeleton key|use Skeleton Key Mold##14644
+		.get Unfinished Skeleton Key|q 5801/1
 	step
 		goto 30.9,50.4
 		.talk Krakle##10302
@@ -9024,6 +8980,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 	step
 		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
 	step
+		goto 42.7,83.8
+		.talk Alchemist Arbington##11056
+		..turnin Fire Plume Forged##5801
+		..accept Araj's Scarab##5803
+	step
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
 		..accept Target: Gahrron's Withering##5225
@@ -9045,76 +9006,70 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 	step
 		'Go northeast to the Eastern Plaguelands|goto Eastern Plaguelands|noway|c
 	step
-		'Go north up the coast to 4.7,38.4|goto Eastern Plaguelands,4.7,38.4
+		'Go north up the river to 7.6,43.7|goto 7.6,43.7
 		.talk Tirion Fordring##1855
 		..accept Demon Dogs##5542
 		..accept Blood Tinged Skies##5543
 		..accept Carrion Grubbage##5544
 	step
-		goto 25.1,73.1
+		goto 28.8,79.8
 		.' Click the Mangled Human Remains
 		.get SI:7 Insignia (Rutger)##16003|q 6185/2
 	step
-		goto 25.1,68.4
+		goto 28.8,74.8
 		.' Click the Mangled Human Remains
 		.get SI:7 Insignia (Turyen)##16002|q 6185/4
 	step
-		goto 23.5,68.4
+		goto 27.2,75
 		.' Click the Mangled Human Remains
 		.get SI:7 Insignia (Fredo)##16001|q 6185/3
 		.' See a message saying you Uncovered the Blightcaller|goal The Blightcaller Uncovered|q 6185/1
 	step
-		goto 24.9,63.6
-		.kill 20 Plaguehound Runt|q 5542/1
-		.kill 30 Plaguebat|q 5543/1
-		.kill Carrion Grubs|n
-		.get 15 Slab of Carrion Worm Meat|q 5544/1
-	step
-		goto 32.4,83.7
+		goto 36.5,90.8
 		.talk Pamela Redpath##10926
 		..turnin Sister Pamela##5601
 		..accept Pamela's Doll##5149
 	step
-		goto 35.0,84.3
+		goto 38.3,92.4
 		.' The doll parts spawn in the house here, except the house Pamela is in
 		.get Pamela's Doll's Head|n
 		.get Pamela's Doll's Left Side|n
 		.get Pamela's Doll's Right Side|n
 		.' Click Pamela's Doll's Head to put the doll parts together to make Pamela's Doll|q 5149/1|use Pamela's Doll's Head##12886
 	step
-		goto 32.4,83.7
+		goto 36.5,90.8
 		.talk Pamela Redpath##10926
 		..turnin Pamela's Doll##5149
 		..accept Uncle Carlin##5241
 		..accept Auntie Marlene##5152
 	step
-		goto 52.5,49.1
+		goto 55.2,58.7
 		.kill 5 Plaguehound|q 5542/2
 	step
-		goto 50.3,25.9
+		goto 50.9,38.2
 		.kill 5 Frenzied Plaguehound|q 5542/3
 	step
-		goto 48.8,17.6
+		goto 53.5,22
 		.talk Aurora Skycaller##10304
 		..turnin Troubled Spirits of Kel'Theril##5245
 	step
-		goto 75.7,53.9
+		goto 81.4,59.8
 		.talk Duke Nicholas Zverenhoff##11039
 		..turnin Duke Nicholas Zverenhoff##6030
 		.talk Carlin Redpath##11063
 		..turnin Uncle Carlin##5241
 	step
-		goto 73.8,57.8
+		goto 79.5,63.9
 		.talk Caretaker Alen##11038
 		..accept Zaeldarr the Outcast##6021
 	step
-		goto 75.9,53.4
+		goto 81.6,59.3
 		.talk Khaelyn Steelwing##12617
 		..fpath Light's Hope Chapel
 	step
 		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
 	step
-		goto Western Plaguelands,42.9,84.5
+		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
 		..turnin Return to Chillwind Camp##5226
 	step
@@ -9143,6 +9098,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 		goto 43.4,84.8
 		.talk Nathaniel Dumah##11616
 		..accept A Plague Upon Thee (1)##5903
+	step
+		goto 42.9,84.5
+		.talk Anchronite Truuen##17238
+		..accept The Mark of the Lightbringer##9474
 	step
 		goto Western Plaguelands,49.2,78.5
 		.talk Marlene Redpath##10927
@@ -9185,10 +9144,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 		.use Attuned Damper##12650
 		.kill Araj the Summoner##1852|n
 		..get Araj's Phylactery Shard|q 211/1
+		..get Araj's Scarab|q 5803/1
 	step
 		'Go northeast to the Eastern Plaguelands|goto Eastern Plaguelands|noway|c
 	step
-		'Go north up the coast to 4.7,38.4|goto Eastern Plaguelands,4.7,38.4
+		'In the general area in south western Eastern Plaguelands.
+		.kill 20 Plaguehound Runt|q 5542/1
+		.kill 30 Plaguebat|q 5543/1
+		.kill Carrion Grubs|n
+		.get 15 Slab of Carrion Worm Meat|q 5544/1
+	step
+		'Go north up the river to 7.6,43.7|goto 7.6,43.7
 		.talk Tirion Fordring##1855
 		..turnin Demon Dogs##5542
 		..turnin Blood Tinged Skies##5543
@@ -9198,60 +9164,62 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 		..turnin Redemption##5742
 		..accept Of Forgotten Memories##5781
 	step
-		goto 23,68.2
+		goto 26.5,74.7
 		.kill Nathanos Blightcaller|q 6187/1
 	step
-		goto 24.6,79.9
+		goto 28.4,86.9
+		'Search Tirion Fordring's Grave for Taelan's Hammer
 		.get Taelan's Hammer|q 5781/1
 	step
-		goto 24.4, 79.2
-		.accept Hameya's Plea##6024
+		goto 27.5,84.9
+		.'Click the Scroll on the ground
+		..accept Hameya's Plea##6024
 		.from Zaeldarr the Outcast##12250
 		..get Zaeldarr's Head|q 6021/1
 	step
-		'Go north up the coast to 4.7,38.4|goto Eastern Plaguelands,4.7,38.4
+		'Go north up the river to 7.6,43.7|goto 7.6,43.7
 		.talk Tirion Fordring##1855
 		..turnin Of Forgotten Memories##5781
 		..accept Of Lost Honor##5845
 	step
-		goto 73.8,57.8
+		goto 79.5,63.9
 		.talk Caretaker Alen##11038
 		..turnin Zaeldarr the Outcast##6021
 	step
-		goto 75.7,53.9
+		goto 81.5,59.8
 		.talk Carlin Redpath##11063
 		..accept Defenders of Darrowshire##5211
 		..turnin Brother Carlin##5210
 		..accept Villains of Darrowshire##5181
 		..accept Heroes of Darrowshire##5168
 	step
-		goto 66,29.1
+		goto 71.3,34
 		.get Symbol of Lost Honor|q 5845/1
 	step
-		goto 65.3,12.3
+		goto 70.7,16.5
 		.from Infiltrator Hameya##12248
 		..get Hameya's Key|q 6024/1
 	step
-		goto 67.3,11.4
+		goto 72.7,15.5
 		.get Fourth Mosh'aru Tablet|q 5065/2
 	step
-		goto 66.9,8.8
+		goto 72.3,12.9
 		.get Third Mosh'aru Tablet|q 5065/1
 	step
-		goto 41.6,29.6
+		goto 42.8,34.2
 		.'Click Large Termite Mound
 		..get 100 Plagueland Termites|q 5903/1
 	step
-		goto 46.5,44.4
+		goto 51.1,49.9
 		.get Skull of Horgus|q 5181/1
 	step
-		goto 49.2,59.6
+		goto 53.9,65.8
 		.get Shattered Sword of Marduk|q 5181/2
 	step
-		goto 24.4,79.2
+		goto 28,86.2
 		.turnin Hameya's Plea##6024
 	step
-		'Go north up the coast to 4.7,38.4|goto Eastern Plaguelands,4.7,38.4
+		'Go north up the river to 7.6,43.7|goto 7.6,43.7
 		.talk Tirion Fordring##1855
 		..turnin Of Lost Honor##5845
 		..accept Of Love and Family##5846
@@ -9259,34 +9227,102 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 		goto Western Plaguelands,63.8,57.2
 		.get Redpath's Shield|q 5168/2
 	step
+		goto 50.0,30.4|n
+		.' The path down to Kirsta Deepshadow starts here|goto Western Plaguelands,50.0,30.4,0.5|noway|c
+	step
+		goto 51.9,28
+		.talk Kirsta Deepshadow##11610
+		..accept Unfinished Business (1)##6004
+	step
+		goto 50.3,41.5
+		.kill 2 Scarlet Knight|q 6004/4
+		.kill 2 Scarlet Mage|q 6004/3
+	step
+		goto 51.1,43.7
+		.kill 2 Scarlet Hunter|q 6004/2
+		.kill 2 Scarlet Medic|q 6004/1
+	step
+		goto 51.9,28
+		.talk Kirsta Deepshadow##11610
+		..turnin Unfinished Business (1)##6004
+		..accept Unfinished Business (2)##6023
+	step
+		goto 56.4,34.0|n
+		.' The path up to Huntsman Radley starts here|goto Western Plaguelands,56.4,34.0,0.5|noway|c
+	step
+		goto 57.7,36.3
+		.kill Huntsman Radley|q 6023/1
+	step
+		goto 54.2,24.2
+		.kill 1 Cavalier Durgen|q 6023/2|tip Stay in front of the tower. Cavalier Durgen will eventually walk out of the tower down the front.
+		.' Go to the top of the tower
+		.' Click the small brown chest
+		.get Mark of the Lightbringer|q 9474/1
+	step
+		goto 52.8,25.2|n
+		.' Jump off the cliff down to Kirsta Deepshadow|goto Western Plaguelands,52.8,25.2,0.3|noway|c
+	step
+		goto 51.9,28
+		.talk Kirsta Deepshadow##11610
+		..turnin Unfinished Business (2)##6023
+		..accept Unfinished Business (3)##6025
+	step
 		goto 42.5,19
 		.get Davil's Libram|q 5168/1
+	step
+		goto 45.8,18.3
+		.goal Overlook Hearthglen from a high vantage point|q 6025/1
+	step
+		goto 51.9,28
+		.talk Kirsta Deepshadow##11610
+		..turnin Unfinished Business (3)##6025
 	step
 		goto 65.8,75.4
 		.talk Artist Renfray##11936
 		..turnin Of Love and Family##5846
 		..accept Of Love and Family##5848
 	step
+		goto 42.7,83.8
+		.talk Alchemist Arbington##11056
+		..turnin Araj's Scarab##5803
+	step
 		goto 42.7,84
 		.talk Commander Ashlam Valorfist##10838
 		..turnin Alas, Andorhal##211
+		..accept The Key to Scholomance##5505|instant
+	step
+		goto 43.4,84.8
+		.talk Nathaniel Dumah##11616
+		..turnin A Plague Upon Thee (1)##5903
+	step
+		.'WARNING: ESCORT
+		goto 42.9,84.5
+		.talk Anchronite Truuen##17238
+		..turnin The Mark of the Lightbringer##9474
+		..accept Tomb of the Lightbringer##9446|noautoaccept
+	step
+		goal Escort Anchorite Truuen to Uther's Tomb|q 9446/1
+	step
+		goto 42.9,84.5
+		.talk High Priestess MacDonnell##11053
+		..turnin Tomb of the Lightbringer##9446
 	step
 		'Fly to Light's Hope Chapel|goto Eastern Plaguelands|noway|c
 	step
-		goto 75.7,53.9
+		goto 81.5,59.8
 		.talk Carlin Redpath##11063
 		..turnin Villains of Darrowshire##5181
 		..turnin Heroes of Darrowshire##5168
 		..accept Marauders of Darrowshire##5206
 	step
-		goto 76.5,37.4
+		goto 80.8,43.4
 		kill Scourge Champion|n
 		.get 5 Resonating Skulls|use Mystic Crystal##13156|q 5206/1
 		kill Disease Flayer|n
 		.goal 15 Darrowshire Spirits Freed|q 5211/1
-		.' You can find more Disease Flayers at 62.3,36.4|n
+		.' You can find more Disease Flayers at 65.5,39.7|n
 	step
-		goto 75.7,53.9
+		goto 81.5,59.8
 		.talk Carlin Redpath##11063
 		..turnin Defenders of Darrowshire##5211	
 		..turnin Marauders of Darrowshire##5206
@@ -9294,24 +9330,20 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 	step
 		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
 	step
-		goto 43.4,84.8
-		.talk Nathaniel Dumah##11616
-		..turnin A Plague Upon Thee (1)##5903
-	step
 		goto 39.5,66.8
 		.talk Chromie##10667
 		..turnin Return to Chromie##5941
 		..accept The Battle of Darrowshire##5721
 	step
-		goto Eastern Plaguelands,35,84
+		goto Eastern Plaguelands,39.3,91.6
 		.goal Accept Redpath's Forgiveness|q 5721/1|use Relic Bundle##15209
 	step
-		goto 32.5,83.6
+		goto 36.5,90.8
 		.talk Pamela Redpath##10926
 		..turnin The Battle of Darrowshire##5721
 		..accept Hidden Treasures##5942
 	step
-		goto 32.2,83.4
+		goto 36.2,90.6
 		..turnin Hidden Treasures##5942
 	step
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
@@ -9664,30 +9696,30 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 	step
 		'Fly to Light's Hope Chapel|goto Eastern Plaguelands|noway|c
 	step
-		goto 75.7,53.9
+		goto 81.4,59.8
 		.talk Duke Nicholas Zverenhoff##11039
 		..accept The Archivist##5251
 	step
-		goto 75.7,53.7
+		goto 81.5,59.7
 		.talk Betina Bigglezink##11035
 		..accept The Flesh Does Not Lie##5212
 	step
-		goto 75.9,52
+		goto 81.7,57.8
 		.talk Leonid Barthalomew the Revered##11036
 		..accept Houses of the Holy##5243
 	step
 		'WARNING: EVERYONE IN GROUP SHOULD DO THIS
 		home Light's Hope Chapel
 	step
-		goto 74.9,52.1
+		goto 80.6,58
 		.talk Smokey LaRue##11033
 		..accept The Great Fras Siabi##5214
 	step
-		goto 73.8,57.8
+		goto 79.5,63.9
 		.talk Caretaker Alen##11038
 		..accept The Restless Souls (1)##5281
 	step
-		goto 11.3,28.8
+		goto 14.4,33.7
 		.talk Egan##11140
 		..turnin The Restless Souls (1)##5281
 		..accept The Restless Souls (2)##5282
@@ -9714,20 +9746,20 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 		'Kill Magister Barthilas for the key to the city, and give the Medallion of Faith to Aurius
 		'Hearth to Light's Hope Chapel|goto Eastern Plaguelands|use Hearthstone##6948|noway|c
 	step
-		goto 75.7,53.9
+		goto 81.4,59.8
 		.talk Duke Nicholas Zverenhoff##11039
 		..turnin The Archivist##5251
 	step
-		goto 75.7,53.7
+		goto 81.5,59.7
 		.talk Betina Bigglezink##11035
 		..turnin The Flesh Does Not Lie##5212
 		..accept The Active Agent##5213
 	step
-		goto 74.9,52.1
+		goto 80.6,58
 		.talk Smokey LaRue##11033
 		..turnin The Great Fras Siabi##5214
 	step
-		goto 11.3,28.8
+		goto 14.4,33.7
 		.talk Egan##11140
 		..turnin The Restless Souls (2)##5282
 	step
@@ -9739,7 +9771,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 		..accept The Truth Comes Crashing Down##5262
 	step
 		'Travel back to Light's Hope Chapel
-		goto Eastern Plaguelands,75.7,53.9
+		goto Eastern Plaguelands,81.4,59.8
 		.talk Duke Nicholas Zverenhoff##11039
 		..turnin The Truth Comes Crashing Down##5262
 		..accept Above And Beyond##5263
@@ -9756,29 +9788,29 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\TBC 
 		..accept Aurius' Reckoning##5125|instant
 	step
 		'Travel back to Light's Hope Chapel, hearth if you can
-		goto Eastern Plaguelands,75.7,53.9
+		goto Eastern Plaguelands,81.4,59.8
 		.talk Duke Nicholas Zverenhoff##11039
 		..turnin Above And Beyond##5263
 		..accept Lord Maxwell Tyrosus##5264
 	step
-		goto 75.7,53.7
+		goto 81.5,59.7
 		.talk Betina Bigglezink##11035
 		..turnin The Active Agent##5213
 	step
-		goto 76,52.1
+		goto 81.7,58
 		.talk Lord Maxwell Tyrosus##11034
 		..turnin Lord Maxwell Tyrosus##5264
 		..accept The Argent Hold##5265
 	step
-		goto 76,52.1
+		goto 81.8,58
 		.talk The Argent Hold
 		..turnin The Argent Hold##5265
 	step
-		goto 75.9,52
+		goto 81.7,57.8
 		.talk Leonid Barthalomew the Revered##11036
 		..turnin Houses of the Holy##5243
 	step
-		goto 4.7,38.4
+		'Go north up the river to 7.6,43.7|goto 7.6,43.7
 		.talk Tirion Fordring##1855
 		..turnin Of Love And Family##5848
 		..accept Find Myranda##5861
