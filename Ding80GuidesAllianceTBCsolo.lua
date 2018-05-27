@@ -448,6 +448,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		.kill 6 Ice Claw Bear|q 319/1
 		.kill 8 Elder Crag Boar|q 319/2
 		.kill 8 Snow Leopard|q 319/3
+		.collect 4 Chunk of Boar Meat|q 86|future|tip Save these for 'Pie for Billy' later.
 	step
 		goto 30.2,45.6
 		.talk Rejold Barleybrew##1374
@@ -2377,7 +2378,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		.from Goretusk##157+, Young Goretusk##454+
 		.get 8 Goretusk Liver|q 22/1
 		.get 3 Goretusk Snout|q 38/3
-		.collect 3 Boar Intestines |q 418 |future
+		.collect 3 Boar Intestines |q 418 |future|tip Save these for 'Thelsamar Blood Sausages' later. 
 	step
 		goto 59,43.7
 		.from Fleshripper##1109+
@@ -2587,7 +2588,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		'Go east to Redridge Mountains|goto Redridge Mountains|noway|c
 	step
-		goto Redridge Mountains,15.3,71.5
+		goto 12.6,78.2
+		.from Tarantula##442+|tip Skip this step if there's no Spiders around, keep killing them as you met them in your travels.
+		.collect 5 Crisp Spider Meat|q 92|future
+		.collect 3 Spider Ichor|q 418|future|tip Save these for 'Redridge Goulash' and 'Thelsamar Blood Sausages' later, respectively.
+	step
+		goto 15.3,71.5
 		.talk Guard Parker##464
 		..accept Encroaching Gnolls##244
 	step
