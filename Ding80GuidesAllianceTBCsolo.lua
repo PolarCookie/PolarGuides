@@ -5687,7 +5687,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Strahad Farsan##6251
 		..turnin Tome of the Cabal##1804
 		..accept The Binding##1795
-		.talk Menera Voidrender##6266
+		.talk Menara Voidrender##6266
 		..turnin Knowledge of the Orb of Orahil##4965
 		only Warlock
 	step
@@ -9906,6 +9906,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Get close to the ribcage of the skeleton and next to the poisoned water
 		.' Empty your Cleansing Vial in this spot|use Cleansing Vial##23361
 		.' Kill Aggonis|goal Aggonar's Presence Cleansed|q 9427/1
+		.kill 10 Terrorfiend|q 10399/1
 	step
 		'You're gonna need a group for this
 		goto 43.63,31.69
@@ -10241,6 +10242,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 78.3,45.2
 		.kill 12 Withered Giant|q 9783/1
+		.collect 6 Bog Lord Tendrils|q 9743|future|tip Save these for 'Natural Enemies' later.
 	step
 		goto 68.3,50.1
 		.talk Vindicator Idaar##18004
@@ -10369,7 +10371,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 29.6,28.3
 		.kill 5 Ango'rosh Shaman|q 9835/1
 		.kill 10 Ango'rosh Ogre|q 9835/2
-		.collect 10 Glowcap|n|tip You'll come back here later.
+		.collect 10 Glowcap##24245|q 9808|future|tip You'll come back here later for Glowcaps.
 	step
 		goto 41.2,28.7
 		.talk Timothy Daniels##18019
@@ -10429,6 +10431,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 19.1,63.9
 		.talk Fahssn##17923
+		..'You need to be Neutral with Sporeggar, if you're not; come back here after doing 'A Question of Gluttony'.
 		..'Turn in all your Mature Spore Sacs
 		..'Turn in all your Bog Lord Tendrils
 		..accept Sporeggar##9919
@@ -10566,27 +10569,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill Fenglow Stingers|n
 		.get 8 Diaphanous Wing|q 9790/1
 	step
+		goto 22.4,46.1
+		.kill Terrorclaw|q 9902/1|tip On a little island.
+	step
 		goto 19.7,52.1
 		.talk Msshi'fn##17924
 		..turnin Sporeggar##9919
 		..accept Glowcap Mushrooms##9808
 		..turnin Glowcap Mushrooms##9808
 	step
-		goto 19.5,50
-		.talk Gzhun'tt##17856
-		..accept Now That We're Friends...##9726
-	step
 		goto 19.2,49.4
 		.talk Gshaff##17925
 		..accept Fertile Spores##9806
-		..turnin Fertile Spores##9806
-	step
-		goto 22.4,46.1
-		.kill Terrorclaw|q 9902/1|tip On a little island.
-	step
-		goto 26.8,43
-		.kill 12 Bloodscale Slavedriver|q 9726/1
-		.kill 6 Bloodscale Enchantress|q 9726/2
 	step
 		goto 23.3,66.2
 		.talk Watcher Leesa'oh##17831
@@ -10612,6 +10606,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get 4 Sporebat Eye|q 9801/1
 		.kill Fen Striders|n
 		.get 4 Fen Strider Tentacle|q 9801/2
+		.get 6 Fertile Spores|q 9806/1
 	step
 		goto 68.2,49.4
 		.talk Anchorite Ahuurn##18003
@@ -10647,9 +10642,26 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Click the brown crates and kill ogres around this area
 		.get 10 Box of Mushrooms|q 9709/1
 	step
+		goto 20.4,16.5
+		'You need to be Friendly with Sporeggar, which most likely means 2 turnins of Fertile spores, 750 rep each time, 6 Fertile Spores each time.
+		.from Greater Sporebat##18129+
+		..collect 12 Fertile Spores|q 9806
+	step
 		goto 41.9,27.2
 		.talk Ikuti##18008
 		..turnin Overlord Gorefist##9839
+	step
+		goto 19.2,49.4
+		.talk Gshaff##17925
+		..turnin Fertile Spores##9806
+	step
+		goto 19.5,50
+		.talk Gzhun'tt##17856
+		..accept Now That We're Friends...##9726
+	step
+		goto 26.8,43
+		.kill 12 Bloodscale Slavedriver|q 9726/1
+		.kill 12 Bloodscale Enchantress|q 9726/2
 	step
 		goto 19.5,50
 		.talk Gzhun'tt##17856
@@ -10778,17 +10790,46 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 54.8,44.3
 		.talk Khadgar##18166
 		..turnin City of Light##10211
-		..accept Allegiance to the Aldor##10551 |instant
+	step
+		'Pick a side between the Aldor or the Scyers
+	step
+		goto 54.8,44.3
+		.talk Khadgar##18166
 		..accept Ishanah##10554
+		only if rep('The Aldor')>=Friendly
 	step
 		'Ride the elevator up to the Aldor Rise|goto Shattrath City,41.7,38.6,0.5|c
+		only if rep('The Aldor')>=Friendly
 	step
 		goto 24,29.7
 		.talk Ishanah##18538
 		..turnin Ishanah##10554
 		..accept Restoring the Light##10021
+		only if rep('The Aldor')>=Friendly
+	step
+		goto 54.8,44.3
+		.talk Khadgar##18166
+		..accept Voren'thal the Seer##10553
+		only if rep('The Scryers')>=Friendly
+	step
+		'Ride the elevator up to the Scryer Rise|goto Shattrath City,50,62.8,0.5|c
+		only if rep('The Scryers')>=Friendly
+	step
+		goto 47,83.5
+		.talk Magister Falris##19485
+		..accept Losing Gracefully##10169
+		only if rep('The Scryers')>=Friendly
+	step
+		goto 42.8,91.7
+		.talk Voren'thal the Seer##18530
+		..turnin Voren'thal the Seer##10553
+		only if rep('The Scryers')>=Friendly
 	step
 		home Shattrath City
+	step
+		goto 61.5,51.1
+		.turnin Losing Gracefully##10169
+		only if rep('The Scryers')>=Friendly
 	step
 		'Take the appropriate capitol portal and train your skills
 	step
@@ -10801,10 +10842,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 55,22.5
 		.talk Arcanist Adyria##18596
 		..accept Voren'thal's Visions##10024
+		only if rep('The Scryers') < Neutral
 	step
 		goto 64.6,15.2
 		.talk Sha'nir##18597
 		..accept A Cure for Zahlia##10020
+		only if rep('The Aldor') >= Friendly
+	step
+		goto 64.6,15.2
+		.talk Sha'nir##18597
+		..accept Strained Supplies##10017
+		only if rep('The Aldor') < Neutral
 	step
 		goto 72.2,30.7
 		.talk Wind Trader Lathrai##18484
@@ -10820,6 +10868,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 48.1,14.5
 		.' Click the Western Altar
 		.' Purify the Western Altar|goal Western Altar|q 10021/3
+		only if rep('The Aldor')>=Friendly
 	step
 		goto 49.1,16.9
 		.kill Ashkaz##18539|q 9986/1
@@ -10831,10 +10880,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 50.7,16.6
 		.' Click the Northern Altar
 		.' Purify the Northern Altar|goal Northern Altar|q 10021/1
+		only if rep('The Aldor')>=Friendly
 	step
 		goto 49.2,20.3
 		.' Click the Eastern Altar
 		.' Purify the Eastern Altar|goal Eastern Altar|q 10021/2
+		only if rep('The Aldor')>=Friendly
 	step
 		goto 57.9,23.2
 		.' Click the Eye of Veil Shienor|tip Climb the path inside the other tree, run across the bridge, looks like a big white orb on the ground.
@@ -10850,23 +10901,26 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 60.4,29.1
 		.from Stonegazer##18648
 		..get Stonegazer's Blood|q 10020/1
+		only if rep('The Aldor')>=Friendly
 	step
 		goto 63,33.67
 		.' Click the Olemba Cones|tip The cones look like little white glowing pine cones on the ground.
 		.get 30 Olemba Seed|q 9992/1
 		.kill 10 Warp Stalker|q 10026/1
-		.' Kill Basilisks
-		.get 8 Dampscale Basilisk Eye|q 10024/1|tip Don't fight Ironspine Chompers, they don't drop eyes.
+		.' Kill Basilisks|only if rep('The Scryers') < Neutral
+		.get 8 Dampscale Basilisk Eye|q 10024/1|tip Don't fight Ironspine Chompers, they don't drop eyes.|only if rep('The Scryers') < Neutral
 	step
 		'Hearth to Shattrath City|goto Shattrath City|use Hearthstone##6948|noway|c
 	step
 		goto Shattrath City,24,29.7
 		.talk Ishanah##18538
 		..turnin Restoring the Light##10021
+		only if rep('The Aldor')>=Friendly
 	step
 		goto 55,22.5
 		.talk Arcanist Adyria##18596
 		..turnin Voren'thal's Visions##10024
+		only if rep('The Scryers') < Neutral
 	step
 		goto 52.6,21
 		.talk Rilak the Redeemed##22292
@@ -10880,6 +10934,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 64.6,15.2
 		.talk Sha'nir##18597
 		..turnin A Cure for Zahlia##10020
+		only if rep('The Aldor') >= Friendly
 	step
 		'Go southeast out to Terokkar Forest|goto Terokkar Forest|noway|c
 	step
@@ -11249,6 +11304,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 52.84,78.55
 		.kill 20 Dreadfang Widow|q 10920/1
+		.get 8 Dreadfang Venom Sac|q 10017/1|only if rep('The Aldor') < Neutral
 		.' Kill webs as you see them|goal 6 Sha'tar Warrior Freed|q 10873/1
 	step
 		goto 49.7,76.2
@@ -11305,6 +11361,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk "Dirty" Larry##19720
 		..turnin What Book? I Don't See Any Book.##10231
 		..accept The Master's Grand Design?##10251
+	step
+		goto 64.6,15.2
+		.talk Sha'nir##18597
+		..turnin Strained Supplies##10017
+		only if rep('The Aldor') < Neutral
 	step
 		'Go train and Hearth back.
 ]])
