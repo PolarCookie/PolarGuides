@@ -448,6 +448,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		.kill 6 Ice Claw Bear|q 319/1
 		.kill 8 Elder Crag Boar|q 319/2
 		.kill 8 Snow Leopard|q 319/3
+		.collect 4 Chunk of Boar Meat|q 86|future|tip Save these for 'Pie for Billy' later.
 	step
 		goto 30.2,45.6
 		.talk Rejold Barleybrew##1374
@@ -971,7 +972,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		.from Goretusk##157+, Young Goretusk##454+
 		.get 8 Goretusk Liver|q 22/1
 		.get 3 Goretusk Snout|q 38/3
-		.collect 3 Boar Intestines |q 418 |future
+		.collect 3 Boar Intestines |q 418 |future|tip Save these for 'Thelsamar Blood Sausages' later. 
 	step
 		goto 59,43.7
 		.from Fleshripper##1109+
@@ -1181,7 +1182,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 	step
 		'Go east to Redridge Mountains|goto Redridge Mountains|noway|c
 	step
-		goto Redridge Mountains,15.3,71.5
+		goto 12.6,78.2
+		.from Tarantula##442+|tip Skip this step if there's no Spiders around, keep killing them as you met them in your travels.
+		.collect 5 Crisp Spider Meat|q 92|future
+		.collect 3 Spider Ichor|q 418|future|tip Save these for 'Redridge Goulash' and 'Thelsamar Blood Sausages' later, respectively.
+	step
+		goto 15.3,71.5
 		.talk Guard Parker##464
 		..accept Encroaching Gnolls##244
 	step
@@ -2105,7 +2111,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 18.1,39.8
 		.from Gobbler##1259
-		.get Gobbler's Head|q 279/2
+		..get Gobbler's Head|q 279/2
 	step
 		goto 13.8,41.9
 		.kill 12 Bluegill Murloc|q 279/1
@@ -2296,7 +2302,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 85.7,69.5
 		.' Click Marshal Haggard's Chest|tip It's a brown chest on the floor next to a bed, upstairs in this house.
-		.get A Faded Journal Page|q 75/1
+		..get A Faded Journal Page|q 75/1
 	step
 		goto 84.6,69.4
 		.talk Marshal Haggard##294
@@ -4430,7 +4436,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Strahad Farsan##6251
 		..turnin Tome of the Cabal##1804
 		..accept The Binding##1795
-		.talk Menera Voidrender##6266
+		.talk Menara Voidrender##6266
 		..turnin Knowledge of the Orb of Orahil##4965
 		only Warlock
 	step
@@ -5912,7 +5918,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Cortello's Riddle (2)##625
 		..accept Cortello's Riddle (3)##626
 	step
-		goto Dustwallow Marsh,46.1,57.2
+		goto 46.1,57.2
 		.talk Tabetha##6546
 		..turnin Tabetha's Task##2861
 		..accept Tiara of the Deep##2846
@@ -11445,7 +11451,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 37.5,50.8
 		.talk High Priest Orglum##22278
 		..accept The Tomb of Lights##10840
-		..accept Vengeful Souls##10842
+		..accept The Vengeful Harbinger##10842
 	step
 		goto 39.59,58.52
 		.kill 8 Cabal Skirmisher|q 10878/1
@@ -11455,10 +11461,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.' Click the Cabal Orders|use Cabal Orders##31707
 		..accept Cabal Orders##10880
 	step
+		goto 51,54.8
+		'Summon the Draenei Tomb Guardian|use Draenei Tomb Relic##30527|c|q 10842
+	step
+		talk Draenei Ascendant##184830
+		..turnin The Vengeful Harbinger##10842
+	step
 		goto 46.3,56.5
 		.kill 10 Ethereal Nethermancer|q 10840/1
 		.kill 10 Ethereal Plunderer|q 10840/2
-		.kill 5 Vengeful Draenei|q 10842/1
 	step
 		goto Terokkar Forest,41.6,51.6
 		.kill 20 Bonelasher|q 10033/1
@@ -11472,7 +11483,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 37.5,50.8
 		.talk High Priest Orglum##22278
 		..turnin The Tomb of Lights##10840
-		..turnin Vengeful Souls##10842
 	step
 		goto 37.1,49.5
 		.talk Soolaveen##18675
@@ -11636,12 +11646,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.get Gavel of K'alen|q 10881/2
 	step
 		goto 32.1,51.2
-		.' Click the Cabal Chest|tip Inside the Shadow Tomb, inside a Cabal Chest in the back left of the room on the ground.
-		.get Scroll of Atalor|q 10881/3
-	step
-		goto 31.2,46.7
 		.' Click the Cabal Chest|tip Inside the Shadow Tomb, inside a Cabal Chest in the back right of the room on the ground.
 		.get Drape of Arunen|q 10881/1
+	step
+		goto 31.2,46.7
+		.' Click the Cabal Chest|tip Inside the Shadow Tomb, inside a Cabal Chest in the back left of the room on the ground.
+		.get Scroll of Atalor|q 10881/3
 	step
 		.'WARNING: ESCORT
 		goto 30.6,49.1
@@ -11667,13 +11677,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		.'WARNING: ESCORT
 		goto 31,76.1
-		.talk Commander Ra'vaj##22446
-		..accept An Improper Burial##10913
 		.talk Chief Archaeologist Letoll##22458
 		..accept Digging Through Bones##10922|noautoaccept
-		..'Escort the Archaeologists|goal Protect the Explorers|q 10922/1
+	step
+		'Escort the Archaeologists|goal Protect the Explorers|q 10922/1
 	step
 		goto 31,76.1
+		.talk Commander Ra'vaj##22446
+		..accept An Improper Burial##10913
 		.talk Dwarfowitz##22481
 		..turnin Digging Through Bones##10922
 		..accept Fumping##10929

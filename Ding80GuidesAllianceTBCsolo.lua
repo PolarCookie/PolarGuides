@@ -10812,7 +10812,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Voren'thal the Seer##10553
 		only if rep('The Scryers')>=Friendly
 	step
-		'Ride the elevator up to the Scryer Rise|goto Shattrath City,50,62.8,0.5|c
+		'Ride the elevator up to the Scryer's Tier|goto Shattrath City,50,62.8,0.5|c
 		only if rep('The Scryers')>=Friendly
 	step
 		goto 47,83.5
@@ -11212,12 +11212,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get Gavel of K'alen|q 10881/2
 	step
 		goto 32.1,51.2
-		.' Click the Cabal Chest|tip Inside the Shadow Tomb, inside a Cabal Chest in the back left of the room on the ground.
-		.get Scroll of Atalor|q 10881/3
-	step
-		goto 31.2,46.7
 		.' Click the Cabal Chest|tip Inside the Shadow Tomb, inside a Cabal Chest in the back right of the room on the ground.
 		.get Drape of Arunen|q 10881/1
+	step
+		goto 31.2,46.7
+		.' Click the Cabal Chest|tip Inside the Shadow Tomb, inside a Cabal Chest in the back left of the room on the ground.
+		.get Scroll of Atalor|q 10881/3
 	step
 		.'WARNING: ESCORT
 		goto 30.6,49.1
@@ -11243,13 +11243,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		.'WARNING: ESCORT
 		goto 31,76.1
-		.talk Commander Ra'vaj##22446
-		..accept An Improper Burial##10913
 		.talk Chief Archaeologist Letoll##22458
 		..accept Digging Through Bones##10922|noautoaccept
-		..'Escort the Archaeologists|goal Protect the Explorers|q 10922/1
+	step
+		'Escort the Archaeologists|goal Protect the Explorers|q 10922/1
 	step
 		goto 31,76.1
+		.talk Commander Ra'vaj##22446
+		..accept An Improper Burial##10913
 		.talk Dwarfowitz##22481
 		..turnin Digging Through Bones##10922
 		..accept Fumping##10929
