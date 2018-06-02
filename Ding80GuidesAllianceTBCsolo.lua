@@ -11283,10 +11283,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 36.7,74.4
 		.kill 12 Auchenai Initiate|q 10914/1
-		.kill 5 Auchenai Doomsayer|q 10914/2
-	step
-		goto 43.9,76.4
-		.get Dread Relic|q 10877/1
+		.kill 5 Auchenai Doomsayer|q 10914/2|tip Travel clockwise around Auchindun, see destination of next step. You can skip to the next step if there are no mobs around and come back here later.
 	step
 		goto 35.1,65.1
 		.talk Ha'lei##19697
@@ -11299,22 +11296,27 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin I See Dead Draenei##10227
 		..accept Ezekiel##10228
 	step
+		goto 43.9,76.4
+		.get Dread Relic|q 10877/1
+	step
 		goto 49.7,76.2
 		.talk Vindicator Haylen##22462
 		..accept For the Fallen##10920
 	step
 		goto 52.84,78.55
-		.kill 20 Dreadfang Widow|q 10920/1
-		.get 8 Dreadfang Venom Sac|q 10017/1|only if rep('The Aldor') < Neutral
 		.' Kill webs as you see them|goal 6 Sha'tar Warrior Freed|q 10873/1
+	step
+		goto 56.1,60.3
+		.kill 20 Dreadfang Widow|q 10920/1
+		..get 8 Dreadfang Venom Sac|q 10017/1|only if rep('The Aldor') < Neutral
+	step
+		goto 47.5,76.5
+		.kill 10 Lost Spirit|q 10031/1
+		.kill 10 Broken Skeleton|q 10031/2
 	step
 		goto 49.7,76.2
 		.talk Vindicator Haylen##22462
 		..turnin For the Fallen##10920
-	step
-		goto 38.23,78.51
-		.kill 10 Lost Spirit|q 10031/1
-		.kill 10 Broken Skeleton|q 10031/2
 	step
 		goto 31.1,76.5
 		.talk Oakun##22456
