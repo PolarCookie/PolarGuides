@@ -11427,7 +11427,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.get Veil Skith Prison Keys|n
 		.' Click the yellow cages around this area
 		.' Rescue 12 Children|goal 12 Children Rescued|q 10852/1
-		.get 30 Arakkoa Feather|q 10917/1
 	step
 		goto 35.2,48.8
 		.kill Infested Root-walkers|n
@@ -11471,7 +11470,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.kill 10 Ethereal Nethermancer|q 10840/1
 		.kill 10 Ethereal Plunderer|q 10840/2
 	step
-		goto Terokkar Forest,41.6,51.6
+		goto 41.6,51.6
 		.kill 20 Bonelasher|q 10033/1
 	step
 		goto 37.4,51.2
@@ -11489,10 +11488,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept Recover the Bones##10030
 	step
 		'Hearth to Shattrath City|goto Shattrath City|use Hearthstone##6948|noway|c
-	step
-		goto 46.2,22.4
-		.talk Vekax##22429
-		..turnin The Outcast's Plight##10917
 	step
 		goto Shattrath City,72.2,30.7
 		.talk Wind Trader Lathrai##18484
@@ -11799,8 +11794,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Soolaveen##18675
 		..turnin Helping the Lost Find Their Way##10031
 	step
-		'WARNING: ESCORT
-		goto 53,8,72.4
+		'WARNING: GROUP ESCORT
+		goto 53.8,72.4
 		.talk Skywing##22424
 		..accept Skywing##10898|noautoaccept
 	step
@@ -11810,6 +11805,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 56.7,69.2
 		.goal Violet Fire Extinguished|q 10874/3
 	step
+		'WARNING: Pull and kill all mobs on this platform before Skywing crosses the bridge; Luanga the Imprisoner (elite) will spawn!
 		goto 55.5,69.8
 		.goal Emerald Fire Extinguished|q 10874/2
 	step
@@ -11817,6 +11813,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.goal Sapphire Fire Extinguished|q 10874/1
 	step
 		goal Escort Skywing|q 10898/1
+	step
+		'Go back up the hill and kill Arakkoa
+		.get 30 Arakkoa Feather|q 10917/1
 	step
 		goto 48.7,67.2
 		.kill Auchenai Death-Speaker, Auchenai Doomsayer|n
@@ -11868,6 +11867,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 52.5,21
 		.talk Rilak the Redeemed##22292
 		..turnin The Skettis Offensive##10879
+	step
+		goto 46.2,22.4
+		.talk Vekax##22429
+		..turnin The Outcast's Plight##10917
 	step
 		goto 64.6,15.2
 		.talk Sha'nir##18597
@@ -11962,15 +11965,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 64,45.1
 		.kill 30 Clefthoof|q 9789/1
-		.' Kill Elekks
-		.collect 3 Pair of Ivory Tusks##25463|q 9914 |future
+		.' Kill Elekks|only if rep('The Consortium') < Friendly
+		..collect 3 Pair of Ivory Tusks##25463|q 9914 |future|only if rep('The Consortium') < Friendly
 		.' Kill Dust Howlers
-		.get 3 Air Elemental Gas|q 10109/1
-		.get Howling Wind|n
-		.' Click the Howling Wind|use Howling Wind##24504
-		..accept The Howling Wind##9861
+		..get 3 Air Elemental Gas|q 10109/1
+		..get Howling Wind|n
+		..' Click the Howling Wind|use Howling Wind##24504
+		...accept The Howling Wind##9861
 		.' You can find more Clefthoofs, Elekks, and Dust Howlers at 70.8,46.4|n
-		.kill 10 Tortured Earth Spirit|q 9819/1
+		.kill 15 Tortured Earth Spirit|q 9819/1
 	step
 		goto 71.6,40.5
 		.talk Shado "Fitz" Farstrider##18200
@@ -12000,7 +12003,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 52,20.2
 		.' Kill Enraged Crushers
-		.get 10 Enraged Crusher Core|q 9821/1
+		.get 15 Enraged Crusher Core|q 9821/1
 	step
 		goto 51.6,30.8
 		.kill 30 Clefthoof Bull|q 9850/1
@@ -12049,7 +12052,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin I Must Have Them!##10109
 		..accept Bring Me The Egg!##10111
 	step
-		get Severed Talon of the Matriarch|q 10111/1
+		goal Attempt to Steal the Egg|q 10111/1
+		get Severed Talon of the Matriarch|q 10111/2
 	step
 		goto 61.7,67.1
 		.talk Wazat##19035
@@ -12169,9 +12173,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goal Free the Kurenai Captive|q 9879/1
 	step
 		goto 32.58,42.35
-		.kill 10 Murkblood Scavenger|q 9878/1
-		.kill 5 Murkblood Raider|q 9878/2
-		.kill 5 Murkblood Putrifier|q 9862/1
+		.kill 20 Murkblood Scavenger|q 9878/1
+		.kill 10 Murkblood Raider|q 9878/2
+		.kill 8 Murkblood Putrifier|q 9862/1
 	step
 		goto 27.3,43.1
 		.talk Altruis the Sufferer##18417
@@ -12224,17 +12228,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 31.4,57.8
 		.talk Gezhe##18265
 		..turnin The Consortium Needs You!##9913
-		..accept Stealing from Thieves##9882
+		..accept Stealing from Thieves##9882|only if rep('The Consortium') < Friendly
 	step
 		goto 31.8,56.8
 		.talk Shadrek##18333
 		..accept A Head Full of Ivory##9914
 		..turnin A Head Full of Ivory##9914
+		only if rep('The Consortium') < Friendly
 	step
 		goto 33.4,62.4
 		.' Click the Oshu'gun Crystal Fragments on the ground|tip They are the green and white crystals on the ground.
 		.' Kill the mobs here
 		.get 10 Oshu'gun Crystal Fragment|q 9882/1
+		only if rep('The Consortium') < Friendly
 	step
 		goto 30.6,67.5
 		.kill 12 Voidspawn|q 9925/1
@@ -12253,7 +12259,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 31.4,57.8
 		.talk Gezhe##18265
-		..turnin Stealing from Thieves##9882
+		..turnin Stealing from Thieves##9882|only if rep('The Consortium') < Friendly
 	step
 		goto 41.4,61.6
 		.from Banthar##18259

@@ -10997,7 +10997,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get Veil Skith Prison Keys|n
 		.' Click the yellow cages around this area
 		.' Rescue 12 Children|goal 12 Children Rescued|q 10852/1
-		.get 30 Arakkoa Feather|q 10917/1
 	step
 		goto 35.2,48.8
 		.kill Infested Root-walkers|n
@@ -11021,8 +11020,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 37.5,50.8
 		.talk High Priest Orglum##22278
 		..accept The Tomb of Lights##10840
-		..accept Vengeful Souls##10842
+		..accept The Vengeful Harbinger##10842
 	step
+		'Start looking for a group for 'The Vengeful Harbringer'
 		goto 39.59,58.52
 		.kill 8 Cabal Skirmisher|q 10878/1
 		.kill 4 Cabal Spell-weaver|q 10878/2
@@ -11031,12 +11031,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Click the Cabal Orders|use Cabal Orders##31707
 		..accept Cabal Orders##10880
 	step
+		goto 51,54.8
+		'You're gonna need help for this one, do the Ethereals until then.
+		'Summon the Draenei Tomb Guardian|use Draenei Tomb Relic##30527|c|q 10842
+	step
+		talk Draenei Ascendant##184830
+		..turnin The Vengeful Harbinger##10842
+	step
 		goto 46.3,56.5
 		.kill 10 Ethereal Nethermancer|q 10840/1
 		.kill 10 Ethereal Plunderer|q 10840/2
-		.kill 5 Vengeful Draenei|q 10842/1
 	step
-		goto Terokkar Forest,41.6,51.6
+		goto 41.6,51.6
 		.kill 20 Bonelasher|q 10033/1
 	step
 		goto 37.4,51.2
@@ -11048,17 +11054,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 37.5,50.8
 		.talk High Priest Orglum##22278
 		..turnin The Tomb of Lights##10840
-		..turnin Vengeful Souls##10842
 	step
 		goto 37.1,49.5
 		.talk Soolaveen##18675
 		..accept Recover the Bones##10030
 	step
 		'Hearth to Shattrath City|goto Shattrath City|use Hearthstone##6948|noway|c
-	step
-		goto 46.2,22.4
-		.talk Vekax##22429
-		..turnin The Outcast's Plight##10917
 	step
 		goto Shattrath City,72.2,30.7
 		.talk Wind Trader Lathrai##18484
@@ -11308,19 +11309,40 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 56.1,60.3
 		.kill 20 Dreadfang Widow|q 10920/1
-		..get 8 Dreadfang Venom Sac|q 10017/1|only if rep('The Aldor') < Neutral
-	step
-		goto 47.5,76.5
-		.kill 10 Lost Spirit|q 10031/1
-		.kill 10 Broken Skeleton|q 10031/2
+		..get 8 Dreadfang Venom Sac|q 10017/1|only if rep('The Aldor') < Neutral|tip Don't do Skywing just yet.
 	step
 		goto 49.7,76.2
 		.talk Vindicator Haylen##22462
 		..turnin For the Fallen##10920
+		..accept Terokkantula##10921
+	step
+		'You're gonna need a group for this, combine it with 'Big Bone Worm', 'Evil Draws Near' and 'Skywing' in that order.
+		goto 54.3,81.8
+		.kill Terokkarantula|q 10921/1
+	step
+		goto 49.7,76.2
+		.talk Vindicator Haylen##22462
+		..turnin Terokkantula##10921
+		..accept Return to Sha'tari Base Camp##10926
+	step
+		goto 48,76
+		.kill Decrepit Clefthoof|n
+		.'Use the Fumber on Decrepit Clefthoof corpse|use Fumper##31825
+		.kill Hai'shulud|n
+		..get Enormous Bone Worm Organs|q 10930/1
+	step
+		goto 38.23,78.51
+		.kill 10 Lost Spirit|q 10031/1
+		.kill 10 Broken Skeleton|q 10031/2
+	step
+		goto 31,76.1
+		.talk Dwarfowitz##22481
+		..turnin The Big Bone Worm##10930
 	step
 		goto 31.1,76.5
 		.talk Oakun##22456
 		..turnin The Dread Relic##10877
+		..accept Evil Draws Near##10923
 	step
 		goto 31,76.1
 		.talk Commander Ra'vaj##22446
@@ -11330,6 +11352,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 31.4,75.7
 		.talk Scout Navrin##22364
 		..turnin Taken in the Night##10873
+		..turnin Return to Sha'tari Base Camp##10926
 	step
 		ding 66
 	step
@@ -11337,17 +11360,56 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Click the black coffin up the steps
 		.'Kill the Reanimated Exarch|goal Contents of the Auchenai Coffin destroyed|q 10915/1
 	step
-		goto 31,76.1
-		.talk Commander Ra'vaj##22446
-		..turnin The Fallen Exarch##10915
-	step
 		goto 37.4,51.5
 		.talk Kirrik the Awakened##22272
 		..turnin Veil Lithic: Preemptive Strike##10861
+		..accept Veil Shalas: Signal Fires##10874
 	step
 		goto 37.1,49.5
 		.talk Soolaveen##18675
 		..turnin Helping the Lost Find Their Way##10031
+	step
+		'WARNING: GROUP ESCORT
+		goto 53.8,72.4
+		.talk Skywing##22424
+		..accept Skywing##10898|noautoaccept
+	step
+		goto 56.1,72.5
+		.goal Bloodstone Fire Extinguished|q 10874/4
+	step
+		goto 56.7,69.2
+		.goal Violet Fire Extinguished|q 10874/3
+	step
+		'WARNING: Pull and kill all mobs on this platform before Skywing crosses the bridge; Luanga the Imprisoner (elite) will spawn!
+		goto 55.5,69.8
+		.goal Emerald Fire Extinguished|q 10874/2
+	step
+		goto 55.2,67.2
+		.goal Sapphire Fire Extinguished|q 10874/1
+	step
+		goal Escort Skywing|q 10898/1
+	step
+		'Go back up the hill and kill Arakkoa
+		.get 30 Arakkoa Feather|q 10917/1
+	step
+		goto 48.7,67.2
+		.kill Auchenai Death-Speaker, Auchenai Doomsayer|n
+		..collect 20 Doom Skull##31812|n
+		.use Dread Relic##31811
+		..kill Teribus the Cursed|q 10923/1
+	step
+		goto 31,76.1
+		.talk Commander Ra'vaj##22446
+		..turnin The Fallen Exarch##10915
+	step
+		goto 31.1,76.5
+		.talk Oakun##22456
+		..turnin Evil Draws Near##10923
+	step
+		goto 37.4,51.5
+		.talk Kirrik the Awakened##22272
+		..turnin Veil Shalas: Signal Fires##10874
+		..accept Return to Shattrath##10889
 	step
 		goto 58.1,53.4
 		.talk Taela Everstride##18704
@@ -11364,6 +11426,26 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk "Dirty" Larry##19720
 		..turnin What Book? I Don't See Any Book.##10231
 		..accept The Master's Grand Design?##10251
+	step
+		goto 52.5,21
+		.talk Rilak the Redeemed##22292
+		..turnin Return to Shattrath##10889
+		..turnin Skywing##10898
+	step
+		'WARNING: EVENT
+		goto 51.7,20.8
+		.talk Defender Grashna##22373
+		..accept The Skettis Offensive##10879|noautoaccept
+	step
+		goal Attack thwarted|q 10879/1
+	step
+		goto 52.5,21
+		.talk Rilak the Redeemed##22292
+		..turnin The Skettis Offensive##10879
+	step
+		goto 46.2,22.4
+		.talk Vekax##22429
+		..turnin The Outcast's Plight##10917
 	step
 		goto 64.6,15.2
 		.talk Sha'nir##18597
@@ -11458,15 +11540,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 64,45.1
 		.kill 30 Clefthoof|q 9789/1
-		.' Kill Elekks
-		.collect 3 Pair of Ivory Tusks##25463|q 9914 |future
+		.' Kill Elekks|only if rep('The Consortium') < Friendly
+		.collect 3 Pair of Ivory Tusks##25463|q 9914 |future|only if rep('The Consortium') < Friendly
 		.' Kill Dust Howlers
 		.get 3 Air Elemental Gas|q 10109/1
 		.get Howling Wind|n
 		.' Click the Howling Wind|use Howling Wind##24504
 		..accept The Howling Wind##9861
 		.' You can find more Clefthoofs, Elekks, and Dust Howlers at 70.8,46.4|n
-		.kill 10 Tortured Earth Spirit|q 9819/1
+		.kill 15 Tortured Earth Spirit|q 9819/1
 	step
 		goto 71.6,40.5
 		.talk Shado "Fitz" Farstrider##18200
@@ -11496,7 +11578,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 52,20.2
 		.' Kill Enraged Crushers
-		.get 10 Enraged Crusher Core|q 9821/1
+		.get 15 Enraged Crusher Core|q 9821/1
 	step
 		goto 51.6,30.8
 		.kill 30 Clefthoof Bull|q 9850/1
@@ -11544,7 +11626,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin I Must Have Them!##10109
 		..accept Bring Me The Egg!##10111
 	step
-		get Severed Talon of the Matriarch|q 10111/1
+		goal Attempt to Steal the Egg|q 10111/1
+		get Severed Talon of the Matriarch|q 10111/2
 	step
 		goto 61.7,67.1
 		.talk Wazat##19035
@@ -11662,9 +11745,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goal Free the Kurenai Captive|q 9879/1
 	step
 		goto 32.58,42.35
-		.kill 10 Murkblood Scavenger|q 9878/1
-		.kill 5 Murkblood Raider|q 9878/2
-		.kill 5 Murkblood Putrifier|q 9862/1
+		.kill 20 Murkblood Scavenger|q 9878/1
+		.kill 10 Murkblood Raider|q 9878/2
+		.kill 8 Murkblood Putrifier|q 9862/1
 	step
 		goto 27.3,43.1
 		.talk Altruis the Sufferer##18417
@@ -11689,17 +11772,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 31.4,57.8
 		.talk Gezhe##18265
 		..turnin The Consortium Needs You!##9913
-		..accept Stealing from Thieves##9882
+		..accept Stealing from Thieves##9882|only if rep('The Consortium') < Friendly
 	step
 		goto 31.8,56.8
 		.talk Shadrek##18333
 		..accept A Head Full of Ivory##9914
 		..turnin A Head Full of Ivory##9914
+		only if rep('The Consortium') < Friendly
 	step
 		goto 33.4,62.4
 		.' Click the Oshu'gun Crystal Fragments on the ground|tip They are the green and white crystals on the ground.
 		.' Kill the mobs here
 		.get 10 Oshu'gun Crystal Fragment|q 9882/1
+		only if rep('The Consortium') < Friendly
 	step
 		goto 30.6,67.5
 		.kill 12 Voidspawn|q 9925/1
@@ -11718,7 +11803,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 31.4,57.8
 		.talk Gezhe##18265
-		..turnin Stealing from Thieves##9882
+		..turnin Stealing from Thieves##9882|only if rep('The Consortium') < Friendly
 	step
 		goto 41.4,61.6
 		.from Banthar##18259
