@@ -12145,6 +12145,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 39.3,27.5
 		.kill 25 Boulderfist Warrior|q 9922/1
 		.kill 25 Boulderfist Mage|q 9922/2
+		.collect 10 Obsidian Warbeads##25433|future|q 9893
 		.collect 1 Northwind Cleft Key##25509|q 9924|sticky
 		.' Free Corki inside the cave|goal Corki Freed Again|q 9924/1|tip Inside the cave, way in the back, in a yellow cage again.
 	step
@@ -12229,6 +12230,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Gezhe##18265
 		..turnin The Consortium Needs You!##9913
 		..accept Stealing from Thieves##9882|only if rep('The Consortium') < Friendly
+		..accept Obsidian Warbeads##9893
+		..turnin Obsidian Warbeads##9893
 	step
 		goto 31.8,56.8
 		.talk Shadrek##18333
@@ -12259,7 +12262,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 31.4,57.8
 		.talk Gezhe##18265
-		..turnin Stealing from Thieves##9882|only if rep('The Consortium') < Friendly
+		..turnin Stealing from Thieves##9882
+		only if rep('The Consortium') < Friendly
 	step
 		goto 41.4,61.6
 		.from Banthar##18259
@@ -12273,10 +12277,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Solving the Problem##9878
 		.talk Otonbu the Sage##18222
 		..turnin Stopping the Spread##9874
-	step
-		goto 54.8,71
-		.talk Warden Moi'bff Jill##18408
-		..turnin Fierce Enemies##10476
 	step
 		goto 55.5,68.7
 		.talk Arechron##18183
@@ -12300,7 +12300,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.get 20 Kil'sorrow Armaments|q 9928/1
 		.kill 15 Kil'sorrow Agent|q 9936/2
 		.' Use your Warmaul Ogre Banners on their corpses|use Warmaul Ogre Banner##25552
-		.' Plant 20 Warmaul Ogre Banners|goal 10 Warmaul Ogre Banner Planted|q 9927/1
+		.' Plant 20 Warmaul Ogre Banners|goal 20 Warmaul Ogre Banner Planted|q 9927/1
 	step
 		goto 73.8,62.6
 		.talk Lantresor of the Blade##18261
@@ -12343,8 +12343,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 48.3,21.5
 		.kill 10 Warmaul Shaman|q 9940/2
 		.kill 10 Warmaul Reaver|q 9940/3
+		.get 10 Obsidian Warbeads##25433|q 10476/1
 		.' Use your Kil'sorrow Banners on their corpses|use Kil'sorrow Banner##25555
-		.' Plant 20 Kil'sorrow Banners|goal 10 Kil'sorrow Banner Planted|q 9931/1
+		.' Plant 20 Kil'sorrow Banners|goal 20 Kil'sorrow Banner Planted|q 9931/1
 	step
 		'Enter the cave here|goto 26.9,23.4
 	step
@@ -12366,7 +12367,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 29,25
 		.from Ogres
-		..collect 7 Warmaul Skull##24502|sticky
+		..collect 7 Warmaul Skull##24502|n
 		.use Warmaul Skull##24502
 		..from Gurok the Usurper##18182
 		...get Gurok's Earthen Head|q 9853/1
@@ -12376,15 +12377,22 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		'Hearth to Telaar|goto 54.267,76.088|use Hearthstone##6948|noway|c
 	step
+		goto 54.8,71
+		.talk Warden Moi'bff Jill##18408
+		..turnin Fierce Enemies##10476
+	step
 		goto 54.2,70
 		.talk Huntress Kima##18416
 		..turnin The Ravaged Caravan##9956
 	step
 		goto 54.8,71
 		.talk Warden Moi'bff Jill##18408
-		..turnin Cho'war the Pillager##9955
 		..turnin Wanted: Giselda the Crone##9936
 		..turnin Wanted: Zorbo the Advisor##9940
+	step
+		goto 55.5,68.8
+		.talk Arechron##18183
+		..turnin Cho'war the Pillager##9955
 	step
 		goto 44.2,65.2
 		.from Tusker##18290

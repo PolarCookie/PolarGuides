@@ -11541,12 +11541,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 64,45.1
 		.kill 30 Clefthoof|q 9789/1
 		.' Kill Elekks|only if rep('The Consortium') < Friendly
-		.collect 3 Pair of Ivory Tusks##25463|q 9914 |future|only if rep('The Consortium') < Friendly
+		..collect 3 Pair of Ivory Tusks##25463|q 9914 |future|only if rep('The Consortium') < Friendly
 		.' Kill Dust Howlers
-		.get 3 Air Elemental Gas|q 10109/1
-		.get Howling Wind|n
-		.' Click the Howling Wind|use Howling Wind##24504
-		..accept The Howling Wind##9861
+		..get 3 Air Elemental Gas|q 10109/1
+		..get Howling Wind|n
+		..' Click the Howling Wind|use Howling Wind##24504
+		...accept The Howling Wind##9861
 		.' You can find more Clefthoofs, Elekks, and Dust Howlers at 70.8,46.4|n
 		.kill 15 Tortured Earth Spirit|q 9819/1
 	step
@@ -11719,6 +11719,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 39.3,27.5
 		.kill 25 Boulderfist Warrior|q 9922/1
 		.kill 25 Boulderfist Mage|q 9922/2
+		.collect 10 Obsidian Warbeads##25433|future|q 9893
 		.collect 1 Northwind Cleft Key##25509|q 9924|sticky
 		.' Free Corki inside the cave|goal Corki Freed Again|q 9924/1|tip Inside the cave, way in the back, in a yellow cage again.
 	step
@@ -11773,6 +11774,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Gezhe##18265
 		..turnin The Consortium Needs You!##9913
 		..accept Stealing from Thieves##9882|only if rep('The Consortium') < Friendly
+		..accept Obsidian Warbeads##9893
+		..turnin Obsidian Warbeads##9893
 	step
 		goto 31.8,56.8
 		.talk Shadrek##18333
@@ -11803,7 +11806,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 31.4,57.8
 		.talk Gezhe##18265
-		..turnin Stealing from Thieves##9882|only if rep('The Consortium') < Friendly
+		..turnin Stealing from Thieves##9882
+		only if rep('The Consortium') < Friendly
 	step
 		goto 41.4,61.6
 		.from Banthar##18259
@@ -11817,10 +11821,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Solving the Problem##9878
 		.talk Otonbu the Sage##18222
 		..turnin Stopping the Spread##9874
-	step
-		goto 54.8,71
-		.talk Warden Moi'bff Jill##18408
-		..turnin Fierce Enemies##10476
 	step
 		goto 55.5,68.7
 		.talk Arechron##18183
@@ -11846,7 +11846,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get 20 Kil'sorrow Armaments|q 9928/1
 		.kill 15 Kil'sorrow Agent|q 9936/2
 		.' Use your Warmaul Ogre Banners on their corpses|use Warmaul Ogre Banner##25552
-		.' Plant 20 Warmaul Ogre Banners|goal 10 Warmaul Ogre Banner Planted|q 9927/1
+		.' Plant 20 Warmaul Ogre Banners|goal 20 Warmaul Ogre Banner Planted|q 9927/1
 	step
 		goto 73.8,62.6
 		.talk Lantresor of the Blade##18261
@@ -11884,8 +11884,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 48.3,21.5
 		.kill 10 Warmaul Shaman|q 9940/2
 		.kill 10 Warmaul Reaver|q 9940/3
+		.get 10 Obsidian Warbeads##25433|q 10476/1
 		.' Use your Kil'sorrow Banners on their corpses|use Kil'sorrow Banner##25555
-		.' Plant 20 Kil'sorrow Banners|goal 10 Kil'sorrow Banner Planted|q 9931/1
+		.' Plant 20 Kil'sorrow Banners|goal 20 Kil'sorrow Banner Planted|q 9931/1
 	step
 		goto 27.9,29.7
 		.get 10 Telaar Supply Crate|q 9956/1|tip They look like little grey boxes on the ground.
@@ -11895,6 +11896,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Corki's Ransom##9954
 	step
 		'Hearth to Telaar|goto 54.267,76.088|use Hearthstone##6948|noway|c
+	step
+		goto 54.8,71
+		.talk Warden Moi'bff Jill##18408
+		..turnin Fierce Enemies##10476
 	step
 		goto 54.2,70
 		.talk Huntress Kima##18416
