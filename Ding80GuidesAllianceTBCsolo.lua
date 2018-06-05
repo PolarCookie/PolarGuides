@@ -12122,6 +12122,499 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Commander Skyshadow##21158
 		..turnin The Bladespire Ogres##10504
 		..turnin Planting the Banner##10518
+		..accept Where Did Those Darn Gnomes Go?##10580
+	step
+		goto 55.1,72.8
+		.talk R-3D0##21690
+		..turnin Where Did Those Darn Gnomes Go?##10580
+		..accept Follow the Breadcrumbs##10581
+	step
+		goto 60.2,68.9
+		.talk Nickwinkle the Metro-Gnome##21755
+		..accept Crystal Clear##10608
+	step
+		goto 60.5,69
+		.talk Toshley##21691
+		..turnin Follow the Breadcrumbs##10581
+		..accept Picking Up Some Power Converters##10584
+	step
+		goto 61.2,70.4
+		.talk Rip Pedalslam##21107
+		..fpath Toshley's Station
+	step
+		goto 61,68.1
+		.talk Fizit "Doc" Clocktock##21110
+		..accept What Came First, the Drake or the Egg?##10609
+	step
+		goto 60.3,68.4
+		.talk Tally Zapnabber##21460
+		..accept Test Flight: The Zephyrium Capacitorium##10557
+	step
+		goto 60.2,68.9
+		.talk Rally Zapnabber##21461
+		..'Test the Zephyrium Capacitorium|goal Test Tally's Experiment|q 10557/1
+	step
+		goto 60.3,68.4
+		.talk Tally Zapnabber##21460
+		..turnin Test Flight: The Zephyrium Capacitorium##10557
+		..accept Test Flight: The Singing Ridge##10710
+	step
+		goto 58.4,59.2
+		.' Click the Power Converters on the ground|tip They look like small lantern boxes.
+		.' Use your Protovoltaic Magneto Collector on the Electromentals that spawn|use Protovoltaic Magneto Collector##30656
+		.' Kill the Electromentals
+		.' Get 5 Electromentals|goal 5 Electromentals collected|q 10584/1
+	step
+		goto 60.5,69
+		.talk Toshley##21691
+		..turnin Picking Up Some Power Converters##10584
+		..accept Ride the Lightning##10657
+	step
+		goto 60.4,68.8
+		.talk Dizzy Dina##21824
+		..accept Ridgespine Menace##10620
+	step
+		goto 60.5,68.4
+		.talk Razak Ironsides##21118
+		..accept Cutting Your Teeth##10632
+	step
+		goto 60.2,68.9
+		.talk Rally Zapnabber##21461
+		..'Sign Tally's Waiver in your bags|use Tally's Waiver (Unsigned)##30540
+		..'Go to the Singing Ridge|goto Blade's Edge Mountains,67.0,72.0,2|noway|c
+	step
+		goto 65,55.2
+		.' Kill Scalewing Serpents
+		.get 5 Scalewing Lightning Gland|q 10657/2
+		.' Use your Repolarized Magneto Sphere when fighting Scalewing Serpents|use Repolarized Magneto Sphere##30818
+		.' Absorb 25 Lightning Strikes|goal 25 Lightning Strikes Absorbed|q 10657/1
+		..'Put your pet on passive, if you have one, to make this go faster
+		.from Daggermaw Lashtail##20751
+		..get 5 Extra Sharp Daggermaw Tooth|q 10632/1
+		.kill 10 Ridgespine Stalker|q 10620/1
+	step
+		goto 68.2,76.2
+		.kill 10 Crystal Flayer|q 10608/1
+		.' Click the Nether Drake Eggs
+		.' Use the Temporal Phase Modulator on the Nether Whelps that spawn|use Temporal Phase Modulator##30742
+		..'You can use the Modulator repeatedly to get the type of drake you need
+		.' Kill the changed drakes
+		.get 3 Proto-Nether Drake Essence|q 10609/1
+		.get 3 Adolescent Nether Drake Essence|q 10609/2
+		.get 3 Mature Nether Drake Essence|q 10609/3
+	step
+		goto 60.5,68.4
+		.talk Razak Ironsides##21118
+		..turnin Cutting Your Teeth##10632
+	step
+		goto 60.2,68.9
+		.talk Nickwinkle the Metro-Gnome##21755
+		..turnin Crystal Clear##10608
+		..accept Gauging the Resonant Frequency##10594
+	step
+		goto 60.4,68.8
+		.talk Dizzy Dina##21824
+		..turnin Ridgespine Menace##10620
+		..accept More than a Pound of Flesh##10671
+	step
+		goto 60.5,69
+		.talk Toshley##21691
+		..turnin Ride the Lightning##10657
+		..accept Trapping the Light Fantastic##10674
+	step
+		goto 61,68.1
+		.talk Fizit "Doc" Clocktock##21110
+		..turnin What Came First, the Drake or the Egg?##10609
+	step
+		home Toshley's Station
+	step
+		goto 60.3,68.4
+		.talk Tally Zapnabber##21460
+		..turnin Test Flight: The Singing Ridge##10710
+		..accept Test Flight: Razaan's Landing##10711
+	step
+		goto 59.8,73.9
+		.' Clear out a good big area so you are safe
+		.' Place the Oscillating Frequency Scanners on the ground kind of far apart|use Oscillating Frequency Scanners##30701
+		.' Try to place them so that the lines overlap each other, like a star
+		.' Stand in the middle of the design you made
+		.' Gauge the Singing Crystal Resonant Frequency|goal Singing crystal resonant frequency gauged|q 10594/1
+	step
+		goto 60.2,68.9
+		.talk Nickwinkle the Metro-Gnome##21755
+		..turnin Gauging the Resonant Frequency##10594
+	step
+		goto 60.2,68.9
+		.talk Rally Zapnabber##21461
+		..'Go to Razaan's Landing|goto Blade's Edge Mountains,66.8,49.9,2|noway|c
+	step
+		goto 66.7,43.4
+		.' Look for purple orbs flying overhead, and lay the Multi-Spectrum Light Trap underneath them|use Multi-Spectrum Light Trap##30852
+		.' Trap 15 Razaani Light Orbs|goal 15 Razaani Light Orbs trapped|q 10674/1
+		.kill Fiendling Flesh Beasts|n
+		..get 5 Ether-Energized Flesh|q 10671/1
+	step
+		goto 60.3,68.4
+		.talk Tally Zapnabber##21460
+		..turnin Test Flight: Razaan's Landing##10711
+		..accept Test Flight: Ruuan Weald##10712
+	step
+		goto 60.4,68.8
+		.talk Dizzy Dina##21824
+		..turnin More than a Pound of Flesh##10671
+	step
+		goto 60.5,69
+		.talk Toshley##21691
+		..turnin Trapping the Light Fantastic##10674
+		..accept Show Them Gnome Mercy!##10675
+	step
+		goto 66.3,44.3
+		.' Kill Razaani mummies around the portal until Nexus-Prince Razaan comes out
+		.' Kill Nexus-Prince Razaan
+		.' Click the Collection of Souls|tip The Collection of Souls appears hovering over his corpse.
+		.get Collection of Souls|q 10675/1
+	step
+		goto 60.5,69
+		.talk Toshley##21691
+		..turnin Show Them Gnome Mercy!##10675
+	step
+		goto 60.2,68.9
+		.talk Rally Zapnabber##21461
+		..'Go to Ruuan Weald|goal Launch to Ruuan Weald.|q 10712/1
+		..'Use your Nether-weather Vane while in flight|use Nether-weather Vane##31124
+		..get Spinning Nether-weather Vane|q 10712/2
+	step
+		goto 62,39.5
+		.talk Tree Warden Chawn##22007
+		..accept A Time for Negotiation...##10682
+	step
+		goto 61.7,39.6
+		.talk Fhyn Leafshadow##22216
+		..fpath Evergrove
+	step
+		goto 61.2,38.4
+		.talk Mosswood the Ancient##22053
+		..accept Little Embers##10770
+		..accept From the Ashes##10771
+	step
+		goto 62.2,39.1
+		.talk Timeon##21782
+		..accept Creating the Pendant##10567
+	step
+		goto 62,38
+		.talk Commander Haephus Stonewall##22149
+		..accept A Date with Dorgok##10795
+		.talk Lieutenant Fairweather##22150
+		..accept Crush the Bloodmaul Camp!##10796
+	step
+		goto 62.6,38.2
+		.talk Faradrella##22133
+		..accept Culling the Wild##10753
+	step
+		goto 62.7,40.4
+		.talk O'Mally Zapnabber##22020
+		..turnin Test Flight: Ruuan Weald##10712
+	step
+		goto 68.9,35.6
+		.kill 4 Felsworn Scalewing|q 10753/1
+		.kill 4 Felsworn Daggermaw|q 10753/2
+		.kill 2 Fel Corrupter|q 10753/3
+		.' Kill Fel Corrupters
+		.get Damaged Mask|n
+		.' Click the Damaged Mask|use Damaged Mask##31384
+		..accept Damaged Mask##10810
+	step
+		goto 71.7,22.4
+		.' Click the Fertile Volcanic Soil|tip It looks like a dirt mound.
+		.' Plant the Ironroot Seeds|goal Southern Volcanic Soil|q 10771/1
+	step
+		goto 71.6,20.3
+		.' Click the Fertile Volcanic Soil|tip It looks like a dirt mound.
+		.' Plant the Ironroot Seeds|goal Central Volcanic Soil|q 10771/2
+	step
+		goto 71.6,18.5
+		.' Click the Fertile Volcanic Soil|tip It looks like a dirt mound.
+		.' Plant the Ironroot Seeds|goal Northern Volcanic Soil|q 10771/3
+	step
+		goto 70.7,20.2
+		.kill 8 Scorch Imp|q 10770/1
+	step
+		goto 62.7,40.4
+		.talk O'Mally Zapnabber##22020
+		..turnin Damaged Mask##10810
+		..accept Mystery Mask##10812
+	step
+		goto 62.2,40.1
+		.talk Wildlord Antelarion##22127
+		..turnin Mystery Mask##10812
+		..accept Felsworn Gas Mask##10819
+	step
+		goto 61.2,38.4
+		.talk Mosswood the Ancient##22053
+		..turnin Little Embers##10770
+		..turnin From the Ashes##10771
+	step
+		goto 62.6,38.2
+		.talk Faradrella##22133
+		..turnin Culling the Wild##10753
+	step
+		goto 63.9,31.5
+		.' Kill Ruuan'ok arakkoas
+		.collect 6 Ruuan'ok Claw##30704|q 10567
+	step
+		goto 64.5,33.1
+		.' Use the 6 Ruuan'ok Claws inside the glowing circle|use Ruuan'ok Claw##30704
+		.' Kill the Harbinger of the Raven
+		.get Harbinger's Pendant|q 10567/1
+	step
+		goto 62.2,39.1
+		.talk Timeon##21782
+		..turnin Creating the Pendant##10567
+		..accept Whispers of the Raven God##10607
+	step
+		goto Blade's Edge Mountains,58.8,39.1
+		.talk Overseer Nuaar##21981
+		..'He wanders around the Wyrmcult camps
+		.' Negotiate with Overseer Nuaar|goal Negotiations with Overseer Nuaar complete|q 10682/1
+	step
+		goto 62,39.5
+		.talk Tree Warden Chawn##22007
+		..turnin A Time for Negotiation...##10682
+		..accept ...and a Time for Action##10713
+		.talk Samia Inkling##21983
+		..accept Poaching from Poachers##10717
+	step
+		goto 59.9,37.8
+		.kill 10 Wyrmcult Hewer|q 10713/1
+		.' Kill Wyrmcult Poachers
+		.get 5 Wyrmcult Net|q 10717/1
+		.' Kill Wyrmcult mobs
+		.get Meeting Note|n
+		.' Click the Meeting Note|use Meeting Note##31120
+		..accept Did You Get The Note?##10719
+	step
+		goto 62,39.5
+		.talk Samia Inkling##21983
+		..turnin Poaching from Poachers##10717
+		..accept Whelps of the Wyrmcult##10747
+		.talk Tree Warden Chawn##22007
+		..turnin ...and a Time for Action##10713
+		..turnin Did You Get The Note?##10719
+		..accept Wyrmskull Watcher##10894
+	step
+		'Make sure you have your Felsworn Gas Mask in your bags|collect Felsworn Gas Mask##31366|q 10819
+		.' It has a 60 minute timer on it|n
+		.' If you need another one, talk to Wildlord Antelarion at Evergrove|n
+	step
+		goto 73.2,40
+		'Put on your Felsworn Gas Mask|use Felsworn Gas Mask##31366
+		.' Click the Legion Communicator|tip Between 2 big green floating crystals.  Must be wearing the Felsworn Gas Mask to use this.
+		..turnin Felsworn Gas Mask##10819
+		..accept Deceive thy Enemy##10820
+	step
+		goto 74.9,39.9
+		.kill 4 Doomforge Attendant|q 10820/1
+		.kill 4 Doomforge Engineer|q 10820/2
+	step
+		goto 73.2,40
+		.' Put on your Felsworn Gas Mask|use Felsworn Gas Mask##31366
+		.' Click the Legion Communicator|tip |tip Between 2 big green floating crystals.  Must be wearing the Felsworn Gas Mask to use this.
+		..turnin Deceive thy Enemy##10820
+		..accept You're Fired!##10821
+	step
+		'TODO: quest description, read the log
+		kill Doomcryer|q 10821/1
+	step
+		goto 62.2,40.1
+		.talk Wildlord Antelarion##22127
+		..turnin You're Fired!##10821
+		..accept Death's Door##10910
+	step
+		goto 55.2,24
+		.' Go up the ramp on the left side of the tower
+		.kill Dorgok|q 10795/1
+		.get Gorgrom's Favor|n
+		.' Click Gorgrom's Favor|use Gorgrom's Favor##31363
+		..accept Favor of the Gronn##10797 |tip You have to have the quest "A Date with Dorgok" in your questlog to be able to accept this quest from this item.
+	step
+		goto 56.2,26.7
+		.kill 10 Bloodmaul Mauler|q 10796/1
+		.kill 5 Bloodmaul Warlock|q 10796/2
+	step
+		goto 62,38
+		.talk Lieutenant Fairweather##22150
+		..turnin Crush the Bloodmaul Camp!##10796
+		.talk Commander Haephus Stonewall##22149
+		..turnin A Date with Dorgok##10795
+		..turnin Favor of the Gronn##10797
+		..accept Pay the Baron a Visit##10798
+	step
+		goto 53.3,41.2
+		.talk Baron Sablemane##22103
+		..turnin Pay the Baron a Visit##10798
+		..accept Into the Churning Gulch##10799
+	step
+		goto 49,44.5
+		.' Kill Greater Crust Bursters and Young Crust Bursters
+		.get 7 Crust Burster Venom Gland|q 10799/1
+	step
+		goto 53.3,41.2
+		.talk Baron Sablemane##22103
+		..turnin Into the Churning Gulch##10799
+		..accept Goodnight, Gronn##10800
+	step
+		goto 60.2,47.6
+		.' Use Sablemane's Sleeping Powder on Grulloc|use Sablemane's Sleeping Powder##31403
+		.' Click Grulloc's Sack to get it and run away|get Grulloc's Sack|q 10800/1|tip Grulloc's Sack is a big tan bag sitting at his feet.
+	step
+		goto 53.3,41.2
+		.talk Baron Sablemane##22103
+		..turnin Goodnight, Gronn##10800
+		..accept It's a Trap!##10801
+	step
+		goto 62,38
+		.talk Commander Haephus Stonewall##22149
+		..turnin It's a Trap!##10801
+		..accept Gorgrom the Dragon-Eater##10802
+		.talk Lieutenant Fairweather##22150
+		..accept Slaughter at Boulder'mok##10803
+	step
+		goto 49.9,35.9
+		.talk Watcher Moonshade##22386
+		..turnin Wyrmskull Watcher##10894
+		..accept Longtail is the Lynchpin##10893
+	step
+		goto 46.7,32.9
+		.kill Draaca Longtail##22396|q 10893/1
+	step
+		goto 49.9,35.9
+		.talk Watcher Moonshade##22386
+		..turnin Longtail is the Lynchpin##10893
+		..accept Meeting at the Blackwing Coven##10722
+	step
+		goto 42.2,25.1
+		'Kill arakkoas
+		.' Get the Understanding Ravenspeech buff|havebuff Ability_Hunter_Pet_DragonHawk|q 10607
+		..'Must be within melee range to receive the buff
+		.' The buff lasts for 2 minutes
+		.' Anytime the buff wears off, kill arakkoas again to get it back
+	step
+		goto 40.7,18.7
+		.' Stand next to the wooden totem with the Understanding Ravenspeech buff on you|tip On the ground, next to a pond with basilisks in it.  It looks like a wooden totem.
+		.' Receive the Third Prophecy|goal Receive the Third Prophecy|q 10607/3
+	step
+		goto 39,17.2
+		.' Stand next to the wooden totem with the Understanding Ravenspeech buff on you|tip Up the left ramp, then left across the hanging bridge.  It looks like a wooden totem.
+		.' Receive the First Prophecy|goal Receive the First Prophecy|q 10607/1
+	step
+		goto 42.5,21.6
+		.' Stand next to the wooden totem with the Understanding Ravenspeech buff on you|tip Up the right ramp, then go right across the hanging bridge, then down the stairs to the left.  It looks like a wooden totem.
+		.' Receive the Second Prophecy|goal Receive the Second Prophecy|q 10607/2
+	step
+		goto 40.2,23
+		.' Stand next to the wooden totem with the Understanding Ravenspeech buff on you|tip On the ground, in front of a hut.  It looks like a wooden totem.
+		.' Receive the Fourth Prophecy|goal Receive the Fourth Prophecy|q 10607/4
+		.' Kill arakkoas
+		.get Orb of the Grishna|n
+		.' Click the Orb of the Grishna|use Orb of the Grishna##31489
+		..accept The Truth Unorbed##10825
+	step
+		goto 32.3,34.9
+		.' Go inside the cave
+		.' Use the Blackwhelp Net on Wyrmcult Blackwhelps|use Blackwhelp Net##31129
+		.' Capture 10 Wyrmcult Blackwhelps|goal 10 Wyrmcult Blackwhelp|q 10747/1
+		.' Kill Wyrmcultists
+		.collect 5 Costume Scraps##31121|q 10722
+	step
+		goto 32.6,37.5
+		.' Combine your 5 Costume Scraps to make an Overseer Disguise|use Costume Scraps##31121
+		.' Put on the Overseer Disguise|use Overseer Disguise##31122
+		.talk Kolphis Darkscale##22019
+		..'Attend the meeting with Kolphis Darkscale|goal Meeting with Kolphis Darkscale attended|q 10722/1
+	step
+		goto 30.3,24.6
+		.kill 5 Boulder'mok Brute|q 10803/1
+		.kill 3 Boulder'mok Shaman|q 10803/2
+		.' Kill Boulder'mok mobs
+		.collect 3 Grisly Totem##31754|q 10803
+	step
+		goto 30.6,22.2
+		.' Click Gorgrom's Altar|tip A big stone square block in the middle of the camp.
+		.' He will run up to the altar and die
+		.' Use the Grisly Totems on his corpse|use Grisly Totem##31754
+		.' Plant 3 Grisly Totems|goal 3 Plant Grisly Totem|q 10802/1
+	step
+		'Go through the tunnel to 62,39.5|goto 62,39.5
+		.talk Samia Inkling##21983
+		..turnin Whelps of the Wyrmcult##10747
+		.talk Tree Warden Chawn##22007
+		..turnin Meeting at the Blackwing Coven##10722
+		..accept Maxnar Must Die!##10748
+		..turnin The Truth Unorbed##10825
+		..accept Treebole Must Know##10829
+	step
+		goto 62.2,39.1
+		.talk Timeon##21782
+		..turnin Whispers of the Raven God##10607
+	step
+		goto 62,38
+		.talk Commander Haephus Stonewall##22149
+		..turnin Gorgrom the Dragon-Eater##10802
+		..accept Baron Sablemane Has Requested Your Presence##10818
+		.talk Lieutenant Fairweather##22150
+		..turnin Slaughter at Boulder'mok##10803
+	step
+		goto 53.3,41.2
+		.talk Baron Sablemane##22103
+		..turnin Baron Sablemane Has Requested Your Presence##10818
+		..accept Massacre at Gruul's Lair##10805
+	step
+		'Go through the tunnel to 36.9,22.5|goto 36.9,22.5
+		.talk Treebole##22215
+		..turnin Treebole Must Know##10829
+		..accept Exorcising the Trees##10830
+	step
+		goto 39.3,20.2
+		.' Click the purple balls in the claw looking rods|tip They are around the huts in this area.
+		.collect 5 Grishnath Orb##31495|q 10830
+	step
+		goto 30.1,28.6
+		.' Kill Dire Ravens
+		.collect 5 Dire Pinfeather##31517|q 10830
+	step
+		goto 33.8,29.4
+		.' Click your Grishnath Orbs to combine the orbs and pinfeathers|use Grishnath Orb##31495
+		.' Create 5 Exorcism Feathers
+		.' Use the Exorcism Feathers on the Raven's Wood Leafbeards|use Exorcism Feather##31518
+		.' Kill the Koi Koi spirits that spawn to free the trees
+		.' Exorcise 5 Raven's Wood Leafbeards|goal 5 Leafbeard Exorcised|q 10830/1
+	step
+		goto 36.9,22.5
+		.talk Treebole##22215
+		..turnin Exorcising the Trees##10830
+	step
+		goto 32.3,34.9
+		.' Go inside the cave
+		.' Kill Wyrmcultists
+		.collect 5 Costume Scraps##31121|q 10748
+	step
+		.' Combine your 5 Costume Scraps to make an Overseer Disguise|use Costume Scraps##31121
+		.' Put on the Overseer Disguise|havebuff Overseer Disguise|use Overseer Disguise##31122|q 10748/1
+	step
+		'Go inside the cave to 33.9,35.4|goto 33.9,35.4
+		.kill Maxnar the Ashmaw##21389|q 10748/1
+	step
+		'Hearth to Toshley's Station|goto Blade's Edge Mountains,61,68.1,0.5|use Hearthstone##6948|noway|c
+	step
+		goto 61.2,70.4
+		.talk Rip Pedelslam##21107
+		..accept Building a Better Gryphon##11043
+	step
+		'Fly to Evergrove|goto Blade's Edge Mountains,61.7,39.6,0.3|noway|c
+	step
+		goto 62,39.5
+		.talk Tree Warden Chawn##22007
+		..turnin Maxnar Must Die!##10748
 ]])
 
 
