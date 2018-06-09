@@ -11459,6 +11459,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	author PolarCookie
 	startlevel 66
 	next Ding80's Alliance Leveling Guides TBC solo\\Levels (67-68)
+
 	step
 		'Go west to Nagrand|goto Nagrand|noway|c
 	step
@@ -11924,7 +11925,22 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (67-68)",[[
 	author PolarCookie
 	startlevel 67
+	next Ding80's Alliance Leveling Guides TBC solo\\Netherstorm
 
+	step
+		'Fly to Shattrath City|goto Shattrath City|noway|c
+	step
+		'If you can't pick this up, come back here before going to Netherstorm.
+		goto 60.8,63.5
+		.talk Arcanist Raestan##23273
+		..accept Report to Spymaster Thalodien##11039
+		only if rep('The Scryers') > Neutral
+	step
+		'If you can't pick this up, come back here before going to Netherstorm.
+		goto 47.2,26.1
+		.talk Vindicator Aeus##23270
+		..accept Assist Exarch Orelis##11038
+		only if rep('The Aldor') > Neutral
 	step
 		'Fly to Orebor Harborage|goto Zangarmarsh,41.8,26.6,4|noway|c
 	step
@@ -12617,9 +12633,1184 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Maxnar Must Die!##10748
 ]])
 
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Netherstorm",[[
+	author PolarCookie
+	startlevel 69
+	next Ding80's Alliance Leveling Guides TBC duo\\Shadowmoon Valley
 
+	step //48
+		'Go northeast to Netherstorm|goto Netherstorm|noway|c
+	step //50
+		goto 31.5,56.6
+		.talk Bot-Specialist Alley##19578
+		..accept Recharging the Batteries##10190
+	step //51
+		goto 26.5,51.9
+		.' Kill Phase Hunters
+		.' You will see a message in your chat window saying 'Phase Hunter is very weak'
+		.' Use your Battery Recharging Blaster on them when you see this message|use Battery Recharging Blaster##28369
+		.goal 10 Battery Charge Level|q 10190/1
+	step //52
+		goto 31.5,56.6
+		.talk Bot-Specialist Alley##19578
+		..turnin Recharging the Batteries##10190
+	step //53
+		goto 32.3,63.9
+		.talk Boots##19617
+		..accept Securing the Shaleskin Shale##10342
+	step
+		goto 32,64.1
+		.talk Spymaster Thalodien##19468
+		..turnin Report to Spymaster Thalodien##11039
+		..accept Manaforge B'naar##10189
+		..accept Assisting the Consortium##10264
+		only if rep('The Scryers') > Neutral
+	step //55
+		goto 32.1,64.2
+		.talk Exarch Orelis##19466
+		..turnin Assist Exarch Orelis##11038
+		..accept Distraction at Manaforge B'naar##10241
+		..accept Assisting the Consortium##10263
+		only if rep('The Aldor') > Neutral
+	step //56
+		home Area 52
+	step //54
+		goto 32.4,64.2
+		.talk Nether-Stalker Khay'ji##19880
+		..turnin Assisting the Consortium##10263|only if rep('The Aldor') > Neutral
+		..turnin Assisting the Consortium##10264|only if rep('The Scryers') > Neutral
+		..accept Consortium Crystal Collection##10265
+	step //57
+		goto 32.7,65
+		.talk Rocket-Chief Fuselage##19570
+		..turnin A Mystifying Vision##11042
+		..accept You're Hired!##10186
+	step
+		goto 32.1,64.6
+		.talk Wanted Poster
+		..accept Breaking Down Netherock##10701
+		..accept Wanted: Annihilator Servo!##10261
+	step //58
+		goto 31.4,66.2
+		.talk Ravandwyr##19217
+		..accept The Archmage's Staff##10173
+	step //59
+		goto 33.7,64
+		.talk Krexcil##18938
+		..fpath Area 52
+	step //60
+		goto 33.1,60.0
+		.' Kill Shaleskin Flayers
+		.get 5 Shaleskin Shale|q 10342/1
+	step //61
+		goto 31.5,56.6
+		.talk Maxx A. Million Mk. V##19589
+		..accept Mark V is Alive!##10191
+	step
+		' Escort Maxx A. Million Mk. V|goal Escort the Maxx A. Million Mk. V safely through the Ruins of Enkaat|q 10191/1
+		' Click the red glowing crystals on the ground while escorting Maxx A. Million Mk. V
+		.get 10 Etherlithium Matrix Crystal|q 10186/1
+	step //62
+		goto 31.5,56.6
+		.talk Bot-Specialist Alley##19578
+		..turnin Mark V is Alive!##10191
+	step //63
+		goto 32.3,63.9
+		.talk Boots##19617
+		..turnin Securing the Shaleskin Shale##10342
+		..accept That Little Extra Kick##10199
+	step //64
+		goto 32.7,65
+		.talk Rocket-Chief Fuselage##19570
+		..turnin You're Hired!##10186
+		..accept Invaluable Asset Zapping##10203
+		..accept Report to Engineering##10225
+	step //65
+		goto 32.4,66.8
+		.talk Chief Engineer Trep##19709
+		..turnin Report to Engineering##10225
+		..accept Essence for the Engines##10224
+	step //66
+		goto 33.8,58.5
+		.' Kill Mana Wraiths
+		.get 7 Mana Wraith Essence|q 10224/1
+	step //67
+		goto 32.4,66.8
+		.talk Chief Engineer Trep##19709
+		..turnin Essence for the Engines##10224
+		..accept Elemental Power Extraction##10226
+	step
+		goto 27.2,65.4
+		.from Captain Arathyn##19635
+		..get B'naar Personnel Roster|q 10189/1
+		only if rep('The Scryers') > Neutral
+	step //68
+		goto 26.3,66.7
+		.kill 8 Sunfury Magister|q 10241/1
+		.kill 8 Sunfury Bloodwarder|q 10241/2
+		only if rep('The Aldor') > Neutral
+	step //69
+		goto 35.4,76.5
+		.' Use the Elemental Power Extractor on Sundered Rumblers and Warp Aberrations|use Elemental Power Extractor##28547
+		.' Kill them
+		.' Click the blue crystal floating above their corpses
+		.get 5 Elemental Power|q 10226/1
+	step //70
+		goto 40.3,72.9
+		.' Click the tall metal turret with the gun pointing at the ground
+		.' Retrieve the Multi-Spectrum Terrain Analyzer|goal Multi-Spectrum Terrain Analyzer retrieved|q 10203/3
+	step //71
+		goto 41,73.8
+		.' Click the wooden cart with a big digging wheel on it
+		.' Retrieve the Hyper Rotational Dig-A-Matic|goal Hyper Rotational Dig-A-Matic retrieved|q 10203/1
+	step //72
+		goto 42.4,72.8
+		.from Pentatharon##20215
+		.get Arklon Crystal Artifact|q 10265/1
+	step //73
+		goto 42.5,72.2
+		.' Click the wagon with a bunch of explosives on it
+		.' Retrieve the Big Wagon Full of Explosives|goal Big Wagon Full of Explosives retrieved|q 10203/4
+	step //74
+		goto 41.4,71.8
+		.' Click the crane digging machine with a bunch of gears on it
+		.' Retrieve the Servo-Pneumatic Dredging Claw|goal Servo-Pneumatic Dredging Claw retrieved|q 10203/2
+	step //75
+		goto 40.9,72.5
+		.' Stand next to the broken, smoking altar on the small hill
+		.' Use your Conjuring Powder to summon Ekkorash|use Conjuring Powder##29207
+		.' Kill Ekkorash
+		.get Archmage Vargoth's Staff|q 10173/1
+	step //76
+		goto 44.6,72.1
+		.kill Nether Rays|n
+		.get 5 Nether Ray Stinger|q 10199/1
+	step //77
+		goto 34.2,68.1
+		.talk Lead Sapper Blastfizzle##19634
+		..turnin Invaluable Asset Zapping##10203
+		..accept Dr. Boom!##10221
+	step //78
+		goto 32.4,66.8
+		.talk Chief Engineer Trep##19709
+		..turnin Elemental Power Extraction##10226
+	step //79
+		goto 31.4,66.2
+		.talk Ravandwyr##19217
+		..turnin The Archmage's Staff##10173
+		..accept Rebuilding the Staff##10300
+	step
+		goto 32,64.1
+		.talk Spymaster Thalodien##19468
+		..turnin Manaforge B'naar##10189
+		..accept High Value Targets##10193
+		.talk Magistrix Larynna##19469
+		..accept Bloodgem Crystals##10204
+		only if rep('The Scryers') > Neutral	
+	step //80
+		goto 32.1,64.2
+		.talk Exarch Orelis##19466
+		..turnin Distraction at Manaforge B'naar##10241
+		..accept Measuring Warp Energies##10313
+		.talk Anchorite Karja##19467
+		..accept Naaru Technology##10243
+		only if rep('The Aldor') > Neutral
+	step //81
+		goto 32.4,64.2
+		.talk Nether-Stalker Khay'ji##19880
+		..turnin Consortium Crystal Collection##10265
+		..accept A Heap of Ethereals##10262
+	step //82
+		goto 32.3,63.9
+		.talk Boots##19617
+		..turnin That Little Extra Kick##10199
+	step //83
+		goto 33,64.7
+		.talk Papa Wheeler##19645
+		..accept Pick Your Part##10206
+	step //84
+		goto 33.5,53
+		.' Kill Disembodied Ghosts
+		.get 4 Flawless Crystal Shard|q 10300/1
+	step //85
+		goto 35,59.6
+		.' Dr. Boom sends out little walking bombs that blow up|tip When you see a clear passage to Dr. Boom, click the Boom's Doom in your bags, then run close enough to Dr. Boom so you can put the green circle under him, then click to throw the bomb.  Get just close enough so that the very edge of the green circle is under his feet.  This way, you will be close enough to hit him, but far enough away that he won't throw bombs back at you.
+		.'Click Boom's Doom in your bags|use Boom's Doom##29429
+		.kill 1 Dr. Boom|q 10221/1
+	step //86
+		goto 31.4,66.2
+		.talk Ravandwyr##19217
+		..turnin Rebuilding the Staff##10300
+		..accept Curse of the Violet Tower##10174
+	step //87
+		goto 34.2,68.1
+		.talk Lead Sapper Blastfizzle##19634
+		..turnin Dr. Boom!##10221
+	step
+		goto 25.3,65.8
+		.from Sunfury Magister##18855+
+		..collect Bloodgem Shard|n
+		'Use the Bloodgem on a Big Red Crystal|use Bloodgem Shard##28452|goal Siphon Bloodgem Crystal|q 10204/1
+		only if rep('The Scryers') > Neutral			
+	step //91
+		goto 23.5,71.5
+		.kill 2 Sunfury Warp-Master|q 10193/1
+		.kill 6 Sunfury Warp-Engineer|q 10193/2
+		.kill 8 Sunfury Geologist|q 10193/3
+		only if rep('The Scryers') > Neutral			
+	step //88
+		goto 25.7,60.6
+		.' Stand next to the Northern Pipeline
+		.' Use your Warp-Attuned Orb|use Warp-Attuned Orb##29324
+		.' Measure the Northern Pipeline|goal Northern Pipeline Measured|q 10313/1
+		only if rep('The Aldor') > Neutral
+	step //89
+		goto 20.9,66.9
+		.' Stand next to the Western Pipeline
+		.' Use your Warp-Attuned Orb|use Warp-Attuned Orb##29324
+		.' Measure the Western Pipeline|goal Western Pipeline Measured|q 10313/4
+		only if rep('The Aldor') > Neutral
+	step //90
+		goto 20.7,70.7
+		.' Stand next to the Southern Pipeline
+		.' Use your Warp-Attuned Orb|use Warp-Attuned Orb##29324
+		.' Measure the Southern Pipeline|goal Southern Pipeline Measured|q 10313/3
+		only if rep('The Aldor') > Neutral
+	step //91
+		goto 23.2,68.2
+		.' Click the B'naar Control Console|tip Inside the doorway northeast of the Southern Pipeline, to the left.
+		..turnin Naaru Technology##10243
+		..accept B'naar Console Transcription##10245
+		only if rep('The Aldor') > Neutral
+	step //92
+		goto 29,72.7
+		.' Stand next to the Eastern Pipeline
+		.' Use your Warp-Attuned Orb|use Warp-Attuned Orb##29324
+		.' Measure the Eastern Pipeline|goal Eastern Pipeline Measured|q 10313/2
+		only if rep('The Aldor') > Neutral
+	step //93
+		goto 30.2,75.5
+		.' Kill Zaxxis mummies
+		.get 10 Zaxxis Insignia|q 10262/1
+		.' Click the Ethereal Technology on the ground|tip The Ethereal Technology looks like little clear cases with purple electricity in them.
+		.get 10 Ethereal Technology|q 10206/1
+	step //94
+		goto 33,64.7
+		.talk Papa Wheeler##19645
+		..turnin Pick Your Part##10206
+		..accept In A Scrap With The Legion##10232
+		..accept Help Mama Wheeler##10333
+	step //95
+		goto 32.4,64.2
+		.talk Nether-Stalker Khay'ji##19880
+		..turnin A Heap of Ethereals##10262
+		..accept Warp-Raider Nesaad##10205
+	step
+		goto 32,64.1
+		.talk Spymaster Thalodien##19468
+		..turnin High Value Targets##10193
+		..accept Shutting Down Manaforge B'naar##10329
+		.talk Magistrix Larynna##19469
+		..turnin Bloodgem Crystals##10204
+		only if rep('The Scryers') > Neutral	
+	step //96
+		goto 32.1,64.2
+		.talk Exarch Orelis##19466
+		..turnin Measuring Warp Energies##10313
+		.talk Anchorite Karja##19467
+		..turnin B'naar Console Transcription##10245
+		..accept Shutting Down Manaforge B'naar##10299
+		only if rep('The Aldor') > Neutral
+	step //97
+		ding 69
+	step //98
+		'Go inside Manaforge B'naar to 23.3,68.6|goto 23.9,70.7
+		.from Overseer Theredis##20416
+		.get B'naar Access Crystal|q 10329/2
+		only if rep('The Scryers') > Neutral	
+	step //99
+		goto 23.2,68.1
+		.' Kill all Warp-Engineers in the nearest area to make your life easier.
+		.' Click the B'naar Control Console
+		.' Click "<Begin emergency shutdown>"
+		.' Kill the technicians as they come to try to save the Manaforge
+		..'Only takes 2 minutes
+		.' Shut Down Manaforge B'naar|goal Manaforge B'naar Shut Down|q 10329/1
+		only if rep('The Scryers') > Neutral	
+	step //98
+		'Go inside Manaforge B'naar to 23.3,68.6|goto 23.9,70.7
+		.from Overseer Theredis##20416
+		.get B'naar Access Crystal|q 10299/2
+		only if rep('The Aldor') > Neutral
+	step //99
+		goto 23.2,68.1
+		.' Kill all Warp-Engineers in the nearest area to make your life easier.
+		.' Click the B'naar Control Console
+		.' Click "<Begin emergency shutdown>"
+		.' Kill the technicians as they come to try to save the Manaforge
+		..'Only takes 2 minutes
+		.' Shut Down Manaforge B'naar|goal Manaforge B'naar Shut Down|q 10299/1
+		only if rep('The Aldor') > Neutral
+	step //101
+		goto 28.2,79.4
+		.kill Warp-Raider Nesaad##19641|q 10205/1
+	step //102
+		goto 32.4,64.2
+		.talk Nether-Stalker Khay'ji##19880
+		..turnin Warp-Raider Nesaad##10205
+		..accept Request for Assistance##10266
+	step
+		goto 32,64.1
+		.talk Spymaster Thalodien##19468
+		..turnin Shutting Down Manaforge B'naar##10329
+		..accept Stealth Flight##10194
+		only if rep('The Scryers') > Neutral
+	step
+		goto 33.8,64.2
+		.talk Veronia##20162
+		..turnin Stealth Flight##10194
+		..accept Behind Enemy Lines##10652
+		only if rep('The Scryers') > Neutral
+	step
+		'Talk to Veronia to fly to Manafore Coruu
+		goto 48.2,86.6
+		.talk Caledis Brightdawn##19840
+		..turnin Behind Enemy Lines##10652
+		..accept A Convincing Disguise##10197
+		only if rep('The Scryers') > Neutral
+	step //100
+		goto 32.1,64.2
+		.talk Anchorite Karja##19467
+		..turnin Shutting Down Manaforge B'naar##10299
+		..accept Shutting Down Manaforge Coruu##10321
+		.talk Exarch Orelis##19466
+		..accept Attack on Manaforge Coruu##10246
+		only if rep('The Aldor') > Neutral
+	step //105
+		'Go outside to 57.7,85.2|goto 57.7,85.2
+		.talk Thadell##20464
+		..accept Needs More Cowbell##10334
+		.talk Apprentice Andrethan##20463
+		..accept Indispensable Tools##10331
+	step //106
+		goto 57.5,86.3
+		.talk Custodian Dieworth##19488
+		..accept Malevolent Remnants##10184
+		.' Use Archmage Vargoth's Staff|use Archmage Vargoth's Staff##28455
+		.talk Image of Archmage Vargoth##19644
+		..turnin Curse of the Violet Tower##10174
+		..accept The Sigil of Krasus##10188
+		.talk Custodian Dieworth##19488
+		..accept A Fate Worse Than Death##10185
+		.talk Lieutenant-Sorcerer Morran##19489
+		..accept The Unending Invasion##10343
+	step //122
+		goto 55.7,87.2
+		.' Click the Mana Bomb Fragment|tip It looks like a big white ball with blue dots on it.
+		.get Mana Bomb Fragment|q 10343/1
+	step
+		goto 57.6,86.3
+		.talk Lieutenant-Sorcerer Morran##19489
+		..turnin The Unending Invasion##10343
+		..accept Potential Energy Source##10239
+	step //134
+		goto 51.1,82.5
+		.' Click the Energy Isolation Cubes|tip They look like little clear boxes with purple light in them on the ground.
+		.get 10 Energy Isolation Cube|q 10239/1
+		.' Kill Spellbinder Maryana|tip I found her here, but she wanders around outside in this area, so some searching may be necessary.
+		.get Sigil of Krasus|q 10188/1
+	step
+		from Sunfury Researcher##20136
+		.get Sunfury Researcher Gloves|q 10197/1
+		from Sunfury Guardsman##18850
+		.get Sunfury Guardsman Medallion|q 10197/2
+		from Sunfury Arcanist##20134
+		.get Sunfury Arcanist Robes|q 10197/3
+		only if rep('The Scryers') > Neutral
+	step
+		goto 48.2,86.6
+		.talk Caledis Brightdawn##19840
+		..turnin A Convincing Disguise##10197
+		..accept Information Gathering##10198
+		only if rep('The Scryers') > Neutral
+	step
+		goto 48.2,84.1
+		'Disguise yourself|use Sunfury Disguise##28607
+		goal Information Gathering|q 10198/1
+		only if rep('The Scryers') > Neutral
+	step
+		goto 48.2,86.6
+		.talk Caledis Brightdawn##19840
+		..turnin Information Gathering##10198
+		..accept Shutting Down Manaforge Coruu##10330
+		only if rep('The Scryers') > Neutral
+	step //104
+		'Go inside Manaforge Coruu to 49,81.5|goto 49,81.5
+		.' Kill Overseer Seylanna
+		..collect Coruu Access Crystal##29396|q 10330|sticky
+		.' Click the Coruu Control Console
+		..' Click "<Begin emergency shutdown>"
+		.' Kill the technicians as they come to try to save the Manaforge
+		..'Only takes 2 minutes
+		.' Shut Down Manaforge Coruu|goal Manaforge Coruu Shut Down |q 10330/1
+		only if rep('The Scryers') > Neutral
+	step
+		goto 48.2,86.6
+		.talk Caledis Brightdawn##19840
+		..turnin Shutting Down Manaforge Coruu##10330
+		..accept Return to Thalodien##10200
+		only if rep('The Scryers') > Neutral
+	step //104
+		'Go inside Manaforge Coruu to 49,81.5|goto 49,81.5
+		.kill 5 Sunfury Researcher|q 10246/1
+		.' Kill Overseer Seylanna
+		..collect Coruu Access Crystal##29396|q 10321|sticky
+		.' Click the Coruu Control Console
+		..' Click "<Begin emergency shutdown>"
+		.' Kill the technicians as they come to try to save the Manaforge
+		..'Only takes 2 minutes
+		.' Shut Down Manaforge Coruu|goal Manaforge Coruu Shut Down |q 10321/1
+		only if rep('The Aldor') > Neutral
+	step //103
+		goto 45.9,79.4
+		.kill 8 Sunfury Arcanist|q 10246/2
+		only if rep('The Aldor') > Neutral
+	step //135
+		goto 51.1,80.7
+		.' Use Archmage Vargoth's Staff|use Archmage Vargoth's Staff##28455
+		.talk Image of Archmage Vargoth##19644
+		..turnin The Sigil of Krasus##10188
+		..accept Krasus's Compendium##10192
+	step //136
+		goto 57.5,86.3
+		.talk Lieutenant-Sorcerer Morran##19489
+		..turnin Potential Energy Source##10239
+		..accept Building a Perimeter##10240
+	step //109
+		goto 58.4,88.3
+		.from Abjurist Belmara##19546
+		.get Belmara's Tome|n
+		.' Click Belmara's Tome|use Belmara's Tome##29234
+		..accept Abjurist Belmara##10305
+	step //137
+		goto 57.6,89.6
+		.' Click the glowing scroll on the ground in the small house
+		.get Krasus's Compendium - Chapter 2|q 10192/2
+	step //138
+		goto 58.6,89.2
+		.' Click the glowing scroll on a table in the small house
+		.get Krasus's Compendium - Chapter 1|q 10192/1
+	step //139
+		goto 58.8,87.9
+		.' Click the glowing scroll on the ground in the small house
+		.get Krasus's Compendium - Chapter 3|q 10192/3
+	step //140
+		.' Use Archmage Vargoth's Staff|use Archmage Vargoth's Staff##28455
+		.talk Image of Archmage Vargoth##19644
+		..turnin Krasus's Compendium##10192
+		..accept Unlocking the Compendium##10301
+	step //110
+		goto 59.6,87.7
+		.from Cohlien Frostweaver##19545
+		.get Cohlien's Cap|n
+		.' Click Cohlien's Cap|use Cohlien's Cap##29236
+		..accept Cohlien Frostweaver##10307
+	step //112
+		goto 59.9,85.6
+		.from Conjurer Luminrath##19544
+		.get Luminrath's Mantle|n
+		.' Click Luminrath's Mantle|use Luminrath's Mantle##29235
+		..accept Conjurer Luminrath##10306
+	step //113
+		goto 61,85
+		.' Kill Kirin'Var Apprentices
+		.get Smithing Hammer|q 10331/1
+	step //114
+		kill 20 Severed Spirit|q 10184/1
+	step //115
+		goto 57.7,85.2
+		.talk Apprentice Andrethan##20463
+		..turnin Indispensable Tools##10331
+		..accept Master Smith Rhonsus##10332
+	step //116
+		goto 57.5,86.3
+		.talk Custodian Dieworth##19488
+		..turnin Malevolent Remnants##10184
+		..accept The Annals of Kirin'Var##10312
+	step //117
+		goto 61.3,85
+		.kill Rhonsus##20410|q 10332/1
+	step //127
+		goto 60.4,88
+		.from Battle-Mage Dathric##19543
+		.get Annals of Kirin'Var|q 10312/1
+		.get Dathric's Blade|n
+		.' Click Dathric's Blade|use Dathric's Blade##29233
+		..accept Battle-Mage Dathric##10182
+	step //118
+		goto 57.7,85.2
+		.talk Apprentice Andrethan##20463
+		..turnin Master Smith Rhonsus##10332
+	step //128
+		goto 57.5,86.3
+		.talk Custodian Dieworth##19488
+		..turnin The Annals of Kirin'Var##10312
+		..accept Searching for Evidence##10316
+	step //120
+		goto 56.9,86.8
+		.' Go inside the little house
+		.' Click Dathric's Blade when standing next to the Weapon Rack|use Dathric's Blade##28351|tip Inside a little house.
+		.' Put Dathric's Spirit to Rest|goal Put Dathric's Spirit to Rest|q 10182/1
+	step //121
+		goto 56.4,87.8
+		.' Go inside the little house
+		.' Click Luminrath's Mantle when standing next to the Dresser|use Luminrath's Mantle##28352|tip Inside a little house.
+		.' Put Luminrath's Spirit to Rest|goal Put Luminrath's Spirit to Rest|q 10306/1
+	step //123
+		goto 55.1,87.5
+		.' The Foot Locker is in a pile of junk in the corner in a house with no roof
+		.' Click Cohlien's Cap when standing next to the Foot Locker|use Cohlien's Cap##28353
+		.' Put Cohlien's Spirit to Rest|goal Put Cohlien's Spirit to Rest|q 10307/1
+	step //124
+		goto 55.5,86.5
+		.' Go inside the house with a huge log laying diagonally into it
+		.' Click Belmara's Tome when standing next to the Bookshelf|use Belmara's Tome##28336|tip A little wooden bookshelf in a house with a huge log laying diagonally into the house, there is no roof.
+		.' Put Belmara's Spirit to Rest|goal Put Belmara's Spirit to Rest|q 10305/1
+	step //125
+		goto 55.5,86.7
+		..kill 10 Mana Seeker|q 10185/1
+		..kill 10 Mageslayer|q 10185/2
+	step //126
+		goto 57.5,86.3
+		.talk Custodian Dieworth##19488
+		..turnin Abjurist Belmara##10305
+		..turnin A Fate Worse Than Death##10185
+		..turnin Cohlien Frostweaver##10307
+		..turnin Battle-Mage Dathric##10182
+		..turnin Conjurer Luminrath##10306
+	step //129
+		goto 60.3,78
+		.' Go inside the barn
+		.' Click the Necromantic Focus|tip Inside the barn, looks like a stone altar with a reddish pink ball of light floating above it.
+		..turnin Searching for Evidence##10316
+		..accept A Lingering Suspicion##10314
+	step //130
+		goto 59.8,79.5
+		.' Kill ghosts around this area
+		.get 10 Loathsome Remnant|q 10314/1
+	step //131
+		goto 57.5,86.3
+		.talk Custodian Dieworth##19488
+		..turnin A Lingering Suspicion##10314
+		..accept Capturing the Phylactery##10319
+	step //132
+		goto 59.9,80.4
+		.' Click the Supicious Outhouse|tip The middle outhouse behind the first building on your right as you walk over the bridge, headed away from the huge tower where the quest gives are.
+		.get Naberius's Phylactery|q 10319/1
+	step //107
+		'WARNING: ESCORT
+		goto 59.1,78.8
+		.talk Bessy##20415
+		..turnin Needs More Cowbell##10334
+		..accept When the Cows Come Home##10337|noautoaccept
+	step
+		' Escort Bessy to Thadell|goal Escort Bessy on her way home.|q 10337/1
+	step //108
+		'At 57.7,85.2|goto 57.7,85.2
+		.talk Thadell##20464
+		..turnin When the Cows Come Home##10337
+	step //133
+		goto 57.5,86.3
+		.talk Custodian Dieworth##19488
+		..turnin Capturing the Phylactery##10319
+	step //141
+		goto 59.2,85.4
+		.' Use your Rune Activation Device on the blue floating symbol|use Rune Activation Device##28725
+		.' Activate the Eastern Rune|goal Activate Eastern Rune|q 10240/1
+	step //142
+		goto 57.3,82.9
+		.' Use your Rune Activation Device on the blue floating symbol|use Rune Activation Device##28725
+		.' Activate the Northeastern Rune|goal Activate Northeastern Rune|q 10240/2
+	step //143
+		goto 54.3,86.1
+		.' Use your Rune Activation Device on the blue floating symbol|use Rune Activation Device##28725
+		.' Activate the Western Rune|goal Activate Western Rune|q 10240/3
+	step //144
+		goto 57.5,86.3
+		.talk Lieutenant-Sorcerer Morran##19489
+		..turnin Building a Perimeter##10240
+		..accept Torching Sunfury Hold##10233
+		.talk Custodian Dieworth##19488
+		..accept The Sunfury Garrison##10222
+	step //145
+		goto 56.5,78.5
+		.kill 10 Sunfury Archer|q 10222/1
+		.' Kill a Sunfury Flamekeeper
+		.get Flaming Torch|n
+		.' Use the torch on the tall hut looking things and the big spear gun cars|use Flaming Torch##28550|tip The tents are tall hut looking things, and the Sunfury Ballistas look like big spear gun cars.
+		.' Destroy 4 Sunfury Ballistas|goal 4 Sunfury Ballista Destroyed|q 10233/1
+		.' Destroy 4 Sunfury Tents|goal 4 Sunfury Tent Destroyed|q 10233/2
+		.' Kill Spellweaver Marathelle|tip She walks around this area, so some searching may be necessary.
+		.get Heliotrope Oculus|q 10301/1
+	step //146
+		'Use Archmage Vargoth's Staff|use Archmage Vargoth's Staff##28455
+		.talk Image of Archmage Vargoth##19644
+		..turnin Unlocking the Compendium##10301
+		..accept Summoner Kanthin's Prize##10209
+	step //147
+		goto 57.5,86.3
+		.talk Lieutenant-Sorcerer Morran##19489
+		..turnin Torching Sunfury Hold##10233
+		.talk Custodian Dieworth##19488
+		..turnin The Sunfury Garrison##10222
+		..accept Down With Daellis##10223
+	step
+		goto 32,64.1
+		.talk Spymaster Thalodien##19468
+		..turnin Return to Thalodien##10200
+		..accept Shutting Down Manaforge Duro##10338
+		.talk Magistrix Larynna##19469
+		..accept Kick Them While They're Down##10341
+		only if rep('The Scryers') > Neutral
+	step //154
+		goto 32.1,64.2
+		.talk Exarch Orelis##19466
+		..turnin Attack on Manaforge Coruu##10246
+		.talk Anchorite Karja##19467
+		..turnin Shutting Down Manaforge Coruu##10321
+		..accept Shutting Down Manaforge Duro##10322
+		.talk Exarch Orelis##19466
+		..accept Sunfury Briefings##10328
+		only if rep('The Aldor') > Neutral	
+	step //155
+		goto 46.7,56.9
+		.talk Gahruj##20066
+		..turnin Request for Assistance##10266
+		..accept Rightful Repossession##10267
+		..accept Drijya Needs Your Help##10311
+	step //156
+		goto 46.6,56.5
+		.talk Mama Wheeler##19728
+		..turnin Help Mama Wheeler##10333
+		..accept One Demon's Trash...##10234
+	step //157
+		goto 46.4,56.4
+		.talk Mehrdad##20810
+		..accept Run a Diagnostic!##10417
+		..accept New Opportunities##10348
+	step //158
+		goto 46.5,56.0
+		.talk Shauly Pore##20921
+		..accept Keeping Up Appearances##10433
+	step //159
+		goto 48.2,55.0
+		.' Click the Diagnostic Equipment|tip It looks like a small cylinder machine with pink electricity inside of it.
+		.get Diagnostic Results|q 10417/1
+	step //160
+		goto 48.2,53.9
+		.' Click Ivory Bells around this area|tip The Ivory Bells look like tall flowers with a single purple and pink bulb at the top.
+		.get 15 Ivory Bell|q 10348/1
+		.from Ripfang Lynx##20671
+		.get 10 Ripfang Lynx Pelt|q 10433/1
+	step //161
+		goto 46.5,56.0
+		.talk Shauly Pore##20921
+		..turnin Keeping Up Appearances##10433
+		..accept The Dynamic Duo##10434
+	step //162
+		goto 46.4,56.4
+		.talk Mehrdad##20810
+		..turnin New Opportunities##10348
+		..turnin Run a Diagnostic!##10417
+		..accept Deal With the Saboteurs##10418
+	step //163
+		goto 46.8,53.9
+		.kill 8 Barbscale Crocolisk|q 10418/1
+	step //164
+		goto 46.4,56.4
+		.talk Mehrdad##20810
+		..turnin Deal With the Saboteurs##10418
+		..accept To the Stormspire##10423
+	step //165
+		goto 48.1,63.5
+		.talk Drijya##20281
+		..turnin Drijya Needs Your Help##10311
+	step //166
+		goto 48.4,59.3
+		.' Click Fel Reaver Parts|n|tip The Feal Reaver Parts look like brownish-green metal parts laying on the ground around this area.
+		.get 10 Fel Reaver Part|q 10234/1
+		.kill 15 Gan'arg Engineer|q 10232/2
+		.kill 5 Mo'arg Doomsmith|q 10232/1
+	step //167
+		goto 46.6,56.5
+		.talk Mama Wheeler##19728
+		..turnin One Demon's Trash...##10234
+		..accept Declawing Doomclaw##10235
+	step //168
+		goto 50.7,57.1
+		.from Doomclaw##19738
+		.get 1 Doomclaw's Hand|q 10235/1
+	step //169
+		goto 46.6,56.5
+		.talk Mama Wheeler##19728
+		..turnin Declawing Doomclaw##10235
+		..accept Warn Area 52!##10237
+	step //148
+		goto 56.6,66.1
+		.kill Master Daellis Dawnstrike|q 10223/1|tip He runs along the cliff in this area.
+	step //149
+		goto 57.4,64.6
+		.from Summoner Kanthin##19657
+		.get 1 Stone of Glacius|q 10209/1
+	step //170
+		goto 57.9,63.4
+		.kill Sunfury Conjurers|n|only if rep('The Aldor') > Neutral
+		.get 1 Sunfury Arcane Briefing|q 10328/2|only if rep('The Aldor') > Neutral
+		.kill Sunfury Bowmen and Sunfury Centurions|n|only if rep('The Aldor') > Neutral
+		.get 1 Sunfury Military Briefing|q 10328/1|only if rep('The Aldor') > Neutral
+		.' Click Boxes of Surveying Equipment|tip They look like small grey boxes on the ground around this area.
+		.get 10 Box of Surveying Equipment|q 10267/1
+	step //171
+		'Go inside Manaforge Duro to 60.0,68.5|goto 60.0,68.5
+		.from Overseer Athanel##20435
+		.get 1 Duro Access Crystal|q 10322/2|only if rep('The Aldor') > Neutral
+		.get 1 Duro Access Crystal|q 10338/2|only if rep('The Scryers') > Neutral
+	step //172
+		goto 59.1,66.8
+		.' Click the Duro Control Console
+		.' Click "<Begin emergency shutdown>"
+		.' Kill the technicians as they come to try to save the Manaforge
+		..'Only takes 2 minutes
+		.' Shut Down Manaforge Duro|goal Manaforge Duro Shut Down|q 10322/1|only if rep('The Aldor') > Neutral
+		.' Shut Down Manaforge Duro|goal Manaforge Duro Shut Down|q 10338/1|only if rep('The Scryers') > Neutral
+	step
+		kill 8 Sunfury Conjurer|q 10341/1
+		kill 6 Sunfury Bowman|q 10341/2
+		kill 4 Sunfury Centurion|q 10341/3
+		only if rep('The Scryers') > Neutral
+	step //150
+		'Use Archmage Vargoth's Staff|use Archmage Vargoth's Staff##28455
+		.talk Image of Archmage Vargoth##19644
+		..turnin Summoner Kanthin's Prize##10209
+		..accept Ar'kelos the Guardian##10176
+	step //151
+		goto 57.5,86.3
+		.talk Custodian Dieworth##19488
+		..turnin Down With Daellis##10223
+	step //152
+		'Go inside the tower to 58.2,86.5|goto 58.2,86.5
+		.kill Ar'kelos|q 10176/1|tip He's right inside the tower.
+	step //153
+		'Go to the top of the tower to 58.3,86.4|goto 58.3,86.4
+		.talk Archmage Vargoth##19481
+		..turnin Ar'kelos the Guardian##10176
+	step //173
+		goto 46.7,56.9
+		.talk Gahruj##20066
+		..turnin Rightful Repossession##10267
+		..accept An Audience with the Prince##10268
+	step //174
+		goto 42.3,32.6
+		.talk Aurine Moonblaze##20871
+		..accept Flora of the Eco-Domes##10426
+	step //181
+		'Ride the elevating platform up and go to 43.5,35.1|goto 43.5,35.1
+		.talk Ghabar##20811
+		..turnin To the Stormspire##10423
+		..accept Diagnosis: Critical##10424
+	step
+		goto 44.1,36
+		.talk Zuben Elgenubi##20067
+		..accept In Search of Farahlite##10290
+	step
+		goto 44.7,34.9
+		.talk Nether-Stalker Nauthis##20471
+		..accept The Minions of Culuthas##10336
+		..accept Fel Reavers, No Thanks!##10855
+		.talk Zephyrion##20470
+		..accept Surveying the Ruins##10335
+	step //182
+		goto 44.7,36.7
+		.talk Audi the Needle##20205
+		..turnin The Dynamic Duo##10434
+		..accept Retrieving the Goods##10435
+	step //183
+		goto 45.9,36.0
+		.talk Image of Nexus-Prince Haramad##20084
+		..turnin An Audience with the Prince##10268
+		..accept Triangulation Point One##10269
+	step //184
+		goto 45.3,34.9
+		.talk Grennik##19583
+		..fpath The Stormspire
+	step //192
+		'Fly to Area 52|goto 33.9,63.9,0.5|noway|c
+	step //193
+		goto 33,64.7
+		.talk Papa Wheeler##19645
+		..turnin In A Scrap With The Legion##10232
+	step //194
+		goto 32.7,65
+		.talk Rocket-Chief Fuselage##19570
+		..turnin Warn Area 52!##10237
+		..accept Doctor Vomisa, Ph.T.##10247
+	step
+		goto 32,64.1
+		.talk Spymaster Thalodien##19468
+		..turnin Shutting Down Manaforge Duro##10338
+		..accept Shutting Down Manaforge Ara##10365
+		.talk Magistrix Larynna##19469
+		..turnin Kick Them While They're Down##10341
+		..accept A Defector##10202
+		only if rep('The Scryers') > Neutral
+	step //195
+		goto 32.1,64.2
+		.talk Exarch Orelis##19466
+		..turnin Sunfury Briefings##10328
+		.talk Anchorite Karja##19467
+		..turnin Shutting Down Manaforge Duro##10322
+		..accept Shutting Down Manaforge Ara##10323
+		only if rep('The Aldor') > Neutral
+	step //192
+		'Fly to the Stormspire|goto 45.2,35,1|noway|c
+	step //175
+		goto 40.4,33.5
+		.' Use your Energy Field Modulator on Farahlon Lashers|use Energy Field Modulator##29818
+		.kill Mutated Farahlon Lashers|n
+		.' Test the Energy Field Modulator 10 times|goal 10 Test Energy Modulator|q 10426/1
+	step //176
+		goto 42.3,32.6
+		.talk Aurine Moonblaze##20871
+		..turnin Flora of the Eco-Domes##10426
+		..accept Creatures of the Eco-Domes##10427
+	step //185
+		goto 47.6,26.8
+		.' Use your Diagnostic Device next to the big floating cylinder|use Diagnostic Device##29803
+		.get 1 Diagnostic Results|q 10424/1
+	step //177
+		goto 43.7,30.2
+		.' Fight Talbuk Does and Talbuk Sires|tip You will see a message in your chat window when they are at about 20% health, saying "Talbuk Doe, or Sire, seems to have weakened."
+		.' Use your Talbuk Tagger on Talbuk when you see the message in your chat|use Talbuk Tagger##29817
+		.' Tag 12 Talbuks|goal 12 Talbuk Tagged|q 10427/1
+	step //178
+		goto 42.3,32.6
+		.talk Aurine Moonblaze##20871
+		..turnin Creatures of the Eco-Domes##10427
+		..accept When Nature Goes Too Far##10429
+	step //179
+		goto 44.6,28.4
+		.from Markaru##20775
+		.get 1 Hulking Hydra Heart|q 10429/1
+	step //180
+		goto 42.3,32.6
+		.talk Aurine Moonblaze##20871
+		..turnin When Nature Goes Too Far##10429
+	step //186
+		goto 43.5,35.1
+		.talk Ghabar##20811
+		..turnin Diagnosis: Critical##10424
+		..accept Testing the Prototype##10430
+	step
+		goto 38,25.7
+		.from Gan'arg Mekgineer##16949+
+		..collect 5 Condensed Nether Gas|n
+		.'Go up to an Inactive Fel Reaver and Destroy it|goal Inactive Fel Reaver Destroyed|q 10855/1
+	step //187
+		goto 44.7,14.6
+		.talk Tashar##20913
+		..turnin Testing the Prototype##10430
+		..accept All Clear!##10436
+	step //188
+		goto 44.0,14.0
+		.kill 12 Scythetooth Raptor|q 10436/1
+		.' Click Dome Generator Segments|tip They look like small glass cylinders on the ground with purple lightning in them.
+		.get 10 Dome Generator Segment|q 10435/1
+	step //189
+		goto 44.7,14.6
+		.talk Tashar##20913
+		..turnin All Clear!##10436
+		..accept Success!##10440
+	step //190
+		goto 43.5,35.1
+		.talk Ghabar##20811
+		..turnin Success!##10440
+	step
+		goto 44.7,34.9
+		.talk Nether-Stalker Nauthis##20471
+		..turnin Fel Reavers, No Thanks!##10855
+		..accept The Best Defense##10856
+	step //191
+		goto 44.7,36.7
+		.talk Audi the Needle##20205
+		..turnin Retrieving the Goods##10435
+	step
+		goto 40.8,21.4
+		.kill 12 Wrathbringer##18858+|q 10856/1
+	step
+		goto 44.7,34.9
+		.talk Nether-Stalker Nauthis##20471
+		..turnin The Best Defense##10856
+		..accept Teleport This!##10857
+	step
+		goto 42.2,21.1
+		'Use the Mental Interference Rod on a Cyber-Rage Forgelord, and use his Detonate Teleporter ability on the teleporters.|use Mental Interference Rod##31678
+		.goal Western Teleporter Destroyed|q 10857/1
+		.goal Central Teleporter Destroyed|q 10857/2
+		.goal Eastern Teleporter Destroyed|q 10857/3
+	step
+		goto 44.7,34.9
+		.talk Nether-Stalker Nauthis##20471
+		..turnin Teleport This!##10857
+	step
+		goto 58.3,31.7
+		.talk Wind Trader Marid##20071
+		..accept A Not-So-Modest Proposal##10270
+	step
+		goto 59.2,32.6
+		.talk Researcher Navuud##20449
+		..accept Electro-Shock Goodness!##10411
+	step
+		goto 59.5,32.4
+		.talk Commander Ameer##20448
+		..accept The Ethereum##10339
+	step
+		goto 59.2,32.1
+		.talk Flesh Handler Viridius##20450
+		..accept Captain Tyralius##10422
+	step
+		goto 60.1,31.7
+		.talk Professor Dabiri##20907
+		..accept Recipe for Destruction##10437
+	step
+		'Start here and run around Manaforge Ultris|goto 62.8,35
+		.from Unstable Voidwraith##18869+, Voidshrieker##18870
+		..get 8 Fragment of Dimensius|q 10437/1
+		'Attack Seeping Sludge until they break into Globules, kill those.|use Navuud's Concotion##29737
+		.kill 30 Seeping Sludge Globule##20806+|q 10411/1
+	step
+		goto 59.4,45
+		.talk Agent Araxes##20551
+		..accept The Flesh Lies...##10345
+	step
+		'Enter the mine at 61,45.7|c
+	step
+		goto 61,41.5
+		'Burn Withered Corpses on the ground|use Protectorate Igniter##29473
+		.get Teleporter Power Pack|q 10270/1
+		.talk Agent Ya-Six##20552
+		..accept Arconus the Insatiable##10353
+	step
+		goto 60.2,39.8
+		'Burn Withered Corpses on the ground|goal 12 Withered Corpses Burned|q 10345/1|use Protectorate Igniter##29473
+		.kill Arconus the Insatiable##20554|q 10353/1
+	step
+		'Exit the mine at 61,45.7|c
+	step
+		goto 59.4,45
+		.talk Agent Araxes##20551
+		..turnin The Flesh Lies...##10345
+	step
+		goto 57.1,35.7
+		.kill 5 Ethereum Assassin|q 10339/1
+		.kill 5 Ethereum Shocktrooper|q 10339/2
+		.kill 2 Ethereum Researcher|q 10339/3
+		.kill Captain Zovax slain|q 10339/4
+	step
+		goto 56.8,38.7
+		.talk Image of Commander Ameer##20482
+		..turnin The Ethereum##10339
+		..accept Ethereum Data##10384
+	step
+		goto 55.8,39.9
+		.get Ethereum Data Cell|q 10384/1
+	step
+		goto 56.8,38.7
+		.talk Image of Commander Ameer##20482
+		..turnin Ethereum Data##10384
+		..accept Potential for Brain Damage = High##10385
+	step
+		goto 54.4,41.3
+		.from Warden Icoshock##20770
+		..collect The Warden's Key|q 10422
+	step
+		goto 53.3,41.4
+		goal Captain Tyralius Freed|q 10422/1
+	step
+		from Ethereum
+		.collect Ethereum Essence|n
+		use Ethereum Essence##29482
+		.from Ethereum Relay##20619+
+		..get 15 Ethereum Relay Data|q 10385/1
+		use Navuud's Concotion##29737
+		'Attack Void Waste until they break into Globules, kill those.
+		.kill 30 Void Waste Globule##20805+|q 10411/2
+	step
+		goto 56.8,38.7
+		.talk Image of Commander Ameer##20482
+		..turnin Potential for Brain Damage = High##10385
+		..accept S-A-B-O-T-A-G-E##10405
+	step
+		goto 55.8,42.3
+		from Ethereum Archon##20458+,Ethereum Overlord##20459+
+		.get Prepared Ethereum Wrapping|q 10405/1
+	step
+		'WARNING: ESCORT
+		goto 56.8,38.7
+		.talk Image of Commander Ameer##20482
+		..turnin S-A-B-O-T-A-G-E##10405
+		..accept Delivering the Message##10406|noautoaccept
+	step
+		goal Ethereum Conduit Sabotaged|q 10406/1
+	step
+		goto 56.8,38.7
+		.talk Image of Commander Ameer##20482
+		..turnin Delivering the Message##10406
+		..accept Nexus-King Salhadaar##10408
+	step
+		goto 59.2,32.6
+		.talk Researcher Navuud##20449
+		..turnin Electro-Shock Goodness!##10411
+	step
+		goto 59.5,32.4
+		.talk Commander Ameer##20448
+		..turnin Arconus the Insatiable##10353
+	step
+		goto 59.2,32.1
+		.talk Flesh Handler Viridius##20450
+		..turnin Captain Tyralius##10422
+	step
+		goto 60.1,31.7
+		.talk Professor Dabiri##20907
+		..turnin Recipe for Destruction##10437
+		..accept On Nethery Wings##10438
+	step
+		'Talk to the Protectorate Nether Drake to start the flight assault.
+		'Use the Phase Disruptor when you get close to Manaforge Ultris|use Phase Disruptor##29778
+		.goal Void Conduit Destroyed|q 10438/1
+	step
+		goto 60.1,31.7
+		.talk Professor Dabiri##20907
+		..turnin On Nethery Wings##10438
+		..accept Dimensius the All-Devouring##10439
+	step
+		goto 66.7,33.8
+		.use Triangulation Device##28962
+		..goal First Triangulation point discovered|q 10269/1
+	step
+		goto 71.1,39
+		.talk Image of Wind Trader Marid##20518
+		..turnin A Not-So-Modest Proposal##10270
+		..accept Getting Down to Business##10271
+	step
+		goto 73.5,38.6
+		.from Nether Dragons
+		..get 8 Nether Dragon Essence|q 10271/1
+	step
+		goto 70.9,38.8
+		.talk Shrouded Figure##20154
+		..turnin Getting Down to Business##10271
+		..accept Formal Introductions##10281
+	step
+		goto 71.2,35.1
+		.talk Tyri##20110
+		..turnin Formal Introductions##10281
+		..accept A Promising Start##10272
+	step
+		'All along the Celestial Ridge.
+		.get 15 Nether Dragonkin Egg|q 10272/1
+	step
+		goto 71.2,35.1
+		.talk Tyri##20110
+		..turnin A Promising Start##10272
+		..accept Troublesome Distractions##10273
+	step
+		goto 58.3,31.7
+		.kill Wind Trader Marid##20071|q 10273/1
+	step
+		goto 58.3,31.3
+		.talk Dealer Hazzin##20092
+		..turnin Triangulation Point One##10269
+		..accept Triangulation Point Two##10275
+	step
+		goto 71.2,35.1
+		.talk Tyri##20110
+		..turnin Troublesome Distractions##10273
+		..accept Securing the Celestial Ridge##10274
+	step
+		goto 34.6,37.9
+		.talk Wind Trader Tuluman##20112
+		..accept Dealing with the Foreman##10317
+		.talk Nether-Stalker Oazul##20341
+		..accept Neutralizing the Nethermancers##10315
+	step
+		goto 26.2,41.6
+		.talk Magister Theledorn##20920
+		..turnin A Defector##10202
+		..accept Damning Evidence##10432
+		only if rep('The Scryers') > Neutral
+	step
+		'Enter the mine at 26.4,44|c
+	step
+		goto 26.4,42.3
+		.talk Foreman Sundown##20393
+		..turnin Dealing with the Foreman##10317
+		..accept Dealing with the Overmaster##10318
+	step
+		goto 26.8,35.8
+		.kill Overmaster Grindgarr##20803|q 10318/1
+	step
+		'Exit the mine at 26.4,44|c
+	step
+		goto 28.9,41.3
+		.use Triangulation Device##29018
+		..goal Second Triangulation point discovered|q 10275/1
+		.kill 15 Sunfury Nethermancer|q 10315/1
+		.from Demons|only if rep('The Scryers') > Neutral
+		..get 8 Orders from Kael'thas|q 10432/1|only if rep('The Scryers') > Neutral
+	step
+		goto 34.6,37.9
+		.talk Wind Trader Tuluman##20112
+		..turnin Dealing with the Overmaster##10318
+		..turnin Triangulation Point Two##10275
+		..accept Full Triangle##10276
+		.talk Nether-Stalker Oazul##20341
+		..turnin Neutralizing the Nethermancers##10315
+	step
+		goto 51.7,20.5
+		use Surveying Markers##29445
+		.goal Surveying Marker One placed|q 10335/1
+	step
+		goto 54.6,22.8
+		use Surveying Markers##29445
+		.goal Surveying Marker Two placed|q 10335/2
+	step
+		goto 55.8,19.9
+		use Surveying Markers##29445
+		.goal Surveying Marker Three placed|q 10335/3
+	step
+		kill 10 Hound of Culuthas|q 10336/1
+		kill 5 Eye of Culuthas|q 10336/2
+	step
+		goto 44.7,34.9
+		.talk Nether-Stalker Nauthis##20471
+		..turnin The Minions of Culuthas##10336
+		.talk Zephyrion##20470
+		..turnin Surveying the Ruins##10335
+	step //192
+		'Fly to Area 52|goto 33.9,63.9,0.5|noway|c
+	step
+		goto 32,64.1
+		.talk Spymaster Thalodien##19468
+		..turnin Damning Evidence##10432
+		..accept A Gift for Voren'thal##10508
+		only if rep('The Scryers') > Neutral		
+]])
 
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Shadowmoon Valley",[[
+	author PolarCookie
+	startlevel 70
 
-
-
+	step
+		'TODO: Write this
+]])
 
