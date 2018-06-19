@@ -511,10 +511,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		goto 46.7,53.8
 		.talk Senir Whitebeard##1252
 		..turnin Frostmane Hold##287
-	step
-		goto 46.7,53.8
-		.talk Senir Whitebeard##1252
-		..turnin Frostmane Hold##287
 		..accept The Reports##291
 	step
 		goto 45.8,49.4
@@ -617,7 +613,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		.talk Monty##12997
 		..accept Deeprun Rat Roundup##6661
 	step
-		goal 5 Rats Captured |q 6661/1
+		use Rat Catcher's Flute##17117
+		.goal 5 Rats Captured |q 6661/1
 	step
 		.talk Monty##12997
 		..turnin Deeprun Rat Roundup##6661
@@ -7304,10 +7301,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 31.0,39.9|n
 		'Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c
 	step
-		goto 55.5,54.8
-		.kill yetis|n
-		.get 10 Thick Yeti Hide|q 2821/1
-	step
 		'WARNING: ESCORT
 		'If you have the OOX-22/FE Distress Beacon, now is a good time. There will be another chance later if you don't.|goto 53.4,55.7
 		.' Click the OOX-22/FE Distress Beacon|use OOX-22/FE Distress Beacon##8705
@@ -7317,6 +7310,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Rescue OOX-22/FE!##2767|noautoaccept
 	step
 		goal Escort OOX-22/FE to safety|q 2767/1|tip DON'T GET TO FAR AWAY FROM THE CHICKEN, IF HE LEAVES YOUR VIEW DISTANCE HE DESPAWNS. IMPORTANT DURING THE SECOND WAVE WHEN 3 APES MAY SPAWN WAY FAR AHEAD ON THE ROAD. BE PATIENT.
+	step
+		goto 55.5,54.8
+		.kill yetis|n
+		.get 10 Thick Yeti Hide|q 2821/1
 	step
 		goto 55.9,76
 		.collect 1 Hippogryph Egg##|q 2741/1|future
@@ -8592,12 +8589,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Commander Ashlam Valorfist##10838
 		..turnin A Call to Arms: The Plaguelands!##5090
 		..accept Clear the Way##5092
-		..accept Scholomance##5533
-	step
-		goto 42.7,83.8
-		.talk Alchemist Arbington##11056
-		..turnin Scholomance##5533
-		..accept Skeletal Fragments##5537
 	step
 		goto 43,83.5|tip Equip the trinket you receive.
 		.talk Argent Officer Pureheart##10840
@@ -8653,6 +8644,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 42.7,84
 		.talk Commander Ashlam Valorfist##10838
 		..turnin All Along the Watchtowers##5097
+		..accept Scholomance##5533
+	step
+		goto 42.7,83.8
+		.talk Alchemist Arbington##11056
+		..turnin Scholomance##5533
+		..accept Skeletal Fragments##5537
 	step
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
@@ -12703,9 +12700,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Net
 		.' Kill Shaleskin Flayers
 		.get 5 Shaleskin Shale|q 10342/1
 	step //61
+		'WARNING: Escort
 		goto 31.5,56.6
 		.talk Maxx A. Million Mk. V##19589
-		..accept Mark V is Alive!##10191
+		..accept Mark V is Alive!##10191|noautoaccept
 	step
 		' Escort Maxx A. Million Mk. V|goal Escort the Maxx A. Million Mk. V safely through the Ruins of Enkaat|q 10191/1
 		' Click the red glowing crystals on the ground while escorting Maxx A. Million Mk. V
