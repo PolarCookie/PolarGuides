@@ -84,7 +84,7 @@ Outland does have the advantage of less traveling between quests.
 To Be Done: A solo oriented leveling guide visiting 5 man dungeons to avoid farming out in the world. A solo version of duo, will have to prune a lot of quests.
 
 ## PANIC; MY QUESTS ARE GREEN!
-Don't worry to much about that.  
+Don't worry to much about that, Ding80 stays in green quests for the most part. It works out in the end and fighting green mobs is a breeze so xp-gain speed should be high.  
 Quest xp works like this.
 <table>
 	<tr>
