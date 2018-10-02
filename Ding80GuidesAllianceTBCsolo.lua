@@ -3445,7 +3445,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Einar Stonegrip##2093
 		..accept Daily Delivery##469
 	step
-		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind long the way.
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..accept In Search of The Excavation Team (1)##305
@@ -3487,7 +3487,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Valstag Ironjaw##2086
 		..turnin The Algaz Gauntlet##455
 	step
-		ding 23
+		ding 23|tip Important, go outside and grind a bit if you're close.
 	step
 		goto 10.1,56.9
 		.talk Valstag Ironjaw##2086

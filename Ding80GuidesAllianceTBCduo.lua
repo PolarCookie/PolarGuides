@@ -2059,12 +2059,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		'Follow the path through the tunnels to 53.9,70.3|goto 53.9,70.3|n
 		.' Traverse Dun Algaz|goal Traverse Dun Algaz|q 455/1
 	step
-		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
 		goto 49.9,39.4
 		.talk Einar Stonegrip##2093
 		..accept Daily Delivery##469
 	step
-		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..accept In Search of The Excavation Team (1)##305

@@ -3514,7 +3514,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		.talk Valstag Ironjaw##2086
 		..turnin The Algaz Gauntlet##455
 	step
-		ding 23
+		ding 23|tip Important, go outside and grind a bit if you're close.
 	step
 		goto 10.1,56.9
 		.talk Valstag Ironjaw##2086
@@ -3524,8 +3524,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		.talk Captain Stoutfist##2104
 		..turnin Report to Captain Stoutfist##473
 		..accept War Banners##464
-	step
-		ding 23
 	step
 		goto 18.1,39.8
 		.from Gobbler##1259
