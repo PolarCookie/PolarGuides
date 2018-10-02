@@ -2318,8 +2318,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 53.8,42.5
 		.from Goretusk##157+, Young Goretusk##454+
 		.get 8 Goretusk Liver|q 22/1
-		.get 3 Goretusk Snout|q 38/3
-		.collect 3 Boar Intestines |q 418 |future|tip Save these for 'Thelsamar Blood Sausages' later. 
+		.get 3 Goretusk Snout|q 38/3|tip Save 'Boar Intestines' for 'Thelsamar Blood Sausages' later. 
 	step
 		goto 59,43.7
 		.from Fleshripper##1109+
@@ -2342,7 +2341,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step
 		goto 55.1,12.3
 		.from Murloc Raider##515+, Murloc Coastrunner##126+
-		.get 3 Murloc Eye|q 38/2
+		.get 3 Murloc Eye|q 38/2|tip Save 'Murloc Fins' for 'Murloc Poachers' later.
 	step
 		goto 57.1,19.3
 		.get 8 Handful of Oats|q 151/1
@@ -2500,7 +2499,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step
 		home Stormwind City
 	step
-		goto Stormwind City,39.2,85.3
+		goto 39.2,85.3
 		.talk Gakin the Darkbinder##6122
 		..turnin Surena Caledon##1688
 		..accept The Binding##1689
@@ -2739,6 +2738,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		..get Ol' Sooty's Head|q 271/1
 	step
 		goto 52.2,69.3
+		.goal Find Huldar, Miran, Saean|q 273/1
+	step
+		goto 52.2,69.3
 		.talk Huldar
 		..turnin Resupplying the Excavation##273
 		..accept After the Ambush##454
@@ -2820,8 +2822,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		..turnin Stormpike's Order##1338
 	step
 		'Fly to Westfall|goto Westfall|noway|c
-	step
-		collect 5 Flask of Oil
 	step
 		goto 52.6,72.3
 		.kill 15 Defias Highwayman|q 14/1
@@ -3206,7 +3206,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		.kill 10 Redridge Mongrel|q 246/1
 		.kill 6 Redridge Poacher|q 246/2
 	step
-		goto Redridge Mountains,48.2,73.3
+		goto 48.2,73.3
 		.from Murloc Flesheater##422+, Murloc Shorestriker##1083+, Murloc Minor Tidecaller##548+
 		.get 10 Spotted Sunfish|q 127/1
 		.get 8 Murloc Fin##1468|q 150/1
@@ -3283,9 +3283,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		.talk Verner Osgood##415
 		..turnin A Baying of Gnolls##124
 	step
-		'Go southwest to Duskwood|goto Duskwood|noway|c
-	step
-		goto 73.8,43.5
+		'Go southwest to Duskwood|goto Duskwood,73.8,43.5
 		.talk Chef Grual##272
 		..accept Seasoned Wolf Kabobs##90
 	step
@@ -3464,12 +3462,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		'Follow the path through the tunnels to 53.9,70.3|goto 53.9,70.3|n
 		.' Traverse Dun Algaz|goal Traverse Dun Algaz|q 455/1
 	step
-		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind long the way.
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
 		goto 49.9,39.4
 		.talk Einar Stonegrip##2093
 		..accept Daily Delivery##469
 	step
-		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind long the way.
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..accept In Search of The Excavation Team (1)##305

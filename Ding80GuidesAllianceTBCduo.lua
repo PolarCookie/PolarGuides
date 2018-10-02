@@ -968,8 +968,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		goto 53.8,42.5
 		.from Goretusk##157+, Young Goretusk##454+
 		.get 8 Goretusk Liver|q 22/1
-		.get 3 Goretusk Snout|q 38/3
-		.collect 3 Boar Intestines |q 418 |future|tip Save these for 'Thelsamar Blood Sausages' later. 
+		.get 3 Goretusk Snout|q 38/3|tip Save 'Boar Intestines' for 'Thelsamar Blood Sausages' later. 
 	step
 		goto 59,43.7
 		.from Fleshripper##1109+
@@ -995,7 +994,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 	step
 		goto 55.1,12.3
 		.from Murloc Raider##515+, Murloc Coastrunner##126+
-		.get 3 Murloc Eye|q 38/2
+		.get 3 Murloc Eye|q 38/2|tip Save 'Murloc Fins' for 'Murloc Poachers' later.
 	step
 		goto 57.1,19.3
 		.get 8 Handful of Oats|q 151/1
@@ -1009,6 +1008,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		goto 53.8,31.7
 		.kill 20 Harvest Watcher|q 9/1
 		.collect 5 Flask of Oil##814|q 103 |future
+		.collect 5 Hops##1274|q 116 |future
 	step
 		goto 56.4,30.5
 		.talk Salma Saldean##235
@@ -1149,8 +1149,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		.talk Morgan Pestle##279
 		..turnin Shipment To Stormwind##61
 	step
-		home Stormwind City
-	step
 		goto 25.3,78.6
 		.talk Gakin the Darkbinder##6122
 		..turnin Surena Caledon##1688
@@ -1208,6 +1206,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		.talk Magistrate Solomon##344
 		..accept Messenger to Stormwind (1)##120
 	step
+		home Lakeshire
+	step
 		goto 26.5,44
 		.talk Barkeep Daniels##346
 		..accept Dry Times##116
@@ -1240,9 +1240,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		goto 44,65.7
 		buy Skin of Sweet Rum|q 116/4
 	step
-		'Head back to Stormwind City|goto Stormwind City|noway|c
-	step
-		'Fly to Lakeshire|goto Redridge Mountains|noway|c
+		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
 	step
 		goto 31,47.3
 		.talk Verner Osgood##415
@@ -1263,6 +1261,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		..accept Messenger to Westfall (2)##144
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
+	step
+		home Stormwind City
 	step
 		goto 75.8,59.8
 		.talk Master Mathias Shaw##332
@@ -1496,6 +1496,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		..get Ol' Sooty's Head|q 271/1
 	step
 		goto 52.2,69.3
+		.goal Find Huldar, Miran, Saean|q 273/1
+	step
+		goto 52.2,69.3
 		.talk Huldar
 		..turnin Resupplying the Excavation##273
 		..accept After the Ambush##454
@@ -1593,9 +1596,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		..accept The Defias Brotherhood (5)##142
 	step
 		home Westfall
-	step
-		collect 5 Flask of Oil
-		collect 5 Hops
 	step
 		goto 44.6,80.3
 		.talk Grimbooze Thunderbrew##239
@@ -1777,7 +1777,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.kill 10 Redridge Mongrel|q 246/1
 		.kill 6 Redridge Poacher|q 246/2
 	step
-		goto Redridge Mountains,48.2,73.3
+		goto 48.2,73.3
 		.from Murloc Flesheater##422+, Murloc Shorestriker##1083+, Murloc Minor Tidecaller##548+
 		.get 10 Spotted Sunfish|q 127/1
 		.collect 8 Murloc Fin##1468|q 150/1|future
@@ -1864,9 +1864,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Theocritus##313
 		..accept A Watchful Eye##94
 	step
-		'Go southwest to Duskwood|goto Duskwood|noway|c
-	step
-		goto 73.8,43.5
+		'Go south to Duskwood|goto Duskwood,73.8,43.5
 		.talk Chef Grual##272
 		..accept Seasoned Wolf Kabobs##90
 	step
@@ -2061,10 +2059,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		'Follow the path through the tunnels to 53.9,70.3|goto 53.9,70.3|n
 		.' Traverse Dun Algaz|goal Traverse Dun Algaz|q 455/1
 	step
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
 		goto 49.9,39.4
 		.talk Einar Stonegrip##2093
 		..accept Daily Delivery##469
 	step
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..accept In Search of The Excavation Team (1)##305
