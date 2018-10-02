@@ -1,6 +1,9 @@
 # PolarGuides
 Discord: https://discord.gg/tJJMwEX
 
+## About
+This project is about writing the [Ding80](http://www.ding80.com/) guide in the Zygor syntax, to work with the ingame addon, and having fun experimenting and improving the route.
+
 ## Setup
 1. Install your Zygor addon, the TBC version has been backported **[here](https://www.reddit.com/r/wowservers/comments/6c9b2z/335_wrath_zygor_downgrade_to_243/)**  
 2. Copy the files in "replace(TBC/WotLK)" into ZygorGuidesViewer; I've added a feature to Zygor where it will disable auto accepting certain quests (see noautoaccept in the syntax guide). Used on event and escort quests.  
@@ -18,18 +21,11 @@ Discord: https://discord.gg/tJJMwEX
 Your milage with these guides may and will vary, they have been tested on a stock TC server I host myself. Depending on population, droprates, spawn positions and scripting you will have to improvise.
 Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up. While playing on Gummy's Felmyst, I was consistently 0.5-1 level ahead of TrinityCore.
 
-## Want to help this project?
-It would help me a lot if you could take a screenshot every time you ding, with the current step and /played on display. Send me a zip of the images and I'll fix the rest.
-
-## Can I use these guides for Vanilla?
-Not tested, but Ding80GuidesAllianceTBCduo will probably work pretty well as solo, It will probably be a lot better than Joannas. But why bother when you can AoE group grind on K3?
-(If anyone want to try backporting Zygor to Vanilla and any Vanilla server admins wanna give me a gm account on a ptr; get in touch).
-
 ## Ding80GuidesAlliance.lua
 Translation of the Ding80 leveling guide to the Zygor syntax, to work within the addon.  
 At lvl 19 the original suggested you grind for a full level, before getting a mount at 20 and then traveling to Redridge, you pick up a quest along the way that requires lvl20, so theoretically you save time by not backtracking to it later.
 You can either take this option, or head to Darkshore as I've written into the guide, or use the TBCsolo version of this guide which goes to Redridge at lvl 14-15, completes the Deadmines questline and then do Deadmine and Stockades. Ideally this guide would be group independent, but Deadmines/Stockades with the chains before and after are really good.
-If you take the third option, stick with the TBCduo version until Stockades.
+If you take the third option, stick with the TBCsolo version until Stockades.
 
 ### Edits done to Ding80
 Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
@@ -88,7 +84,7 @@ Outland does have the advantage of less traveling between quests.
 To Be Done: A solo oriented leveling guide visiting 5 man dungeons to avoid farming out in the world. A solo version of duo, will have to prune a lot of quests.
 
 ## PANIC; MY QUESTS ARE GREEN!
-Don't worry to much about that.  
+Don't worry to much about that, Ding80 stays in green quests for the most part. It works out in the end and fighting green mobs is a breeze so xp-gain speed should be high.  
 Quest xp works like this.
 <table>
 	<tr>
