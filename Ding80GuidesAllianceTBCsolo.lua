@@ -3676,7 +3676,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 67,52
 		.from Blackrock Shadowcaster##436+
-		.get 3 Midnight Orb|q 115/1
+		..get 3 Midnight Orb|q 115/1
 	step
 		goto 69.3,59.9
 		.from Tharil'Zun##486
@@ -3871,8 +3871,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 23.6,34.91
 		.kill 20 Plague Spreader|q 58/1
 		.from Flesh Eater##3+, Rotted One##948+, Bone Chewer##210+, Plague Spreader##604+
-		.get 10 Ghoul Fang|q 101/1
-		.get 7 Ghoul Rib|q 133/1
+		..get 10 Ghoul Fang|q 101/1
+		..get 7 Ghoul Rib|q 133/1
 	step
 		goto 28,31.5
 		.talk Abercrombie##289
@@ -3987,7 +3987,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Go downstairs in the ship to 14.1,30.1|goto 14.1,30.1
 		.from First Mate Snellig##1159
-		.get Snellig's Snuffbox|q 289/3
+		..get Snellig's Snuffbox|q 289/3
 	step
 		goto 14.1,29.3
 		.kill 13 Cursed Sailor|q 289/1
@@ -4006,7 +4006,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 15.5,23.5
 		.from Captain Halyndor##1160
-		.get Intrepid Strongbox Key|q 290/1
+		..get Intrepid Strongbox Key|q 290/1
 	step
 		'Go underwater to the bottom of the ship to 14.4,24|goto 14.4,24
 		.' Click Intrepid's Locked Strongbox|tip At the very bottom of this sunken ship, underwater.  It looks like a small metal chest.
@@ -4015,10 +4015,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		ding 28
 	step
+		'TODO: make this 2 steps
 		goto 18.5,27.3
-		.kill 8 Fen Creeper|q 275/1
 		.kill Giant Wetlands Crocolisks|n
-		.get 6 Giant Crocolisk Skin|q 471/1
+		..get 6 Giant Crocolisk Skin|q 471/1
+		.kill 8 Fen Creeper|q 275/1|tip Fen Creepers are stealthed in the marsh, look up their positions on a database.
 	step
 		goto 29.1,44.8
 		.kill 10 Mottled Raptor|q 294/1
@@ -4066,7 +4067,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 53.5,54.7
 		.from Chieftain Nek'rosh##2091
-		.get Nek'rosh's Head|q 474/1
+		..get Nek'rosh's Head|q 474/1
 	step
 		goto 64.8,75.3
 		'Pick up the Musquash Root.
@@ -4292,15 +4293,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 33.4,76.4
 		.' Click Abercrombie's Crate|tip It looks like a wooden crate sitting next to a bunch of wooden barrels.
-		.get Abercrombie's Crate|q 134/1
+		..get Abercrombie's Crate|q 134/1
 	step
 		goto 37.05,82.84
 		.from Zzarc'Vul##300
 		.' He spawns at random points inside of the cave.
-		.get Ogre's Monocle|q 181/1
+		..get Ogre's Monocle|q 181/1
 	step
 		goto 23.9,72.1
-		.get Defias Docket|q 1244/1
+		.' Click Defias Strongbox|tip It's inside the house.
+		..get Defias Docket|q 1244/1
 	step
 		goto 28,31.5
 		.talk Abercrombie##289
@@ -4315,7 +4317,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'Kill Mor'Ladim now to get the most out of this questline
 		goto 17.6,35.9
 		.from Mor'Ladim
-		.get Mor'Ladim's Skull|q 228/1
+		..get Mor'Ladim's Skull|q 228/1
 	step
 		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
 	step
@@ -4617,7 +4619,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 86.4,52.9
 		.' Click the Lumber Piles|tip The Lumber Piles look like stacked planks of wood around this area.
-		.get 15 Warsong Lumber|q 9517/1
+		..get 15 Warsong Lumber|q 9517/1
 		.kill 2 Warsong Shredder|q 9518/2
 		.kill 5 Horde Deforester|q 9518/3
 		.kill 10 Horde Scout|q 9518/4
@@ -4772,8 +4774,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 83.2,55.4
 		.from Sparkleshell Snapper##4143+
-		.get 9 Hardened Tortoise Shell|q 1105/1
-		.collect 10 Turtle Meat|q 555|future|tip Don't stay for the turtle meat, just don't sell them for now.
+		.get 9 Hardened Tortoise Shell|q 1105/1|tip Save 'Turtle Meat' for 'Soothing Turtle Bisque' later.
 	step
 		goto 75.4,55
 		.kill 10 Saltstone Basilisk|q 1175/1
@@ -4973,7 +4974,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 49.7,60.8
 		.kill ogres|n
-		.get 9 Dirty Knucklebones|q 500/1
+		..get 9 Dirty Knucklebones|q 500/1
 	step
 		ding 34
 	step
@@ -5112,9 +5113,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Jungle Secrets##215
 		..accept Bookie Herod##200
 	step
-		goto 35.8,10.7
+		goto 35.7,10.5
 		.talk Barnil Stonepot##716
 		..accept Welcome to the Jungle##583
+	step
+		goto 35.7,10.8
 		.talk Hemet Nesingwary Jr.##715
 		..turnin Hemet Nesingwary Jr.##5762
 		..turnin Welcome to the Jungle##583
