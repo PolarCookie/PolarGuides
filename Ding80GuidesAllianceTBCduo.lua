@@ -3494,7 +3494,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		ding 33
 	step
 		goto 43.4,32.7
-		.get Tattered Manuscript|q 1802/2
+		.'Click the Damaged Chest
+		..get Tattered Manuscript|q 1802/2|tip As you enter the cave, take the right fork at the cross.
 		only warlock
 	step
 		goto 78.1,77.1
@@ -3671,7 +3672,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept Farren's Proof (1)##559
 	step
 		goto 27.8,72.8
-		.get Moldy Tome|q 1802/1
+		.'Click the Tome of the Cabal
+		..get Moldy Tome|q 1802/1|tip It's at the waterline next to some murloc huts.
 		only warlock
 	step
 		goto 46.4,64
@@ -3935,13 +3937,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		'I prefer this camp, less risk of horde interference|goto 21.4,10.2
 		.kill Bloodscalp trolls|n
-		.get 15 Bloodscalp Ear|q 189/1
+		..get 15 Bloodscalp Ear|q 189/1
 		only !Warrior
 	step
 		'I prefer this camp, less risk of horde interference|goto 21.4,10.2
 		.kill Bloodscalp trolls|n
-		.get 15 Bloodscalp Ear|q 189/1
-		.get 30 Bloodscalp Tusk|q 1712/2
+		..get 15 Bloodscalp Ear|q 189/1
+		..get 30 Bloodscalp Tusk|q 1712/2
 		only Warrior
 	step
 		goto 35.8,10.7
@@ -4149,7 +4151,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept Stones of Binding##651
 	step
 		goto 66.7,29.7
-		.get Cresting Key|q 651/2
+		.'Click the Stone of East Binding
+		..get Cresting Key|q 651/2
 	step
 		goto 66.7,29.7
 		.collect 8 Cresting Charm|q 1712
@@ -4191,7 +4194,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..get 1 Shadow Hunter Knife|q 691/3
 	step
 		goto 52,50.7
-		.get Thundering Key|q 651/3
+		.'Click the Stone of Outer Binding
+		..get Thundering Key|q 651/3
 	step
 		goto 52,50.7
 		.collect 8 Thundering Charm|q 1712
@@ -4219,7 +4223,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.kill 6 Syndicate Mercenary|q 681/2
 	step
 		goto 25.5,30.1
-		.get Burning Key|q 651/1
+		.'Click the Stone of West Binding
+		..get Burning Key|q 651/1
 	step
 		goto 25.5,30.1
 		.collect 8 Burning Charm|q 1712
@@ -4227,7 +4232,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto Alterac Mountains,79.4,66.6
 		.'Use the cauldron
-		.get Essence of the Exile|q 1712/3
+		..get Essence of the Exile|q 1712/3
 		only Warrior
 	step
 		.' Warning: Event
