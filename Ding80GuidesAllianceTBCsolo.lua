@@ -5835,7 +5835,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 64.7,41.3
 		.kill turtles|n
-		.get 8 Forked Mudrock Tongue|q 1204/1
+		.get 8 Forked Mudrock Tongue|q 1204/1|tip You can skip this step, keep killing Turtles as you find them, you will run up and down the coast in the following steps, a reminder will be given later.
 	step
 		goto 65.05,27.26
 		.from Garn Mathers##23679
@@ -5852,14 +5852,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.' Click the Loose Dirt|tip It looks like a dirt grave next to the small shack.
 		..accept The Orc Report##1219
 	step
-		'Kill Giant Marsh Frogs around "Swamp Eye" Jarl's house
-		.get 10 Marsh Frog Leg|q 1218/1
-	step
-		goto 55.4,26.3
-		.talk "Swamp Eye" Jarl##4792
-		..turnin Marsh Frog Legs##1218
-		..accept Jarl Needs Eyes##1206
-	step
 		goto 55,31
 		.kill Risen Husks|n
 		.kill Risen Spirits|n
@@ -5872,7 +5864,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 56,27
 		.' Click Witchbane plants|tip They are bright green fern looking plants with a tall pink flower in the middle of them.
-		.get 9 Witchbane|q 11181/1
+		..get 9 Witchbane|q 11181/1
+		.' Kill Giant Marsh Frogs around "Swamp Eye" Jarl's house
+		..get 10 Marsh Frog Leg|q 1218/1
+	step
+		goto 55.4,26.3
+		.talk "Swamp Eye" Jarl##4792
+		..turnin Marsh Frog Legs##1218
+		..accept Jarl Needs Eyes##1206
 	step
 		goto 55.4,26.3
 		.talk Mordant Grimsby##23843
@@ -5926,10 +5925,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept The Black Shield (1)##1253
 	step
 		'Hearth to Theramore|goto Dustwallow Marsh,66.6,45.2,0.5|use Hearthstone##6948|noway|c
-	step
-		goto 66.3,45.5
-		.talk Morgan Stern##4794
-		..turnin Mudrock Soup and Bugs##1204
 	step
 		goto 65.1,47.1
 		.talk Lieutenant Aden##23951
@@ -6005,6 +6000,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Recover the Cargo!##11140
 		..accept Jaina Must Know##11141
 	step
+		kill turtles|n
+		.get 8 Forked Mudrock Tongue|q 1204/1|tip Last chance to finish this quest.
+	step
 		'Go outside to 55.4,26.3|goto 55.4,26.3
 		.talk "Swamp Eye" Jarl##4792
 		..turnin Jarl Needs a Blade##1203
@@ -6024,6 +6022,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..fpath Mudsprocket
 	step
 		'Hearth (if ready) or Fly to Theramore
+	step
+		goto 66.3,45.5
+		.talk Morgan Stern##4794
+		..turnin Mudrock Soup and Bugs##1204
 	step
 		goto 65.1,47.1
 		.talk Lieutenant Aden##23951
@@ -6151,7 +6153,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 41.7,51.4
 		.kill Darkfang Creepers|n
 		.kill Noxious Shredders|n
-		.get 6 Marsh Venom|q 11173/1
+		..get 6 Marsh Venom|q 11173/1
 	step
 		goto 47.4,47.6
 		.' Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
@@ -6337,22 +6339,21 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.from Grel'borg the Miser##2417
 		..get Perenolde Tiara|q 543/1
 		.kill 10 Crushridge Warmonger|q 504/1
-		.get 5 Recovered Tome|q 540/1
+		..get 5 Recovered Tome|q 540/1|tip Collecting Tomes is only for those who found the Old History book in Duskwood.
 	step
-		'If you didn't get the Old History Book from Duskwood, skip this step.
 		goto 38.4,46.4
+		'If you didn't get the Old History Book from Duskwood, skip this step.
 		.get Worn Leather Book|q 540/2
 	step
 		goto 58.7,30.5
 		'Start here and kill 1 Argus Shadow Mage every camp moving northwest
 		.kill 4 Argust Shadow Mage|q 537/1
 	step
-		'APPROACH THE HOUSE CAREFULLY, LOTS OF STEALTHED ASSASSINS HERE
 		goto 39.2,14.3
+		'APPROACH THE HOUSE CAREFULLY, LOTS OF STEALTHED ASSASSINS HERE
 		.from Nagaz##2320
 		..get Head of Nagaz|q 537/2
 		.'Loot the chest inside the house, next to Nagaz
-		.collect Ensorcelled Parchment|q 551
 		.'Click the Ensorcelled Parchment|use Ensorcelled Parchment##3706
 		..accept The Ensorcelled Parchment##551
 		.from Syndicate Assassin##2246+
@@ -6431,12 +6432,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		home Stormwind City
 	step
-		'Buy the following items from the Auction House in this order:|tip If you cannot buy some of these, ask people to make them for you in General and Trade chat.  Offer to pay well and you will usually get someone to do it for you. Frost oil and Gyrochronatom are most important, Gyro can be bought from Engineering Suppliers.
+		'Buy the following items from the Auction House in this order:|tip If you cannot buy some of these, ask people to make them for you in General and Trade chat.  Offer to pay well and you will usually get someone to do it for you. Frost oil and Gyrochronatom are most important, Gyro can be bought from Engineering Supply vendors.
+		'Alone for the first quest
 		.buy 1 Frost Oil|q 713/1
+		'Alone for the second quest
 		.buy 1 Gyrochronatom|q 714/1
+		'Both together for the third quest.
 		.buy 1 Healing Potion|q 715/1
 		.buy 1 Lesser Invisibility Potion|q 715/2
+		'Alone for a different questline.
 		.buy 1 Patterned Bronze Bracers|q 716/1
+		'Alone for a different questline.
 		.buy 9 Blue Pearl|q 705/1
 	step
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
@@ -6464,11 +6470,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 52.3,30.4
 		.kill Dark Iron dwarves|n
-		.get Ryedol's Lucky Pick|q 719/1
+		..get Ryedol's Lucky Pick|q 719/1
 	step
 		goto 66.6,21.5
 		.' Click the Excavation Supply Crate|tip It's a wooden crate, sitting next to a very small tent, canopy thing in the small ogre camp, or sitting on the ground next to a cauldron.
-		.get Supply Crate|q 718/1
+		..get Supply Crate|q 718/1
 		.' The crate can also be located at 66.9,23.4|n
 	step
 		goto 53.6,43.3
@@ -6501,7 +6507,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 12 Stonevault Bonesnapper|q 739/2
 		.kill Murdaloc|q 739/1|tip Murdaloc walks around the trogg camp.
 		.kill Stonevault mobs|n
-		.get 10 Indurium Flake|q 1108/1
+		..get 10 Indurium Flake|q 1108/1
 	step
 		goto 51.4,76.9
 		.talk Theldurin the Lost##2785
@@ -6536,7 +6542,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 21.9,44.6
 		.kill Lesser Rock Elementals|n
-		.get 10 Small Stone Shard|q 710/1
+		..get 10 Small Stone Shard|q 710/1
 	step
 		goto 25.9,44.6
 		.talk Lotwil Veriatus##2921
@@ -9057,7 +9063,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 45.8,53.2
 		.kill fire elementals|n
-		.get 9 Un'Goro Ash|q 4502/1
+		..get 9 Un'Goro Ash|q 4502/1
 	step
 		.'WARNING: ESCORT
 		goto 51.9,49.9
