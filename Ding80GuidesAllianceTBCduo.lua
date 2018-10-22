@@ -5171,16 +5171,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		home Stormwind City
 	step
 		'Buy the following items from the Auction House in this order:|tip If you cannot buy some of these, ask people to make them for you in General and Trade chat.  Offer to pay well and you will usually get someone to do it for you. Frost oil and Gyrochronatom are most important, Gyro can be bought from Engineering Supply vendors.
-		'Alone for the first quest
+		'For "Coolant Heads Prevail".
 		.buy 1 Frost Oil|q 713/1
-		'Alone for the second quest
+		'For "Gyro... What?", requires "Coolant Heads Prevail".
 		.buy 1 Gyrochronatom|q 714/1
-		'Both together for the third quest.
+		'Both together for "Liquid Stone", requires "Gyro... What?".
 		.buy 1 Healing Potion|q 715/1
 		.buy 1 Lesser Invisibility Potion|q 715/2
-		'Alone for a different questline.
+		'For "Stone Is Better than Cloth".
 		.buy 1 Patterned Bronze Bracers|q 716/1
-		'Alone for a different questline.
+		'For "Pearl Diving".
 		.buy 9 Blue Pearl|q 705/1
 	step
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
