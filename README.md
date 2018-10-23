@@ -33,6 +33,8 @@ Desolace has been replaced by Arathi Highlands.
 Felwood round 1 swapped with Azshara to save travel time.  
 Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
 Removed Withered Basidium, to much grind.  
+Tooga's Quest and Rescue OOX-17/TN! are now done together in Tanaris, to allow easier escape from the insect hive later. *Should* be fine.  
+
 
 ### Class quest
 Some class quests are in the guides, including but not limited to
