@@ -15,17 +15,16 @@ This project is about writing the [Ding80](http://www.ding80.com/) guide in the 
 <Script file="Ding80GuidesAllianceTBCsolo.lua"/>
 <Script file="Ding80GuidesAllianceTBCduo.lua"/>
 ```
-5. Turn off all dynamic progress, don't skip any step automatically. You can find this option in Interface->AddOns->ZygorGuidesViewer->Dynamic Progress, uncheck everything. Feel free to skip as you wish, but do it manually is all. F.ex at lvl 30 you'll go to Forest Song in eastern Ashenvale, but if you're already lvl 32 you can safely skip that entire quest hub.
 
 ## Disclaimer
-Your milage with these guides may and will vary, they have been tested on a stock TC server I host myself. Depending on population, droprates, spawn positions and scripting you will have to improvise.
-Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up. While playing on Gummy's Felmyst, I was consistently 0.5-1 level ahead of TrinityCore.
+Your milage with these guides may and will vary, they have been tested on a stock TC server I host myself. Depending on population, droprates, spawnrates, scripting and rested bonus you will have to improvise.
+Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up. Just by rested bonus alone you will be consistently 0.5-1 level ahead of the guide, assuming you disable quest skipping.
 
 ## Ding80GuidesAlliance.lua
 Translation of the Ding80 leveling guide to the Zygor syntax, to work within the addon.  
 At lvl 19 the original suggested you grind for a full level, before getting a mount at 20 and then traveling to Redridge, you pick up a quest along the way that requires lvl20, so theoretically you save time by not backtracking to it later.
 You can either take this option, or head to Darkshore as I've written into the guide, or use the TBCsolo version of this guide which goes to Redridge at lvl 14-15, completes the Deadmines questline and then do Deadmine and Stockades. Ideally this guide would be group independent, but Deadmines/Stockades with the chains before and after are really good.
-If you take the third option, stick with the TBCsolo version until Stockades.
+If you take the third option, stick with the TBCsolo version until Stockades. Be mindful of TBC coordinates in Stormwind.
 
 ### Edits done to Ding80
 Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
@@ -61,9 +60,7 @@ Deadmines and stockades are included, it's either that or grind for a full level
 Also changes travel paths to and from Auberdine.
 
 ### Guide todo
-- [ ] Adjust Stormwind City and Eastern Plaguelands coordinates to TBC values.
-- [ ] Add full Blade Edge Mountain, Netherstorm and Shadowmoon Valley.
-- [ ] Vengeful Souls to Vengeful Harbringer.
+- [ ] Add Shadowmoon Valley.
 
 ## Ding80GuidesAllianceTBCduo.lua
 WARNING: GET IN TOUCH IF YOU WANT TO TRY THIS, I'D LIKE TO DO A FINAL TEST RUN ON IT!  
