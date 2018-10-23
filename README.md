@@ -26,14 +26,14 @@ At lvl 19 the original suggested you grind for a full level, before getting a mo
 You can either take this option, or head to Darkshore as I've written into the guide, or use the TBCsolo version of this guide which goes to Redridge at lvl 14-15, completes the Deadmines questline and then do Deadmine and Stockades. Ideally this guide would be group independent, but Deadmines/Stockades with the chains before and after are really good.
 If you take the third option, stick with the TBCsolo version until Stockades. Be mindful of TBC coordinates in Stormwind.
 
-### Edits done to Ding80
-Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
-Cracking Maury's Foot and Mai'Zoth added.  
-Desolace has been replaced by Arathi Highlands.  
-Felwood round 1 swapped with Azshara to save travel time.  
-Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
-Removed Withered Basidium, to much grind.  
-Tooga's Quest and Rescue OOX-17/TN! are now done together in Tanaris, to allow easier escape from the insect hive later. *Should* be fine.  
+### Edits done to Ding80, in no particular order
+1. Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
+2. Cracking Maury's Foot and Mai'Zoth added.  
+3. Desolace has been replaced by Arathi Highlands.  
+3. Felwood round 1 swapped with Azshara to save travel time.  
+4. Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
+5. Removed Withered Basidium, to much grind.  
+6. Tooga's Quest and Rescue OOX-17/TN! are now done together in Tanaris, to allow easier escape from the insect hive later. *Should* be fine.  
 
 
 ### Class quest
