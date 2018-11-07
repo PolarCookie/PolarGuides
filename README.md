@@ -17,12 +17,11 @@ This project is about writing the [Ding80](http://www.ding80.com/) guide in the 
 ```
 
 ## Disclaimer
-Your milage with these guides may and will vary, they have been tested on a stock TC server I host myself. Depending on population, droprates, spawnrates, scripting and rested bonus you will have to improvise.
-Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up. Just by rested bonus alone you will be consistently 0.5-1 level ahead of the guide, assuming you disable quest skipping.
+Your milage with these guides may and will vary, they have been tested on Felmyst, Gamer District and a stock TC server I host myself. Depending on population, droprates, spawnrates, scripting and rested bonus you will have to improvise.
+Most ding steps can be safely ignored, but give me a shout if you reached a quest you couldn't pick up. Just by rested bonus alone you will be consistently 0.5-1 level ahead of the guide, assuming you disable quest skipping.  
 
 ## Ding80GuidesAlliance.lua
-Translation of the Ding80 leveling guide to the Zygor syntax, to work within the addon.  
-At lvl 19 the original suggested you grind for a full level, before getting a mount at 20 and then traveling to Redridge, you pick up a quest along the way that requires lvl20, so theoretically you save time by not backtracking to it later.
+At lvl 19 the original suggested you grind for a full level, before getting a mount at 20 and then traveling to Redridge, you pick up [A Watchful Eye](https://db.rising-gods.de/?quest=94) along the way that requires lvl20, so theoretically you save time by not backtracking to it later.
 You can either take this option, or head to Darkshore as I've written into the guide, or use the TBCsolo version of this guide which goes to Redridge at lvl 14-15, completes the Deadmines questline and then do Deadmine and Stockades. Ideally this guide would be group independent, but Deadmines/Stockades with the chains before and after are really good.
 If you take the third option, stick with the TBCsolo version until Stockades. Be mindful of TBC coordinates in Stormwind.
 
