@@ -29,8 +29,8 @@ If you take the third option, stick with the TBCsolo version until Stockades. Be
 1. Auberdine added for lvl 19-20, instead of grinding mobs for an entire level.  
 2. Cracking Maury's Foot and Mai'Zoth added.  
 3. Desolace has been replaced by Arathi Highlands.  
-3. Felwood round 1 swapped with Azshara to save travel time.  
-4. Removed Foreman Razelcraz questline, not worth the hassle of stepping into horde territory, hellfire slightly reorganized because of this.  
+3. Felwood round 1 swapped with Azshara to save travel time, [Spiritual Unrest](https://db.rising-gods.de/?quest=5535) and [A Land Filled with Hatred](https://db.rising-gods.de/?quest=5536) removed.  
+4. Removed Foreman Razelcraz questline in Hellfire Peninsula, not worth the hassle of stepping into horde territory, Hellfire slightly reorganized because of this.  
 5. Removed Withered Basidium, to much grind.  
 6. Tooga's Quest and Rescue OOX-17/TN! are now done together in Tanaris, to allow easier escape from the insect hive later. *Should* be fine.  
 
@@ -58,7 +58,7 @@ If you find a class quest missing, or could be structured better, make a pull re
 ## Ding80GuidesAllianceTBCsolo.lua
 Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redridge instead of 20, as you won't have a mount yet.
 Deadmines and stockades are included, it's either that or grind for a full level, otherwise you get into trouble in Duskwood.
-Also changes travel paths to and from Auberdine.
+Also changes travel paths between Kalimdor and Eastern Kingdoms, and stormwind/eastern plaguelands coordinates.
 
 ### Guide todo
 - [ ] Add Shadowmoon Valley.
