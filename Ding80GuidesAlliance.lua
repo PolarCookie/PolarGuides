@@ -8651,7 +8651,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-58)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (58-61)
+	next Ding80's Alliance Leveling Guides\\Hellfire Peninsula
 	startlevel 55
 
 	step //1
@@ -9275,9 +9275,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (58-61)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Peninsula",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (62-63)
+	next Ding80's Alliance Leveling Guides\\Zangarmarsh
 	startlevel 58
 
 	step //1
@@ -10020,9 +10020,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (58-6
 ]])
 
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (62-63)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Zangarmarsh",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (64-65)
+	next Ding80's Alliance Leveling Guides\\Terokkar Forest
 	startlevel 62
 
 	step //1
@@ -10553,9 +10553,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (62-6
 ]])
 
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (64-65)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Terokkar Forest",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides\\Levels (66-67)
+	next Ding80's Alliance Leveling Guides\\Nagrand
 	startlevel 64
 
 	step //1
@@ -11197,10 +11197,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (64-6
 		'Go train and Hearth back.
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (66-67)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Nagrand",[[
 	author PolarCookie
 	startlevel 66
-	next Ding80's Alliance Leveling Guides\\Levels (67-68)
+	next Ding80's Alliance Leveling Guides\\Blade's Edge Mountains
 	step //1
 		'Go west to Nagrand|goto Nagrand|noway|c
 	step //2
@@ -11665,7 +11665,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (66-6
 		..turnin Message to Telaar##9933
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (67-68)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Blade's Edge Mountains",[[
 	author PolarCookie
 	startlevel 67
 

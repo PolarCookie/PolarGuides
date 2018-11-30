@@ -8796,7 +8796,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (55-58)",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides TBC solo\\Levels (58-61)
+	next Ding80's Alliance Leveling Guides TBC solo\\Hellfire Peninsula
 	startlevel 55
 
 	step //1
@@ -9424,9 +9424,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'Hearth to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (58-61)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hellfire Peninsula",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides TBC solo\\Levels (62-63)
+	next Ding80's Alliance Leveling Guides TBC solo\\Zangarmarsh
 	startlevel 58
 
 	step //1
@@ -10169,9 +10169,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 ]])
 
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (62-63)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Zangarmarsh",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides TBC solo\\Levels (64-65)
+	next Ding80's Alliance Leveling Guides TBC solo\\Terokkar Forest
 	startlevel 62
 
 	step //1
@@ -10702,9 +10702,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 ]])
 
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (64-65)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Terokkar Forest",[[
 	author PolarCookie
-	next Ding80's Alliance Leveling Guides TBC solo\\Levels (66-67)
+	next Ding80's Alliance Leveling Guides TBC solo\\Nagrand
 	startlevel 64
 
 	step //1
@@ -11477,10 +11477,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'Go train and Hearth back.
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (66-67)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Nagrand",[[
 	author PolarCookie
 	startlevel 66
-	next Ding80's Alliance Leveling Guides TBC solo\\Levels (67-68)
+	next Ding80's Alliance Leveling Guides TBC solo\\Blade's Edge Mountains
 
 	step //1
 		'Go west to Nagrand|goto Nagrand|noway|c
@@ -11946,7 +11946,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Message to Telaar##9933
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (67-68)",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Blade's Edge Mountains",[[
 	author PolarCookie
 	startlevel 67
 	next Ding80's Alliance Leveling Guides TBC solo\\Netherstorm
@@ -12268,21 +12268,21 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step //69
 		home Toshley's Station
 	step //70
-		goto 60.3,68.4
-		.talk Tally Zapnabber##21460
-		..turnin Test Flight: The Singing Ridge##10710
-		..accept Test Flight: Razaan's Landing##10711
-	step //71
 		goto 59.8,73.9
 		.' Clear out a good big area so you are safe
 		.' Place the Oscillating Frequency Scanners on the ground kind of far apart|use Oscillating Frequency Scanners##30701
 		.' Try to place them so that the lines overlap each other, like a star
 		.' Stand in the middle of the design you made
 		.' Gauge the Singing Crystal Resonant Frequency|goal Singing crystal resonant frequency gauged|q 10594/1
-	step //72
+	step //71
 		goto 60.2,68.9
 		.talk Nickwinkle the Metro-Gnome##21755
 		..turnin Gauging the Resonant Frequency##10594
+	step //72
+		goto 60.3,68.4
+		.talk Tally Zapnabber##21460
+		..turnin Test Flight: The Singing Ridge##10710
+		..accept Test Flight: Razaan's Landing##10711
 	step //73
 		goto 60.2,68.9
 		.talk Rally Zapnabber##21461
