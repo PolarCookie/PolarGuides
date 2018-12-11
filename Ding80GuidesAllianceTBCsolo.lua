@@ -12021,7 +12021,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //19
 		goto 35,74.4
 		.' Kill Lashh'an bird men
-		.get 18 Plucked Lashh'an Feather|q 10555/1
+		..get 18 Plucked Lashh'an Feather|q 10555/1
 	step //20
 		goto 34.3,77.4
 		.' Click the Lashh'an Tome|tip It's an open book, up the ramp, to the right.
@@ -12031,7 +12031,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 		goto 35.2,77.3
 		.' Walk inside the Lashh'an Summoning Circle|tip It's a circle with the purple hologram on the ground.
 		.' Use the Fistful of Feathers in your bag|use Fistful of Feathers##30530
-		.' Get the Kaliri aura cast on you|havebuff Ability_Hunter_Pet_DragonHawk|q 10556
+		..' Get the Kaliri aura cast on you|havebuff Ability_Hunter_Pet_DragonHawk|q 10556
 	step //22
 		goto 36.2,67.1
 		.talk Rina Moonspring##21066
@@ -12045,7 +12045,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //24
 		goto 51.3,65.5
 		.' Kill Thunderlord Dire Wolves
-		.get 4 Thunderlord Dire Wolf Tail|q 10456/1
+		..get 4 Thunderlord Dire Wolf Tail|q 10456/1
 	step //25
 		goto 51.6,75
 		.kill Rema##21596|q 10690/1
@@ -12203,7 +12203,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 		.' Click the Power Converters on the ground|tip They look like small lantern boxes.
 		.' Use your Protovoltaic Magneto Collector on the Electromentals that spawn|use Protovoltaic Magneto Collector##30656
 		.' Kill the Electromentals
-		.' Get 5 Electromentals|goal 5 Electromentals collected|q 10584/1
+		..' Get 5 Electromentals|goal 5 Electromentals collected|q 10584/1
 	step //58
 		goto 60.5,69
 		.talk Toshley##21691
@@ -12225,10 +12225,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //62
 		goto 65,55.2
 		.' Kill Scalewing Serpents
-		.get 5 Scalewing Lightning Gland|q 10657/2
+		..get 5 Scalewing Lightning Gland|q 10657/2
 		.' Use your Repolarized Magneto Sphere when fighting Scalewing Serpents|use Repolarized Magneto Sphere##30818
-		.' Absorb 25 Lightning Strikes|goal 25 Lightning Strikes Absorbed|q 10657/1
-		..'Put your pet on passive, if you have one, to make this go faster
+		..' Absorb 25 Lightning Strikes|goal 25 Lightning Strikes Absorbed|q 10657/1
 		.from Daggermaw Lashtail##20751
 		..get 5 Extra Sharp Daggermaw Tooth|q 10632/1
 		.kill 10 Ridgespine Stalker|q 10620/1
@@ -12273,7 +12272,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 		.' Place the Oscillating Frequency Scanners on the ground kind of far apart|use Oscillating Frequency Scanners##30701
 		.' Try to place them so that the lines overlap each other, like a star
 		.' Stand in the middle of the design you made
-		.' Gauge the Singing Crystal Resonant Frequency|goal Singing crystal resonant frequency gauged|q 10594/1
+		..' Gauge the Singing Crystal Resonant Frequency|goal Singing crystal resonant frequency gauged|q 10594/1
 	step //71
 		goto 60.2,68.9
 		.talk Nickwinkle the Metro-Gnome##21755
@@ -12290,7 +12289,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //74
 		goto 66.7,43.4
 		.' Look for purple orbs flying overhead, and lay the Multi-Spectrum Light Trap underneath them|use Multi-Spectrum Light Trap##30852
-		.' Trap 15 Razaani Light Orbs|goal 15 Razaani Light Orbs trapped|q 10674/1
+		..' Trap 15 Razaani Light Orbs|goal 15 Razaani Light Orbs trapped|q 10674/1
 		.kill Fiendling Flesh Beasts|n
 		..get 5 Ether-Energized Flesh|q 10671/1
 	step //75
@@ -12312,7 +12311,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 		.' Kill Razaani mummies around the portal until Nexus-Prince Razaan comes out
 		.' Kill Nexus-Prince Razaan
 		.' Click the Collection of Souls|tip The Collection of Souls appears hovering over his corpse.
-		.get Collection of Souls|q 10675/1
+		..get Collection of Souls|q 10675/1
 	step //79
 		goto 60.5,69
 		.talk Toshley##21691
@@ -12360,21 +12359,21 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 		.kill 4 Felsworn Daggermaw|q 10753/2
 		.kill 2 Fel Corrupter|q 10753/3
 		.' Kill Fel Corrupters
-		.get Damaged Mask|n
+		..get Damaged Mask|n
 		.' Click the Damaged Mask|use Damaged Mask##31384
 		..accept Damaged Mask##10810
 	step //89
 		goto 71.7,22.4
 		.' Click the Fertile Volcanic Soil|tip It looks like a dirt mound.
-		.' Plant the Ironroot Seeds|goal Southern Volcanic Soil|q 10771/1
+		..' Plant the Ironroot Seeds|goal Southern Volcanic Soil|q 10771/1
 	step //90
 		goto 71.6,20.3
 		.' Click the Fertile Volcanic Soil|tip It looks like a dirt mound.
-		.' Plant the Ironroot Seeds|goal Central Volcanic Soil|q 10771/2
+		..' Plant the Ironroot Seeds|goal Central Volcanic Soil|q 10771/2
 	step //91
 		goto 71.6,18.5
 		.' Click the Fertile Volcanic Soil|tip It looks like a dirt mound.
-		.' Plant the Ironroot Seeds|goal Northern Volcanic Soil|q 10771/3
+		..' Plant the Ironroot Seeds|goal Northern Volcanic Soil|q 10771/3
 	step //92
 		goto 70.7,20.2
 		.kill 8 Scorch Imp|q 10770/1
@@ -12400,12 +12399,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //97
 		goto 63.9,31.5
 		.' Kill Ruuan'ok arakkoas
-		.collect 6 Ruuan'ok Claw##30704|q 10567
+		..collect 6 Ruuan'ok Claw##30704|q 10567
 	step //98
 		goto 64.5,33.1
 		.' Use the 6 Ruuan'ok Claws inside the glowing circle|use Ruuan'ok Claw##30704
 		.' Kill the Harbinger of the Raven
-		.get Harbinger's Pendant|q 10567/1
+		..get Harbinger's Pendant|q 10567/1
 	step //99
 		goto 62.2,39.1
 		.talk Timeon##21782
@@ -12414,8 +12413,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //100
 		goto Blade's Edge Mountains,58.8,39.1
 		.talk Overseer Nuaar##21981
-		..'He wanders around the Wyrmcult camps
-		.' Negotiate with Overseer Nuaar|goal Negotiations with Overseer Nuaar complete|q 10682/1
+		..' Negotiate with Overseer Nuaar|goal Negotiations with Overseer Nuaar complete|q 10682/1
 	step //101
 		goto 62,39.5
 		.talk Tree Warden Chawn##22007
@@ -12427,9 +12425,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 		goto 59.9,37.8
 		.kill 10 Wyrmcult Hewer|q 10713/1
 		.' Kill Wyrmcult Poachers
-		.get 5 Wyrmcult Net|q 10717/1
+		..get 5 Wyrmcult Net|q 10717/1
 		.' Kill Wyrmcult mobs
-		.get Meeting Note|n
+		..get Meeting Note|n
 		.' Click the Meeting Note|use Meeting Note##31120
 		..accept Did You Get The Note?##10719
 	step //103
@@ -12496,7 +12494,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //114
 		goto 49,44.5
 		.' Kill Greater Crust Bursters and Young Crust Bursters
-		.get 7 Crust Burster Venom Gland|q 10799/1
+		..get 7 Crust Burster Venom Gland|q 10799/1
 	step //115
 		goto 53.3,41.2
 		.talk Baron Sablemane##22103
@@ -12505,7 +12503,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //116
 		goto 60.2,47.6
 		.' Use Sablemane's Sleeping Powder on Grulloc|use Sablemane's Sleeping Powder##31403
-		.' Click Grulloc's Sack to get it and run away|get Grulloc's Sack|q 10800/1|tip Grulloc's Sack is a big tan bag sitting at his feet.
+		..' Click Grulloc's Sack to get it and run away|get Grulloc's Sack|q 10800/1|tip Grulloc's Sack is a big tan bag sitting at his feet.
 	step //117
 		goto 53.3,41.2
 		.talk Baron Sablemane##22103
@@ -12541,19 +12539,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //123
 		goto 40.7,18.7
 		.' Stand next to the wooden totem with the Understanding Ravenspeech buff on you|tip On the ground, next to a pond with basilisks in it.  It looks like a wooden totem.
-		.' Receive the Third Prophecy|goal Receive the Third Prophecy|q 10607/3
+		..' Receive the Third Prophecy|goal Receive the Third Prophecy|q 10607/3
 	step //124
 		goto 39,17.2
 		.' Stand next to the wooden totem with the Understanding Ravenspeech buff on you|tip Up the left ramp, then left across the hanging bridge.  It looks like a wooden totem.
-		.' Receive the First Prophecy|goal Receive the First Prophecy|q 10607/1
+		..' Receive the First Prophecy|goal Receive the First Prophecy|q 10607/1
 	step //125
 		goto 42.5,21.6
 		.' Stand next to the wooden totem with the Understanding Ravenspeech buff on you|tip Up the right ramp, then go right across the hanging bridge, then down the stairs to the left.  It looks like a wooden totem.
-		.' Receive the Second Prophecy|goal Receive the Second Prophecy|q 10607/2
+		..' Receive the Second Prophecy|goal Receive the Second Prophecy|q 10607/2
 	step //126
 		goto 40.2,23
 		.' Stand next to the wooden totem with the Understanding Ravenspeech buff on you|tip On the ground, in front of a hut.  It looks like a wooden totem.
-		.' Receive the Fourth Prophecy|goal Receive the Fourth Prophecy|q 10607/4
+		..' Receive the Fourth Prophecy|goal Receive the Fourth Prophecy|q 10607/4
 		.' Kill arakkoas
 		.get Orb of the Grishna|n
 		.' Click the Orb of the Grishna|use Orb of the Grishna##31489
@@ -12562,9 +12560,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 		goto 32.3,34.9
 		.' Go inside the cave
 		.' Use the Blackwhelp Net on Wyrmcult Blackwhelps|use Blackwhelp Net##31129
-		.' Capture 10 Wyrmcult Blackwhelps|goal 10 Wyrmcult Blackwhelp|q 10747/1
+		..' Capture 10 Wyrmcult Blackwhelps|goal 10 Wyrmcult Blackwhelp|q 10747/1
 		.' Kill Wyrmcultists
-		.collect 5 Costume Scraps##31121|q 10722
+		..collect 5 Costume Scraps##31121|q 10722
 	step //128
 		goto 32.6,37.5
 		.' Combine your 5 Costume Scraps to make an Overseer Disguise|use Costume Scraps##31121
@@ -12576,13 +12574,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 		.kill 5 Boulder'mok Brute|q 10803/1
 		.kill 3 Boulder'mok Shaman|q 10803/2
 		.' Kill Boulder'mok mobs
-		.collect 3 Grisly Totem##31754|q 10803
+		..collect 3 Grisly Totem##31754|q 10803
 	step //130
 		goto 30.6,22.2
 		.' Click Gorgrom's Altar|tip A big stone square block in the middle of the camp.
 		.' He will run up to the altar and die
 		.' Use the Grisly Totems on his corpse|use Grisly Totem##31754
-		.' Plant 3 Grisly Totems|goal 3 Plant Grisly Totem|q 10802/1
+		..' Plant 3 Grisly Totems|goal 3 Plant Grisly Totem|q 10802/1
 	step //131
 		'Go through the tunnel to 62,39.5|goto 62,39.5
 		.talk Samia Inkling##21983
@@ -12616,18 +12614,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Bla
 	step //136
 		goto 39.3,20.2
 		.' Click the purple balls in the claw looking rods|tip They are around the huts in this area.
-		.collect 5 Grishnath Orb##31495|q 10830
+		..collect 5 Grishnath Orb##31495|q 10830
 	step //137
 		goto 30.1,28.6
 		.' Kill Dire Ravens
-		.collect 5 Dire Pinfeather##31517|q 10830
+		..collect 5 Dire Pinfeather##31517|q 10830
 	step //138
 		goto 33.8,29.4
 		.' Click your Grishnath Orbs to combine the orbs and pinfeathers|use Grishnath Orb##31495
 		.' Create 5 Exorcism Feathers
 		.' Use the Exorcism Feathers on the Raven's Wood Leafbeards|use Exorcism Feather##31518
 		.' Kill the Koi Koi spirits that spawn to free the trees
-		.' Exorcise 5 Raven's Wood Leafbeards|goal 5 Leafbeard Exorcised|q 10830/1
+		..' Exorcise 5 Raven's Wood Leafbeards|goal 5 Leafbeard Exorcised|q 10830/1
 	step //139
 		goto 36.9,22.5
 		.talk Treebole##22215

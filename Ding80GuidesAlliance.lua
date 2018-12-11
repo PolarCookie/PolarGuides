@@ -11725,7 +11725,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Blade's Edge
 	step //16
 		goto 35,74.4
 		.' Kill Lashh'an bird men
-		.get 18 Plucked Lashh'an Feather|q 10555/1
+		..get 18 Plucked Lashh'an Feather|q 10555/1
 	step //17
 		goto 34.3,77.4
 		.' Click the Lashh'an Tome|tip It's an open book, up the ramp, to the right.
@@ -11735,7 +11735,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Blade's Edge
 		goto 35.2,77.3
 		.' Walk inside the Lashh'an Summoning Circle|tip It's a circle with the purple hologram on the ground.
 		.' Use the Fistful of Feathers in your bag|use Fistful of Feathers##30530
-		.' Get the Kaliri aura cast on you|havebuff Ability_Hunter_Pet_DragonHawk|q 10556
+		..' Get the Kaliri aura cast on you|havebuff Ability_Hunter_Pet_DragonHawk|q 10556
 	step //19
 		goto 36.2,67.1
 		.talk Rina Moonspring##21066
@@ -11749,7 +11749,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Blade's Edge
 	step //21
 		goto 51.3,65.5
 		.' Kill Thunderlord Dire Wolves
-		.get 4 Thunderlord Dire Wolf Tail|q 10456/1
+		..get 4 Thunderlord Dire Wolf Tail|q 10456/1
 	step //22
 		goto 51.6,75
 		.kill Rema##21596|q 10690/1
