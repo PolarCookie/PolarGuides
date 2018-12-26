@@ -33,7 +33,8 @@ If you take the third option, stick with the TBCsolo version until Stockades. Be
 4. Removed Foreman Razelcraz questline in Hellfire Peninsula, not worth the hassle of stepping into horde territory, Hellfire slightly reorganized because of this.  
 5. Removed Withered Basidium, to much grind.  
 6. Tooga's Quest and Rescue OOX-17/TN! are now done together in Tanaris, to allow easier escape from the insect hive later. *Should* be fine.  
-
+7. Borean Tundra; A Diplomatic Mission and Just A Few More Things... are skipped, streamlines the questing a bit since these take to much time/investment to be worth it and you'll still get 130 quests done by the end (Nexus quests included).  
+8. Dragonblight; enter from the west starting at Stars Rest.  
 
 ### Class quest
 Some class quests are in the guides, including but not limited to
@@ -51,9 +52,9 @@ If you find a class quest missing, or could be structured better, make a pull re
 - [ ] If Auberdine stays, do The Tower of Althalaxx (4)##970?  
 - [ ] Add "Kill 'Em With Sleep Deprivation" and "Look at the Size of It!" when they are fixed in Trinity Core.  
 - [ ] Add druid water form questline, it fits into late westfall questing and it's written into Zygor's.  
-- [ ] Add Northrend section.  
 - [ ] Add Scryer questline.
 - [ ] Research moving burning steppes to a later time.
+- [ ] Add Northrend section, sans Borean Tundra.  
 
 ## Ding80GuidesAllianceTBCsolo.lua
 Same as Ding80GuidesAlliance.lua, but edited for TBC. This shifts lvl 14 to go to Redridge instead of 20, as you won't have a mount yet.

@@ -11870,16 +11870,1270 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Blade's Edge
 		ding 68
 	step //47
 		'Fly to Shattrath City|goto Shattrath City|noway|c
-	step //48
-		'Take the portal to Ironforge|goto Ironforge|noway|c
-		only !Druid
-	step //49
-		'Take the portal to Stormwind City|goto Stormwind City|noway|c
-		only Druid
-	step //50
-		'Train your skills, then fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.1|noway|c
-	step //51
-		goto 4.6,57.2|n
-		'Ride the boat to Howling Fjord|goto Howling Fjord|noway|c
 ]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Borean Tundra",[[
+	author PolarCookie
+	startlevel 68
+
+	step
+		'Go to Stormwind|goto Stormwind City|noway|c
+	step
+		goto 18.2,25.5|n
+		.'Ride the boat to Borean Tundra|goto Borean Tundra|noway|c
+	step
+		goto Borean Tundra,59,68.3
+		.talk Tomas Riverwell##26879
+		..fpath Valiance Keep
+	step
+		goto 57.8,67.6
+		.talk Recruitment Officer Blythe##25307
+		..accept Enlistment Day##11672
+	step
+		goto 56.7,72.6
+		.talk General Arlos##25250
+		..turnin Enlistment Day##11672
+		..accept A Time for Heroes##11727
+	step
+		goto 56.4,69.6
+		.talk Sergeant Hammerhill##25816
+		..turnin A Time for Heroes##11727
+		..accept The Siege##11797
+	step
+		goto 55,68.9
+		.talk Medic Hawthorn##25825
+		..accept A Soldier in Need##11789
+	step
+		goto 54.4,69.6
+		.kill 6 Crypt Crawler|q 11797/1
+	step
+		goto 56.4,69.6
+		.talk Sergeant Hammerhill##25816
+		..turnin The Siege##11797
+		..accept Death From Above##11889
+	step
+		goto 55,70.5
+		.' Use your Reinforced Net on Scourged Flamespitters flying next to the fortress wall|use Reinforced Net##35278
+		.kill 6 Scourged Flamespitter|q 11889/1
+	step
+		goto 56.4,69.6
+		.talk Sergeant Hammerhill##25816
+		..turnin Death From Above##11889
+		..accept Plug the Sinkholes##11897
+	step
+		goto 50.9,72.1
+		.' Click your Incendiary Explosives|use Incendiary Explosives##35704
+		.' Set the Explosive at the Southern Sinkhole|goal Explosives set at southern sinkhole|q 11897/1|tip It looks like a hole in the ground with webs all over it.  Stand on the edge of the sinkhole.
+	step
+		goto 54.1,63.7
+		.' Click your Incendiary Explosives|use Incendiary Explosives##35704
+		.' Set the Explosives at the Northern Sinkhole|goal Explosives set at northern sinkhole|q 11897/2|tip It looks like a hole in the ground with webs all over it.  Stand on the edge of the sinkhole.
+	step
+		goto 56.4,69.6
+		.talk Sergeant Hammerhill##25816
+		..turnin Plug the Sinkholes##11897
+		..accept Farshire##11928
+	step
+		goto 56.8,69.5
+		.talk Mark Hanes##26155
+		..accept Word on the Street##11927
+	step
+		goto 57.5,69.3
+		.' Click the First Aid Supplies|tip It's a small brown chest, downstairs in this ship, next to a candle shrine.
+		.get Hawthorn's Anti-Venom|q 11789/1
+	step
+		goto 57.5,69.1
+		.' Click the Cultist Shrine|tip It looks like a small candle shrine on the ground downstairs in this ship, next to the wall.
+		..accept Cultists Among Us##11920
+	step
+		goto 57.8,69.2
+		.talk Captain "Lefty" Lugsail##25298
+		..turnin Cultists Among Us##11920
+	step
+		goto 57.8,69.2
+		.talk Admiral Cantlebree##25299
+		..accept Notify Arlos##11791
+	step
+		goto 56.7,72.6
+		.talk General Arlos##25250
+		..turnin Notify Arlos##11791
+	step
+		goto 56.6,72.5
+		.talk Harbinger Vurenn##25285
+		..accept Enemies of the Light##11792
+	step
+		home Valiance Keep
+	step
+		goto 58.4,67.8
+		.talk Midge##25249
+		..accept Nick of Time##11575
+	step
+		goto 58.7,68.4
+		.talk Leryssa##25251
+		..turnin Word on the Street##11927
+		..accept Thassarian, My Brother##11599
+	step
+		goto 58.8,68.7
+		.talk Airman Skyhopper##25737
+		..accept Distress Call##11707
+	step
+		goto 55,68.9
+		.talk Medic Hawthorn##25825
+		..turnin A Soldier in Need##11789
+	step
+		goto 58.2,62.8
+		.talk Gerald Green##26083
+		..turnin Farshire##11928
+		..accept Military?  What Military?##11901
+	step
+		'Go inside the mine to 56.8,55.6|goto 56.8,55.6
+		.' Click the Plagued Grain|tip Inside the mine, it looks like a bag full of grain, next to a wheel barrow.
+		..turnin Military? What Military?##11901
+		..accept Pernicious Evidence##11902
+	step
+		goto 56,55.4
+		.talk William Allerton##25385
+		..turnin Thassarian, My Brother##11599
+		..accept The Late William Allerton##11600
+	step
+		goto 58.2,62.8
+		.talk Gerald Green##26083
+		..turnin Pernicious Evidence##11902
+		..accept It's Time for Action##11903
+	step
+		goto 58.3,62.8
+		.talk Wendy Darren##26085
+		..accept Take No Chances##11913
+	step
+		goto 58.2,63
+		.talk Jeremiah Hawning##26084
+		..accept Reference Material##11908
+	step
+		goto 55.8,58.3
+		.' Click Fields, Factories and Workshops|tip It's a little red book lying inside the burning house.
+		..get Fields, Factories and Workshops##35481|q 11908/1
+	step
+		goto 57,61.7
+		.kill 14 Plagued Scavenger|q 11903/1
+		.' Use Wendy's Torch next to Farshire Grain bags|use Wendy's Torch##35491|tip They look like bags with patches on the ground around this area.
+		..' Burn 8 Farshire Grain|goal 8 Farshire Grain burnt|q 11913/1
+	step
+		goto 58.3,62.8
+		.talk Wendy Darren##26085
+		..turnin Take No Chances##11913
+	step
+		goto 58.2,62.8
+		.talk Gerald Green##26083
+		..turnin It's Time for Action##11903
+		..accept Fruits of Our Labor##11904
+	step
+		goto 58.2,63
+		.talk Jeremiah Hawning##26084
+		..turnin Reference Material##11908
+		..accept Repurposed Technology##12035
+	step
+		goto 58.1,61.1
+		.kill Harvest Collectors|n
+		.' Use Jeremiahs Tools on their corpses|use Jeremiah's Tools##35943
+		..' Rewire 5 Harvest Collectors|goal 5 Harvest Collector Rewired|q 12035/1
+	step
+		'Go inside the cave to 57.9,53.4|goto 57.9,53.4
+		.from Captain Jacobs##26252
+		..collect Cart Release Key##35705|q 11904
+	step
+		goto 57.2,54.6
+		.' Click the Cart Release switch|tip It's a switch on the side of a cart with blue ore inside of it.
+		..' Release the Ore Cart|goal Ore Cart released|q 11904/1
+	step
+		'Go outside to 58.2,62.8|goto 58.2,62.8
+		.talk Gerald Green##26083
+		..turnin Fruits of Our Labor##11904
+		..accept One Last Delivery##11962
+	step
+		goto 58.2,63
+		.talk Jeremiah Hawning##26084
+		..turnin Repurposed Technology##12035
+	step
+		goto 55.3,63.3
+		.kill Cultist Necrolytes|n
+		..get Cultist Communique|q 11792/1
+	step
+		goto 57.3,66.6
+		.talk Hilda Stoneforge##25235
+		..turnin One Last Delivery##11962
+		..accept Weapons for Farshire##11963
+	step
+		goto 56.6,72.5
+		.talk Harbinger Vurenn##25285
+		..turnin Enemies of the Light##11792
+		..accept Further Investigation##11793
+	step
+		goto 58.6,67.3
+		.talk Vindicator Yaala##25826
+		..turnin Further Investigation##11793
+		..accept The Hunt is On##11794
+	step
+		goto 58.6,67.1
+		.' Use your Oculus of the Exorcist on "Salty" John Thorpe|use Oculus of the Exorcist##35125
+		.talk "Salty" John Thorpe##25248
+		..'Tell him you have reason to believe he is involved in cultist activity
+		.from "Salty" John Thorpe##25248
+		.' Defeat the Cultist in the kitchen|goal Cultist in kitchen defeated|q 11794/3
+	step
+		goto 59.2,68.3
+		.' Use your Oculus of the Exorcist on Tom Hegger|use Oculus of the Exorcist##35125
+		.talk Tom Hegger##25827
+		..'Ask him about the Cult of the Damed
+		.from Tom Hegger##25827
+		.' Defeat the Cultist on the docks|goal Cultist in docks defeated|q 11794/1
+	step
+		goto 56.7,71.8
+		.' Use your Oculus of the Exorcist on Guard Mitchells|use Oculus of the Exorcist##35125
+		.talk Guard Mitchells##25828
+		..'Ask him how long he has worked for the Cult of the Damned
+		.from Guard Mitchells##25828
+		.' Defeat the Cultist in the jail|goal Cultist in jail defeated|q 11794/2
+	step
+		goto 58.6,67.3
+		.talk Vindicator Yaala##25826
+		..turnin The Hunt is On##11794
+	step
+		goto 58.7,68.4
+		.talk Leryssa##25251
+		..turnin The Late William Allerton##11600
+		..accept Lost and Found##11601
+	step
+		goto 58.3,68
+		.talk James Deacon##25245
+		..turnin Lost and Found##11601
+		..accept In Wine, Truth##11603
+	step
+		goto 58.2,62.8
+		.talk Gerald Green##26083
+		..turnin Weapons for Farshire##11963
+		..accept Call to Arms!##11965
+	step
+		goto 57.3,59.4
+		.' Click the Bell Rope|tip It's a huge rope hanging up the stairs in the stairwell of the town hall building.
+		.' Ring the Farshire Bell|goal Farshire Bell Rung|q 11965/1
+	step
+		goto 58.2,62.8
+		.talk Gerald Green##26083
+		..turnin Call to Arms!##11965
+	step
+		goto 57,44.3
+		.talk Arch Druid Lathorius##25809
+		..accept A Mission Statement##11864|instant
+		..accept Ears of Our Enemies##11866
+		..accept Help Those That Cannot Help Themselves##11876
+	step
+		goto 57.3,44.1
+		.talk Hierophant Cenius##25810
+		..accept Happy as a Clam##11869
+	step
+		goto 57,44
+		.' He walks around the small pond in the middle of the camp
+		.talk Killinger the Den Watcher##25812
+		..accept Ned, Lord of Rhinos...##11884
+	step
+		goto 56.8,44
+		.talk Zaza##25811
+		..accept Unfit for Death##11865
+	step
+		goto 53.8,40.6
+		.' Use your D.E.H.T.A. Trap Smasher while standing next to Trapped Mammoth Calves|use D.E.H.T.A. Trap Smasher##35228|tip They look like baby elephants laying on the ground in a trap.
+		..' Free 8 Mammoth Calves|goal 8 Mammoth Calf Freed|q 11876/1
+	step
+		goto 53.4,42.7
+		.kill 10 Loot Crazed Diver|q 11869/1
+	step
+		goto 46.4,40
+		.' Find and kill "Lunchbox"|kill "Lunchbox"|q 11884/2
+		..kill Nedar, Lord of Rhinos##25801|q 11884/1|tip He walks around this area.  Kill 'Lunchbox' and then Nedar, Lord of Rhinos will jump off.
+	step
+		goto 56.2,50.5
+		.' Stand inside the Caribou Traps on the ground|tip They look like metal spiked traps on the ground.
+		.' Use your Pile of Fake Furs|use Pile of Fake Furs##35127
+		.' Trap 8 Nesingwary Trappers|goal 8 Nesingwary Trapper Trapped|q 11865/1
+	step
+		'Make sure you don't have Animal Blood on you. If you do, go for a swim to wash it off, before approaching the druids.|nobuff Ability_Seal
+	step
+		goto 57,44.3
+		.talk Arch Druid Lathorius##25809
+		..turnin Help Those That Cannot Help Themselves##11876
+		..accept Khu'nok Will Know##11878
+	step
+		goto 57.3,44.1
+		.talk Hierophant Cenius##25810
+		..turnin Happy as a Clam##11869
+		..accept The Abandoned Reach##11870
+	step
+		goto 57,44
+		.' He walks around the small pond in the middle of the camp
+		.talk Killinger the Den Watcher##25812
+		..turnin Ned, Lord of Rhinos...##11884
+	step
+		goto 56.8,44
+		.talk Zaza##25811
+		..turnin Unfit for Death##11865
+		..accept The Culler Cometh##11868
+	step
+		goto 59.5,30.4
+		.'Deliver the Orphaned Mammoth Calf to Khu'nok |q 11878/1
+		.talk Khu'nok the Behemoth##25862
+		..turnin Khu'nok Will Know##11878
+		..accept Kaw the Mammoth Destroyer##11879
+	step
+		'Ride around and find a Wooly Mammoth Bull|n
+		.' Click it to ride it|invehicle
+	step
+		'Go north on the Wooly Mammoth Bull to 53.7,23.9|goto 53.7,23.9
+		.' Use the skills on your mammoth action bar to do the following:
+		.from Kaw the Mammoth Destroyer##25802
+		.' Click Kaw's War Halberd on the ground
+		..get Kaw's War Halberd|q 11879/1
+	step
+		goto 56.6,20.1
+		.talk Kara Thricestar##26602
+		..fpath Fizzcrank Airstrip
+	step
+		home Fizzcrank Airstrip
+	step
+		goto 57,18.7
+		.talk Fizzcrank Fullthrottle##25590
+		..turnin Distress Call##11707
+		..accept The Mechagnomes##11708
+		.talk Fizzcrank Fullthrottle##25590
+		..'Listen to Fizzcrank Fullthrottle's tale|goal Fizzcrank's tale listened to.|q 11708/1
+	step
+		goto 57.4,18.7
+		.talk Jinky Wingnut##25747
+		..turnin The Mechagnomes##11708
+		..accept Re-Cursive##11712
+	step
+		goto 57.4,18.7
+		.talk Mordle Cogspinner##25702
+		..accept What's the Matter with the Transmatter?##11710
+		..accept King Mrgl-Mrgl##11704
+	step
+		goto 57.6,18.7
+		.talk Crafty Wobblesprocket##25477
+		..accept Dirty, Stinkin' Snobolds!##11645
+	step
+		goto 53.1,13.5
+		.' Click Crafty's Stuff|tip They look like wooden crates on the ground around this area.
+		.get 10 Crafty's Stuff|q 11645/1
+	step
+		goto 57.6,18.7
+		.talk Crafty Wobblesprout##25477
+		..turnin Dirty, Stinkin' Snobolds!##11645
+	step
+		kill any of the Robots|n
+		..get The Ultrasonic Screwdriver|n
+		.' Click The Ultrasonic Screwdriver|use The Ultrasonic Screwdriver##34984
+		..accept The Ultrasonic Screwdriver##11729
+		.' Use the Re-Cursive Transmatter Injection on their corpses|use Re-Cursive Transmatter Injection##34973
+		..' Curse & port 6 Fizzcrank Gnomes|goal 6 Fizzcrank Gnome cursed & ported|q 11712/1|tip Pick up Fizzcrank Spare Parts on the way too, but those are not the focus right now.
+	step
+		goto 57.6,18.7
+		.talk Crafty Wobblesprout##25477
+		..turnin The Ultrasonic Screwdriver##11729
+		..accept Master and Servant##11730
+	step
+		goto 57.4,18.7
+		.talk Jinky Wingnut##25747
+		..turnin Re-Cursive##11712
+		..accept Lefty Loosey, Righty Tighty##11788
+	step
+		goto 57,18.7
+		.talk Fizzcrank Fullthrottle##25590
+		..accept Finding Pilot Tailspin##11725
+	step
+		goto 60.2,20.4
+		.' Click the West Point Station Valve|tip It looks like a red round handle on the side of the metal pipe.
+		..kill Twonky|q 11788/1
+	step
+		goto 65.4,17.4
+		.' Click the North Point Station Valve|tip It looks like a red round handle on the side of the metal pipe.
+		..kill ED-210|q 11788/2
+	step
+		goto 63.7,22.5
+		.' Click the Mid Point Station Valve|tip It looks like a red round handle on the side of the metal pipe.
+		..kill Max Blasto|q 11788/3
+	step
+		goto 65.2,28.8
+		.' Click the South Point Station Valve|tip It looks like a red round handle ont he side of the metal pipe.
+		..kill The Grinder|q 11788/4
+	step
+		goto 58.7,18.5
+		.' Click Fizzcrank Spare Parts
+		..get 15 Fizzcrank Spare Parts|q 11710/1
+		.kill robots in this area|n
+		.' Use the Ultrasonic Screwdriver on their corpses|use The Ultrasonic Screwdriver##35116
+		..' Reprogram 15 Robots|goal 15 Robots reprogrammed|q 11730/1
+	step
+		goto 61.7,35.8
+		.talk Iggy "Tailspin" Cogtoggle##25807
+		..turnin Finding Pilot Tailspin##11725
+		..accept A Little Bit of Spice##11726
+	step
+		goto 64.75,41.08
+		.kill Gorlocs|n
+		..get 4 Gorloc Spice Pouch|q 11726/1
+	step
+		goto 61.7,35.8
+		.talk Iggy "Tailspin" Cogtoggle##25807
+		..turnin A Little Bit of Spice##11726
+		..accept Lupus Pupus##11728
+	step
+		'All around this area:
+		.' Use your Wolf Bait on Oil-stained Wolves around this area|use Wolf Bait##35121
+		.' Click the Wolf Droppings that spawn
+		..get 8 Microfilm|q 11728/1
+	step
+		goto 61.7,35.8
+		.talk Iggy "Tailspin" Cogtoggle##25807
+		..turnin Lupus Pupus##11728
+		..accept Emergency Protocol: Section 8.2, Paragraph C##11795
+	step
+		goto 61,37.8
+		.talk Fizzcrank Recon Pilots##25841
+		.' Search their bodies for their Insignia
+		..get 6 Fizzcrank Pilot's Insignia|q 11795/1
+	step
+		goto 61.7,35.8
+		.talk Iggy "Tailspin" Cogtoggle##25807
+		..turnin Emergency Protocol: Section 8.2, Paragraph C##11795
+		..accept Emergency Protocol: Section 8.2, Paragraph D##11796
+	step
+		goto 60.9,33.7
+		.' Use your Emergency Torch next to the crashed plane|use Emergency Torch##35224|tip It's a crashed plane in the water.
+		..' Scuttle a Northwestern Wreck|goal Scuttle a Northwestern Wreck|q 11796/3
+	step
+		goto 59.7,39.2
+		.' Use your Emergency Torch next to the crashed plane|use Emergency Torch##35224|tip It's a crashed plane in the water.
+		..' Scuttle a Southern Wreck|goal Scuttle a Southern Wreck|q 11796/2
+	step
+		goto 63.3,37
+		.' Use your Emergency Torch next to the crashed plane|use Emergency Torch##35224|tip It's a crashed plane in the water.
+		..' Scuttle a Eastern Wreck|goal Scuttle the Eastern Wreck|q 11796/1
+	step
+		goto 61.7,35.8
+		.talk Iggy "Tailspin" Cogtoggle##25807
+		..turnin Emergency Protocol: Section 8.2, Paragraph D##11796
+		..accept Give Fizzcrank the News##11873
+	step
+		'Hearth to Fizzcrank Airstrip|goto 57.1,18.8,1|use Hearthstone##6948|noway|c
+	step
+		goto 57,18.7
+		.talk Fizzcrank Fullthrottle##25590
+		..turnin Give Fizzcrank the News##11873
+	step
+		goto 57.4,18.7
+		.talk Jinky Wingnut##25747
+		..turnin Lefty Loosey, Righty Tighty##11788
+		..accept The Gearmaster##11798
+	step
+		goto 57.4,18.7
+		.talk Mordle Cogspinner##25702
+		..turnin What's the Matter with the Transmatter?##11710
+		..accept Check in With Bixie##11692
+	step
+		goto 57.6,18.7
+		.talk Crafty Wobblesprocket##25477
+		..turnin Master and Servant##11730
+	step
+		goto 57.1,20.1
+		.talk Abner Fizzletorque##25780
+		..accept Scouting the Sinkholes##11713
+	step
+		'Go on top of the pump station to 64.5,23.4|goto 64.5,23.4
+		.' Click The Gearmaster's Manual|tip It looks like a big closed book on the table in a small room at the very top of the pump station.
+		.from Gearmaster Mechazod##25834
+		..get Mechazod's Head|q 11798/2
+	step
+		goto 66.4,32.9
+		.' Use your Map of the Geyser Fields next to the huge hole in the ground|use Map of the Geyser Fields##34920
+		..' Mark the Location of the Northwest Sinkhole|goal Mark Location of Northwest Sinkhole|q 11713/3
+	step
+		goto 69.9,32.8
+		.' Use your Map of the Geyser Fields next to the huge hole in the ground|use Map of the Geyser Fields##34920
+		..' Mark the Location of the Northeast Sinkhole|goal Mark Location of Northeast Sinkhole|q 11713/2
+	step
+		goto 70.6,36.9
+		.' Use your Map of the Geyser Fields next to the huge hole in the ground|use Map of the Geyser Fields##34920
+		..' Mark the Location of the South Sinkhole|goal Mark Location of South Sinkhole|q 11713/1
+	step
+		goto 57.1,20.1
+		.talk Abner Fizzletorque##25780
+		..turnin Scouting the Sinkholes##11713
+		..accept Fueling the Project##11715
+	step
+		goto 57,18.7
+		.talk Fizzcrank Fullthrottle##25590
+		..turnin The Gearmaster##11798
+	step
+		goto 57.6,23.7
+		.' Use your Portable Oil Collector next to the bubbling oil spots in the water|use Portable Oil Collector##34975
+		..' Collect 8 Barrels of Oil|goal 8 Barrels of Oil Collected|q 11715/1
+	step
+		goto 57.1,20.1
+		.talk Abner Fizzletorque##25780
+		..turnin Fueling the Project##11715
+		..accept A Bot in Mammoth's Clothing##11718
+	step
+		goto 56.9,29.1
+		.kill mammoths|n
+		..get 6 Thick Mammoth Hide|q 11718/1
+	step
+		goto 57.1,20.1
+		.talk Abner Fizzletorque##25780
+		..turnin A Bot in Mammoth's Clothing##11718
+		..accept Deploy the Shake-n-Quake!##11723
+	step
+		goto 56.6,20.1
+		.talk Kara Thricestar##26602
+		..'Get a flight to Bixie|goto 73.4,18.8|c|noway
+	step
+		goto 73.4,18.8
+		.talk Bixie Wrenchshanker##25705
+		..turnin Check in With Bixie##11692
+		..accept Oh Great... Plagued Magnataur!##11693
+	step
+		goto 73.3,19.6
+		.kill 10 Plagued Magnataur|q 11693/1
+	step
+		goto 73.4,18.8
+		.talk Bixie Wrenchshanker##25705
+		..turnin Oh Great... Plagued Magnataur!##11693
+		..accept There's Something Going On In Those Caves##11694
+	step
+		goto 74.7,14.1
+		.' Use Bixie's Inhibiting Powder next to the Den of Dying Plague Cauldron|use Bixie's Inhibiting Powder##34915|tip It looks like a big pot inside the cave.
+		..' Neutralize the Plague Cauldron|goal Plague Cauldron Neutralized|q 11694/1
+	step
+		goto 73.4,18.8
+		.talk Bixie Wrenchshanker##25705
+		..turnin There's Something Going On In Those Caves##11694
+		..accept Rats, Tinky Went into the Necropolis!##11697
+		..accept Might As Well Wipe Out the Scourge##11698
+	step
+		'Go inside the undead building to 69.9,14.7|goto 69.9,14.7
+		.talk Tinky Wickwhistle##25714
+		..turnin Rats, Tinky Went into the Necropolis!##11697
+		..accept I'm Stuck in this Damned Cage... But Not For Long!##11699
+	step
+		'Go outside to 68.6,17.5|goto 68.6,17.5
+		.kill Festering Ghouls|n
+		..get Engine-Core Crystal|q 11699/1
+	step
+		'Go around to the back of the building and up to 69.7,13.9|goto 69.7,13.9
+		.from Lich-Lord Chillwinter##25682
+		..get Piloting Scourgestone|q 11699/3
+	step
+		'Jump down into the huge hole to 69.7,13|goto 69.7,13
+		.from Doctor Razorgrin##25678
+		..get Magical Gyroscope|q 11699/2
+	step
+		'Go inside the undead building to 69.9,14.7|goto 69.9,14.7
+		.talk Tinky Wickwhistle##25714
+		..turnin I'm Stuck in this Damned Cage... But Not For Long!##11699
+		..accept Let Bixie Know##11700
+	step
+		goto 68.2,17
+		.' Destroy 20 Talramas Scourge|goal 20 Talramas Scourge Destroyed|q 11698/1
+	step
+		'Go outside to 73.4,18.8|goto 73.4,18.8
+		.talk Bixie Wrenchshanker##25705
+		..turnin Might As Well Wipe Out the Scourge##11698
+		..turnin Let Bixie Know##11700
+		..accept Back to the Airstrip##11701
+	step
+		goto 70.6,36.9
+		.' Stand next to the sinkhole|tip It's a huge hole in the ground.
+		.' Use The Shake-n-Quake 5000 Control Unit in your bags|use Shake-n-Quake 5000 Control Unit##34981
+		.kill 1 Lord Kryxix|q 11723/1
+	step
+		'Hearth to Fizzcrank Airstrip|goto 57.1,18.8,1|use Hearthstone##6948|noway|c
+	step
+		goto 57,18.7
+		.talk Fizzcrank Fullthrottle##25590
+		..turnin Back to the Airstrip##11701
+	step
+		goto 57.1,20.1
+		.talk Abner Fizzletorque##25780
+		..turnin Deploy the Shake-n-Quake!##11723
+	step
+		'Fly to Valiance Keep|goto Borean Tundra,58.9,68.4,0.1|noway|c
+	step
+		goto 57.3,56.5
+		.kill Karen "I Don't Caribou" the Culler##25803|q 11868/1
+	step
+		goto 57.8,55.1
+		.talk Hierophant Liandra##25838
+		..turnin The Abandoned Reach##11870
+		..accept Not On Our Watch##11871
+	step
+		goto 59.1,55.9
+		.kill Northsea Thugs|n
+		.' Click the Shipment of Animal Parts containers on the ground|tip They look like brown bags and crates sitting on the ground around this area.
+		..get 12 Shipment of Animal Parts|q 11871/1
+		..get 15 Nesingwary Lackey Ear|q 11866/1
+	step
+		goto 57.8,55.1
+		.talk Hierophant Liandra##25838
+		..turnin Not On Our Watch##11871
+		..accept The Nefarious Clam Master...##11872
+	step
+		'Go underwater to 61.9,65.7|goto 61.9,65.7
+		.' Click the Wine Crate underwater in the broken ship
+		..get Kul Tiras Wine|q 11603/1
+	step
+		goto 61.5,66.5
+		.kill Clam Master K##25800|q 11872/1
+	step
+		goto 58.5,68.1
+		.talk Old Man Colburn##25302
+		..turnin In Wine, Truth##11603
+		..accept A Deserter##11604
+	step
+		goto 56.7,71.5
+		.talk Private Brau##25395
+		..turnin A Deserter##11604
+		..accept Cowards and Fools##11932
+	step
+		goto 57.3,44.1
+		.talk Hierophant Cenius##25810
+		..turnin The Nefarious Clam Master...##11872
+	step
+		goto 56.8,44
+		.talk Zaza##25811
+		..turnin The Culler Cometh##11868
+	step
+		goto 57,44.3
+		.talk Arch Druid Lathorius##25809
+		..turnin Ears of Our Enemies##11866
+		..turnin Kaw the Mammoth Destroyer##11879
+		..accept The Assassination of Harold Lane##11892
+	step
+		goto 49.9,41.5
+		.kill Harold Lane##25804|q 11892/1
+	step
+		goto 57,44.3
+		.talk Arch Druid Lathorius##25809
+		..turnin The Assassination of Harold Lane##11892
+	step
+		goto 54.3,36.1
+		.talk Etaruk##25292
+		..accept Reclaiming the Quarry##11612
+	step
+		goto 54.7,35.8
+		.talk Elder Atkanok##187565
+		..accept The Honored Ancestors##11605
+	step
+		goto 52.8,34
+		.' Click the Elder Sagani|tip It looks like 2 small totem pole things at the base of the big stone on the huge bone cart.
+		.' Identify the Elder Sagani|goal Elder Sagani identified|q 11605/2
+	step
+		goto 52.3,31.2
+		.' Click the Elder Takret|tip It looks like 2 small totem pole things at the base of the big stone on the huge bone cart.
+		.' Identify the Elder Takret|goal Elder Takret identified|q 11605/3
+	step
+		goto 50.9,32.4
+		.' Click the Elder Kesuk|tip It looks like 2 small totem pole things at the base of the big stone on the huge bone cart.
+		.' Identify the Elder Kesuk|goal Elder Kesuk identified|q 11605/1
+	step
+		goto 54.7,35.8
+		.talk Elder Atkanok##187565
+		..turnin The Honored Ancestors##11605
+		..accept The Lost Spirits##11607
+	step
+		goto 51.5,31.4
+		.kill Beryl Hounds|n
+		.get 6 Cores of Malice|n
+		.' Use the Cores of Malice on Kaskala Craftsmen and Kaskala Shaman|use Core of Malice##34711
+		..' Free 3 Kaskala Craftsman spirits|goal 3 Kaskala Craftsman spirits freed|q 11607/1
+		..' Free 3 Kaskala Shaman spirits|goal 3 Kaskala Shaman spirits freed|q 11607/2
+		.kill 12 Beryl Treasure Hunter|q 11612/1
+	step
+		goto 54.7,35.8
+		.talk Elder Atkanok##187565
+		..turnin The Lost Spirits##11607
+		..accept Picking Up the Pieces##11609
+	step
+		goto 54.3,36.1
+		.talk Etaruk##25292
+		..turnin Reclaiming the Quarry##11612
+		..accept Hampering Their Escape##11617
+	step
+		goto 52.8,34.5
+		.' Kill Beryl Reclaimers for a Gnomish Grenades
+		.' Use your Gnomish Grenade while standing under the floating platform|use Gnomish Grenade##34772|tip If you can fly, you can stand on the floating platform and use your Gnomish Grenade.
+		..' Destroy the East Platform|goal East Platform Destroyed|q 11617/1|tip Pick up Tuskarr Ritual Objects on the way.
+	step
+		goto 52.2,32.1
+		.' Kill Beryl Reclaimers for a Gnomish Grenades
+		.' Use your Gnomish Grenade while standing under the floating platform|use Gnomish Grenade##34772|tip If you can fly, you can stand on the floating platform and use your Gnomish Grenade.
+		..' Destroy the North Platform|goal North Platform Destroyed|q 11617/2|tip Pick up Tuskarr Ritual Objects on the way.
+	step
+		goto 51,33.9
+		.' Kill Beryl Reclaimers for a Gnomish Grenades
+		.' Use your Gnomish Grenade while standing under the floating platform|use Gnomish Grenade##34772|tip If you can fly, you can stand on the floating platform and use your Gnomish Grenade.
+		..' Destroy the West Platform|goal West Platform Destroyed|q 11617/3|tip Pick up Tuskarr Ritual Objects on the way.
+	step
+		goto 52.3,35.75
+		.' Click the Tuskarr Ritual Objects|tip They look like small stone fish and blue smoking bowls on the ground around this area.
+		..get 6 Tuskarr Ritual Object|q 11609/1
+	step
+		goto 54.3,36.1
+		.talk Etaruk##25292
+		..turnin Hampering Their Escape##11617
+		..accept A Visit to the Curator##11623
+	step
+		goto 54.7,35.8
+		.talk Elder Atkanok##187565
+		..turnin Picking Up the Pieces##11609
+		..accept Leading the Ancestors Home##11610
+	step
+		goto 52.8,34
+		.' Use your Tuskarr Ritual Object while standing next to the Elder Sagani|use Tuskarr Ritual Object##34715|tip It looks like 2 small totem pole things at the base of the big stone on the huge bone cart.
+		..' Complete Elder Sagani's ceremony|goal Elder Sagani's ceremony completed|q 11610/2
+	step
+		goto 52.3,31.2
+		.' Use your Tuskarr Ritual Object while standing next to the Elder Takret|use Tuskarr Ritual Object##34715|tip It looks like 2 small totem pole things at the base of the big stone on the huge bone cart.
+		..' Complete Elder Takret's ceremony|goal Elder Takret's ceremony completed|q 11610/3
+	step
+		goto 50.9,32.4
+		.' Use your Tuskarr Ritual Object while standing next to the Elder Kesuk|use Tuskarr Ritual Object##34715|tip It looks like 2 small totem pole things at the base of the big stone on the huge bone cart.
+		..' Complete Elder Kesuk's ceremony|goal Elder Kesuk's ceremony completed|q 11610/1
+	step
+		'Go up the hill to 50.1,32.6|goto 50.1,32.6
+		.kill Curator Insivius##25448|q 11623/1
+	step
+		goto 54.3,36.1
+		.talk Etaruk##25292
+		..turnin A Visit to the Curator##11623
+	step
+		goto 54.7,35.8
+		.talk Elder Atkanok##187565
+		..turnin Leading the Ancestors Home##11610
+	step
+		goto 45.3,34.5
+		.talk Surristrasz##24795
+		..fpath Amber Ledge
+	step
+		goto 45.3,33.3
+		.talk Librarian Donathan##25262
+		..turnin Nick of Time##11575
+		..accept Prison Break##11587
+	step
+		goto 45,33.4
+		.talk Librarian Garren##25291
+		..accept Monitoring the Rift: Cleftcliff Anomaly##11576
+	step
+		goto 40.5,39.2
+		.kill Beryl Mage Hunters|n
+		..collect Beryl Prison Key##34688|sticky |q 11587
+		.' Click an Arcane Prison
+		..' Free an Arcane Prisoner|goal Arcane Prisoners Rescued|q 11587/1
+	step
+		goto 41.2,41.8|n
+		.' The path down to Monitoring the Rift: Cleftcliff Anomaly starts here|goto 41.2,41.8,0.5|noway|c
+	step
+		goto 34.3,42
+		.' Use your Arcanometer in this spot next to the purple glowing crack in the ground|use Arcanometer##34669
+		..' Take the Cleftcliff Anomaly Reading|goal Cleftcliff Anomaly Reading Taken|q 11576/1
+	step
+		goto 45,33.4
+		.talk Librarian Garren##25291
+		..turnin Monitoring the Rift: Cleftcliff Anomaly##11576
+		..accept Monitoring the Rift: Sundered Chasm##11582
+	step
+		goto 45.3,33.3
+		.talk Librarian Donathan##25262
+		..turnin Prison Break##11587
+		..accept Abduction##11590
+	step
+		goto 43.5,37.4
+		.' Fight a Beryl Sorcerer
+		.' Use your Arcane Binder on him when you see the 'Beryl Sorcerer can now be captured' message in your chat|use Arcane Binder##34691
+		.' Return to Librarian Donathan at 45.3,33.3
+		..' Capture a Beryl Sorcerer|goal Captured Beryl Sorcerer|q 11590/1
+	step
+		goto 45.3,33.3
+		.talk Librarian Donathan##25262
+		..turnin Abduction##11590
+		..accept The Borean Inquisition##11646
+	step
+		'Go inside the tall tower to 46.3,32.8|goto 46.3,32.8
+		.talk Librarian Normantis##25480
+		..turnin The Borean Inquisition##11646
+		..accept The Art of Persuasion##11648
+	step
+		'Use your Neural Needler on the Imprisoned Beryl Sorcerer repeatedly to Interrogate the Prisoner|use Neural Needler##34811
+		.' Interrogate the Prisoner|goal Prisoner Interrogated|q 11648/1
+	step
+		goto 46.3,32.8
+		.talk Librarian Normantis##25480
+		..turnin The Art of Persuasion##11648
+		..accept Sharing Intelligence##11663
+	step
+		'Go outside the tower to 45.3,33.3|goto 45.3,33.3
+		.talk Librarian Donathan##25262
+		..turnin Sharing Intelligence##11663
+		..accept A Race Against Time##11671
+	step
+		goto 42.1,39.5
+		.' Use your Beryl Shield Detonator inside the big blue glowing circle|use Beryl Shield Detonator##34897|tip If it won't let you, wait until Inquisitor Salrand appears again.
+		.kill Inquisitor Salrand|n
+		.' Click Salrand's Lockbox
+		..get Salrand's Broken Key|q 11671/1
+	step
+		'Go down the path and underwater to 44,28.6|goto 44,28.6
+		.' Use your Arcanometer next to the huge purple glowing crack underwater|use Arcanometer##34669
+		..' Take the Sundered Chasm Reading|goal Sundered Chasm Reading Taken|q 11582/1
+	step
+		goto 45.3,33.3
+		.talk Librarian Donathan##25262
+		..turnin A Race Against Time##11671
+		..accept Reforging the Key##11679
+	step
+		goto 45,33.4
+		.talk Librarian Garren##25291
+		..turnin Monitoring the Rift: Sundered Chasm##11582
+		..accept Monitoring the Rift: Winterfin Cavern##12728
+	step
+		goto 45.3,34.5
+		.talk Surristrasz##24795
+		..turnin Reforging the Key##11679
+		..accept Taking Wing##11680
+	step
+		goto 46.4,37.3
+		.talk Warmage Anzim##25356
+		..turnin Taking Wing##11680
+		..accept Rescuing Evanor##11681
+	step
+		'Watch the cutscene, then you'll get teleported back to Amber Ledge|goto 46.4,32.6,0.3|noway
+	step
+		goto 46.4,32.4
+		.talk Archmage Evanor##25785
+		..turnin Rescuing Evanor##11681
+		..accept Dragonspeak##11682
+	step
+		'Go outside the tower to 45.3,34.5|goto 45.3,34.5
+		.talk Surristrasz##24795
+		..turnin Dragonspeak##11682
+		..accept Traversing the Rift##11733
+	step
+		goto 45.3,34.5
+		.talk Surristrasz##24795
+		.' Fly to Transitus Shield, Coldarra|goto 33.1,34.4,0.5|noway|c
+	step
+		goto 32.9,34.4
+		.talk Archmage Berinand##25314
+		..turnin Traversing the Rift##11733
+		..accept Reading the Meters##11900
+		..accept Secrets of the Ancients##11910
+	step
+		goto 33.3,34.5
+		.talk Raelorasz##26117
+		..accept Basic Training##11918
+	step
+		goto 33.5,34.4
+		.talk Librarian Serrah##26110
+		..accept Nuts for Berries##11912
+		..accept Have They No Shame?##13094
+	step
+		goto 35,28
+		.kill Coldarra Spellbinders|n
+		.get Scintillating Fragment|n
+		.' Click the Scintillating Fragment in your bags|use Scintillating Fragment##35648
+		..accept Puzzling...##11941
+	step
+		goto 33.3,34.5
+		.talk Raelorasz##26117
+		..turnin Puzzling...##11941
+		..accept The Cell##11943
+	step
+		goto 31.7,20.6
+		.' Click the Coldarra Geological Monitor|tip It looks like a blue sphere on the ground in the entrance of the building.
+		..' Take the Northern Coldarra Reading|goal Northern Coldarra Reading|q 11900/3
+	step
+		goto 27.3,20.5
+		.from General Cerulean##25716
+		..get Prison Casing|q 11943/2
+	step
+		goto 22.6,23.5
+		.' Click the Coldarra Geological Monitor|tip It looks like a blue sphere on the ground in the entrance of the building.
+		..' Take the Western Coldarra Reading|goal Western Coldarra Reading|q 11900/4
+	step
+		goto 24.1,29.6
+		.from Warbringer Goredrak##25712
+		.get Energy Core|q 11943/1
+	step
+		goto 28.3,35
+		.' Click the Coldarra Geological Monitor|tip It looks like a blue sphere on the ground in the entrance of the building.
+		.' Take the Southern Coldarra Reading|goal Southern Coldarra Reading|q 11900/2
+	step
+		goto 33.3,34.5
+		.talk Raelorasz##26117
+		..turnin The Cell##11943
+	step
+		'Use the Augmented Arcane Prison in your bags|use Augmented Arcane Prison##35671
+		.talk Keristrasza##26237
+		..accept Keristrasza##11946
+		..turnin Keristrasza##11946
+		..accept Bait and Switch##11951
+	step
+		kill 10 Coldarra Spellweaver|q 11918/1
+		from Glacial Ancient+
+		.get 3 Glacial Splinter|q 11910/1
+		from Magic-Bound Ancient+
+		.get 3 Magic-Bound Splinter|q 11910/2
+		info Don't forget to harvest the Ancients for herbs.|only if skill('Herbalism')>0
+		Click Frostberry Bushes
+		.get 10 Frostberry|q 11912/1
+		Click Crystallized Mana on the ground|tip They look like pink crystals.
+		.get 10 Crystallized Mana Shard|q 11951/1
+	step
+		goto 33.3,34.5
+		.talk Raelorasz##26117
+		..turnin Basic Training##11918
+		..accept Hatching a Plan##11936
+	step
+		goto 33.5,34.4
+		.talk Librarian Serrah##26110
+		..turnin Nuts for Berries##11912
+		..accept Keep the Secret Safe##11914
+	step
+		goto 32.9,34.4
+		.talk Archmage Berinand##25314
+		..turnin Secrets of the Ancients##11910
+		..accept Quickening##11911
+	step
+		'Use the Augmented Arcane Prison in your bags|use Augmented Arcane Prison##35671
+		.talk Keristrasza##26237
+		..turnin Bait and Switch##11951
+		..accept Saragosa's End##11957
+	step
+		'Use the Augmented Arcane Prison in your bags|use Augmented Arcane Prison##35671
+		.talk Keristrasza##26206
+		.'Tell her you are ready to face Saragosa|goto 21.2,22.5,0.5|noway|c
+	step
+		'She teleports you to a platform
+		.' Click the Arcane Power Focus in your bags|use Arcane Power Focus##35690
+		.'Wait for Saragosa to appear and become human
+		.from Saragosa##26231
+		..get Saragosa's Corpse|q 11957/1
+	step
+		'Use the Augmented Arcane Prison in your bags|use Augmented Arcane Prison##35671
+		.talk Keristrasza##26206
+		..turnin Saragosa's End##11957
+		..accept Mustering the Reds##11967
+	step
+		goto 33.3,34.5
+		.talk Raelorasz##26117
+		..turnin Mustering the Reds##11967
+		..accept Springing the Trap##11969
+	step
+		goto 25,32.7
+		.from Coldarra Wyrmkin
+		..collect 5 Frozen Axe|q 11936 
+	step
+		goto 28.3,28.5
+		.' Click the Coldarra Geological Monitor|tip It looks like a blue sphere on the ground at the base of the building.
+		..' Take the Nexus Geological Reading|goal Nexus Geological Reading|q 11900/1
+	step
+		goto 27.8,24.2
+		.kill Arcane Serpents|n
+		..get 5 Nexus Mana Essence|q 11914/1
+		.' Click Blue Dragon Eggs|tip They look like big eggs with blue crystals on them on the ground.
+		..' Destroy 5 Dragon Eggs|goal 5 Dragon Eggs destroyed|q 11936/1
+	step
+		goto 25.4,21.7
+		.' Use Raelorasz' Spark next to the Signal Fire|use Raelorasz' Spark##44950|tip The Signal Fire looks like an unlit bonfire.
+		.' Watch the cutscene
+		.' Lure Malygos|goal Malygos Lured|q 11969/1
+	step
+		goto 33.3,34.5
+		.talk Raelorasz##26117
+		..turnin Springing the Trap##11969
+		..accept Prisoner of War##11973
+		..turnin Hatching a Plan##11936
+		..accept Drake Hunt##11919
+	step
+		goto 33.5,34.4
+		.talk Librarian Serrah##26110
+		..turnin Keep the Secret Safe##11914
+	step
+		goto 32.9,34.4
+		.talk Archmage Berinand##25314
+		..turnin Reading the Meters##11900
+		..accept Postponing the Inevitable##11905
+	step
+		goto 24.6,27.1|n
+		.' Use your Raelorasz's Spear on a Nexus Drake Hatchling|use Raelorasz's Spear##35506|tip They are flying above you in the sky.
+		.' Do not kill it, let it hit you until it becomes friendly|havebuff Drake Hatchling Subdued|c|q 11919/1
+	step
+		goto 33.3,34.5
+		.' Capture the Nexus Drake|goal Captured Nexus Drake|q 11919/1
+		.talk Raelorasz##26117
+		..turnin Drake Hunt##11919
+		..accept Cracking the Code##11931
+	step
+		goto 32.7,27.8
+		.from Inquisitor Caleras##25720
+		..get Azure Codex|q 11931/2
+		.kill Coldarra Spellbinders|n
+		..get 3 Shimmering Rune|q 11931/1
+	step
+		goto 33.3,34.5
+		.talk Raelorasz##26117
+		..turnin Cracking the Code##11931
+	step
+		'Fly to Amber Ledge|goto 45.1,34.1,0.5|noway|c
+	step
+		goto 43.5,14
+		.talk King Mrgl-Mrgl##25197
+		..turnin King Mrgl-Mrgl##11704
+		..accept Learning to Communicate##11571
+	step
+		'Go underwater to 42.5,15.9|goto 42.5,15.9
+		.from Scalder##25226
+		.' Use The King's Empty Conch on Scalder's corpse|use The King's Empty Conch##34598
+		..get The King's Filled Conch|q 11571/1
+	step
+		goto 41.5,13.4
+		.' Click Winterfin Clams underwater|tip They look like small tanish clams on the ground underwater.
+		..collect 5 Winterfin Clam|q 11559|future
+	step
+		goto 43.5,14
+		.talk King Mrgl-Mrgl##25197
+		..turnin Learning to Communicate##11571
+		..accept Winterfin Commerce##11559
+	step
+		goto 43,13.8
+		.talk Ahlurglgr##25206
+		..turnin Winterfin Commerce##11559
+	step
+		goto 42.8,13.7
+		.talk Brglmurgl##25199
+		..accept Them!##11561
+	step
+		goto 43.5,14
+		.talk King Mrgl-Mrgl##25197
+		..accept Oh Noes, the Tadpoles!##11560
+	step
+		goto 40.6,17.5
+		.kill 15 Winterfin murlocs|q 11561/1
+		.' Click the yellow cages
+		..' Rescue 20 Winterfin Tadpoles|goal 20 Winterfin Tadpole rescued|q 11560/1
+	step
+		goto 42.8,13.7
+		.talk Brglmurgl##25199
+		..turnin Them!##11561
+	step
+		goto 43.5,14
+		.talk King Mrgl-Mrgl##25197
+		..turnin Oh Noes, the Tadpoles!##11560
+		..accept I'm Being Blackmailed By My Cleaner##11562
+	step
+		goto 42,12.8
+		.talk Mrmrglmr##25205
+		..turnin I'm Being Blackmailed By My Cleaner##11562
+		..accept Grmmurggll Mrllggrl Glrggl!!!##11563
+	step
+		goto 42,13.2
+		.talk Cleaver Bmurglbrm##25211
+		..accept Succulent Orca Stew##11564
+	step
+		goto 37.4,9.8
+		.from Glrggl##25203
+		..get Glrggl's Head|q 11563/1
+	step
+		goto 40.3,12.4
+		.kill Glimmer Bay Orcas|n
+		..get 7 Succulent Orca Blubber|q 11564/1
+	step
+		goto 42,12.8
+		.talk Mrmrglmr##25205
+		..turnin Grmmurggll Mrllggrl Glrggl!!!##11563
+		..accept The Spare Suit##11565
+	step
+		goto 42,13.2
+		.talk Cleaver Bmurglbrm##25211
+		..turnin Succulent Orca Stew##11564
+	step
+		goto 43.5,14
+		.talk King Mrgl-Mrgl##25197
+		..turnin The Spare Suit##11565
+		..accept Surrender... Not!##11566
+	step
+		'Go southwest to Winterfin Village|n
+		..' Use King Mrgl-Mrgl's Spare Suit|havebuff INV_Misc_Head_Murloc_01|use King Mrgl-Mrgl's Spare Suit##34620|q 11566
+	step
+		goto 40.1,19.7
+		.' Stand in the mouth of the cave, past the torches
+		.' Use your Arcanometer|use Arcanometer##34669
+		.' Take the Winterfin Cavern Reading|goal Winterfin Cavern Reading Taken|q 12728/1
+	step
+		'Go inside the cave to 37.8,23.2|goto 37.8,23.2
+		.talk Glrglrglr##28375
+		..accept Keymaster Urmgrgl##11569
+	step
+		'Go down the path and underneath you to 38.4,22.7|goto 38.4,22.7
+		.from Keymaster Urmgrgl##25210
+		..get Urmgrgl's Key|q 11569/1
+	step
+		.' Use King Mrgl-Mrgl's Spare Suit|havebuff INV_Misc_Head_Murloc_01|use King Mrgl-Mrgl's Spare Suit##34620|q 11566
+	step
+		'Follow the path up and to the back of the cave to 37.6,27.4|goto 37.6,27.4
+		.from Claximus##25209
+		..get Claw of Claximus|q 11566/1
+	step
+		.' Use King Mrgl-Mrgl's Spare Suit|havebuff INV_Misc_Head_Murloc_01|use King Mrgl-Mrgl's Spare Suit##34620|q 11569/1
+	step
+		'Go back up the path to 37.8,23.2|goto 37.8,23.2
+		.talk Glrglrglr##28375
+		..turnin Keymaster Urmgrgl##11569
+	step
+		'WARNING: ESCORT
+		goto 37.8,23
+		.talk Lurgglbr##25208
+		..accept Escape from the Winterfin Caverns##11570|noautoaccept
+	step
+		Escort Lurgglbr to safety|goal Escort Lurgglbr to safety|q 11570/1
+	step
+		goto 43.5,14
+		.talk King Mrgl-Mrgl##25197
+		..turnin Surrender... Not!##11566
+		..turnin Escape from the Winterfin Caverns##11570
+	step
+		goto 45,33.4
+		.talk Librarian Garren##25291
+		..turnin Monitoring the Rift: Winterfin Cavern##12728
+	step
+		goto 63.8,46.1
+		.talk Ataika##26169
+		..turnin Cowards and Fools##11932
+		..accept The Son of Karkut##12086
+		..accept Not Without a Fight!##11949
+	step
+		goto 64,45.7
+		.talk Utaik##26213
+		..accept Preparing for the Worst##11945
+	step
+		goto 65.3,47.2
+		.kill 12 Kvaldir Raider|q 11949/1
+		.' Click Kaskala Supplies baskets|tip They look like wooden baskets on the ground.
+		.get 8 Kaskala Supplies|q 11945/1
+	step
+		goto 63.8,46.1
+		.talk Ataika##26169
+		..turnin Not Without a Fight!##11949
+		..accept Muahit's Wisdom##11950
+	step
+		goto 64,45.7
+		.talk Utaik##26213
+		..turnin Preparing for the Worst##11945
+	step
+		goto 67.2,54.9
+		.talk Elder Muahit##26218
+		..turnin Muahit's Wisdom##11950
+		..accept Spirits Watch Over Us##11961
+	step
+		goto 67.7,50.4
+		.' Click Iruk's body|tip His body is floating underwater.
+		.' Search his corpse
+		.get Issliruk's Totem|q 11961/1
+	step
+		goto 67.2,54.9
+		.talk Elder Muahit##26218
+		..turnin Spirits Watch Over Us##11961
+		..accept The Tides Turn##11968
+	step
+		goto 67.4,56.8
+		.kill Heigarr the Horrible##26266|q 11968/1
+	step
+		goto 67.2,54.9
+		.talk Elder Muahit##26218
+		..turnin The Tides Turn##11968
+	step
+		goto 67.2,54.9
+		.talk Hotawa##28382
+		..accept Travel to Moa'ki Harbor##12117
+	step
+		goto 78.5,51.5
+		.talk Bilko Driftspark##28195
+		..fpath Unu'pe
+	step
+		goto 82,46.4
+		.talk Corporal Venn##26187
+		..turnin The Son of Karkut##12086
+		..accept Surrounded!##11944
+	step
+		goto 82,46.4
+		.talk Private Casey##26186
+		..accept The Lost Courier##12157
+	step
+		goto 82.2,44.8
+		.kill 7 Ziggurat Defender|q 11944/1
+	step
+		goto 82,46.4
+		.talk Corporal Venn##26187
+		..turnin Surrounded!##11944
+		..accept Thassarian, the Death Knight##12088
+	step
+		goto 84.8,41.7
+		.talk Thassarian##26170
+		..turnin Thassarian, the Death Knight##12088
+		..accept Finding the Phylactery##11956
+	step
+		goto 82.4,46.6
+		.' Click Dusk to ride him|invehicle|tip He is a skeletal death knight mount with hooves that glow blue. |q 11956
+	step
+		goto 85.4,33.3
+		.' Click the Frozen Phylactery|tip It looks like a green canister with a purple top underwater.
+		.' Kill Phylactery Guardian that spawns
+		.get Tanathal's Phylactery|q 11956/1
+	step
+		goto 84.8,41.7
+		.talk Thassarian##26170
+		..turnin Finding the Phylactery##11956
+		..accept Buying Some Time##11938
+	step
+		goto 84.4,31.4
+		.kill 20 En'kilah mob|goal 20 En'kilah Casualty|q 11938/1
+	step
+		goto 84.8,41.7
+		.talk Thassarian##26170
+		..turnin Buying Some Time##11938
+		..accept Words of Power##11942
+	step
+		goto 89.4,28.9
+		.' Kill 2 bug guards and kill the 2 cocoons next to High Priest Talet-Kha
+		.from High Priest Talet-Kha##26073
+		..get High Priest Talet-Kha's Scroll|q 11942/3
+	step
+		goto 88.1,20.9
+		.from High Priest Andorath##25392
+		..get High Priest Andorath's Scroll|q 11942/1
+	step
+		goto 83.9,20.5
+		.' Kill the 3 guards
+		.from High Priest Naferset##26076
+		..get High Priest Naferset's Scroll|q 11942/2
+	step
+		goto 84.8,41.7
+		.talk Thassarian##26170
+		..turnin Words of Power##11942
+		..accept Last Rites##12019
+	step
+		'Travel up to Naxxanar and defeat Prince Valanar|goal Last Rites|q 12019/1
+	step
+		goto 84.8,41.7
+		.talk Thassarian##26170
+		..turnin Last Rites##12019
+]])
+
 
