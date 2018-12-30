@@ -30,7 +30,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Human (1-5)"
 	step //5
 		goto 47.4,39.7
 		.from Young Wolf
-		.get 8 Tough Wolf Meat|q 33/1
+		..get 8 Tough Wolf Meat|q 33/1
 	step //6
 		ding 2
 	step //7
@@ -75,7 +75,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Human (1-5)"
 		goto 48.1,43.6
 		.talk Deputy Willem##823
 		..accept Brotherhood of Thieves##18
-		..accept Milly Osworth##3903
 	step //15
 		goto 49.9,42.6
 		.talk Drusilla La Salle##459
@@ -86,15 +85,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Human (1-5)"
 		.talk Jorik Kerridan##915
 		..turnin Encrypted Letter##3102
 		only Human Rogue
-	step //17
-		goto 50.7,39.3
-		.talk Milly Osworth##9296
-		..turnin Milly Osworth##3903
-		..accept Milly's Harvest##3904
 	step //18
 		ding 3
 	step //19
-		goto 51.3,37.0
+		goto 47.9,37.1
 		.kill 10 Kobold Workers|q 15/1
 	step //20
 		goto 48.9,41.6
@@ -108,37 +102,41 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Human (1-5)"
 		ding 4
 	step //23
 		goto 53.6,47.3
-		.' Click Milly's Harvest barrels around the vineyard|tip Milly's Harvest look like barrels of grapes.
-		.get 8 Milly's Harvest|q 3904/1
 		.from Defias Thug##38+
-		.get 12 Red Burlap Bandana|q 18/1
-	step //24
-		goto 50.7,39.3
-		.talk Milly Osworth##9296
-		..turnin Milly's Harvest##3904
-		..accept Grape Manifest##3905
+		..get 12 Red Burlap Bandana|q 18/1
 	step //25
 		goto 48.9,41.6
 		.talk Marshal McBride##197
 		..turnin Skirmish at Echo Ridge##21
 		..accept Report to Goldshire##54
-	step //26
-		goto 49.5,41.6
-		.talk Brother Neals##952
-		..turnin Grape Manifest##3905
 	step //27
 		goto 48.1,43.6
 		.talk Deputy Willem##823
 		..turnin Brotherhood of Thieves##18
+		..accept Milly Osworth##3903
 		..accept Bounty on Garrick Padfoot##6
-	step //28
-		ding 5
+	step //17
+		goto 50.7,39.3
+		.talk Milly Osworth##9296
+		..turnin Milly Osworth##3903
+		..accept Milly's Harvest##3904
 	step //29
 		goto 57.5,48.3
 		.from Garrick Padfoot##103
-		.get Garrick's Head|q 6/1
-	step //30
-		'Hearth to Northshire Valley|goto Elwynn Forest,48.1,43.7,1|use Hearthstone##6948|noway|c
+		..get Garrick's Head|q 6/1
+		.' Click Milly's Harvest barrels around the vineyard|tip Milly's Harvest look like barrels of grapes.
+		..get 8 Milly's Harvest|q 3904/1
+	step //24
+		goto 50.7,39.3
+		.talk Milly Osworth##9296
+		..turnin Milly's Harvest##3904
+		..accept Grape Manifest##3905
+	step //26
+		goto 49.5,41.6
+		.talk Brother Neals##952
+		..turnin Grape Manifest##3905
+	step //28
+		ding 5
 	step //31
 		goto 48.1,43.6
 		.talk Deputy Willem##823
