@@ -79,6 +79,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hum
 		goto 49.9,42.6
 		.talk Drusilla La Salle##459
 		..turnin Tainted Letter##3105
+        ..accept The Stolen Tome##1598
 		only Human Warlock
 	step //16
 		goto 50.3,39.9
@@ -120,6 +121,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hum
 		.talk Milly Osworth##9296
 		..turnin Milly Osworth##3903
 		..accept Milly's Harvest##3904
+    step
+        goto 56.7,44
+        .'Click the Stolen Books
+        ..get Powers of the Void|q 1598/1
 	step //29
 		goto 57.5,48.3
 		.from Garrick Padfoot##103
@@ -131,6 +136,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hum
 		.talk Milly Osworth##9296
 		..turnin Milly's Harvest##3904
 		..accept Grape Manifest##3905
+	step //15
+		goto 49.9,42.6
+		.talk Drusilla La Salle##459
+        ..turnin The Stolen Tome##1598
+		only Human Warlock
 	step //26
 		goto 49.5,41.6
 		.talk Brother Neals##952
@@ -148,7 +158,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hum
 	step //33
 		'Travel Hard Right as you leave Northshire Valley towards Stormwind City|goto Stormwind City|noway|c
 	step //34
-		goto 67,33.85,5|sticky
+		goto 60.3,12.6|sticky
 		'Enter the Deeprun Tram|goto Deeprun Tram|noway|c
 	step //35
 		'Ride the tram to Ironforge|goto Ironforge|noway|c
@@ -363,6 +373,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		goto 47.3,52.3
 		.talk Tannok Frosthammer##6806
 		..turnin Supplies to Tannok##2160
+        only Dwarf,Gnome
+    step
+        goto 47.4,52.5
 		.talk Innkeeper Belm##1247
 		..buy Rhapsody Malt|goal 1 Rhapsody Malt|q 384/2
 	step //3

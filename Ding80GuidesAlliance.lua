@@ -355,6 +355,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 47.3,52.3
 		.talk Tannok Frosthammer##6806
 		..turnin Supplies to Tannok##2160
+        only Dwarf,Gnome
+    step
+        goto 47.4,52.5
 		.talk Innkeeper Belm##1247
 		..buy Rhapsody Malt|goal 1 Rhapsody Malt|q 384/2
 	step //3
