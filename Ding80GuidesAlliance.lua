@@ -282,10 +282,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 		.talk Thorgas Grimson##895
 		..turnin Etched Rune##3108
 		only Dwarf Hunter
-	step //26
-		goto 25,76
-		.talk Nori Pridedrift##12738
-		..turnin Bring Back the Mug##3365
 	step //27
 		goto 20.9,76.1
 		.' Click Felix's Box|tip In the troll camp on the ground to the right of the campfire.
@@ -299,13 +295,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 		.' Click Felix's Bucket of Bolts|tip Outside troll cave entrance on the ground next to the campfire.
 		.get Felix's Bucket of Bolts|q 3361/3
 		.kill 14 Frostmane Troll Whelp|q 182/1
+	step //26
+		goto 25,76
+		.talk Nori Pridedrift##12738
+		..turnin Bring Back the Mug##3365
 	step //30
 		goto 25.1,75.7
 		.talk Grelin Whitebeard##786
 		..turnin The Troll Cave##182
 		..accept The Stolen Journal##218
-	step //31
-		ding 5
 	step //32
 		'Enter the troll cave at 26.8,79.8|goto 26.8,79.8|c
 	step //33
@@ -317,6 +315,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 		.talk Grelin Whitebeard##786
 		..turnin The Stolen Journal##218
 		..accept Senir's Observations (1)##282
+	step //31
+		ding 5
 	step //35
 		goto 28.5,67.7
 		.talk Felix Whindlebolt##8416
@@ -442,9 +442,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 27.8,48.3
 		.kill 6 Ice Claw Bear|q 319/1
 		.kill 8 Elder Crag Boar|q 319/2
-		.kill 8 Snow Leopard|q 319/3
-		.collect 4 Chunk of Boar Meat|q 86|future|tip Save these for 'Pie for Billy' later.
-	step //22
+		.kill 8 Snow Leopard|q 319/3|tip Save 4 Chunk of Boar Meat for 'Pie for Billy' later.
+	step //21
 		goto 30.2,45.6
 		.talk Rejold Barleybrew##1374
 		..turnin A Favor for Evershine##319
@@ -481,7 +480,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 41.2,44.3
 		.from Frostmane Seer##1397+
 		.' Click the Shimmerweed Baskets|tip The Shimmerweed Baskets look like woven wooden baskets on the ground around this area.
-		.get 6 Shimmerweed|q 315/1
+		..get 6 Shimmerweed|q 315/1
 	step //31
 		goto 30.2,45.6
 		.talk Rejold Barleybrew##1374
@@ -492,8 +491,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //32
 		goto 25.9,43.2
 		.from Leper Gnome##1211+
-		.get 8 Restabilization Cog|q 412/1
-		.get 8 Gyromechanic Gear|q 412/2
+		..get 8 Restabilization Cog|q 412/1
+		..get 8 Gyromechanic Gear|q 412/2
 	step //33
 		goto 22.77,52.07
 		.' Explore Frostmane Hold|goal Fully explore Frostmane Hold|q 287/1|tip By the time you reach this point, you should have seen the "Explore Frostmane Hold" completed message.
@@ -521,7 +520,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //40
 		goto 62.6,46.1
 		.from Vagash##1388
-		.get Fang of Vagash|q 314/1
+		..get Fang of Vagash|q 314/1
 	step //41
 		goto 63.1,49.9
 		.talk Rudra Amberstill##1265
@@ -560,7 +559,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //50
 		goto 78.3,37.80
 		.from Mangeclaw##1961
-		.get Mangy Claw|q 417/1
+		..get Mangy Claw|q 417/1
 	step //51
 		goto 83.9,39.2
 		.talk Pilot Hammerfoot##1960
@@ -600,7 +599,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 47.6,9.3
 		.talk Lago Blackwrench##6120
 		..accept The Slaughtered Lamb##1715
-		only Gnome Warlock
+		only Warlock
 	step //61
 		goto 76.9,51.2|n
 		'Enter the Deeprun Tram|goto Deeprun Tram|noway|c|tip Buy a Bronze Tube from the engineering supplies vendor in Tinker Town if you don't have one. You will need it later in Duskwood.
@@ -2023,11 +2022,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		.talk Gakin the Darkbinder##6122
 		..turnin The Slaughtered Lamb##1715
 		..accept Surena Caledon##1688
-		only Gnome Warlock
+		only Warlock
 	step //9
 		goto 71,72.5
 		.talk Dungar Longdrink##352
 		..fpath Stormwind City
+        only !Human
 	step //10
 		'Go outside to Elwynn Forest|goto Elwynn Forest|noway|c
 	step //11
@@ -2076,7 +2076,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //20
 		goto 41.7,86.9
 		.from Stonetusk Boar##113+
-		.get 4 Chunk of Boar Meat|q 86/1
+		..get 4 Chunk of Boar Meat|q 86/1
 	step //21
 		goto 34.5,84.2
 		.talk "Auntie" Bernice Stonefield##246
@@ -2104,7 +2104,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //26
 		'Follow the path inside the cave to 41.7,78.3|goto 41.7,78.3
 		.from Goldtooth##327
-		.get Bernice's Necklace|q 87/1
+		..get Bernice's Necklace|q 87/1
 	step //27
 		goto 42.1,65.9
 		.talk Marshal Dughan##240
@@ -2118,7 +2118,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //29
 		goto 49.7,66.3
 		.from Murloc##285+, Murloc Steamrunner##735+
-		.get 4 Crystal Kelp Frond|q 112/1
+		..get 4 Crystal Kelp Frond|q 112/1
 	step //30
 		ding 11
 	step //31
@@ -2126,8 +2126,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		.' Explore the Jasperlode Mine|goal Scout through the Jasperlode Mine|q 76/1
 	step //32
 		.from Kobold Tunneler##475+, Kobold Miner##40+
-		.get 10 Gold Dust|q 47/1
-		.get 8 Large Candle|q 60/1
+		..get 10 Gold Dust|q 47/1
+		..get 8 Large Candle|q 60/1
 	step //33
 		goto 74,72.2
 		.talk Guard Thomas##261
@@ -2155,7 +2155,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //38
 		goto 81.3,60.6
 		.' Click the small stacks of wood at the base of trees|tip They look like little stacks of 3 firewood at the base of trees in this area.
-		.get 8 Bundle of Wood|q 5545/1
+		..get 8 Bundle of Wood|q 5545/1
 	step //39
 		goto 84.6,69.4
 		.talk Marshal Haggard##294
@@ -2165,12 +2165,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //40
 		goto 89.4,79
 		.from Dead-tooth Jack##6093
-		.collect Dead-tooth's Key##6783|q 1667
+		..collect Dead-tooth's Key##6783|q 1667
 		only Warrior
 	step //41
 		goto 89.3,78.9
 		.' Click Dead-tooth's Strongbox
-		.get Marshal Haggard's Badge|q 1667/1
+		..get Marshal Haggard's Badge|q 1667/1
 		only Warrior
 	step //42
 		goto 80,77.8
@@ -2179,16 +2179,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //43
 		goto 70.6,76.3
 		.from Defias Bandit##116+
-		.get 6 Red Linen Bandana|q 83/1
+		..get 6 Red Linen Bandana|q 83/1
 	step //44
 		goto 69.7,79.5
 		'Kill Princess
-		.get Brass Collar##1006|q 88/1
+		..get Brass Collar##1006|q 88/1
 	step //45
 		goto 71,80.8
 		.from Surena Caledon##881
-		.get Surena's Choker|q 1688/1
-		only Gnome Warlock
+		..get Surena's Choker|q 1688/1
+		only Warlock
 	step //46
 		goto 74,72.2
 		.talk Guard Thomas##261
@@ -2253,11 +2253,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //60
 		goto 26.4,93.70
 		.from Hogger##448
-		.get 1 Huge Gnoll Claw|q 176/1
+		..get 1 Huge Gnoll Claw|q 176/1
 	step //61
 		goto 26.8,86.3
 		.from Riverpaw Outrunner##478+, Riverpaw Runt##97+
-		.get 8 Painted Gnoll Armband|q 11/1
+		..get 8 Painted Gnoll Armband|q 11/1
 	step //62
 		goto 42.1,65.9|tip Remember to train while you're in Goldshire.
 		.talk Marshal Dughan##240
@@ -2318,31 +2318,31 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //10
 		goto 53.8,42.5
 		.from Goretusk##157+, Young Goretusk##454+
-		.get 8 Goretusk Liver|q 22/1
-		.get 3 Goretusk Snout|q 38/3|tip Save 'Boar Intestines' for 'Thelsamar Blood Sausages' later. 
+		..get 8 Goretusk Liver|q 22/1
+		..get 3 Goretusk Snout|q 38/3|tip Save 'Boar Intestines' for 'Thelsamar Blood Sausages' later. 
 	step //11
 		goto 59,43.7
 		.from Fleshripper##1109+
 		.get 3 Stringy Vulture Meat|q 38/1
 	step //12
 		goto 51.1,21.8
-		.get 3 Okra|q 38/4
 		.from Harvest Watcher##114+
-		.collect 5 Flask of Oil##814|q 103 |future
+		..get 3 Okra|q 38/4
+		..collect 5 Flask of Oil##814|q 103 |future
 		.' You can find more Harvest Watchers at 53.5,29.4|n
 	step //13
 		goto 49.4,19.2
 		.' Click Furlbrow's Wardrobe|tip Inside the small house on the right, click the wooden wardrobe.
-		.get Furlbrow's Pocket Watch|q 64/1
+		..get Furlbrow's Pocket Watch|q 64/1
 	step //14
 		goto 57,15.1
 		.from Riverpaw Gnoll##725+, Riverpaw Scout##500+
-		.get 8 Gnoll Paw|q 102/1
+		..get 8 Gnoll Paw|q 102/1
 		.' You can find more gnolls at 52.4,16.2|n
 	step //15
 		goto 55.1,12.3
 		.from Murloc Raider##515+, Murloc Coastrunner##126+
-		.get 3 Murloc Eye|q 38/2|tip Save 'Murloc Fins' for 'Murloc Poachers' later.
+		..get 3 Murloc Eye|q 38/2|tip Save 'Murloc Fins' for 'Murloc Poachers' later.
 	step //16
 		goto 57.1,19.3
 		.get 8 Handful of Oats|q 151/1
@@ -2504,17 +2504,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		.talk Gakin the Darkbinder##6122
 		..turnin Surena Caledon##1688
 		..accept The Binding##1689
-		only Gnome Warlock
+		only Warlock
 	step //55
 		'Go downstairs into the catacombs to 39.1,84.3|goto 39.1,84.3
 		.' Use your Bloodstone Choker while standing on the pink Summoning Circle|use Bloodstone Choker##6928
-		.kill Summoned Voidwalker|q 1689/1
-		only Gnome Warlock
+		..kill Summoned Voidwalker|q 1689/1
+		only Warlock
 	step //56
 		'Go upstairs to 39.2,85.3|goto 39.2,85.3
 		.talk Gakin the Darkbinder##6122
 		..turnin The Binding##1689
-		only Gnome Warlock
+		only Warlock
 	step //57
 		goto 57.7,47.9
 		.talk Baros Alexston##1646
@@ -2561,7 +2561,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		.kill 10 Stonesplinter Seer|q 237/2
 	step //69
 		.from Stonesplinter Scout##1162+, Stonesplinter Trogg##1161+, Stonesplinter Skullthumper##1163+, Stonesplinter Seer##1166+
-		.get 8 Trogg Stone Tooth|q 267/1
+		..get 8 Trogg Stone Tooth|q 267/1
 	step //70
 		goto 23.5,76.4
 		.talk Mountaineer Gravelgaw##1091
@@ -2611,9 +2611,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step //80
 		goto 35.4,18.5
 		.' Click Miners' League Crates inside the cave
-		.get 4 Miners' Gear|q 307/1
+		..get 4 Miners' Gear|q 307/1
 		.from Tunnel Rat Forager##1176+, Tunnel Rat Geomancer##1174+, Tunnel Rat Kobold##1202+, Tunnel Rat Surveyor##1177+, Tunnel Rat Vermin##1172+, Tunnel Rat Vermin##1175+
-		.get 12 Tunnel Rat Ear|q 416/1
+		..get 12 Tunnel Rat Ear|q 416/1
 	step //81
 		ding 16
 	step //82
