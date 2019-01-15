@@ -1870,6 +1870,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 30.7,60
 		.talk Deputy Feldon##1070
 		..turnin Assessing the Threat##246
+	step //54
+		ding 21
 	step //38
 		goto Elwynn Forest,65.2,69.7
 		.talk Theocritus##313
@@ -1933,8 +1935,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin An Unwelcome Guest##34
 	step //53
 		'Fly to Darkshire|goto Duskwood|noway|c
-	step //54
-		ding 21
 	step //55
 		goto Duskwood,75.8,45.3
 		.talk Madame Eva##265

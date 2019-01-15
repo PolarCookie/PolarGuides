@@ -5,7 +5,7 @@ Discord: https://discord.gg/tJJMwEX
 This project is about writing the [Ding80](http://www.ding80.com/) guide in the Zygor syntax, to work with the ingame addon, and having fun experimenting and improving the route.
 
 ## Setup
-1. Install your Zygor addon, the TBC version has been backported **[here](https://www.reddit.com/r/wowservers/comments/6c9b2z/335_wrath_zygor_downgrade_to_243/)**  
+1. Install your Zygor addon, the TBC version has been backported **[HERE](https://www.reddit.com/r/wowservers/comments/6c9b2z/335_wrath_zygor_downgrade_to_243/dipiceb/)**  
 2. Copy the files in "replace(TBC/WotLK)" into ZygorGuidesViewer; I've added a feature to Zygor where it will disable auto accepting certain quests (see noautoaccept in the syntax guide). Used on event and escort quests.  
 3. Add the .lua files to the ZygorGuidesViewer/Guides folder
 4. Edit ZygorGuidesViewer/Guides/Autoload.xml by adding the following lines. You may want to remove all other <Script> lines here to save load time.
