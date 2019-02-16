@@ -333,6 +333,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dun Morogh (
 		.talk Mountaineer Thalos##1965
 		..turnin Senir's Observations (1)##282
 		..accept Senir's Observations (2)##420
+	step
+		goto 33.8,72.2
 		.talk Hands Springsprocket##6782
 		..accept Supplies to Tannok##2160
 	step
@@ -2041,7 +2043,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 	step
 		goto 43.8,65.8
 		.talk Innkeeper Farley##295
-		..turnin Rest and Relaxation##2158|only Human
+		..turnin Rest and Relaxation##2158
+		only Human
 	step
 		goto 43.3,65.7
 		.talk William Pestle##253
@@ -2187,6 +2190,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 70.6,76.3
 		.from Defias Bandit##116+
 		..get 6 Red Linen Bandana|q 83/1
+		..'If Westfall Deed drops from Defias Mobs, otherwise skip. Don't farm for it; 1% dropchance.
+		..use Westfall Deed##1972
+		...accept Furlbrow's Deed##184
 	step
 		goto 69.7,79.5
 		.from Princess##330
@@ -2265,10 +2271,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 26.8,86.3
 		.from Riverpaw Outrunner##478+, Riverpaw Runt##97+
 		..get 8 Painted Gnoll Armband|q 11/1
+		..'If Gold Pickup Schedule drops from Gnolls, otherwise skip. Don't farm for it; 1% dropchance.
+		..use Gold Pickup Schedule##1307
+		...accept The Collector##123
 	step
 		goto 42.1,65.9|tip Remember to train while you're in Goldshire.
 		.talk Marshal Dughan##240
 		..turnin Wanted: "Hogger"##176
+		..turnin The Collector##123|tip Only if Gold Pickup Schedule dropped from Gnolls.
 	step
 		goto 24.3,74.8
 		.talk Deputy Rainer##963
@@ -2285,6 +2295,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto Westfall,60,19.4
 		.talk Farmer Furlbrow##237
 		..accept The Forgotten Heirloom##64
+		..turnin Furlbrow's Deed##184|tip Only if Westfall Deed dropped from Defias Mobs earlier.
 		.talk Verna Furlbrow##238
 		..accept Westfall Stew (1)##36
 		..accept Poor Old Blanchy##151
