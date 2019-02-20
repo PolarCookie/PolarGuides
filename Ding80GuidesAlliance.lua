@@ -2345,6 +2345,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		..get 3 Stringy Vulture Meat|q 38/1
 	step
 		goto 51.1,21.8
+		.kill 20 Harvest Watcher|q 9/1|tip There's a step later to kill more Harvest Watchers, if there is competition here.
 		.from Harvest Watcher##114+
 		..get 3 Okra|q 38/4
 		..collect 5 Flask of Oil##814|q 103 |future
@@ -2376,15 +2377,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Main Guide (
 		goto 53.8,31.7
 		.kill 20 Harvest Watcher|q 9/1
 		.from Harvest Watcher##114+
+		..get 3 Okra|q 38/4
 		..collect 5 Flask of Oil##814|q 103|future
 	step
 		ding 14
+	step
+		goto 56,31.2
+		.talk Farmer Saldean##233
+		..turnin The Killing Fields##9
 	step
 		goto 56.4,30.5
 		.talk Salma Saldean##235
 		..turnin Westfall Stew (2)##38
 		..turnin Goretusk Liver Pie##22
-		..turnin The Killing Fields##9
 	step
 		goto Westfall,56.3,47.5
 		.talk Gryan Stoutmantle##234
@@ -3500,12 +3505,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		'Follow the path through the tunnels to 53.9,70.3|goto 53.9,70.3|n
 		.'Traverse Dun Algaz|goal Traverse Dun Algaz|q 455/1
 	step
-		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way if needed.
 		goto 49.9,39.4
 		.talk Einar Stonegrip##2093
 		..accept Daily Delivery##469
 	step
-		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way if needed.
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..accept In Search of The Excavation Team (1)##305
@@ -3532,7 +3537,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		.talk Innkeeper Helbrek##1464
 		..buy Flagon of Mead|goal Flagon of Mead|q 288/1
 	step
-		home Menethil Harbor
+		goto 10.8,60.8
+		.talk Innkeeper Helbrek##1464
+		..home Menethil Harbor
 	step
 		goto 10.8,60.4|tip 2nd Floor. In the middle room as you go up the stairs.
 		.talk Archaeologist Flagongut##2911
@@ -3572,8 +3579,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 	step
 		'Kill crocolisks while traveling.
 		.from Young Wetlands Crocolisk##1417+
-		.get 4 Young Crocolisk Skin|q 484/1|n
-		goto Wetlands,38.1,51.1
+		..get 4 Young Crocolisk Skin|q 484/1|n
+		goto 38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..accept Ormer's Revenge (1)##294
 	step
@@ -3588,7 +3595,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 	step
 		goto 53.27,36
 		.from Young Wetlands Crocolisk##1417+
-		.get 4 Young Crocolisk Skin|q 484/1
+		..get 4 Young Crocolisk Skin|q 484/1
 	step
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
@@ -3606,11 +3613,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 	step
 		goto 44.3,25.5
 		.from Black Ooze##1032+, Crimson Ooze##1031+
-		.get Sida's Bag|q 470/1
+		..get Sida's Bag|q 470/1
 	step
 		goto 46.4,35.3
 		.from Mosshide Trapper##1011+, Mosshide Brute##1012+, Mosshide Fenrunner##1010+, Mosshide Mistweaver##1009+|tip Mosshide Gnolls and Mosshide Mongrels will not drop the Crude Flint.
-		.get 9 Crude Flint|q 277/1
+		..get 9 Crude Flint|q 277/1
 	step
 		goto 29.1,44.8
 		.kill 10 Mottled Raptor|q 294/1
@@ -3624,7 +3631,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 	step
 		goto 42.9,41.2
 		.from Dragonmaw Raider##1034+
-		.get 8 Dragonmaw War Banner|q 464/1
+		..get 8 Dragonmaw War Banner|q 464/1
 	step
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
@@ -3698,10 +3705,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		.talk Innkeeper Brianna##6727
 		..home Lakeshire
 	step
-		goto 27.7,21.4
-		.from Yowler##518
-		..get Yowler's Paw|q 126/1
-	step
 		'Head left when you enter the cave
 		'WARNING: ESCORT!
 		goto 28.4,12.6
@@ -3724,17 +3727,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		.talk Guard Howe##903
 		..turnin Blackrock Bounty##128
 	step
-		ding 25
-	step
 		goto 80.2,37.1
 		.from Lieutenant Fangore##703
 		..get 1 Fangore's Paw|q 180/1
 		.from Shadowhide Assassin##579+, Shadowhide Brute##432+, Shadowhide Darkweaver##429+, Shadow Gnoll##433+, Shadowhide Slayer##431+, Shadowhide Warrior##568+
 		..get 10 Shadowhide Pendant|q 91/1
-	step
-		'If you got the Glowing Shadowhide Pendant; accept, otherwise skip this step.
-		.use Glowing Shadowhide Pendant##1962
-		..accept Theocritus' Retrieval##178
+		.'If you got the Glowing Shadowhide Pendant; accept, otherwise skip this step.
+		..use Glowing Shadowhide Pendant##1962
+		...accept Theocritus' Retrieval##178
 	step
 		goto 84.5,46.8
 		.talk Old Lion Statue
@@ -3745,6 +3745,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (20-2
 		goto 63.2,49.8
 		.talk An Empty Jar
 		..turnin Looking Further##248
+	step
+		ding 25
 	step
 		goto 67,52
 		.from Blackrock Shadowcaster##436+
@@ -3804,7 +3806,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		..turnin Zombie Juice##158
 		..accept Gather Rot Blossoms##156
 	step
-		home Darkshire
+		goto 73.9,44.4
+		.talk Innkeeper Trelayne##6790
+		..home Darkshire
 	step
 		goto 72.5,46.8
 		.talk Clerk Daltry##267
@@ -3825,8 +3829,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (25-2
 		.kill 15 Skeletal Horror|q 57/2
 		.from Skeletal Horror##202+, Skeletal Fiend##531+
 		..get 8 Rot Blossom|q 156/1
-	step
-		ding 26
 	step
 		goto 7.8,34.2
 		.talk Sven Yorgen##311

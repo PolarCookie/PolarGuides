@@ -999,6 +999,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		ding 13
 	step
 		goto 51.1,21.8
+		.kill 20 Harvest Watcher|q 9/1|tip There's a step later to kill more Harvest Watchers, if there is competition here.
 		.from Harvest Watcher##114+
 		..get 3 Okra|q 38/4
 		..collect 5 Flask of Oil##814|q 103 |future
@@ -1027,14 +1028,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		goto 53.8,31.7
 		.kill 20 Harvest Watcher|q 9/1
 		.from Harvest Watcher##114+
+		..get 3 Okra|q 38/4
 		..collect 5 Flask of Oil##814|q 103|future
 		..collect 5 Hops##1274|q 116|future
 	step
 		ding 14
 	step
+		goto 56,31.2
+		.talk Farmer Saldean##233
+		..turnin The Killing Fields##9
+	step
 		goto 56.4,30.5
 		.talk Salma Saldean##235
-		..turnin The Killing Fields##9
 	step
 		goto Westfall,56.3,47.5
 		.talk Gryan Stoutmantle##234
@@ -1161,8 +1166,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		.talk Scout Galiaan##878
 		..turnin Red Leather Bandanas##153
 	step
-		ding 15
-	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
 		goto 56.2,64.6
@@ -1196,6 +1199,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		..turnin Cloth and Leather Armor##59
 	step
 		'Go east to Redridge Mountains|goto Redridge Mountains|noway|c
+	step
+		ding 15
 	step
 		goto 15.3,71.5
 		.talk Guard Parker##464
@@ -1244,7 +1249,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
-		goto 69.2,82.7
+		goto 63.9,75.2
 		.talk General Marcus Jonathan##466
 		..turnin Messenger to Stormwind (1)##120
 		..accept Messenger to Stormwind (2)##121
@@ -1260,14 +1265,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 	step
 		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
 	step
-		goto 31,47.3
-		.talk Verner Osgood##415
-		..turnin Return to Verner##119
-	step
 		goto 30,44.5
 		.talk Magistrate Solomon##344
 		..turnin Messenger to Stormwind (2)##121
 		..accept Messenger to Westfall (1)##143
+	step
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..turnin Return to Verner##119
 	step
 		'Fly to Westfall|goto Westfall|noway|c
 	step
@@ -1685,6 +1690,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		.'Click the Unsent Letter|use An Unsent Letter##2874
 		..accept The Unsent Letter##373
 	step
+		ding 20
+	step
 		'Hearth to Sentinel Hill|goto Westfall|use Hearthstone##6948|noway|c
 	step
 		goto 56.3,47.5
@@ -1694,8 +1701,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Main
 		goto 56.7,47.3
 		.talk Scout Riell##820
 		..turnin Red Silk Bandanas##214
-	step
-		ding 20
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
@@ -1938,6 +1943,8 @@ step
 		..get 5 Vial of Spider Venom|q 101/2
 		..collect 6 Gooey Spider Leg|q 93/1|future
 	step
+		ding 22
+	step
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
 		..turnin Deliveries to Sven##164
@@ -1956,8 +1963,6 @@ step
 		kill 8 Rabid Dire Wolf|q 226/2
 		from Rabid Dire Wolf##565+, Starving Dire Wolf##213+
 		.get 10 Lean Wolf Flank|q 90/1
-	step
-		ding 22
 	step
 		goto 7.7,33.2
 		.talk Lars##893
@@ -2086,7 +2091,9 @@ step
 		.talk Innkeeper Helbrek##1464
 		..buy Flagon of Mead|goal Flagon of Mead|q 288/1
 	step
-		home Menethil Harbor
+		goto 10.8,60.8
+		.talk Innkeeper Helbrek##1464
+		..home Menethil Harbor
 	step
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
@@ -2110,8 +2117,8 @@ step
 	step
 		'Kill crocolisks while traveling.
 		.from Young Wetlands Crocolisk##1417+
-		.get 4 Young Crocolisk Skin|q 484/1|n
-		goto Wetlands,38.1,51.1
+		..get 4 Young Crocolisk Skin|q 484/1|n
+		goto 38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..accept Ormer's Revenge (1)##294
 	step
@@ -2122,7 +2129,7 @@ step
 	step
 		goto 53.27,36
 		.from Young Wetlands Crocolisk##1417+
-		.get 4 Young Crocolisk Skin|q 484/1
+		..get 4 Young Crocolisk Skin|q 484/1
 	step
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
@@ -2140,11 +2147,11 @@ step
 	step
 		goto 44.3,25.5
 		.from Black Ooze##1032+, Crimson Ooze##1031+
-		.get Sida's Bag|q 470/1
+		..get Sida's Bag|q 470/1
 	step
 		goto 46.4,35.3
 		.from Mosshide Trapper##1011+, Mosshide Brute##1012+, Mosshide Fenrunner##1010+, Mosshide Mistweaver##1009+|tip Mosshide Gnolls and Mosshide Mongrels will not drop the Crude Flint.
-		.get 9 Crude Flint|q 277/1
+		..get 9 Crude Flint|q 277/1
 	step
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
@@ -2241,6 +2248,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Zombie Juice##158
 		..accept Gather Rot Blossoms##156
 	step
+		goto 73.9,44.4
+		.talk Innkeeper Trelayne##6790
+		..home Darkshire
+	step
 		goto 72.5,46.8
 		.talk Clerk Daltry##267
 		..turnin The Legend of Stalvan (3)##68
@@ -2256,8 +2267,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.kill 15 Skeletal Horror|q 57/2
 		.from Skeletal Horror##202+, Skeletal Fiend##531+
 		..get 8 Rot Blossom|q 156/1
-	step
-		ding 24
 	step
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
@@ -2420,6 +2429,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 66,47
 		.kill 6 Nightbane Shadow Weaver|q 173/1
 	step
+		ding 26
+	step
 		goto 28,31.5
 		.talk Abercrombie##289
 		..turnin Juice Delivery##159
@@ -2487,20 +2498,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Calor##663
 		..turnin Worgen in the Woods (1)##173
 		..accept Worgen in the Woods (2)##221
-	step
-		goto 70.2,45.1|n
-		.'The path over to Worgen in the Woods starts here
-		.'Run up the hill behind the town hall building|goto Duskwood,70.2,45.1,0.5|noway|c
-	step
-		goto 66,47
-		.kill 12 Nightbane Dark Runner|q 221/1
-	step
-		ding 26
-	step
-		goto 75.7,47.6
-		.talk Calor##663
-		..turnin Worgen in the Woods (2)##221
-		..accept Worgen in the Woods (3)##222
 	step
 		'Fly to Stormwind|goto Stormwind City|noway|c
 	step
@@ -2861,10 +2858,22 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Councilman Millstipe##270
 		..turnin Crime and Punishment##377
 	step
+		goto 70.2,45.1|n
+		.'The path over to Worgen in the Woods starts here
+		.'Run up the hill behind the town hall building|goto Duskwood,70.2,45.1,0.5|noway|c
+	step
+		goto 66,47
+		.kill 12 Nightbane Dark Runner|q 221/1
+	step
 		goto 72.6,33.5
 		.talk Watcher Backus##840
 		..turnin The Missing Diplomat (4)##1243
 		..accept The Missing Diplomat (5)##1244
+	step
+		goto 75.7,47.6
+		.talk Calor##663
+		..turnin Worgen in the Woods (2)##221
+		..accept Worgen in the Woods (3)##222
 	step
 		goto 33.4,76.4
 		.'Click Abercrombie's Crate|tip It looks like a wooden crate sitting next to a bunch of wooden barrels.

@@ -2460,6 +2460,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		..get 3 Stringy Vulture Meat|q 38/1
 	step
 		goto 51.1,21.8
+		.kill 20 Harvest Watcher|q 9/1|tip There's a step later to kill more Harvest Watchers, if there is competition here.
 		.from Harvest Watcher##114+
 		..get 3 Okra|q 38/4
 		..collect 5 Flask of Oil##814|q 103 |future
@@ -2492,16 +2493,20 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		goto 53.8,31.7
 		.kill 20 Harvest Watcher|q 9/1
 		.from Harvest Watcher##114+
+		..get 3 Okra|q 38/4
 		..collect 5 Flask of Oil##814|q 103|future
 		..collect 5 Hops##1274|q 116|future
 	step
 		ding 14
 	step
+		goto 56,31.2
+		.talk Farmer Saldean##233
+		..turnin The Killing Fields##9
+	step
 		goto 56.4,30.5
 		.talk Salma Saldean##235
 		..turnin Westfall Stew (2)##38
 		..turnin Goretusk Liver Pie##22
-		..turnin The Killing Fields##9
 	step
 		goto Westfall,56.3,47.5
 		.talk Gryan Stoutmantle##234
@@ -2628,8 +2633,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		.talk Scout Galiaan##878
 		..turnin Red Leather Bandanas##153
 	step
-		ding 15
-	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
 		goto 56.2,64.6
@@ -2668,6 +2671,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		.from Tarantula##442+|tip Skip this step if there's no Spiders around, keep killing them as you met them in your travels.
 		..collect 5 Crisp Spider Meat|q 92|future
 		..collect 3 Spider Ichor|q 418|future|tip Save these for 'Redridge Goulash' and 'Thelsamar Blood Sausages' later, respectively.
+	step
+		ding 15
 	step
 		goto 15.3,71.5
 		.talk Guard Parker##464
@@ -2716,7 +2721,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
-		goto 69.2,82.7
+		goto 63.9,75.2
 		.talk General Marcus Jonathan##466
 		..turnin Messenger to Stormwind (1)##120
 		..accept Messenger to Stormwind (2)##121
@@ -2732,14 +2737,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
 	step
-		goto 31,47.3
-		.talk Verner Osgood##415
-		..turnin Return to Verner##119
-	step
 		goto 30,44.5
 		.talk Magistrate Solomon##344
 		..turnin Messenger to Stormwind (2)##121
 		..accept Messenger to Westfall (1)##143
+	step
+		goto 31,47.3
+		.talk Verner Osgood##415
+		..turnin Return to Verner##119
 	step
 		'Fly to Westfall|goto Westfall|noway|c
 	step
@@ -3158,6 +3163,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		.'Click the Unsent Letter|use An Unsent Letter##2874
 		..accept The Unsent Letter##373
 	step
+		ding 20
+	step
 		'Hearth to Sentinel Hill|goto Westfall|use Hearthstone##6948|noway|c
 	step
 		goto 56.3,47.5
@@ -3167,8 +3174,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		goto 56.7,47.3
 		.talk Scout Riell##820
 		..turnin Red Silk Bandanas##214
-	step
-		ding 20
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
@@ -3234,6 +3239,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 27,44.8
 		.talk Innkeeper Brianna##6727
 		..home Lakeshire
+	step
+		goto 22.7,43.8
+		.talk Chef Breanna##343
+		..accept Redridge Goulash##92
 step
 		goto 30,44.5
 		.talk Magistrate Solomon##344
@@ -3426,6 +3435,8 @@ step
 		..get 5 Vial of Spider Venom|q 101/2
 		..collect 6 Gooey Spider Leg|q 93/1|future
 	step
+		ding 22
+	step
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
 		..turnin Deliveries to Sven##164
@@ -3444,8 +3455,6 @@ step
 		kill 8 Rabid Dire Wolf|q 226/2
 		from Rabid Dire Wolf##565+, Starving Dire Wolf##213+
 		.get 10 Lean Wolf Flank|q 90/1
-	step
-		ding 22
 	step
 		goto 7.7,33.2
 		.talk Lars##893
@@ -3539,12 +3548,12 @@ step
 		'Follow the path through the tunnels to 53.9,70.3|goto 53.9,70.3|n
 		.'Traverse Dun Algaz|goal Traverse Dun Algaz|q 455/1
 	step
-		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way if needed.
 		goto 49.9,39.4
 		.talk Einar Stonegrip##2093
 		..accept Daily Delivery##469
 	step
-		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way.
+		'You need to be at least lvl 22 with 21700 xp gained before entering Menethil Harbor, grind along the way if needed.
 		goto 11.5,52.2
 		.talk Tarrel Rockweaver##2096
 		..accept In Search of The Excavation Team (1)##305
@@ -3571,7 +3580,9 @@ step
 		.talk Innkeeper Helbrek##1464
 		..buy Flagon of Mead|goal Flagon of Mead|q 288/1
 	step
-		home Menethil Harbor
+		goto 10.8,60.8
+		.talk Innkeeper Helbrek##1464
+		..home Menethil Harbor
 	step
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
@@ -3606,8 +3617,8 @@ step
 	step
 		'Kill crocolisks while traveling.
 		.from Young Wetlands Crocolisk##1417+
-		.get 4 Young Crocolisk Skin|q 484/1|n
-		goto Wetlands,38.1,51.1
+		..get 4 Young Crocolisk Skin|q 484/1|n
+		goto 38.1,51.1
 		.talk Ormer Ironbraid##1078
 		..accept Ormer's Revenge (1)##294
 	step
@@ -3618,7 +3629,7 @@ step
 	step
 		goto 53.27,36
 		.from Young Wetlands Crocolisk##1417+
-		.get 4 Young Crocolisk Skin|q 484/1
+		..get 4 Young Crocolisk Skin|q 484/1
 	step
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
@@ -3636,15 +3647,15 @@ step
 	step
 		goto 44.3,25.5
 		.from Black Ooze##1032+, Crimson Ooze##1031+
-		.get Sida's Bag|q 470/1
+		..get Sida's Bag|q 470/1
 	step
 		goto 46.4,35.3
 		.from Mosshide Trapper##1011+, Mosshide Brute##1012+, Mosshide Fenrunner##1010+, Mosshide Mistweaver##1009+|tip Mosshide Gnolls and Mosshide Mongrels will not drop the Crude Flint.
-		.get 9 Crude Flint|q 277/1
+		..get 9 Crude Flint|q 277/1
 	step
 		goto 42.9,41.2
 		.from Dragonmaw Raider##1034+
-		.get 8 Dragonmaw War Banner|q 464/1
+		..get 8 Dragonmaw War Banner|q 464/1
 	step
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
@@ -3715,22 +3726,6 @@ step
 		.talk Innkeeper Brianna##6727
 		..home Lakeshire
 	step
-		goto 21.9,46.3
-		.talk Martie Jainrose##342
-		..accept An Unwelcome Guest##34
-	step
-		goto 15.9,49.5
-		.from Bellygrub##345
-		.get Bellygrub's Tusk|q 34/1
-	step
-		goto 21.9,46.3
-		.talk Martie Jainrose##342
-		..turnin An Unwelcome Guest##34
-	step
-		goto 27.7,21.4
-		.from Yowler##518
-		..get Yowler's Paw|q 126/1
-	step
 		'Head left when you enter the cave
 		'WARNING: ESCORT!
 		goto 28.4,12.6
@@ -3753,17 +3748,14 @@ step
 		.talk Guard Howe##903
 		..turnin Blackrock Bounty##128
 	step
-		ding 25
-	step
 		goto 80.2,37.1
 		.from Lieutenant Fangore##703
 		..get 1 Fangore's Paw|q 180/1
 		.from Shadowhide Assassin##579+, Shadowhide Brute##432+, Shadowhide Darkweaver##429+, Shadow Gnoll##433+, Shadowhide Slayer##431+, Shadowhide Warrior##568+
 		..get 10 Shadowhide Pendant|q 91/1
-	step
-		'If you got the Glowing Shadowhide Pendant; accept, otherwise skip this step.
-		.use Glowing Shadowhide Pendant##1962
-		..accept Theocritus' Retrieval##178
+		.'If you got the Glowing Shadowhide Pendant; accept, otherwise skip this step.
+		..use Glowing Shadowhide Pendant##1962
+		...accept Theocritus' Retrieval##178
 	step
 		goto 84.5,46.8
 		.talk Old Lion Statue
@@ -3774,6 +3766,8 @@ step
 		goto 63.2,49.8
 		.talk An Empty Jar
 		..turnin Looking Further##248
+	step
+		ding 25
 	step
 		goto 67,52
 		.from Blackrock Shadowcaster##436+
@@ -3793,6 +3787,18 @@ step
 		goto 26.3,46.6
 		.talk Guard Berton##859
 		..accept What Comes Around...##386
+	step
+		goto 21.9,46.3
+		.talk Martie Jainrose##342
+		..accept An Unwelcome Guest##34
+	step
+		goto 15.9,49.5
+		.from Bellygrub##345
+		.get Bellygrub's Tusk|q 34/1
+	step
+		goto 21.9,46.3
+		.talk Martie Jainrose##342
+		..turnin An Unwelcome Guest##34
 	step
 		goto 30,44.5
 		.talk Magistrate Solomon##344
@@ -3825,7 +3831,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Zombie Juice##158
 		..accept Gather Rot Blossoms##156
 	step
-		home Darkshire
+		goto 73.9,44.4
+		.talk Innkeeper Trelayne##6790
+		..home Darkshire
 	step
 		goto 72.5,46.8
 		.talk Clerk Daltry##267
@@ -3842,8 +3850,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 15 Skeletal Horror|q 57/2
 		.from Skeletal Horror##202+, Skeletal Fiend##531+
 		..get 8 Rot Blossom|q 156/1
-	step
-		ding 26
 	step
 		goto 7.8,34.2
 		.talk Sven Yorgen##311
@@ -3947,6 +3953,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 66,47
 		.kill 6 Nightbane Shadow Weaver|q 173/1
 	step
+		ding 26
+	step
 		goto 28,31.5
 		.talk Abercrombie##289
 		..turnin Juice Delivery##159
@@ -3989,8 +3997,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Proving Your Worth##323
 		..accept Seeking Wisdom##269
 	step
-		ding 27
-	step
 		'Hearth to Darkshire|goto Duskwood,73.9,44.5,0.5|use Hearthstone##6948|noway|c
 	step
 		goto 75.8,45.3
@@ -4016,18 +4022,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Calor##663
 		..turnin Worgen in the Woods (1)##173
 		..accept Worgen in the Woods (2)##221
-	step
-		goto 70.2,45.1|n
-		.'The path over to Worgen in the Woods starts here
-		.'Run up the hill behind the town hall building|goto Duskwood,70.2,45.1,0.5|noway|c
-	step
-		goto 66,47
-		.kill 12 Nightbane Dark Runner|q 221/1
-	step
-		goto 75.7,47.6
-		.talk Calor##663
-		..turnin Worgen in the Woods (2)##221
-		..accept Worgen in the Woods (3)##222
 	step
 		'Fly to Stormwind|goto Stormwind City|noway|c
 	step
@@ -4386,6 +4380,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 71.9,47.8
 		.talk Councilman Millstipe##270
 		..turnin Crime and Punishment##377
+	step
+		goto 70.2,45.1|n
+		.'The path over to Worgen in the Woods starts here
+		.'Run up the hill behind the town hall building|goto Duskwood,70.2,45.1,0.5|noway|c
+	step
+		goto 66,47
+		.kill 12 Nightbane Dark Runner|q 221/1
+	step
+		goto 75.7,47.6
+		.talk Calor##663
+		..turnin Worgen in the Woods (2)##221
+		..accept Worgen in the Woods (3)##222
 	step
 		goto 72.6,33.5
 		.talk Watcher Backus##840
