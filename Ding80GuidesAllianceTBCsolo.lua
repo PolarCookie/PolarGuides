@@ -474,7 +474,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		goto 47.3,52.3
 		.talk Innkeeper Belm##1247
-		..buy 1 Thunder Ale|q 308/1
+		..buy Thunder Ale##2686|q 308/1
 	step
 		goto 47.6,52.7
 		.talk Jarven Thunderbrew##1373
@@ -770,7 +770,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Nig
 	step
 		goto 56.7,26.4
 		.'Click a Webwood Egg
-		.get Webwood Egg|q 917/1
+		..get Webwood Egg|q 917/1
 	step
 		ding 5
 	step
@@ -2524,7 +2524,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		only NightElf Druid
 	step
 		'Buy the following from the Auction House:
-		.'5 Earthroot|buy 5 Earthroot|q 6123/1
+		.'5 Earthroot|buy 5 Earthroot##2449+|q 6123/1
 		only NightElf Druid
 	step
 		'Ride the boat to Auberdine|goto Darkshore,32.8,42.0,9|noway|c
@@ -2669,8 +2669,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		goto 12.6,78.2
 		.from Tarantula##442+|tip Skip this step if there's no Spiders around, keep killing them as you met them in your travels.
-		..collect 5 Crisp Spider Meat|q 92|future
-		..collect 3 Spider Ichor|q 418|future|tip Save these for 'Redridge Goulash' and 'Thelsamar Blood Sausages' later, respectively.
+		..collect 5 Crisp Spider Meat##1081|q 92|future
+		..collect 3 Spider Ichor##3174|q 418|future|tip Save these for 'Redridge Goulash' and 'Thelsamar Blood Sausages' later, respectively.
 	step
 		ding 15
 	step
@@ -2733,7 +2733,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		goto 44,65.7
 		.talk Barkeep Dobbins##465
-		..buy Skin of Sweet Rum|q 116/4
+		..buy Skin of Sweet Rum##1939|q 116/4
 	step
 		'Hearth to Lakeshire|goto Redridge Mountains,26.9,44.9,0.5|use Hearthstone##6948|noway|c
 	step
@@ -2785,14 +2785,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		..accept Find Bingles##2039|tip Buy a Bronze Tube from the engineering supplies vendor in Tinker Town if you don't have one. You will need it later in Duskwood.
 	step
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
-	step
-		goto 22.1,73.1
-		.talk Mountaineer Cobbleflint##1089
-		..accept In Defense of the King's Lands (1)##224
-	step
-		goto 23.2,73.7
-		.talk Captain Rugelfuss##1092
-		..accept The Trogg Threat##267
 	step
 		goto 31.1,70.7
 		.kill 10 Stonesplinter Trogg|q 224/1
@@ -3197,7 +3189,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 	step
 		goto 52.2,67.8
 		.talk Roberto Pupellyverbos##277
-		..buy Cask of Merlot|q 116/2
+		..buy Cask of Merlot##1941|q 116/2
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (20-24)",[[
 	author PolarCookie
@@ -3205,7 +3197,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	startlevel 20
 
 	step
-		'Buy a Bronze Tube from the Auction House|buy 1 Bronze Tube|q 174/1
+		'Buy a Bronze Tube from the Auction House|buy 1 Bronze Tube##4371|q 174/1
 		'Also sold by <Engineering Supplies> vendors near Engineering trainers.
 	step
 		'Fly to Lakeshire|goto Redridge Mountains|noway|c
@@ -3373,7 +3365,7 @@ step
 	step
 		goto 73.7,44
 		.talk Barkeep Hann##274
-		..buy Bottle of Moonshine|q 116/3
+		..buy Bottle of Moonshine##1942|q 116/3
 	step
 		goto 73.9,44.4
 		.talk Innkeeper Trelayne##6790
@@ -3433,7 +3425,7 @@ step
 		goto 14.05,70.27|n
 		.kill 15 Pygmy Venom Web Spider|q 245/1
 		..get 5 Vial of Spider Venom|q 101/2
-		..collect 6 Gooey Spider Leg|q 93/1|future
+		..collect 6 Gooey Spider Leg##2251|q 93/1|future
 	step
 		ding 22
 	step
@@ -3578,7 +3570,7 @@ step
 	step
 		goto 10.8,60.8
 		.talk Innkeeper Helbrek##1464
-		..buy Flagon of Mead|goal Flagon of Mead|q 288/1
+		..buy Flagon of Mead##2594|q 288/1
 	step
 		goto 10.8,60.8
 		.talk Innkeeper Helbrek##1464
@@ -3693,7 +3685,7 @@ step
 	step
 		goto 64.2,60.6
 		.talk Felicia Gump##1303
-		..buy 1 Stormwind Seasoning Herbs|q 90/2
+		..buy Stormwind Seasoning Herbs##2665|q 90/2
 	step
 		'Fly to Lakeshire|goto Redridge Mountains,30.4,59.0,0.5|noway|c
 	step
@@ -4977,8 +4969,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step
 		'Buy both these items together from the Auction House:
-		.'Hillman's Cloak|buy Hillman's Cloak|q 565/3|future
-		.'Bolt of Woolen Cloth|buy Bolt of Woolen Cloth|q 565/1|future
+		.buy Hillman's Cloak##3719|q 565/3
+		.buy Bolt of Woolen Cloth##2997|q 565/1
 	step
 		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
 	step
@@ -4988,8 +4980,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 48.9,55
 		.talk Micha Yance##2381
-		..buy Fine Thread|q 565/2
-		..buy Soothing Spices|q 555/2
+		..buy Fine Thread##2321|q 565/2
+		..buy Soothing Spices##3713|q 555/2
 	step
 		goto 49.5,58.7
 		.talk Marshal Redpath##2263
@@ -5193,7 +5185,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept James Hyal##1301
 	step
 		'Buy the following items from the Auction House 
-		.buy 4 Lesser Bloodstone Ore|q 627/1
+		.buy 4 Lesser Bloodstone Ore##4278|q 627/1
 	step
 		'Fly to Darkshire|goto Duskwood,74.7,46.9,7|noway|c
 	step
@@ -5468,7 +5460,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step
 		'Buy 8 Liferoot from herbalists.
-		.buy 8 Liferootl|q 1712/1
+		.buy 8 Liferoot##3357+|q 1712/1
 		only Warrior
 	step
 		'Fly to Refuge Point|goto Arathi Highlands,45.8,46.1|noway|c
@@ -5500,7 +5492,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 84.3,31
 		.from Drywhisker Digger##2574+,Drywhisker Kobold##2572+,Drywhisker Surveyor##2573+
 		..get 12 Mote of Myzrael|q 642/1
-		.collect 20 Lesser Bloodstone Ore|n|only if skill('Mining')>74|tip Mine more and sell on the Auction House, kthx.
+		.collect 20 Lesser Bloodstone Ore##4278|n|only if skill('Mining')>74|tip Mine more and sell on the Auction House, kthx.
 	step
 		goto 84.3,31
 		.talk Iridescent Shards
@@ -5512,7 +5504,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..get Cresting Key|q 651/2
 	step
 		goto 66.7,29.7
-		.collect 8 Cresting Charm|q 1712
+		.collect 8 Cresting Charm##4481+|q 1712
 		only Warrior
 	step
 		goto 60.2,53.8
@@ -5555,7 +5547,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..get Thundering Key|q 651/3
 	step
 		goto 52,50.7
-		.collect 8 Thundering Charm|q 1712
+		.collect 8 Thundering Charm##4480+|q 1712
 		only Warrior
 	step
 		goto 46.2,47.8
@@ -5586,7 +5578,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		ding 37
 	step
 		goto 25.5,30.1
-		.collect 8 Burning Charm|q 1712
+		.collect 8 Burning Charm##4479+|q 1712
 		only Warrior
 	step
 		'You're gonna need some help with fighting Cyclonian, try looking for people
@@ -6095,12 +6087,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Recover the Cargo!##11140
 	step
 		'Open Renn's Supplies|use Renn's Supplies##33045
-		.collect Repaired Diving Gear
-		.collect Salvage Kit
+		.collect Repaired Diving Gear##33040
+		.collect Salvage Kit##33044
 	step
 		'Put on the Repaired Diving Gear|use Repaired Diving Gear##33040
 		'Use Salvage Kit on Shipwreck Debris|use Salvage Kit##33044
-		get 6 Salvaged Strongbox|q 11140/1
+		.get 6 Salvaged Strongbox|q 11140/1
 	step
 		goto 63.7,17
 		.talk Renn McGill##23569
@@ -6541,16 +6533,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Buy the following items from the Auction House in this order:|tip If you cannot buy some of these, ask people to make them for you in General and Trade chat.  Offer to pay well and you will usually get someone to do it for you. Gyro can be bought from Engineering Supply vendors.
 		'For "Coolant Heads Prevail".
-		.buy 1 Frost Oil|q 713/1
+		.buy Frost Oil##3829|q 713/1
 		'For "Gyro... What?", requires "Coolant Heads Prevail".
-		.buy 1 Gyrochronatom|q 714/1
+		.buy Gyrochronatom##4389|q 714/1
 		'Both together for "Liquid Stone", requires "Gyro... What?".
-		.buy 1 Healing Potion|q 715/1
-		.buy 1 Lesser Invisibility Potion|q 715/2
+		.buy Healing Potion##929|q 715/1
+		.buy Lesser Invisibility Potion##3823|q 715/2
 		'For "Stone Is Better than Cloth".
-		.buy 1 Patterned Bronze Bracers|q 716/1
+		.buy Patterned Bronze Bracers##2868|q 716/1
 		'For "Pearl Diving".
-		.buy 9 Blue Pearl|q 705/1
+		.buy 9 Blue Pearl##4611+|q 705/1
 	step
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
 	step
@@ -6735,21 +6727,21 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'Hearth to Stormwind|goto Stormwind City|noway|c
 	step
 		'Buy the following items from the Auction House, double check in Booty when you get there if not enough in Stormwind City.
-		.buy 1 Green Hills of Stranglethorn - Page 1|q 339/1
-		.buy 1 Green Hills of Stranglethorn - Page 4|q 339/2
-		.buy 1 Green Hills of Stranglethorn - Page 6|q 339/3
-		.buy 1 Green Hills of Stranglethorn - Page 8|q 339/4
-		.buy 1 Green Hills of Stranglethorn - Page 10|q 340/1
-		.buy 1 Green Hills of Stranglethorn - Page 11|q 340/2
-		.buy 1 Green Hills of Stranglethorn - Page 14|q 340/3
-		.buy 1 Green Hills of Stranglethorn - Page 16|q 340/4
-		.buy 1 Green Hills of Stranglethorn - Page 18|q 341/1
-		.buy 1 Green Hills of Stranglethorn - Page 20|q 341/2
-		.buy 1 Green Hills of Stranglethorn - Page 21|q 341/3
-		.buy 1 Green Hills of Stranglethorn - Page 24|q 341/4
-		.buy 1 Green Hills of Stranglethorn - Page 25|q 342/1
-		.buy 1 Green Hills of Stranglethorn - Page 26|q 342/2
-		.buy 1 Green Hills of Stranglethorn - Page 27|q 342/3
+		.buy Green Hills of Stranglethorn - Page 1##2725|q 339/1
+		.buy Green Hills of Stranglethorn - Page 4##2728|q 339/2
+		.buy Green Hills of Stranglethorn - Page 6##2730|q 339/3
+		.buy Green Hills of Stranglethorn - Page 8##2732|q 339/4
+		.buy Green Hills of Stranglethorn - Page 10##2734|q 340/1
+		.buy Green Hills of Stranglethorn - Page 11##2735|q 340/2
+		.buy Green Hills of Stranglethorn - Page 14##2738|q 340/3
+		.buy Green Hills of Stranglethorn - Page 16##2740|q 340/4
+		.buy Green Hills of Stranglethorn - Page 18##2742|q 341/1
+		.buy Green Hills of Stranglethorn - Page 20##2744|q 341/2
+		.buy Green Hills of Stranglethorn - Page 21##2745|q 341/3
+		.buy Green Hills of Stranglethorn - Page 24##2748|q 341/4
+		.buy Green Hills of Stranglethorn - Page 25##2749|q 342/1
+		.buy Green Hills of Stranglethorn - Page 26##2750|q 342/2
+		.buy Green Hills of Stranglethorn - Page 27##2751|q 342/3
 	step
 		'Fly to Booty Bay|goto Stranglethorn Vale,27.7,74.6,6|noway|c
 	step
@@ -6811,7 +6803,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 32.2,66.8
 		.kill Elder Mistvale Gorillas|n
 		..get 5 Mistvale Giblets|q 606/1
-		..collect 1 Gorilla Fang##2799|q 348
+		..collect Gorilla Fang##2799|q 348
 	step
 		goto 35.3,60.4
 		.talk Witch Doctor Unbagwa##1449
@@ -7442,7 +7434,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 55.9,76
 		.'Click the Hippogryph Egg
-		..collect 1 Hippogryph Egg##|q 2741/1|future
+		..collect Hippogryph Egg##8564|q 2741/1|future
 	step
 		goto 59.8,66.3
 		.kill 8 Gordunni Shaman|q 2982/2
@@ -7720,7 +7712,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 38.5,15.8
 		.'Click the Flame of Byltan|tip It's a purple flame in the dark gazeebo.
-		..collect 1 Byltan Essence##9258|q 2879
+		..collect Byltan Essence##9258|q 2879
 	step
 		goto 40.3,11|n
 		.'The path up to the Flame of Samha starts here
@@ -7728,15 +7720,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 40.5,12.7
 		.'Click the Flame of Samha|tip On top of the white building.
-		..collect 1 Samha Essence##9257|q 2879
+		..collect Samha Essence##9257|q 2879
 	step
 		goto 39.9,9.4
 		.'Click the Flame of Imbel|tip In the middle of 3 rocks.
-		..collect 1 Imbel Essence##9256|q 2879
+		..collect Imbel Essence##9256|q 2879
 	step
 		goto 37.7,12.2
 		.'Click the Flame of Lahassa|tip It's a purple flame in a dark gazeebo.
-		..collect 1 Lahassa Essence##9255|q 2879
+		..collect Lahassa Essence##9255|q 2879
 	step
 		goto 38.8,13.2
 		.'Use Troyas' Stave next to the Equinex Monolith|use Troyas' Stave##9263|tip On a white platform, looks like a Japanese building.
@@ -7960,7 +7952,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Stormwind|goto Stormwind City|noway|c
 	step
-		'Buy 15 Silk Cloth from the Auction House|buy 15 Silk Cloth |q 4449/1
+		'Buy 15 Silk Cloth from the Auction House|buy 15 Silk Cloth##4306+|q 4449/1
 	step
 		home Stormwind City
 	step
@@ -8390,7 +8382,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 54.2,86.8
 		.talk Arathandris Silversky##9528
 		..turnin Cleansing Felwood##4101
-		'Talk to Aranthandris about Cenarion Beacon|collect 1 Cenarion Beacon
+		'Talk to Aranthandris about Cenarion Beacon|collect Cenarion Beacon##11511
 	step
 		goto 35.2,59.8
 		.'Use your Empty Canteen near the green moonwell|use Empty Canteen##12922
@@ -8802,7 +8794,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..get Dalson Outhouse Key|n
 		.'Unlock the Outhouse with the Dalson Outhouse Key|tip Behind the barn, next to a big tree stump.
 		.from Farmer Dalson##10836
-		..collect 1 Dalson Cabinet Key##12739|q 5060|future
+		..collect Dalson Cabinet Key##12739|q 5060|future
 	step
 		goto 47.4,49.7
 		.'Unlock the Locked Cabinet with the Dalson Cabinet Key|tip In the house, on the second floor in the small room.
@@ -8908,11 +8900,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 
 	step
 		'Buy the following items from the Auction House:|tip If you cannot buy some of these, ask people to make them for you in General and Trade chat.  Offer to pay well and you will usually get someone to do it for you.
-		.buy 1 Mithril Casing|q 4244
-		.buy 7 Green Power Crystal##11185|q 4284
-		.buy 7 Red Power Crystal##11186|q 4284
-		.buy 7 Blue Power Crystal##11184|q 4284
-		.buy 7 Yellow Power Crystal##11188|q 4284|tip Power Crystals are not essential, but if you find cheap ones it can save you some time searching for them later.
+		.buy Mithril Casing##10561|q 4244
+		.buy 7 Green Power Crystal##11185+|q 4284
+		.buy 7 Red Power Crystal##11186+|q 4284
+		.buy 7 Blue Power Crystal##11184+|q 4284
+		.buy 7 Yellow Power Crystal##11188+|q 4284|tip Power Crystals are not essential, but if you find cheap ones it can save you some time searching for them later.
 	step
 		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
 	step
@@ -9541,7 +9533,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 	step
 		'Go inside Nethergarde Keep at 63.5,17|goto Blasted Lands,63.5,17
 		.talk Bernie Heisten##3546
-		..buy 1 Nethergarde Bitter|q 9563/1
+		..buy Nethergarde Bitter##23848|q 9563/1
 	step
 		'Deliver this quest in Felwood at your own leisure.
 		goto 58.2,51.3
@@ -10689,7 +10681,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Zan
 	step
 		goto 29.6,28.3
 		.get 15 Mushroom Sample|q 9708/1
-		.collect 10 Glowcap|q 9808/1|future
+		.collect 10 Glowcap##24245+|q 9808/1|future
 	step
 		goto 17.3,38.4
 		.kill Marshlight Bleeders|n|tip They are all around this area on the land, to the north and south.
@@ -10776,7 +10768,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Zan
 		goto 20.4,16.5
 		'You need to be Friendly with Sporeggar, which most likely means 2 turnins of Fertile spores, 750 rep each time, 6 Fertile Spores each time.
 		.from Greater Sporebat##18129+
-		..collect 12 Fertile Spores|q 9806
+		..collect 12 Fertile Spores##24449+|q 9806
 	step
 		goto 41.9,27.2
 		.talk Ikuti##18008
@@ -11293,7 +11285,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Ter
 	step
 		goto 73.9,35.8
 		.from Sharth Voldoun##18554
-		..collect 1 The Final Code##29912|q 10446
+		..collect The Final Code##29912|q 10446
 	step
 		goto 74.2,36.5
 		.'Click the Orb of Translocation|tip Up the ramp from Sharth Voldoun.
@@ -12979,7 +12971,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Net
 	step
 		goto 25.3,65.8
 		.from Sunfury Magister##18855+
-		..collect Bloodgem Shard|n
+		..collect Bloodgem Shard##28452|n
 		'Use the Bloodgem on a Big Red Crystal|use Bloodgem Shard##28452|goal Siphon Bloodgem Crystal|q 10204/1
 		only if rep('The Scryers') > Neutral			
 	step
@@ -13642,7 +13634,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Net
 	step
 		goto 38,25.7
 		.from Gan'arg Mekgineer##16949+
-		..collect 5 Condensed Nether Gas|n
+		..collect 5 Condensed Nether Gas##31653+|n
 		.'Go up to an Inactive Fel Reaver and Destroy it|goal Inactive Fel Reaver Destroyed|q 10855/1
 	step
 		goto 44.7,14.6
