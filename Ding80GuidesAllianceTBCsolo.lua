@@ -4046,7 +4046,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 12.4,65.7
 		.from Bluegill Raider##1418+
-		.get 5 Lightforge Ingot|q 324/1
+		..get 5 Lightforge Ingot|q 324/1
 	step
 		goto 10.6,60.6
 		.talk Glorin Steelbrow##1217
@@ -4080,7 +4080,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 13 Cursed Sailor|q 289/1
 		.kill 5 Cursed Marine|q 289/2
 	step
-		'Hearth to Menethil Harbor|goto Wetlands,10.1,56.7,9|use Hearthstone##6948|noway|c
+		ding 27
+	step
+		'Hearth to Menethil Harbor|goto 10.1,56.7,9|use Hearthstone##6948|noway|c
 	step
 		goto 10.9,59.6
 		.talk First Mate Fitzsimmons##1239
@@ -4099,8 +4101,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.'Click Intrepid's Locked Strongbox|tip At the very bottom of this sunken ship, underwater.  It looks like a small metal chest.
 		..turnin Lifting the Curse##290
 		..accept The Eye of Paleth##292
-	step
-		ding 28
 	step
 		'TODO: make this 2 steps
 		goto 18.5,27.3
@@ -4141,7 +4141,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 33.2,51.4
 		.from Sarltooth##1353
-		.get Sarltooth's Talon|q 296/1
+		..get Sarltooth's Talon|q 296/1
 	step
 		goto 38.1,51.1
 		.talk Ormer Ironbraid##1078
@@ -4157,13 +4157,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..get Nek'rosh's Head|q 474/1
 	step
 		goto 64.8,75.3
-		'Pick up the Musquash Root.
-		.get Musquash Root|q 335/2
+		.'Pick up the Musquash Root.
+		..get Musquash Root|q 335/2
 		only Warlock
 	step
 		goto 56.3,40.5
 		.talk Rethiel the Greenwarden##1244
 		..turnin Blisters on The Land##275
+	step
+		ding 28
 	step
 		goto 49.8,18.3
 		.talk Longbraid the Grim##1071
@@ -4180,7 +4182,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 5 Dark Iron Saboteur|q 303/3
 		.kill 5 Dark Iron Demolitionist|q 303/4
 		.from Balgaras the Foul##1364
-		.get Ear of Balgaras|q 304/1
+		..get Ear of Balgaras|q 304/1
 	step
 		goto 49.8,18.3
 		.talk Longbraid the Grim##1071
@@ -4198,8 +4200,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Rhag Garmason##1075
 		..turnin The Thandol Span (2)##632
 		..accept The Thandol Span (3)##633
-	step
-		ding 29
 	step
 		'Jump down into the waters below and dive to find a Waterlogged Letter at the bottom, it's tiny and doesn't have any exclamation mark so look carefully|goto Arathi Highlands,44.3,92.9
 		.'Click the Waterlogged Envelope|use Waterlogged Envelope##4433
@@ -4259,6 +4259,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get Head of Deepfury|q 378/1
 		from Bazil Thread##1716
 		.get Head of Bazil Thredd|q 391/1
+	step
+		ding 29
 	step
 		goto Stormwind City,41.2,58
 		.talk Warden Thelwater##1719
@@ -4343,8 +4345,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin The Attack!##434
 		..accept The Head of the Beast##394
 	step
-		ding 30
-	step
 		goto 75.8,59.8
 		.talk Master Mathias Shaw##332
 		..turnin The Head of the Beast##394
@@ -4367,7 +4367,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Darkshire|goto Duskwood,77.6,44.4,0.1|noway|c
 	step
-		home Darkshire
+		goto 73.9,44.4
+		.talk Innkeeper Trelayne##6790
+		..home Darkshire
 	step
 		goto 71.9,47.8
 		.talk Councilman Millstipe##270
@@ -4380,15 +4382,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 66,47
 		.kill 12 Nightbane Dark Runner|q 221/1
 	step
-		goto 75.7,47.6
-		.talk Calor##663
-		..turnin Worgen in the Woods (2)##221
-		..accept Worgen in the Woods (3)##222
-	step
 		goto 72.6,33.5
 		.talk Watcher Backus##840
 		..turnin The Missing Diplomat (4)##1243
 		..accept The Missing Diplomat (5)##1244
+	step
+		goto 75.7,47.6
+		.talk Calor##663
+		..turnin Worgen in the Woods (2)##221
+		..accept Worgen in the Woods (3)##222
 	step
 		goto 33.4,76.4
 		.'Click Abercrombie's Crate|tip It looks like a wooden crate sitting next to a bunch of wooden barrels.
@@ -4456,24 +4458,27 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin The Missing Diplomat (5)##1244
 		..accept The Missing Diplomat (6)##1245
 	step
+		ding 30
+	step
 		goto 77.4,36.1
 		.from Stalvan Mistmantle##315
-		.get Mistmantle Family Ring|q 98/1
+		..get Mistmantle Family Ring|q 98/1
 	step
 		goto 78.4,35.9
 		'Pick up the Tear of Tilloa
-		.get Tear of Tilloa|q 335/1
+		..get Tear of Tilloa|q 335/1
 		only Warlock
 	step
 		goto 28.9,30.8
 		.'Click Eliza's Grave Dirt|tip It looks like a single dirt grave.
 		..accept Digging Through the Dirt##254|n
 		.from Eliza##314
-		.get The Embalmer's Heart|q 253/1
+		..get The Embalmer's Heart|q 253/1
 	step
 		goto 17.7,29.1
 		.turnin A Daughter's Love##231
 	step
+		TODO: Add the offhand
 		goto 16.9,33.4
 		.goal Morbent Fel Slain|q 55/1
 	step
@@ -4501,8 +4506,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 75.8,45.3
 		.talk Madame Eva##265
 		..turnin The Legend of Stalvan (13)##98
-	step
-		ding 31
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
@@ -4598,13 +4601,17 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin A King's Tribute (1)##686
 		..accept A King's Tribute (2)##689
 	step
-		home Ironforge
+		goto 18.2,51.4
+		.talk Innkeeper Firebrew##5111
+		..home Ironforge
 	step
 		'Fly to Menethil Harbor|goto Wetlands,9.5,59.7,0.5|noway|c
 	step
 		goto 49.8,18.3
 		.talk Motley Garmason##1074
 		..turnin The Fury Runs Deep##378
+	step
+		ding 31
 	step
 		'Go north to the Arathi Highlands|goto Arathi Highlands|noway|c
 	step
@@ -4699,7 +4706,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 78,42.6
 		.from Geltharis##4619
-		.get Branch of Cenarius|q 1031/1
+		..get Branch of Cenarius|q 1031/1
 	step
 		goto 87.1,43.5
 		.talk Illiyana##3901
@@ -4708,13 +4715,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 81.3,49.1
 		.'Click the Chalice of Elune|tip It's a blue glowing pedestal sitting ont he right side of the red tower thing.
-		.get Chalice of Elune|q 9519/1
+		..get Chalice of Elune|q 9519/1
 	step
 		goto 80.3,49.1
 		.from Xavian Felsworn##3755+, Xavian Betrayer##3754+, Xavian Rogue##3752+, Xavian Hellcaller##3757+
-		.get 16 Satyr Horns|q 1032/1
+		..get 16 Satyr Horns|q 1032/1
 		.'Click the Tainted Wood bundles|tip They look like little bundles of wood on the ground around this area.
-		.get 5 Satyrnaar Fel Wood|q 9517/2
+		..get 5 Satyrnaar Fel Wood|q 9517/2
 	step
 		goto 86.4,52.9
 		.'Click the Lumber Piles|tip The Lumber Piles look like stacked planks of wood around this area.
@@ -4731,12 +4738,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 6 Roaming Felguard|q 9516/2
 		.kill 6 Searing Infernal|q 9516/3
 		.'Click the Fertile Dirt Mounds
-		.'Plant 8 Tree Seedlings|goal 8 Tree Seedling Planted|q 9526/1
+		..'Plant 8 Tree Seedlings|goal 8 Tree Seedling Planted|q 9526/1
 		.get Diabolical Plans|n|tip Random 2% drop from the demons, don't stick around for this if you don't get it.
 		.'Click the Diabolical Plans|use Diabolical Plans##23777
 		..accept Diabolical Plans##9520
-	step
-		ding 32
 	step
 		goto 75.3,72.3
 		.'Click the Bottle of Disease on the table
@@ -4764,6 +4769,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 87.1,43.5
 		.talk Illiyana##3901
 		..turnin Satyr Slaying!##1032
+	step
+		ding 32
 	step
 		'Travel south to the Barrens|goto The Barrens|noway|c
 	step
@@ -4870,11 +4877,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 87.6,66.7
 		.from Salt Flats Scavenger##4154+
-		.get 10 Hollow Vulture Bone|q 1176/1
+		..get 10 Hollow Vulture Bone|q 1176/1
 	step
 		goto 83.2,55.4
 		.from Sparkleshell Snapper##4143+
-		.get 9 Hardened Tortoise Shell|q 1105/1|tip Save 'Turtle Meat' for 'Soothing Turtle Bisque' later.
+		..get 9 Hardened Tortoise Shell|q 1105/1|tip Save 'Turtle Meat' for 'Soothing Turtle Bisque' later.
 	step
 		goto 75.4,55
 		.kill 10 Saltstone Basilisk|q 1175/1
@@ -4905,8 +4912,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 81.6,77.9
 		.talk Trackmaster Zherin##4629
 		..turnin A Bump in the Road##1175
-	step
-		ding 33
 	step
 		'Go southwest to Tanaris|goto Tanaris|noway|c
 	step
@@ -5025,6 +5030,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.from Torn Fin Tidehunter##2377+, Torn Fin Oracle##2376+
 		.get 10 Murloc Head|q 559/1
 	step
+		ding 33
+	step
 		goto 51.5,58.4
 		.talk Lieutenant Farren Orinelle##2228
 		..turnin Farren's Proof (1)##559
@@ -5053,7 +5060,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get Shipment of Rare Crystals|q 9435/1
 	step
 		'Enter the cave and get Granite|goto 46.18,31.85
-		.get 5 Alterac Granite|q 689/1
+		.'Click Alterac Granite
+		..get 5 Alterac Granite|q 689/1
 		.from Cave Yeti##2248+
 		..get 10 Yeti Fur|q 565/4
 	step
@@ -5063,21 +5071,18 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill 8 Mountain Lion|q 564/1
 		.kill 10 Hulking Mountaimn Lion|q 564/2
 	step
-		goto 56.9,66.7
-		.kill 12 Syndicate Footpad|q 505/1
-		.kill 8 Syndicate Thief|q 505/2
-		.'You can find more of these around 47.9,79.5|goto 47.9,79.5|n
-	step
-		goto 58.3,68
+		goto 47.9,82.2
 		.'Click the Syndicate Documents on the little round table in the middle of the small camp
 		..accept Foreboding Plans##510
 		..accept Encrypted Letter##511
 	step
+		goto 58.3,67.9
+		.kill 12 Syndicate Footpad|q 505/1
+		.kill 8 Syndicate Thief|q 505/2
+	step
 		goto 49.7,60.8
 		.kill ogres|n
 		..get 9 Dirty Knucklebones|q 500/1
-	step
-		ding 34
 	step
 		goto 80.5,66.9
 		.talk Bath'rah the Windwatcher##6176
@@ -5123,6 +5128,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Magistrate Henry Maleb##2276
 		..turnin Syndicate Assassins##505
 		..turnin Foreboding Plans##510
+	step
+		ding 34
 	step
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step
@@ -8188,7 +8195,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..accept Cenarion Aid##8254
 		only Priest
 	step
-		home Ironforge
+		goto 18.2,51.4
+		.talk Innkeeper Firebrew##5111
+		..home Ironforge
 	step
 		goto 70.9,94.6
 		.talk Xiggs Fuselighter##8517
