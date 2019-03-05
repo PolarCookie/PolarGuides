@@ -4449,6 +4449,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Calia Hastings##23566
 		..accept Traitors Among Us##11126
 	step
+		goto 67.5,51.3
+		.talk Baldruc##4321
+		..fpath Theramore
+	step
 		'Fly to Ratchet|goto The Barrens,63.0,38.1,2|noway|c
 		only Warlock
 	step
@@ -4511,7 +4515,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 67.9,58.7
 		.'Click the Deserter Propoganda boxes on the ship|tip A pile of boxes on the bottom deck of the ship in the Captain's quarters.
-		.get Deserter Propaganda|q 11128/1
+		..get Deserter Propaganda|q 11128/1
 	step
 		goto 68.3,51.0
 		.talk Calia Hastings##23566
@@ -4534,7 +4538,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 72,50
 		.kill Young Murk Threshers|n|tip Underwater around this area.
-		.get 4 Thresher Oil|q 11192/1
+		..get 4 Thresher Oil|q 11192/1
 	step
 		goto 76.2,57
 		.'Fight Gavis Greyshield until he surrenders|tip He's downstairs in this ship, in the captain's quarters.
@@ -4562,7 +4566,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 56.2,62
 		.'Use Pagle's Fish Paste, Extra Strength|use Pagle's Fish Paste, Extra Strength##33166
 		.'Kill the Lurking Shark that spawns underwater
-		.'Test the Fish Paste|goal Fish Paste Tested|q 11209/1
+		..'Test the Fish Paste|goal Fish Paste Tested|q 11209/1
 	step
 		goto 58.5,60
 		.talk Nat Pagle##12919
@@ -4597,19 +4601,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept Defias in Dustwallow?##11137
 	step
 		goto 60,40.9
-		goal Sentry Point explored|q 1265/1
+		.goal Sentry Point explored|q 1265/1
 	step
 		'Turn in the Missing Diplomat, Archmage Tervosh is supposed to teleport to meet you at Sentry Point, but this might not be scripted. Travel back to Theramore and turn it in at the central tower.
 		turnin The Missing Diplomat (12)##1265
 		accept The Missing Diplomat (13)##1266
 	step
 		goto 64.7,41.3
-		.kill turtles|n
-		.get 8 Forked Mudrock Tongue|q 1204/1|tip You can skip this step, keep killing Turtles as you find them, you will run up and down the coast in the following steps, a reminder will be given later.
+		.from Mudrock Spikeshell##4397+
+		..get 8 Forked Mudrock Tongue|q 1204/1|tip You can skip this step, keep killing Turtles as you find them, you will run up and down the coast in the following steps, a reminder will be given later.
 	step
 		goto 65.05,27.26
 		.from Garn Mathers##23679
-		.get Defias Orders|q 11137/1
+		..get Defias Orders|q 11137/1
 	step
 		goto 55.4,26.3
 		.talk "Swamp Eye" Jarl##4792
@@ -4622,10 +4626,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.'Click the Loose Dirt|tip It looks like a dirt grave next to the small shack.
 		..accept The Orc Report##1219
 	step
-		goto 55,31
 		.kill Risen Husks|n
 		.kill Risen Spirits|n
-		.'Gather 10 Information|goal 10 Information Gathered|q 11180/1
+		..'Gather 10 Information|goal 10 Information Gathered|q 11180/1
 	step
 		goto 55.4,26.3
 		.talk Mordant Grimsby##23843
@@ -4652,7 +4655,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.'Use your Witchbane Torch in your bags|use Witchbane Torch##33113
 		..'A flying demon will appear
 		.kill Zelfrax|n
-		.'Cleanse Witch Hill|goal Witch Hill Cleansed|q 11183/1
+		..'Cleanse Witch Hill|goal Witch Hill Cleansed|q 11183/1
 	step
 		goto 55.4,26.3
 		.talk Mordant Grimsby##23843
@@ -4671,8 +4674,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept The Missing Diplomat (15)##1267|instant
 	step
 		goto 35.1,23
-		.kill Darkmist spiders|n
-		.get 20 Unpopped Darkmist Eye|q 1206/1
+		.from Darkmist Spider##4376+
+		..get 20 Unpopped Darkmist Eye|q 1206/1
 	step
 		ding 39
 	step
@@ -4740,7 +4743,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..get Razorspine's Sword|q 1203/1
 	step
 		goto 58.5,16.2
-		.from Mirefin Murloc##4359+
+		.from Mirefin Murloc##4359+,Mirefin Coastrunner##4362+
 		..get 8 Mirefin Head|q 1177/1
 	step
 		goto 63.7,17
@@ -4770,7 +4773,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Recover the Cargo!##11140
 		..accept Jaina Must Know##11141
 	step
-		kill turtles|n
+		from Mudrock Spikeshell##4397+
 		.get 8 Forked Mudrock Tongue|q 1204/1|tip Last chance to finish this quest.
 	step
 		'Go outside to 55.4,26.3|goto 55.4,26.3
@@ -4818,14 +4821,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		'Have Jaina Teleport you to Stormwind|goto Stormwind City|noway|c|tip You may want to wait until 40 before doing this. You will gain 5,500xp in Stormwind.
 	step
-		goto 39.8,81.5
-		.talk Archmage Malin##2708
-		..turnin Malin's Request##697
-	step
 		goto 78.2,18.1
 		.talk Highlord Bolvar Fordragon##1748
 		..turnin Warn Bolvar!##11222
 		..accept Return to Jaina##11223
+	step
+		goto 39.8,81.5
+		.talk Archmage Malin##2708
+		..turnin Malin's Request##697
 	step
 		goto 39.8,81.5|n
 		'Have Archmage Malin teleport you back to Jaina|goto Dustwallow Marsh|noway|c
@@ -4833,6 +4836,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 66.3,49
 		.talk Lady Jaina Proudmore##4968
 		..turnin Return to Jaina##11223
+	step
+		ding 40
+	step
+		goto 65.1,47.1
+		.talk Lieutenant Aden##23951
+		..accept Mission to Mudsprocket##11214
 	step
 		'Go outside to 46.6,24.6|goto 46.6,24.6
 		.talk Captain Darill##23568
@@ -4864,19 +4873,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 44,16
 		.kill Grimtotem mobs|n
-		.get Grimtotem Keys|n
+		..get Grimtotem Keys|n
 		.'Click the Blackhoof Cages|tip The Blackhoof Cages are yellow cages around this area.
-		.'Free 5 Theramore Prisoners|goal 5 Theramore Prisoners Freed|q 11145/1
+		..'Free 5 Theramore Prisoners|goal 5 Theramore Prisoners Freed|q 11145/1
 		.kill Grimtotem Elders|n
-		.get 4 Grimtotem Note|n
+		..get 4 Grimtotem Note|n
 		.'Click the Grimtotem Notes in your bags to combine them|use Grimtotem Note##33050
-		.get Grimtotem Battle Plan|q 11144/1
+		..get Grimtotem Battle Plan|q 11144/1
 		.'Click the Blackhoof Armaments|tip The Blackhoof Armaments look like wooden weapon with huge spears on them around this area.
-		.get 7 Blackhoof Armaments|q 11148/1
+		..get 7 Blackhoof Armaments|q 11148/1
 	step
 		goto 42,12
 		.'Use your Raptor Bait next to the windmill|use Raptor Bait##33070
-		.'Release the Raptors|goal Raptors Released|q 11147/1
+		..'Release the Raptors|goal Raptors Released|q 11147/1
 	step
 		goto 46.7,23.1
 		.talk Sergeant Lukas##23723
@@ -4888,8 +4897,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Confirming the Suspicion##11144
 		..turnin Arms of the Grimtotems##11148
 		..accept Tabetha's Assistance##11149
-	step
-		ding 40
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (40-44)",[[
 	author PolarCookie
