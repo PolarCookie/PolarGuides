@@ -3875,6 +3875,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 38,3.4
 		.talk Private Thorsen##738
 		..turnin Supplies to Private Thorsen##198
+		.'Wait around for Private Thorsen to start patroling and follow him.
 		..accept Jungle Secrets##215
 	step
 		goto 37.7,3.3
@@ -3900,29 +3901,29 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Sir S. J. Erlgadin##718
 		..accept Panther Mastery (1)##190
 	step
-		ding 34
-	step
 		goto 33.6,11.5
 		.kill 10 Young Stranglethorn Tiger|q 185/1
 	step
 		goto 40.6,13.3
 		.from River Crocolisk##1150
-		.get 2 Large River Crocolisk Skin|q 575/1
+		..get 2 Large River Crocolisk Skin|q 575/1
 	step
 		goto 40.8,10.9
 		.kill 10 Young Panther|q 190/1
 	step
 		goto 44.5,9.7
 		.'Click the Kurzen Supplies|tip They look like a pile of brown boxes in the small camp.
-		.get Venom Fern Extract|q 204/2
+		..get Venom Fern Extract|q 204/2
 	step
 		goto 43.7,9.4
-		.turnin Bookie Herod##200
+		.'Click Bookie Herod's Records
+		..turnin Bookie Herod##200
+		..accept The Hidden Key##328
 	step
 		goto 44,11.2
 		.kill 15 Kurzen Jungle Fighter|q 203/1
 		.from Kurzen Medicine Man##940+, Kurzen Jungle Fighter##937+
-		.get 7 Jungle Remedy|q 204/1
+		..get 7 Jungle Remedy|q 204/1
 	step
 		goto 35.8,10.7
 		.talk Sir S. J. Erlgadin##718
@@ -3951,13 +3952,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		'I prefer this camp, less risk of horde interference|goto 21.4,10.2
 		.kill Bloodscalp trolls|n
 		..get 15 Bloodscalp Ear|q 189/1
-		only !Warrior
-	step
-		'I prefer this camp, less risk of horde interference|goto 21.4,10.2
-		.kill Bloodscalp trolls|n
-		..get 15 Bloodscalp Ear|q 189/1
-		..get 30 Bloodscalp Tusk|q 1712/2
-		only Warrior
+		..get 30 Bloodscalp Tusk|q 1712/2|only Warrior
 	step
 		goto 35.8,10.7
 		.talk Hemet Nesingwary Jr.##715
@@ -3970,13 +3965,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Panther Mastery (2)##191
 		..accept Panther Mastery (3)##192
 	step
-		ding 35
-	step
 		goto 38,3.3
 		.talk Sergeant Yohwa##733
 		..turnin The Second Rebellion##203
 		..turnin Bad Medicine##204
 		..accept Special Forces##574
+	step
+		ding 35
 	step
 		goto 38.2,4|n
 		.talk Nizzle##24366
@@ -3986,6 +3981,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Drizzlik##2495
 		..turnin Supply and Demand##575
 		..accept Some Assembly Required##577
+	step
+		goto 27.1,77.2
+		.talk Crank Fizzlebub##2498
+		..turnin Singing Blue Shards##605
+		..accept Venture Company Mining##600
 	step
 		goto 26.9,77.2
 		.talk Krazek##773
@@ -4003,10 +4003,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Baron Revilgaz##2496
 		..turnin The Stone of the Tides##578
 		..accept Water Elementals##601
-	step
-		goto 27.1,77.2
-		.talk Crank Fizzlebub##2498
-		..turnin Singing Blue Shards##605
 	step
 		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
 ]])
@@ -4032,7 +4028,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 40,29
 		.kill Snapjaw Crocolisks|n
-		..get 5 Snapjaw Crocolisk Skin|q 577/1|tip Cross the river and kill some Shadowmaw Panthers too, search around the trees.
+		..get 5 Snapjaw Crocolisk Skin|q 577/1
 	step
 		goto 42.7,18.3
 		.from Foreman Cozzle##4723
@@ -4046,6 +4042,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.from Venture Co. Geologist##1096
 		..get 8 Tumbled Crystal|q 213/1
 	step
+		goto 48.7,22.2
+		.kill 10 Shadowmaw Panther##684|q 192/1
+	step
 		goto 45.7,8.2
 		.kill 10 Kurzen Commando|q 574/1
 		.kill 6 Kurzen Headshrinker|q 574/2
@@ -4057,12 +4056,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Hemet Nesingwary Jr.##715
 		..turnin Raptor Mastery (2)##195
 		..accept Raptor Mastery (3)##196
+		.talk Sir S. J. Erlgadin##718
+		..turnin Panther Mastery (3)##192
+		..accept Panther Mastery (4)##193
 	step
 		goto 32.2,17.3
 		.from Sin'Dall##729
 		..get Paw of Sin'Dall|q 188/1
 	step
-		goto 35.8,10.7
+		goto 35.6,10.6
 		.talk Ajeck Rouack##717
 		..turnin Tiger Mastery (4)##188
 	step
@@ -4120,6 +4122,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 28.3,77.6
 		.talk Drizzlik##2495
 		..turnin Some Assembly Required##577
+		..accept Excelsior##628
+	step
+		ding 36
 	step
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step
@@ -4275,8 +4280,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Stones of Binding##651
 		..accept Breaking the Keystone##652
 	step
-		ding 37
-	step
 		goto 29.6,63
 		.from Marez Cowl##2783|tip Marez is either behind the last house on the lower tier or behind the last house on the upper tier.
 		..get Marez's Head|q 684/1
@@ -4292,6 +4295,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 17.8,69.1
 		.from Boulderfist Shaman##2570+
 		..get 1 Azure Agate|q 694/1
+	step
+		ding 37
 	step
 		goto 45.8,47.6
 		.talk Captain Nials##2700
@@ -4309,6 +4314,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin An Apprentice's Enchantment##695
 		..accept Attack on the Tower##696
 	step
+		TODO
 		goto 18.2,68.1
 		.get Trelane's Phylactery|q 696/1
 		.get Trelane's Orb|q 696/2
@@ -4399,9 +4405,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 32.3,81.4
 		.talk Shakes O'Breen##2610
 		..turnin Sunken Treasure (3)##668
-		..accept Sunekn Treasure (4)##669
-	step
-		ding 38
+		..accept Sunken Treasure (4)##669
 	step
 		'Hearth to Ironforge|goto Ironforge|use Hearthstone##6948|noway|c
 	step
@@ -4486,7 +4490,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Guard Byron##4921
 		..accept Tabetha's Farm##11212
 	step
-		home Theramore
+		goto 66.6,45.2
+		.talk Innkeeper Janene##6272
+		..home Theramore
 	step
 		goto 66.3,45.5
 		.talk Morgan Stern##4794
@@ -4500,6 +4506,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Calia Hastings##23566
 		..turnin Traitors Among Us##11126
 		..accept Propaganda War##11128
+	step
+		ding 38
 	step
 		goto 67.9,58.7
 		.'Click the Deserter Propoganda boxes on the ship|tip A pile of boxes on the bottom deck of the ship in the Captain's quarters.
@@ -5734,9 +5742,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.'Click the Moon Over the Vale
 		..get The First Troll Legend|q 207/1
 	step
-		goto 39.4,34.7
-		.kill 10 Shadowmaw Panther##684|q 192/1
-	step
 		goto 32.6,40.4
 		.kill 10 Jungle Stalker|q 196/1
 	step
@@ -5746,11 +5751,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.talk Brother Nimetz##739
 		..turnin Kurzen's Mystery##207
 		..accept Troll Witchery##205
-	step
-		goto 35.8,10.7
-		.talk Sir S. J. Erlgadin##718
-		..turnin Panther Mastery (3)##192
-		..accept Panther Mastery (4)##193
 	step
 		goto 35.8,10.7
 		.talk Hemet Nesingwary Jr.##715
