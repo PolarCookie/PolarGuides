@@ -1,4 +1,4 @@
-raptor captorlocal ZygorGuidesViewer=ZygorGuidesViewer
+local ZygorGuidesViewer=ZygorGuidesViewer
 if not ZygorGuidesViewer then return end
 --TRIAL if ZygorGuidesViewer.AllianceInstalled then return end
 if UnitFactionGroup("player")~="Alliance" then return end
