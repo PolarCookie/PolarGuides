@@ -4922,7 +4922,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 43.8,57
 		.'Use your Captured Totem|use Captured Totem##33101
 		.kill Mottled Drywallow Crocolisks next to the totem|n
-		.'Perform 10 Totem Tests|goal 10 Totem Tests Performed|q 11169/1
+		..'Perform 10 Totem Tests|goal 10 Totem Tests Performed|q 11169/1
 	step
 		goto 41.7,51.4
 		.kill Darkfang Creepers|n
@@ -4931,24 +4931,23 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 47.4,47.6
 		.'Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
-		.'Burn the East Tent|goal East Tent Burned|q 11150/3
+		..'Burn the East Tent|goal East Tent Burned|q 11150/3
 	step
 		goto 47.2,46.6
 		.from Apothecary Cylla##23881
-		.get the Sealed Letter|n
+		..get the Sealed Letter|n
 		.'Click the Sealed Letter|use Sealed Letter##33114
 		..accept The Apothecary's Letter##11185
 	step
 		goto 47.3,46.6
 		.'Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
-		.'Burn the Northeast Tent|goal Northeast Tent Burned|q 11150/2
+		..'Burn the Northeast Tent|goal Northeast Tent Burned|q 11150/2
 	step
 		goto 46.6,46
 		.'Use Tabetha's Torch inside this tent|use Tabetha's Torch##33072
-		.'Burn the North Tent|goal North Tent Burned|q 11150/1
+		..'Burn the North Tent|goal North Tent Burned|q 11150/1
 	step
 		goto 47,50
-		.kill Grimtotem mobs|n
 		.'Kill 12 Direhorn Grimtotems|goal 12 Direhorn Grimtotems killed|q 11156/1
 	step
 		goto 53.6,56.9
@@ -4959,9 +4958,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 53,56
 		.'Click the Zeppelin Cargo|tip They look like wooden boxes on the ground around this area.
-		.get 8 Zeppelin Cargo|q 11207/1
+		..get 8 Zeppelin Cargo|q 11207/1
 		.'Use your Ooze Buster on oozes|use Ooze Buster##33108|tip You have to be near a Power Core Fragment (the things that connect lightning to you).
-		.'Dissolve 10 Oozes|goal 10 Oozes Dissolved|q 11174/1
+		..'Dissolve 10 Oozes|goal 10 Oozes Dissolved|q 11174/1
 	step
 		goto 53.6,56.9
 		.talk Moxie Steelgrille##23797
@@ -5006,8 +5005,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.kill Goreclaw the Ravenous|q 11184/1|tip He's a big green raptor standing at the entrance to the cave.
 	step
 		goto 35,65
-		.kill raptors|n
-		.get 5 Bloodfen Feather|q 11158/1
+		.from Bloodfen Razormaw##4356+,Bloodfen Lashtail##4357+
+		..get 5 Bloodfen Feather|q 11158/1
 	step
 		goto 42.3,72.9
 		.talk Drazzit Dripvalve##23572
@@ -5019,12 +5018,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..accept Banner of the Stonemaul##11160
 		..accept The Essence of Enmity##11161
 	step
+		ding 41
+	step
 		'Go inside the cave to 38.1,69.4|goto 38.1,69.4
 		.'Click the Stonemaul Banner|tip It looks like a hanging tiger skin with an eye painted on it inside the cave.
-		.get Stonemaul Banner|q 11160/1
+		..get Stonemaul Banner|q 11160/1
 		.kill Firemane mobs|n
 		.'Use Brogg's Totem on their corpses|use Brogg's Totem##33088
-		.get 10 Black Dragonkin Essence|q 11161/1
+		..get 10 Black Dragonkin Essence|q 11161/1
 	step
 		'Go outside to 41.9,74|goto 41.9,74
 		.talk Brogg##23579
@@ -5035,7 +5036,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 46,69
 		.'Click the Ogre Remains|tip They look like big white bones on the ground.
 		.kill the Ogre Spirits|n
-		.'Lay 10 Stonemaul Spirits to rest|goal 10 Stonemaul Spirits laid to rest|q 11159/1
+		..'Lay 10 Stonemaul Spirits to rest|goal 10 Stonemaul Spirits laid to rest|q 11159/1
 	step
 		goto 41.9,74
 		.talk Brogg##23579
@@ -5046,11 +5047,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.'Use your Stonemaul Banner at the foot of the stone ramp at the entrance to Onyxia's Lair|use Stonemaul Banner##33095
 		..'A dragon will appear
 		.kill Smolderwing|n
-		.'Avenge the Stonemaul Clan|goal Stonemaul Clan Avenged|q 11162/1
+		..'Avenge the Stonemaul Clan|goal Stonemaul Clan Avenged|q 11162/1
 	step
 		goto 46,74
 		.'Click the Wyrmtails|tip They look like green balls on the ground.
-		.get 8 Wyrmtail|q 11217/1
+		..get 8 Wyrmtail|q 11217/1
 	step
 		goto 41.5,73
 		.talk Gizzix Grimegurgle##23570
@@ -5059,8 +5060,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 41.9,74
 		.talk Brogg##23579
 		..turnin Challenge to the Black Flight##11162
-	step
-		ding 41
 	step
 		'Hearth to Theramore|goto Dustwallow Marsh,66.6,45.2,0.5|use Hearthstone##6948|noway|c
 	step
@@ -5075,7 +5074,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		'Go outside to 63.7,42.8|goto 63.7,42.8
 		.'Use your Wreath in your bags|use Wreath##33082
-		.'Lay the Wreath at the Hyal Family Monument|q 11152/1|tip It's a big gray tombstone in this graveyard.
+		..'Lay the Wreath at the Hyal Family Monument|q 11152/1|tip It's a big gray tombstone in this graveyard.
 	step
 		goto 68.2,48.6
 		.talk Captain Garran Vimes##4944
