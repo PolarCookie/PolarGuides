@@ -11644,7 +11644,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Tero
 	step
 		goto 73.9,35.1|tip Be quick about it before the central plaza starts respawning.
 		.talk Isla Starmane##18760
-		..accept Escape from Firewing Point!##10051
+		..accept Escape from Firewing Point!##10051|noautoaccept
 	step
 		goal Escort Isla Starmane to Safety|q 10051/1
 	step
