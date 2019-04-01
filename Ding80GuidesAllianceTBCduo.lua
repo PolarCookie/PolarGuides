@@ -7921,16 +7921,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		'Ride the boat to Ratchet|goto The Barrens|noway|c
 		only Priest,Warlock
 	step
-		'Fly to Azshara|goto Azshara|noway|c
-		only Priest
+		'Fly to Felwood|goto Felwood|noway|c
+		only Priest,Warlock
 	step
-		goto 42.4,42.6
-		.talk Ogtinc##8405
+		goto 51.2,82.3
+		.talk Greta Mosshoof##10922
 		..turnin Blood of Morphaz##8257
 		only Priest
-	step
-		'Fly to Felwood|goto Felwood|noway|c
-		only Warlock
 	step
 		goto 41.4,45
 		.talk Impsy##14470
