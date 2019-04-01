@@ -9422,7 +9422,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 61.9,38.4
 		.talk Storm Shadowhoof##10303
 		..turnin Shy-Rotam##5056
-		..accept Past Endeavors##5057|instant
+		..accept Past Endeavors##5057|instant|tip Past Endeavors was made available to Alliance in Patch 2.3.
 	step
 		'Make sure you have 10 Moontouched Feathers in your bags|get 10 Moontouched Feather|q 978/1|c
 	step
