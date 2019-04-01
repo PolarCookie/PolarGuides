@@ -5440,7 +5440,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto Loch Modan,37.3,85.8
 		.talk Hammertoe Grez##2909
 		..turnin Amulet of Secrets##722
-		..accept Prospect of Faith##723
+		..accept Prospect of Faith##723|noautoaccept
 	step
 		from Shadowforge Dwarves
 		.get 8 Dentrium Power Stone|q 2418/1
