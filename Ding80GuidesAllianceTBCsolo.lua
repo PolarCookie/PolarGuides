@@ -6415,6 +6415,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.'Click the Weathered Bookcase
 		..get Worn Leather Book|q 540/2
 	step
+		goto 38.2,38.9
+		.talk Bro'kin##2480
+		..buy Recipe: Frost Oil##14634|tip This is a Recipe needed for a quest very soon. Make extra and put them on the auction house, kthx!
+		only if skill("Alchemy") > 0
+	step
 		goto 58.7,30.5
 		'Start here and kill 1 Argus Shadow Mage every camp moving northwest
 		.kill 4 Argust Shadow Mage|q 537/1
