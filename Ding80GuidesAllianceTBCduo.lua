@@ -5319,13 +5319,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin Indurium##1108
 		..accept News for Fizzle##1137
 	step
-		goto 25.9,44.6
+		goto 25.9,44.9
 		.talk Lotwil Veriatus##2921
 		..accept Study of the Elements: Rock (1)##710
 		..accept Coolant Heads Prevail##713
 		..turnin Coolant Heads Prevail##713
 		..accept Gyro... What?##714
 		..turnin Gyro... What?##714
+	step
+		goto 25.8,44.2
 		.talk Lucien Tosselwrench##2920
 		..accept Liquid Stone##715
 		..turnin Liquid Stone##715
@@ -5334,7 +5336,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.kill Lesser Rock Elementals|n
 		..get 10 Small Stone Shard|q 710/1
 	step
-		goto 25.9,44.6
+		goto 25.9,44.9
 		.talk Lotwil Veriatus##2921
 		..turnin Study of the Elements: Rock (1)##710
 		..accept Study of the Elements: Rock (2)##711
@@ -5343,7 +5345,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.kill Rock Elementals|n
 		..get 3 Large Stone Slab|q 711/1
 	step
-		goto 25.9,44.6
+		goto 25.9,44.9
 		.talk Lotwil Veriatus##2921
 		..turnin Study of the Elements: Rock (2)##711
 		..accept Study of the Elements: Rock (3)##712
@@ -5367,20 +5369,25 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.from Boss Tho'Grun##2944
 		..get Sign of the Earth|q 732/1
 	step
-		goto 25.9,44.6
+		goto 25.9,44.9
 		.talk Lotwil Veriatus##2921
 		..turnin Study of the Elements: Rock (3)##712
 		..accept This Is Going to Be Hard (1)##734
+	step
+		goto 25.8,44.2
 		.talk Lucien Tosselwrench##2920
 		..turnin This Is Going to Be Hard (1)##734
 		..accept This Is Going to Be Hard (2)##777
 	step
-		goto 25.9,44.6
+		goto 25.9,44.9
 		.talk Lotwil Veriatus##2921
 		..turnin This Is Going to Be Hard (2)##777
 		..accept This Is Going to Be Hard (3)##778
+	step
 		.'Kill the Fam'retor Guardian that spawns
 		..get Lotwil's Shackles of Elemental Binding|q 778/1
+	step
+		goto 25.9,44.9
 		.talk Lotwil Veriatus##2921
 		..turnin This Is Going to Be Hard (3)##778
 	step
