@@ -1260,7 +1260,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Draenei (1-1
 		goto 78.6,45.4
 		.kill 8 Volatile Mutation|q 10302/1
 		.from Vale Moth##16520+
-		.get 8 Vial of Moth Blood|q 9280/1
+		..get 8 Vial of Moth Blood|q 9280/1
 	step
 		ding 2
 	step
@@ -1321,6 +1321,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Draenei (1-1
 	step
 		ding 3
 	step
+		ding 4|tip Grind to at least 765 / 1400 (55%) at level 3, to ding level 4 by completing quests and get your earth totem.
+		only Shaman
+	step
 		goto 79.1,46.5
 		.talk Botanist Taerix##16514
 		..turnin What Must Be Done...##9293
@@ -1331,6 +1334,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Draenei (1-1
 		goto 80.1,48.8
 		.talk Zalduun##16502
 		..turnin Rescue the Survivors!##9283
+	step
+		ding 4|tip This one is important to get your earth totem, go out and grind a bit.
+		only Shaman
 	step
 		goto 79.3,49.1
 		.talk Firmanvaar##17089
