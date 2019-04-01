@@ -6372,10 +6372,24 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Travel your own way to Southshore, this is a good time to drop by a capitol city to train.|goto Hillsbrad Foothills|noway|c
 	step
+		'Be on the lookout for Shadowy Assassins that ambush Southshore periodically, skip to the next step and return here later.
+		.from Shadowy Assassin##2434++
+		..get Assassin's Contract|n
+		.'Click the Assassin's Contract|use Assassin's Contract##3668
+		..accept Assassin's Contract##522
+	step
 		'If you didn't get the Old History Book from Duskwood, skip this step.
 		goto 50.6,57.1
 		.talk Loremaster Dibbs##2277
 		..accept Preserving Knowledge##540
+	step
+		goto 51.2,58.9
+		.talk Innkeeper Anderson##2352
+		..home Southshore
+	step
+		goto 50.3,59
+		.talk Phin Odelic##2711
+		..turnin Hints of a New Plague? (5)##661
 	step
 		goto 49.5,58.7
 		.talk Marshal Redpath##2263
@@ -6386,12 +6400,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Further Mysteries##525
 		..accept Dark Council##537
 		..accept Noble Deaths##512
-	step
-		goto 50.3,59
-		.talk Phin Odelic##2711
-		..turnin Hints of a New Plague? (5)##661
-	step
-		home Southshore
+		'If you fought the Shadowy Assassins, otherwise skip.
+		..turnin Assassin's Contract##522
+		..accept Baron's Demise##523
 	step
 		goto Alterac Mountains,18.8,78.5
 		.talk Archmage Ansirem Runeweaver##2543
@@ -6406,14 +6417,20 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 38.4,46.4
 		'If you didn't get the Old History Book from Duskwood, skip this step.
-		.get Worn Leather Book|q 540/2
+		.'Click the Weathered Bookcase
+		..get Worn Leather Book|q 540/2
 	step
 		goto 58.7,30.5
 		'Start here and kill 1 Argus Shadow Mage every camp moving northwest
 		.kill 4 Argust Shadow Mage|q 537/1
 	step
+		'If you fought the Shadowy Assassins in Southshore, otherwise skip.
+		goto 47.8,17.1
+		.from Baron Vardus##2306
+		..get Head of Baron Vardus|q 566/1
+	step
 		goto 39.2,14.3
-		'APPROACH THE HOUSE CAREFULLY, LOTS OF STEALTHED ASSASSINS HERE
+		'APPROACH THE HOUSE CAREFULLY, THERE ARE A LOT OF STEALTHED ASSASSINS HERE
 		.from Nagaz##2320
 		..get Head of Nagaz|q 537/2
 		.'Loot the chest inside the house, next to Nagaz
@@ -6432,6 +6449,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Magistrate Henry Maleb##2276
 		..turnin Noble Deaths##512
 		..turnin Dark Council##537
+		'If you fought the Shadowy Assassins in Southshore, otherwise skip.
+		..turnin Baron's Demise##523
 	step
 		goto 50.6,57.1
 		.talk Loremaster Dibbs##2277
@@ -6440,8 +6459,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		'If you didn't get the Old History Book from Duskwood, skip this step.
 		..turnin Preserving Knowledge##540
 		..accept Return to Milton##542
-	step
-		ding 42
 	step
 		'Fly to Refuge Pointe|goto Arathi Highlands,45.8,46.1|noway|c
 	step
@@ -6452,6 +6469,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Keystone
 		..turnin Breaking the Keystone##652
 		..accept Myzrael's Allies##653
+	step
+		ding 42
 	step
 		'Fly to Ironforge|goto Ironforge|noway|c
 	step
@@ -6482,7 +6501,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 37.5,81.7
 		.talk High Sorcerer Andromath##5694
-		..accept Vital Supplies##1477
+		..accept Vital Supplies##1477|tip He's at the top of the tower in the middle of the Mage Quarter.
 	step
 		goto 41.5,64.4
 		.talk Mazen Mac'Nadir##338
@@ -6493,7 +6512,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Mazen's Behest##1363
 		..accept Mazen's Behest##1364
 	step
-		home Stormwind City
+		goto 52.5,65.5
+		.talk Innkeeper Allison##6740
+		..home Stormwind City
 	step
 		'Buy the following items from the Auction House in this order:|tip If you cannot buy some of these, ask people to make them for you in General and Trade chat.  Offer to pay well and you will usually get someone to do it for you. Gyro can be bought from Engineering Supply vendors.
 		'For "Coolant Heads Prevail".
@@ -6640,8 +6661,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.from Boss Tho'Grun##2944
 		..get Sign of the Earth|q 732/1
 	step
-		ding 43
-	step
 		goto 25.9,44.6
 		.talk Lotwil Veriatus##2921
 		..turnin Study of the Elements: Rock (3)##712
@@ -6687,6 +6706,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 37.1,49.4
 		.talk Ghak Healtouch##1470
 		..turnin Badlands Reagent Run##2500
+	step
+		ding 43
 	step
 		'Hearth to Stormwind|goto Stormwind City|noway|c
 	step
@@ -6844,8 +6865,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin The Bloodsail Buccaneers (4)##604
 		..accept The Bloodsail Buccaneers (5)##608
 	step
-		ding 44
-	step
 		goto 38.5,80.6
 		.talk Princess Poobah##2634
 		..turnin Message in a Bottle (1)##594
@@ -6853,7 +6872,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 41,83
 		.from King Mukla##1559
-		.get Shackle Key|q 630/1
+		..get Shackle Key|q 630/1
 	step
 		goto 38.5,80.6
 		.talk Princess Poobah##2634
@@ -6861,7 +6880,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'While doing the next 3 steps, look for Cortello's Riddle on the ships:
 		.'Click Cortello's Riddle|tip It's a scroll.
-		..accept Cortello's Riddle (1)##624|n
+		..accept Cortello's Riddle (1)##624
 		.'Skip to the next step of the guide
 	step
 		goto 32.9,88.2
@@ -6892,6 +6911,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 27.2,77
 		.talk Fleet Master Seahorn##2487
 		..turnin The Bloodsail Buccaneers (5)##608
+	step
+		ding 44
 	step
 		'Fly to the Rebel Camp|goto Stranglethorn Vale,38.0,3.7,2|noway|c
 	step
@@ -6952,7 +6973,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		goto 41.4,42.3
 		.kill goblins|n
-		.get 10 Singing Blue Crystal|q 600/1
+		..get 10 Singing Blue Crystal|q 600/1
 	step
 		goto 28.7,44.8
 		.from Tethis##730
@@ -7018,8 +7039,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Raptor Mastery (4)##197
 		..accept Big Game Hunter##208
 	step
-		ding 45
-	step
 		goto 38.2,36.4
 		.from King Bangalash##731
 		..get Head of Bangalash|q 208/1
@@ -7039,6 +7058,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 37.8,3.6
 		.talk Brother Nimetz##739
 		..turnin Mai'Zoth##206
+	step
+		ding 45
 ]])
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Levels (45-49)",[[
 	author PolarCookie
@@ -7199,8 +7220,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill Southsea Pirates|n
 		..get 20 Southsea Pirate Hat|q 8365/1
 	step
-		ding 46
-	step
 		goto 67.1,23.9
 		.talk Stoley##7881
 		..turnin Stoley's Shipment##2873
@@ -7217,6 +7236,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Chief Engineer Bilgewhizzle##7407
 		..turnin More Wastewander Justice##1691
 		..turnin WANTED: Caliph Scorpidsting##2781
+	step
+		ding 46
 	step
 		'Fly to Thalanaar|goto Feralas,89.5,45.8,0.3|noway|c|tip On the border of Thousand Needles and Feralas, if you didn't remember.
 	step
@@ -7259,10 +7280,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.kill the shrunken giants|n
 		..get 15 Miniaturization Residue|q 7003/1
 	step
-		goto Feralas,43.5,42.8|n
-		.'Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,2|noway|c
+		goto 43.5,42.8|n
+		.'Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,2|noway|c|tip It's faster to swim across than the boat ride.
 	step
-		goto Feralas,30.6,42.7
+		goto 30.6,42.7
 		.talk Pratt McGrubben##7852
 		..accept The Mark of Quality##2821
 	step
@@ -7288,7 +7309,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin The Missing Courier (1)##4124
 		..accept The Missing Courier (2)##4125
 	step
-		home Feathermoon Stronghold
+		goto 31,43.5
+		.talk Innkeeper Shyria##7736
+		..home Feathermoon Stronghold
 	step
 		goto 26.3,52.3
 		.'Click the Solarsal Gazebo|tip It's a big dark colored gazebo.
@@ -7341,10 +7364,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Zapped Giants##7003
 		..turnin Fuel for the Zapping##7721
 	step
-		ding 47
-	step
-		goto 43.5,42.7|n
-		.'Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,0.5|noway|c
+		goto 43.5,42.8|n
+		.'Ride the boat to Feathermoon Stronghold|goto Feralas,31.0,39.9,2|noway|c|tip It's faster to swim across than the boat ride.
 	step
 		'Go outside the cave to 30.3,46.2|goto 30.3,46.2
 		.talk Latronicus Moonspear##7877
@@ -7371,6 +7392,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Psychometric Reading##4130
 		..accept The Woodpaw Gnolls##4131
 	step
+		ding 47
+	step
 		goto 31.0,39.9|n
 		'Ride the boat to the main continent of Feralas|goto Feralas,43.5,42.7,1|noway|c
 	step
@@ -7382,7 +7405,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Find OOX-22/FE!##2766
 		..accept Rescue OOX-22/FE!##2767|noautoaccept
 	step
-		goal Escort OOX-22/FE to safety|q 2767/1|tip DON'T GET TO FAR AWAY FROM THE CHICKEN, IF HE LEAVES YOUR VIEW DISTANCE HE DESPAWNS. IMPORTANT DURING THE SECOND WAVE WHEN 3 APES MAY SPAWN WAY FAR AHEAD ON THE ROAD. BE PATIENT.
+		goal Escort OOX-22/FE to safety|q 2767/1
 	step
 		goto 55.5,54.8
 		.kill yetis|n
@@ -7643,7 +7666,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Fly to Feathermoon Stronghold|goto Feralas,30.3,43.3,0.5|noway|c
 	step
-		home Feathermoon Stronghold
+		goto 31,43.5
+		.talk Innkeeper Shyria##7736
+		..home Feathermoon Stronghold
 	step
 		goto 31.8,45.6
 		.talk Troyas Moonbreeze##7764
@@ -7717,7 +7742,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Find OOX-22/FE!##2766
 		..accept Rescue OOX-22/FE!##2767|noautoaccept
 	step
-		goal Escort OOX-22/FE to safety|q 2767/1|tip DON'T GET TO FAR AWAY FROM THE CHICKEN, IF HE LEAVES YOUR VIEW DISTANCE HE DESPAWNS. IMPORTANT DURING THE SECOND WAVE WHEN 3 APES MAY SPAWN WAY FAR AHEAD ON THE ROAD. BE PATIENT.
+		goal Escort OOX-22/FE to safety|q 2767/1
 	step
 		'Hearth to Feathermoon Stronghold|goto Feralas,31.0,44.0,5|use Hearthstone##6948|noway|c
 	step
@@ -7736,7 +7761,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Marin Noggenfogger##7564
 		..accept The Thirsty Goblin##2605
 	step
-		home Gadgetzan
+		goto 52.5,27.9
+		.talk Innkeeper Fizzgrimble##7733
+		..home Gadgetzan
 	step
 		goto 52.8,27.4
 		.talk Andi Lynn##11758
@@ -7771,7 +7798,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..get 5 Centipaar Insect Parts|q 82/1
 	step
 		goto 41.5,57.8
-		.kill Gor'marok the Ravager|q 5863/3|tip Standing inside the cave. Kill 5 enforcers and 5 brutes while you're here.
+		.kill Gor'marok the Ravager|q 5863/3
 	step
 		goto 38.5,72.6
 		.'Equip the Gahz'ridian Detector|use Gahz'ridian Detector##9978
@@ -7792,15 +7819,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.talk Tooga##5955
 		..accept Tooga's Quest##1560|noautoaccept
 	step
-		.'WARNING: ESCORT
-		'If you have the OOX-17/TN distress beacon, now is the time to do this escort, otherwise skip this part|goto 60.2,64.7
-		.'Click the OOX-17/TN Distress Beacon|use OOX-17/TN Distress Beacon##8623
-		..accept Find OOX-17/TN!##351
-		.talk Homing Robot OOX-17/TN##7784
-		..turnin Find OOX-17/TN!##351
-		..accept Rescue OOX-17/TN!##648|noautoaccept
-	step
-		goal Escort OOX-17/TN to safety|q 648/1
+		goto 52.7,45.9
+		.talk Marvon Rivetseeker##7771
+		..turnin Gahz'ridian##3161
 	step
 		goto 66.6,25.6
 		.goal Lead Tooga to Torta|q 1560/1
@@ -7816,6 +7837,16 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 67,22.4
 		.talk Yeh'kinya##8579
 		..turnin Screecher Spirits##3520
+	step
+		.'WARNING: ESCORT
+		'If you have the OOX-17/TN distress beacon, now is the time to do this escort, otherwise skip this part|goto 60.2,64.7
+		.'Click the OOX-17/TN Distress Beacon|use OOX-17/TN Distress Beacon##8623
+		..accept Find OOX-17/TN!##351
+		.talk Homing Robot OOX-17/TN##7784
+		..turnin Find OOX-17/TN!##351
+		..accept Rescue OOX-17/TN!##648|noautoaccept
+	step
+		goal Escort OOX-17/TN to safety|q 648/1
 	step
 		goto 51.6,26.8
 		.talk Tran'rek##7876
@@ -7841,10 +7872,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 50.2,27.5
 		.talk Senior Surveyor Fizzledowser##7724
 		..accept The Scrimshank Redemption##10
-	step
-		goto 52.7,45.9
-		.talk Marvon Rivetseeker##7771
-		..turnin Gahz'ridian##3161
 	step
 		goto 56.0,70.2|n
 		.'The path down to 'The Scrimshank Redemption' starts here|goto Tanaris,56.0,70.2,0.3|noway|c
@@ -7910,7 +7937,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 	step
 		'Buy 15 Silk Cloth from the Auction House|buy 15 Silk Cloth##4306+|q 4449/1
 	step
-		home Stormwind City
+		goto 52.5,65.5
+		.talk Innkeeper Allison##6740
+		..home Stormwind City
 	step
 		'Fly to Thelsamar|goto Loch Modan,33.9,50.8,0.5|noway|c
 	step
