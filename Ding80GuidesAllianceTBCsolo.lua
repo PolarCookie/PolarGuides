@@ -2379,9 +2379,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Mai
 		.talk Wanted Poster##68
 		..accept Wanted: "Hogger"##176
 	step
-		goto 26.4,93.70
+		goto 26.4,93.6
 		.from Hogger##448
-		..get 1 Huge Gnoll Claw|q 176/1
+		..get Huge Gnoll Claw|q 176/1
 	step
 		goto 26.8,86.3
 		.from Riverpaw Outrunner##478+, Riverpaw Runt##97+
@@ -5647,10 +5647,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		..turnin Sunken Treasure (1)##665
 		..accept Sunken Treasure (2)##666
 	step
-		'Equip the Goggles of Gem Hunting|use Goggles of Gem Hunting##4491
-		'Get as many gems as possible, then head to next step while waiting on respawns|goto 21.92,87.94
-		.get 10 Elven Gem|q 666/1
-	step
 		goto 23.98,85.05|n
 		.'Enter the ship here, head down the stairs|goto 23.98,85.05,0.5|noway|c
 	step
@@ -5663,9 +5659,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		goto 23.98,85.05|n
 		.'Leave the ship the same way you entered|goto 23.98,85.05,0.5|noway|c
 	step
-		'Get as many gems as possible, then head to next step while waiting on respawns|goto 21.92,87.94
-		.get 10 Elven Gem|q 666/1
-	step
 		goto 20.28,85.69|n
 		.'Enter the ship here, enter through the hole in the deck|goto 20.28,85.69,0.5|noway|c
 	step
@@ -5673,12 +5666,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Lev
 		.get Spirit of Silverpine Charts|q 662/3
 	step
 		goto 20.7,85.1
-		.get Spirit of Silverpine Log Log|q 662/4|tip It's one floor down, head up for air then go down to the ship bottom, a hole in the bottom right next to the item you need.
+		.get Spirit of Silverpine Log Log|q 662/4|tip It's one floor down, head up for air then go down to the ship bottom, there is a hole in the bottom right next to the item you need.
 	step
 		goto 21.92,87.94
 		.kill 10 Daggerspine Raider|q 664/1
 		.kill 3 Daggerspine Sorceress|q 664/2
-		.get 10 Elven Gem|q 666/1
+		'Equip the Goggles of Gem Hunting|use Goggles of Gem Hunting##4491
+		.'Click the Calcified Elven Gem
+		..get 10 Elven Gem|q 666/1
 	step
 		goto 32.8,81.5
 		.talk First Mate Nilzlix##2767
