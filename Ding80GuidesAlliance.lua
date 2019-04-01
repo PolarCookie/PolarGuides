@@ -4811,6 +4811,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		.buy Hillman's Cloak##3719|q 565/3
 		.buy Bolt of Woolen Cloth##2997|q 565/1
 	step
+		goto 60.1,36.4
+		.talk Daryl Riknussun##5159
+		..'Learn Cooking to unlock an additional quest in Southshore.
+		only if skill("Cooking")==0
+	step
 		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
 	step
 		goto 49.4,55.5
@@ -4840,6 +4845,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		goto 51.9,58.7
 		.talk Chef Jessen##2430
 		..accept Soothing Turtle Bisque##555
+		only if skill("Cooking")>0
 	step
 		goto 52.4,56
 		.talk Darren Malvew##2382
@@ -4887,6 +4893,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		goto 55.7,57
 		.from Snapjaw##2408
 		..get 10 Turtle Meat|q 555/1
+		only if skill("Cooking")>0
 	step
 		ding 33
 	step
@@ -4954,6 +4961,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (30-3
 		goto 51.9,58.7
 		.talk Chef Jessen##2430
 		..turnin Soothing Turtle Bisque##555
+		only if skill("Cooking")>0
 	step
 		goto Hillsbrad Foothills,49.5,58.7
 		.talk Marshal Redpath##2263
