@@ -7181,6 +7181,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		..turnin The Key to Freedom##4451
 		..accept Caught!##4449
 	step
+		goto 63.3,59.7
+		.kill 8 Dark Iron Geologist|q 4449/1
+	step
+		goto 65.5,62.3
+		.'Click the Wooden Outhouse
+		..turnin Caught!##4449
+	step
 		.'WARNING: ESCORT
 		goto 63.9,61
 		.talk Dorius Stonetender##8284
@@ -7190,13 +7197,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.'Click the Singed Letter
 		..turnin Suntara Stones (1)##3367
 		..accept Suntara Stones (2)##3368
-	step
-		goto 63.3,59.7
-		.kill 8 Dark Iron Geologist|q 4449/1
-	step
-		goto 65.5,62.3
-		.'Click the Wooden Outhouse
-		..turnin Caught!##4449
 	step
 		goto 39.1,39
 		.talk Squire Maltrake##8509
@@ -7208,7 +7208,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.'Open the Hoard of the Black Dragonflight in your bags|use Hoard of the Black Dragonflight##10569
 		.'Make sure to save the Black Dragonflight Molt|collect Black Dragonflight Molt##10575|q 4022/1 |future
 	step
-		'Go outside to 37.6,26.5|goto 37.6,26.5
+		ding 51
+	step
+		goto 37.6,26.5
 		.talk Lookout Captain Lolo Longstriker##14634
 		..turnin WANTED: Overseer Maltorius##7701
 	step
@@ -7936,7 +7938,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
-		home Stormwind City
+		goto 52.5,65.5
+		.talk Innkeeper Allison##6740
+		..home Stormwind City
 	step
 		'Fly to Lakeshire|goto Redridge Mountains,30.4,59.0,0.5|noway|c
 	step
@@ -8124,12 +8128,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		goto 42.7,84
 		.talk Commander Ashlam Valorfist##10838
 		..turnin All Along the Watchtowers##5097
-		..accept Scholomance##5533
-	step
-		goto 42.7,83.8
-		.talk Alchemist Arbington##11056
-		..turnin Scholomance##5533
-		..accept Skeletal Fragments##5537
 	step
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
@@ -8185,7 +8183,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		'Fly to Chillwind Camp|goto Western Plaguelands,43.0,84.3,1.5|noway|c
 	step
-		goto Western Plaguelands,43.6,84.5
+		goto 43.6,84.5
 		.talk Flint Shadowmore##12425
 		..turnin Flint Shadowmore##6184
 	step
@@ -8254,6 +8252,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		'Fly to Ironforge|goto Ironforge|noway|c
 ]])
+
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Levels (55-58)",[[
 	author PolarCookie
 	next Ding80's Alliance Leveling Guides TBC duo\\TBC Gold Rush
@@ -8437,8 +8436,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 	step
 		goto 21.4,59.4
 		.kill 15 Frenzied Pterrordax|q 4501/2
-		.from Frenzied Pterrordax##9167
-		..get 8 Webbed Pterrordax Scale|q 4503/2
 		.'You can find more Frenzied Pterrordax at 23.3,42.3|n
 	step
 		goto 38.5,66.1
@@ -8462,6 +8459,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		'Go out of the hive to 50.5,78.4|goto 50.5,78.4
 		.kill Gorishi insects|n
 		..get Gorishi Scent Gland|q 4496/1
+	step
+		goto 45,88.9
+		.kill 10 Pterrordax|q 4501/1
+		.from Pterrordax##9166+
+		..get 8 Webbed Pterrordax Scale|q 4503/2
+		.'You can find more Pterrordax at 50.5,88.32|n
+		.'You can find more Pterrordax at 56.3,88.63|n
 	step
 		goto 71.6,76
 		.talk Torwa Pathfinder##9619
@@ -8514,9 +8518,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.'Go up the hill
 		.'Click the Northern Pylon|tip It looks like a big machine with a huge crystal spinning on top of it.
 		.'Examine the Northern Pylon|goal Discover and examine the Northern Crystal Pylon|q 4285/1
-	step
-		goto 56.6,8.5
-		.kill 10 Pterrordax|q 4501/1
 	step
 		goto 43.6,8.5
 		.talk Spraggle Frock##9997
@@ -8711,10 +8712,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.kill 8 Winterfall Pathfinder|q 5082/1
 		.kill 8 Winterfall Totemic|q 5082/3
 	step
-		goto 52.1,30.4
+		goto 52.0,30.4
 		.talk Wynd Nightchaser##11079
 		..turnin To Winterspring!##5249
 		..accept The Ruins of Kel'Theril##5244
+	step
+		goto 52.1,30.4
 		.talk Jaron Stoneshaper##10301
 		..turnin The Ruins of Kel'Theril##5244
 		..accept Enraged Wildkin (2)##4861
@@ -8778,10 +8781,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Leve
 		.'Discover Darkwhisper Gorge|goal Discover Darkwhisper Gorge|q 4842/1
 	step
 		goto 60.8,67.8
-		.from Frostmaul Giant##7428+,Frostmaul Preserver##7429+
+		.'Click Frostmaul Shards in the canyon, or try fighting a giant.
 		..get 4 Frostmaul Shards|q 969/1
 	step
-		goto 55,46
+		goto 62.5,57.9
 		.kill Brumeran|q 5055/1
 	step
 		goto 55.1,43

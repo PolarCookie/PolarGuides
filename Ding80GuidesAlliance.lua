@@ -7909,6 +7909,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		..turnin The Key to Freedom##4451
 		..accept Caught!##4449
 	step
+		goto 63.3,59.7
+		.kill 8 Dark Iron Geologist|q 4449/1
+	step
+		goto 65.5,62.3
+		.'Click the Wooden Outhouse
+		..turnin Caught!##4449
+	step
 		.'WARNING: ESCORT
 		goto 63.9,61
 		.talk Dorius Stonetender##8284
@@ -7918,15 +7925,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.'Click the Singed Letter
 		..turnin Suntara Stones (1)##3367
 		..accept Suntara Stones (2)##3368
-	step
-		goto 63.3,59.7
-		.kill 8 Dark Iron Geologist|q 4449/1
-	step
-		goto 65.5,62.3
-		.'Click the Wooden Outhouse
-		..turnin Caught!##4449
-	step
-		ding 51
 	step
 		goto 39.1,39
 		.talk Squire Maltrake##8509
@@ -7938,7 +7936,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.'Open the Hoard of the Black Dragonflight in your bags|use Hoard of the Black Dragonflight##10569
 		.'Make sure to save the Black Dragonflight Molt|collect Black Dragonflight Molt##10575|q 4022/1 |future
 	step
-		'Go outside to 37.6,26.5|goto 37.6,26.5
+		ding 51
+	step
+		goto 37.6,26.5
 		.talk Lookout Captain Lolo Longstriker##14634
 		..turnin WANTED: Overseer Maltorius##7701
 	step
@@ -8386,7 +8386,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 	step
 		'Fly to Stormwind City|goto Stormwind City|noway|c
 	step
-		home Stormwind City
+		goto 60.4,75.3
+		.talk Innkeeper Allison##6740
+		..home Stormwind City
 	step
 		'Fly to Lakeshire|goto Redridge Mountains,30.4,59.0,0.5|noway|c
 	step
@@ -8485,14 +8487,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		'Fly to Refuge Point|goto Arathi Highlands,45.8,46.1|noway|c
 	step
 		goto 62.5,33.7
-		.'Use the Scroll of Myzrael at the big Shard|use Scroll of Myzrael##4472
+		.'Use the Scroll of Myzrael at the Shards of Myzrael|use Scroll of Myzrael##4472
 		.from Myzrael##2755
-		..get 1 Eldritch Shackles|q 656/1
+		..get Eldritch Shackles|q 656/1
 	step
 		.talk Shards of Myzrael
 		..turnin Summoning the Princess##656
 	step
-		'Fly to Southshore|goto Hillsbrad Foothills,50.0,56.9,8|noway|c
+		'Fly to Southshore|goto Hillsbrad Foothills|noway|c
 	step
 		'Go north to the Alterac Mountains|goto Alterac Mountains|noway|c
 	step
@@ -8561,12 +8563,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		goto 42.7,84
 		.talk Commander Ashlam Valorfist##10838
 		..turnin All Along the Watchtowers##5097
-		..accept Scholomance##5533
-	step
-		goto 42.7,83.8
-		.talk Alchemist Arbington##11056
-		..turnin Scholomance##5533
-		..accept Skeletal Fragments##5537
 	step
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
@@ -8640,9 +8636,6 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		.talk Janice Felstone##10778
 		..turnin Two Halves Become One##5051
 	step
-		'From any Skeleton at the farms or in Andorhal.
-		.get 15 Skeletal Fragments|q 5537/1
-	step
 		goto 42.8,55.4
 		.kill 8 Diseased Wolf|q 4984/1 |tip The wolves in this area share a respawn with the spiders so killing them as well will spawn wolves faster.
 		..'You can also find more wolves at 45.6,47.4 |n
@@ -8663,16 +8656,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (50-5
 		..turnin The Wildlife Suffers Too (2)##4985
 		..accept Glyphed Oaken Branch##4986
 	step
-		goto 42.7,83.8
-		.talk Alchemist Arbington##11056
-		..turnin Skeletal Fragments##5537
-	step
 		goto 42.9,84.5
 		.talk High Priestess MacDonnell##11053
 		..turnin Return to Chillwind Camp##5223
 	step
 		'Fly, or hearth if ready, to Stormwind City|goto Stormwind City|use Hearthstone##6948|noway|c
 ]])
+
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-58)",[[
 	author PolarCookie
 	next Ding80's Alliance Leveling Guides\\Hellfire Peninsula
@@ -9125,10 +9115,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		.kill 8 Winterfall Pathfinder|q 5082/1
 		.kill 8 Winterfall Totemic|q 5082/3
 	step
-		goto 52.1,30.4
+		goto 52.0,30.4
 		.talk Wynd Nightchaser##11079
 		..turnin To Winterspring!##5249
 		..accept The Ruins of Kel'Theril##5244
+	step
+		goto 52.1,30.4
 		.talk Jaron Stoneshaper##10301
 		..turnin The Ruins of Kel'Theril##5244
 		..accept Enraged Wildkin (2)##4861
@@ -9191,10 +9183,10 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Levels (55-5
 		.'Discover Darkwhisper Gorge|goal Discover Darkwhisper Gorge|q 4842/1
 	step
 		goto 60.8,67.8
-		.from Frostmaul Giant##7428+,Frostmaul Preserver##7429+
+		.'Click Frostmaul Shards in the canyon, or try fighting a giant.
 		..get 4 Frostmaul Shards|q 969/1
 	step
-		goto 55,46
+		goto 62.5,57.9
 		.kill Brumeran|q 5055/1
 	step
 		goto 65,41.6
