@@ -9761,7 +9761,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 	step
 		goto 53,27.7
 		.kill Warbringer Arix'Amal|q 10397/1
-		.get Burning Blade Missive|n
+		..get Burning Blade Missive|n
 		.'Click the Burning Blade Missive|use Burning Blade Missive##29588
 		..accept The Dark Missive##10395
 		.get Burning Legion Gate Key|q 10397/3
@@ -9771,9 +9771,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		.talk Field Marshal Brock##20793
 		..turnin Invasion Point: Annihilator##10397
 	step
-		'Fly to Honor Hold|goto Hellfire Peninsula,54.6,62.6,0.5|noway|c
+		'Fly to Honor Hold|goto 54.6,62.6,0.5|noway|c
 	step
-		home Honor Hold
+		goto 54.2,63.6
+		.talk Sid Limbardi##16826
+		..home Honor Hold
 	step
 		goto 54.3,63.4
 		.talk Father Malgor Devidicus##16825
@@ -9807,6 +9809,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		.talk Lieutenant Chadwick##17557
 		..accept Weaken the Ramparts##9575
 	step
+		'Be on the lookout for a Hellfire Ramparts and then Blood Furnace groups, which you should aim to complete.
+		'Skip to the next step.
+	step
 		goto 50.9,60.2
 		.talk Honor Guard Wesilow##16827
 		..accept Unyielding Souls##10050
@@ -9834,7 +9839,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		goto 47.8,65.8
 		.kill 15 Marauding Crust Burster|q 9355/1|tip They are under the jumping piles of rocks, they come up to fight when you get close to the jumping rocks.
 		.kill Marauding Crustbusters|n
-		.get Eroded Leather Case|n
+		..get Eroded Leather Case|n
 		.'Click the Eroded Leather Case|use Eroded Leather Case##23338
 		..accept Missing Missive##9373
 	step
@@ -9851,7 +9856,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		goto 41.2,84.4
 		.'Click Ravenger Eggs|tip They look like big white eggs on the ground around this area.
 		.kill Razorfury Ravagers|n
-		.get 12 Ravager Egg|q 9349/1
+		..get 12 Ravager Egg|q 9349/1
 	step
 		ding 60|tip Grind for this here.
 	step
@@ -9882,9 +9887,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 	step
 		goto 50.2,74.8
 		.kill Helboars|n
-		.get Tainted Helboar Meat|n
+		..get Tainted Helboar Meat|n
 		.'Use your Purification Mixture on the Tainted Helboar Meat|use Purification Mixture##23268|tip The meat won't become purified every time, it can become toxic as well.
-		.get 8 Purified Helboar Meat|q 9361/1
+		..get 8 Purified Helboar Meat|q 9361/1
 	step
 		goto 49.2,74.8
 		.talk Legassi##19344
@@ -9902,12 +9907,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 	step
 		goto 58.1,71.3
 		.kill vultures|n
-		.get 12 Plump Buzzard Wing|q 9356/1
-		.get 30 Zeppelin Debris|q 10161/1|tip They look like scraps of metal all over the ground.
+		..get 12 Plump Buzzard Wing|q 9356/1
+		.'Click Zepplin Debris
+		..get 30 Zeppelin Debris|q 10161/1|tip They look like scraps of metal all over the ground.
 	step
 		goto 66.1,48.8
 		.'Click the Trampled Skeletons|tip They look like little brown ribcages and spines.  You will find them on the grey road.  They are very easy to miss, but once you find one you will find them really fast.
-		.'Cleanse 8 Trampled Skeletons|goal 8 Cleanse Trampled Skeleton|q 10047/1
+		..'Cleanse 8 Trampled Skeletons|goal 8 Cleanse Trampled Skeleton|q 10047/1
 	step
 		goto 54.3,63.4
 		.talk Father Malgor Devidicus##16825
@@ -9919,7 +9925,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		..turnin Fel Spirits##10909
 		..accept The Exorcism of Colonel Jules##10935|noautoaccept
 	step
-		goal Colonel Jules Saved|q 10935/1|tip This quest is notoriously broken on some servers.
+		'Talk to Anchorite Barada in the next room.
+		.goal Colonel Jules Saved|q 10935/1
 	step
 		goto 54.3,63.6
 		.talk Assistant Klatu##22430
@@ -9958,6 +9965,45 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		.talk Honor Guard Wesilow##16827
 		..turnin Looking to the Leadership##10057
 	step
+		Make or join a Hellfire Ramparts and Blood Furnace group.
+		Alternatively, skip several quests further ahead.
+	step
+		goto Hellfire Ramparts
+		.from Watchkeeper Gargolmar##17306
+		..get Gargolmar's Hand|q 9575/1
+		.from Omor the Unscarred##17308
+		..get Omor's Hoof|q 9575/2
+		.from Nazan##17536
+		..get Nazan's Head|q 9575/3
+		.from Vazruden##17537
+		..get Ominous Letter|n
+		.'Click Ominous Letter|use Ominous Letter##23890
+		..accept Dark Tidings##9587
+	step
+		goto Hellfire Peninsula,56.6,66.7
+		.talk Force Commander Danath Trollbane##16819
+		..turnin Dark Tidings##9587
+	step
+		goto 56.4,66.7
+		.talk Gunny##17479
+		..turnin Weaken the Ramparts##9575
+		..accept Heart of Rage##9607
+		..accept The Blood is Life##9589
+	step
+		goto The Blood Furnace
+		.from Fel Orcs
+		..get 10 Fel Orc Blood Vial|q 9589/1
+		.'Enter the final room at the bottom.
+		..goal Fully Investigate The Blood Furnace|q 9607/1
+	step
+		goto Hellfire Peninsula,56.6,66.7
+		.talk Force Commander Danath Trollbane##16819
+		..turnin Heart of Rage##9607
+	step
+		goto 56.4,66.7
+		.talk Gunny##17479
+		..turnin The Blood is Life##9589
+	step
 		goto 23.1,40.3
 		.talk Anchorite Obadei##16834
 		..accept In Search of Sedai##9390
@@ -9974,7 +10020,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		..turnin The Temple of Telhamat##10093
 		..accept The Pools of Aggonar##9426
 	step
-		home Temple of Telhamat
+		goto 23.3,36.4
+		.talk Caregiver Ophera Windfury##18906
+		..home Temple of Telhamat
 	step
 		goto 25.2,37.2
 		.talk Kuma##18785
@@ -9993,7 +10041,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 	step
 		goto 34.6,34.7
 		.kill Mag'har Grunts and Debilitated Mag'har Grunts|n
-		.get 10 Mag'har Ancestral Beads|q 9424/1
+		..get 10 Mag'har Ancestral Beads|q 9424/1
 	step
 		goto 38.9,29.1
 		.kill 6 Terrorfiend|q 9426/1
@@ -10023,39 +10071,57 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		goto 43.63,31.69
 		.kill Arazzius the Cruel|q 10400/1
 	step
-		'Hearth to the Temple of Telhamat|goto Hellfire Peninsula,23.4,37.2,3|use Hearthstone##6948|noway|c
+		goto 33.4,65.1
+		.from Blacktalon the Savage##17057
+		.get Blacktalon's Claw|q 9490/1
 	step
-		goto 23.4,36.5
-		.talk Amaan the Wise##16796
-		..turnin Cleansing the Waters##9427
-		..accept Helping the Cenarion Post##10443
+		goto 34.16,61.69
+		.kill 8 Stonescythe Whelp|q 9398/2
+		.kill 4 Stonescythe Alpha|q 9398/1
 	step
-		goto 23.2,36.7
-		.talk Elsaana##17006
-		..accept An Ambitious Plan##9383
+		goto 24,72.1
+		.talk Gremni Longbeard##16850
+		..turnin The Longbeards##9558
+		..accept The Arakkoa Threat##9417
+		..accept Rampaging Ravagers##9385
+		.talk Mirren Longbeard##16851
+		..accept Gaining Mirren's Trust##9563
+		..turnin Gaining Mirren's Trust##9563
+		..accept The Finest Down##9420
 	step
-		goto 15.7,52
-		.talk Thiah Redmane##16991
-		..turnin Missing Missive##9373
-		..turnin Helping the Cenarion Post##10443
-		..accept Demonic Contamination##9372
+		goto 26.1,77.1|n
+		.'The path up to Avruu starts here|goto Hellfire Peninsula,26.1,77.1,0.5|noway|c
 	step
-		goto 18.4,54.7
-		.kill Hulking Helboars|n
-		..get 6 Helboar Blood Sample|q 9372/1
+		goto 25.7,75.1
+		.from Avruu##17084
+		.get Avruu's Orb|n
+		.'Click Avruu's Orb|use Avruu's Orb##23580
+		..accept Avruu's Orb##9418
 	step
-		goto 15.7,52
-		.talk Thiah Redmane##16991
-		..turnin Demonic Contamination##9372
-		..accept Testing the Antidote##10255
+		goto 29,81.5
+		.'Click the Haal'eshi Altar|tip It looks like an orb sitting in a claw thing, right in front of a big purple hut.
+		.'Fight Aeranas until he's almost dead
+		.talk Aeranas##17085
+		..turnin Avruu's Orb##9418
 	step
-		goto 25,54
-		.'Use the Cenarion Antidote on a Hulking Helboar|use Cenarion Antidote##23337
-		..'Administer the Antidote|goal Administer Antidote|q 10255/1
+		goto 25.6,70.3
+		.kill 4 Haal'eshi Windwalker|q 9417/1
+		.kill 6 Haal'eshi Talonguard|q 9417/2
+		.'Click the Kaliri nests and kill Kaliri birds|tip The nests look like little brown nests with pink eggs in them.
+		..get 8 Kaliri Feather|q 9420/1
 	step
-		goto 15.7,52
-		.talk Thiah Redmane##16991
-		..turnin Testing the Antidote##10255
+		goto 24,72.1
+		.talk Gremni Longbeard##16850
+		..turnin The Arakkoa Threat##9417
+		.talk Mirren Longbeard##16851
+		..turnin The Finest Down##9420
+	step
+		goto 23.7,69.2
+		.kill 10 Quillfang Ravager|q 9385/1
+	step
+		goto 24,72.1
+		.talk Gremni Longbeard##16850
+		..turnin Rampaging Ravagers##9385
 	step
 		goto 15.6,58.8
 		.talk Akoru the Firecaller##20678
@@ -10105,72 +10171,54 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		.kill 4 Illidari Taskmaster|q 9399/1|tip If you kill the taskmaster first, his friends leave you alone.
 		.get 10 Sha'naar Relic|q 9430/1|tip The Sha'naar Relics look like little blue vases on the ground.
 	step
-		goto 24,72.1
-		.talk Gremni Longbeard##16850
-		..turnin The Longbeards##9558
-		..accept The Arakkoa Threat##9417
-		..accept Rampaging Ravagers##9385
-		.talk Mirren Longbeard##16851
-		..accept Gaining Mirren's Trust##9563
-		..turnin Gaining Mirren's Trust##9563
-		..accept The Finest Down##9420
+		ding 61
 	step
-		goto 26.1,77.1|n
-		.'The path up to Avruu starts here|goto Hellfire Peninsula,26.1,77.1,0.5|noway|c
+		'Hearth to the Temple of Telhamat|goto Hellfire Peninsula,23.4,37.2,3|use Hearthstone##6948|noway|c
 	step
-		goto 25.7,75.1
-		.from Avruu##17084
-		.get Avruu's Orb|n
-		.'Click Avruu's Orb|use Avruu's Orb##23580
-		..accept Avruu's Orb##9418
+		goto 23.4,36.5
+		.talk Amaan the Wise##16796
+		..turnin Cleansing the Waters##9427
+		..accept Helping the Cenarion Post##10443
+		..turnin Sha'naar Relics##9430
+		..accept The Seer's Relic##9545
 	step
-		goto 29,81.5
-		.'Click the Haal'eshi Altar|tip It looks like an orb sitting in a claw thing, right in front of a big purple hut.
-		.'Fight Aeranas until he's almost dead
-		.talk Aeranas##17085
-		..turnin Avruu's Orb##9418
+		goto 23.2,36.7
+		.talk Elsaana##17006
+		..accept An Ambitious Plan##9383
 	step
-		goto 25.6,70.3
-		.kill 4 Haal'eshi Windwalker|q 9417/1
-		.kill 6 Haal'eshi Talonguard|q 9417/2
-		.'Click the Kaliri nests and kill Kaliri birds|tip The nests look like little brown nests with pink eggs in them.
-		..get 8 Kaliri Feather|q 9420/1
+		goto 23.1,40.3
+		.talk Ikan##16799
+		..turnin Cruel Taskmasters##9399
+		..turnin The Rock Flayer Matriarch##9490
 	step
-		goto 24,72.1
-		.talk Gremni Longbeard##16850
-		..turnin The Arakkoa Threat##9417
-		.talk Mirren Longbeard##16851
-		..turnin The Finest Down##9420
+		goto 23.4,39.7
+		.talk Scout Vanura##16797
+		..turnin Deadly Predators##9398
 	step
-		goto 23.7,69.2
-		.kill 10 Quillfang Ravager|q 9385/1
+		goto 26.9,37.4
+		.'Use the Seer's Relic on Sedai's Corpse|use Seer's Relic##23645|tip Right down the hill from the Temple of Telhamat Flight Path.
+		.'See the vision|goal Vision Granted|q 9545/1
 	step
-		goto 24,72.1
-		.talk Gremni Longbeard##16850
-		..turnin Rampaging Ravagers##9385
+		goto 23.4,36.5
+		.talk Amaan the Wise##16796
+		..turnin The Seer's Relic##9545
 	step
-		goto 33.4,65.1
-		.from Blacktalon the Savage##17057
-		.get Blacktalon's Claw|q 9490/1
-	step
-		goto 34.16,61.69
-		.kill 8 Stonescythe Whelp|q 9398/2
-		.kill 4 Stonescythe Alpha|q 9398/1
-	step
-		goto 49.5,81.8
-		.kill voidwalkers|n
-		.get 10 Condensed Voidwalker Essence|q 9351/1
-		.'Use your Sanctified Crystal on an Uncontrolled Voidwalker when it's almost dead|use Sanctified Crystal##23417
-		.'Click the red floating crystal over its corpse
-		.get Glowing Sanctified Crystal|q 9383/1
-	step
-		goto 49.2,74.8
-		.talk "Screaming" Screed Luckheed##19367
-		..turnin Voidwalkers Gone Wild##9351
+		'Fly to Honor Hold|goto 54.6,62.6,0.5|noway|c
 	step
 		'You're gonna need a group for this
 		goto 47.97,56.27
 		.kill Drillmaster Zurok|q 10937/1
+	step
+		goto 49.5,81.8
+		.kill voidwalkers|n
+		..get 10 Condensed Voidwalker Essence|q 9351/1
+		.'Use your Sanctified Crystal on an Uncontrolled Voidwalker when it's almost dead|use Sanctified Crystal##23417
+		.'Click the red floating crystal over its corpse
+		..get Glowing Sanctified Crystal|q 9383/1
+	step
+		goto 49.2,74.8
+		.talk "Screaming" Screed Luckheed##19367
+		..turnin Voidwalkers Gone Wild##9351
 	step
 		goto 56.6,66.7
 		.talk Force Commander Danath Trollbane##16819
@@ -10187,27 +10235,28 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		.talk Elsaana##17006
 		..turnin An Ambitious Plan##9383
 	step
-		goto 23.4,36.5
-		.talk Amaan the Wise##16796
-		..turnin Sha'naar Relics##9430
-		..accept The Seer's Relic##9545
+		goto 15.7,52
+		.talk Thiah Redmane##16991
+		..turnin Missing Missive##9373
+		..turnin Helping the Cenarion Post##10443
+		..accept Demonic Contamination##9372
 	step
-		goto 23.4,39.7
-		.talk Scout Vanura##16797
-		..turnin Deadly Predators##9398
+		goto 18.4,54.7
+		.kill Hulking Helboars|n
+		..get 6 Helboar Blood Sample|q 9372/1
 	step
-		goto 23.1,40.3
-		.talk Ikan##16799
-		..turnin Cruel Taskmasters##9399
-		..turnin The Rock Flayer Matriarch##9490
+		goto 15.7,52
+		.talk Thiah Redmane##16991
+		..turnin Demonic Contamination##9372
+		..accept Testing the Antidote##10255
 	step
-		goto 26.9,37.4
-		.'Use the Seer's Relic on Sedai's Corpse|use Seer's Relic##23645|tip Right down the hill from the Temple of Telhamat Flight Path.
-		.'See the vision|goal Vision Granted|q 9545/1
+		goto 25,54
+		.'Use the Cenarion Antidote on a Hulking Helboar|use Cenarion Antidote##23337
+		..'Administer the Antidote|goal Administer Antidote|q 10255/1
 	step
-		goto 23.4,36.5
-		.talk Amaan the Wise##16796
-		..turnin The Seer's Relic##9545
+		goto 15.7,52
+		.talk Thiah Redmane##16991
+		..turnin Testing the Antidote##10255
 	step
 		goto 15.7,52
 		.talk Amythiel Mistwalker##16885
@@ -10239,15 +10288,14 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 		..turnin Crimson Crystal Clue##10134
 		..accept The Earthbinder##10349
 	step
-		ding 62
-	step
 		goto 15.8,51.6
 		.talk Earthbinder Galandria NIghtbreeze##19294
 		..turnin The Earthbinder##10349
 		..accept Natural Remedies##10351
 	step
-		goto 13.4,39.6
-		.goal Fallen Sky Ridge Revitalized|q 10351/1
+		goto 13.6,39.1
+		.use Seed of Revitalization##29478
+		..goal Fallen Sky Ridge Revitalized|q 10351/1
 	step
 		goto 15.8,51.6
 		.talk Earthbinder Galandria Nightbreeze##19294
@@ -10258,7 +10306,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Hel
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC solo\\Zangarmarsh",[[
 	author PolarCookie
 	next Ding80's Alliance Leveling Guides TBC solo\\Terokkar Forest
-	startlevel 62
+	startlevel 61
 
 	step
 		'Go northwest to Zangarmarsh|goto Zangarmarsh|noway|c

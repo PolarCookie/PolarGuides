@@ -9563,7 +9563,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 	step
 		goto 53,27.7
 		.kill Warbringer Arix'Amal|q 10397/1
-		.get Burning Blade Missive|n
+		..get Burning Blade Missive|n
 		.'Click the Burning Blade Missive|use Burning Blade Missive##29588
 		..accept The Dark Missive##10395
 		.get Burning Legion Gate Key|q 10397/3
@@ -9573,9 +9573,11 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 		.talk Field Marshal Brock##20793
 		..turnin Invasion Point: Annihilator##10397
 	step
-		'Fly to Honor Hold|goto Hellfire Peninsula,54.6,62.6,0.5|noway|c
+		'Fly to Honor Hold|goto 54.6,62.6,0.5|noway|c
 	step
-		home Honor Hold
+		goto 54.2,63.6
+		.talk Sid Limbardi##16826
+		..home Honor Hold
 	step
 		goto 54.3,63.4
 		.talk Father Malgor Devidicus##16825
@@ -9636,7 +9638,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 		goto 47.8,65.8
 		.kill 15 Marauding Crust Burster|q 9355/1|tip They are under the jumping piles of rocks, they come up to fight when you get close to the jumping rocks.
 		.kill Marauding Crustbusters|n
-		.get Eroded Leather Case|n
+		..get Eroded Leather Case|n
 		.'Click the Eroded Leather Case|use Eroded Leather Case##23338
 		..accept Missing Missive##9373
 	step
@@ -9653,7 +9655,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 		goto 41.2,84.4
 		.'Click Ravenger Eggs|tip They look like big white eggs on the ground around this area.
 		.kill Razorfury Ravagers|n
-		.get 12 Ravager Egg|q 9349/1
+		..get 12 Ravager Egg|q 9349/1
 	step
 		ding 60|tip Grind for this here.
 	step
@@ -9684,9 +9686,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 	step
 		goto 50.2,74.8
 		.kill Helboars|n
-		.get Tainted Helboar Meat|n
+		..get Tainted Helboar Meat|n
 		.'Use your Purification Mixture on the Tainted Helboar Meat|use Purification Mixture##23268|tip The meat won't become purified every time, it can become toxic as well.
-		.get 8 Purified Helboar Meat|q 9361/1
+		..get 8 Purified Helboar Meat|q 9361/1
 	step
 		goto 49.2,74.8
 		.talk Legassi##19344
@@ -9704,12 +9706,13 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 	step
 		goto 58.1,71.3
 		.kill vultures|n
-		.get 12 Plump Buzzard Wing|q 9356/1
-		.get 30 Zeppelin Debris|q 10161/1|tip They look like scraps of metal all over the ground.
+		..get 12 Plump Buzzard Wing|q 9356/1
+		.'Click Zepplin Debris
+		..get 30 Zeppelin Debris|q 10161/1|tip They look like scraps of metal all over the ground.
 	step
 		goto 66.1,48.8
 		.'Click the Trampled Skeletons|tip They look like little brown ribcages and spines.  You will find them on the grey road.  They are very easy to miss, but once you find one you will find them really fast.
-		.'Cleanse 8 Trampled Skeletons|goal 8 Cleanse Trampled Skeleton|q 10047/1
+		..'Cleanse 8 Trampled Skeletons|goal 8 Cleanse Trampled Skeleton|q 10047/1
 	step
 		goto 54.3,63.4
 		.talk Father Malgor Devidicus##16825
@@ -9721,7 +9724,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 		..turnin Fel Spirits##10909
 		..accept The Exorcism of Colonel Jules##10935|noautoaccept
 	step
-		goal Colonel Jules Saved|q 10935/1|tip This quest is notoriously broken on some servers.
+		'Talk to Anchorite Barada in the next room.
+		.goal Colonel Jules Saved|q 10935/1
 	step
 		goto 54.3,63.6
 		.talk Assistant Klatu##22430
@@ -9776,7 +9780,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 		..turnin The Temple of Telhamat##10093
 		..accept The Pools of Aggonar##9426
 	step
-		home Temple of Telhamat
+		goto 23.3,36.4
+		.talk Caregiver Ophera Windfury##18906
+		..home Temple of Telhamat
 	step
 		goto 25.2,37.2
 		.talk Kuma##18785
@@ -9795,7 +9801,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 	step
 		goto 34.6,34.7
 		.kill Mag'har Grunts and Debilitated Mag'har Grunts|n
-		.get 10 Mag'har Ancestral Beads|q 9424/1
+		..get 10 Mag'har Ancestral Beads|q 9424/1
 	step
 		goto 38.9,29.1
 		.kill 6 Terrorfiend|q 9426/1
@@ -10048,8 +10054,9 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Hellfire Pen
 		..turnin The Earthbinder##10349
 		..accept Natural Remedies##10351
 	step
-		goto 13.4,39.6
-		.goal Fallen Sky Ridge Revitalized|q 10351/1
+		goto 13.6,39.1
+		.use Seed of Revitalization##29478
+		..goal Fallen Sky Ridge Revitalized|q 10351/1
 	step
 		goto 15.8,51.6
 		.talk Earthbinder Galandria Nightbreeze##19294
