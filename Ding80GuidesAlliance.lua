@@ -11730,6 +11730,7 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Nagrand",[[
 ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Blade's Edge Mountains",[[
 	author PolarCookie
 	startlevel 67
+	next Ding80's Alliance Leveling Guides\\Howling Fjord
 
 	step
 		'Fly to Orebor Harborage|goto Zangarmarsh,41.8,26.6,4|noway|c
@@ -11934,9 +11935,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Blade's Edge
 		'Fly to Shattrath City|goto Shattrath City|noway|c
 ]])
 
-ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Borean Tundra",[[
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Howling Fjord",[[
 	author PolarCookie
 	startlevel 68
+	next Ding80's Alliance Leveling Guides\\Borean Tundra
+
+	step
+		TODO
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Borean Tundra",[[
+	author PolarCookie
+	startlevel 70
+	next Ding80's Alliance Leveling Guides\\Dragonblight
 
 	step
 		'Go to Stormwind|goto Stormwind City|noway|c
@@ -13198,4 +13209,55 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Borean Tundr
 		..turnin Last Rites##12019
 ]])
 
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Dragonblight",[[
+	author PolarCookie
+	startlevel 71
+	next Ding80's Alliance Leveling Guides\\Grizzly Hills
 
+	step
+		TODO
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Grizzly Hills",[[
+	author PolarCookie
+	startlevel 73
+	next Ding80's Alliance Leveling Guides\\Zul'Drak
+
+	step
+		TODO
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Zul'Drak",[[
+	author PolarCookie
+	startlevel 74
+	next Ding80's Alliance Leveling Guides\\Sholazar Basin
+
+	step
+		TODO
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Sholazar Basin",[[
+	author PolarCookie
+	startlevel 76
+	next Ding80's Alliance Leveling Guides\\Storm Peaks
+
+	step
+		TODO
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Storm Peaks",[[
+	author PolarCookie
+	startlevel 77
+	next Ding80's Alliance Leveling Guides\\Icecrown
+
+	step
+		TODO
+]])
+
+ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides\\Icecrown",[[
+	author PolarCookie
+	startlevel 80
+
+	step
+		TODO
+]])
