@@ -10725,13 +10725,15 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Zang
 		.talk Lethyn Moonfire##17834
 		..accept The Dying Balance##9895
 	step
+		goto 78.5,62.9
+		.talk Innkeeper Coryth Stoktron##18907
+		..home Cenarion Refuge
+	step
 		goto 78.4,62
 		.talk Ysiel Windsinger##17841
 		..turnin The Cenarion Expedition##9912
 		..accept Disturbance at Umbrafen Lake##9716
 		..accept Warden Hamoot##9778
-	step
-		home Cenarion Refuge
 	step
 		goto 79.13,64.78
 		.accept Leader of the Bloodscale##9817
@@ -10779,6 +10781,12 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Zang
 		.'Click the Dead Mire Soil mound
 		..get Dead Mire Soil Sample|q 9782/1
 	step
+		goto 78.3,45.2
+		.from Withered Giant##18124+
+		..get Withered Basidium|n
+		.'Click the Withered Basidium|use Withered Basidium##24483
+		..accept Withered Basidium##9827|tip Save all Bog Lord Tendrils for 'Natural Enemies' later. Withered Bog Lords do NOT drop the Basidium.
+	step
 		goto 73.2,41.5
 		.'Click the little green glowing mushrooms around this area
 		..get 6 Fulgor Spore|q 9777/1
@@ -10796,6 +10804,8 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Zang
 	step
 		goto 68.6,48.7
 		.talk Ruam##18007
+		..turnin Withered Basidium##9827
+		..accept Withered Flesh##10355
 		..turnin Fulgor Spores##9777
 	step
 		goto 67.7,48
@@ -10804,11 +10814,19 @@ ZygorGuidesViewer:RegisterGuide("Ding80's Alliance Leveling Guides TBC duo\\Zang
 		..accept Umbrafen Eel Filets##9780
 	step
 		goto 78.3,45.2
-		.kill 12 Withered Giant|q 9783/1|tip Save Bog Lord Tendrils for 'Natural Enemies' later.
+		.kill 12 Withered Giant|q 9783/1|tip Save all Bog Lord Tendrils for 'Natural Enemies' later.
+		.from Parched Hydras|n
+		..get 5 Parched Hydra Sample|q 10355/1
+		.from Withered Bog Lords|n
+		..get 5 Withered Bog Lord Sample|q 10355/2
 	step
 		goto 68.3,50.1
 		.talk Vindicator Idaar##18004
 		..turnin An Unnatural Drought##9783
+	step
+		goto 68.6,48.7
+		.talk Ruam##18007
+		..turnin Withered Flesh##10355
 	step
 		goto 70.9,82.1
 		.'Stand here to Investigate Umbrafen Lake|goal Umbrafen Lake Investigated|q 9716/1
